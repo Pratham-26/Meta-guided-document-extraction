@@ -57,21 +57,22 @@ LangGraph routes the sample document to the Extractor Agent using only the base 
 **3. Promotion to Memory:**
 The approved JSON is silently saved alongside the document's visual embedding. This becomes a "Golden Template" used for future few-shot prompting and Judge calibration.
 
-### Phase 1.5: Knowledge Base Expansion (The Scout Phase)
+### Phase 1.5: Knowledge Base & Golden Baseline (The Scout Phase)
 Rather than executing on every single document passed to the system, the Scout Agent runs periodically or on-demand per document *type*.
-1.  **Iterative Exploration:** It uses its RLM REPL loop to thoroughly explore sample documents of a specific category.
-2.  **Question Generation:** It figures out what data needs to be extracted by determining the essential questions that must be asked.
-3.  **Context Maintenance:** It dynamically populates a growing knowledge base of facts, rules, and context that the Extraction Agent can reference later.
+1.  **Iterative Exploration:** It uses its RLM REPL loop to thoroughly explore sample documents of a specific category to unparalleled depths.
+2.  **Question Inference & Context Maintenance:** It figures out what data needs to be extracted by inferring the essential questions that must be answered, dynamically populating an expanding knowledge base.
+3.  **Golden Object Construction:** Because of its rigorous reasoning capabilities, the Scout Agent excels at building the ideal extraction object (the "gold response"). This perfect output serves as the undisputed ground truth for the document type and is stored separately to be later used for extraction prompt optimization.
 
 ### Phase 2: Production Execution (The Swarm)
 When a new, unseen document or text payload enters the system:
 1.  **Routing:** The system evaluates the input modality (text vs. PDF) and routes the document to the optimal retrieval path. ColPali is used for complex, visually-rich PDFs, while ColBERT handles text-dense or raw text payloads.
 2.  **Context-Aware Extraction:** The Extraction Agent taps into the growable context established by the Scout Agent, pulling the required data using the optimized instructions and few-shot examples compiled by DSPy.
 
-### Phase 3: The Self-Healing Loop
-1.  **Evaluation:** The Judge Agent scores the production extraction.
-2.  **Diagnosis & Optimization (Offline):** Periodically (e.g., nightly batch runs), DSPy gathers all failed or human-corrected extractions. It uses these failures to algorithmically rewrite the system prompts and update the optimal few-shot examples.
-3.  **Deployment:** The newly "compiled" Extractor Agent replaces the old version, making the system smarter for the next run without human code changes.
+### Phase 3: The Optimized Self-Healing Loop
+By harnessing the inferred questions, the Scout's meticulous gold responses, and the swift routing of ColPali/ColBERT, the system forms an extraction pipeline that autonomously self-heals:
+1.  **Evaluation:** The Judge Agent scores the faster production extractions against the baselines and principles established by the Scout Agent.
+2.  **Diagnosis & Optimization (Offline):** Periodically (e.g., nightly batch runs), DSPy gathers sub-optimal or human-corrected extractions. Crucially, it retrieves the separately stored gold responses and runs GEPA (built into DSPy) to autonomously recognize failures, optimize the extraction prompt, and synthesize superior few-shot examples.
+3.  **Deployment:** The newly "compiled" Extractor Agent replaces the old version, allowing the pipeline to continuously self-improve and correct edge cases without manual developer intervention.
 
 ---
 
