@@ -12,11 +12,11 @@ from src.schemas.gold_standard import GoldStandard
 
 
 class TestScoutAgentExploreDocument:
-    def test_returns_exploration_and_extraction(self, mock_dspy_predict):
+    def test_returns_exploration_and_extraction(self, mock_dspy_rlm):
         fake_result = MagicMock()
         fake_result.exploration = "Found lease with Acme Corp."
         fake_result.extraction = '{"name": "Acme Corp", "amount": 5000}'
-        mock_dspy_predict.return_value = MagicMock(return_value=fake_result)
+        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
 
         agent = ScoutAgent()
         result = agent.explore_document(
@@ -29,20 +29,82 @@ class TestScoutAgentExploreDocument:
         assert "extraction" in result
         assert result["extraction"]["name"] == "Acme Corp"
 
-    def test_handles_malformed_json_extraction(self, mock_dspy_predict):
+    def test_handles_malformed_json_extraction(self, mock_dspy_rlm):
         fake_result = MagicMock()
         fake_result.exploration = "Found something."
         fake_result.extraction = "not valid json"
-        mock_dspy_predict.return_value = MagicMock(return_value=fake_result)
+        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
 
         agent = ScoutAgent()
         result = agent.explore_document("content", {}, "instructions")
 
         assert result["extraction"]["raw"] == "not valid json"
 
+    def test_with_images_uses_vision_path(self, mock_dspy_rlm):
+        fake_result = MagicMock()
+        fake_result.exploration = "Visual analysis of PDF."
+        fake_result.extraction = '{"name": "Acme Corp", "amount": 5000}'
+        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+
+        fake_image = MagicMock()
+        vision_lm = MagicMock()
+
+        agent = ScoutAgent(vision_lm=vision_lm)
+        with patch(
+            "src.agents.scout.agent._encode_images",
+            return_value=[{"type": "image", "image": "abc123"}],
+        ):
+            result = agent.explore_document(
+                content="",
+                schema={"type": "object", "properties": {"name": {"type": "string"}}},
+                instructions="Extract name.",
+                images=[fake_image],
+            )
+
+        assert result["extraction"]["name"] == "Acme Corp"
+
+    def test_without_images_uses_text_path(self, mock_dspy_rlm):
+        fake_result = MagicMock()
+        fake_result.exploration = "Text analysis."
+        fake_result.extraction = '{"name": "Acme Corp"}'
+        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+
+        agent = ScoutAgent()
+        result = agent.explore_document(
+            content="some text content",
+            schema={"type": "object", "properties": {"name": {"type": "string"}}},
+            instructions="Extract name.",
+            images=None,
+        )
+
+        assert result["extraction"]["name"] == "Acme Corp"
+
+    def test_vision_lm_restored_after_use(self, mock_dspy_rlm):
+        fake_result = MagicMock()
+        fake_result.exploration = "Visual."
+        fake_result.extraction = "{}"
+        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+
+        text_lm = MagicMock()
+        vision_lm = MagicMock()
+
+        agent = ScoutAgent(lm=text_lm, vision_lm=vision_lm)
+        with patch(
+            "src.agents.scout.agent._encode_images",
+            return_value=[{"type": "image", "image": "abc"}],
+        ):
+            agent.explore_document(
+                content="",
+                schema={},
+                instructions="",
+                images=[MagicMock()],
+            )
+
+        assert mock_dspy_rlm.call_count >= 1
+
 
 class TestScoutAgentInferQuestions:
-    def test_returns_question_list(self, mock_dspy_predict):
+    def test_returns_question_list(self, mock_dspy_rlm, mock_dspy_predict):
         fake_result = MagicMock()
         fake_result.questions_json = json.dumps(
             [
@@ -70,7 +132,7 @@ class TestScoutAgentInferQuestions:
         assert len(questions) == 2
         assert questions[0]["target_field"] == "name"
 
-    def test_handles_malformed_json(self, mock_dspy_predict):
+    def test_handles_malformed_json(self, mock_dspy_rlm, mock_dspy_predict):
         fake_result = MagicMock()
         fake_result.questions_json = "not json"
         mock_dspy_predict.return_value = MagicMock(return_value=fake_result)

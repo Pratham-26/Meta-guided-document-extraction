@@ -6,7 +6,7 @@ from src.agents.scout.agent import ScoutAgent
 from src.agents.scout.question_store import add_questions
 from src.agents.scout.gold_builder import build_and_save
 from src.storage.fs_store import save_source_document, list_gold_standards
-from src.utils.pdf import extract_text_from_pdf
+from src.utils.pdf import extract_text_from_pdf, load_pdf_pages
 from src.utils.text import clean_text, truncate_to_tokens
 from pathlib import Path
 
@@ -28,6 +28,8 @@ def main():
         documents.extend(args.doc)
 
     explorations = []
+    scout: ScoutAgent | None = None
+
     for i, doc_path in enumerate(documents):
         path = Path(doc_path)
         print(f"Exploring document {i + 1}/{len(documents)}: {path.name}")
@@ -36,23 +38,38 @@ def main():
 
         is_pdf = path.suffix.lower() == ".pdf"
         modality = "pdf" if is_pdf else "text"
-        input_type = "vision" if is_pdf else "text"
 
+        images = None
         if is_pdf:
             content = extract_text_from_pdf(path)
+            content = clean_text(content)
+            content = truncate_to_tokens(content)
+            is_placeholder = content.startswith("[PDF with")
+
+            if is_placeholder:
+                print(
+                    "  Warning: PyMuPDF not available, loading page images for vision exploration"
+                )
+                images = load_pdf_pages(path)
+
+            lm = get_lm("scout", input_type="vision")
+            vision_lm = get_lm("scout", input_type="vision")
+            if scout is None:
+                scout = ScoutAgent(lm=lm, vision_lm=vision_lm)
         else:
             content = path.read_text(encoding="utf-8")
+            content = clean_text(content)
+            content = truncate_to_tokens(content)
 
-        content = clean_text(content)
-        content = truncate_to_tokens(content)
-
-        lm = get_lm("scout", input_type=input_type)
-        scout = ScoutAgent(lm=lm)
+            lm = get_lm("scout", input_type="text")
+            if scout is None:
+                scout = ScoutAgent(lm=lm)
 
         result = scout.explore_document(
             content=content,
             schema=config.expected_schema,
             instructions=config.extraction_instructions,
+            images=images,
         )
         explorations.append(result["exploration"])
 
@@ -65,6 +82,10 @@ def main():
             extraction=result["extraction"],
         )
         print(f"  Gold Standard saved: {gs_id}")
+
+    if scout is None:
+        print("No documents to explore.")
+        return
 
     print("\nInferring questions from explorations...")
     questions = scout.infer_questions_from_explorations(

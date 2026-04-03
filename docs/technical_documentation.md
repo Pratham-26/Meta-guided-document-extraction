@@ -56,11 +56,12 @@ Meta-learning-for-document-extraction/
 │   ├── schemas/                      # Pydantic data models
 │   │   ├── __init__.py
 │   │   ├── document.py               # Document input models (PDF, text payloads)
-│   │   ├── category.py               # Category definition schema
+│   │   ├── category.py               # Re-exports QuestionEntry, QuestionSet from question.py
+│   │   ├── question.py               # Scout question models (QuestionEntry, QuestionSet)
 │   │   ├── extraction.py             # Extraction output schema (dynamic per category)
 │   │   ├── gold_standard.py          # Gold Standard record schema
 │   │   ├── trace.py                  # Trace log entry schema
-│   │   └── evaluation.py            # Judge evaluation result schema
+│   │   └── evaluation.py            # Judge evaluation result schema (incl. FieldDiff)
 │   │
 │   ├── agents/                       # Agent implementations
 │   │   ├── __init__.py
@@ -159,20 +160,33 @@ Meta-learning-for-document-extraction/
 │           └── optimization_traces/
 │               └── trace_2026-04-03_001.jsonl
 │
-├── tests/                            # Test suite
+├── tests/                            # Test suite (132 passing, 7 failing — see session_progress.md)
 │   ├── __init__.py
 │   ├── conftest.py                   # Shared fixtures (mock LLMs, sample docs)
 │   ├── unit/
-│   │   ├── test_schemas.py
-│   │   ├── test_lm_config.py
-│   │   ├── test_router.py
-│   │   ├── test_fs_store.py
-│   │   └── test_judge.py
-│   ├── integration/
+│   │   ├── test_schemas.py           # All 6 Pydantic models
+│   │   ├── test_lm_config.py         # ModelConfig, CategoryConfig loading
+│   │   ├── test_router.py            # InputType routing to COLPALI/COLBERT
+│   │   ├── test_fs_store.py          # GoldStandard CRUD, QuestionStore, has_context
+│   │   ├── test_judge.py             # JudgeEvaluation schema validation
+│   │   ├── test_judge_agent.py       # JudgeAgent.evaluate with mocked dspy.Predict
+│   │   ├── test_scout.py             # ScoutAgent explore/infer, GoldBuilder, QuestionStore
+│   │   ├── test_extractor.py         # ExtractorAgent.run with mocked dspy.Predict
+│   │   ├── test_reflector.py         # Reflector.analyze + PromptMutator.mutate
+│   │   ├── test_population.py        # PromptCandidate model, CRUD, Pareto selection
+│   │   ├── test_gepa.py              # Full GEPA cycle
+│   │   ├── test_orchestration_nodes.py  # Pipeline nodes (check_context, route, extract, judge)
+│   │   ├── test_graph.py             # LangGraph pipeline (routing, integration happy path)
+│   │   ├── test_hitl.py              # Human-in-the-loop (present_for_review, apply_corrections)
+│   │   ├── test_validator.py         # Validator.validate_candidate
+│   │   ├── test_trace_logger.py      # Trace logging (single/batch, phase dirs, read by date)
+│   │   ├── test_colpali_retriever.py # ColPali build_index, retrieve, get_retrieved_pages
+│   │   └── test_colbert_retriever.py # ColBERT build_index, retrieve, get_retrieved_chunks
+│   ├── integration/                  # (planned — not yet implemented)
 │   │   ├── test_scout_pipeline.py
 │   │   ├── test_extraction_pipeline.py
 │   │   └── test_gepa_cycle.py
-│   └── fixtures/
+│   └── fixtures/                     # (planned — placeholder .gitkeep only)
 │       ├── sample_lease.pdf
 │       ├── sample_text_doc.txt
 │       └── sample_gold_standard.json
@@ -219,21 +233,42 @@ This means the entire provider layer is a thin config file + a few lines of DSPy
 import dspy
 from src.config.loader import load_model_config, ModelConfig
 
-def get_lm(agent_role: str, input_type: str = "text", config: ModelConfig | None = None) -> dspy.LM:
+_active_lms: dict[str, dspy.LM] = {}
+
+def get_lm(
+    agent_role: str,
+    input_type: str = "text",
+    config: ModelConfig | None = None,
+) -> dspy.LM:
     """
-    Return a configured DSPy LM for the given agent role.
+    Return a configured DSPy LM for the given agent role (cached).
     Uses LiteLLM model strings — any supported provider works.
     For roles with text_model/vision_model, selects based on input_type.
+    Falls back to top-level text_model/vision_model if role has no override.
     """
+    cache_key = f"{agent_role}:{input_type}"
+    if cache_key in _active_lms:
+        return _active_lms[cache_key]
+
     config = config or load_model_config()
     role_config = config.agent_roles[agent_role]
-    model_name = role_config.get_model(input_type)
+    model_name = role_config.get_model(
+        input_type,
+        fallback_text_model=config.text_model,
+        fallback_vision_model=config.vision_model,
+    )
 
-    return dspy.LM(
+    lm = dspy.LM(
         model=model_name,
         temperature=role_config.temperature,
         max_tokens=role_config.max_tokens,
     )
+    _active_lms[cache_key] = lm
+    return lm
+
+def clear_lm_cache():
+    """Clear cached LM instances (useful for tests or config reloads)."""
+    _active_lms.clear()
 
 # Usage:
 # lm = get_lm("scout", input_type="vision")   # PDF input → vision model
@@ -268,11 +303,12 @@ All data flowing through the system is strictly typed. Key schemas:
 | Schema | Purpose |
 |:---|:---|
 | `DocumentInput` | Wraps incoming documents — file path, input type (`pdf` / `text`), raw content, metadata. |
-| `CategoryConfig` | Defines a document category — name, expected output schema, extraction instructions, retrieval parameters. |
+| `CategoryConfig` | Defines a document category — name, expected output schema, extraction instructions, retrieval parameters. Lives in `src/config/loader.py`. |
+| `QuestionEntry` / `QuestionSet` | Scout-inferred questions with target field, retrieval priority. Stored per `(category, modality)`. |
 | `ExtractionResult` | The Extractor Agent's output — dynamically validated against the category's expected schema. |
 | `GoldStandard` | An approved extraction — the source document ref, the approved JSON, who approved it, timestamp. |
 | `TraceEntry` | A single LLM interaction — prompt, response, agent role, phase, timestamp, token counts. |
-| `JudgeEvaluation` | Judge output — quality tier (`low` / `medium` / `high`), textual feedback, field-level diff. |
+| `JudgeEvaluation` | Judge output — quality tier (`low` / `medium` / `high`), textual feedback, field-level diffs via `FieldDiff` model. |
 
 ---
 
@@ -555,6 +591,28 @@ class DocumentInput(BaseModel):
     metadata: dict = {}
 
 
+# --- src/schemas/question.py ---
+from pydantic import BaseModel
+
+class QuestionEntry(BaseModel):
+    """A single Scout-inferred retrieval question."""
+    id: str                           # e.g., "q_001"
+    text: str                         # The question text
+    target_field: str                 # Which extraction field it targets
+    retrieval_priority: int = 1       # Priority for retrieval ranking
+
+class QuestionSet(BaseModel):
+    """The full question set for a (category, modality) pair."""
+    category: str
+    input_modality: str               # "pdf" or "text"
+    version: int = 1                  # Incremented on refinement
+    updated_at: str
+    questions: list[QuestionEntry]
+
+# Note: CategoryConfig lives in src/config/loader.py (not src/schemas/category.py).
+# src/schemas/category.py re-exports QuestionEntry and QuestionSet for convenience.
+
+
 # --- src/schemas/gold_standard.py ---
 from pydantic import BaseModel
 from datetime import datetime
@@ -581,11 +639,18 @@ class QualityTier(str, Enum):
     MEDIUM = "medium"
     HIGH = "high"
 
+class FieldDiff(BaseModel):
+    """Per-field comparison detail."""
+    field: str
+    expected: str | None = None
+    actual: str | None = None
+    issue: str
+
 class JudgeEvaluation(BaseModel):
     """Output of the Judge Agent's comparison."""
     quality_tier: QualityTier
     feedback: str                     # Textual explanation of divergences
-    field_diffs: list[dict]           # Per-field comparison details
+    field_diffs: list[FieldDiff]      # Per-field comparison details (typed)
     gold_standard_id: str             # Which Gold Standard was compared against
     confidence: float                 # 0.0 – 1.0
 
@@ -788,6 +853,7 @@ data/categories/commercial_lease/pdf/gold_standards/
 {
   "id": "gs_001",
   "category": "commercial_lease_agreement",
+  "input_modality": "pdf",
   "source_document_uri": "sources/lease_001.pdf",
   "extraction": {
     "landlord_name": "Acme Properties LLC",

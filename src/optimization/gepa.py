@@ -50,9 +50,7 @@ def run_gepa_cycle(
     trace_entries = []
 
     for gen in range(1, generations + 1):
-        low_medium_gs = _select_low_medium_samples(
-            gold_standards, config.expected_schema
-        )
+        low_medium_gs = _select_low_medium_samples(category, modality, gold_standards)
         if not low_medium_gs:
             continue
 
@@ -128,5 +126,22 @@ def run_gepa_cycle(
     }
 
 
-def _select_low_medium_samples(gold_standards, schema):
-    return gold_standards[:5]
+def _select_low_medium_samples(
+    category: str, modality: str, gold_standards: list
+) -> list:
+    from src.storage.trace_logger import read_traces
+    from src.schemas.evaluation import QualityTier
+
+    low_medium_gs_ids = set()
+    try:
+        judge_traces = read_traces(category, modality, phase="evaluation")
+        for trace in judge_traces:
+            if trace.quality_tier in (QualityTier.LOW.value, QualityTier.MEDIUM.value):
+                low_medium_gs_ids.add(trace.gold_standard_id)
+    except Exception:
+        pass
+
+    if low_medium_gs_ids:
+        return [gs for gs in gold_standards if gs.id in low_medium_gs_ids]
+
+    return gold_standards

@@ -18,7 +18,11 @@ def get_lm(
         config = load_model_config()
 
     role_config = config.agent_roles[agent_role]
-    model_name = role_config.get_model(input_type)
+    model_name = role_config.get_model(
+        input_type,
+        fallback_text_model=config.text_model,
+        fallback_vision_model=config.vision_model,
+    )
     lm = dspy.LM(
         model=model_name,
         temperature=role_config.temperature,

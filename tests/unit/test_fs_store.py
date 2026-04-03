@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from src.schemas.gold_standard import GoldStandard
-from src.schemas.category import QuestionSet, QuestionEntry
+from src.schemas.question import QuestionSet, QuestionEntry
 from src.storage.fs_store import (
     save_gold_standard,
     load_gold_standard,

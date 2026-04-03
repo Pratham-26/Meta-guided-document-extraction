@@ -56,7 +56,8 @@ def main():
         if src.exists():
             from src.storage.fs_store import save_source_document
 
-            saved = save_source_document(config.category_name, src)
+            modality = "pdf" if src.suffix.lower() == ".pdf" else "text"
+            saved = save_source_document(config.category_name, modality, src)
             print(f"  Copied: {src.name} -> {saved}")
 
     print(f"\nCategory '{config.category_name}' bootstrapped successfully.")

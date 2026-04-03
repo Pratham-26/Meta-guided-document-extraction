@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from src.schemas.gold_standard import GoldStandard
-from src.schemas.category import QuestionSet
+from src.schemas.question import QuestionSet
 from src.storage import paths
 
 

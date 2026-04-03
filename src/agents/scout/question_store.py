@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from src.schemas.category import QuestionEntry, QuestionSet
+from src.schemas.question import QuestionEntry, QuestionSet
 from src.storage.fs_store import load_question_set, save_question_set
 
 

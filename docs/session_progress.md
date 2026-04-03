@@ -45,8 +45,8 @@ Iteratively build the **best self-improving document extraction system using age
 9. **Layer 8: `src/utils/`** + `scripts/` + `.env.example` + `pyproject.toml`
 10. **DSPy Signature field rename** — `schema` → `extraction_schema`, `instructions` → `extraction_instructions` in all DSPy Signature classes and callers (scout, extractor, judge, reflector)
 11. **Bug fixes** — `os.replace()` for Windows atomic writes; `self._mutate_prompt` to fix PromptMutator naming conflict
-12. **132 unit tests passing** across 18 test files, all with mocked LLM calls
-13. **Integration test for full LangGraph pipeline** — happy path + error halt scenarios in `test_graph.py`
+12. **132 unit tests passing, 7 failing** — 4 failures in `test_graph.py` (integration happy path + error halt), 2 in `test_scout.py` (explore/extraction), 1 other
+13. **Integration test for full LangGraph pipeline** — happy path + error halt scenarios in `test_graph.py` (currently failing)
 14. **Retrieval test fixes** — fixed mock patching for lazy-imported modules (`ragatouille`, `colpali_engine`, `pdf2image`) using `sys.modules` dict patching; fixed ColPali `pickle`/`torch` mock for `build_index`
 
 ### Test Coverage
@@ -71,7 +71,7 @@ Iteratively build the **best self-improving document extraction system using age
 | `test_colbert_retriever.py` | 7 | ColBERT build_index, retrieve (dedup, top_k), get_retrieved_chunks (format, document key fallback) |
 | `test_hitl.py` | 6 | Human-in-the-loop (present_for_review, apply_corrections — extraction, questions, both, empty) |
 | `test_graph.py` | 10 | LangGraph pipeline (node existence, routing, error halt, compile, integration happy path + error) |
-| **Total** | **132** | |
+| **Total** | **139** (132 pass, 7 fail) | |
 
 ### Source Code Bug Fixes Applied
 

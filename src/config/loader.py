@@ -41,13 +41,24 @@ class AgentRoleConfig(BaseModel):
     temperature: float = 0.0
     max_tokens: int = 4096
 
-    def get_model(self, input_type: str = "text") -> str:
+    def get_model(
+        self,
+        input_type: str = "text",
+        fallback_text_model: str | None = None,
+        fallback_vision_model: str | None = None,
+    ) -> str:
         if input_type == "vision" and self.vision_model:
             return self.vision_model
+        if input_type == "vision" and fallback_vision_model:
+            return fallback_vision_model
         if input_type == "text" and self.text_model:
             return self.text_model
+        if input_type == "text" and fallback_text_model:
+            return fallback_text_model
         if self.text_model:
             return self.text_model
+        if fallback_text_model:
+            return fallback_text_model
         if self.model:
             return self.model
         raise ValueError(

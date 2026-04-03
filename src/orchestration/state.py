@@ -22,3 +22,4 @@ class PipelineState(TypedDict, total=False):
     judge_evaluation: JudgeEvaluation | None
     trace_entries: list[TraceEntry]
     error: str | None
+    human_corrections: dict | None

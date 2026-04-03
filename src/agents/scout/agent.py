@@ -1,3 +1,6 @@
+import base64
+import io
+
 import dspy
 import json
 from pathlib import Path
@@ -11,6 +14,25 @@ class ScoutExplore(dspy.Signature):
     document_content: str = dspy.InputField(
         desc="Full document content or description of visual layout"
     )
+    extraction_schema: str = dspy.InputField(
+        desc="JSON schema defining expected extraction fields"
+    )
+    extraction_instructions: str = dspy.InputField(
+        desc="Extraction instructions for this category"
+    )
+    exploration: str = dspy.OutputField(
+        desc="Detailed findings: document structure, key data points, patterns, edge cases"
+    )
+    extraction: str = dspy.OutputField(
+        desc="Complete extraction as a JSON object matching the schema"
+    )
+
+
+class ScoutExploreVision(dspy.Signature):
+    """Thoroughly explore document page images to identify all extractable information
+    and patterns. Analyze visual layout, tables, spatial relationships, fonts, and
+    formatting to extract structured data."""
+
     extraction_schema: str = dspy.InputField(
         desc="JSON schema defining expected extraction fields"
     )
@@ -42,19 +64,65 @@ class ScoutQuestionInference(dspy.Signature):
     )
 
 
+def _encode_images(images: list) -> list[dict]:
+    import PIL.Image
+
+    encoded = []
+    for img in images:
+        buf = io.BytesIO()
+        pil_img = img if isinstance(img, PIL.Image.Image) else PIL.Image.open(img)
+        pil_img.save(buf, format="PNG")
+        encoded.append(
+            {"type": "image", "image": base64.b64encode(buf.getvalue()).decode("utf-8")}
+        )
+    return encoded
+
+
 class ScoutAgent:
-    def __init__(self, lm: dspy.LM | None = None):
-        if lm:
-            dspy.configure(lm=lm)
-        self.explore = dspy.Predict(ScoutExplore)
+    def __init__(
+        self,
+        lm: dspy.LM | None = None,
+        vision_lm: dspy.LM | None = None,
+    ):
+        self._lm = lm
+        self._vision_lm = vision_lm
+        self.explore = dspy.RLM(ScoutExplore)
+        self.explore_vision = dspy.RLM(ScoutExploreVision)
         self.infer_questions = dspy.Predict(ScoutQuestionInference)
 
-    def explore_document(self, content: str, schema: dict, instructions: str) -> dict:
-        result = self.explore(
-            document_content=content,
-            extraction_schema=json.dumps(schema, indent=2),
-            extraction_instructions=instructions,
-        )
+    def _configure_lm(self, lm: dspy.LM | None):
+        if lm is not None:
+            dspy.configure(lm=lm)
+
+    def explore_document(
+        self,
+        content: str,
+        schema: dict,
+        instructions: str,
+        images: list | None = None,
+    ) -> dict:
+        schema_str = json.dumps(schema, indent=2)
+
+        if images:
+            encoded_images = _encode_images(images)
+            prev_lm = self._lm
+            self._configure_lm(self._vision_lm)
+
+            try:
+                result = self.explore_vision(
+                    extraction_schema=schema_str,
+                    extraction_instructions=instructions,
+                )
+            finally:
+                self._configure_lm(prev_lm)
+        else:
+            self._configure_lm(self._lm)
+            result = self.explore(
+                document_content=content,
+                extraction_schema=schema_str,
+                extraction_instructions=instructions,
+            )
+
         try:
             extraction = json.loads(result.extraction)
         except json.JSONDecodeError:
@@ -71,6 +139,7 @@ class ScoutAgent:
         schema: dict,
         instructions: str,
     ) -> list[dict]:
+        self._configure_lm(self._lm)
         result = self.infer_questions(
             explorations=json.dumps(explorations, indent=2),
             extraction_schema=json.dumps(schema, indent=2),

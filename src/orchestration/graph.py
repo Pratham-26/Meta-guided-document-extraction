@@ -17,6 +17,12 @@ def _route_retrieval(state: PipelineState) -> str:
     return "colbert"
 
 
+def _has_corrections(state: PipelineState) -> str:
+    if state.get("human_corrections"):
+        return "apply"
+    return "skip"
+
+
 def build_graph() -> StateGraph:
     graph = StateGraph(PipelineState)
 
@@ -27,6 +33,8 @@ def build_graph() -> StateGraph:
     graph.add_node("retrieve", nodes.retrieve)
     graph.add_node("extract", nodes.extract)
     graph.add_node("judge", nodes.judge)
+    graph.add_node("present_for_review", nodes.present_for_review)
+    graph.add_node("apply_corrections", nodes.apply_corrections)
     graph.add_node("log_traces", nodes.log_traces)
 
     graph.add_edge(START, "check_context")
@@ -43,7 +51,16 @@ def build_graph() -> StateGraph:
     graph.add_edge("route_input", "retrieve")
     graph.add_edge("retrieve", "extract")
     graph.add_edge("extract", "judge")
-    graph.add_edge("judge", "log_traces")
+    graph.add_edge("judge", "present_for_review")
+    graph.add_conditional_edges(
+        "present_for_review",
+        _has_corrections,
+        {
+            "apply": "apply_corrections",
+            "skip": "log_traces",
+        },
+    )
+    graph.add_edge("apply_corrections", "log_traces")
     graph.add_edge("log_traces", END)
 
     return graph

@@ -21,6 +21,13 @@ def _encode_pil_image(image) -> str:
     return base64.b64encode(buf.getvalue()).decode("utf-8")
 
 
+def _parse_model_provider(model_string: str) -> tuple[str, str]:
+    if "/" in model_string:
+        provider, model = model_string.split("/", 1)
+        return model, provider
+    return model_string, "unknown"
+
+
 def check_context(state: PipelineState) -> PipelineState:
     category = state.get("category_name", "")
     modality = state.get("input_modality", "")
@@ -145,6 +152,30 @@ def extract(state: PipelineState) -> PipelineState:
     return {**state, "extraction": extraction, "trace_entries": traces}
 
 
+def _pick_best_gold_standard(extraction: dict, gold_standards: list) -> object:
+    if len(gold_standards) == 1:
+        return gold_standards[0]
+
+    extraction_keys = set(
+        str(k).lower() for k in extraction.keys() if extraction.get(k) is not None
+    )
+    best_score = -1
+    best_gs = gold_standards[0]
+
+    for gs in gold_standards:
+        gs_keys = set(
+            str(k).lower()
+            for k in gs.extraction.keys()
+            if gs.extraction.get(k) is not None
+        )
+        overlap = len(extraction_keys & gs_keys)
+        if overlap > best_score:
+            best_score = overlap
+            best_gs = gs
+
+    return best_gs
+
+
 def judge(state: PipelineState) -> PipelineState:
     if state.get("error"):
         return state
@@ -159,7 +190,7 @@ def judge(state: PipelineState) -> PipelineState:
 
     lm = get_lm("judge")
     agent = JudgeAgent(lm=lm)
-    gs = gold_standards[0]
+    gs = _pick_best_gold_standard(state.get("extraction", {}), gold_standards)
 
     evaluation = agent.evaluate(
         extraction=state.get("extraction", {}),

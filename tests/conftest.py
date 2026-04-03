@@ -8,7 +8,7 @@ from src.schemas.document import DocumentInput, InputType
 from src.schemas.gold_standard import GoldStandard
 from src.schemas.trace import TraceEntry
 from src.schemas.evaluation import JudgeEvaluation, QualityTier, FieldDiff
-from src.schemas.category import QuestionSet, QuestionEntry
+from src.schemas.question import QuestionSet, QuestionEntry
 from src.config.loader import CategoryConfig, ModelConfig, AgentRoleConfig
 
 
@@ -109,6 +109,12 @@ def tmp_category_dir(tmp_path, monkeypatch):
 @pytest.fixture
 def mock_dspy_predict():
     with patch("dspy.Predict") as mock_cls:
+        yield mock_cls
+
+
+@pytest.fixture
+def mock_dspy_rlm():
+    with patch("dspy.RLM") as mock_cls:
         yield mock_cls
 
 

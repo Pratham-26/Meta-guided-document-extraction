@@ -4,3 +4,5 @@ dspy
 pydantic
 colpali-engine
 ragatouille
+python-dotenv
+pdf2image
