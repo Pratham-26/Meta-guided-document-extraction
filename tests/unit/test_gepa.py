@@ -17,7 +17,7 @@ def _write_category_config(tmp_path, sample_category_config, category="test_cate
     return configs_dir
 
 
-def _write_gold_standards(category, count=2):
+def _write_gold_standards(category, modality="pdf", count=2):
     from src.storage.fs_store import save_gold_standard
     from src.schemas.gold_standard import GoldStandard
 
@@ -26,12 +26,13 @@ def _write_gold_standards(category, count=2):
         gs = GoldStandard(
             id=f"gs_{i + 1:03d}",
             category=category,
+            input_modality=modality,
             source_document_uri=Path(f"sources/doc_{i + 1}.pdf"),
             extraction={"name": f"Entity {i + 1}", "amount": 1000.0 * (i + 1)},
             approved_by="scout",
             created_at=datetime.now(timezone.utc),
         )
-        save_gold_standard(category, gs)
+        save_gold_standard(category, modality, gs)
         gses.append(gs)
     return gses
 
@@ -47,7 +48,7 @@ class TestRunGepaCycle:
         configs_dir = _write_category_config(tmp_category_dir, sample_category_config)
 
         with patch.object(settings, "configs_dir", configs_dir):
-            result = run_gepa_cycle("test_category")
+            result = run_gepa_cycle("test_category", "pdf")
 
         assert "error" in result
         assert "No Gold Standards" in result["error"]
@@ -93,7 +94,7 @@ class TestRunGepaCycle:
                 }
 
                 result = run_gepa_cycle(
-                    "test_category", generations=1, population_size=1
+                    "test_category", "pdf", generations=1, population_size=1
                 )
 
                 assert "error" not in result
@@ -101,7 +102,7 @@ class TestRunGepaCycle:
 
         from src.optimization.population import load_current_prompt
 
-        current = load_current_prompt("test_category")
+        current = load_current_prompt("test_category", "pdf")
         assert current is not None
 
     def test_runs_multiple_generations(self, tmp_category_dir, sample_category_config):
@@ -118,7 +119,7 @@ class TestRunGepaCycle:
             created_at=datetime.now(timezone.utc).isoformat(),
             instructions="Extract name and amount.",
         )
-        save_candidate("test_category", initial)
+        save_candidate("test_category", "pdf", initial)
 
         with patch.object(settings, "configs_dir", configs_dir):
             with (
@@ -151,7 +152,7 @@ class TestRunGepaCycle:
                 }
 
                 result = run_gepa_cycle(
-                    "test_category", generations=2, population_size=1
+                    "test_category", "pdf", generations=2, population_size=1
                 )
 
                 assert result["generations_run"] == 2
@@ -199,7 +200,7 @@ class TestRunGepaCycle:
                 }
 
                 result = run_gepa_cycle(
-                    "test_category", generations=2, population_size=1
+                    "test_category", "pdf", generations=2, population_size=1
                 )
 
                 assert result["generations_run"] == 2

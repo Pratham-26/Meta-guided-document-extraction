@@ -4,15 +4,17 @@ from src.schemas.category import QuestionEntry, QuestionSet
 from src.storage.fs_store import load_question_set, save_question_set
 
 
-def get_questions(category: str) -> list[str]:
-    qs = load_question_set(category)
+def get_questions(category: str, modality: str) -> list[str]:
+    qs = load_question_set(category, modality)
     if not qs:
         return []
     return [q.text for q in qs.questions]
 
 
-def add_questions(category: str, new_questions: list[dict]) -> QuestionSet:
-    existing = load_question_set(category)
+def add_questions(
+    category: str, modality: str, new_questions: list[dict]
+) -> QuestionSet:
+    existing = load_question_set(category, modality)
     existing_ids = {q.id for q in existing.questions} if existing else set()
     next_idx = len(existing.questions) if existing else 0
 
@@ -31,9 +33,10 @@ def add_questions(category: str, new_questions: list[dict]) -> QuestionSet:
 
     qs = QuestionSet(
         category=category,
+        input_modality=modality,
         version=(existing.version + 1) if existing else 1,
         updated_at=datetime.now(timezone.utc).isoformat(),
         questions=entries,
     )
-    save_question_set(category, qs)
+    save_question_set(category, modality, qs)
     return qs

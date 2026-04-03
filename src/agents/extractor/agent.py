@@ -23,11 +23,34 @@ class ExtractDocument(dspy.Signature):
     )
 
 
+class ExtractDocumentVision(dspy.Signature):
+    """Extract structured data from document page images. Analyze the visual layout,
+    tables, and text in each image. Follow the instructions precisely and output
+    valid JSON matching the provided schema."""
+
+    context: str = dspy.InputField(
+        desc="Page labels identifying which pages were retrieved"
+    )
+    extraction_schema: str = dspy.InputField(
+        desc="JSON schema defining expected output fields and types"
+    )
+    extraction_instructions: str = dspy.InputField(
+        desc="Extraction instructions for this document category"
+    )
+    few_shot_examples: str = dspy.InputField(
+        desc="Example extractions from Gold Standards, or empty string"
+    )
+    extraction: str = dspy.OutputField(
+        desc="Extracted data as a JSON object matching the schema exactly"
+    )
+
+
 class ExtractorAgent:
     def __init__(self, lm: dspy.LM | None = None):
         if lm:
             dspy.configure(lm=lm)
         self.extract = dspy.Predict(ExtractDocument)
+        self.extract_vision = dspy.Predict(ExtractDocumentVision)
 
     def run(
         self,
@@ -35,17 +58,44 @@ class ExtractorAgent:
         schema: dict,
         instructions: str,
         few_shot_examples: list[dict] | None = None,
+        images: list | None = None,
     ) -> dict:
         examples_str = ""
         if few_shot_examples:
             examples_str = json.dumps(few_shot_examples, indent=2)
 
-        result = self.extract(
-            context=context,
-            extraction_schema=json.dumps(schema, indent=2),
-            extraction_instructions=instructions,
-            few_shot_examples=examples_str,
-        )
+        if images:
+            import base64
+            import io
+            import PIL.Image
+
+            encoded_images = []
+            for img in images:
+                buf = io.BytesIO()
+                pil_img = (
+                    img if isinstance(img, PIL.Image.Image) else PIL.Image.open(img)
+                )
+                pil_img.save(buf, format="PNG")
+                encoded_images.append(
+                    {
+                        "type": "image",
+                        "image": base64.b64encode(buf.getvalue()).decode("utf-8"),
+                    }
+                )
+
+            result = self.extract_vision(
+                context=context,
+                extraction_schema=json.dumps(schema, indent=2),
+                extraction_instructions=instructions,
+                few_shot_examples=examples_str,
+            )
+        else:
+            result = self.extract(
+                context=context,
+                extraction_schema=json.dumps(schema, indent=2),
+                extraction_instructions=instructions,
+                few_shot_examples=examples_str,
+            )
 
         try:
             extraction = json.loads(result.extraction)

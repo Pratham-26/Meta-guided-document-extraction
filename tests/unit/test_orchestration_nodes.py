@@ -21,13 +21,13 @@ from src.retrieval.router import RetrievalRoute
 
 class TestCheckContext:
     def test_no_context_returns_error(self, tmp_category_dir):
-        state = {"category_name": "nonexistent"}
+        state = {"category_name": "nonexistent", "input_modality": "pdf"}
         result = check_context(state)
         assert "error" in result
         assert "No Scout context" in result["error"]
 
     def test_with_context_returns_state(self, bootstrapped_category):
-        state = {"category_name": "test_category"}
+        state = {"category_name": "test_category", "input_modality": "pdf"}
         result = check_context(state)
         assert "error" not in result
 
@@ -60,13 +60,13 @@ class TestResolveConfig:
 
 class TestLoadQuestions:
     def test_loads_questions(self, bootstrapped_category):
-        state = {"category_name": "test_category"}
+        state = {"category_name": "test_category", "input_modality": "pdf"}
         result = load_questions(state)
         assert "questions" in result
         assert len(result["questions"]) == 2
 
     def test_no_questions_returns_error(self, tmp_category_dir):
-        state = {"category_name": "nonexistent"}
+        state = {"category_name": "nonexistent", "input_modality": "pdf"}
         result = load_questions(state)
         assert "error" in result
 
@@ -96,6 +96,7 @@ class TestExtract:
 
         state = {
             "category_name": "test_category",
+            "input_modality": "pdf",
             "retrieved_context": "Page 1: Lease agreement...",
             "schema": sample_category_config.expected_schema,
             "instructions": sample_category_config.extraction_instructions,
@@ -140,6 +141,7 @@ class TestJudge:
 
         state = {
             "category_name": "test_category",
+            "input_modality": "pdf",
             "extraction": {"name": "Acme Corp", "amount": 5000.00},
             "schema": sample_category_config.expected_schema,
         }
@@ -173,6 +175,7 @@ class TestJudge:
     def test_skips_when_no_gold_standards(self, tmp_category_dir):
         state = {
             "category_name": "empty_cat",
+            "input_modality": "pdf",
             "extraction": {"name": "Test"},
             "schema": {},
         }

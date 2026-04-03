@@ -8,6 +8,7 @@ class TraceEntry(BaseModel):
     agent_role: str
     phase: str
     category: str
+    input_modality: str
     prompt: str
     response: str
     model: str

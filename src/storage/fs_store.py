@@ -22,20 +22,20 @@ def _atomic_write(path: Path, data: str):
         raise
 
 
-def save_gold_standard(category: str, gs: GoldStandard):
+def save_gold_standard(category: str, modality: str, gs: GoldStandard):
     paths.ensure_category_dirs(category)
-    path = paths.gold_standard_path(category, gs.id)
+    path = paths.gold_standard_path(category, modality, gs.id)
     _atomic_write(path, gs.model_dump_json(indent=2))
 
 
-def load_gold_standard(category: str, gs_id: str) -> GoldStandard:
-    path = paths.gold_standard_path(category, gs_id)
+def load_gold_standard(category: str, modality: str, gs_id: str) -> GoldStandard:
+    path = paths.gold_standard_path(category, modality, gs_id)
     with open(path) as f:
         return GoldStandard(**json.load(f))
 
 
-def list_gold_standards(category: str) -> list[GoldStandard]:
-    gs_dir = paths.gold_standards_dir(category)
+def list_gold_standards(category: str, modality: str) -> list[GoldStandard]:
+    gs_dir = paths.gold_standards_dir(category, modality)
     if not gs_dir.exists():
         return []
     results = []
@@ -45,16 +45,16 @@ def list_gold_standards(category: str) -> list[GoldStandard]:
     return results
 
 
-def delete_gold_standard(category: str, gs_id: str) -> bool:
-    path = paths.gold_standard_path(category, gs_id)
+def delete_gold_standard(category: str, modality: str, gs_id: str) -> bool:
+    path = paths.gold_standard_path(category, modality, gs_id)
     if path.exists():
         path.unlink()
         return True
     return False
 
 
-def save_source_document(category: str, source_path: Path):
-    dest_dir = paths.sources_dir(category)
+def save_source_document(category: str, modality: str, source_path: Path):
+    dest_dir = paths.sources_dir(category, modality)
     dest_dir.mkdir(parents=True, exist_ok=True)
     dest = dest_dir / source_path.name
     if not dest.exists():
@@ -62,21 +62,21 @@ def save_source_document(category: str, source_path: Path):
     return dest
 
 
-def save_question_set(category: str, qs: QuestionSet):
+def save_question_set(category: str, modality: str, qs: QuestionSet):
     paths.ensure_category_dirs(category)
-    path = paths.questions_path(category)
+    path = paths.questions_path(category, modality)
     _atomic_write(path, qs.model_dump_json(indent=2))
 
 
-def load_question_set(category: str) -> QuestionSet | None:
-    path = paths.questions_path(category)
+def load_question_set(category: str, modality: str) -> QuestionSet | None:
+    path = paths.questions_path(category, modality)
     if not path.exists():
         return None
     with open(path) as f:
         return QuestionSet(**json.load(f))
 
 
-def has_context(category: str) -> bool:
-    q_path = paths.questions_path(category)
-    gs_dir = paths.gold_standards_dir(category)
+def has_context(category: str, modality: str) -> bool:
+    q_path = paths.questions_path(category, modality)
+    gs_dir = paths.gold_standards_dir(category, modality)
     return q_path.exists() and gs_dir.exists() and any(gs_dir.glob("gs_*.json"))

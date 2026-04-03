@@ -16,7 +16,7 @@ class TestLogTrace:
 
         trace_logger.log_trace(sample_trace_entry)
 
-        phase_dir = tmp_path / "traces" / "test_category" / "extraction_traces"
+        phase_dir = tmp_path / "traces" / "test_category" / "pdf" / "extraction_traces"
         files = list(phase_dir.glob("trace_*.jsonl"))
         assert len(files) == 1
 
@@ -37,6 +37,7 @@ class TestLogTrace:
             agent_role="judge",
             phase="evaluation",
             category="test_category",
+            input_modality="pdf",
             prompt="Evaluate...",
             response='{"quality_tier": "high"}',
             model="claude-sonnet",
@@ -46,7 +47,7 @@ class TestLogTrace:
 
         trace_logger.log_trace(entry)
 
-        phase_dir = tmp_path / "traces" / "test_category" / "judge_traces"
+        phase_dir = tmp_path / "traces" / "test_category" / "pdf" / "judge_traces"
         files = list(phase_dir.glob("trace_*.jsonl"))
         assert len(files) == 1
 
@@ -64,6 +65,7 @@ class TestLogTraces:
                 agent_role="extractor",
                 phase="extraction",
                 category="test_category",
+                input_modality="pdf",
                 prompt=f"Prompt {i}",
                 response=f"Response {i}",
                 model="gpt-4o",
@@ -75,7 +77,7 @@ class TestLogTraces:
 
         trace_logger.log_traces(entries)
 
-        phase_dir = tmp_path / "traces" / "test_category" / "extraction_traces"
+        phase_dir = tmp_path / "traces" / "test_category" / "pdf" / "extraction_traces"
         files = list(phase_dir.glob("trace_*.jsonl"))
         assert len(files) == 1
         lines = files[0].read_text().strip().split("\n")
@@ -106,6 +108,7 @@ class TestLogTraces:
                 agent_role="extractor",
                 phase="extraction",
                 category="cat_a",
+                input_modality="pdf",
                 prompt="p1",
                 response="r1",
                 model="m",
@@ -117,6 +120,7 @@ class TestLogTraces:
                 agent_role="judge",
                 phase="evaluation",
                 category="cat_b",
+                input_modality="pdf",
                 prompt="p2",
                 response="r2",
                 model="m",
@@ -127,8 +131,8 @@ class TestLogTraces:
 
         trace_logger.log_traces(entries)
 
-        cat_a_dir = tmp_path / "traces" / "cat_a" / "extraction_traces"
-        cat_b_dir = tmp_path / "traces" / "cat_b" / "judge_traces"
+        cat_a_dir = tmp_path / "traces" / "cat_a" / "pdf" / "extraction_traces"
+        cat_b_dir = tmp_path / "traces" / "cat_b" / "pdf" / "judge_traces"
         assert len(list(cat_a_dir.glob("trace_*.jsonl"))) == 1
         assert len(list(cat_b_dir.glob("trace_*.jsonl"))) == 1
 
@@ -143,7 +147,9 @@ class TestReadTraces:
         today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         trace_logger.log_trace(sample_trace_entry)
 
-        results = trace_logger.read_traces("test_category", "extraction", date=today)
+        results = trace_logger.read_traces(
+            "test_category", "pdf", "extraction", date=today
+        )
         assert len(results) == 1
         assert results[0].agent_role == "extractor"
 
@@ -154,7 +160,7 @@ class TestReadTraces:
         monkeypatch.setattr(settings, "data_dir", tmp_path)
 
         results = trace_logger.read_traces(
-            "test_category", "extraction", date="2099-01-01"
+            "test_category", "pdf", "extraction", date="2099-01-01"
         )
         assert results == []
 
@@ -169,6 +175,7 @@ class TestReadTraces:
             agent_role="extractor",
             phase="extraction",
             category="test_category",
+            input_modality="pdf",
             prompt="p",
             response="r",
             model="m",
@@ -177,7 +184,7 @@ class TestReadTraces:
         )
         trace_logger.log_trace(entry)
 
-        results = trace_logger.read_traces("test_category", "extraction")
+        results = trace_logger.read_traces("test_category", "pdf", "extraction")
         assert len(results) == 1
 
     def test_returns_empty_for_nonexistent_phase_dir(self, tmp_path, monkeypatch):
@@ -186,5 +193,5 @@ class TestReadTraces:
 
         monkeypatch.setattr(settings, "data_dir", tmp_path)
 
-        results = trace_logger.read_traces("nonexistent", "extraction")
+        results = trace_logger.read_traces("nonexistent", "pdf", "extraction")
         assert results == []

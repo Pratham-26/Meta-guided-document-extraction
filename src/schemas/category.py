@@ -10,6 +10,7 @@ class QuestionEntry(BaseModel):
 
 class QuestionSet(BaseModel):
     category: str
+    input_modality: str
     version: int = 1
     updated_at: str
     questions: list[QuestionEntry]

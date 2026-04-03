@@ -51,15 +51,15 @@ class TestCandidateCRUD:
             created_at="2025-01-01T00:00:00+00:00",
             instructions="Extract name.",
         )
-        save_candidate("test_cat", c)
+        save_candidate("test_cat", "pdf", c)
 
-        loaded = load_candidate("test_cat", "candidate_001")
+        loaded = load_candidate("test_cat", "pdf", "candidate_001")
         assert loaded is not None
         assert loaded.candidate_id == "candidate_001"
         assert loaded.instructions == "Extract name."
 
     def test_load_nonexistent(self, tmp_category_dir):
-        result = load_candidate("nonexistent", "candidate_999")
+        result = load_candidate("nonexistent", "pdf", "candidate_999")
         assert result is None
 
     def test_list_candidates(self, tmp_category_dir):
@@ -74,14 +74,14 @@ class TestCandidateCRUD:
                 created_at="2025-01-01T00:00:00+00:00",
                 instructions=f"Instructions v{i + 1}",
             )
-            save_candidate("test_cat", c)
+            save_candidate("test_cat", "pdf", c)
 
-        candidates = list_candidates("test_cat")
+        candidates = list_candidates("test_cat", "pdf")
         assert len(candidates) == 3
         assert candidates[0].candidate_id == "candidate_001"
 
     def test_list_empty_category(self, tmp_category_dir):
-        candidates = list_candidates("nonexistent")
+        candidates = list_candidates("nonexistent", "pdf")
         assert candidates == []
 
 
@@ -97,14 +97,14 @@ class TestCurrentPrompt:
             created_at="2025-01-01T00:00:00+00:00",
             instructions="Best instructions.",
         )
-        save_current_prompt("test_cat", c)
+        save_current_prompt("test_cat", "pdf", c)
 
-        loaded = load_current_prompt("test_cat")
+        loaded = load_current_prompt("test_cat", "pdf")
         assert loaded is not None
         assert loaded.instructions == "Best instructions."
 
     def test_load_nonexistent(self, tmp_category_dir):
-        result = load_current_prompt("nonexistent")
+        result = load_current_prompt("nonexistent", "pdf")
         assert result is None
 
 
@@ -113,7 +113,7 @@ class TestNextCandidateId:
         from src.storage.paths import ensure_category_dirs
 
         ensure_category_dirs("test_cat")
-        assert _next_candidate_id("test_cat") == "candidate_001"
+        assert _next_candidate_id("test_cat", "pdf") == "candidate_001"
 
     def test_after_existing(self, tmp_category_dir):
         from src.storage.paths import ensure_category_dirs
@@ -126,9 +126,9 @@ class TestNextCandidateId:
             created_at="2025-01-01T00:00:00+00:00",
             instructions="Instructions.",
         )
-        save_candidate("test_cat", c)
+        save_candidate("test_cat", "pdf", c)
 
-        assert _next_candidate_id("test_cat") == "candidate_002"
+        assert _next_candidate_id("test_cat", "pdf") == "candidate_002"
 
 
 class TestParetoSelect:

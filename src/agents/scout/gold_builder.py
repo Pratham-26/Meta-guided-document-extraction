@@ -7,6 +7,7 @@ from src.storage.fs_store import save_gold_standard
 
 def build_and_save(
     category: str,
+    modality: str,
     gs_id: str,
     source_document_uri: Path,
     extraction: dict,
@@ -15,11 +16,12 @@ def build_and_save(
     gs = GoldStandard(
         id=gs_id,
         category=category,
+        input_modality=modality,
         source_document_uri=source_document_uri,
         extraction=extraction,
         approved_by=approved_by,
         created_at=datetime.now(timezone.utc),
         supersedes=None,
     )
-    save_gold_standard(category, gs)
+    save_gold_standard(category, modality, gs)
     return gs

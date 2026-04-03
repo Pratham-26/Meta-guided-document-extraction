@@ -21,6 +21,7 @@ from src.optimization.validator import validate_candidate
 
 def run_gepa_cycle(
     category: str,
+    modality: str,
     generations: int | None = None,
     population_size: int | None = None,
 ) -> dict:
@@ -28,11 +29,11 @@ def run_gepa_cycle(
     generations = generations or config.optimization.gepa_generations
     population_size = population_size or config.optimization.gepa_population_size
 
-    gold_standards = list_gold_standards(category)
+    gold_standards = list_gold_standards(category, modality)
     if not gold_standards:
         return {"error": "No Gold Standards available for optimization."}
 
-    current = load_current_prompt(category)
+    current = load_current_prompt(category, modality)
     if not current:
         current = PromptCandidate(
             candidate_id="candidate_000",
@@ -40,7 +41,7 @@ def run_gepa_cycle(
             created_at=datetime.now(timezone.utc).isoformat(),
             instructions=config.extraction_instructions,
         )
-        save_candidate(category, current)
+        save_candidate(category, modality, current)
 
     reflector_lm = get_lm("reflector")
     reflector = Reflector(lm=reflector_lm)
@@ -70,7 +71,7 @@ def run_gepa_cycle(
                 suggested_fixes=analysis["suggested_fixes"],
             )
 
-            new_id = _next_candidate_id(category)
+            new_id = _next_candidate_id(category, modality)
             candidate = PromptCandidate(
                 candidate_id=new_id,
                 generation=gen,
@@ -79,14 +80,15 @@ def run_gepa_cycle(
                 parent_ids=[current.candidate_id],
                 mutation_log=mutation["mutation_rationale"],
             )
-            save_candidate(category, candidate)
+            save_candidate(category, modality, candidate)
 
-        all_candidates = list_candidates(category)
+        all_candidates = list_candidates(category, modality)
         for c in all_candidates:
             if c.fitness_scores:
                 continue
             validation = validate_candidate(
                 category,
+                modality,
                 c.instructions,
                 config.expected_schema,
                 sample_size=config.optimization.validation_sample_size,
@@ -96,20 +98,21 @@ def run_gepa_cycle(
                 "high_count": validation.get("high", 0),
                 "total": validation.get("total", 1),
             }
-            save_candidate(category, c)
+            save_candidate(category, modality, c)
 
-        all_candidates = list_candidates(category)
+        all_candidates = list_candidates(category, modality)
         front = pareto_select(all_candidates)
         if front:
             best = max(front, key=lambda c: c.fitness_scores.get("overall_accuracy", 0))
             current = best
-            save_current_prompt(category, best)
+            save_current_prompt(category, modality, best)
 
         trace = TraceEntry(
             timestamp=datetime.now(timezone.utc),
             agent_role="reflector",
             phase="optimization",
             category=category,
+            input_modality=modality,
             prompt=current.instructions,
             response=f"Generation {gen} complete. Best candidate: {current.candidate_id}",
             model="reflector",

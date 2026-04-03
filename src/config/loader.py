@@ -35,12 +35,30 @@ class CategoryConfig(BaseModel):
 
 
 class AgentRoleConfig(BaseModel):
-    model: str
+    model: str | None = None
+    text_model: str | None = None
+    vision_model: str | None = None
     temperature: float = 0.0
     max_tokens: int = 4096
 
+    def get_model(self, input_type: str = "text") -> str:
+        if input_type == "vision" and self.vision_model:
+            return self.vision_model
+        if input_type == "text" and self.text_model:
+            return self.text_model
+        if self.text_model:
+            return self.text_model
+        if self.model:
+            return self.model
+        raise ValueError(
+            f"No model configured for role with input_type='{input_type}'. "
+            f"Set 'model', or 'text_model'/'vision_model'."
+        )
+
 
 class ModelConfig(BaseModel):
+    text_model: str | None = None
+    vision_model: str | None = None
     agent_roles: dict[str, AgentRoleConfig]
 
 

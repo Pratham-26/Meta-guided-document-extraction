@@ -89,6 +89,7 @@ class TestGoldBuilder:
 
         gs = build_and_save(
             category="test_cat",
+            modality="pdf",
             gs_id="gs_001",
             source_document_uri=Path("sources/test.pdf"),
             extraction={"name": "Acme"},
@@ -100,7 +101,7 @@ class TestGoldBuilder:
 
         from src.storage.fs_store import load_gold_standard
 
-        loaded = load_gold_standard("test_cat", "gs_001")
+        loaded = load_gold_standard("test_cat", "pdf", "gs_001")
         assert loaded.extraction["name"] == "Acme"
 
 
@@ -112,6 +113,7 @@ class TestQuestionStore:
 
         qs = add_questions(
             "test_cat",
+            "pdf",
             [
                 {"text": "Who?", "target_field": "name", "retrieval_priority": 1},
                 {
@@ -132,12 +134,14 @@ class TestQuestionStore:
 
         add_questions(
             "test_cat",
+            "pdf",
             [
                 {"text": "Q1?", "target_field": "f1", "retrieval_priority": 1},
             ],
         )
         qs2 = add_questions(
             "test_cat",
+            "pdf",
             [
                 {"text": "Q2?", "target_field": "f2", "retrieval_priority": 1},
             ],
@@ -153,13 +157,14 @@ class TestQuestionStore:
 
         add_questions(
             "test_cat",
+            "pdf",
             [
                 {"text": "Who?", "target_field": "name", "retrieval_priority": 1},
             ],
         )
-        questions = get_questions("test_cat")
+        questions = get_questions("test_cat", "pdf")
         assert questions == ["Who?"]
 
     def test_get_questions_empty(self, tmp_category_dir):
-        questions = get_questions("nonexistent")
+        questions = get_questions("nonexistent", "pdf")
         assert questions == []

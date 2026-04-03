@@ -1,4 +1,6 @@
 from datetime import datetime, timezone
+import base64
+import io
 
 from src.orchestration.state import PipelineState
 from src.config.loader import load_category_config
@@ -10,9 +12,19 @@ from src.schemas.document import InputType
 from src.retrieval.router import RetrievalRoute, route
 
 
+def _encode_pil_image(image) -> str:
+    import PIL.Image
+
+    buf = io.BytesIO()
+    img = image if isinstance(image, PIL.Image.Image) else PIL.Image.open(image)
+    img.save(buf, format="PNG")
+    return base64.b64encode(buf.getvalue()).decode("utf-8")
+
+
 def check_context(state: PipelineState) -> PipelineState:
     category = state.get("category_name", "")
-    if not has_context(category):
+    modality = state.get("input_modality", "")
+    if not has_context(category, modality):
         return {
             **state,
             "error": f"No Scout context for category '{category}'. Run bootstrapping first.",
@@ -34,7 +46,8 @@ def load_questions(state: PipelineState) -> PipelineState:
     from src.agents.scout.question_store import get_questions
 
     category = state.get("category_name", "")
-    questions = get_questions(category)
+    modality = state.get("input_modality", "")
+    questions = get_questions(category, modality)
     if not questions:
         return {**state, "error": f"No questions found for category '{category}'."}
     return {**state, "questions": questions}
@@ -64,6 +77,12 @@ def retrieve(state: PipelineState) -> PipelineState:
             )
             context_parts = [f"Page {p['page_number']}" for p in pages]
             context = f"Retrieved pages (visual):\n" + "\n".join(context_parts)
+            images = [p["image"] for p in pages if "image" in p]
+            return {
+                **state,
+                "retrieved_context": context,
+                "retrieved_images": images if images else None,
+            }
         else:
             from src.retrieval.colbert.retriever import get_retrieved_chunks
 
@@ -73,8 +92,8 @@ def retrieve(state: PipelineState) -> PipelineState:
             )
             context_parts = [f"[Chunk {c['rank']}] {c['content']}" for c in chunks]
             context = "Retrieved text chunks:\n" + "\n".join(context_parts)
+            return {**state, "retrieved_context": context, "retrieved_images": None}
 
-        return {**state, "retrieved_context": context}
     except Exception as e:
         return {**state, "error": f"Retrieval failed: {e}"}
 
@@ -87,15 +106,23 @@ def extract(state: PipelineState) -> PipelineState:
     from src.agents.extractor.few_shot import select_examples
 
     category = state.get("category_name", "")
-    lm = get_lm("extractor")
+    modality = state.get("input_modality", "")
+    retrieval_route = state.get("retrieval_route")
+    images = state.get("retrieved_images")
+
+    input_type = (
+        "vision" if images and retrieval_route == RetrievalRoute.COLPALI else "text"
+    )
+    lm = get_lm("extractor", input_type=input_type)
     agent = ExtractorAgent(lm=lm)
 
-    examples = select_examples(category)
+    examples = select_examples(category, modality)
     extraction = agent.run(
         context=state.get("retrieved_context", ""),
         schema=state.get("schema", {}),
         instructions=state.get("instructions", ""),
         few_shot_examples=examples,
+        images=images,
     )
 
     trace = TraceEntry(
@@ -103,6 +130,7 @@ def extract(state: PipelineState) -> PipelineState:
         agent_role="extractor",
         phase="extraction",
         category=category,
+        input_modality=modality,
         prompt=state.get("retrieved_context", ""),
         response=str(extraction),
         model="extractor",
@@ -122,7 +150,8 @@ def judge(state: PipelineState) -> PipelineState:
         return state
 
     category = state.get("category_name", "")
-    gold_standards = list_gold_standards(category)
+    modality = state.get("input_modality", "")
+    gold_standards = list_gold_standards(category, modality)
     if not gold_standards:
         return state
 
@@ -144,6 +173,7 @@ def judge(state: PipelineState) -> PipelineState:
         agent_role="judge",
         phase="evaluation",
         category=category,
+        input_modality=modality,
         prompt=str(state.get("extraction", {})),
         response=evaluation.model_dump_json(),
         model="judge",

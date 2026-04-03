@@ -121,20 +121,34 @@ Meta-learning-for-document-extraction/
 ├── data/                             # Runtime data root (gitignored except structure)
 │   ├── categories/                   # Per-category runtime data
 │   │   └── <category_name>/
-│   │       ├── gold_standards/       # Approved Gold Standard JSON + source docs
-│   │       │   ├── gs_001.json
-│   │       │   └── sources/
-│   │       │       └── lease_001.pdf
-│   │       ├── questions/            # Scout-inferred questions
-│   │       │   └── questions.json
-│   │       ├── indexes/              # ColPali / ColBERT index artifacts
-│   │       │   ├── colpali/
-│   │       │   └── colbert/
-│   │       └── prompts/              # GEPA prompt population & current winner
-│   │           ├── current.json
-│   │           └── population/
-│   │               ├── candidate_001.json
-│   │               └── candidate_002.json
+│   │       ├── pdf/                  # PDF modality context (isolated)
+│   │       │   ├── gold_standards/   # Approved Gold Standard JSON + source docs
+│   │       │   │   ├── gs_001.json
+│   │       │   │   └── sources/
+│   │       │   │       └── lease_001.pdf
+│   │       │   ├── questions/        # Scout-inferred questions (PDF-specific)
+│   │       │   │   └── questions.json
+│   │       │   ├── indexes/          # ColPali index artifacts
+│   │       │   │   └── colpali/
+│   │       │   └── prompts/          # GEPA prompt population (PDF-specific)
+│   │       │       ├── current.json
+│   │       │       └── population/
+│   │       │           ├── candidate_001.json
+│   │       │           └── candidate_002.json
+│   │       ├── text/                 # Text modality context (isolated)
+│   │       │   ├── gold_standards/   # Approved Gold Standard JSON + source docs
+│   │       │   │   ├── gs_001.json
+│   │       │   │   └── sources/
+│   │       │   │       └── lease_001.txt
+│   │       │   ├── questions/        # Scout-inferred questions (text-specific)
+│   │       │   │   └── questions.json
+│   │       │   ├── indexes/          # ColBERT index artifacts
+│   │       │   │   └── colbert/
+│   │       │   └── prompts/          # GEPA prompt population (text-specific)
+│   │       │       ├── current.json
+│   │       │       └── population/
+│   │       │           ├── candidate_001.json
+│   │       │           └── candidate_002.json
 │   │
 │   └── traces/                       # Structured trace logs (SLM training corpus)
 │       └── <category_name>/
@@ -181,7 +195,7 @@ Meta-learning-for-document-extraction/
 |:---|:---|
 | `settings.py` | Loads environment variables via `os.environ` / `python-dotenv`. Defines global defaults: data directory paths, logging levels. |
 | `loader.py` | Reads JSON config files from `configs/`. Validates them against Pydantic models. Returns typed config objects for categories and model configuration. |
-| `lm.py` | Initializes DSPy language models using `dspy.LM()`. Reads `configs/model_config.json` and sets up per-agent LM instances. All LLM access flows through this module. |
+| `lm.py` | Initializes DSPy language models using `dspy.LM()`. Reads `configs/model_config.json` and sets up per-agent LM instances. Supports dual-model roles (scout, extractor) that select between `text_model` and `vision_model` based on input type. All LLM access flows through this module. |
 
 **Key design rule:** No module outside `src/config/` should read environment variables or raw JSON configs directly. All configuration flows through `settings.py` and `loader.py`.
 
@@ -203,32 +217,33 @@ This means the entire provider layer is a thin config file + a few lines of DSPy
 # src/config/lm.py — All LLM management
 
 import dspy
-import json
-from pathlib import Path
+from src.config.loader import load_model_config, ModelConfig
 
-def load_model_config(config_path: Path = Path("configs/model_config.json")) -> dict:
-    """Load per-agent model configuration."""
-    with open(config_path) as f:
-        return json.load(f)
-
-def get_lm(agent_role: str) -> dspy.LM:
+def get_lm(agent_role: str, input_type: str = "text", config: ModelConfig | None = None) -> dspy.LM:
     """
     Return a configured DSPy LM for the given agent role.
     Uses LiteLLM model strings — any supported provider works.
+    For roles with text_model/vision_model, selects based on input_type.
     """
-    config = load_model_config()
-    role_config = config["agent_roles"][agent_role]
+    config = config or load_model_config()
+    role_config = config.agent_roles[agent_role]
+    model_name = role_config.get_model(input_type)
 
     return dspy.LM(
-        model=role_config["model"],           # LiteLLM model string
-        temperature=role_config.get("temperature", 0.0),
-        max_tokens=role_config.get("max_tokens", 4096),
+        model=model_name,
+        temperature=role_config.temperature,
+        max_tokens=role_config.max_tokens,
     )
 
-# Usage in any agent:
-# lm = get_lm("scout")
-# dspy.configure(lm=lm)
+# Usage:
+# lm = get_lm("scout", input_type="vision")   # PDF input → vision model
+# lm = get_lm("scout", input_type="text")      # text input → text model
+# lm = get_lm("judge")                         # judge only has one model
 ```
+
+**Dual-model roles (scout, extractor):** These roles process both PDF documents (as images) and text documents. Each can be configured with separate `text_model` and `vision_model` entries. The system selects the correct model based on the input type at runtime — PDFs use the vision model, text files use the text model.
+
+**Single-model roles (judge, reflector):** These roles only operate on text (extraction results, prompts, evaluations). They use a single `model` entry.
 
 **LiteLLM model string format:** The `model` field uses LiteLLM's unified naming convention:
 
@@ -236,6 +251,7 @@ def get_lm(agent_role: str) -> dspy.LM:
 |:---|:---|
 | OpenAI | `openai/gpt-4o`, `openai/gpt-4o-mini` |
 | Anthropic | `anthropic/claude-sonnet-4-20250514` |
+| Z.AI (Zhipu) | `zai/glm-4.7-flash`, `zai/glm-4.6v-flash` |
 | Google | `gemini/gemini-2.0-flash` |
 | Ollama (local) | `ollama/llama3.1:70b` |
 | Azure OpenAI | `azure/my-deployment-name` |
@@ -412,6 +428,7 @@ LiteLLM (via DSPy) reads API keys from standard environment variables automatica
 |:---|:---|:---|
 | `OPENAI_API_KEY` | If using OpenAI | Picked up automatically by LiteLLM |
 | `ANTHROPIC_API_KEY` | If using Anthropic | Picked up automatically by LiteLLM |
+| `ZAI_API_KEY` | If using Z.AI (Zhipu) | Picked up automatically by LiteLLM |
 | `GEMINI_API_KEY` | If using Google | Picked up automatically by LiteLLM |
 | `AZURE_API_KEY` | If using Azure | Picked up automatically by LiteLLM |
 | `OLLAMA_API_BASE` | If using Ollama | Local model server URL (default: `http://localhost:11434`) |
@@ -422,28 +439,34 @@ LiteLLM (via DSPy) reads API keys from standard environment variables automatica
 
 ### 3.2 `configs/model_config.json`
 
-Maps each agent role to a LiteLLM model string. Swapping providers is a one-line change — just update the model string.
+Maps each agent role to one or more LiteLLM model strings. The **scout** and **extractor** roles support dual models — a `text_model` for text inputs and a `vision_model` for PDF/image inputs. The system selects the correct model based on input type at runtime. The **judge** and **reflector** roles use a single `model` since they only process text (extraction results, prompts, evaluations).
+
+Top-level `text_model` and `vision_model` provide defaults for the entire config and are overridden by per-role entries when present.
 
 ```json
 {
+  "text_model": "zai/glm-4.7-flash",
+  "vision_model": "zai/glm-4.6v-flash",
   "agent_roles": {
     "scout": {
-      "model": "openai/gpt-4o",
+      "text_model": "zai/glm-4.7-flash",
+      "vision_model": "zai/glm-4.6v-flash",
       "temperature": 0.2,
       "max_tokens": 8192
     },
     "extractor": {
-      "model": "openai/gpt-4o-mini",
+      "text_model": "zai/glm-4.7-flash",
+      "vision_model": "zai/glm-4.6v-flash",
       "temperature": 0.0,
       "max_tokens": 4096
     },
     "judge": {
-      "model": "anthropic/claude-sonnet-4-20250514",
+      "model": "zai/glm-4.7-flash",
       "temperature": 0.0,
       "max_tokens": 4096
     },
     "reflector": {
-      "model": "openai/gpt-4o",
+      "model": "zai/glm-4.7-flash",
       "temperature": 0.3,
       "max_tokens": 8192
     }
@@ -451,14 +474,22 @@ Maps each agent role to a LiteLLM model string. Swapping providers is a one-line
 }
 ```
 
-**To switch to a local model**, just change the model string:
+**Model resolution order** (per role, when `input_type="vision"`):
+1. `role_config.vision_model` — if set, use this
+2. `role_config.text_model` — if no vision model, fall back to text model
+3. `role_config.model` — if no dual models, use the single model
+4. Raise `ValueError` — if nothing is configured
+
+The same order applies for `input_type="text"` (checking `text_model` first).
+
+**To switch providers**, just change the model string. No code changes needed:
 ```json
-"extractor": {
-  "model": "ollama/llama3.1:70b",
-  "temperature": 0.0
+"scout": {
+  "text_model": "openai/gpt-4o",
+  "vision_model": "openai/gpt-4o",
+  "temperature": 0.2
 }
 ```
-No code changes. No new provider implementations. LiteLLM handles it.
 
 ### 3.3 `configs/categories/<name>.json`
 
@@ -533,6 +564,7 @@ class GoldStandard(BaseModel):
     """An approved, ground-truth extraction for a specific document."""
     id: str                           # Unique identifier (e.g., "gs_001")
     category: str
+    input_modality: str               # "pdf" or "text" — immutable for this context
     source_document_uri: Path         # Path to the original document
     extraction: dict                  # The approved JSON extraction
     approved_by: str                  # "human" | "scout"
@@ -568,6 +600,7 @@ class TraceEntry(BaseModel):
     agent_role: str                   # "scout" | "extractor" | "judge" | "reflector"
     phase: str                        # "bootstrap" | "extraction" | "evaluation" | "optimization"
     category: str
+    input_modality: str               # "pdf" or "text"
     prompt: str                       # Full prompt sent to LLM
     response: str                     # Full LLM response
     model: str                        # Model identifier
@@ -742,7 +775,7 @@ Trigger: Nightly batch / on-demand
 ### 6.1 Gold Standard File Format
 
 ```
-data/categories/commercial_lease/gold_standards/
+data/categories/commercial_lease/pdf/gold_standards/
 ├── gs_001.json          ← Gold Standard metadata + extraction
 ├── gs_002.json
 └── sources/
@@ -780,6 +813,7 @@ Each line is a standalone JSON object:
   "agent_role": "extractor",
   "phase": "extraction",
   "category": "commercial_lease_agreement",
+  "input_modality": "pdf",
   "prompt": "Extract the following...",
   "response": "{\"landlord_name\": \"Acme Properties LLC\", ...}",
   "model": "gpt-4o-mini",
@@ -795,6 +829,7 @@ Each line is a standalone JSON object:
 ```json
 {
   "category": "commercial_lease_agreement",
+  "input_modality": "pdf",
   "version": 2,
   "updated_at": "2026-04-03T10:00:00Z",
   "questions": [

@@ -18,8 +18,8 @@ class PromptCandidate(BaseModel):
     mutation_log: str = ""
 
 
-def _next_candidate_id(category: str) -> str:
-    pop_dir = paths.population_dir(category)
+def _next_candidate_id(category: str, modality: str) -> str:
+    pop_dir = paths.population_dir(category, modality)
     if not pop_dir.exists():
         return "candidate_001"
     existing = list(pop_dir.glob("candidate_*.json"))
@@ -27,22 +27,24 @@ def _next_candidate_id(category: str) -> str:
     return f"candidate_{idx:03d}"
 
 
-def save_candidate(category: str, candidate: PromptCandidate):
-    pop_dir = paths.population_dir(category)
+def save_candidate(category: str, modality: str, candidate: PromptCandidate):
+    pop_dir = paths.population_dir(category, modality)
     pop_dir.mkdir(parents=True, exist_ok=True)
     path = pop_dir / f"{candidate.candidate_id}.json"
     path.write_text(candidate.model_dump_json(indent=2))
 
 
-def load_candidate(category: str, candidate_id: str) -> PromptCandidate | None:
-    path = paths.population_dir(category) / f"{candidate_id}.json"
+def load_candidate(
+    category: str, modality: str, candidate_id: str
+) -> PromptCandidate | None:
+    path = paths.population_dir(category, modality) / f"{candidate_id}.json"
     if not path.exists():
         return None
     return PromptCandidate(**json.loads(path.read_text()))
 
 
-def list_candidates(category: str) -> list[PromptCandidate]:
-    pop_dir = paths.population_dir(category)
+def list_candidates(category: str, modality: str) -> list[PromptCandidate]:
+    pop_dir = paths.population_dir(category, modality)
     if not pop_dir.exists():
         return []
     candidates = []
@@ -51,14 +53,14 @@ def list_candidates(category: str) -> list[PromptCandidate]:
     return candidates
 
 
-def save_current_prompt(category: str, candidate: PromptCandidate):
-    path = paths.current_prompt_path(category)
+def save_current_prompt(category: str, modality: str, candidate: PromptCandidate):
+    path = paths.current_prompt_path(category, modality)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(candidate.model_dump_json(indent=2))
 
 
-def load_current_prompt(category: str) -> PromptCandidate | None:
-    path = paths.current_prompt_path(category)
+def load_current_prompt(category: str, modality: str) -> PromptCandidate | None:
+    path = paths.current_prompt_path(category, modality)
     if not path.exists():
         return None
     return PromptCandidate(**json.loads(path.read_text()))

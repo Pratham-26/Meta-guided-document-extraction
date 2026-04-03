@@ -1,22 +1,26 @@
 {
+  "text_model": "zai/glm-4.7-flash",
+  "vision_model": "zai/glm-4.6v-flash",
   "agent_roles": {
     "scout": {
-      "model": "openai/gpt-4o",
+      "text_model": "zai/glm-4.7-flash",
+      "vision_model": "zai/glm-4.6v-flash",
       "temperature": 0.2,
       "max_tokens": 8192
     },
     "extractor": {
-      "model": "openai/gpt-4o-mini",
+      "text_model": "zai/glm-4.7-flash",
+      "vision_model": "zai/glm-4.6v-flash",
       "temperature": 0.0,
       "max_tokens": 4096
     },
     "judge": {
-      "model": "anthropic/claude-sonnet-4-20250514",
+      "model": "zai/glm-4.7-flash",
       "temperature": 0.0,
       "max_tokens": 4096
     },
     "reflector": {
-      "model": "openai/gpt-4o",
+      "model": "zai/glm-4.7-flash",
       "temperature": 0.3,
       "max_tokens": 8192
     }

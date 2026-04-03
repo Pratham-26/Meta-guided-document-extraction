@@ -2,7 +2,7 @@
 
 ## Goal
 
-Build an **Autonomous, Self-Optimizing Document Extraction System** from scratch following architecture docs in the `docs/` directory. The system uses ColPali/ColBERT retrieval, DSPy prompt optimization (GEPA), and LangGraph orchestration. All tests must mock LLM calls.
+Iteratively build the **best self-improving document extraction system using agents**. The system uses ColPali/ColBERT retrieval, DSPy prompt optimization (GEPA), and LangGraph orchestration to autonomously extract data from documents and continuously improve its own performance. We build in layers, validate with tests at every step, and refine the architecture as we learn what works. All tests must mock LLM calls.
 
 ## Instructions
 
@@ -28,6 +28,7 @@ Build an **Autonomous, Self-Optimizing Document Extraction System** from scratch
 9. **`settings.configs_dir` is static** `Path("configs")` — not derived from `data_dir`. Tests that need category configs must also `patch.object(settings, "configs_dir", ...)` separately.
 10. **`get_lm` import patching**: When patching `get_lm`, must patch at the usage site (e.g., `src.orchestration.nodes.get_lm`) since `nodes.py` imports it at module level with `from src.config.lm import get_lm`.
 11. **Lazy-imported module mocking**: When source code uses `from X import Y` inside a function (lazy import), patching `module.Y` at the module level fails with `AttributeError`. **Fix**: use `patch.dict("sys.modules", {"X": mock_X})` to inject the mock before the lazy import runs. Also, combined imports like `import torch, pickle` require mocking both modules in `sys.modules`.
+12. **Vision/text model duality for scout and extractor**: The scout and extractor agents must handle both PDF inputs (processed as images via ColPali) and text inputs (processed via ColBERT). Each dual-model role is configured with `text_model` and `vision_model` in `model_config.json`. `AgentRoleConfig.get_model(input_type)` resolves the correct model string at runtime. Judge and reflector use a single `model` since they only process text.
 
 ## Accomplished
 
@@ -80,6 +81,8 @@ Build an **Autonomous, Self-Optimizing Document Extraction System** from scratch
 ### Still To Do
 
 - End-to-end integration test with a real (small) document
+- Iteration 2: evaluate extraction quality against real documents, identify weaknesses
+- Iteration N: refine retrieval, prompts, and optimization based on measured performance
 
 ## Relevant Files and Directories
 

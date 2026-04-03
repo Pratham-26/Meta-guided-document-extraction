@@ -22,8 +22,6 @@ def main():
     args = parser.parse_args()
 
     config = load_category_config(args.category)
-    lm = get_lm("scout")
-    scout = ScoutAgent(lm=lm)
 
     documents = config.sample_documents[:]
     if args.doc:
@@ -36,13 +34,20 @@ def main():
 
         saved = save_source_document(args.category, path)
 
-        if path.suffix.lower() == ".pdf":
+        is_pdf = path.suffix.lower() == ".pdf"
+        modality = "pdf" if is_pdf else "text"
+        input_type = "vision" if is_pdf else "text"
+
+        if is_pdf:
             content = extract_text_from_pdf(path)
         else:
             content = path.read_text(encoding="utf-8")
 
         content = clean_text(content)
         content = truncate_to_tokens(content)
+
+        lm = get_lm("scout", input_type=input_type)
+        scout = ScoutAgent(lm=lm)
 
         result = scout.explore_document(
             content=content,
@@ -54,6 +59,7 @@ def main():
         gs_id = f"gs_{i + 1:03d}"
         build_and_save(
             category=args.category,
+            modality=modality,
             gs_id=gs_id,
             source_document_uri=saved,
             extraction=result["extraction"],
@@ -68,12 +74,12 @@ def main():
     )
 
     if questions:
-        qs = add_questions(args.category, questions)
+        qs = add_questions(args.category, modality, questions)
         print(f"Inferred {len(qs.questions)} questions:")
         for q in qs.questions:
             print(f"  [{q.id}] {q.text} -> {q.target_field}")
 
-    gs_count = len(list_gold_standards(args.category))
+    gs_count = len(list_gold_standards(args.category, modality))
     print(f"\nScout complete. {gs_count} Gold Standards, {len(questions)} questions.")
 
 

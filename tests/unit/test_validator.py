@@ -12,6 +12,7 @@ class TestValidateCandidate:
 
             result = validate_candidate(
                 category="empty_cat",
+                modality="pdf",
                 instructions="Extract data.",
                 schema={},
             )
@@ -68,6 +69,7 @@ class TestValidateCandidate:
 
                         result = validate_candidate(
                             category="test_category",
+                            modality="pdf",
                             instructions="Extract name and amount.",
                             schema={"type": "object"},
                             sample_size=2,
@@ -117,6 +119,7 @@ class TestValidateCandidate:
 
                         result = validate_candidate(
                             category="test_category",
+                            modality="pdf",
                             instructions="Extract.",
                             schema={},
                             sample_size=3,
@@ -159,6 +162,7 @@ class TestValidateCandidate:
 
                         result = validate_candidate(
                             category="test_category",
+                            modality="pdf",
                             instructions="Extract.",
                             schema={},
                         )

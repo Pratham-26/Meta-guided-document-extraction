@@ -7,11 +7,12 @@ from src.config.lm import get_lm
 
 def validate_candidate(
     category: str,
+    modality: str,
     instructions: str,
     schema: dict,
     sample_size: int = 10,
 ) -> dict:
-    gold_standards = list_gold_standards(category)
+    gold_standards = list_gold_standards(category, modality)
     if not gold_standards:
         return {"error": "No Gold Standards available for validation."}
 

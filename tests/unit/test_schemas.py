@@ -34,6 +34,7 @@ class TestGoldStandard:
         gs = GoldStandard(
             id="gs_001",
             category="test",
+            input_modality="pdf",
             source_document_uri=Path("test.pdf"),
             extraction={"name": "Acme"},
             approved_by="scout",
@@ -46,6 +47,7 @@ class TestGoldStandard:
         gs = GoldStandard(
             id="gs_002",
             category="test",
+            input_modality="pdf",
             source_document_uri=Path("test.pdf"),
             extraction={"name": "Acme"},
             approved_by="human",

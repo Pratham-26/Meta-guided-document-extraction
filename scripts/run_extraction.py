@@ -32,6 +32,7 @@ def main():
     state: PipelineState = {
         "document": document,
         "category_name": args.category,
+        "input_modality": "pdf" if input_type == InputType.PDF else "text",
     }
 
     app = compile_graph()

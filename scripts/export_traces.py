@@ -9,6 +9,9 @@ from src.config.settings import settings
 def main():
     parser = argparse.ArgumentParser(description="Export trace logs for SLM training")
     parser.add_argument("--category", required=True, help="Category name")
+    parser.add_argument(
+        "--modality", required=True, choices=["pdf", "text"], help="Input modality"
+    )
     parser.add_argument("--output", required=True, help="Output directory")
     parser.add_argument(
         "--phase",
@@ -27,7 +30,7 @@ def main():
     total = 0
 
     for phase in phases:
-        traces = read_traces(args.category, phase, args.date)
+        traces = read_traces(args.category, args.modality, phase, args.date)
         if not traces:
             print(f"No traces found for phase '{phase}'.")
             continue

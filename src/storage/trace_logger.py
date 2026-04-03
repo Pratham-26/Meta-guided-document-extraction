@@ -14,16 +14,16 @@ _PHASE_TO_DIR = {
 }
 
 
-def _trace_file(category: str, phase: str) -> Path:
+def _trace_file(category: str, modality: str, phase: str) -> Path:
     phase_dir_fn = _PHASE_TO_DIR.get(phase, paths.extraction_traces_dir)
-    phase_dir = phase_dir_fn(category)
+    phase_dir = phase_dir_fn(category, modality)
     phase_dir.mkdir(parents=True, exist_ok=True)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     return phase_dir / f"trace_{today}.jsonl"
 
 
 def log_trace(entry: TraceEntry):
-    path = _trace_file(entry.category, entry.phase)
+    path = _trace_file(entry.category, entry.input_modality, entry.phase)
     with open(path, "a") as f:
         f.write(entry.model_dump_json() + "\n")
 
@@ -33,7 +33,7 @@ def log_traces(entries: list[TraceEntry]):
         return
     grouped: dict[Path, list[TraceEntry]] = {}
     for e in entries:
-        p = _trace_file(e.category, e.phase)
+        p = _trace_file(e.category, e.input_modality, e.phase)
         grouped.setdefault(p, []).append(e)
     for path, batch in grouped.items():
         with open(path, "a") as f:
@@ -41,17 +41,19 @@ def log_traces(entries: list[TraceEntry]):
                 f.write(e.model_dump_json() + "\n")
 
 
-def read_traces(category: str, phase: str, date: str | None = None) -> list[TraceEntry]:
+def read_traces(
+    category: str, modality: str, phase: str, date: str | None = None
+) -> list[TraceEntry]:
     if date:
         phase_dir_fn = _PHASE_TO_DIR.get(phase, paths.extraction_traces_dir)
-        path = phase_dir_fn(category) / f"trace_{date}.jsonl"
+        path = phase_dir_fn(category, modality) / f"trace_{date}.jsonl"
         if not path.exists():
             return []
         with open(path) as f:
             return [TraceEntry(**json.loads(line)) for line in f if line.strip()]
 
     phase_dir_fn = _PHASE_TO_DIR.get(phase, paths.extraction_traces_dir)
-    phase_dir = phase_dir_fn(category)
+    phase_dir = phase_dir_fn(category, modality)
     if not phase_dir.exists():
         return []
     results = []

@@ -1,0 +1,64 @@
+graph TD
+    classDef input fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
+    classDef storage fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
+    classDef agent fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px;
+    classDef routing fill:#f5f5f5,stroke:#9e9e9e,stroke-width:2px;
+    classDef decision fill:#fff3e0,stroke:#f57c00,stroke-width:2px;
+
+    Start([Incoming Document Payload]) --> DetectMod{Detect Input<br/>Modality}:::routing
+    DetectMod -- "PDF" --> PDFMod[(category, pdf)]
+    DetectMod -- "Text" --> TextMod[(category, text)]
+
+    PDFMod --> Gate{Context Gate<br/>category + modality}:::decision
+    TextMod --> Gate
+
+    %% ==========================================
+    %% Phase 1: Bootstrapping (Scout)
+    %% ==========================================
+    subgraph Phase 1: Bootstrapping & Knowledge Base Construction
+        Gate -- "No Context for<br/>category + modality" --> SetupReq[Require 2 Sample Docs<br/>of matching modality]:::input
+        SetupReq --> Scout[Scout Agent<br/>DSPy RLM]:::agent
+
+        Scout -- "If PDF" --> ScoutVision[Process as Image]
+        Scout -- "If Text" --> ScoutText[Process as Text]
+
+        ScoutVision --> InfQ[Infer Modality-Specific<br/>Retrieval Questions]
+        ScoutText --> InfQ
+
+        InfQ --> GS[Build Gold Standards<br/>scoped to modality]
+        GS --> HitL[Human-in-the-Loop Validation]
+        HitL -- "Approves" --> FSStore[(File System Store<br/>categories/name/<modality>/)]:::storage
+    end
+
+    %% ==========================================
+    %% Phase 2: Production Execution
+    %% ==========================================
+    subgraph Phase 2: Production Extraction & Routing
+        Gate -- "Context Exists" --> RouteCtx{Route by<br/>Modality}:::routing
+
+        RouteCtx -- "PDF" --> ColPali[ColPali<br/>Visual Page Embeddings]
+        RouteCtx -- "Text" --> ColBERT[ColBERT<br/>Token-level Embeddings]
+
+        FSStore -. "Modality-Specific<br/>Retrieval Queries" .-> ColPali
+        FSStore -. "Modality-Specific<br/>Retrieval Queries" .-> ColBERT
+
+        ColPali -- "Relevant Pages Only" --> Extractor[Extractor Agent<br/>DSPy + LiteLLM]:::agent
+        ColBERT -- "Relevant Chunks Only" --> Extractor
+    end
+
+    %% ==========================================
+    %% Phase 3: Continuous Learning Loop
+    %% ==========================================
+    subgraph Phase 3: GEPA-Driven Self-Healing Loop
+        Extractor -- "Draft Extraction JSON" --> Judge[Judge Agent<br/>compares within<br/>same modality]:::agent
+        FSStore -. "Modality-Specific<br/>Gold Standards" .-> Judge
+
+        Judge -- "High Quality" --> Final([Final Approved Output])
+        Judge -- "Low/Medium Quality<br>+ Trace & Feedback" --> GEPA[GEPA Optimizer<br/>per modality]:::agent
+
+        GEPA -- "1. Diagnose with Reflector<br>2. Mutate Prompts<br>3. Pareto Selection<br>4. Re-Validation" --> OptPrompt[Optimized Prompt<br/>+ Few-Shot<br/>scoped to modality]
+        OptPrompt -. "Replaces & Updates" .-> FSStore
+    end
+
+    class Start input;
+    class Final input;

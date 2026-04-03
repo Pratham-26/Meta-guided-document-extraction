@@ -63,6 +63,7 @@ def sample_gold_standard():
     return GoldStandard(
         id="gs_001",
         category="test_category",
+        input_modality="pdf",
         source_document_uri=Path("sources/test.pdf"),
         extraction={"name": "Acme Corp", "amount": 5000.00},
         approved_by="scout",
@@ -77,6 +78,7 @@ def sample_trace_entry():
         agent_role="extractor",
         phase="extraction",
         category="test_category",
+        input_modality="pdf",
         prompt="Extract data from...",
         response='{"name": "Acme Corp", "amount": 5000}',
         model="gpt-4o-mini",
@@ -232,15 +234,17 @@ def bootstrapped_category(tmp_category_dir):
         gs = GoldStandard(
             id=f"gs_{i + 1:03d}",
             category="test_category",
+            input_modality="pdf",
             source_document_uri=Path(f"sources/doc_{i + 1}.pdf"),
             extraction={"name": f"Entity {i + 1}", "amount": 1000.0 * (i + 1)},
             approved_by="scout",
             created_at=datetime.now(timezone.utc),
         )
-        save_gold_standard("test_category", gs)
+        save_gold_standard("test_category", "pdf", gs)
 
     qs = QuestionSet(
         category="test_category",
+        input_modality="pdf",
         version=1,
         updated_at=datetime.now(timezone.utc).isoformat(),
         questions=[
@@ -255,6 +259,6 @@ def bootstrapped_category(tmp_category_dir):
             ),
         ],
     )
-    save_question_set("test_category", qs)
+    save_question_set("test_category", "pdf", qs)
 
     return tmp_category_dir

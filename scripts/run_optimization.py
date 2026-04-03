@@ -7,6 +7,9 @@ def main():
     parser = argparse.ArgumentParser(description="Run GEPA optimization cycle")
     parser.add_argument("--category", required=True, help="Category name")
     parser.add_argument(
+        "--modality", required=True, choices=["pdf", "text"], help="Input modality"
+    )
+    parser.add_argument(
         "--generations", type=int, help="Number of generations (overrides config)"
     )
     parser.add_argument(
@@ -17,6 +20,7 @@ def main():
     print(f"Starting GEPA optimization for '{args.category}'...")
     result = run_gepa_cycle(
         category=args.category,
+        modality=args.modality,
         generations=args.generations,
         population_size=args.population,
     )

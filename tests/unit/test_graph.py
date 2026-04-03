@@ -82,6 +82,7 @@ class TestIntegration:
             agent_role="extractor",
             phase="extraction",
             category="test",
+            input_modality="pdf",
             prompt="ctx",
             response="extracted",
             model="m",
@@ -93,6 +94,7 @@ class TestIntegration:
             agent_role="judge",
             phase="evaluation",
             category="test",
+            input_modality="pdf",
             prompt="extraction",
             response="eval",
             model="m",
@@ -152,6 +154,7 @@ class TestIntegration:
             result = compiled.invoke(
                 {
                     "category_name": "test",
+                    "input_modality": "pdf",
                     "document": sample_document_input,
                 }
             )
@@ -193,6 +196,7 @@ class TestIntegration:
             result = compiled.invoke(
                 {
                     "category_name": "test",
+                    "input_modality": "pdf",
                     "document": sample_document_input,
                 }
             )
