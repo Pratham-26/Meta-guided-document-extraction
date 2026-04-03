@@ -1,0 +1,24 @@
+{
+  "agent_roles": {
+    "scout": {
+      "model": "openai/gpt-4o",
+      "temperature": 0.2,
+      "max_tokens": 8192
+    },
+    "extractor": {
+      "model": "openai/gpt-4o-mini",
+      "temperature": 0.0,
+      "max_tokens": 4096
+    },
+    "judge": {
+      "model": "anthropic/claude-sonnet-4-20250514",
+      "temperature": 0.0,
+      "max_tokens": 4096
+    },
+    "reflector": {
+      "model": "openai/gpt-4o",
+      "temperature": 0.3,
+      "max_tokens": 8192
+    }
+  }
+}

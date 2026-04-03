@@ -1,0 +1,39 @@
+from datetime import datetime, timezone
+
+from src.schemas.category import QuestionEntry, QuestionSet
+from src.storage.fs_store import load_question_set, save_question_set
+
+
+def get_questions(category: str) -> list[str]:
+    qs = load_question_set(category)
+    if not qs:
+        return []
+    return [q.text for q in qs.questions]
+
+
+def add_questions(category: str, new_questions: list[dict]) -> QuestionSet:
+    existing = load_question_set(category)
+    existing_ids = {q.id for q in existing.questions} if existing else set()
+    next_idx = len(existing.questions) if existing else 0
+
+    entries = list(existing.questions) if existing else []
+    for i, q in enumerate(new_questions):
+        qid = f"q_{next_idx + i + 1:03d}"
+        if qid not in existing_ids:
+            entries.append(
+                QuestionEntry(
+                    id=qid,
+                    text=q["text"],
+                    target_field=q.get("target_field", "unknown"),
+                    retrieval_priority=q.get("retrieval_priority", 1),
+                )
+            )
+
+    qs = QuestionSet(
+        category=category,
+        version=(existing.version + 1) if existing else 1,
+        updated_at=datetime.now(timezone.utc).isoformat(),
+        questions=entries,
+    )
+    save_question_set(category, qs)
+    return qs
