@@ -34,8 +34,8 @@ DSPy replaces manual prompt engineering with prompt *programming*. It treats the
     5. **Component-level granularity** — because DSPy programs are modular, GEPA can optimize individual predictors (e.g., the extraction prompt) independently without disrupting other pipeline components.
 * **Sample efficiency:** GEPA is effective with small training sets (30–100 Gold Standard examples), making it practical even during early system adoption when few approved extractions exist.
 
-### E. The LLM Provider Layer (Agnostic)
-All agents communicate with language models through a unified provider interface. The system supports any LLM backend — cloud-hosted APIs (OpenAI, Anthropic, Google, etc.) or locally-served models — configured via environment variables or JSON config. This allows operators to swap providers, adjust model sizes, or mix models per agent role (e.g., a smaller model for the Judge, a larger one for the Scout) without touching pipeline code.
+### E. The LLM Provider Layer (DSPy + LiteLLM)
+All agents communicate with language models through **DSPy's built-in LiteLLM integration**. Because DSPy uses LiteLLM internally as its LLM router, the system inherits support for 100+ providers (OpenAI, Anthropic, Google, Azure, Ollama, vLLM, HuggingFace, etc.) out of the box — no custom provider abstraction needed. Each agent role is mapped to a LiteLLM model string in a JSON config file, and API keys are resolved automatically from standard environment variables. This allows operators to swap providers, adjust model sizes, or mix models per agent role (e.g., a smaller model for the Judge, a larger one for the Scout) with a one-line config change and zero code modifications.
 
 ### F. The Persistent Storage Layer (File System & JSON Configs)
 To maintain a historical record for continuous learning, both the original source document and its corresponding **Gold Standard** (the approved, ideal extraction output) must be permanently stored so they can be referenced at any point in time. To prioritize simplicity and rapid iteration, this project will rely primarily on straightforward File System (FS) stores and JSON configuration files. There is no need to overcomplicate the architecture with complex databases at this stage.
@@ -103,7 +103,7 @@ The Gold Standards produced by the Scout Agent are the fuel for GEPA's optimizat
 | Component | Technology / Framework | Purpose |
 | :--- | :--- | :--- |
 | **State Orchestration** | LangGraph | Managing the agentic graph, routing, and Human-in-the-Loop breakpoints. |
-| **LLM Provider** | Agnostic (configurable) | Swappable language model backend; any OpenAI-compatible or local model. |
+| **LLM Provider** | DSPy + LiteLLM | Built-in multi-provider LLM routing; 100+ providers via unified model strings. |
 | **Retrieval & Tools** | LlamaIndex / Custom | Handling document chunking, indexing, and executing tool calls. |
 | **Visual Retrieval** | ColPali | Bypassing OCR for layout-aware, patch-level document understanding. |
 | **Text Retrieval** | ColBERT | Token-level semantic search for narrative documents. |
