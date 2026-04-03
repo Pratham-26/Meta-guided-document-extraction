@@ -266,11 +266,11 @@ All data flowing through the system is strictly typed. Key schemas:
 
 | File | Role |
 |:---|:---|
-| `agent.py` | DSPy RLM implementation. Runs iterative exploration over sample documents using DSPy's sandboxed REPL loop. Infers questions that define what needs to be extracted. For PDF inputs, the first pass processes pages as images to understand visual topography. |
+| `agent.py` | DSPy RLM implementation. Runs iterative exploration over sample documents using DSPy's sandboxed REPL loop. Infers questions that define what needs to be extracted. For PDF inputs, the first pass processes pages as images to understand visual topography. **During bootstrapping, the Scout must process two documents** to cross-reference patterns and distinguish category-level structure from document-specific noise. |
 | `question_store.py` | CRUD for the per-category question set. Questions are stored as JSON in `data/categories/<name>/questions/`. These questions become retrieval queries at extraction time. |
 | `gold_builder.py` | Takes the Scout's exploratory output and structures it into a formal Gold Standard record. Persists to `data/categories/<name>/gold_standards/`. |
 
-**Execution model:** Offline / periodic. Not on the live extraction path. Triggered via `scripts/run_scout.py` or scheduled.
+**Execution model:** During bootstrapping (no existing context), the Scout is **mandatory** and runs on two sample documents. After bootstrapping, it runs offline / periodically to refine and expand the knowledge base. Triggered via `scripts/bootstrap_category.py` or `scripts/run_scout.py`.
 
 #### 2.4.2 Extractor Agent (`agents/extractor/`)
 
@@ -319,7 +319,7 @@ No ML classifier — just file type detection.
 | File | Role |
 |:---|:---|
 | `state.py` | Defines the graph's `TypedDict` state: document input, category config, retrieved context, extraction draft, judge evaluation, optimization status. |
-| `graph.py` | Builds the LangGraph `StateGraph`. Defines nodes and edges. Handles conditional routing (e.g., has Gold Standard → run Judge; no Gold Standard → skip). |
+| `graph.py` | Builds the LangGraph `StateGraph`. Defines nodes and edges. Handles conditional routing (e.g., context gate check, has Gold Standard → run Judge). |
 | `nodes.py` | Individual node functions — each wraps an agent or service call. Keeps graph definition clean. |
 | `hitl.py` | Human-in-the-Loop interrupt handlers. Pauses graph execution, presents draft to user, resumes on approval/correction. |
 
@@ -329,6 +329,10 @@ No ML classifier — just file type detection.
 START
   │
   ▼
+[Context Gate] ── No context ──► HALT (require bootstrap with 2 docs)
+       │
+       │ Context exists
+       ▼
 [Input Router] ── PDF ──► [ColPali Retrieval]
        │                         │
        └── Text ──► [ColBERT Retrieval]
@@ -336,17 +340,14 @@ START
                          ▼
                   [Extraction Agent]
                          │
-                  ┌──────┴──────┐
-                  │ Gold        │ No Gold
-                  │ Standard?   │ Standard
-                  ▼             ▼
-           [Judge Agent]    [HitL: Approval]
-                  │              │
-                  ▼              ▼
-         [Log Trace]     [Promote to Gold]
-                  │
-                  ▼
-               END
+                         ▼
+                  [Judge Agent] ← compare against Gold Standard
+                         │
+                         ▼
+                  [Log Trace]
+                         │
+                         ▼
+                       END
 ```
 
 ---
@@ -479,6 +480,10 @@ Per-document-category configuration. One file per category.
     "required": ["landlord_name", "tenant_name", "monthly_rent"]
   },
   "extraction_instructions": "Extract the names of the signing parties and the financial terms including rent, deposit, and lease duration.",
+  "sample_documents": [
+    "./samples/lease_001.pdf",
+    "./samples/lease_002.pdf"
+  ],
   "retrieval": {
     "default_route": "auto",
     "colpali_top_k": 3,
@@ -491,6 +496,8 @@ Per-document-category configuration. One file per category.
   }
 }
 ```
+
+> **Note:** `sample_documents` requires a minimum of **2 documents**. The bootstrap script validates this — the Scout needs two documents to cross-reference category-level patterns.
 
 ---
 
@@ -574,71 +581,84 @@ class TraceEntry(BaseModel):
 
 ## 5. Data Flow & Interfaces
 
-### 5.1 Phase 1 — Bootstrapping Flow
+### 5.1 Phase 1 — Bootstrapping Flow (Two-Document Scout)
 
 ```
-User provides:  CategoryConfig JSON + sample document
+User provides:  CategoryConfig JSON + 2 sample documents
                          │
                          ▼
               ┌─────────────────────┐
               │  bootstrap_category │  (scripts/)
               │  • Validate config  │
+              │  • Verify 2 docs    │
               │  • Save to configs/ │
               └──────────┬──────────┘
                          │
                          ▼
               ┌─────────────────────┐
-              │  LangGraph: Boot    │
-              │  • Route input      │
-              │  • Retrieve context │
-              │  • Extract (zero-   │
-              │    shot)            │
-              └──────────┬──────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │  HitL Breakpoint    │
-              │  • Present draft    │
-              │  • Human corrects   │
-              │  • Human approves   │
-              └──────────┬──────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │  Promote to Gold    │
-              │  • Save Gold JSON   │
-              │  • Archive source   │
-              │  • Log trace        │
-              └─────────────────────┘
-```
-
-### 5.2 Phase 1.5 — Scout Flow
-
-```
-Trigger:  Scheduled / manual per category
-                         │
-                         ▼
-              ┌─────────────────────┐
               │  Scout Agent (RLM)  │
-              │  • Load category    │
-              │  • Explore samples  │
+              │  • Explore doc 1    │
+              │  • Explore doc 2    │
               │  • Image-first pass │
-              │    (PDF)            │
-              │  • REPL reasoning   │
+              │    (if PDF)         │
+              │  • Cross-reference  │
+              │    both documents   │
               └──────────┬──────────┘
                          │
               ┌──────────┴──────────┐
               │                     │
               ▼                     ▼
      ┌──────────────┐    ┌───────────────────┐
-     │ Questions     │    │ Gold Standard     │
-     │ • Inferred Qs │    │ • Rigorous        │
-     │ • Saved to    │    │   extraction      │
-     │   questions/  │    │ • Supersedes      │
-     └──────────────┘    │   Phase 1 gold    │
-                         │ • Saved to gold_  │
-                         │   standards/      │
+     │ Questions     │    │ Gold Standards    │
+     │ • Inferred    │    │ • 1 per document  │
+     │   from both   │    │ • Built from      │
+     │   documents   │    │   Scout's deep    │
+     └──────────────┘    │   exploration     │
+                         └──────────┬────────┘
+                                    │
+                                    ▼
+                         ┌───────────────────┐
+                         │ HitL Validation   │
+                         │ • Present Qs +    │
+                         │   both Gold Stds  │
+                         │ • Human reviews   │
+                         │ • Human approves  │
+                         └──────────┬────────┘
+                                    │
+                                    ▼
+                         ┌───────────────────┐
+                         │ Promote to Memory │
+                         │ • Save questions  │
+                         │ • Save Gold Stds  │
+                         │ • Archive sources │
+                         │ • Category is now │
+                         │   context-ready   │
                          └───────────────────┘
+```
+
+### 5.2 Phase 1.5 — Ongoing Scout Refinement
+
+```
+Trigger:  Scheduled / manual (after bootstrapping)
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │  Scout Agent (RLM)  │
+              │  • Explore new      │
+              │    sample docs      │
+              │  • Discover edge    │
+              │    cases            │
+              └──────────┬──────────┘
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+              ▼                     ▼
+     ┌──────────────┐    ┌───────────────────┐
+     │ Questions     │    │ Gold Standards    │
+     │ • Add new Qs  │    │ • Expand store    │
+     │ • Prune stale │    │ • Supersede old   │
+     │   ones        │    │   when better     │
+     └──────────────┘    └───────────────────┘
 ```
 
 ### 5.3 Phase 2 — Production Extraction Flow
@@ -646,6 +666,13 @@ Trigger:  Scheduled / manual per category
 ```
 New document arrives
          │
+         ▼
+  ┌──────────────┐
+  │ Context Gate  │── No context ──► HALT
+  │ Questions +   │                  (bootstrap with 2 docs first)
+  │ Gold Stds?    │
+  └──────┬───────┘
+         │ Yes
          ▼
   ┌──────────────┐
   │ Input Router  │
@@ -664,12 +691,6 @@ New document arrives
   │  Agent       │
   └──────┬───────┘
          │  ExtractionResult
-         ▼
-  ┌──────────────┐
-  │ Gold Standard│── No ──► Return result (no eval)
-  │ exists?      │
-  └──────┬───────┘
-         │ Yes
          ▼
   ┌──────────────┐
   │ Judge Agent  │ ← compare against Gold Standard

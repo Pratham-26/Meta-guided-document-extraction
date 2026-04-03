@@ -49,11 +49,11 @@ The primary purpose is **future distillation**: once the system accumulates suff
 
 ## 3. System Workflows
 
-### Phase 1: Bootstrapping (Zero-Shot to Ground Truth)
-To avoid manual data entry, new document categories are initialized using a lean payload and a Human-in-the-Loop approval process.
+### Phase 1: Bootstrapping (Scout-Driven Context Creation)
+When a new document category has **no existing context** (no Gold Standards, no inferred questions), the system cannot perform question-driven retrieval or Judge evaluation. Bootstrapping solves this by requiring the Scout Agent to analyze **two sample documents** to build the initial knowledge base before any production extraction occurs.
 
 **1. The Lean Setup Payload:**
-A user defines the schema and provides a sample document without providing the expected answers.
+A user defines the schema, provides extraction instructions, and supplies **two sample documents** — no expected answers required. Two documents are the minimum because the Scout needs to cross-reference patterns across documents to distinguish category-level structure from document-specific noise.
 ```json
 {
   "category_name": "commercial_lease_agreement",
@@ -65,27 +65,37 @@ A user defines the schema and provides a sample document without providing the e
     }
   },
   "extraction_instructions": "Extract the names of the signing parties and the financial terms.",
-  "sample_document_uri": "./samples/lease_001.pdf"
+  "sample_documents": [
+    "./samples/lease_001.pdf",
+    "./samples/lease_002.pdf"
+  ]
 }
 ```
 
-**2. Zero-Shot Run & Human Approval:**
-LangGraph routes the sample document to the Extractor Agent using only the base instructions. The system pauses and presents the draft JSON to a human. The human corrects any mistakes and hits "Approve."
+**2. Scout Agent Runs on Both Documents:**
+The Scout Agent (DSPy RLM) processes both sample documents through its full exploratory loop:
+1.  **Iterative Exploration:** It uses DSPy's RLM REPL loop to thoroughly explore each document to unparalleled depths. If the input is a PDF, its first pass processes the document as an image to analyze visual topography.
+2.  **Question Inference:** By analyzing both documents, the Scout infers the essential **questions** that need to be answered for extraction of this category. Cross-referencing two documents ensures the questions target category-level patterns, not one-off quirks. These questions become the **retrieval queries** for ColPali and ColBERT during production extraction.
+3.  **Gold Standard Construction:** For each document, the Scout builds the ideal extraction object — the definitive **Gold Standard** — using its rigorous reasoning capabilities.
 
-**3. Promotion to Memory:**
-The approved JSON is permanently stored in the FS store alongside the document's visual embedding and the original source document itself. These persisted files become the initial **Gold Standards** — the ground truth used for future few-shot prompting and Judge calibration. The Scout Agent (Phase 1.5) may later refine and supersede these with deeper, more rigorous Gold Standards.
+**3. Human-in-the-Loop Validation:**
+The system pauses and presents the Scout's outputs (inferred questions + both Gold Standard extractions) to a human for review. The human corrects any mistakes and approves. This ensures the foundational context the entire system will rely on is verified before it enters production.
 
-### Phase 1.5: Knowledge Base & Gold Standard Construction (The Scout Phase)
-Rather than executing on every single document passed to the system, the Scout Agent runs periodically or on-demand per document *type*.
-1.  **Iterative Exploration:** It uses DSPy's RLM REPL loop to thoroughly explore sample documents of a specific category to unparalleled depths.
-2.  **Question Inference & Context Maintenance:** It infers the essential questions that must be answered for extraction, dynamically populating an expanding knowledge base. These questions are then used as the **retrieval queries** for ColPali (to fetch relevant pages) and ColBERT (to fetch relevant chunks) during production extraction.
-3.  **Gold Standard Construction:** Because of its rigorous reasoning capabilities, the Scout Agent builds the ideal extraction object — the definitive **Gold Standard** for the document type. This supersedes any initial Gold Standard from Phase 1 and is stored separately for extraction prompt optimization.
+**4. Promotion to Memory:**
+Once approved, the Gold Standards, inferred questions, and original source documents are permanently stored in the FS store. The category is now **context-ready** — production extraction, Judge evaluation, and GEPA optimization can all operate.
+
+### Phase 1.5: Ongoing Knowledge Base Refinement (The Scout Phase)
+After bootstrapping, the Scout Agent continues to run **periodically or on-demand** per document category to deepen and refine the knowledge base.
+1.  **Expanded Exploration:** As more documents of the category are encountered, the Scout can be re-run on additional samples to discover new patterns, edge cases, or structural variations.
+2.  **Question Refinement:** The question set evolves — new questions are added, irrelevant ones pruned — as the Scout's understanding of the category deepens.
+3.  **Gold Standard Expansion:** New Gold Standards are added to the store, giving GEPA more training signal and the Judge more comparison points. These supersede earlier Gold Standards when they represent higher-quality extractions.
 
 ### Phase 2: Production Execution
 When a new, unseen document or text payload enters the system:
-1.  **Routing:** The system inspects the input type to determine the retrieval path. If the input is a PDF, it is routed to ColPali. If the input is raw text or a text-heavy format, it is routed to ColBERT. This is a straightforward input-type check, not a classification model.
-2.  **Question-Driven Retrieval:** The Scout Agent's pre-inferred questions are used as queries against the chosen retrieval model. ColPali returns only the relevant **pages**; ColBERT returns only the relevant **chunks**. The Extraction Agent never processes the full document.
-3.  **Context-Aware Extraction:** Working only with the retrieved pages/chunks, the Extraction Agent pulls the required data using the optimized instructions and few-shot examples compiled by DSPy.
+1.  **Context Gate:** The system checks whether Scout context (questions + Gold Standards) exists for the document's category. If no context exists, the document is **queued** and the operator is prompted to run the bootstrapping flow (Phase 1) with two sample documents before extraction can proceed.
+2.  **Routing:** The system inspects the input type to determine the retrieval path. If the input is a PDF, it is routed to ColPali. If the input is raw text or a text-heavy format, it is routed to ColBERT. This is a straightforward input-type check, not a classification model.
+3.  **Question-Driven Retrieval:** The Scout Agent's pre-inferred questions are used as queries against the chosen retrieval model. ColPali returns only the relevant **pages**; ColBERT returns only the relevant **chunks**. The Extraction Agent never processes the full document.
+4.  **Context-Aware Extraction:** Working only with the retrieved pages/chunks, the Extraction Agent pulls the required data using the optimized instructions and few-shot examples compiled by DSPy.
 
 ### Phase 3: The Optimized Self-Healing Loop (GEPA-Driven)
 The Gold Standards produced by the Scout Agent are the fuel for GEPA's optimization cycle. This is where the system transitions from "working" to "continuously improving":
