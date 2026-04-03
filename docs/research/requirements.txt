@@ -1,0 +1,6 @@
+langgraph
+llama-index
+dspy
+pydantic
+colpali-engine
+ragatouille

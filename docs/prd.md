@@ -26,6 +26,9 @@ DSPy replaces manual prompt engineering with prompt *programming*. It treats the
 * **The Judge Agent:** Evaluates the extracted JSON against schema validation, completeness, and hallucination checks, returning a numeric score.
 * **The Optimizer:** If the Judge scores an extraction poorly, the DSPy optimizer automatically rewrites the Extraction Agent's instructions and selects new few-shot examples from the ground-truth memory to fix the edge case.
 
+### D. The Persistent Storage Layer (File System & JSON Configs)
+To maintain a historical record for continuous learning, any data source that has a "gold" baseline (or "gold response") generated must be permanently stored so it can be referenced at any point in time. To prioritize simplicity and rapid iteration, this project will rely primarily on straightforward File System (FS) stores and JSON configuration files. There is no need to overcomplicate the architecture with complex databases at this stage.
+
 ---
 
 ## 3. System Workflows
@@ -55,7 +58,7 @@ A user defines the schema and provides a sample document without providing the e
 LangGraph routes the sample document to the Extractor Agent using only the base instructions. The system pauses and presents the draft JSON to a human. The human corrects any mistakes and hits "Approve."
 
 **3. Promotion to Memory:**
-The approved JSON is silently saved alongside the document's visual embedding. This becomes a "Golden Template" used for future few-shot prompting and Judge calibration.
+The approved JSON is permanently stored in the FS store alongside the document's visual embedding. These persisted files become our "Golden Templates", forming the ground truth used for future few-shot prompting and Judge calibration.
 
 ### Phase 1.5: Knowledge Base & Golden Baseline (The Scout Phase)
 Rather than executing on every single document passed to the system, the Scout Agent runs periodically or on-demand per document *type*.
@@ -86,5 +89,6 @@ By harnessing the inferred questions, the Scout's meticulous gold responses, and
 | **Text Retrieval** | ColBERT | Token-level semantic search for narrative documents. |
 | **Continuous Learning** | DSPy | Replacing prompt engineering with algorithmic metric-driven optimization. |
 | **Data Validation** | Pydantic | Enforcing strict JSON schemas for all Extractor Agent outputs. |
+| **Storage Layer** | FS & JSON Configs | Permanent file-system storage for gold baselines; avoiding complex DBs. |
 
 ***
