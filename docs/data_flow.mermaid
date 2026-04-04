@@ -17,7 +17,7 @@ graph TD
     %% ==========================================
     subgraph Phase 1: Bootstrapping & Knowledge Base Construction
         Gate -- "No Context for<br/>category + modality" --> SetupReq[Require 2 Sample Docs<br/>of matching modality]:::input
-        SetupReq --> Scout[Scout Agent<br/>DSPy RLM]:::agent
+        SetupReq --> Scout[Scout Agent<br/>DSPy RLM + Predict]:::agent
 
         Scout -- "If PDF" --> ScoutVision[Process as Image]
         Scout -- "If Text" --> ScoutText[Process as Text]
@@ -26,21 +26,29 @@ graph TD
         ScoutText --> InfQ
 
         InfQ --> GS[Build Gold Standards<br/>scoped to modality]
-        GS --> HitL[Human-in-the-Loop Validation]
-        HitL -- "Approves" --> FSStore[(File System Store<br/>categories/name/<modality>/)]:::storage
+        GS --> FSStore[(File System Store<br/>categories/name/<modality>/)]:::storage
     end
 
     %% ==========================================
     %% Phase 2: Production Execution
     %% ==========================================
     subgraph Phase 2: Production Extraction & Routing
-        Gate -- "Context Exists" --> RouteCtx{Route by<br/>Modality}:::routing
+        Gate -- "Context Exists" --> ResolveConfig[Resolve Category Config<br/>schema + instructions]
+        ResolveConfig --> GoldDetect{Is Gold<br/>Document?}:::decision
 
-        RouteCtx -- "PDF" --> ColPali[ColPali<br/>Visual Page Embeddings]
-        RouteCtx -- "Text" --> ColBERT[ColBERT<br/>Token-level Embeddings]
+        GoldDetect -- "Yes<br/>(user flag / random sample)" --> ScoutGold[Scout Agent<br/>Build Gold Standard<br/>+ Merge Questions]:::agent
+        ScoutGold -. "Save Gold Standard<br/>+ Update Questions" .-> FSStore
 
-        FSStore -. "Modality-Specific<br/>Retrieval Queries" .-> ColPali
-        FSStore -. "Modality-Specific<br/>Retrieval Queries" .-> ColBERT
+        GoldDetect -- "No" --> LoadQ[Load Questions<br/>from store]
+        ScoutGold --> LoadQ
+
+        LoadQ --> RouteCtx[Route Input]:::routing
+
+        RouteCtx --> Retrieve[Retrieve Node<br/>internal dispatch]:::agent
+        Retrieve -- "PDF" --> ColPali[ColPali<br/>Visual Page Embeddings]
+        Retrieve -- "Text" --> ColBERT[ColBERT<br/>Token-level Embeddings]
+
+        FSStore -. "Modality-Specific<br/>Retrieval Queries" .-> Retrieve
 
         ColPali -- "Relevant Pages Only" --> Extractor[Extractor Agent<br/>DSPy + LiteLLM]:::agent
         ColBERT -- "Relevant Chunks Only" --> Extractor
@@ -50,10 +58,14 @@ graph TD
     %% Phase 3: Continuous Learning Loop
     %% ==========================================
     subgraph Phase 3: GEPA-Driven Self-Healing Loop
-        Extractor -- "Draft Extraction JSON" --> Judge[Judge Agent<br/>compares within<br/>same modality]:::agent
+        Extractor -- "Draft Extraction JSON" --> IsGoldJudge{Is Gold<br/>Document?}:::decision
+
+        IsGoldJudge -- "Yes" --> Judge[Judge Agent<br/>compares within<br/>same modality]:::agent
+        IsGoldJudge -- "No" --> Final([Final Output])
+
         FSStore -. "Modality-Specific<br/>Gold Standards" .-> Judge
 
-        Judge -- "High Quality" --> Final([Final Approved Output])
+        Judge -- "High Quality" --> Final
         Judge -- "Low/Medium Quality<br>+ Trace & Feedback" --> GEPA[GEPA Optimizer<br/>per modality]:::agent
 
         GEPA -- "1. Diagnose with Reflector<br>2. Mutate Prompts<br>3. Pareto Selection<br>4. Re-Validation" --> OptPrompt[Optimized Prompt<br/>+ Few-Shot<br/>scoped to modality]

@@ -12,6 +12,8 @@ class PipelineState(TypedDict, total=False):
     document: DocumentInput
     category_name: str
     input_modality: str
+    is_gold_doc: bool
+    gold_source: str | None
     schema: dict
     instructions: str
     retrieval_route: RetrievalRoute | None
@@ -22,4 +24,3 @@ class PipelineState(TypedDict, total=False):
     judge_evaluation: JudgeEvaluation | None
     trace_entries: list[TraceEntry]
     error: str | None
-    human_corrections: dict | None

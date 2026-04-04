@@ -24,6 +24,10 @@ class _Settings:
     def model_config_path(self) -> Path:
         return self.configs_dir / "model_config.json"
 
+    @property
+    def process_config_path(self) -> Path:
+        return self.configs_dir / "process_config.json"
+
     def ensure_dirs(self):
         self.data_dir.mkdir(parents=True, exist_ok=True)
         self.categories_dir.mkdir(parents=True, exist_ok=True)

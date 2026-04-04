@@ -7,7 +7,8 @@ from src.orchestration.graph import (
     build_graph,
     compile_graph,
     _has_error,
-    _route_retrieval,
+    _is_gold,
+    _should_judge,
 )
 from src.orchestration.state import PipelineState
 from src.schemas.document import DocumentInput, InputType
@@ -18,6 +19,8 @@ from src.retrieval.router import RetrievalRoute
 EXPECTED_NODES = [
     "check_context",
     "resolve_config",
+    "detect_gold",
+    "run_scout_for_gold",
     "load_questions",
     "route_input",
     "retrieve",
@@ -54,18 +57,32 @@ class TestHasError:
         assert _has_error(state) == "continue"
 
 
-class TestRouteRetrieval:
-    def test_routes_to_colpali(self):
-        state: PipelineState = {"retrieval_route": RetrievalRoute.COLPALI}
-        assert _route_retrieval(state) == "colpali"
+class TestIsGold:
+    def test_returns_gold_when_flagged(self):
+        state: PipelineState = {"is_gold_doc": True, "gold_source": "user_flag"}
+        assert _is_gold(state) == "gold"
 
-    def test_routes_to_colbert(self):
-        state: PipelineState = {"retrieval_route": RetrievalRoute.COLBERT}
-        assert _route_retrieval(state) == "colbert"
+    def test_returns_regular_when_not_flagged(self):
+        state: PipelineState = {"is_gold_doc": False}
+        assert _is_gold(state) == "regular"
 
-    def test_defaults_to_colbert(self):
+    def test_defaults_to_regular(self):
         state: PipelineState = {}
-        assert _route_retrieval(state) == "colbert"
+        assert _is_gold(state) == "regular"
+
+
+class TestShouldJudge:
+    def test_returns_judge_for_gold_docs(self):
+        state: PipelineState = {"is_gold_doc": True}
+        assert _should_judge(state) == "judge"
+
+    def test_returns_skip_for_regular_docs(self):
+        state: PipelineState = {"is_gold_doc": False}
+        assert _should_judge(state) == "skip"
+
+    def test_defaults_to_skip(self):
+        state: PipelineState = {}
+        assert _should_judge(state) == "skip"
 
 
 class TestCompileGraph:
@@ -76,7 +93,85 @@ class TestCompileGraph:
 
 
 class TestIntegration:
-    def test_happy_path_pipeline(self, sample_document_input):
+    def test_regular_path_pipeline(self, sample_document_input):
+        trace_extract = TraceEntry(
+            timestamp=datetime.now(timezone.utc),
+            agent_role="extractor",
+            phase="extraction",
+            category="test",
+            input_modality="pdf",
+            prompt="ctx",
+            response="extracted",
+            model="m",
+            provider="p",
+            token_usage={},
+        )
+
+        def check_context_fn(state):
+            return state
+
+        def resolve_config_fn(state):
+            return {**state, "schema": {}, "instructions": "do it"}
+
+        def detect_gold_fn(state):
+            return {**state, "is_gold_doc": False, "gold_source": None}
+
+        def load_questions_fn(state):
+            return {**state, "questions": ["q1?"]}
+
+        def route_input_fn(state):
+            return {**state, "retrieval_route": RetrievalRoute.COLBERT}
+
+        def retrieve_fn(state):
+            return {**state, "retrieved_context": "some context"}
+
+        def extract_fn(state):
+            return {
+                **state,
+                "extraction": {"name": "Test", "amount": 100},
+                "trace_entries": state.get("trace_entries", []) + [trace_extract],
+            }
+
+        def judge_fn(state):
+            return state
+
+        def log_traces_fn(state):
+            return state
+
+        p1 = patch(
+            "src.orchestration.nodes.check_context", side_effect=check_context_fn
+        )
+        p2 = patch(
+            "src.orchestration.nodes.resolve_config", side_effect=resolve_config_fn
+        )
+        p3 = patch("src.orchestration.nodes.detect_gold", side_effect=detect_gold_fn)
+        p4 = patch(
+            "src.orchestration.nodes.run_scout_for_gold",
+            side_effect=lambda s: s,
+        )
+        p5 = patch(
+            "src.orchestration.nodes.load_questions", side_effect=load_questions_fn
+        )
+        p6 = patch("src.orchestration.nodes.route_input", side_effect=route_input_fn)
+        p7 = patch("src.orchestration.nodes.retrieve", side_effect=retrieve_fn)
+        p8 = patch("src.orchestration.nodes.extract", side_effect=extract_fn)
+        p9 = patch("src.orchestration.nodes.judge", side_effect=judge_fn)
+        p10 = patch("src.orchestration.nodes.log_traces", side_effect=log_traces_fn)
+
+        with p1, p2, p3, p4, p5, p6, p7, p8, p9, p10:
+            compiled = compile_graph()
+            result = compiled.invoke(
+                {
+                    "category_name": "test",
+                    "input_modality": "pdf",
+                    "document": sample_document_input,
+                }
+            )
+
+        assert result["extraction"] == {"name": "Test", "amount": 100}
+        assert len(result["trace_entries"]) == 1
+
+    def test_gold_path_pipeline(self, sample_document_input):
         trace_extract = TraceEntry(
             timestamp=datetime.now(timezone.utc),
             agent_role="extractor",
@@ -107,6 +202,12 @@ class TestIntegration:
 
         def resolve_config_fn(state):
             return {**state, "schema": {}, "instructions": "do it"}
+
+        def detect_gold_fn(state):
+            return {**state, "is_gold_doc": True, "gold_source": "user_flag"}
+
+        def run_scout_fn(state):
+            return state
 
         def load_questions_fn(state):
             return {**state, "questions": ["q1?"]}
@@ -140,22 +241,28 @@ class TestIntegration:
         p2 = patch(
             "src.orchestration.nodes.resolve_config", side_effect=resolve_config_fn
         )
-        p3 = patch(
+        p3 = patch("src.orchestration.nodes.detect_gold", side_effect=detect_gold_fn)
+        p4 = patch(
+            "src.orchestration.nodes.run_scout_for_gold", side_effect=run_scout_fn
+        )
+        p5 = patch(
             "src.orchestration.nodes.load_questions", side_effect=load_questions_fn
         )
-        p4 = patch("src.orchestration.nodes.route_input", side_effect=route_input_fn)
-        p5 = patch("src.orchestration.nodes.retrieve", side_effect=retrieve_fn)
-        p6 = patch("src.orchestration.nodes.extract", side_effect=extract_fn)
-        p7 = patch("src.orchestration.nodes.judge", side_effect=judge_fn)
-        p8 = patch("src.orchestration.nodes.log_traces", side_effect=log_traces_fn)
+        p6 = patch("src.orchestration.nodes.route_input", side_effect=route_input_fn)
+        p7 = patch("src.orchestration.nodes.retrieve", side_effect=retrieve_fn)
+        p8 = patch("src.orchestration.nodes.extract", side_effect=extract_fn)
+        p9 = patch("src.orchestration.nodes.judge", side_effect=judge_fn)
+        p10 = patch("src.orchestration.nodes.log_traces", side_effect=log_traces_fn)
 
-        with p1, p2, p3, p4, p5, p6, p7, p8:
+        with p1, p2, p3, p4, p5, p6, p7, p8, p9, p10:
             compiled = compile_graph()
             result = compiled.invoke(
                 {
                     "category_name": "test",
                     "input_modality": "pdf",
                     "document": sample_document_input,
+                    "is_gold_doc": True,
+                    "gold_source": "user_flag",
                 }
             )
 
@@ -165,7 +272,6 @@ class TestIntegration:
 
     def test_error_halts_pipeline(self, sample_document_input):
         extract_called = False
-        judge_called = False
 
         def check_context_error(state):
             return {**state, "error": "No context found"}
@@ -175,23 +281,23 @@ class TestIntegration:
             extract_called = True
             return state
 
-        def judge_fn(state):
-            nonlocal judge_called
-            judge_called = True
-            return state
-
         p1 = patch(
             "src.orchestration.nodes.check_context", side_effect=check_context_error
         )
         p2 = patch("src.orchestration.nodes.resolve_config", side_effect=lambda s: s)
-        p3 = patch("src.orchestration.nodes.load_questions", side_effect=lambda s: s)
-        p4 = patch("src.orchestration.nodes.route_input", side_effect=lambda s: s)
-        p5 = patch("src.orchestration.nodes.retrieve", side_effect=lambda s: s)
-        p6 = patch("src.orchestration.nodes.extract", side_effect=extract_fn)
-        p7 = patch("src.orchestration.nodes.judge", side_effect=judge_fn)
-        p8 = patch("src.orchestration.nodes.log_traces", side_effect=lambda s: s)
+        p3 = patch("src.orchestration.nodes.detect_gold", side_effect=lambda s: s)
+        p4 = patch(
+            "src.orchestration.nodes.run_scout_for_gold",
+            side_effect=lambda s: s,
+        )
+        p5 = patch("src.orchestration.nodes.load_questions", side_effect=lambda s: s)
+        p6 = patch("src.orchestration.nodes.route_input", side_effect=lambda s: s)
+        p7 = patch("src.orchestration.nodes.retrieve", side_effect=lambda s: s)
+        p8 = patch("src.orchestration.nodes.extract", side_effect=extract_fn)
+        p9 = patch("src.orchestration.nodes.judge", side_effect=lambda s: s)
+        p10 = patch("src.orchestration.nodes.log_traces", side_effect=lambda s: s)
 
-        with p1, p2, p3, p4, p5, p6, p7, p8:
+        with p1, p2, p3, p4, p5, p6, p7, p8, p9, p10:
             compiled = compile_graph()
             result = compiled.invoke(
                 {
@@ -203,4 +309,3 @@ class TestIntegration:
 
         assert "error" in result
         assert not extract_called
-        assert not judge_called

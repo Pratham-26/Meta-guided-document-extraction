@@ -25,10 +25,10 @@ The input modality is determined at ingestion time by file type (PDF → `pdf`, 
 ### A. The Orchestration Layer (LangGraph)
 
 The graph carries both `category_name` and `input_modality` through its state. Every node that resolves context — questions, Gold Standards, prompts, indexes — uses both values to locate the correct artifact set.
-LangGraph acts as the central state machine. It manages the flow of the document through various specialized agents, handles the Human-in-the-Loop (HitL) breakpoints, and maintains the state (document embeddings, draft JSON, judge scores) throughout the lifecycle.
+LangGraph acts as the central state machine. It manages the flow of the document through various specialized agents, handles conditional routing (gold document detection, modality-based retrieval), and maintains the state (document embeddings, draft JSON, judge scores) throughout the lifecycle.
 
 ### B. The Scout Layer (Knowledge Base Construction)
-The Scout Agent is an offline, periodic component — not part of the live extraction path. Implemented as a DSPy RLM (Recursive Language Model) agent, the Scout leverages DSPy's built-in RLM capabilities — including its sandboxed REPL loop and code-generation tools — to parse extremely large datasets with the utmost accuracy. It acts as a knowledge base builder, inferring the core **questions** that need to be answered for extraction. These questions are critical: they become the actual **retrieval queries** fed into ColPali and ColBERT at extraction time, ensuring the Extraction Agent only ever sees the relevant pages or chunks — never the full document. If the input is a PDF, its first exploration processes the document as an image to analyze its visual topography.
+The Scout Agent is an offline, periodic component — not part of the live extraction path. Implemented primarily as a DSPy RLM (Recursive Language Model) agent, the Scout leverages DSPy's built-in RLM capabilities — including its sandboxed REPL loop and code-generation tools — to parse extremely large datasets with the utmost accuracy. Exploration uses `dspy.RLM` for deep reasoning, while question inference uses `dspy.Predict` for efficient structured output. It acts as a knowledge base builder, inferring the core **questions** that need to be answered for extraction. These questions are critical: they become the actual **retrieval queries** fed into ColPali and ColBERT at extraction time, ensuring the Extraction Agent only ever sees the relevant pages or chunks — never the full document. If the input is a PDF, its first exploration processes the document as an image to analyze its visual topography.
 
 **Modality scoping:** The Scout produces questions and Gold Standards for a specific `(category, input_modality)` pair. A category needs separate bootstrapping for PDF and text modalities if both are expected in production.
 
@@ -40,7 +40,7 @@ The system is built to be independent and malleable to both text and PDF inputs.
 
 ### D. The Continuous Learning Layer (DSPy & GEPA)
 DSPy replaces manual prompt engineering with prompt *programming*. It treats the extraction pipeline as code that can be compiled and optimized.
-* **The Judge Agent:** A comparison function, not an independent evaluator. It compares the Extraction Agent's output directly against the Gold Standard produced by the Scout Agent (RLM phase). It only runs for the specific `(category, input_modality)` pair that has Gold Standards — if no Gold Standard exists for that combination, the Judge has nothing to compare against and does not evaluate. It assesses extraction quality as **low**, **medium**, or **high** and provides **textual feedback** identifying the specific differences between the extraction and the Gold Standard (e.g., missing fields, incorrect values, misinterpreted data).
+* **The Judge Agent:** A comparison function, not an independent evaluator. It compares the Extraction Agent's output directly against the Gold Standard produced by the Scout Agent. It only runs for **gold documents** — documents designated as gold via user flag (`--gold`) or random sampling. For regular (non-gold) documents, the Judge is skipped entirely and the extraction result is returned directly. Gold Standards accumulate from three sources: bootstrapping (initial sample documents), user-flagged documents, and random sampling (configurable rate per category/modality). The Judge assesses extraction quality as **low**, **medium**, or **high** and provides **textual feedback** identifying the specific differences between the extraction and the Gold Standard (e.g., missing fields, incorrect values, misinterpreted data).
 * **GEPA (Genetic-Pareto Optimizer):** The core optimization engine. GEPA is a reflective, evolutionary optimizer that consumes the Judge's quality assessments and textual feedback to intelligently evolve extraction prompts. Low and medium-quality extractions are fed into GEPA for optimization; high-quality extractions confirm the current prompt is working. It operates by:
     1. **Capturing execution traces** of failed or sub-optimal extractions.
     2. **Reflective analysis** — a reflection LLM analyzes *why* each failure occurred by comparing the extraction trace against the Gold Standard.
@@ -99,11 +99,8 @@ The Scout Agent (DSPy RLM) processes both sample documents through its full expl
 2.  **Question Inference:** By analyzing both documents, the Scout infers the essential **questions** that need to be answered for extraction of this category. Cross-referencing two documents ensures the questions target category-level patterns, not one-off quirks. These questions become the **retrieval queries** for ColPali and ColBERT during production extraction.
 3.  **Gold Standard Construction:** For each document, the Scout builds the ideal extraction object — the definitive **Gold Standard** — using its rigorous reasoning capabilities.
 
-**3. Human-in-the-Loop Validation:**
-The system pauses and presents the Scout's outputs (inferred questions + both Gold Standard extractions) to a human for review. The human corrects any mistakes and approves. This ensures the foundational context the entire system will rely on is verified before it enters production.
-
-**4. Promotion to Memory:**
-Once approved, the Gold Standards, inferred questions, and original source documents are permanently stored in the FS store under `data/categories/<name>/<modality>/`. The `(category, modality)` combination is now **context-ready** — production extraction, Judge evaluation, and GEPA optimization can all operate for that specific modality.
+**3. Promotion to Memory:**
+The Gold Standards, inferred questions, and original source documents are automatically promoted to the knowledge base and permanently stored in the FS store under `data/categories/<name>/<modality>/`. The `(category, modality)` combination is now **context-ready** — production extraction, Judge evaluation, and GEPA optimization can all operate for that specific modality.
 
 ### Phase 1.5: Ongoing Knowledge Base Refinement (The Scout Phase)
 After bootstrapping, the Scout Agent continues to run **periodically or on-demand** per document category to deepen and refine the knowledge base.
@@ -114,17 +111,19 @@ After bootstrapping, the Scout Agent continues to run **periodically or on-deman
 ### Phase 2: Production Execution
 When a new, unseen document or text payload enters the system:
 1.  **Context Gate:** The system checks whether Scout context (questions + Gold Standards) exists for the document's `(category, input_modality)` combination. If no context exists, the document is **queued** and the operator is prompted to run the bootstrapping flow (Phase 1) with two sample documents of the matching modality before extraction can proceed.
-2.  **Routing:** The system inspects the input type to determine the retrieval path. If the input is a PDF, it is routed to ColPali. If the input is raw text or a text-heavy format, it is routed to ColBERT. This is a straightforward input-type check, not a classification model.
-3.  **Question-Driven Retrieval:** The Scout Agent's pre-inferred questions are used as queries against the chosen retrieval model. ColPali returns only the relevant **pages**; ColBERT returns only the relevant **chunks**. The Extraction Agent never processes the full document.
-4.  **Context-Aware Extraction:** Working only with the retrieved pages/chunks, the Extraction Agent pulls the required data using the optimized instructions and few-shot examples compiled by DSPy.
+2.  **Gold Detection:** The system determines whether this is a **gold document** — either because the user flagged it (`--gold` flag) or because it was selected via random sampling (configurable per `(category, modality)` pair). Gold documents trigger the Scout Agent to build a Gold Standard and merge new questions into the existing question set before extraction proceeds. Regular documents skip the Scout entirely.
+3.  **Routing:** The system inspects the input type to determine the retrieval path. If the input is a PDF, it is routed to ColPali. If the input is raw text or a text-heavy format, it is routed to ColBERT. This is a straightforward input-type check, not a classification model.
+4.  **Question-Driven Retrieval:** The Scout Agent's pre-inferred questions are used as queries against the chosen retrieval model. ColPali returns only the relevant **pages**; ColBERT returns only the relevant **chunks**. The Extraction Agent never processes the full document.
+5.  **Context-Aware Extraction:** Working only with the retrieved pages/chunks, the Extraction Agent pulls the required data using the optimized instructions and few-shot examples compiled by DSPy.
+6.  **Judge Evaluation (Gold Documents Only):** For gold documents, the Judge Agent compares the extraction against the Gold Standard produced by the Scout and assigns a quality tier with textual feedback. Regular documents skip the Judge entirely and return the extraction result directly.
 
 ### Phase 3: The Optimized Self-Healing Loop (GEPA-Driven)
 The Gold Standards produced by the Scout Agent are the fuel for GEPA's optimization cycle. This is where the system transitions from "working" to "continuously improving":
-1.  **Evaluation:** For `(category, input_modality)` combinations that have Gold Standards, the Judge Agent compares production extractions directly against the Gold Standard and assigns a quality tier — **low**, **medium**, or **high** — along with textual feedback identifying exactly where the extraction diverged.
+1.  **Evaluation:** For gold documents only, the Judge Agent compares the extraction against the Gold Standard and assigns a quality tier — **low**, **medium**, or **high** — along with textual feedback identifying exactly where the extraction diverged.
 2.  **Reflective Diagnosis (Offline):** Periodically (e.g., nightly batch runs), GEPA ingests the **low and medium** extraction traces alongside the Gold Standards. Its reflection LLM analyzes the gap between what was extracted and what the Gold Standard says *should* have been extracted, diagnosing root causes at the instruction level.
 3.  **Evolutionary Optimization:** Using the diagnosed failures, GEPA proposes targeted prompt mutations — not random rewrites, but specific instruction changes that address the identified failure patterns. It maintains a population of candidate prompt versions and uses Pareto selection to keep the best-performing, most diverse set.
 4.  **Few-Shot Synthesis:** Alongside prompt evolution, GEPA synthesizes superior few-shot examples drawn from the Gold Standard memory, ensuring the Extraction Agent has the most relevant examples for each document category.
-5.  **Validation:** The optimized prompt is tested by re-running extraction on a **representative mix of low, medium, and high** examples. The Judge Agent re-evaluates these new extractions against the Gold Standards to verify the optimized prompt improves low/medium cases without degrading high-quality ones.
+5. **Validation:** The optimized prompt is tested by re-running extraction on a sample of Gold Standards. The Judge Agent re-evaluates these new extractions against the Gold Standards to verify the optimized prompt improves quality.
 6.  **Deployment:** Once validated, the winning prompt variant replaces the old version, and the newly "compiled" Extractor Agent is deployed. The pipeline continuously self-improves with each optimization cycle.
 
 ---
@@ -133,7 +132,7 @@ The Gold Standards produced by the Scout Agent are the fuel for GEPA's optimizat
 
 | Component | Technology / Framework | Purpose |
 | :--- | :--- | :--- |
-| **State Orchestration** | LangGraph | Managing the agentic graph, routing, and Human-in-the-Loop breakpoints. |
+| **State Orchestration** | LangGraph | Managing the agentic graph, conditional routing, and gold document detection. |
 | **LLM Provider** | DSPy + LiteLLM | Built-in multi-provider LLM routing; 100+ providers via unified model strings. |
 | **Retrieval & Tools** | LlamaIndex / Custom | Handling document chunking, indexing, and executing tool calls. |
 | **Visual Retrieval** | ColPali | Bypassing OCR for layout-aware, patch-level document understanding. |

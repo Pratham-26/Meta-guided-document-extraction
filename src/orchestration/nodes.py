@@ -1,31 +1,20 @@
+import json
 from datetime import datetime, timezone
-import base64
-import io
+from pathlib import Path
 
 from src.orchestration.state import PipelineState
-from src.config.loader import load_category_config
+from src.config.loader import load_category_config, get_gold_sampling_rate
 from src.config.lm import get_lm
-from src.storage.fs_store import has_context, list_gold_standards
+from src.storage.fs_store import (
+    has_context,
+    list_gold_standards,
+    save_source_document,
+)
+from src.storage.paths import sampling_counter_path
 from src.storage.trace_logger import log_trace
 from src.schemas.trace import TraceEntry
 from src.schemas.document import InputType
 from src.retrieval.router import RetrievalRoute, route
-
-
-def _encode_pil_image(image) -> str:
-    import PIL.Image
-
-    buf = io.BytesIO()
-    img = image if isinstance(image, PIL.Image.Image) else PIL.Image.open(image)
-    img.save(buf, format="PNG")
-    return base64.b64encode(buf.getvalue()).decode("utf-8")
-
-
-def _parse_model_provider(model_string: str) -> tuple[str, str]:
-    if "/" in model_string:
-        provider, model = model_string.split("/", 1)
-        return model, provider
-    return model_string, "unknown"
 
 
 def check_context(state: PipelineState) -> PipelineState:
@@ -47,6 +36,120 @@ def resolve_config(state: PipelineState) -> PipelineState:
         "schema": config.expected_schema,
         "instructions": config.extraction_instructions,
     }
+
+
+def detect_gold(state: PipelineState) -> PipelineState:
+    if state.get("is_gold_doc"):
+        return state
+
+    category = state.get("category_name", "")
+    modality = state.get("input_modality", "")
+    threshold = get_gold_sampling_rate(category, modality)
+
+    if threshold <= 0:
+        return {**state, "is_gold_doc": False, "gold_source": None}
+
+    counter_path = sampling_counter_path(category, modality)
+    counter_path.parent.mkdir(parents=True, exist_ok=True)
+
+    count = 0
+    if counter_path.exists():
+        try:
+            count = json.loads(counter_path.read_text()).get("count", 0)
+        except (json.JSONDecodeError, OSError):
+            count = 0
+
+    count += 1
+    counter_path.write_text(json.dumps({"count": count}))
+
+    if count >= threshold:
+        counter_path.write_text(json.dumps({"count": 0}))
+        return {**state, "is_gold_doc": True, "gold_source": "random_sample"}
+
+    return {**state, "is_gold_doc": False, "gold_source": None}
+
+
+def run_scout_for_gold(state: PipelineState) -> PipelineState:
+    from src.agents.scout.agent import ScoutAgent
+    from src.agents.scout.gold_builder import build_and_save
+    from src.agents.scout.question_store import merge_questions
+    from src.utils.pdf import extract_text_from_pdf, load_pdf_pages
+    from src.utils.text import clean_text, truncate_to_tokens
+
+    category = state.get("category_name", "")
+    modality = state.get("input_modality", "")
+    doc = state.get("document")
+    schema = state.get("schema", {})
+    instructions = state.get("instructions", "")
+
+    if not doc:
+        return {**state, "error": "No document provided for gold processing."}
+
+    path = doc.source_uri
+    is_pdf = modality == "pdf"
+
+    saved = save_source_document(category, modality, path)
+
+    images = None
+    if is_pdf:
+        content = extract_text_from_pdf(path)
+        content = clean_text(content)
+        content = truncate_to_tokens(content)
+        is_placeholder = content.startswith("[PDF with")
+
+        if is_placeholder:
+            images = load_pdf_pages(path)
+
+        lm = get_lm("scout", input_type="text")
+        vision_lm = get_lm("scout", input_type="vision")
+        scout = ScoutAgent(lm=lm, vision_lm=vision_lm)
+    else:
+        content = path.read_text(encoding="utf-8")
+        content = clean_text(content)
+        content = truncate_to_tokens(content)
+
+        lm = get_lm("scout", input_type="text")
+        scout = ScoutAgent(lm=lm)
+
+    result = scout.explore_document(
+        content=content,
+        schema=schema,
+        instructions=instructions,
+        images=images,
+    )
+
+    existing_gs = list_gold_standards(category, modality)
+    next_num = 1
+    if existing_gs:
+        nums = []
+        for gs in existing_gs:
+            if gs.id.startswith("gs_"):
+                try:
+                    nums.append(int(gs.id.split("_")[1]))
+                except (ValueError, IndexError):
+                    pass
+        if nums:
+            next_num = max(nums) + 1
+
+    gs_id = f"gs_{next_num:03d}"
+    build_and_save(
+        category=category,
+        modality=modality,
+        gs_id=gs_id,
+        source_document_uri=saved,
+        extraction=result["extraction"],
+    )
+
+    questions = scout.infer_questions_from_explorations(
+        explorations=[result["exploration"]],
+        schema=schema,
+        instructions=instructions,
+    )
+
+    if questions:
+        merge_questions(category, modality, questions)
+
+    return state
 
 
 def load_questions(state: PipelineState) -> PipelineState:
@@ -211,6 +314,7 @@ def judge(state: PipelineState) -> PipelineState:
         provider="litellm",
         token_usage={},
         quality_tier=evaluation.quality_tier.value,
+        gold_standard_id=gs.id,
     )
 
     traces = state.get("trace_entries", []) + [trace]

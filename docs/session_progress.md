@@ -40,14 +40,15 @@ Iteratively build the **best self-improving document extraction system using age
 4. **Layer 3: `src/storage/`** — `paths.py`, `fs_store.py`, `trace_logger.py`
 5. **Layer 4: `src/retrieval/`** — `router.py`, `colpali/`, `colbert/`
 6. **Layer 5: `src/agents/`** — `scout/`, `extractor/`, `judge/`
-7. **Layer 6: `src/orchestration/`** — `graph.py`, `state.py`, `nodes.py`, `hitl.py`
+7. **Layer 6: `src/orchestration/`** — `graph.py`, `state.py`, `nodes.py`
 8. **Layer 7: `src/optimization/`** — `gepa.py`, `reflector.py`, `population.py`, `validator.py`
 9. **Layer 8: `src/utils/`** + `scripts/` + `.env.example` + `pyproject.toml`
 10. **DSPy Signature field rename** — `schema` → `extraction_schema`, `instructions` → `extraction_instructions` in all DSPy Signature classes and callers (scout, extractor, judge, reflector)
 11. **Bug fixes** — `os.replace()` for Windows atomic writes; `self._mutate_prompt` to fix PromptMutator naming conflict
-12. **132 unit tests passing, 7 failing** — 4 failures in `test_graph.py` (integration happy path + error halt), 2 in `test_scout.py` (explore/extraction), 1 other
+12. **146 unit tests passing** (all pass) — gold/regular path split, detect_gold node, merge_questions, Judge conditional routing, updated graph topology
 13. **Integration test for full LangGraph pipeline** — happy path + error halt scenarios in `test_graph.py` (currently failing)
 14. **Retrieval test fixes** — fixed mock patching for lazy-imported modules (`ragatouille`, `colpali_engine`, `pdf2image`) using `sys.modules` dict patching; fixed ColPali `pickle`/`torch` mock for `build_index`
+15. **Docs-code alignment audit** — fixed 20 discrepancies: Judge conditional routing (only runs on gold docs), TraceEntry gold_standard_id field, ScoutAgent vision mode fix, JudgeAgent return type, all 4 doc files updated to match code
 
 ### Test Coverage
 
@@ -64,14 +65,13 @@ Iteratively build the **best self-improving document extraction system using age
 | `test_reflector.py` | 4 | Reflector.analyze + PromptMutator.mutate with mocked dspy.Predict |
 | `test_population.py` | 13 | PromptCandidate model, CRUD, current prompt, next ID, Pareto selection |
 | `test_gepa.py` | 4 | Full GEPA cycle (no gold standards error, initial candidate, multi-generation, skip empty samples) |
-| `test_orchestration_nodes.py` | 12 | Pipeline nodes (check_context, resolve_config, load_questions, route_input, extract, judge, log_traces) |
+| `test_orchestration_nodes.py` | 17 | Pipeline nodes (check_context, resolve_config, detect_gold, run_scout_for_gold, load_questions, route_input, extract, judge, log_traces) |
 | `test_validator.py` | 4 | Validator.validate_candidate (no gold standards, mocked agents, sample_size limit, zero accuracy) |
 | `test_trace_logger.py` | 7 | Trace logging (single/batch write, phase dirs, read by date, empty reads) |
 | `test_colpali_retriever.py` | 5 | ColPali build_index, retrieve (page indices, dedup), get_retrieved_pages (range skip) |
 | `test_colbert_retriever.py` | 7 | ColBERT build_index, retrieve (dedup, top_k), get_retrieved_chunks (format, document key fallback) |
-| `test_hitl.py` | 6 | Human-in-the-loop (present_for_review, apply_corrections — extraction, questions, both, empty) |
-| `test_graph.py` | 10 | LangGraph pipeline (node existence, routing, error halt, compile, integration happy path + error) |
-| **Total** | **139** (132 pass, 7 fail) | |
+| `test_graph.py` | 14 | LangGraph pipeline (node existence, gold/regular routing, _is_gold, _should_judge, error halt, compile, integration gold path + regular path + error) |
+| **Total** | **146** (all pass) | |
 
 ### Source Code Bug Fixes Applied
 
@@ -93,7 +93,7 @@ Iteratively build the **best self-improving document extraction system using age
 - `src/storage/` — `paths.py`, `fs_store.py`, `trace_logger.py`
 - `src/retrieval/` — `router.py`, `colpali/`, `colbert/`
 - `src/agents/` — `scout/`, `extractor/`, `judge/`
-- `src/orchestration/` — `graph.py`, `state.py`, `nodes.py`, `hitl.py`
+- `src/orchestration/` — `graph.py`, `state.py`, `nodes.py`
 - `src/optimization/` — `gepa.py`, `population.py`, `validator.py`
 - `src/utils/` — `pdf.py`, `text.py`, `logging.py`
 
@@ -101,14 +101,14 @@ Iteratively build the **best self-improving document extraction system using age
 
 - `pyproject.toml`, `configs/model_config.json`, `.env.example`, `.gitignore`
 
-### Tests (132 total)
+### Tests (146 total)
 
 - `tests/conftest.py` — comprehensive fixtures
 - `tests/unit/test_schemas.py`, `test_lm_config.py`, `test_router.py`, `test_fs_store.py`
 - `tests/unit/test_scout.py`, `test_judge.py`, `test_judge_agent.py`
 - `tests/unit/test_extractor.py`, `test_reflector.py`
 - `tests/unit/test_population.py`, `test_gepa.py`
-- `tests/unit/test_orchestration_nodes.py`, `test_graph.py`, `test_hitl.py`
+- `tests/unit/test_orchestration_nodes.py`, `test_graph.py`
 - `tests/unit/test_validator.py`, `test_trace_logger.py`
 - `tests/unit/test_colpali_retriever.py`, `test_colbert_retriever.py`
 

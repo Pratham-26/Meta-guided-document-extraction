@@ -1,6 +1,8 @@
 import dspy
 import json
 
+from src.schemas.evaluation import FieldDiff, JudgeEvaluation, QualityTier
+
 
 class JudgeCompare(dspy.Signature):
     """Compare an extraction against a Gold Standard and evaluate quality.
@@ -35,9 +37,7 @@ class JudgeAgent:
         gold_standard: dict,
         schema: dict,
         gold_standard_id: str,
-    ) -> dict:
-        from src.schemas.evaluation import FieldDiff, JudgeEvaluation, QualityTier
-
+    ) -> JudgeEvaluation:
         result = self.compare(
             extraction=json.dumps(extraction, indent=2),
             gold_standard=json.dumps(gold_standard, indent=2),

@@ -40,3 +40,39 @@ def add_questions(
     )
     save_question_set(category, modality, qs)
     return qs
+
+
+def merge_questions(
+    category: str, modality: str, new_questions: list[dict]
+) -> QuestionSet:
+    existing = load_question_set(category, modality)
+
+    if not existing:
+        return add_questions(category, modality, new_questions)
+
+    existing_fields = {q.target_field for q in existing.questions}
+    entries = list(existing.questions)
+
+    for q in new_questions:
+        target_field = q.get("target_field", "unknown")
+        if target_field not in existing_fields:
+            next_idx = len(entries) + 1
+            entries.append(
+                QuestionEntry(
+                    id=f"q_{next_idx:03d}",
+                    text=q["text"],
+                    target_field=target_field,
+                    retrieval_priority=q.get("retrieval_priority", 1),
+                )
+            )
+            existing_fields.add(target_field)
+
+    qs = QuestionSet(
+        category=category,
+        input_modality=modality,
+        version=existing.version + 1,
+        updated_at=datetime.now(timezone.utc).isoformat(),
+        questions=entries,
+    )
+    save_question_set(category, modality, qs)
+    return qs

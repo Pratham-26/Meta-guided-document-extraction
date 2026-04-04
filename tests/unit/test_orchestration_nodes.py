@@ -8,6 +8,8 @@ from src.orchestration.nodes import (
     check_context,
     resolve_config,
     load_questions,
+    detect_gold,
+    run_scout_for_gold,
     route_input,
     extract,
     judge,
@@ -56,6 +58,69 @@ class TestResolveConfig:
             state = {"category_name": "nonexistent"}
             with pytest.raises(FileNotFoundError):
                 resolve_config(state)
+
+
+class TestDetectGold:
+    def test_user_flagged_gold_passes_through(self):
+        state = {"is_gold_doc": True, "gold_source": "user_flag"}
+        result = detect_gold(state)
+        assert result["is_gold_doc"] is True
+        assert result["gold_source"] == "user_flag"
+
+    def test_random_sampling_triggers_gold(self, bootstrapped_category):
+        from src.storage import paths
+
+        counter_path = paths.sampling_counter_path("test_category", "pdf")
+        counter_path.parent.mkdir(parents=True, exist_ok=True)
+        counter_path.write_text('{"count": 99}')
+
+        with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=100):
+            state = {
+                "category_name": "test_category",
+                "input_modality": "pdf",
+            }
+            result = detect_gold(state)
+
+        assert result["is_gold_doc"] is True
+        assert result["gold_source"] == "random_sample"
+
+    def test_random_sampling_does_not_trigger(self, bootstrapped_category):
+        from src.storage import paths
+
+        counter_path = paths.sampling_counter_path("test_category", "pdf")
+        counter_path.parent.mkdir(parents=True, exist_ok=True)
+        counter_path.write_text('{"count": 50}')
+
+        with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=100):
+            state = {
+                "category_name": "test_category",
+                "input_modality": "pdf",
+            }
+            result = detect_gold(state)
+
+        assert result["is_gold_doc"] is False
+        assert result["gold_source"] is None
+
+    def test_zero_rate_never_samples(self, bootstrapped_category):
+        with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=0):
+            state = {
+                "category_name": "test_category",
+                "input_modality": "pdf",
+            }
+            result = detect_gold(state)
+
+        assert result["is_gold_doc"] is False
+
+    def test_counter_initializes_from_zero(self, bootstrapped_category):
+        with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=1):
+            state = {
+                "category_name": "test_category",
+                "input_modality": "pdf",
+            }
+            result = detect_gold(state)
+
+        assert result["is_gold_doc"] is True
+        assert result["gold_source"] == "random_sample"
 
 
 class TestLoadQuestions:

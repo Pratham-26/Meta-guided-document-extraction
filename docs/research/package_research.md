@@ -6,7 +6,7 @@ This document explores the role, logic, and reasoning for each core package util
 **Purpose in Architecture:** State Orchestration & Workflow Routing
 **Why we are using it:**
 - **Stateful Execution:** The overarching goal of the system is to move from stateless, linear pipelines to a robust, stateful system. LangGraph manages the graph as a state machine where document embeddings, intermediate Judge scores, and the generated JSON draft are passed and mutated from node to node.
-- **Human-in-the-Loop (HitL) Breakpoints:** Bootstrapping the initial extraction phase requires human approval. LangGraph natively supports "pausing" execution mid-graph, outputting the current state to the user, and resuming upon approval (vital for "Phase 1: Bootstrapping").
+- **Human-in-the-Loop (HitL) Breakpoints:** LangGraph natively supports conditional routing and mid-graph state inspection. While the current architecture is fully automated (no human approval), LangGraph's conditional edges enable branching logic such as routing gold documents through Scout processing before extraction, while regular documents bypass the Scout step.
 - **Agent Swarming:** It powers the orchestration ("The Swarm") routing between the Judge Agent, Extractor Agent, and Scout Agent based on varying conditions.
 
 ## 2. DSPy (`dspy`)

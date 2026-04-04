@@ -75,6 +75,14 @@ def optimization_traces_dir(name: str, modality: str) -> Path:
     return trace_traces_dir(name, modality) / "optimization_traces"
 
 
+def sampling_config_path(name: str, modality: str) -> Path:
+    return modality_dir(name, modality) / "sampling_config.json"
+
+
+def sampling_counter_path(name: str, modality: str) -> Path:
+    return modality_dir(name, modality) / "sampling_counter.json"
+
+
 def ensure_category_dirs(name: str):
     for modality in _VALID_MODALITIES:
         for d in [

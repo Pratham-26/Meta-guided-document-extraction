@@ -16,3 +16,4 @@ class TraceEntry(BaseModel):
     token_usage: dict
     quality_tier: str | None = None
     document_id: str | None = None
+    gold_standard_id: str | None = None

@@ -67,10 +67,33 @@ class AgentRoleConfig(BaseModel):
         )
 
 
+class ProcessConfig(BaseModel):
+    gold_sampling_rate: int = 100
+
+
 class ModelConfig(BaseModel):
     text_model: str | None = None
     vision_model: str | None = None
     agent_roles: dict[str, AgentRoleConfig]
+
+
+def load_process_config(path: Path | None = None) -> ProcessConfig:
+    path = path or settings.process_config_path
+    if not path.exists():
+        return ProcessConfig()
+    with open(path) as f:
+        return ProcessConfig(**json.load(f))
+
+
+def get_gold_sampling_rate(category: str, modality: str) -> int:
+    global_rate = load_process_config().gold_sampling_rate
+    override_path = (
+        settings.categories_dir / category / modality / "sampling_config.json"
+    )
+    if override_path.exists():
+        with open(override_path) as f:
+            return json.load(f).get("gold_sampling_rate", global_rate)
+    return global_rate
 
 
 def load_model_config(path: Path | None = None) -> ModelConfig:

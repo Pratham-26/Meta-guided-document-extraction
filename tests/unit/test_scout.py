@@ -7,7 +7,11 @@ import pytest
 
 from src.agents.scout.agent import ScoutAgent, ScoutExplore, ScoutQuestionInference
 from src.agents.scout.gold_builder import build_and_save
-from src.agents.scout.question_store import add_questions, get_questions
+from src.agents.scout.question_store import (
+    add_questions,
+    get_questions,
+    merge_questions,
+)
 from src.schemas.gold_standard import GoldStandard
 
 
@@ -230,3 +234,83 @@ class TestQuestionStore:
     def test_get_questions_empty(self, tmp_category_dir):
         questions = get_questions("nonexistent", "pdf")
         assert questions == []
+
+
+class TestMergeQuestions:
+    def test_merge_adds_new_fields(self, tmp_category_dir):
+        from src.storage.paths import ensure_category_dirs
+
+        ensure_category_dirs("test_cat")
+
+        add_questions(
+            "test_cat",
+            "pdf",
+            [
+                {"text": "Who?", "target_field": "name", "retrieval_priority": 1},
+            ],
+        )
+
+        merged = merge_questions(
+            "test_cat",
+            "pdf",
+            [
+                {
+                    "text": "How much?",
+                    "target_field": "amount",
+                    "retrieval_priority": 1,
+                },
+            ],
+        )
+
+        assert len(merged.questions) == 2
+        assert merged.version == 2
+
+    def test_merge_skips_existing_fields(self, tmp_category_dir):
+        from src.storage.paths import ensure_category_dirs
+
+        ensure_category_dirs("test_cat")
+
+        add_questions(
+            "test_cat",
+            "pdf",
+            [
+                {"text": "Who?", "target_field": "name", "retrieval_priority": 1},
+            ],
+        )
+
+        merged = merge_questions(
+            "test_cat",
+            "pdf",
+            [
+                {
+                    "text": "Who is the landlord?",
+                    "target_field": "name",
+                    "retrieval_priority": 1,
+                },
+            ],
+        )
+
+        assert len(merged.questions) == 1
+        assert merged.version == 2
+        assert merged.questions[0].text == "Who?"
+
+    def test_merge_creates_new_set_when_none_exists(self, tmp_category_dir):
+        from src.storage.paths import ensure_category_dirs
+
+        ensure_category_dirs("test_cat")
+
+        merged = merge_questions(
+            "test_cat",
+            "pdf",
+            [
+                {"text": "Who?", "target_field": "name", "retrieval_priority": 1},
+                {
+                    "text": "How much?",
+                    "target_field": "amount",
+                    "retrieval_priority": 1,
+                },
+            ],
+        )
+
+        assert len(merged.questions) == 2
+        assert merged.version == 1

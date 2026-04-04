@@ -30,17 +30,20 @@ Meta-learning-for-document-extraction/
 ├── .env.example                      # Template for required environment variables
 ├── .gitignore
 ├── pyproject.toml                    # Project metadata, dependencies, build config
-├── README.md                         # Project overview & quickstart
 │
 ├── docs/                             # Documentation
 │   ├── architecture.md               # System architecture (source of truth)
 │   ├── technical_documentation.md    # This file — implementation reference
+│   ├── data_flow.mermaid             # Visual data flow diagram (Mermaid)
+│   ├── workflow.md                   # End-to-end workflow walkthrough
+│   ├── session_progress.md           # Session-by-session progress tracking
 │   └── research/
 │       ├── requirements.txt          # Core package list
 │       └── package_research.md       # Per-package rationale
 │
 ├── configs/                          # JSON configuration files
 │   ├── model_config.json             # DSPy LM configuration (LiteLLM model strings)
+│   ├── process_config.json           # Global process settings (gold sampling rate, etc.)
 │   └── categories/                   # Per-document-category config
 │       └── commercial_lease.json     # Example: schema, instructions, retrieval params
 │
@@ -85,20 +88,19 @@ Meta-learning-for-document-extraction/
 │   │   ├── router.py                 # Input-type router (PDF → ColPali, text → ColBERT)
 │   │   ├── colpali/                  # Vision retrieval
 │   │   │   ├── __init__.py
-│   │   │   ├── indexer.py            # Page-level visual embedding & index management
-│   │   │   └── retriever.py          # Question-driven page retrieval
+│   │   │   ├── indexer.py            # Page-level visual embedding, index management & retrieval
+│   │   │   └── retriever.py          # Question-driven page retrieval (wraps indexer)
 │   │   │
 │   │   └── colbert/                  # Text retrieval
 │   │       ├── __init__.py
-│   │       ├── indexer.py            # Token-level text embedding & index management
-│   │       └── retriever.py          # Question-driven chunk retrieval (MaxSim)
+│   │       ├── indexer.py            # Token-level text embedding, index management & retrieval
+│   │       └── retriever.py          # Question-driven chunk retrieval (wraps indexer, MaxSim)
 │   │
 │   ├── orchestration/                # LangGraph Orchestration Layer
 │   │   ├── __init__.py
 │   │   ├── graph.py                  # Main LangGraph state graph definition
 │   │   ├── state.py                  # Graph state schema (TypedDict / Pydantic)
-│   │   ├── nodes.py                  # Graph node functions (route, extract, evaluate)
-│   │   └── hitl.py                   # Human-in-the-Loop breakpoint handlers
+│   │   └── nodes.py                  # Graph node functions (check_context, resolve_config, detect_gold, etc.)
 │   │
 │   ├── optimization/                 # Continuous Learning / GEPA Layer
 │   │   ├── __init__.py
@@ -131,6 +133,7 @@ Meta-learning-for-document-extraction/
 │   │       │   │   └── questions.json
 │   │       │   ├── indexes/          # ColPali index artifacts
 │   │       │   │   └── colpali/
+│   │       │   ├── sampling_config.json  # Per-modality gold sampling override
 │   │       │   └── prompts/          # GEPA prompt population (PDF-specific)
 │   │       │       ├── current.json
 │   │       │       └── population/
@@ -145,6 +148,7 @@ Meta-learning-for-document-extraction/
 │   │       │   │   └── questions.json
 │   │       │   ├── indexes/          # ColBERT index artifacts
 │   │       │   │   └── colbert/
+│   │       │   ├── sampling_config.json  # Per-modality gold sampling override
 │   │       │   └── prompts/          # GEPA prompt population (text-specific)
 │   │       │       ├── current.json
 │   │       │       └── population/
@@ -153,14 +157,15 @@ Meta-learning-for-document-extraction/
 │   │
 │   └── traces/                       # Structured trace logs (SLM training corpus)
 │       └── <category_name>/
-│           ├── extraction_traces/
-│           │   └── trace_2026-04-03_001.jsonl
-│           ├── judge_traces/
-│           │   └── trace_2026-04-03_001.jsonl
-│           └── optimization_traces/
-│               └── trace_2026-04-03_001.jsonl
+│           └── <modality>/
+│               ├── extraction_traces/
+│               │   └── trace_2026-04-03_001.jsonl
+│               ├── judge_traces/
+│               │   └── trace_2026-04-03_001.jsonl
+│               └── optimization_traces/
+│                   └── trace_2026-04-03_001.jsonl
 │
-├── tests/                            # Test suite (132 passing, 7 failing — see session_progress.md)
+├── tests/                            # Test suite (146 passing, all pass)
 │   ├── __init__.py
 │   ├── conftest.py                   # Shared fixtures (mock LLMs, sample docs)
 │   ├── unit/
@@ -175,26 +180,21 @@ Meta-learning-for-document-extraction/
 │   │   ├── test_reflector.py         # Reflector.analyze + PromptMutator.mutate
 │   │   ├── test_population.py        # PromptCandidate model, CRUD, Pareto selection
 │   │   ├── test_gepa.py              # Full GEPA cycle
-│   │   ├── test_orchestration_nodes.py  # Pipeline nodes (check_context, route, extract, judge)
-│   │   ├── test_graph.py             # LangGraph pipeline (routing, integration happy path)
-│   │   ├── test_hitl.py              # Human-in-the-loop (present_for_review, apply_corrections)
+│   │   ├── test_orchestration_nodes.py  # Pipeline nodes (check_context, detect_gold, route, extract, judge)
+│   │   ├── test_graph.py             # LangGraph pipeline (gold/regular paths, Judge conditional, integration)
 │   │   ├── test_validator.py         # Validator.validate_candidate
 │   │   ├── test_trace_logger.py      # Trace logging (single/batch, phase dirs, read by date)
 │   │   ├── test_colpali_retriever.py # ColPali build_index, retrieve, get_retrieved_pages
 │   │   └── test_colbert_retriever.py # ColBERT build_index, retrieve, get_retrieved_chunks
 │   ├── integration/                  # (planned — not yet implemented)
-│   │   ├── test_scout_pipeline.py
-│   │   ├── test_extraction_pipeline.py
-│   │   └── test_gepa_cycle.py
+│   │   └── __init__.py
 │   └── fixtures/                     # (planned — placeholder .gitkeep only)
-│       ├── sample_lease.pdf
-│       ├── sample_text_doc.txt
-│       └── sample_gold_standard.json
+│       └── .gitkeep
 │
 └── scripts/                          # Utility & operations scripts
     ├── bootstrap_category.py         # CLI: initialize a new document category
     ├── run_scout.py                  # CLI: trigger Scout Agent for a category
-    ├── run_extraction.py             # CLI: run extraction on a document
+    ├── run_extraction.py             # CLI: run extraction on a document (supports --gold flag)
     ├── run_optimization.py           # CLI: trigger GEPA optimization cycle
     └── export_traces.py             # CLI: export trace logs for SLM training
 ```
@@ -250,7 +250,8 @@ def get_lm(
     if cache_key in _active_lms:
         return _active_lms[cache_key]
 
-    config = config or load_model_config()
+    if config is None:
+        config = load_model_config()
     role_config = config.agent_roles[agent_role]
     model_name = role_config.get_model(
         input_type,
@@ -305,7 +306,7 @@ All data flowing through the system is strictly typed. Key schemas:
 | `DocumentInput` | Wraps incoming documents — file path, input type (`pdf` / `text`), raw content, metadata. |
 | `CategoryConfig` | Defines a document category — name, expected output schema, extraction instructions, retrieval parameters. Lives in `src/config/loader.py`. |
 | `QuestionEntry` / `QuestionSet` | Scout-inferred questions with target field, retrieval priority. Stored per `(category, modality)`. |
-| `ExtractionResult` | The Extractor Agent's output — dynamically validated against the category's expected schema. |
+| `ExtractionResult` | Wraps an extraction with metadata (document ID, category, source URI, timestamp, model). Used for trace logging and external serialization. The pipeline state carries the inner extraction `dict` for downstream consumers. |
 | `GoldStandard` | An approved extraction — the source document ref, the approved JSON, who approved it, timestamp. |
 | `TraceEntry` | A single LLM interaction — prompt, response, agent role, phase, timestamp, token counts. |
 | `JudgeEvaluation` | Judge output — quality tier (`low` / `medium` / `high`), textual feedback, field-level diffs via `FieldDiff` model. |
@@ -335,7 +336,7 @@ All data flowing through the system is strictly typed. Key schemas:
 
 | File | Role |
 |:---|:---|
-| `agent.py` | Comparison function. Takes an `ExtractionResult` and the corresponding `GoldStandard`, outputs a `JudgeEvaluation`. Only runs when a Gold Standard exists for the category. Assigns `low` / `medium` / `high` quality tier and generates textual feedback identifying divergences. |
+| `agent.py` | Comparison function. Takes an `ExtractionResult` and the corresponding `GoldStandard`, outputs a `JudgeEvaluation`. Only runs for **gold documents** (user-flagged via `--gold` or randomly sampled). For regular documents, the Judge is skipped entirely. Assigns `low` / `medium` / `high` quality tier and generates textual feedback identifying divergences. |
 
 ---
 
@@ -352,15 +353,15 @@ No ML classifier — just file type detection.
 
 | File | Role |
 |:---|:---|
-| `indexer.py` | Takes a PDF, renders each page to an image, generates visual patch embeddings via `colpali-engine`. Stores the index in `data/categories/<name>/indexes/colpali/`. |
-| `retriever.py` | Takes the Scout's inferred questions as queries. Returns **only the relevant pages** ranked by visual similarity. |
+| `indexer.py` | Takes a PDF, renders each page to an image, generates visual patch embeddings via `colpali-engine`. Stores the index in `data/categories/<name>/indexes/colpali/`. Also contains retrieval logic for searching the index. |
+| `retriever.py` | Thin wrapper around `indexer.retrieve()`. Takes the Scout's inferred questions as queries. Returns **only the relevant pages** ranked by visual similarity. |
 
 #### ColBERT (`retrieval/colbert/`)
 
 | File | Role |
 |:---|:---|
-| `indexer.py` | Takes text input, generates token-level embeddings via RAGatouille/ColBERT. Stores the index in `data/categories/<name>/indexes/colbert/`. |
-| `retriever.py` | Takes the Scout's inferred questions as queries. Uses MaxSim operation to return **only the relevant chunks**. |
+| `indexer.py` | Takes text input, generates token-level embeddings via RAGatouille/ColBERT. Stores the index in `data/categories/<name>/indexes/colbert/`. Also contains retrieval logic for searching the index. |
+| `retriever.py` | Thin wrapper around `indexer.retrieve()`. Takes the Scout's inferred questions as queries. Uses MaxSim operation to return **only the relevant chunks**. |
 
 **Key principle:** The Extraction Agent never sees the full document. It only operates on pages (ColPali) or chunks (ColBERT) retrieved using the Scout's questions.
 
@@ -370,10 +371,9 @@ No ML classifier — just file type detection.
 
 | File | Role |
 |:---|:---|
-| `state.py` | Defines the graph's `TypedDict` state: document input, category config, retrieved context, extraction draft, judge evaluation, optimization status. |
-| `graph.py` | Builds the LangGraph `StateGraph`. Defines nodes and edges. Handles conditional routing (e.g., context gate check, has Gold Standard → run Judge). |
-| `nodes.py` | Individual node functions — each wraps an agent or service call. Keeps graph definition clean. |
-| `hitl.py` | Human-in-the-Loop interrupt handlers. Pauses graph execution, presents draft to user, resumes on approval/correction. |
+| `state.py` | Defines the graph's `TypedDict` state: `document` (DocumentInput), `category_name`, `input_modality`, `is_gold_doc` flag, `gold_source`, `schema` (dict), `instructions` (str), `retrieval_route` (RetrievalRoute), `questions` (list[str]), `retrieved_context` (str), `retrieved_images` (list), `extraction` (dict), `judge_evaluation` (JudgeEvaluation), `trace_entries` (list[TraceEntry]), `error` (str). |
+| `graph.py` | Builds the LangGraph `StateGraph`. Defines nodes and edges. Handles conditional routing (context gate check, gold detection → Scout-for-gold path). |
+| `nodes.py` | Individual node functions — `check_context`, `resolve_config`, `detect_gold`, `run_scout_for_gold`, `load_questions`, `route_input`, `retrieve`, `extract`, `judge`, `log_traces`. Keeps graph definition clean. |
 
 **Graph Topology (simplified):**
 
@@ -381,25 +381,40 @@ No ML classifier — just file type detection.
 START
   │
   ▼
-[Context Gate] ── No context ──► HALT (require bootstrap with 2 docs)
+[check_context] ── No context ──► END (error)
        │
        │ Context exists
        ▼
-[Input Router] ── PDF ──► [ColPali Retrieval]
-       │                         │
-       └── Text ──► [ColBERT Retrieval]
-                         │
-                         ▼
-                  [Extraction Agent]
-                         │
-                         ▼
-                  [Judge Agent] ← compare against Gold Standard
-                         │
-                         ▼
-                  [Log Trace]
-                         │
-                         ▼
-                       END
+[resolve_config]
+       │
+       ▼
+[detect_gold] ── is gold ──► [run_scout_for_gold] ──┐
+       │                                             │
+       │ not gold                                    │
+       ▼                                             ▼
+       └────────────────────► [load_questions]
+                                      │
+                                      ▼
+                               [route_input]
+                                      │
+                                      ▼
+                               [retrieve] ── internal dispatch: PDF→ColPali, Text→ColBERT
+                                      │
+                                      ▼
+                               [Extraction Agent]
+                                      │
+                              ┌───────┴───────┐
+                              │ is gold doc?  │
+                              └───────┬───────┘
+                             Yes      │       No
+                              ▼       │        ▼
+                      [Judge Agent]   │   [Log Trace]
+                              │       │        │
+                              ▼       │        │
+                         [Log Trace]  │        │
+                              │       │        │
+                              ▼       ▼        ▼
+                                    END
 ```
 
 ---
@@ -411,7 +426,7 @@ START
 | `gepa.py` | Core optimizer. Consumes Judge evaluations. Orchestrates: reflection → mutation → selection → validation cycle. Runs offline (nightly batch or on-demand). |
 | `reflector.py` | Reflection LLM call. Analyzes extraction traces alongside Gold Standards to diagnose *why* failures occurred. Produces structured failure reports. |
 | `population.py` | Manages the prompt candidate population. Handles Pareto-based selection — maintains diversity so the system doesn't collapse into one suboptimal prompt. |
-| `validator.py` | Post-optimization validation. Re-runs extraction on a representative mix of low/medium/high examples. Judge re-evaluates to confirm improvement. Only promotes the winning candidate on net improvement. |
+| `validator.py` | Post-optimization validation. Re-runs extraction on a sample of Gold Standards. Judge re-evaluates to confirm improvement. Only promotes the winning candidate on net improvement. |
 
 **Optimization Cycle:**
 
@@ -512,11 +527,13 @@ Top-level `text_model` and `vision_model` provide defaults for the entire config
 
 **Model resolution order** (per role, when `input_type="vision"`):
 1. `role_config.vision_model` — if set, use this
-2. `role_config.text_model` — if no vision model, fall back to text model
-3. `role_config.model` — if no dual models, use the single model
-4. Raise `ValueError` — if nothing is configured
+2. Top-level `config.vision_model` — fallback if role has no vision model
+3. `role_config.text_model` — if no vision models available, fall back to text model
+4. Top-level `config.text_model` — fallback if role has no text model either
+5. `role_config.model` — if no dual models, use the single model
+6. Raise `ValueError` — if nothing is configured
 
-The same order applies for `input_type="text"` (checking `text_model` first).
+The same order applies for `input_type="text"` (checking `text_model` first, then top-level `text_model`, then `vision_model`, etc.).
 
 **To switch providers**, just change the model string. No code changes needed:
 ```json
@@ -673,6 +690,7 @@ class TraceEntry(BaseModel):
     token_usage: dict                 # {"prompt_tokens": ..., "completion_tokens": ...}
     quality_tier: str | None = None   # If applicable (post-Judge)
     document_id: str | None = None    # Source document reference
+    gold_standard_id: str | None = None  # Gold Standard compared against (judge traces)
 ```
 
 ---
@@ -713,25 +731,16 @@ User provides:  CategoryConfig JSON + 2 sample documents
      │   documents   │    │   Scout's deep    │
      └──────────────┘    │   exploration     │
                          └──────────┬────────┘
-                                    │
-                                    ▼
-                         ┌───────────────────┐
-                         │ HitL Validation   │
-                         │ • Present Qs +    │
-                         │   both Gold Stds  │
-                         │ • Human reviews   │
-                         │ • Human approves  │
-                         └──────────┬────────┘
-                                    │
-                                    ▼
-                         ┌───────────────────┐
-                         │ Promote to Memory │
-                         │ • Save questions  │
-                         │ • Save Gold Stds  │
-                         │ • Archive sources │
-                         │ • Category is now │
-                         │   context-ready   │
-                         └───────────────────┘
+                                     │
+                                     ▼
+                          ┌───────────────────┐
+                          │ Promote to Memory │
+                          │ • Save questions  │
+                          │ • Save Gold Stds  │
+                          │ • Archive sources │
+                          │ • Category is now │
+                          │   context-ready   │
+                          └───────────────────┘
 ```
 
 ### 5.2 Phase 1.5 — Ongoing Scout Refinement
@@ -762,7 +771,7 @@ Trigger:  Scheduled / manual (after bootstrapping)
 ### 5.3 Phase 2 — Production Extraction Flow
 
 ```
-New document arrives
+New document arrives [--gold flag optional]
          │
          ▼
   ┌──────────────┐
@@ -771,6 +780,23 @@ New document arrives
   │ Gold Stds?    │
   └──────┬───────┘
          │ Yes
+         ▼
+  ┌──────────────┐
+  │ Detect Gold   │── user flag or random sample
+  └──────┬───────┘
+         │
+    +----+----+
+    |         |
+    v         v
+  [Gold]    [Regular]
+    |         |
+    v         |
+ [Scout:     |
+  Gold Std,  |
+  Questions] |
+    |         |
+    +----+----+
+         |
          ▼
   ┌──────────────┐
   │ Input Router  │
@@ -790,10 +816,17 @@ New document arrives
   └──────┬───────┘
          │  ExtractionResult
          ▼
-  ┌──────────────┐
-  │ Judge Agent  │ ← compare against Gold Standard
-  └──────┬───────┘
-         │  JudgeEvaluation
+    +----+----+
+    |         |
+    v         v
+  [Gold]    [Regular]
+    |         |
+    v         |
+ [Judge      |
+  evaluates] |
+    |         |
+    +----+----+
+         │
          ▼
   ┌──────────────┐
   │ Log trace    │
@@ -886,9 +919,12 @@ Each line is a standalone JSON object:
   "provider": "openai",
   "token_usage": { "prompt_tokens": 1240, "completion_tokens": 380 },
   "quality_tier": "high",
-  "document_id": "doc_042"
+  "document_id": "doc_042",
+  "gold_standard_id": null
 }
 ```
+
+> **Note:** `gold_standard_id` is populated on judge traces to link the evaluation to the specific Gold Standard used for comparison. This enables GEPA to trace failures back to specific ground-truth examples.
 
 ### 6.3 Question Store Format
 
