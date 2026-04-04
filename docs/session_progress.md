@@ -45,10 +45,11 @@ Iteratively build the **best self-improving document extraction system using age
 9. **Layer 8: `src/utils/`** + `scripts/` + `.env.example` + `pyproject.toml`
 10. **DSPy Signature field rename** — `schema` → `extraction_schema`, `instructions` → `extraction_instructions` in all DSPy Signature classes and callers (scout, extractor, judge, reflector)
 11. **Bug fixes** — `os.replace()` for Windows atomic writes; `self._mutate_prompt` to fix PromptMutator naming conflict
-12. **146 unit tests passing** (all pass) — gold/regular path split, detect_gold node, merge_questions, Judge conditional routing, updated graph topology
-13. **Integration test for full LangGraph pipeline** — happy path + error halt scenarios in `test_graph.py` (currently failing)
+12. **150 unit tests passing** (all pass) — gold/regular path split, auto-gold first N documents, detect_gold node, merge_questions, Judge conditional routing, updated graph topology
+13. **Integration test for full LangGraph pipeline** — happy path + error halt scenarios in `test_graph.py`
 14. **Retrieval test fixes** — fixed mock patching for lazy-imported modules (`ragatouille`, `colpali_engine`, `pdf2image`) using `sys.modules` dict patching; fixed ColPali `pickle`/`torch` mock for `build_index`
 15. **Docs-code alignment audit** — fixed 20 discrepancies: Judge conditional routing (only runs on gold docs), TraceEntry gold_standard_id field, ScoutAgent vision mode fix, JudgeAgent return type, all 4 doc files updated to match code
+16. **End-to-end integration tests** — 8 integration tests in `tests/integration/test_pipeline.py`: real node functions with real file I/O, mocked LLMs/retrieval; covers regular text extraction, gold path with Scout+Judge, context gate halt, auto-gold detection, real config loading, PDF→ColPali routing, trace persistence verification
 
 ### Test Coverage
 
@@ -71,7 +72,8 @@ Iteratively build the **best self-improving document extraction system using age
 | `test_colpali_retriever.py` | 5 | ColPali build_index, retrieve (page indices, dedup), get_retrieved_pages (range skip) |
 | `test_colbert_retriever.py` | 7 | ColBERT build_index, retrieve (dedup, top_k), get_retrieved_chunks (format, document key fallback) |
 | `test_graph.py` | 14 | LangGraph pipeline (node existence, gold/regular routing, _is_gold, _should_judge, error halt, compile, integration gold path + regular path + error) |
-| **Total** | **146** (all pass) | |
+| `test_pipeline.py` | 8 | End-to-end integration (real nodes + file I/O, regular/gold paths, context gate, auto-gold, config loading, PDF routing, trace persistence) |
+| **Total** | **158** (all pass) | |
 
 ### Source Code Bug Fixes Applied
 
@@ -80,7 +82,6 @@ Iteratively build the **best self-improving document extraction system using age
 
 ### Still To Do
 
-- End-to-end integration test with a real (small) document
 - Iteration 2: evaluate extraction quality against real documents, identify weaknesses
 - Iteration N: refine retrieval, prompts, and optimization based on measured performance
 
@@ -101,7 +102,7 @@ Iteratively build the **best self-improving document extraction system using age
 
 - `pyproject.toml`, `configs/model_config.json`, `.env.example`, `.gitignore`
 
-### Tests (146 total)
+### Tests (158 total)
 
 - `tests/conftest.py` — comprehensive fixtures
 - `tests/unit/test_schemas.py`, `test_lm_config.py`, `test_router.py`, `test_fs_store.py`
@@ -111,6 +112,7 @@ Iteratively build the **best self-improving document extraction system using age
 - `tests/unit/test_orchestration_nodes.py`, `test_graph.py`
 - `tests/unit/test_validator.py`, `test_trace_logger.py`
 - `tests/unit/test_colpali_retriever.py`, `test_colbert_retriever.py`
+- `tests/integration/test_pipeline.py` — end-to-end integration tests
 
 ### Scripts
 

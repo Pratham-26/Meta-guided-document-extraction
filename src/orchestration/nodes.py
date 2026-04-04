@@ -1,19 +1,27 @@
 import json
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
 from src.orchestration.state import PipelineState
-from src.config.loader import load_category_config, get_gold_sampling_rate
+from src.config.loader import (
+    load_category_config,
+    get_gold_sampling_rate,
+    load_process_config,
+)
 from src.config.lm import get_lm
 from src.storage.fs_store import (
     has_context,
     list_gold_standards,
     save_source_document,
 )
-from src.storage.paths import sampling_counter_path
+from src.storage.paths import (
+    sampling_counter_path,
+    colbert_tmp_index_dir,
+    colpali_tmp_index_dir,
+)
 from src.storage.trace_logger import log_trace
 from src.schemas.trace import TraceEntry
-from src.schemas.document import InputType
 from src.retrieval.router import RetrievalRoute, route
 
 
@@ -39,33 +47,43 @@ def resolve_config(state: PipelineState) -> PipelineState:
 
 
 def detect_gold(state: PipelineState) -> PipelineState:
-    if state.get("is_gold_doc"):
-        return state
-
     category = state.get("category_name", "")
     modality = state.get("input_modality", "")
-    threshold = get_gold_sampling_rate(category, modality)
-
-    if threshold <= 0:
-        return {**state, "is_gold_doc": False, "gold_source": None}
 
     counter_path = sampling_counter_path(category, modality)
     counter_path.parent.mkdir(parents=True, exist_ok=True)
 
-    count = 0
+    count_data = {"count": 0, "total": 0}
     if counter_path.exists():
         try:
-            count = json.loads(counter_path.read_text()).get("count", 0)
+            count_data = json.loads(counter_path.read_text())
         except (json.JSONDecodeError, OSError):
-            count = 0
+            count_data = {"count": 0, "total": 0}
 
-    count += 1
-    counter_path.write_text(json.dumps({"count": count}))
+    count_data["total"] = count_data.get("total", 0) + 1
+    counter_path.write_text(json.dumps(count_data))
 
-    if count >= threshold:
-        counter_path.write_text(json.dumps({"count": 0}))
+    if state.get("is_gold_doc"):
+        return state
+
+    process_config = load_process_config()
+    if (
+        process_config.auto_gold_initial_count > 0
+        and count_data["total"] <= process_config.auto_gold_initial_count
+    ):
+        return {**state, "is_gold_doc": True, "gold_source": "auto_initial"}
+
+    threshold = get_gold_sampling_rate(category, modality)
+    if threshold <= 0:
+        return {**state, "is_gold_doc": False, "gold_source": None}
+
+    count_data["count"] = count_data.get("count", 0) + 1
+    if count_data["count"] >= threshold:
+        count_data["count"] = 0
+        counter_path.write_text(json.dumps(count_data))
         return {**state, "is_gold_doc": True, "gold_source": "random_sample"}
 
+    counter_path.write_text(json.dumps(count_data))
     return {**state, "is_gold_doc": False, "gold_source": None}
 
 
@@ -74,7 +92,7 @@ def run_scout_for_gold(state: PipelineState) -> PipelineState:
     from src.agents.scout.gold_builder import build_and_save
     from src.agents.scout.question_store import merge_questions
     from src.utils.pdf import extract_text_from_pdf, load_pdf_pages
-    from src.utils.text import clean_text, truncate_to_tokens
+    from src.utils.text import clean_text, truncate_to_tokens, extract_text_from_file
 
     category = state.get("category_name", "")
     modality = state.get("input_modality", "")
@@ -104,7 +122,7 @@ def run_scout_for_gold(state: PipelineState) -> PipelineState:
         vision_lm = get_lm("scout", input_type="vision")
         scout = ScoutAgent(lm=lm, vision_lm=vision_lm)
     else:
-        content = path.read_text(encoding="utf-8")
+        content = extract_text_from_file(path)
         content = clean_text(content)
         content = truncate_to_tokens(content)
 
@@ -171,22 +189,50 @@ def route_input(state: PipelineState) -> PipelineState:
     return {**state, "retrieval_route": retrieval_route}
 
 
+def _build_temp_index(
+    category: str,
+    current_doc_path: Path,
+    retrieval_route: RetrievalRoute,
+) -> Path:
+    if retrieval_route == RetrievalRoute.COLPALI:
+        tmp_dir = colpali_tmp_index_dir(category)
+        from src.retrieval.colpali.indexer import build_index as colpali_build
+
+        colpali_build(category, [current_doc_path], index_dir=tmp_dir)
+    else:
+        tmp_dir = colbert_tmp_index_dir(category)
+        from src.retrieval.colbert.indexer import build_index as colbert_build
+
+        colbert_build(category, [current_doc_path], index_dir=tmp_dir)
+
+    return tmp_dir
+
+
 def retrieve(state: PipelineState) -> PipelineState:
     category = state.get("category_name", "")
+    modality = state.get("input_modality", "")
     questions = state.get("questions", [])
     doc = state.get("document")
     retrieval_route = state.get("retrieval_route")
 
+    if not doc:
+        return {**state, "error": "No document provided for retrieval."}
+
     try:
+        tmp_index_dir = _build_temp_index(category, doc.source_uri, retrieval_route)
+
         if retrieval_route == RetrievalRoute.COLPALI:
             from src.retrieval.colpali.retriever import get_retrieved_pages
 
             config = load_category_config(category)
             pages = get_retrieved_pages(
-                category, questions, config.retrieval.colpali_top_k
+                category,
+                questions,
+                config.retrieval.colpali_top_k,
+                index_dir=tmp_index_dir,
             )
             context_parts = [f"Page {p['page_number']}" for p in pages]
-            context = f"Retrieved pages (visual):\n" + "\n".join(context_parts)
+            context = "Retrieved pages (visual):\n" + "\n".join(context_parts)
             images = [p["image"] for p in pages if "image" in p]
             return {
                 **state,
@@ -198,7 +244,10 @@ def retrieve(state: PipelineState) -> PipelineState:
 
             config = load_category_config(category)
             chunks = get_retrieved_chunks(
-                category, questions, config.retrieval.colbert_top_k
+                category,
+                questions,
+                config.retrieval.colbert_top_k,
+                index_dir=tmp_index_dir,
             )
             context_parts = [f"[Chunk {c['rank']}] {c['content']}" for c in chunks]
             context = "Retrieved text chunks:\n" + "\n".join(context_parts)
@@ -325,4 +374,22 @@ def log_traces(state: PipelineState) -> PipelineState:
     traces = state.get("trace_entries", [])
     for trace in traces:
         log_trace(trace)
+    return state
+
+
+def cleanup_index(state: PipelineState) -> PipelineState:
+    category = state.get("category_name", "")
+    modality = state.get("input_modality", "")
+
+    try:
+        if modality == "pdf":
+            tmp_dir = colpali_tmp_index_dir(category)
+        else:
+            tmp_dir = colbert_tmp_index_dir(category)
+
+        if tmp_dir.exists():
+            shutil.rmtree(tmp_dir, ignore_errors=True)
+    except Exception:
+        pass
+
     return state

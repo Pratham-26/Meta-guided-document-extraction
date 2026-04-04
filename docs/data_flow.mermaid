@@ -36,7 +36,7 @@ graph TD
         Gate -- "Context Exists" --> ResolveConfig[Resolve Category Config<br/>schema + instructions]
         ResolveConfig --> GoldDetect{Is Gold<br/>Document?}:::decision
 
-        GoldDetect -- "Yes<br/>(user flag / random sample)" --> ScoutGold[Scout Agent<br/>Build Gold Standard<br/>+ Merge Questions]:::agent
+        GoldDetect -- "Yes<br/>(auto-gold / user flag / random sample)" --> ScoutGold[Scout Agent<br/>Build Gold Standard<br/>+ Merge Questions]:::agent
         ScoutGold -. "Save Gold Standard<br/>+ Update Questions" .-> FSStore
 
         GoldDetect -- "No" --> LoadQ[Load Questions<br/>from store]

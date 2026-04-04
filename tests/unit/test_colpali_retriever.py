@@ -42,7 +42,7 @@ class TestBuildIndex:
 
             importlib.reload(indexer_mod)
 
-            result = indexer_mod.build_index("test_category", Path("test.pdf"))
+            result = indexer_mod.build_index("test_category", [Path("test.pdf")])
 
         assert result.exists()
         assert result.name == "colpali"
@@ -50,7 +50,8 @@ class TestBuildIndex:
         dumped_data = mock_pickle_mod.dump.call_args[0][0]
         assert dumped_data["model_name"] == "vidore/colpali-v1.2"
         assert dumped_data["num_pages"] == 1
-        assert dumped_data["source_pdf"] == str(Path("test.pdf"))
+        assert len(dumped_data["page_sources"]) == 1
+        assert dumped_data["page_sources"][0]["source_pdf"] == str(Path("test.pdf"))
 
 
 class TestRetrieve:
@@ -66,7 +67,10 @@ class TestRetrieve:
                     "model_name": "vidore/colpali-v1.2",
                     "num_pages": num_pages,
                     "page_embeddings": [None] * num_pages,
-                    "source_pdf": "test.pdf",
+                    "page_sources": [
+                        {"source_pdf": "test.pdf", "page_in_pdf": i}
+                        for i in range(num_pages)
+                    ],
                 },
                 f,
             )
@@ -130,7 +134,9 @@ class TestGetRetrievedPages:
             pickle.dump(
                 {
                     "model_name": "vidore/colpali-v1.2",
-                    "source_pdf": source_pdf,
+                    "page_sources": [
+                        {"source_pdf": source_pdf, "page_in_pdf": i} for i in range(5)
+                    ],
                     "page_embeddings": [],
                     "num_pages": 5,
                 },
@@ -140,11 +146,13 @@ class TestGetRetrievedPages:
     def test_get_retrieved_pages_returns_page_dicts(self, tmp_category_dir):
         self._create_index_pkl("test_category")
 
-        mock_pdf2image = MagicMock()
-        mock_pdf2image.convert_from_path.return_value = [MagicMock()] * 5
+        mock_images = [MagicMock()] * 5
 
         with patch("src.retrieval.colpali.indexer.retrieve", return_value=[0, 2]):
-            with patch.dict("sys.modules", {"pdf2image": mock_pdf2image}, clear=False):
+            with patch(
+                "src.retrieval.colpali.retriever.convert_from_path",
+                return_value=mock_images,
+            ):
                 from src.retrieval.colpali.retriever import get_retrieved_pages
 
                 result = get_retrieved_pages("test_category", ["query"], top_k=2)
@@ -156,11 +164,13 @@ class TestGetRetrievedPages:
     def test_get_retrieved_pages_skips_out_of_range_indices(self, tmp_category_dir):
         self._create_index_pkl("test_category")
 
-        mock_pdf2image = MagicMock()
-        mock_pdf2image.convert_from_path.return_value = [MagicMock()] * 3
+        mock_images = [MagicMock()] * 3
 
         with patch("src.retrieval.colpali.indexer.retrieve", return_value=[99]):
-            with patch.dict("sys.modules", {"pdf2image": mock_pdf2image}, clear=False):
+            with patch(
+                "src.retrieval.colpali.retriever.convert_from_path",
+                return_value=mock_images,
+            ):
                 from src.retrieval.colpali.retriever import get_retrieved_pages
 
                 result = get_retrieved_pages("test_category", ["query"], top_k=3)

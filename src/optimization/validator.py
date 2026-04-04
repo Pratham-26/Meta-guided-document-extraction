@@ -1,3 +1,5 @@
+import json
+
 from src.agents.judge.agent import JudgeAgent
 from src.agents.extractor.agent import ExtractorAgent
 from src.storage.fs_store import list_gold_standards
@@ -54,6 +56,3 @@ def validate_candidate(
         results["high"] / results["total"] if results["total"] > 0 else 0.0
     )
     return results
-
-
-import json

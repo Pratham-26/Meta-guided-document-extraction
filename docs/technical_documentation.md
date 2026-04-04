@@ -43,7 +43,7 @@ Meta-learning-for-document-extraction/
 │
 ├── configs/                          # JSON configuration files
 │   ├── model_config.json             # DSPy LM configuration (LiteLLM model strings)
-│   ├── process_config.json           # Global process settings (gold sampling rate, etc.)
+│   ├── process_config.json           # Global process settings (gold sampling rate, auto-gold threshold)
 │   └── categories/                   # Per-document-category config
 │       └── commercial_lease.json     # Example: schema, instructions, retrieval params
 │
@@ -165,7 +165,7 @@ Meta-learning-for-document-extraction/
 │               └── optimization_traces/
 │                   └── trace_2026-04-03_001.jsonl
 │
-├── tests/                            # Test suite (146 passing, all pass)
+├── tests/                            # Test suite (158 passing, all pass)
 │   ├── __init__.py
 │   ├── conftest.py                   # Shared fixtures (mock LLMs, sample docs)
 │   ├── unit/
@@ -186,8 +186,9 @@ Meta-learning-for-document-extraction/
 │   │   ├── test_trace_logger.py      # Trace logging (single/batch, phase dirs, read by date)
 │   │   ├── test_colpali_retriever.py # ColPali build_index, retrieve, get_retrieved_pages
 │   │   └── test_colbert_retriever.py # ColBERT build_index, retrieve, get_retrieved_chunks
-│   ├── integration/                  # (planned — not yet implemented)
-│   │   └── __init__.py
+│   ├── integration/
+│   │   ├── __init__.py
+│   │   └── test_pipeline.py          # End-to-end integration (real nodes + file I/O, regular/gold paths)
 │   └── fixtures/                     # (planned — placeholder .gitkeep only)
 │       └── .gitkeep
 │
@@ -373,7 +374,7 @@ No ML classifier — just file type detection.
 |:---|:---|
 | `state.py` | Defines the graph's `TypedDict` state: `document` (DocumentInput), `category_name`, `input_modality`, `is_gold_doc` flag, `gold_source`, `schema` (dict), `instructions` (str), `retrieval_route` (RetrievalRoute), `questions` (list[str]), `retrieved_context` (str), `retrieved_images` (list), `extraction` (dict), `judge_evaluation` (JudgeEvaluation), `trace_entries` (list[TraceEntry]), `error` (str). |
 | `graph.py` | Builds the LangGraph `StateGraph`. Defines nodes and edges. Handles conditional routing (context gate check, gold detection → Scout-for-gold path). |
-| `nodes.py` | Individual node functions — `check_context`, `resolve_config`, `detect_gold`, `run_scout_for_gold`, `load_questions`, `route_input`, `retrieve`, `extract`, `judge`, `log_traces`. Keeps graph definition clean. |
+| `nodes.py` | Individual node functions — `check_context`, `resolve_config`, `detect_gold`, `run_scout_for_gold`, `load_questions`, `route_input`, `retrieve`, `extract`, `judge`, `log_traces`. The `detect_gold` node implements auto-gold: the first `auto_gold_initial_count` documents (default 10) per `(category, modality)` are automatically treated as gold to build an initial GEPA training set. After that, random sampling applies. |
 
 **Graph Topology (simplified):**
 

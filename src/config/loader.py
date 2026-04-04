@@ -69,6 +69,7 @@ class AgentRoleConfig(BaseModel):
 
 class ProcessConfig(BaseModel):
     gold_sampling_rate: int = 100
+    auto_gold_initial_count: int = 10
 
 
 class ModelConfig(BaseModel):

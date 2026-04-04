@@ -3,47 +3,59 @@ from pathlib import Path
 from src.storage import paths
 
 
-def build_index(category: str, pdf_path: Path):
+def build_index(
+    category: str,
+    pdf_paths: list[Path],
+    index_dir: Path | None = None,
+):
     from colpali_engine.models import ColPali, ColPaliProcessor
     from pdf2image import convert_from_path
 
-    index_dir = paths.colpali_index_dir(category)
-    index_dir.mkdir(parents=True, exist_ok=True)
-
-    images = convert_from_path(str(pdf_path))
+    out_dir = index_dir or paths.colpali_index_dir(category)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     model_name = "vidore/colpali-v1.2"
     model = ColPali.from_pretrained(model_name)
     processor = ColPaliProcessor.from_pretrained(model_name)
 
     page_embeddings = []
-    for i, img in enumerate(images):
-        proc = processor.process_images([img])
-        emb = model(**proc)
-        page_embeddings.append(emb)
+    page_sources = []
 
-    import torch, pickle
+    for pdf_path in pdf_paths:
+        images = convert_from_path(str(pdf_path))
+        for page_idx, img in enumerate(images):
+            proc = processor.process_images([img])
+            emb = model(**proc)
+            page_embeddings.append(emb)
+            page_sources.append({"source_pdf": str(pdf_path), "page_in_pdf": page_idx})
+
+    import pickle
 
     data = {
         "model_name": model_name,
-        "num_pages": len(images),
+        "num_pages": len(page_embeddings),
         "page_embeddings": [e.cpu().detach() for e in page_embeddings],
-        "source_pdf": str(pdf_path),
+        "page_sources": page_sources,
     }
-    with open(index_dir / "index.pkl", "wb") as f:
+    with open(out_dir / "index.pkl", "wb") as f:
         pickle.dump(data, f)
 
-    return index_dir
+    return out_dir
 
 
-def retrieve(category: str, queries: list[str], top_k: int = 3) -> list[int]:
+def retrieve(
+    category: str,
+    queries: list[str],
+    top_k: int = 3,
+    index_dir: Path | None = None,
+) -> list[int]:
     import pickle
     import torch
 
     from colpali_engine.models import ColPali, ColPaliProcessor
 
-    index_dir = paths.colpali_index_dir(category)
-    with open(index_dir / "index.pkl", "rb") as f:
+    search_dir = index_dir or paths.colpali_index_dir(category)
+    with open(search_dir / "index.pkl", "rb") as f:
         data = pickle.load(f)
 
     model_name = data["model_name"]
@@ -77,3 +89,19 @@ def retrieve(category: str, queries: list[str], top_k: int = 3) -> list[int]:
                 break
 
     return top_pages
+
+
+def rebuild_from_gold_sources(category: str):
+    from src.storage.fs_store import list_gold_standards
+
+    gold_standards = list_gold_standards(category, "pdf")
+    pdf_paths = []
+    for gs in gold_standards:
+        p = Path(gs.source_document_uri)
+        if p.exists() and p not in pdf_paths:
+            pdf_paths.append(p)
+
+    if not pdf_paths:
+        return
+
+    build_index(category, pdf_paths)

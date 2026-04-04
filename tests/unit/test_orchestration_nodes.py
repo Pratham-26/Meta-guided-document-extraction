@@ -1,3 +1,4 @@
+import json
 from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import patch, MagicMock
@@ -61,18 +62,64 @@ class TestResolveConfig:
 
 
 class TestDetectGold:
-    def test_user_flagged_gold_passes_through(self):
-        state = {"is_gold_doc": True, "gold_source": "user_flag"}
+    def test_user_flagged_gold_passes_through(self, bootstrapped_category):
+        state = {
+            "is_gold_doc": True,
+            "gold_source": "user_flag",
+            "category_name": "test_category",
+            "input_modality": "pdf",
+        }
         result = detect_gold(state)
         assert result["is_gold_doc"] is True
         assert result["gold_source"] == "user_flag"
+
+    def test_auto_gold_first_document(self, bootstrapped_category):
+        state = {
+            "category_name": "test_category",
+            "input_modality": "pdf",
+        }
+        result = detect_gold(state)
+        assert result["is_gold_doc"] is True
+        assert result["gold_source"] == "auto_initial"
+
+    def test_auto_gold_up_to_threshold(self, bootstrapped_category):
+        from src.storage import paths
+
+        counter_path = paths.sampling_counter_path("test_category", "pdf")
+        counter_path.parent.mkdir(parents=True, exist_ok=True)
+        counter_path.write_text('{"count": 0, "total": 9}')
+
+        state = {
+            "category_name": "test_category",
+            "input_modality": "pdf",
+        }
+        result = detect_gold(state)
+        assert result["is_gold_doc"] is True
+        assert result["gold_source"] == "auto_initial"
+
+    def test_auto_gold_stops_after_threshold(self, bootstrapped_category):
+        from src.storage import paths
+
+        counter_path = paths.sampling_counter_path("test_category", "pdf")
+        counter_path.parent.mkdir(parents=True, exist_ok=True)
+        counter_path.write_text('{"count": 0, "total": 10}')
+
+        with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=100):
+            state = {
+                "category_name": "test_category",
+                "input_modality": "pdf",
+            }
+            result = detect_gold(state)
+
+        assert result["is_gold_doc"] is False
+        assert result["gold_source"] is None
 
     def test_random_sampling_triggers_gold(self, bootstrapped_category):
         from src.storage import paths
 
         counter_path = paths.sampling_counter_path("test_category", "pdf")
         counter_path.parent.mkdir(parents=True, exist_ok=True)
-        counter_path.write_text('{"count": 99}')
+        counter_path.write_text('{"count": 99, "total": 20}')
 
         with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=100):
             state = {
@@ -89,7 +136,7 @@ class TestDetectGold:
 
         counter_path = paths.sampling_counter_path("test_category", "pdf")
         counter_path.parent.mkdir(parents=True, exist_ok=True)
-        counter_path.write_text('{"count": 50}')
+        counter_path.write_text('{"count": 50, "total": 20}')
 
         with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=100):
             state = {
@@ -101,7 +148,13 @@ class TestDetectGold:
         assert result["is_gold_doc"] is False
         assert result["gold_source"] is None
 
-    def test_zero_rate_never_samples(self, bootstrapped_category):
+    def test_zero_rate_never_samples_after_auto_gold(self, bootstrapped_category):
+        from src.storage import paths
+
+        counter_path = paths.sampling_counter_path("test_category", "pdf")
+        counter_path.parent.mkdir(parents=True, exist_ok=True)
+        counter_path.write_text('{"count": 0, "total": 20}')
+
         with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=0):
             state = {
                 "category_name": "test_category",
@@ -112,15 +165,40 @@ class TestDetectGold:
         assert result["is_gold_doc"] is False
 
     def test_counter_initializes_from_zero(self, bootstrapped_category):
-        with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=1):
-            state = {
+        state = {
+            "category_name": "test_category",
+            "input_modality": "pdf",
+        }
+        result = detect_gold(state)
+        assert result["is_gold_doc"] is True
+        assert result["gold_source"] == "auto_initial"
+
+    def test_user_flagged_increments_total(self, bootstrapped_category):
+        from src.storage import paths
+
+        counter_path = paths.sampling_counter_path("test_category", "pdf")
+        counter_path.parent.mkdir(parents=True, exist_ok=True)
+        counter_path.write_text('{"count": 0, "total": 9}')
+
+        state = {
+            "is_gold_doc": True,
+            "gold_source": "user_flag",
+            "category_name": "test_category",
+            "input_modality": "pdf",
+        }
+        detect_gold(state)
+
+        count_data = json.loads(counter_path.read_text())
+        assert count_data["total"] == 10
+
+        with patch("src.orchestration.nodes.get_gold_sampling_rate", return_value=100):
+            state2 = {
                 "category_name": "test_category",
                 "input_modality": "pdf",
             }
-            result = detect_gold(state)
+            result = detect_gold(state2)
 
-        assert result["is_gold_doc"] is True
-        assert result["gold_source"] == "random_sample"
+        assert result["is_gold_doc"] is False
 
 
 class TestLoadQuestions:

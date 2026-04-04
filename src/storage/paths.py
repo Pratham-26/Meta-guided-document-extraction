@@ -42,8 +42,16 @@ def colpali_index_dir(name: str) -> Path:
     return category_dir(name) / "pdf" / "indexes" / "colpali"
 
 
+def colpali_tmp_index_dir(name: str) -> Path:
+    return category_dir(name) / "pdf" / "indexes" / "colpali" / "tmp"
+
+
 def colbert_index_dir(name: str) -> Path:
     return category_dir(name) / "text" / "indexes" / "colbert"
+
+
+def colbert_tmp_index_dir(name: str) -> Path:
+    return category_dir(name) / "text" / "indexes" / "colbert" / "tmp"
 
 
 def prompts_dir(name: str, modality: str) -> Path:

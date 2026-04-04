@@ -7,7 +7,7 @@ from src.agents.scout.question_store import add_questions
 from src.agents.scout.gold_builder import build_and_save
 from src.storage.fs_store import save_source_document, list_gold_standards
 from src.utils.pdf import extract_text_from_pdf, load_pdf_pages
-from src.utils.text import clean_text, truncate_to_tokens
+from src.utils.text import clean_text, truncate_to_tokens, extract_text_from_file
 from pathlib import Path
 
 
@@ -57,7 +57,7 @@ def main():
             if scout is None:
                 scout = ScoutAgent(lm=lm, vision_lm=vision_lm)
         else:
-            content = path.read_text(encoding="utf-8")
+            content = extract_text_from_file(path)
             content = clean_text(content)
             content = truncate_to_tokens(content)
 
@@ -102,6 +102,16 @@ def main():
 
     gs_count = len(list_gold_standards(args.category, modality))
     print(f"\nScout complete. {gs_count} Gold Standards, {len(questions)} questions.")
+
+    if modality == "pdf":
+        from src.retrieval.colpali.indexer import rebuild_from_gold_sources
+
+        rebuild_from_gold_sources(args.category)
+    else:
+        from src.retrieval.colbert.indexer import rebuild_from_gold_sources
+
+        rebuild_from_gold_sources(args.category)
+    print("Index rebuilt from gold sources.")
 
 
 if __name__ == "__main__":

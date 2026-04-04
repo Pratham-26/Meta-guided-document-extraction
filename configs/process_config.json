@@ -1,3 +1,4 @@
 {
-  "gold_sampling_rate": 100
+  "gold_sampling_rate": 100,
+  "auto_gold_initial_count": 10
 }

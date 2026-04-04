@@ -35,6 +35,7 @@ def build_graph() -> StateGraph:
     graph.add_node("extract", nodes.extract)
     graph.add_node("judge", nodes.judge)
     graph.add_node("log_traces", nodes.log_traces)
+    graph.add_node("cleanup_index", nodes.cleanup_index)
 
     graph.add_edge(START, "check_context")
     graph.add_conditional_edges(
@@ -67,7 +68,8 @@ def build_graph() -> StateGraph:
         },
     )
     graph.add_edge("judge", "log_traces")
-    graph.add_edge("log_traces", END)
+    graph.add_edge("log_traces", "cleanup_index")
+    graph.add_edge("cleanup_index", END)
 
     return graph
 

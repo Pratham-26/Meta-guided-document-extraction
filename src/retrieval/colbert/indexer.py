@@ -1,15 +1,20 @@
 from pathlib import Path
 
 from src.storage import paths
+from src.storage.fs_store import list_gold_standards
+from src.utils.text import extract_text_from_file
 
 
 def build_index(
-    category: str, documents: list[str] | list[Path], index_name: str | None = None
+    category: str,
+    documents: list[str] | list[Path],
+    index_name: str | None = None,
+    index_dir: Path | None = None,
 ):
     from ragatouille import RAGPretrainedModel
 
-    index_dir = paths.colbert_index_dir(category)
-    index_dir.mkdir(parents=True, exist_ok=True)
+    out_dir = index_dir or paths.colbert_index_dir(category)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     model = RAGPretrainedModel.from_pretrained("colbert-ir/colbertv2.0")
 
@@ -18,13 +23,14 @@ def build_index(
     for doc in documents:
         p = Path(doc) if not isinstance(doc, Path) else doc
         if p.exists():
-            doc_texts.append(p.read_text(encoding="utf-8"))
+            doc_texts.append(extract_text_from_file(p))
         else:
             doc_texts.append(str(doc))
 
     model.index(
         collection=doc_texts,
         index_name=name,
+        index_folder=str(out_dir),
         max_document_length=180,
         split_documents=True,
     )
@@ -32,11 +38,16 @@ def build_index(
     return model
 
 
-def retrieve(category: str, queries: list[str], top_k: int = 5) -> list[dict]:
+def retrieve(
+    category: str,
+    queries: list[str],
+    top_k: int = 5,
+    index_dir: Path | None = None,
+) -> list[dict]:
     from ragatouille import RAGPretrainedModel
 
-    index_dir = paths.colbert_index_dir(category)
-    model = RAGPretrainedModel.from_index(str(index_dir))
+    search_dir = index_dir or paths.colbert_index_dir(category)
+    model = RAGPretrainedModel.from_index(str(search_dir))
 
     all_results = []
     for query in queries:
@@ -52,3 +63,17 @@ def retrieve(category: str, queries: list[str], top_k: int = 5) -> list[dict]:
             deduped.append(r)
 
     return deduped[:top_k]
+
+
+def rebuild_from_gold_sources(category: str):
+    gold_standards = list_gold_standards(category, "text")
+    source_paths = []
+    for gs in gold_standards:
+        p = Path(gs.source_document_uri)
+        if p.exists():
+            source_paths.append(p)
+
+    if not source_paths:
+        return
+
+    build_index(category, source_paths)

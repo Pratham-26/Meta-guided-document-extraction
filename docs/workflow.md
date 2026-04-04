@@ -50,7 +50,7 @@ python scripts/run_extraction.py --document ./incoming/lease_042.pdf --category 
 python scripts/run_extraction.py --document ./incoming/lease_042.pdf --category commercial_lease_agreement --gold
 ```
 
-The system automatically determines the input modality from the file extension (`.pdf` -> `pdf`, everything else -> `text`).
+The system automatically determines the input modality from the file extension (`.pdf` -> `pdf`, everything else -> `text`). Text-based formats (`.docx`, `.html`/`.htm`, `.rtf`, `.odt`, `.txt`, `.md`, `.csv`, etc.) are all classified as the `text` modality and parsed into plain text before processing.
 
 ---
 
@@ -75,12 +75,15 @@ The system determines whether this document is a **gold document**. There are th
 
 | Source | Trigger |
 |:---|:---|
+| **Auto-gold** | First `auto_gold_initial_count` documents (default 10) per `(category, modality)` are automatically gold |
 | **User flag** | `--gold` flag on the CLI |
-| **Random sampling** | Every Nth document (configurable per category/modality) |
+| **Random sampling** | Every Nth document after the auto-gold phase (configurable per category/modality) |
 
-Random sampling works via a persistent counter per `(category, modality)`. The sampling rate defaults to 1 in 100 (set in `configs/process_config.json`) and can be overridden per combination in `data/categories/<name>/<modality>/sampling_config.json`.
+**Auto-gold phase:** The first 10 documents (configurable via `auto_gold_initial_count` in `process_config.json`) for each `(category, modality)` pair are automatically treated as gold. This builds an initial Gold Standard set so GEPA optimization can run early. User-flagged and auto-gold documents both count toward this threshold.
 
-- If the document is gold -> **gold path** (Step 5a then Step 6)
+Random sampling works via a persistent counter per `(category, modality)`. The sampling rate defaults to 1 in 100 (set in `configs/process_config.json`) and can be overridden per combination in `data/categories/<name>/<modality>/sampling_config.json`. Random sampling only activates after the auto-gold phase is complete.
+
+- If the document is gold (auto-gold, user flag, or random sample) -> **gold path** (Step 5a then Step 6)
 - If the document is not gold -> **regular path** (Step 5b then Step 6)
 
 ---
@@ -111,8 +114,8 @@ Both gold and regular documents go through the same extraction pipeline:
 
    | Input Type | Retrieval Engine | What It Returns |
    |:---|:---|:---|
-   | PDF | **ColPali** (visual) | Relevant page images |
-   | Text | **ColBERT** (token-level) | Relevant text chunks |
+    | PDF | **ColPali** (visual) | Relevant page images |
+    | Text (.docx, .html, .rtf, .odt, .txt, etc.) | **ColBERT** (token-level) | Relevant text chunks |
 
 3. **Question-driven retrieval** -- the Scout's questions are used as queries to retrieve only the relevant pages or chunks. The Extraction Agent never sees the full document.
 4. **Extraction** -- the Extractor Agent produces a structured JSON validated against the category's schema, using compiled instructions and few-shot examples.
@@ -167,8 +170,9 @@ Gold Standards are the system's ground truth. They accumulate from three sources
 | Source | When | How |
 |:---|:---|:---|
 | **Bootstrap** | During initial setup | Scout processes 2 sample docs, builds Gold Standards |
+| **Auto-gold** | First N documents (default 10) per category/modality | Automatically treated as gold to build initial GEPA training set |
 | **User flag** | Any time via `--gold` | Scout processes the doc, builds Gold Standard, Judge evaluates |
-| **Random sampling** | Automatically every Nth doc | Same pipeline as user-flagged gold docs |
+| **Random sampling** | After auto-gold phase, every Nth doc | Same pipeline as user-flagged gold docs |
 
 All gold documents go through the full Scout -> Extract -> Judge pipeline. Regular documents only go through Extract.
 
@@ -187,7 +191,7 @@ User submits document + category [--gold optional]
 [Load category config]
         |
         v
-[Detect gold] -- user flag or random sample triggers gold path
+[Detect gold] -- auto-gold (first 10) / user flag / random sample
         |
    +----+----+
    |         |
