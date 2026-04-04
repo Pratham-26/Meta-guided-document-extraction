@@ -73,20 +73,6 @@ _TEXT_EXTRACTORS: dict[str, callable] = {
     ".odt": _extract_odt,
 }
 
-_PLAIN_TEXT_EXTENSIONS: set[str] = {
-    ".txt",
-    ".md",
-    ".csv",
-    ".json",
-    ".xml",
-    ".yaml",
-    ".yml",
-    ".ini",
-    ".cfg",
-    ".log",
-    ".tsv",
-}
-
 
 def extract_text_from_file(path: Path) -> str:
     if not path.exists():
@@ -101,10 +87,9 @@ def extract_text_from_file(path: Path) -> str:
         except Exception as e:
             raise ValueError(f"Failed to extract text from {path}: {e}") from e
 
-    if suffix in _PLAIN_TEXT_EXTENSIONS or suffix not in _TEXT_EXTRACTORS:
-        try:
-            return _extract_plain(path)
-        except UnicodeDecodeError as e:
-            raise ValueError(
-                f"Cannot read {path} as text (binary or unsupported encoding): {e}"
-            ) from e
+    try:
+        return _extract_plain(path)
+    except UnicodeDecodeError as e:
+        raise ValueError(
+            f"Cannot read {path} as text (binary or unsupported encoding): {e}"
+        ) from e

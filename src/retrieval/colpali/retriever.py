@@ -1,7 +1,4 @@
-import pickle
 from pathlib import Path
-
-from pdf2image import convert_from_path
 
 from src.storage import paths
 
@@ -12,15 +9,11 @@ def get_retrieved_pages(
     top_k: int = 3,
     index_dir: Path | None = None,
 ) -> list[dict]:
+    from pdf2image import convert_from_path
+
     from src.retrieval.colpali.indexer import retrieve
 
-    page_indices = retrieve(category, queries, top_k, index_dir=index_dir)
-
-    search_dir = index_dir or paths.colpali_index_dir(category)
-    with open(search_dir / "index.pkl", "rb") as f:
-        data = pickle.load(f)
-
-    page_sources = data["page_sources"]
+    page_indices, page_sources = retrieve(category, queries, top_k, index_dir=index_dir)
 
     _image_cache: dict[str, list] = {}
     results = []

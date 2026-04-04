@@ -230,15 +230,28 @@ class TestColpaliMultiPdfRetrieval:
             )
 
         fake_img = MagicMock()
+        page_sources = [
+            {"source_pdf": "pdf_a.pdf", "page_in_pdf": 0},
+            {"source_pdf": "pdf_a.pdf", "page_in_pdf": 1},
+            {"source_pdf": "pdf_b.pdf", "page_in_pdf": 0},
+        ]
 
-        with patch("src.retrieval.colpali.indexer.retrieve", return_value=[0, 2]):
-            with patch(
-                "src.retrieval.colpali.retriever.convert_from_path",
-                return_value=[fake_img, fake_img],
-            ):
-                from src.retrieval.colpali.retriever import get_retrieved_pages
+        mock_pdf2image = MagicMock()
+        mock_pdf2image.convert_from_path.return_value = [fake_img, fake_img]
 
-                result = get_retrieved_pages("test_category", ["query"], top_k=2)
+        with patch(
+            "src.retrieval.colpali.indexer.retrieve",
+            return_value=([0, 2], page_sources),
+        ):
+            with patch.dict("sys.modules", {"pdf2image": mock_pdf2image}, clear=False):
+                import importlib
+                import src.retrieval.colpali.retriever as retriever_mod
+
+                importlib.reload(retriever_mod)
+
+                result = retriever_mod.get_retrieved_pages(
+                    "test_category", ["query"], top_k=2
+                )
 
         assert len(result) == 2
         assert result[0]["source_pdf"] == "pdf_a.pdf"

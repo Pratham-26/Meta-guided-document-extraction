@@ -105,11 +105,14 @@ class TestRetrieve:
         with patch.dict("sys.modules", modules, clear=False):
             from src.retrieval.colpali.indexer import retrieve
 
-            result = retrieve("test_category", ["Who is the tenant?"], top_k=2)
+            result, page_sources = retrieve(
+                "test_category", ["Who is the tenant?"], top_k=2
+            )
 
         assert isinstance(result, list)
         assert all(isinstance(x, int) for x in result)
         assert len(result) <= 2
+        assert isinstance(page_sources, list)
 
     def test_retrieve_deduplicates_pages(self, tmp_category_dir):
         self._create_index_pkl("test_category", 2)
@@ -118,7 +121,7 @@ class TestRetrieve:
         with patch.dict("sys.modules", modules, clear=False):
             from src.retrieval.colpali.indexer import retrieve
 
-            result = retrieve("test_category", ["query1", "query2"], top_k=5)
+            result, _ = retrieve("test_category", ["query1", "query2"], top_k=5)
 
         assert len(result) == len(set(result))
 
@@ -147,15 +150,26 @@ class TestGetRetrievedPages:
         self._create_index_pkl("test_category")
 
         mock_images = [MagicMock()] * 5
+        page_sources = [{"source_pdf": "test.pdf", "page_in_pdf": i} for i in range(5)]
 
-        with patch("src.retrieval.colpali.indexer.retrieve", return_value=[0, 2]):
-            with patch(
-                "src.retrieval.colpali.retriever.convert_from_path",
-                return_value=mock_images,
-            ):
+        mock_pdf2image = MagicMock()
+        mock_pdf2image.convert_from_path.return_value = mock_images
+
+        with patch(
+            "src.retrieval.colpali.indexer.retrieve",
+            return_value=([0, 2], page_sources),
+        ):
+            with patch.dict("sys.modules", {"pdf2image": mock_pdf2image}, clear=False):
                 from src.retrieval.colpali.retriever import get_retrieved_pages
 
-                result = get_retrieved_pages("test_category", ["query"], top_k=2)
+                import importlib
+                import src.retrieval.colpali.retriever as retriever_mod
+
+                importlib.reload(retriever_mod)
+
+                result = retriever_mod.get_retrieved_pages(
+                    "test_category", ["query"], top_k=2
+                )
 
         assert len(result) == 2
         assert result[0]["page_number"] == 1
@@ -165,14 +179,24 @@ class TestGetRetrievedPages:
         self._create_index_pkl("test_category")
 
         mock_images = [MagicMock()] * 3
+        page_sources = [{"source_pdf": "test.pdf", "page_in_pdf": i} for i in range(5)]
 
-        with patch("src.retrieval.colpali.indexer.retrieve", return_value=[99]):
-            with patch(
-                "src.retrieval.colpali.retriever.convert_from_path",
-                return_value=mock_images,
-            ):
+        mock_pdf2image = MagicMock()
+        mock_pdf2image.convert_from_path.return_value = mock_images
+
+        with patch(
+            "src.retrieval.colpali.indexer.retrieve", return_value=([99], page_sources)
+        ):
+            with patch.dict("sys.modules", {"pdf2image": mock_pdf2image}, clear=False):
                 from src.retrieval.colpali.retriever import get_retrieved_pages
 
-                result = get_retrieved_pages("test_category", ["query"], top_k=3)
+                import importlib
+                import src.retrieval.colpali.retriever as retriever_mod
+
+                importlib.reload(retriever_mod)
+
+                result = retriever_mod.get_retrieved_pages(
+                    "test_category", ["query"], top_k=3
+                )
 
         assert len(result) == 0

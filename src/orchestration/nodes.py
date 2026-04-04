@@ -389,7 +389,9 @@ def cleanup_index(state: PipelineState) -> PipelineState:
 
         if tmp_dir.exists():
             shutil.rmtree(tmp_dir, ignore_errors=True)
-    except Exception:
-        pass
+    except Exception as e:
+        from src.utils.logging import get_logger
+
+        get_logger(__name__).warning("Failed to cleanup index for %s: %s", category, e)
 
     return state

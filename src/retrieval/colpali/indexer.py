@@ -48,7 +48,7 @@ def retrieve(
     queries: list[str],
     top_k: int = 3,
     index_dir: Path | None = None,
-) -> list[int]:
+) -> tuple[list[int], list[dict]]:
     import pickle
     import torch
 
@@ -88,7 +88,7 @@ def retrieve(
             if len(top_pages) >= top_k:
                 break
 
-    return top_pages
+    return top_pages, data["page_sources"]
 
 
 def rebuild_from_gold_sources(category: str):
