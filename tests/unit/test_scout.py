@@ -16,11 +16,11 @@ from src.schemas.gold_standard import GoldStandard
 
 
 class TestScoutAgentExploreDocument:
-    def test_returns_exploration_and_extraction(self, mock_dspy_rlm):
+    def test_small_content_uses_predict(self, mock_dspy_predict):
         fake_result = MagicMock()
         fake_result.exploration = "Found lease with Acme Corp."
         fake_result.extraction = '{"name": "Acme Corp", "amount": 5000}'
-        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+        mock_dspy_predict.return_value = MagicMock(return_value=fake_result)
 
         agent = ScoutAgent()
         result = agent.explore_document(
@@ -33,22 +33,41 @@ class TestScoutAgentExploreDocument:
         assert "extraction" in result
         assert result["extraction"]["name"] == "Acme Corp"
 
-    def test_handles_malformed_json_extraction(self, mock_dspy_rlm):
+    def test_large_content_uses_rlm(self, mock_dspy_rlm):
+        fake_result = MagicMock()
+        fake_result.exploration = "Deep analysis."
+        fake_result.extraction = '{"name": "Acme Corp"}'
+        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+
+        large_content = "x" * 128_001
+
+        agent = ScoutAgent()
+        result = agent.explore_document(
+            content=large_content,
+            schema={"type": "object", "properties": {"name": {"type": "string"}}},
+            instructions="Extract name.",
+        )
+
+        assert result["extraction"]["name"] == "Acme Corp"
+        mock_dspy_rlm.assert_called_once()
+
+    def test_handles_malformed_json_extraction(self, mock_dspy_predict):
         fake_result = MagicMock()
         fake_result.exploration = "Found something."
         fake_result.extraction = "not valid json"
-        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+        mock_dspy_predict.return_value = MagicMock(return_value=fake_result)
 
         agent = ScoutAgent()
         result = agent.explore_document("content", {}, "instructions")
 
         assert result["extraction"]["raw"] == "not valid json"
 
-    def test_with_images_uses_vision_path(self, mock_dspy_rlm):
+    def test_with_images_uses_vision_path(self, mock_dspy_rlm, mock_dspy_predict):
         fake_result = MagicMock()
         fake_result.exploration = "Visual analysis of PDF."
         fake_result.extraction = '{"name": "Acme Corp", "amount": 5000}'
         mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+        mock_dspy_predict.return_value = MagicMock(return_value=fake_result)
 
         fake_image = MagicMock()
         vision_lm = MagicMock()
@@ -67,27 +86,12 @@ class TestScoutAgentExploreDocument:
 
         assert result["extraction"]["name"] == "Acme Corp"
 
-    def test_without_images_uses_text_path(self, mock_dspy_rlm):
-        fake_result = MagicMock()
-        fake_result.exploration = "Text analysis."
-        fake_result.extraction = '{"name": "Acme Corp"}'
-        mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
-
-        agent = ScoutAgent()
-        result = agent.explore_document(
-            content="some text content",
-            schema={"type": "object", "properties": {"name": {"type": "string"}}},
-            instructions="Extract name.",
-            images=None,
-        )
-
-        assert result["extraction"]["name"] == "Acme Corp"
-
-    def test_vision_lm_restored_after_use(self, mock_dspy_rlm):
+    def test_vision_lm_restored_after_use(self, mock_dspy_rlm, mock_dspy_predict):
         fake_result = MagicMock()
         fake_result.exploration = "Visual."
         fake_result.extraction = "{}"
         mock_dspy_rlm.return_value = MagicMock(return_value=fake_result)
+        mock_dspy_predict.return_value = MagicMock(return_value=fake_result)
 
         text_lm = MagicMock()
         vision_lm = MagicMock()
@@ -104,7 +108,7 @@ class TestScoutAgentExploreDocument:
                 images=[MagicMock()],
             )
 
-        assert mock_dspy_rlm.call_count >= 1
+        assert mock_dspy_predict.call_count >= 1
 
 
 class TestScoutAgentInferQuestions:

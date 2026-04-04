@@ -1,9 +1,12 @@
 import base64
 import io
+import logging
 
 import dspy
 import json
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 
 class ScoutExplore(dspy.Signature):
@@ -78,21 +81,44 @@ def _encode_images(images: list) -> list[dict]:
     return encoded
 
 
+_CHARS_PER_TOKEN = 4
+_RLM_TOKEN_THRESHOLD = 32_000
+
+
 class ScoutAgent:
     def __init__(
         self,
         lm: dspy.LM | None = None,
         vision_lm: dspy.LM | None = None,
+        sub_lm: dspy.LM | None = None,
+        rlm_max_iterations: int = 15,
+        rlm_max_llm_calls: int = 30,
+        rlm_verbose: bool = False,
     ):
         self._lm = lm
         self._vision_lm = vision_lm
-        self.explore = dspy.RLM(ScoutExplore)
-        self.explore_vision = dspy.RLM(ScoutExploreVision)
+        self.explore_predict = dspy.Predict(ScoutExplore)
+        self.explore_rlm = dspy.RLM(
+            ScoutExplore,
+            max_iterations=rlm_max_iterations,
+            max_llm_calls=rlm_max_llm_calls,
+            verbose=rlm_verbose,
+            sub_lm=sub_lm,
+        )
+        self.explore_vision = dspy.Predict(ScoutExploreVision)
         self.infer_questions = dspy.Predict(ScoutQuestionInference)
 
     def _configure_lm(self, lm: dspy.LM | None):
         if lm is not None:
             dspy.configure(lm=lm)
+
+    @staticmethod
+    def _estimate_tokens(text: str) -> int:
+        return len(text) // _CHARS_PER_TOKEN
+
+    def _should_use_rlm(self, content: str, schema_str: str, instructions: str) -> bool:
+        total_chars = len(content) + len(schema_str) + len(instructions)
+        return total_chars // _CHARS_PER_TOKEN >= _RLM_TOKEN_THRESHOLD
 
     def explore_document(
         self,
@@ -104,7 +130,7 @@ class ScoutAgent:
         schema_str = json.dumps(schema, indent=2)
 
         if images:
-            encoded_images = _encode_images(images)
+            _encode_images(images)
             prev_lm = self._lm
             self._configure_lm(self._vision_lm)
 
@@ -117,11 +143,25 @@ class ScoutAgent:
                 self._configure_lm(prev_lm)
         else:
             self._configure_lm(self._lm)
-            result = self.explore(
-                document_content=content,
-                extraction_schema=schema_str,
-                extraction_instructions=instructions,
-            )
+
+            if self._should_use_rlm(content, schema_str, instructions):
+                logger.info("Using RLM for large document (%d chars)", len(content))
+                result = self.explore_rlm(
+                    document_content=content,
+                    extraction_schema=schema_str,
+                    extraction_instructions=instructions,
+                )
+                if result.trajectory:
+                    logger.info(
+                        "RLM exploration completed in %d iterations",
+                        len(result.trajectory),
+                    )
+            else:
+                result = self.explore_predict(
+                    document_content=content,
+                    extraction_schema=schema_str,
+                    extraction_instructions=instructions,
+                )
 
         try:
             extraction = json.loads(result.extraction)

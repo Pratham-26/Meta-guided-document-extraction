@@ -34,10 +34,10 @@ def main():
         path = Path(doc_path)
         print(f"Exploring document {i + 1}/{len(documents)}: {path.name}")
 
-        saved = save_source_document(args.category, path)
-
         is_pdf = path.suffix.lower() == ".pdf"
         modality = "pdf" if is_pdf else "text"
+
+        saved = save_source_document(args.category, modality, path)
 
         images = None
         if is_pdf:
