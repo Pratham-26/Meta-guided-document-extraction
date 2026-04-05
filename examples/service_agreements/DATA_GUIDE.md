@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This directory contains sample **service agreement** documents and their expected structured extractions. These examples serve as review/reference material for the meta-learning document extraction system — they are **not** consumed by the system directly.
+This directory contains sample **service agreement** documents for the meta-learning document extraction system. These examples serve as review/reference material — they are **not** consumed by the system directly.
 
 ## Directory Structure
 
@@ -10,14 +10,12 @@ This directory contains sample **service agreement** documents and their expecte
 examples/
 └── service_agreements/
     ├── inputs/          # Raw text files (sa_001.txt, sa_002.txt, ...)
-    ├── expected/        # Corresponding JSON extractions (sa_001.json, sa_002.json, ...)
     └── DATA_GUIDE.md    # This file
 ```
 
 ## File Naming Convention
 
 - **Inputs**: `sa_NNN.txt` where NNN is a zero-padded 3-digit sequential number (001–999)
-- **Expected**: `sa_NNN.json` matching the same number
 
 ---
 
@@ -131,180 +129,9 @@ Every input document **must** contain significant amounts of irrelevant content 
    - Financial: PCAOB inspection readiness, SOX 404 scoping, audit committee communication
    - Legal: privilege log format, billing standards, conflicts screening procedures
 
-### Step 2: Write the Expected Extraction
+### Step 2: Validate
 
-Create a corresponding JSON file in `expected/sa_NNN.json`. Follow the schema below.
-
-#### Extraction Schema (Service Agreements)
-
-The base schema below covers all service agreements. Domain-specific fields may be added as needed (see the "Schema Extensions" section).
-
-```json
-{
-  "agreement_number": "string | null — identifier from the document",
-  "effective_date": "string | null — ISO 8601 date (YYYY-MM-DD)",
-
-  "service_provider": {
-    "name": "string",
-    "type": "string | null — corporation, LLC, LLP, PLLC, partnership, sole proprietorship, nonprofit, REIT, JPA",
-    "jurisdiction": "string | null — state/country of incorporation/organization",
-    "address": "string | null",
-    "signatory": "string | null",
-    "signatory_title": "string | null",
-    "signatory_date": "string | null — ISO 8601 date"
-  },
-
-  "client": {
-    "name": "string",
-    "type": "string | null",
-    "jurisdiction": "string | null",
-    "address": "string | null",
-    "signatory": "string | null",
-    "signatory_title": "string | null",
-    "signatory_date": "string | null — ISO 8601 date"
-  },
-
-  "scope_of_services": "string — faithful description of services from the document",
-
-  "term": {
-    "duration_months": "number | null",
-    "start_date": "string | null — ISO 8601",
-    "end_date": "string | null — ISO 8601",
-    "auto_renew": "boolean — false if not mentioned",
-    "renewal_term_months": "number | null",
-    "non_renewal_notice_days": "number | null"
-  },
-
-  "compensation": {
-    "fee_type": "string | null — hourly, monthly retainer, fixed project, milestone-based, retainer, percentage, per-unit, revenue sharing, in-kind",
-    "monthly_fee": "number | null",
-    "hourly_rate": "number | null",
-    "total_value": "number | null",
-    "setup_fee": "number | null",
-    "currency": "string — default USD",
-    "payment_terms_days": "number | null",
-    "payment_terms_note": "string | null — e.g. 'business days', 'in arrears', 'monthly in advance'",
-    "late_payment_interest_rate_percent": "number | null",
-    "max_monthly_hours": "number | null",
-    "monthly_expense_cap": "number | null",
-    "per_unit_rate": "number | null",
-    "monthly_volume_cap": "number | null",
-    "payment_schedule": "array | null — [{trigger: string, percentage: number | null, amount: number}]",
-    "payment_method": "string | null — e.g. 'wire transfer', 'ACH'"
-  },
-
-  "deliverables_or_milestones": [
-    {"description": "string", "due_within_days": "number | null", "due_date": "string | null — ISO 8601"}
-  ],
-
-  "intellectual_property": {
-    "ownership": "string | null — e.g. 'Service Provider', 'Client', 'Client (upon payment)', 'Joint'",
-    "license_granted": "boolean | null",
-    "license_type": "string | null — e.g. 'non-exclusive, non-transferable', 'perpetual, irrevocable'",
-    "license_scope": "string | null",
-    "exceptions": "string | null"
-  },
-
-  "confidentiality": {
-    "duration_years_after_termination": "number | null"
-  },
-
-  "termination": {
-    "notice_period_days": "number | null — general termination notice",
-    "for_cause_cure_period_days": "number | null",
-    "for_convenience_notice_days": "number | null",
-    "for_convenience_notice_days_client": "number | null",
-    "for_convenience_notice_days_provider": "number | null"
-  },
-
-  "liability": {
-    "cap_type": "string | null — description of how cap is calculated",
-    "cap_amount": "number | null",
-    "consequential_damages_excluded": "boolean | null"
-  },
-
-  "insurance": {
-    "general_liability": "number | null",
-    "professional_liability_per_occurrence": "number | null",
-    "professional_liability_aggregate": "number | null"
-  },
-
-  "warranty": {
-    "defect_free_period_months": "number | null",
-    "ip_non_infringement": "boolean | null"
-  },
-
-  "dispute_resolution": {
-    "method": "string | null — litigation, arbitration, mediation",
-    "location": "string | null",
-    "arbitration_body": "string | null — e.g. 'AAA', 'JAMS'"
-  },
-
-  "non_solicitation": {
-    "duration_months_after_termination": "number | null"
-  },
-
-  "governing_law": {
-    "jurisdiction": "string | null",
-    "country": "string | null — default USA"
-  }
-}
-```
-
-#### Schema Extensions
-
-Domain-specific fields may be added to the JSON as needed. These are not part of the base schema but are useful for capturing unique contract structures:
-
-| Field | Used In | Description |
-|-------|---------|-------------|
-| `compensation.success_bonus` | sa_007 | Performance bonus amount |
-| `compensation.ad_spend_budget_monthly` | sa_004 | Managed advertising spend |
-| `compensation.per_employee_rate` | sa_008 | Per-employee pricing |
-| `compensation.tiered_pricing` | sa_010 | Array of pricing tiers |
-| `compensation.rush_surcharge_percent` | sa_010 | Rush order surcharge |
-| `compensation.minimum_monthly_engagement` | sa_010 | Minimum monthly billing |
-| `compensation.retainage_percent` | sa_015 | Retainage held until completion |
-| `compensation.minimum_annual_guarantee` | sa_018 | Minimum payment to client |
-| `termination.kpi_based_termination` | sa_004 | Boolean for KPI-triggered termination |
-| `termination.kpi_termination_cure_days` | sa_004 | Cure period before KPI termination |
-| `termination.per_phase_termination_allowed` | sa_011 | Per-phase/matter termination right |
-| `termination.bankruptcy_termination` | sa_020 | Immediate termination on bankruptcy |
-| `liability.per_matter_liability_cap` | sa_009 | Per-matter cap (litigation support) |
-| `liability.aggregate_liability_cap` | sa_009 | Aggregate cap across all matters |
-| `insurance.cyber_liability` | sa_006 | Cyber liability coverage |
-| `insurance.liquor_liability` | sa_018 | Liquor liability coverage |
-| `insurance.pollution_liability` | sa_011 | Pollution/environmental liability |
-| `insurance.fidelity_bond` | sa_017 | Fidelity bond amount |
-| `insurance.employment_practices_liability` | sa_008 | EPL coverage |
-| `secondary_client` | sa_020 | Third-party in multi-party agreements |
-
-**Rule**: Only add schema extensions when the contract structure genuinely requires it. Do not add fields for values that fit into the base schema.
-
-#### Extraction Rules
-
-1. **Null for missing**: Use `null` for any field not mentioned or not derivable from the document. Do **not** guess or infer. If an agreement number is redacted, use `null` or the string `"REDACTED"`.
-2. **Extract, don't summarize**: For `scope_of_services`, use a concise but faithful description of what the document says. Do not paraphrase or add context not present in the document.
-3. **Normalize dates**: Always convert to `YYYY-MM-DD` ISO format. If only a relative timeframe is given (e.g., "within 30 days"), use `due_within_days` instead. If the effective date is ambiguous (e.g., "upon the later of two conditions"), look for the actual execution date buried in signature blocks or footnotes.
-4. **Normalize amounts**: Extract as numbers (no currency symbols, no commas). For ranges, extract the upper bound. For percentage-based fees, extract the percentage in the relevant field and describe the basis in `cap_type` or `payment_terms_note`.
-5. **Boolean defaults**:
-   - `auto_renew`: `false` if not mentioned.
-   - `consequential_damages_excluded`: `true` only if the document explicitly excludes them; otherwise `null`.
-   - `license_granted`: `null` if no license is mentioned, `true`/`false` based on the document.
-6. **Ambiguity**: If a value is ambiguous (e.g., a payment term could be calendar days or business days but the document doesn't specify), extract what is stated and note the ambiguity in the relevant `_note` field if one exists, or leave it as-is.
-7. **Party roles**: Always map the party providing services to `service_provider` and the party receiving services to `client`, regardless of the labels used in the document (Contractor/Client, Vendor/Customer, Consultant/Company, Agency/Brand, Lead Research Org/Industry Sponsor, etc.).
-8. **Multi-party agreements**: For agreements with more than two parties, map the primary service provider to `service_provider`, the primary client/sponsor to `client`, and use `secondary_client` for additional parties.
-9. **In-kind contributions**: When compensation includes non-cash contributions (equipment, personnel, facilities), note them in `payment_terms_note` and do not convert to a dollar amount unless the document explicitly values them.
-10. **Contingent fees**: For fees that depend on future conditions (e.g., "Phase II fee contingent on Phase I findings"), extract the stated amount and note the contingency in `payment_terms_note`.
-
-### Step 3: Validate
-
-- [ ] Verify the JSON file is valid JSON (no trailing commas, proper quoting, valid types).
-- [ ] Cross-check that every value in the JSON can be traced back to specific text in the input document.
-- [ ] Verify the agreement number matches between input and expected files.
-- [ ] Ensure the key `deliverables_or_milestones` is used consistently (not `milestones`, `deliverables`, or `deliverables_or_milestones` interchangeably).
-- [ ] Verify all dates are in `YYYY-MM-DD` ISO format.
-- [ ] Verify all monetary amounts are plain numbers (no `$`, no commas).
-- [ ] Check that `null` is used for genuinely missing fields — not empty strings, not `"N/A"`, not `"not specified"`.
+- [ ] Verify the agreement number is present in the input document.
 - [ ] Confirm the input file is 250+ lines with adequate dilution.
 
 ---
@@ -322,9 +149,7 @@ When generating large batches of examples, use LLM-based agents (3 concurrent ma
 
 **Quality gate**: After generation, run a validation pass that:
 - Checks line counts (250–800 lines)
-- Validates all JSON files parse correctly
-- Verifies agreement numbers exist in both input and expected
-- Flags any expected JSON that is "too clean" (all fields populated, no nulls) — this likely means insufficient edge cases
+- Verifies agreement numbers exist in inputs
 
 ---
 
@@ -334,8 +159,8 @@ To create examples for a different document category:
 
 1. Create a new subdirectory under `examples/` (e.g., `examples/invoices/`)
 2. Define a schema in a `SCHEMA.md` file for that category
-3. Create `inputs/` and `expected/` subdirectories
-4. Follow the same naming convention (`cat_NNN.txt` / `cat_NNN.json`)
+3. Create `inputs/` subdirectory
+4. Follow the same naming convention (`cat_NNN.txt`)
 5. Adapt this guide's dilution requirements to the new document type
 6. Define category-specific edge cases
 
@@ -372,4 +197,4 @@ To create examples for a different document category:
 | 019 | sa_019 | Telecom infrastructure | 748 | Per-premises fee, federal subsidy, 60-month term, FCC compliance |
 | 020 | sa_020 | R&D consortium | 719 | REDACTED agreement number, three parties, in-kind contributions, joint IP, no dispute resolution, no insurance |
 
-**Total**: 20 documents, 13,381 lines of input text, 20 expected extractions.
+**Total**: 20 documents, 13,381 lines of input text.
