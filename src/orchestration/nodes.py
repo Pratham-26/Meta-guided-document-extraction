@@ -13,6 +13,7 @@ from src.config.lm import get_lm
 from src.storage.fs_store import (
     has_context,
     list_gold_standards,
+    list_approved_gold_standards,
     save_source_document,
 )
 from src.storage.paths import (
@@ -20,6 +21,7 @@ from src.storage.paths import (
     colbert_tmp_index_dir,
     colpali_tmp_index_dir,
 )
+from src.storage.file_lock import locked_file
 from src.storage.trace_logger import log_trace
 from src.schemas.trace import TraceEntry
 from src.retrieval.router import RetrievalRoute, route
@@ -53,37 +55,41 @@ def detect_gold(state: PipelineState) -> PipelineState:
     counter_path = sampling_counter_path(category, modality)
     counter_path.parent.mkdir(parents=True, exist_ok=True)
 
-    count_data = {"count": 0, "total": 0}
-    if counter_path.exists():
-        try:
-            count_data = json.loads(counter_path.read_text())
-        except (json.JSONDecodeError, OSError):
-            count_data = {"count": 0, "total": 0}
+    # --- Fix 1: lock the counter file during read-modify-write --------
+    with locked_file(counter_path):
+        count_data = {"count": 0, "total": 0}
+        if counter_path.exists():
+            try:
+                count_data = json.loads(counter_path.read_text())
+            except (json.JSONDecodeError, OSError):
+                count_data = {"count": 0, "total": 0}
 
-    count_data["total"] = count_data.get("total", 0) + 1
-    counter_path.write_text(json.dumps(count_data))
+        count_data["total"] = count_data.get("total", 0) + 1
 
-    if state.get("is_gold_doc"):
-        return state
+        if state.get("is_gold_doc"):
+            counter_path.write_text(json.dumps(count_data))
+            return state
 
-    process_config = load_process_config()
-    if (
-        process_config.auto_gold_initial_count > 0
-        and count_data["total"] <= process_config.auto_gold_initial_count
-    ):
-        return {**state, "is_gold_doc": True, "gold_source": "auto_initial"}
+        process_config = load_process_config()
+        if (
+            process_config.auto_gold_initial_count > 0
+            and count_data["total"] <= process_config.auto_gold_initial_count
+        ):
+            counter_path.write_text(json.dumps(count_data))
+            return {**state, "is_gold_doc": True, "gold_source": "auto_initial"}
 
-    threshold = get_gold_sampling_rate(category, modality)
-    if threshold <= 0:
-        return {**state, "is_gold_doc": False, "gold_source": None}
+        threshold = get_gold_sampling_rate(category, modality)
+        if threshold <= 0:
+            counter_path.write_text(json.dumps(count_data))
+            return {**state, "is_gold_doc": False, "gold_source": None}
 
-    count_data["count"] = count_data.get("count", 0) + 1
-    if count_data["count"] >= threshold:
-        count_data["count"] = 0
+        count_data["count"] = count_data.get("count", 0) + 1
+        if count_data["count"] >= threshold:
+            count_data["count"] = 0
+            counter_path.write_text(json.dumps(count_data))
+            return {**state, "is_gold_doc": True, "gold_source": "random_sample"}
+
         counter_path.write_text(json.dumps(count_data))
-        return {**state, "is_gold_doc": True, "gold_source": "random_sample"}
-
-    counter_path.write_text(json.dumps(count_data))
     return {**state, "is_gold_doc": False, "gold_source": None}
 
 
@@ -136,6 +142,7 @@ def run_scout_for_gold(state: PipelineState) -> PipelineState:
         images=images,
     )
 
+    # --- Fix 4: Gold Standards from Scout are pending review ----------
     existing_gs = list_gold_standards(category, modality)
     next_num = 1
     if existing_gs:
@@ -156,6 +163,7 @@ def run_scout_for_gold(state: PipelineState) -> PipelineState:
         gs_id=gs_id,
         source_document_uri=saved,
         extraction=result["extraction"],
+        # approval_status defaults to PENDING_REVIEW
     )
 
     questions = scout.infer_questions_from_explorations(
@@ -334,7 +342,9 @@ def judge(state: PipelineState) -> PipelineState:
 
     category = state.get("category_name", "")
     modality = state.get("input_modality", "")
-    gold_standards = list_gold_standards(category, modality)
+
+    # --- Fix 4: Judge only evaluates against APPROVED gold standards ---
+    gold_standards = list_approved_gold_standards(category, modality)
     if not gold_standards:
         return state
 

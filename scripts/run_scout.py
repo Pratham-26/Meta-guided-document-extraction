@@ -5,6 +5,7 @@ from src.config.loader import load_category_config
 from src.agents.scout.agent import ScoutAgent
 from src.agents.scout.question_store import add_questions
 from src.agents.scout.gold_builder import build_and_save
+from src.schemas.gold_standard import ApprovalStatus
 from src.storage.fs_store import save_source_document, list_gold_standards
 from src.utils.pdf import extract_text_from_pdf, load_pdf_pages
 from src.utils.text import clean_text, truncate_to_tokens, extract_text_from_file
@@ -19,9 +20,18 @@ def main():
         action="append",
         help="Additional documents to explore (can be repeated)",
     )
+    parser.add_argument(
+        "--auto-approve",
+        action="store_true",
+        help="Automatically approve Scout-generated Gold Standards (skip HITL review)",
+    )
     args = parser.parse_args()
 
     config = load_category_config(args.category)
+
+    approval = (
+        ApprovalStatus.APPROVED if args.auto_approve else ApprovalStatus.PENDING_REVIEW
+    )
 
     documents = config.sample_documents[:]
     if args.doc:
@@ -80,8 +90,10 @@ def main():
             gs_id=gs_id,
             source_document_uri=saved,
             extraction=result["extraction"],
+            approval_status=approval,
         )
-        print(f"  Gold Standard saved: {gs_id}")
+        status_label = "approved" if args.auto_approve else "pending review"
+        print(f"  Gold Standard saved: {gs_id} ({status_label})")
 
     if scout is None:
         print("No documents to explore.")
@@ -102,6 +114,12 @@ def main():
 
     gs_count = len(list_gold_standards(args.category, modality))
     print(f"\nScout complete. {gs_count} Gold Standards, {len(questions)} questions.")
+
+    if not args.auto_approve:
+        print(
+            "\n⚠  Gold Standards are PENDING REVIEW. Approve them via the HITL UI:"
+        )
+        print("  python scripts/review_server.py")
 
     if modality == "pdf":
         from src.retrieval.colpali.indexer import rebuild_from_gold_sources

@@ -16,6 +16,7 @@ dependencies = [
     "beautifulsoup4>=4.12",
     "odfpy>=1.4",
     "striprtf>=0.0.26",
+    "filelock>=3.13",
 ]
 
 [dependency-groups]

@@ -2,7 +2,7 @@ from datetime import datetime, timezone
 
 from src.config.lm import get_lm
 from src.config.loader import load_category_config
-from src.storage.fs_store import list_gold_standards
+from src.storage.fs_store import list_approved_gold_standards
 from src.storage.trace_logger import log_trace
 from src.schemas.trace import TraceEntry
 from src.schemas.evaluation import QualityTier
@@ -29,9 +29,9 @@ def run_gepa_cycle(
     generations = generations or config.optimization.gepa_generations
     population_size = population_size or config.optimization.gepa_population_size
 
-    gold_standards = list_gold_standards(category, modality)
+    gold_standards = list_approved_gold_standards(category, modality)
     if not gold_standards:
-        return {"error": "No Gold Standards available for optimization."}
+        return {"error": "No approved Gold Standards available for optimization."}
 
     current = load_current_prompt(category, modality)
     if not current:
