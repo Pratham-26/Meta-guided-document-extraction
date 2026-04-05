@@ -1,0 +1,690 @@
+EVENT MANAGEMENT AND PRODUCTION SERVICES AGREEMENT
+
+This Event Management and Production Services Agreement (the "Agreement"),
+bearing reference number EVT-2025-0612, is entered into as of June 1, 2025 (the
+"Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, the pharmaceutical and life sciences industry in the United States
+operates within one of the most heavily regulated commercial environments in the
+global economy, with promotional activities, medical education programs, and
+professional engagement events subject to extensive oversight by the Food and Drug
+Administration (FDA), the Office of Inspector General (OIG), and various state
+and federal regulatory bodies that impose strict requirements on the content,
+format, and delivery of scientific and promotional communications directed at
+healthcare professionals and patients;
+
+WHEREAS, the pharmaceutical conference and medical education event industry has
+undergone a profound transformation over the past decade, evolving from
+traditional in-person congresses and symposia to sophisticated multi-format
+engagement platforms encompassing live general sessions, parallel breakout tracks,
+simulated-live broadcasts, fully virtual attendance experiences, and hybrid models
+that seamlessly integrate in-person and remote participation while maintaining
+regulatory compliance across all modalities and jurisdictions;
+
+WHEREAS, the COVID-19 pandemic and its aftermath fundamentally reshaped the
+medical event landscape, accelerating the adoption of virtual and hybrid event
+technologies, establishing new expectations for digital engagement and
+interactivity, and creating permanent shifts in how pharmaceutical companies,
+medical societies, and healthcare organizations plan, produce, and measure the
+impact of their educational and promotional events;
+
+WHEREAS, regulatory frameworks governing pharmaceutical promotional events
+continue to evolve, with the FDA's Office of Prescription Drug Promotion (OPDP),
+the PhRMA Code on Interactions with Healthcare Professionals, the AdvaMed Code
+of Ethics for Interactions with Healthcare Professionals, and the Sunshine Act
+transparency reporting requirements collectively establishing a complex compliance
+environment that demands specialized expertise in event design, content
+development, and attendee management to ensure that all event activities conform
+to applicable promotional guidelines, fair balance requirements, and adverse event
+reporting obligations;
+
+WHEREAS, the annual medical conference has become a cornerstone of pharmaceutical
+marketing and medical affairs strategy, serving simultaneously as a platform for
+continuing medical education (CME) delivery, scientific data presentation, key
+opinion leader (KOL) engagement, product awareness building, peer-to-peer
+networking, and competitive intelligence gathering, with the complexity and scale
+of such events requiring professional event management expertise encompassing
+venue negotiation, audiovisual production, registration technology, speaker
+coordination, sponsor activation, and comprehensive post-event analytics;
+
+WHEREAS, Catalyst Event Productions Inc. is a leading full-service event
+management and production company with extensive experience in the pharmaceutical,
+biotechnology, and medical device sectors, specializing in the planning and
+execution of regulatory-compliant medical conferences, advisory board meetings,
+product launch events, and scientific symposia, with a demonstrated track record
+of producing events that achieve measurable engagement metrics while maintaining
+full compliance with applicable industry codes and regulatory requirements;
+
+WHEREAS, Pinnacle Pharmaceuticals Corp. is a specialty pharmaceutical company
+focused on the development and commercialization of therapies for rare diseases
+and specialty conditions, and has determined that professional event management
+and production services are required for the planning and execution of its annual
+medical conference, which is expected to attract approximately two thousand five
+hundred (2,500) in-person attendees and five thousand (5,000) virtual attendees;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements
+set forth herein, and for other good and valuable consideration, the receipt and
+sufficiency of which are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. Catalyst Event Productions Inc., a corporation duly organized
+and existing under the laws of the State of Nevada, with its principal offices
+located at 3900 Paradise Road, Suite 200, Las Vegas, NV 89169 (hereinafter
+referred to as "Service Provider," "Catalyst," or "Provider").
+
+1.2 Client. Pinnacle Pharmaceuticals Corp., a corporation duly organized and
+existing under the laws of the State of New Jersey, with its principal offices
+located at 100 Campus Drive, Parsippany, NJ 07054 (hereinafter referred to as
+"Client," "Pinnacle," or "Company").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they
+have the full legal authority to bind their respective organization to the terms
+and conditions of this Agreement, and that the execution of this Agreement has been
+duly authorized by all necessary corporate approvals.
+
+2. DEFINITIONS
+
+2.1 "AVL" or "Audiovisual List" means a comprehensive inventory of all
+audiovisual, lighting, staging, and technical equipment required for the
+production of the Event, including specifications, quantities, placement
+diagrams, and interconnection schematics.
+
+2.2 "Breakout Session" means a smaller-format educational or scientific
+presentation conducted in a secondary meeting room separate from the General
+Session, typically accommodating between twenty-five (25) and two hundred (200)
+attendees and focused on a specific therapeutic area, clinical data set, or
+professional development topic.
+
+2.3 "CME" or "Continuing Medical Education" means educational activities that
+have been developed and delivered in accordance with the accreditation standards
+and requirements of the Accreditation Council for Continuing Medical Education
+(ACCME) or an equivalent accrediting body recognized by applicable state and
+federal regulatory authorities.
+
+2.4 "General Session" or "Plenary" means the primary large-format presentation
+or ceremony held in the main hall or keynote theater of the Event venue,
+typically attended by all in-person attendees and simultaneously broadcast to
+virtual attendees, and featuring keynote addresses, company presentations,
+or major scientific data disclosures.
+
+2.5 "Green Room" means a designated backstage or pre-function area provided
+for speakers, presenters, and VIP guests to prepare for their presentations,
+conduct final rehearsals, review technical configurations, and receive
+production cue instructions prior to their scheduled stage time.
+
+2.6 "Hybrid Event" means an Event format that combines in-person attendance at
+a physical venue with simultaneous virtual participation through a digital
+streaming and engagement platform, enabling remote attendees to view live
+presentations, participate in interactive sessions, engage with exhibitors, and
+network with other attendees in a virtual environment.
+
+2.7 "Keynote" means a featured presentation by a principal speaker, typically
+scheduled as the opening or closing address of the Event, designed to establish
+the thematic framework, communicate strategic priorities, or present significant
+scientific or clinical data to the full assembly of attendees.
+
+2.8 "Simulive" or "Simulated Live" means a pre-recorded presentation that is
+broadcast at a scheduled time as if it were occurring live, often including a
+live question-and-answer component moderated by a facilitator, designed to
+provide a polished presentation experience while accommodating speaker scheduling
+constraints or time zone differences.
+
+2.9 "Virtual Platform" means the web-based or application-based digital
+environment through which virtual attendees access Event content, including live
+streaming video, on-demand session recordings, interactive chat and polling
+features, virtual exhibition spaces, and networking functionality.
+
+2.10 "Rider" or "Technical Rider" means a detailed document specifying the
+technical, staging, audiovisual, and production requirements for each session,
+speaker, or performance component of the Event, including stage layout, lighting
+cues, sound configurations, video inputs, and teleprompter specifications.
+
+2.11 "Strike" means the process of dismantling, removing, and loading out all
+production equipment, scenic elements, signage, furnishings, and materials from
+the Event venue following the conclusion of the Event, including the restoration
+of the venue to its pre-Event condition as required by the venue contract.
+
+2.12 "Load-In" means the process of delivering, staging, and installing all
+production equipment, scenic elements, signage, furnishings, and materials at
+the Event venue prior to the commencement of the Event, including the
+construction and configuration of stages, lighting rigs, audio systems, video
+walls, and registration areas.
+
+2.13 "Exhibitor Kit" means a package of informational materials, logistical
+instructions, and compliance guidelines provided to each sponsor or exhibitor
+participating in the Event, including booth specifications, shipping and freight
+instructions, setup and teardown schedules, lead retrieval system access, and
+applicable regulatory compliance reminders.
+
+2.14 "Sponsorship Tier" means a classification level of Event sponsorship that
+corresponds to a defined set of benefits, entitlements, visibility placements,
+and activation opportunities, with each tier carrying a specific sponsorship fee
+and a specified scope of brand exposure and engagement access.
+
+2.15 "Confidential Information" means all non-public information disclosed by
+either party to the other in connection with this Agreement, including but not
+limited to event strategies, attendee data, speaker information, sponsorship
+terms, financial arrangements, proprietary production methodologies, and
+unpublished clinical or scientific data.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide comprehensive event
+management and production services for the Client's annual medical conference
+(the "Event"), scheduled to take place in March 2026. The services shall include
+but not be limited to the following service categories:
+
+    (a) Venue Selection and Negotiation. The Service Provider shall identify,
+    evaluate, and recommend suitable venue options for the Event based on the
+    Client's requirements for meeting space capacity, breakout room
+    availability, exhibition hall dimensions, audiovisual infrastructure,
+    accessibility compliance, and geographic convenience for the anticipated
+    attendee population. Upon Client approval of a venue, the Service Provider
+    shall negotiate and execute the venue contract on behalf of the Client,
+    including room block management, food and beverage minimums, and all
+    ancillary venue agreements.
+
+    (b) Stage and Audiovisual Production. The Service Provider shall design,
+    fabricate, and install all staging, scenic elements, lighting, sound
+    reinforcement, video projection, LED wall displays, camera systems, and
+    associated technical infrastructure required for the Event, including the
+    main general session stage, all breakout session rooms, the exhibition hall,
+    and all common areas requiring audiovisual support.
+
+    (c) Attendee Registration Platform. The Service Provider shall implement
+    and manage a comprehensive attendee registration platform supporting both
+    in-person and virtual registration, including online registration forms,
+    payment processing, confirmation communications, badge printing for
+    in-person attendees, and mobile application access for virtual attendees.
+
+    (d) Virtual and Hybrid Broadcast Capabilities. The Service Provider shall
+    design and implement a virtual and hybrid broadcast infrastructure enabling
+    simultaneous live streaming of all general sessions and selected breakout
+    sessions to virtual attendees, including multi-camera video production,
+    professional audio mixing, real-time captioning, interactive engagement
+    tools (polling, Q&A, chat), and on-demand content access following the
+    Event.
+
+    (e) Speaker Management. The Service Provider shall coordinate all aspects
+    of speaker logistics, including invitation management, travel and
+    accommodation arrangements, audiovisual requirement collection, rehearsal
+    scheduling, slide deck collection and formatting, teleprompter preparation,
+    green room management, and on-site speaker support throughout the Event.
+
+    (f) Catering Coordination. The Service Provider shall coordinate all
+    catering and hospitality services for the Event, including meal service
+    planning, dietary accommodation management, break refreshment scheduling,
+    reception and networking event food and beverage, and compliance with venue
+    food service policies and applicable health regulations.
+
+    (g) Sponsor Activation. The Service Provider shall manage the design,
+    production, and installation of all sponsor recognition and activation
+    elements, including booth and exhibit space allocation, signage and banner
+    placement, digital sponsor listings, lead retrieval system configuration,
+    and on-site sponsor liaison services.
+
+    (h) Exhibition Hall Management. The Service Provider shall manage all
+    aspects of the exhibition hall, including floor plan design, booth
+    assignment, utility distribution (power, internet, compressed air), aisle
+    signage, traffic flow management, security coordination, and exhibitor
+    support services throughout the Event.
+
+    (i) On-Site Event Staffing. The Service Provider shall provide and manage
+    all on-site event staffing requirements, including registration desk
+    personnel, room monitors, technical operators, stage managers, production
+    assistants, and general event support staff.
+
+    (j) Post-Event Analytics. The Service Provider shall compile and deliver
+    a comprehensive post-event analytics report including registration and
+    attendance metrics, session attendance data, virtual engagement statistics,
+    exhibitor lead retrieval summaries, attendee satisfaction survey results,
+    and financial reconciliation of Event expenditures.
+
+4. VENUE SELECTION
+
+4.1 Venue Requirements. The Service Provider shall identify venue options that
+meet the following minimum requirements: (i) a main hall or ballroom capable
+of seating at least three thousand (3,000) attendees theater-style; (ii) a
+minimum of eight (8) breakout rooms accommodating between fifty (50) and three
+hundred (300) attendees each; (iii) an exhibition hall of at least twenty
+thousand (20,000) square feet; (iv) ADA-compliant accessibility throughout all
+Event spaces; (v) high-speed internet connectivity with minimum 1 Gbps
+dedicated bandwidth; and (vi) sufficient loading dock and freight elevator
+access for production load-in and strike operations.
+
+4.2 Negotiation Authority. The Service Provider is authorized to negotiate
+venue contract terms on behalf of the Client, provided that any commitment
+exceeding the approved production budget requires prior written Client approval.
+
+4.3 ADA Compliance. The Service Provider shall ensure that all venue spaces,
+staging configurations, seating arrangements, and attendee services comply with
+the Americans with Disabilities Act (ADA) and all applicable accessibility
+regulations, including but not limited to wheelchair-accessible seating, sign
+language interpretation upon request, assistive listening devices, and
+accessible registration and exhibition areas.
+
+5. AUDIOVISUAL PRODUCTION
+
+5.1 Main Stage. The Service Provider shall design and install a main stage
+production package including but not limited to a scenic stage set, LED video
+wall (minimum 16:9 aspect ratio), front projection systems for speaker
+support content, professional lighting rig with wash, spot, and effects
+fixtures, line array audio system with stage monitors, confidence monitors,
+teleprompter systems, and a multi-camera video production suite with
+directional switching, graphics insertion, and recording capability.
+
+5.2 Breakout Rooms. Each breakout room shall be equipped with a projection or
+flat-panel display system, audio reinforcement with wireless lavalier and
+handheld microphones, a confidence monitor, and lighting appropriate for
+presentation environments.
+
+5.3 Webcast Infrastructure. The Service Provider shall deploy a webcast
+infrastructure supporting simultaneous live streaming of the general session
+and up to four (4) breakout sessions, with redundant internet connectivity,
+professional broadcast encoding, and integration with the virtual platform.
+
+6. REGISTRATION AND ATTENDEE MANAGEMENT
+
+6.1 Registration Platform. The Service Provider shall implement an online
+registration platform supporting multi-track registration (in-person, virtual,
+or hybrid), early bird and standard pricing tiers, group registration
+discounts, and integration with the Event mobile application.
+
+6.2 Badge Production. The Service Provider shall design, print, and distribute
+attendee badges differentiated by attendee category (attendee, speaker,
+exhibitor, media, staff), with appropriate access control indicators and sponsor
+recognition elements.
+
+6.3 Mobile Application. The Service Provider shall configure and deploy a
+mobile application for the Event providing attendees with access to the event
+schedule, session descriptions, speaker biographies, venue maps, interactive
+floor plans, networking features, and real-time event notifications.
+
+6.4 Accessibility. The registration platform and mobile application shall
+comply with WCAG 2.1 Level AA accessibility standards, including screen reader
+compatibility, keyboard navigation, and appropriate color contrast ratios.
+
+7. VIRTUAL AND HYBRID CAPABILITIES
+
+7.1 Streaming Platform. The Service Provider shall implement a virtual event
+platform providing live streaming of all general sessions and designated
+breakout sessions, with high-definition video quality, professional audio,
+real-time closed captioning, and simulive playback capability.
+
+7.2 Engagement Tools. The virtual platform shall include interactive engagement
+tools including live polling, moderated Q&A, session chat, virtual networking
+lounges, and gamification elements designed to maximize virtual attendee
+participation and satisfaction.
+
+7.3 On-Demand Content. Following the Event, all recorded sessions shall be
+made available on-demand through the virtual platform for a period of ninety
+(90) days, with searchable session catalogs and viewer analytics.
+
+8. SPEAKER MANAGEMENT
+
+8.1 Speaker Coordination. The Service Provider shall serve as the primary
+point of contact for all speakers, managing invitation logistics, travel
+arrangements, hotel accommodations, ground transportation, and expense
+reimbursement processing.
+
+8.2 AV Requirements. The Service Provider shall collect, review, and implement
+each speaker's audiovisual requirements, including slide deck formatting,
+video playback specifications, audio requirements, and any specialized
+technical needs.
+
+8.3 Rehearsal Schedule. The Service Provider shall develop and manage a
+comprehensive speaker rehearsal schedule, including technical walkthroughs,
+audio checks, lighting cues, and teleprompter rehearsals, to be conducted
+prior to the commencement of the Event.
+
+9. CATERING AND HOSPITALITY
+
+9.1 Dietary Requirements. The Service Provider shall coordinate with the venue
+catering department to ensure that all meals and refreshments accommodate
+common dietary requirements including vegetarian, vegan, gluten-free, kosher,
+halal, and common food allergies, with clearly labeled food stations and
+allergen information cards.
+
+9.2 Service Levels. All catering services shall be provided at a level
+consistent with a premium pharmaceutical industry event, including full-service
+staffed buffet stations, barista stations for coffee service, and themed
+reception service for networking events.
+
+9.3 Bar Service. Where alcoholic beverages are served at Event functions, the
+Service Provider shall ensure compliance with all applicable state and local
+liquor licensing requirements and shall implement responsible service practices
+including drink limit controls and non-alcoholic alternative availability.
+
+10. SPONSOR AND EXHIBITOR MANAGEMENT
+
+10.1 Booth Design. The Service Provider shall provide standardized booth design
+templates for each Sponsorship Tier and shall coordinate with individual
+sponsors on custom booth designs, ensuring compliance with venue regulations,
+fire safety codes, and applicable pharmaceutical industry promotional guidelines.
+
+10.2 Lead Retrieval. The Service Provider shall implement a digital lead
+retrieval system enabling exhibitors to capture attendee contact information
+through badge scanning, with real-time data synchronization to exhibitor dashboards.
+
+10.3 Activation Rules. All sponsor and exhibitor activities within the
+exhibition hall and common areas shall comply with the Client's promotional
+guidelines, including restrictions on off-label promotion, adverse event
+reporting procedures, and compliance with the PhRMA Code and applicable FDA
+regulations.
+
+11. HEALTH AND SAFETY
+
+11.1 Medical Response. The Service Provider shall ensure the availability of
+on-site medical response personnel and equipment throughout the duration of the
+Event, including automated external defibrillators (AEDs) and first aid
+stations staffed by certified medical professionals.
+
+11.2 Emergency Procedures. The Service Provider shall develop and communicate
+comprehensive emergency response procedures, including evacuation plans,
+assembly points, emergency contact protocols, and coordination with local
+emergency services.
+
+11.3 COVID Protocols. The Service Provider shall implement health and safety
+protocols in accordance with current CDC guidance and applicable state and
+local health department requirements, including enhanced sanitation, hand
+hygiene stations, and ventilation optimization, and shall adjust protocols as
+conditions warrant.
+
+12. FDA COMPLIANCE
+
+12.1 Promotional Guidelines. The Service Provider acknowledges that the Event
+is subject to FDA regulations governing pharmaceutical promotional activities
+and shall ensure that all Event content, signage, materials, and activities
+conform to the Client's internal promotional review procedures and applicable
+regulatory requirements.
+
+12.2 Off-Label Restrictions. The Service Provider shall implement controls to
+prevent the presentation or dissemination of off-label promotional content
+within Event sessions, exhibition spaces, and associated materials, and shall
+immediately escalate any identified compliance concerns to the Client's
+regulatory affairs department.
+
+12.3 Adverse Event Reporting. The Service Provider shall cooperate with the
+Client in implementing procedures for the identification, documentation, and
+reporting of adverse events or product complaints that may be disclosed during
+the Event, in accordance with FDA 21 CFR Part 312 and 21 CFR Part 314
+reporting requirements.
+
+13. TERM
+
+13.1 Initial Term. This Agreement shall commence on the Effective Date and
+shall continue for a period of twelve (12) months, concluding on May 31, 2026
+(the "Term"), unless earlier terminated in accordance with Section 17. The
+Term encompasses the full planning, production, execution, and post-event
+phases for a single conference event scheduled for March 2026.
+
+13.2 No Auto-Renewal. This Agreement shall not automatically renew upon
+expiration. Any extension or new engagement following the expiration of the
+Term shall require the execution of a new agreement or written amendment signed
+by both parties.
+
+13.3 Effect of Termination. Expiration or termination of this Agreement shall
+not affect any provisions that by their nature are intended to survive
+termination, including without limitation Sections 15 (Intellectual Property),
+16 (Confidentiality), 18 (Liability), 19 (Insurance), 20 (Dispute Resolution),
+and 21 (Governing Law).
+
+14. COMPENSATION
+
+14.1 Event Management Fee. The Client shall pay the Service Provider a fixed
+event management fee of ninety-five thousand dollars ($95,000.00) for all
+planning, coordination, and on-site management services described in this
+Agreement.
+
+14.2 Production Budget. In addition to the Event Management Fee, the Client
+shall approve a production budget of up to four hundred fifty thousand dollars
+($450,000.00) for all production-related expenditures including venue deposits,
+audiovisual equipment rental and labor, scenic fabrication, staging, lighting,
+sound, video, webcast infrastructure, and related production costs. All
+production expenditures shall be subject to Client approval on a per-line-item
+basis, and no individual line item expenditure shall exceed ten thousand dollars
+($10,000.00) without prior written Client approval. The Service Provider shall
+provide detailed production budget estimates for Client review and approval
+prior to any expenditure commitment.
+
+14.3 Virtual Platform Licensing. The Client shall pay the Service Provider
+twenty-eight thousand dollars ($28,000.00) for virtual platform licensing,
+configuration, and technical support, encompassing the live Event period and
+the ninety-day on-demand content access period.
+
+14.4 Travel and Accommodation. The Client shall reimburse the Service Provider
+for reasonable travel and accommodation expenses incurred by Service Provider
+personnel in connection with the Event, at actual cost, subject to a maximum
+cap of twenty-five thousand dollars ($25,000.00) for all travel and
+accommodation expenses incurred during the Term. All travel expenses shall be
+supported by itemized receipts and shall be consistent with the Service
+Provider's standard travel and expense policy.
+
+14.5 Payment Schedule. Payments under this Agreement shall be made according
+to the following schedule: (i) forty percent (40%) of the Event Management Fee
+($38,000.00) shall be payable within thirty (30) days of the Effective Date;
+(ii) thirty percent (30%) of the Event Management Fee ($28,500.00) shall be
+payable at ninety (90) days from the Effective Date; and (iii) the remaining
+thirty percent (30%) of the Event Management Fee ($28,500.00) shall be payable
+within thirty (30) days following the conclusion of the Event. Production
+budget expenditures, virtual platform licensing fees, and travel reimbursements
+shall be invoiced separately and shall be payable within thirty (30) days of
+receipt of invoice.
+
+15. INTELLECTUAL PROPERTY
+
+15.1 Client-Owned IP. The Client shall own all right, title, and interest in
+all event branding materials, logos, trademarks, content recordings (including
+video, audio, and photographic recordings of presentations and sessions),
+attendee registration data, attendee contact information, survey responses,
+and all other data collected in connection with the Event (collectively,
+"Client Materials").
+
+15.2 Service Provider-Owned IP. The Service Provider shall retain all right,
+title, and interest in all production designs, show files, technical
+configurations, scenic designs, lighting plots, audio system designs, stage
+management documentation, event production templates, and proprietary
+production methodologies developed or utilized in connection with the Event
+(collectively, "Provider Materials").
+
+15.3 License. Each party grants the other a limited, non-exclusive, non-
+transferable license to use its respective intellectual property materials
+solely for purposes related to the planning, execution, and post-event
+activities under this Agreement.
+
+16. CONFIDENTIALITY
+
+16.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Neither party shall disclose, publish, or otherwise reveal
+Confidential Information to any third party without the prior written consent
+of the disclosing party, except as required by law, regulation, or legal
+process.
+
+16.2 Duration. The obligations of confidentiality set forth in this Section 16
+shall survive the expiration or termination of this Agreement for a period of
+three (3) years.
+
+17. TERMINATION
+
+17.1 General Termination. Either party may terminate this Agreement upon sixty
+(60) calendar days' prior written notice to the other party.
+
+17.2 Client Termination. The Client may terminate this Agreement at any time
+upon sixty (60) calendar days' prior written notice; provided, however, that
+upon such termination the Client shall be obligated to pay the Service Provider
+for all non-cancellable commitments entered into on behalf of the Client prior
+to the effective date of termination, including but not limited to venue
+deposits, non-refundable equipment rentals, and confirmed vendor contracts.
+
+17.3 Termination for Cause. Either party may terminate this Agreement for cause
+if the other party commits a material breach of any provision of this Agreement
+and fails to cure such breach within thirty (30) calendar days after receiving
+written notice specifying the nature of the breach in reasonable detail.
+
+18. LIABILITY
+
+18.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING
+BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS
+OPPORTUNITY, BUSINESS INTERRUPTION, OR LOSS OF GOODWILL, ARISING OUT OF OR
+RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER, REGARDLESS
+OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY, ANY
+OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES.
+
+18.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed the total
+event management fee of ninety-five thousand dollars ($95,000), regardless of
+the form of action or legal theory.
+
+19. INSURANCE
+
+19.1 General Liability. Throughout the term of this Agreement, the Service
+Provider shall maintain commercial general liability insurance in an amount not
+less than two million dollars ($2,000,000) per occurrence, covering bodily
+injury, property damage, and personal and advertising injury arising from the
+Service Provider's operations in connection with the Event.
+
+19.2 Professional Liability. The Service Provider shall maintain professional
+liability (errors and omissions) insurance in an amount not less than one
+million dollars ($1,000,000) per occurrence, covering claims arising from
+negligent acts, errors, or omissions in the provision of event management and
+production services under this Agreement.
+
+19.3 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies.
+
+20. DISPUTE RESOLUTION
+
+20.1 Negotiation. In the event of any dispute arising out of or relating to
+this Agreement, the parties shall first attempt to resolve such dispute through
+good faith negotiations between senior executives of each party for a period of
+not less than thirty (30) calendar days.
+
+20.2 Arbitration. If the parties are unable to resolve a dispute through
+negotiation, such dispute shall be submitted to binding arbitration administered
+by the American Arbitration Association (AAA) in accordance with its Commercial
+Arbitration Rules then in effect. The arbitration shall be conducted in Las
+Vegas, Nevada. The decision of the arbitrator shall be final and binding.
+
+21. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of
+the State of Nevada, without giving effect to any choice-of-law or conflict-
+of-law provisions that would require the application of the laws of any
+jurisdiction other than the State of Nevada.
+
+22. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A: Venue Requirements — Detailed specifications for the Event venue
+                including minimum room capacities, breakout requirements,
+                exhibition hall dimensions, audiovisual infrastructure
+                specifications, and accessibility compliance criteria
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: AV Technical Rider — Comprehensive technical rider documenting
+                all staging, lighting, audio, video, and webcast production
+                specifications for the Event
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: Sponsorship Prospectus — Sponsorship tiers, pricing, and benefit
+                descriptions for all available Event sponsorship opportunities
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+23. GENERAL PROVISIONS
+
+23.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the subject
+matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written, between
+the parties relating to such subject matter.
+
+23.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+23.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the other
+party, except that either party may assign this Agreement to a successor entity
+in connection with a merger, acquisition, or sale of all or substantially all of
+its assets.
+
+23.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such provision
+shall be modified to the minimum extent necessary to make it valid and
+enforceable, and the remaining provisions of this Agreement shall continue in
+full force and effect.
+
+23.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+23.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b) sent
+by certified mail, return receipt requested, (c) sent by nationally recognized
+overnight courier, or (d) sent by email with confirmation of receipt, to the
+addresses set forth in Section 1 or such other address as either party may
+designate in writing.
+
+23.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing in
+this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+23.8 Force Majeure. Neither party shall be liable for any failure or delay in the
+performance of its obligations under this Agreement to the extent that such
+failure or delay is caused by circumstances beyond the reasonable control of the
+affected party, including but not limited to acts of God, natural disasters,
+pandemics, government actions, labor disputes, civil unrest, war, terrorism, and
+power or telecommunications failures.
+
+24. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Event Management and
+Production Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+Catalyst Event Productions Inc., a Nevada corporation
+
+
+By: ______________________________________
+Name: Victoria Reeves
+Title: Chief Executive Officer
+Date: May 25, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Marcus J. Delgado
+Title: Director of Operations
+Date: May 25, 2025
+
+
+CLIENT:
+
+Pinnacle Pharmaceuticals Corp., a New Jersey corporation
+
+
+By: ______________________________________
+Name: Dr. Kevin Park
+Title: Vice President, Marketing
+Date: May 28, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Sarah L. Whitfield
+Title: Associate General Counsel
+Date: May 28, 2025

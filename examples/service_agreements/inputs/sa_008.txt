@@ -1,0 +1,746 @@
+HUMAN RESOURCES OUTSOURCING SERVICES AGREEMENT
+
+This Human Resources Outsourcing Services Agreement (the "Agreement"), bearing reference
+number HRO-2025-0022, is entered into as of January 1, 2025 (the "Effective Date"), by
+and between the parties identified in Section 1 below.
+
+WHEREAS, the contemporary business landscape presents organizations of all sizes with an
+increasingly complex array of human resources challenges, driven by rapid changes in
+workforce demographics, evolving employee expectations, the proliferation of state and
+federal employment regulations, and the accelerating adoption of technology-driven talent
+management solutions. The management of human capital has emerged as a critical determinant
+of organizational competitiveness, with companies that invest strategically in talent
+acquisition, employee development, engagement, and retention consistently outperforming
+their peers across key performance indicators including revenue growth, profitability,
+innovation output, and customer satisfaction;
+
+WHEREAS, the regulatory environment governing the employer-employee relationship in the
+United States has grown substantially more complex over the past several decades, encompassing
+a broad and interconnected framework of federal statutes including, without limitation, the
+Fair Labor Standards Act (FLSA), the Family and Medical Leave Act (FMLA), the Americans
+with Disabilities Act (ADA), Title VII of the Civil Rights Act of 1964, the Age
+Discrimination in Employment Act (ADEA), the Employee Retirement Income Security Act
+(ERISA), the Consolidated Omnibus Budget Reconciliation Act (COBRA), the Health Insurance
+Portability and Accountability Act (HIPAA), the Affordable Care Act (ACA, also referred
+to as the Patient Protection and Affordable Care Act or PPACA), the Occupational Safety
+and Health Act (OSHA), and the National Labor Relations Act (NLRA), as well as a diverse
+patchwork of state-specific employment laws, wage and hour regulations, leave entitlement
+statutes, anti-discrimination provisions, and workplace safety requirements that vary
+significantly across jurisdictions and impose substantial compliance obligations on
+employers operating in multiple states;
+
+WHEREAS, the administration of employee benefits programs has become a specialized
+discipline requiring expertise in plan design, carrier negotiations, enrollment management,
+claims processing, compliance with ERISA fiduciary standards, Section 125 Cafeteria Plan
+administration, COBRA continuation coverage requirements, Affordable Care Act employer
+shared responsibility provisions (including applicable large employer status determinations
+and reporting under IRC Sections 6055 and 6056), Health Savings Account (HSA) and Flexible
+Spending Account (FSA) administration, and the coordination of benefits across medical,
+dental, vision, life insurance, short-term disability, long-term disability, and retirement
+plan offerings including 401(k) plans subject to ERISA and Internal Revenue Code requirements;
+
+WHEREAS, payroll processing represents a mission-critical function that demands precision,
+timeliness, and compliance with complex federal, state, and local tax withholding
+requirements, garnishment and levy processing obligations under federal and state law,
+direct deposit and paycard administration, wage garnishment prioritization rules established
+by the Consumer Credit Protection Act (CCPA), new hire reporting requirements under
+federal and state law, and the accurate calculation and remittance of employment taxes
+including FICA (Federal Insurance Contributions Act) taxes, FUTA (Federal Unemployment
+Tax Act) taxes, and SUTA (State Unemployment Tax Act) contributions;
+
+WHEREAS, the effective management of the employee lifecycle — from recruitment and
+onboarding through ongoing performance management, employee relations, professional
+development, and eventual offboarding — requires dedicated expertise and systematic
+processes that many organizations find inefficient or impractical to maintain in-house,
+particularly mid-market companies experiencing rapid growth or organizational change that
+place significant demands on limited internal human resources staff;
+
+WHEREAS, the parties desire to engage in a collaborative relationship wherein the Service
+Provider shall furnish comprehensive human resources outsourcing services, enabling the
+Client to focus on its core business operations while ensuring professional management
+of its human capital functions, regulatory compliance, and employee experience;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements set
+forth herein, and for other good and valuable consideration, the receipt and sufficiency
+of which are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. PeopleFirst HR Solutions Inc., a corporation duly organized and
+existing under the laws of the State of Florida, with its principal offices located at
+5500 Executive Center Drive, Suite 800, Tampa, FL 33607 (hereinafter referred to as
+"Service Provider," "PeopleFirst," or "Provider").
+
+1.2 Client. RapidScale Tech Inc., a corporation duly organized and existing under the
+laws of the State of Florida, with its principal place of business at 3200 Innovation
+Circle, Orlando, FL 32801 (hereinafter referred to as "Client," "RapidScale," or
+"Company").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they have the
+full legal authority to bind their respective organization to the terms and conditions of
+this Agreement, and that the execution of this Agreement has been duly authorized by all
+necessary corporate or organizational approvals.
+
+2. DEFINITIONS
+
+2.1 "ACA" or "Affordable Care Act" means the Patient Protection and Affordable Care Act
+of 2010, as amended, and its implementing regulations, including the employer shared
+responsibility provisions, the individual mandate (as applicable), and the related
+reporting requirements under Internal Revenue Code Sections 6055 and 6056.
+
+2.2 "ADA" means the Americans with Disabilities Act of 1990, as amended, including the
+ADA Amendments Act of 2008, and the regulations promulgated thereunder, prohibiting
+discrimination against qualified individuals with disabilities in employment, public
+accommodations, and government services.
+
+2.3 "COBRA" means the Consolidated Omnibus Budget Reconciliation Act of 1985, as amended,
+requiring group health plans to offer continuation coverage to qualified beneficiaries who
+would otherwise lose coverage due to certain qualifying events.
+
+2.4 "EEOC" means the United States Equal Employment Opportunity Commission, the federal
+agency responsible for enforcing federal laws prohibiting employment discrimination based
+on race, color, religion, sex, national origin, age, disability, genetic information, and
+retaliation for opposing discriminatory practices or participating in discrimination
+proceedings.
+
+2.5 "Employee Handbook" means the comprehensive document maintained by or on behalf of the
+Client that sets forth the policies, procedures, expectations, benefits summaries, and
+rules governing the employment relationship between the Client and its employees, including
+without limitation policies addressing attendance, conduct, anti-harassment, anti-
+discrimination, leave of absence, electronic communications, and workplace safety.
+
+2.6 "ERISA" means the Employee Retirement Income Security Act of 1974, as amended,
+establishing minimum standards for the administration of employee benefit plans, including
+fiduciary responsibilities, reporting and disclosure requirements, and participant
+protections.
+
+2.7 "FICA" means the Federal Insurance Contributions Act, requiring employers and employees
+to pay Social Security and Medicare taxes through payroll withholding and employer matching
+contributions.
+
+2.8 "FLSA" means the Fair Labor Standards Act of 1938, as amended, establishing minimum
+wage, overtime compensation, recordkeeping, child labor standards, and defining exempt and
+non-exempt employee classifications.
+
+2.9 "FMLA" means the Family and Medical Leave Act of 1993, as amended, entitling eligible
+employees of covered employers to take unpaid, job-protected leave for specified family and
+medical reasons, with continuation of group health insurance coverage under the same terms
+and conditions as if the employee had not taken leave.
+
+2.10 "FSA" means a Flexible Spending Account established under Section 125 of the Internal
+Revenue Code, allowing employees to set aside pre-tax dollars to pay for eligible out-of-
+pocket health care or dependent care expenses.
+
+2.11 "FUTA" means the Federal Unemployment Tax Act, imposing a federal payroll tax on
+employers to fund unemployment compensation programs administered at the state level.
+
+2.12 "Garnishment" means any legal process whereby a portion of an employee's wages are
+withheld by the employer and paid directly to a creditor or other entity pursuant to a
+court order, administrative order, or other legally enforceable instrument, including but
+not limited to child support orders, tax levies, student loan garnishments, and creditor
+judgments.
+
+2.13 "HRIS" or "Human Resource Information System" means the integrated software platform
+utilized by the Service Provider to manage employee data, payroll processing, benefits
+administration, time and attendance tracking, compliance reporting, and other human
+resources functions as contemplated by this Agreement.
+
+2.14 "HSA" means a Health Savings Account established under Section 223 of the Internal
+Revenue Code, allowing individuals covered by a High Deductible Health Plan (HDHP) to save
+money on a pre-tax basis to pay for qualified medical expenses.
+
+2.15 "I-9" means Employment Eligibility Verification Form (USCIS Form I-9), required by
+the Immigration Reform and Control Act of 1986 (IRCA) to verify the identity and employment
+authorization of individuals hired for employment in the United States.
+
+2.16 "Open Enrollment" means the annual period during which eligible employees may enroll
+in, change, or cancel their elections under the Client's group health insurance plans and
+other benefit programs offered through the Section 125 Cafeteria Plan, typically occurring
+once per calendar year unless a qualifying life event triggers a mid-year election change.
+
+2.17 "PPACA" means the Patient Protection and Affordable Care Act, Pub. L. No. 111-148,
+as amended by the Health Care and Education Reconciliation Act of 2010, Pub. L. No.
+111-152, collectively referred to as the Affordable Care Act or ACA.
+
+2.18 "Section 125 Plan" means a Cafeteria Plan established pursuant to Section 125 of the
+Internal Revenue Code, allowing employees to pay for qualified benefits on a pre-tax basis,
+including health insurance premiums, FSA contributions, and HSA contributions through
+payroll deduction.
+
+2.19 "SUTA" means State Unemployment Tax Act contributions, which are state-level payroll
+taxes imposed on employers to fund state unemployment insurance programs providing benefits
+to eligible workers who become unemployed through no fault of their own.
+
+2.20 "Workers' Compensation" means the system of state-mandated insurance providing benefits
+to employees who suffer work-related injuries or illnesses, including medical expenses,
+wage replacement (temporary or permanent disability benefits), vocational rehabilitation,
+and death benefits, as required by the workers' compensation laws of the applicable state(s).
+
+2.21 "Confidential Information" means all non-public information disclosed by either party
+to the other, whether orally, in writing, by electronic transmission, or by inspection,
+including but not limited to employee personal information, compensation data, benefits
+enrollment records, performance evaluations, disciplinary records, investigation files,
+financial data, and proprietary methodologies.
+
+2.22 "Covered Employees" means those employees of the Client for whom the Service Provider
+is engaged to provide services under this Agreement, initially comprising approximately
+four hundred fifty (450) employees as of the Effective Date, with such number subject to
+increase or decrease as the Client's workforce changes over the term of this Agreement.
+
+3. SCOPE OF SERVICES
+
+3.1 Comprehensive HR Outsourcing Services. The Service Provider shall provide comprehensive
+human resources outsourcing services for the Client's workforce, encompassing the following
+core service areas:
+
+    (a) Payroll Processing. The Service Provider shall process the Client's payroll on
+    a semi-monthly basis (or such other pay schedule as the Client may designate), including
+    the calculation of gross pay, application of federal, state, and local tax withholdings,
+    processing of pre-tax and post-tax deductions, administration of garnishments and
+    levies in accordance with applicable priority rules, direct deposit processing for
+    employees electing such payment method, generation and distribution of pay statements,
+    and the timely remittance of all employment taxes and garnishment payments to the
+    applicable governmental authorities and creditors.
+
+    (b) Benefits Administration. The Service Provider shall administer the Client's
+    employee benefits programs, including but not limited to medical, dental, and vision
+    insurance plans, 401(k) retirement plan, Health Savings Account (HSA), Flexible
+    Spending Account (FSA), group life insurance, short-term disability insurance, and
+    long-term disability insurance. Benefits administration services shall include
+    enrollment processing, eligibility verification, qualifying life event processing,
+    COBRA administration and notification, carrier liaison and claims escalation support,
+    annual Open Enrollment management, and benefits billing reconciliation.
+
+    (c) Employee Onboarding. The Service Provider shall manage the new employee onboarding
+    process, including but not limited to the preparation and distribution of offer letter
+    templates and employment agreements (for Client approval), completion and processing of
+    Form I-9 Employment Eligibility Verification, initiation of background checks through
+    approved vendors, coordination of new hire orientation scheduling, enrollment in benefits
+    programs within applicable timeframes, payroll setup and direct deposit enrollment,
+    and provisioning of access to the HRIS employee self-service portal.
+
+    (d) Employee Offboarding. The Service Provider shall manage the employee separation
+    process, including but not limited to processing of termination or resignation
+    documentation, calculation and processing of final pay in accordance with applicable
+    state law requirements (including any statutory deadlines for final wage payment),
+    coordination and scheduling of exit interviews, issuance of COBRA continuation coverage
+    election notices within the timeframes required by law, benefits termination and
+    conversion options notification, recovery of company property, and deprovisioning of
+    HRIS and system access.
+
+    (e) HRIS Management. The Service Provider shall manage and maintain the HRIS platform
+    for the Client's workforce, including employee data entry and maintenance, organizational
+    chart management, time and attendance tracking integration, absence management, data
+    integrity assurance, user access controls and role-based permissions administration,
+    system configuration and customization, report generation, audit trail maintenance, and
+    coordination with IT support for system issues and upgrades.
+
+    (f) Compliance Monitoring. The Service Provider shall monitor the Client's compliance
+    with applicable federal, state, and local employment laws and regulations, including
+    but not limited to FMLA leave tracking and administration (including designation notices,
+    leave balance tracking, and return-to-work documentation), ADA reasonable accommodation
+    tracking and interactive process documentation, EEO-1 Component 1 report preparation
+    and filing assistance, FLSA exemption classification review and overtime tracking,
+    required workplace postings updates, and new hire reporting to applicable state
+    agencies.
+
+    (g) Employee Relations Support. The Service Provider shall provide guidance and support
+    to the Client on employee relations matters, including but not limited to consultation
+    on disciplinary actions and progressive discipline procedures, investigation support
+    for employee complaints (including harassment, discrimination, and retaliation
+    allegations), preparation of written warnings, performance improvement plans, and
+    other disciplinary documentation (for Client approval), mediation facilitation, and
+    guidance on termination procedures to minimize legal risk.
+
+    (h) Performance Management System Administration. The Service Provider shall administer
+    the Client's performance management system within the HRIS platform, including
+    configuration of performance review cycles, goal-setting templates and workflows,
+    calibration session scheduling, 360-degree feedback survey administration, performance
+    improvement plan tracking, and generation of performance management reports and
+    analytics for Client review.
+
+    (i) HR Analytics and Reporting. The Service Provider shall provide HR analytics and
+    reporting services, including but not limited to a real-time HR dashboard accessible
+    to authorized Client personnel, headcount and workforce demographic reporting, turnover
+    and retention analysis, time-to-fill and recruitment metrics, compensation benchmarking
+    reports, benefits utilization reports, compliance status summaries, and quarterly
+    business reviews presenting key HR metrics, trends, and recommendations.
+
+4. PAYROLL PROCESSING PROCEDURES
+
+4.1 Pay Schedules. The Service Provider shall process the Client's payroll in accordance
+with the designated pay schedule, which shall be semi-monthly unless otherwise agreed in
+writing by the parties. The Client shall submit all payroll data, including hours worked,
+new hires, terminations, pay rate changes, and other adjustments, to the Service Provider
+by the designated payroll cutoff time, which shall be no later than three (3) business
+days prior to the scheduled pay date.
+
+4.2 Tax Withholdings. The Service Provider shall calculate and withhold all applicable
+federal, state, and local income taxes from employee wages based on the employee's W-4
+elections and applicable tax tables. The Service Provider shall also calculate and remit
+employer FICA contributions (Social Security and Medicare), FUTA taxes, and SUTA
+contributions in accordance with applicable rates and wage base limits.
+
+4.3 Garnishment Processing. The Service Provider shall process all wage garnishments,
+child support orders, tax levies, and student loan garnishments received by the Client
+or Service Provider in accordance with applicable federal and state laws, including
+compliance with the Consumer Credit Protection Act (CCPA) limitations on the amount of
+disposable earnings subject to garnishment and the applicable priority hierarchy for
+multiple garnishments.
+
+4.4 Direct Deposit. The Service Provider shall process direct deposit payments for all
+employees who have authorized electronic funds transfer. The Service Provider shall
+ensure that direct deposit files are transmitted to the designated financial institutions
+in a timely manner to ensure funds availability on the scheduled pay date.
+
+5. BENEFITS ADMINISTRATION
+
+5.1 Benefits Programs. The Service Provider shall administer the following benefits
+programs on behalf of the Client:
+
+    (a) Medical Insurance. Administration of the Client's group medical insurance
+    plan(s), including enrollment, eligibility verification, qualifying life event
+    processing, COBRA administration, carrier liaison, and claims escalation support.
+
+    (b) Dental Insurance. Administration of the Client's group dental insurance plan(s),
+    including enrollment, eligibility management, and carrier coordination.
+
+    (c) Vision Insurance. Administration of the Client's group vision insurance plan(s),
+    including enrollment, eligibility management, and carrier coordination.
+
+    (d) 401(k) Retirement Plan. Administration of the Client's 401(k) plan, including
+    enrollment processing, contribution amount management, loan administration support,
+    hardship withdrawal processing coordination, and plan-level reporting assistance
+    (plan administration and fiduciary responsibilities remain with the Client's plan
+    administrator and recordkeeper).
+
+    (e) Health Savings Account (HSA). Administration of HSA enrollment, contribution
+    processing through payroll deduction, and employer contribution coordination with
+    the HSA custodian.
+
+    (f) Flexible Spending Account (FSA). Administration of FSA enrollment, contribution
+    processing through payroll deduction, claims processing and reimbursement, grace
+    period or carryover management, and use-it-or-lose-it deadline notifications.
+
+    (g) Life Insurance and Disability. Administration of group life insurance, short-term
+    disability, and long-term disability plans, including enrollment, beneficiary
+    designation processing, premium billing reconciliation, and claims coordination.
+
+5.2 Open Enrollment. The Service Provider shall manage the Client's annual Open Enrollment
+period, including communication plan development, enrollment system configuration,
+employee education materials, election processing, and confirmation statements.
+
+6. EMPLOYEE ONBOARDING
+
+6.1 Background Checks. The Service Provider shall coordinate background checks for all
+new hires through the Client's designated background check vendor, in compliance with
+applicable federal and state laws, including the Fair Credit Reporting Act (FCRA), and
+any applicable ban-the-box or fair chance hiring ordinances.
+
+6.2 I-9 Verification. The Service Provider shall complete and process Form I-9
+Employment Eligibility Verification for all new hires within the timeframes required by
+law (no later than the employee's first day of employment for Section 1, and no later
+than the third business day after the employee's first day for Section 2), and shall
+maintain I-9 records in compliance with USCIS retention requirements.
+
+6.3 Orientation. The Service Provider shall coordinate new hire orientation scheduling
+and provide orientation materials addressing benefits enrollment, HRIS self-service
+portal access, company policies, and other relevant information, as directed by the
+Client.
+
+7. EMPLOYEE OFFBOARDING
+
+7.1 Exit Interviews. The Service Provider shall coordinate and conduct exit interviews
+with departing employees (either in person, by telephone, or through an online survey
+platform), compile exit interview data and trend analysis, and provide periodic reports
+to the Client.
+
+7.2 COBRA Notifications. The Service Provider shall issue COBRA continuation coverage
+election notices to qualified beneficiaries within the timeframes required by law
+(generally within fourteen (14) days of the qualifying event, with an additional sixty
+(60) days for the qualified beneficiary to elect coverage).
+
+7.3 Final Pay. The Service Provider shall calculate and process final pay for separated
+employees in accordance with applicable state law requirements, including any statutory
+deadlines for final wage payment that may vary by state.
+
+8. COMPLIANCE MONITORING
+
+8.1 FMLA Tracking. The Service Provider shall track and administer FMLA leave for the
+Client's eligible employees, including designation of qualifying leave, leave balance
+tracking, intermittent leave management, fitness-for-duty certification management, and
+return-to-work documentation processing.
+
+8.2 ADA Accommodations. The Service Provider shall maintain records of ADA accommodation
+requests, track the interactive process, and document accommodation determinations and
+implementations, in coordination with the Client.
+
+8.3 EEO Reporting. The Service Provider shall assist the Client in the preparation of
+EEO-1 Component 1 data submissions as required by the EEOC, including workforce
+demographic data compilation and report generation.
+
+9. HRIS MANAGEMENT
+
+9.1 Data Integrity. The Service Provider shall implement and maintain procedures to
+ensure the accuracy and integrity of employee data within the HRIS platform, including
+regular data audits, duplicate record identification and resolution, and data
+validation protocols.
+
+9.2 Access Controls. The Service Provider shall administer user access to the HRIS
+platform based on role-based permissions, ensuring that employees, managers, and
+administrators have appropriate access levels to employee data and system functions.
+
+9.3 Audit Trails. The Service Provider shall maintain audit trails within the HRIS
+platform for all data modifications, access events, and system configuration changes,
+in accordance with the data retention requirements specified in this Agreement.
+
+10. EMPLOYEE RELATIONS
+
+10.1 Investigation Support. The Service Provider shall provide guidance and support to
+the Client in conducting workplace investigations, including complaint intake, investigation
+planning, witness interview protocols, documentation templates, and investigation report
+preparation. The Service Provider shall not serve as the Client's legal counsel and all
+investigation findings shall be subject to review and approval by the Client and/or its
+legal counsel.
+
+10.2 Disciplinary Actions. The Service Provider shall assist the Client in the preparation
+of disciplinary documentation, including written warnings, suspension notices, and
+termination letters, in accordance with the Client's progressive discipline policies
+and applicable legal requirements.
+
+10.3 Mediation. The Service Provider shall facilitate mediation between employees and
+managers upon request by the Client, provided that such mediation is voluntary and does
+not create an attorney-client relationship or otherwise constitute legal advice.
+
+11. REPORTING AND ANALYTICS
+
+11.1 Dashboard. The Service Provider shall provide the Client with access to a real-time
+HR analytics dashboard, updated continuously with current workforce data, accessible
+through a secure web-based portal.
+
+11.2 Quarterly Business Reviews. The Service Provider shall conduct quarterly business
+reviews with the Client's designated representatives, presenting key HR metrics, workforce
+trends, compliance status updates, service performance summary, and recommendations for
+process improvements.
+
+12. DATA PRIVACY
+
+12.1 Employee Data Handling. The Service Provider shall handle all employee personal
+information in accordance with applicable federal, state, and local privacy laws, including
+HIPAA requirements applicable to employee health information, state data breach notification
+laws, and any applicable privacy regulations governing the processing of employee data.
+
+12.2 International Employees. In the event that the Client employs individuals in the
+European Union or other jurisdictions with comprehensive data protection legislation,
+the Service Provider shall comply with the General Data Protection Regulation (GDPR) or
+other applicable data protection laws with respect to such employees' personal data,
+including the processing of international data transfers in compliance with Standard
+Contractual Clauses or other approved transfer mechanisms.
+
+13. TERM
+
+13.1 Initial Term. This Agreement shall commence on the Effective Date and shall continue
+for a period of thirty-six (36) months, concluding on December 31, 2027 (the "Initial
+Term"), unless earlier terminated in accordance with the provisions of Section 19.
+
+13.2 Automatic Renewal. Upon expiration of the Initial Term or any subsequent Renewal
+Term, this Agreement shall automatically renew for successive twelve (12) month periods
+(each a "Renewal Term"), unless either party provides written notice of non-renewal to
+the other party at least one hundred twenty (120) calendar days prior to the expiration
+of the then-current term.
+
+13.3 Effect of Termination. Expiration or termination of this Agreement shall not affect
+any provisions that by their nature are intended to survive termination, including without
+limitation Sections 17 (Intellectual Property), 18 (Confidentiality), 20 (Liability), 21
+(Dispute Resolution), 22 (Governing Law), and 23 (General Provisions).
+
+14. COMPENSATION
+
+14.1 Per-Employee Monthly Fee. In consideration of the human resources outsourcing services
+described in Section 3, the Client shall pay the Service Provider a fee of eighty-five
+dollars ($85.00) per Covered Employee per month for core services rendered under this
+Agreement.
+
+14.2 Minimum Monthly Fee. Notwithstanding the foregoing, the Client shall pay a minimum
+monthly fee of twenty-five thousand dollars ($25,000.00) per calendar month, regardless
+of the actual number of Covered Employees in any given month. If the per-employee fee
+calculated pursuant to Section 14.1 for any month is less than twenty-five thousand
+dollars ($25,000.00), the Client shall pay the difference as a minimum fee adjustment.
+
+14.3 Implementation Fee. In addition to the ongoing monthly fees described above, the
+Client shall pay the Service Provider a one-time, non-refundable implementation fee in
+the amount of thirty-five thousand dollars ($35,000.00), payable in two equal installments:
+the first installment of seventeen thousand five hundred dollars ($17,500.00) upon
+execution of this Agreement, and the second installment of seventeen thousand five hundred
+dollars ($17,500.00) upon the completion of HRIS configuration as described in Section 15.
+
+14.4 Implementation Fee — Data Migration Limitation. The implementation fee set forth in
+Section 14.3 covers one (1) employee data migration from the Client's legacy systems to
+the HRIS platform. Any subsequent data migrations requested by the Client, whether arising
+from system changes, acquisitions, reorganizations, or other causes, shall be subject to
+an additional charge of five thousand dollars ($5,000.00) per migration event.
+
+14.5 Payment Terms. Monthly invoices shall be submitted by the Service Provider on the
+first business day of each calendar month and shall be payable by the Client within thirty
+(30) calendar days of receipt.
+
+14.6 Late Payment Interest. Any amounts not paid within the thirty (30) day payment period
+shall bear interest at the rate of one and one-quarter percent (1.25%) per month (or the
+maximum rate permitted by applicable law, if less), compounded monthly, from the due date
+until paid in full.
+
+14.7 Taxes. All fees payable under this Agreement are exclusive of applicable taxes. The
+Client shall be responsible for any sales tax, use tax, or similar taxes imposed on the
+services provided under this Agreement, except for taxes based on the Service Provider's
+net income.
+
+15. DELIVERABLES AND MILESTONES
+
+15.1 HRIS Configuration and Data Migration. The Service Provider shall complete the
+configuration of the HRIS platform and the initial migration of employee data from the
+Client's legacy systems within sixty (60) calendar days of the Effective Date.
+
+15.2 Benefits Enrollment Setup. The Service Provider shall complete the setup of benefits
+enrollment processes and systems within ninety (90) calendar days of the Effective Date,
+provided, however, that if the Client's Open Enrollment period commences prior to the
+expiration of such ninety (90) day period, the Service Provider shall complete benefits
+enrollment setup no later than fifteen (15) calendar days prior to the start of the
+Client's Open Enrollment period, whichever is earlier.
+
+15.3 First Payroll Cycle Processing. The Service Provider shall complete the processing
+of the Client's first payroll cycle through the HRIS platform within forty-five (45)
+calendar days of the Effective Date.
+
+15.4 Quarterly Compliance Audit Reports. The Service Provider shall deliver comprehensive
+compliance audit reports to the Client on a quarterly basis throughout the term of this
+Agreement, summarizing the Client's compliance status with respect to FMLA, ADA, FLSA,
+and other applicable employment laws, identifying any areas of concern, and providing
+recommendations for corrective action where necessary.
+
+16. INTELLECTUAL PROPERTY
+
+16.1 Service Provider IP. The Service Provider shall retain all right, title, and interest
+in its proprietary HRIS configurations, system workflows, process templates, reporting
+formats, compliance checklists, onboarding and offboarding procedures, performance
+management frameworks, analytics models, and other tools, methodologies, and processes
+developed independently of this Agreement (collectively, "Service Provider IP"). The
+Client acknowledges that the Service Provider IP represents valuable trade secrets and
+proprietary business assets of the Service Provider.
+
+16.2 Client Data Ownership. All employee data, workforce information, and other data
+provided by or on behalf of the Client to the Service Provider in connection with this
+Agreement (collectively, "Client Data") shall remain the sole and exclusive property of
+the Client. The Service Provider shall not use Client Data for any purpose other than
+the performance of services under this Agreement and shall return or securely destroy
+all Client Data upon termination or expiration of this Agreement in accordance with the
+data handling procedures set forth herein.
+
+17. CONFIDENTIALITY
+
+17.1 Obligations. Each party agrees to hold in strict confidence all Confidential
+Information of the other party disclosed in connection with this Agreement. Neither party
+shall disclose, publish, or otherwise reveal Confidential Information to any third party
+without the prior written consent of the disclosing party, except as required by law,
+regulation, legal process, or binding order of a court or regulatory agency of competent
+jurisdiction.
+
+17.2 Duration. The obligations of confidentiality set forth in this Section 17 shall
+survive the expiration or termination of this Agreement for a period of seven (7) years.
+
+17.3 Permitted Disclosures. Notwithstanding the foregoing, a receiving party may disclose
+Confidential Information to its employees, contractors, and professional advisors who
+have a need to know such information for purposes consistent with this Agreement and who
+are bound by confidentiality obligations at least as restrictive as those set forth herein.
+
+18. INSURANCE
+
+18.1 Required Coverage. Throughout the term of this Agreement, the Service Provider shall
+maintain, at its sole cost and expense, the following insurance coverages with insurers
+rated A- VII or better by A.M. Best Company (or equivalent rating agency):
+
+    (a) Professional Liability Insurance. Professional liability (errors and omissions)
+    insurance in an amount not less than three million dollars ($3,000,000) per occurrence,
+    covering claims arising from negligent acts, errors, or omissions in the provision of
+    human resources outsourcing services under this Agreement.
+
+    (b) Employment Practices Liability Insurance. Employment practices liability insurance
+    in an amount not less than one million dollars ($1,000,000) per occurrence, covering
+    claims arising from employment-related practices including, but not limited to,
+    discrimination, wrongful termination, harassment, and retaliation.
+
+18.2 Evidence of Coverage. The Service Provider shall provide certificates of insurance
+evidencing the required coverages to the Client upon execution of this Agreement and upon
+each renewal of such policies. Such certificates shall provide that the Client shall receive
+thirty (30) days' prior written notice of any cancellation, material modification, or
+non-renewal of the required insurance policies.
+
+19. TERMINATION
+
+19.1 Termination for Convenience. Either party may terminate this Agreement for convenience
+upon one hundred twenty (120) calendar days' prior written notice to the other party.
+
+19.2 Termination for Cause. Either party may terminate this Agreement for cause if the other
+party commits a material breach of any provision of this Agreement and fails to cure such
+breach within forty-five (45) calendar days after receiving written notice specifying the
+nature of the breach in reasonable detail.
+
+19.3 Termination upon Insolvency. Either party may terminate this Agreement immediately upon
+written notice if the other party becomes insolvent, files a petition in bankruptcy, is
+adjudicated as bankrupt, makes an assignment for the benefit of creditors, or has a receiver
+appointed for a substantial portion of its assets.
+
+19.4 Effect of Termination. Upon termination or expiration of this Agreement, the Service
+Provider shall (a) deliver all completed and in-progress work product to the Client,
+(b) return or securely destroy all Client Confidential Information and Client Data in its
+possession, and (c) provide reasonable transition assistance to facilitate the Client's
+engagement of a successor HR services provider, all at the Client's expense.
+
+20. LIABILITY
+
+20.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEITHER
+PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,
+SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF REVENUE,
+LOSS OF PROFITS, LOSS OF BUSINESS OPPORTUNITY, BUSINESS INTERRUPTION, LOSS OF GOODWILL,
+OR LOSS OF DATA, ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF
+SERVICES HEREUNDER, REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT,
+STRICT LIABILITY, ANY OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+20.2 Liability Cap. The Service Provider's total aggregate liability for all claims arising
+out of or relating to this Agreement, regardless of the form of action or legal theory,
+shall not exceed one million five hundred thousand dollars ($1,500,000). This cap shall
+apply to the aggregate of all claims arising during the term of this Agreement.
+
+21. DISPUTE RESOLUTION
+
+21.1 Binding Arbitration. Any dispute arising out of or relating to this Agreement that
+cannot be resolved through good faith negotiation between the parties shall be submitted
+to binding arbitration administered by the American Arbitration Association (AAA) in
+accordance with its Commercial Arbitration Rules. The arbitration shall be conducted in
+Tampa, Florida, before a single arbitrator with experience in employment law and human
+resources services.
+
+21.2 Arbitrator Selection. If the parties cannot agree on the selection of an arbitrator
+within thirty (30) calendar days of the demand for arbitration, the arbitrator shall be
+selected in accordance with the AAA's standard arbitrator selection procedures.
+
+21.3 Arbitration Award. The arbitrator shall issue a written decision setting forth the
+findings of fact and conclusions of law upon which the award is based. The arbitrator's
+decision shall be final and binding, and judgment upon the award may be entered in any
+court of competent jurisdiction.
+
+22. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the State
+of Florida, without giving effect to any choice-of-law or conflict-of-law provisions that
+would require the application of the laws of any jurisdiction other than the State of
+Florida.
+
+23. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this Agreement:
+
+    Exhibit A:  Employee Data Migration Template
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+    Exhibit B:  Benefits Plan Summary
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+    Exhibit C:  HRIS Configuration Specification
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+24. GENERAL PROVISIONS
+
+24.1 Entire Agreement. This Agreement, including all exhibits attached hereto, constitutes
+the entire agreement between the parties with respect to the subject matter hereof and
+supersedes all prior and contemporaneous agreements, understandings, negotiations, and
+discussions, whether oral or written, between the parties relating to such subject matter.
+
+24.2 Amendments. This Agreement may not be amended, modified, or supplemented except by a
+written instrument signed by both parties.
+
+24.3 Assignment. Neither party may assign or transfer any of its rights or obligations under
+this Agreement without the prior written consent of the other party, except that either party
+may assign this Agreement to an Affiliate or successor entity in connection with a merger,
+acquisition, or sale of all or substantially all of its assets, provided that the assignee
+assumes all obligations of the assigning party under this Agreement.
+
+24.4 Severability. If any provision of this Agreement is held to be invalid, illegal, or
+unenforceable by a court of competent jurisdiction, such provision shall be modified to the
+minimum extent necessary to make it valid and enforceable, and the remaining provisions of
+this Agreement shall continue in full force and effect.
+
+24.5 Waiver. The failure of either party to enforce any provision of this Agreement shall
+not constitute a waiver of such party's right to enforce such provision or any other
+provision in the future.
+
+24.6 Notices. All notices required or permitted under this Agreement shall be in writing and
+shall be deemed delivered when (a) delivered personally, (b) sent by certified mail, return
+receipt requested, (c) sent by nationally recognized overnight courier, or (d) sent by email
+with confirmation of receipt, to the addresses set forth in Section 1 or such other address
+as either party may designate in writing.
+
+24.7 Independent Contractor. The Service Provider is an independent contractor and not an
+employee, agent, partner, or joint venturer of the Client. Nothing in this Agreement shall
+be construed to create an employment relationship, partnership, joint venture, or agency
+relationship between the parties.
+
+24.8 Force Majeure. Neither party shall be liable for any failure or delay in the performance
+of its obligations under this Agreement to the extent that such failure or delay is caused by
+circumstances beyond the reasonable control of the affected party, including but not limited
+to acts of God, natural disasters, pandemics, government actions, labor disputes, civil
+unrest, war, terrorism, and power or telecommunications failures.
+
+24.9 Records Retention. The Service Provider shall maintain all records, working papers,
+correspondence, and employee data generated or received in connection with the performance of
+services under this Agreement for a period of not less than seven (7) years following the
+completion or termination of this Agreement, or such longer period as may be required by
+applicable law or regulation.
+
+24.10 Subcontractor Management. The Service Provider shall not engage any subcontractor to
+perform services under this Agreement without the prior written consent of the Client. Any
+approved subcontractor shall be subject to the same confidentiality, data security, and
+professional standards as the Service Provider, and the Service Provider shall remain fully
+responsible for the performance of any subcontracted services.
+
+25. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Human Resources Outsourcing Services
+Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+PeopleFirst HR Solutions Inc., a Florida corporation
+
+
+By: ______________________________________
+Name: Dr. Sandra Miles
+Title: Chief Executive Officer
+Date: December 20, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: James Whitfield
+Title: General Counsel
+Date: December 20, 2024
+
+
+CLIENT:
+
+RapidScale Tech Inc., a Florida corporation
+
+
+By: ______________________________________
+Name: Mark Chen
+Title: Vice President, Human Resources
+Date: December 22, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Diana Rodriguez
+Title: Director of Operations
+Date: December 22, 2024

@@ -1,0 +1,782 @@
+FOOD AND BEVERAGE CATERING AND CONCESSION SERVICES AGREEMENT
+
+This Food and Beverage Catering and Concession Services Agreement (the
+"Agreement"), bearing reference number FBC-2025-0067, is entered into as of
+March 15, 2025 (the "Effective Date"), by and between the parties identified
+in Section 1 below.
+
+WHEREAS, the sports and entertainment venue food service industry has undergone
+a dramatic transformation over the past two decades, evolving from traditional
+hot dog and popcorn concession stands to sophisticated, chef-driven culinary
+programs that reflect the diverse gastronomic culture of their host cities and
+regions;
+
+WHEREAS, modern sports venue attendees have come to expect a premium food and
+beverage experience that rivals or exceeds the quality of standalone restaurants,
+with particular emphasis on locally sourced ingredients, craft beverage programs,
+diverse dietary accommodations, and innovative delivery methods including
+in-seat service and mobile ordering platforms;
+
+WHEREAS, the regulatory landscape governing food and beverage service at large
+public assembly venues has become increasingly complex, encompassing federal,
+state, and local health and safety codes, Alcoholic Beverage Control (ABC)
+regulations, food allergen labeling requirements, occupational safety standards,
+and environmental sustainability mandates that require specialized expertise and
+dedicated compliance infrastructure;
+
+WHEREAS, Oracle Park, home of the San Francisco Giants, is a premier Major
+League Baseball venue with a seating capacity of 41,915 and hosts approximately
+85 events per year, including all San Francisco Giants regular season home games
+and a variety of private venue events, and requires comprehensive food and
+beverage services capable of serving large volumes of patrons within compressed
+time windows while maintaining the highest standards of food safety, quality, and
+customer satisfaction;
+
+WHEREAS, Bay Area Sports and Entertainment Authority, a joint powers authority
+organized under the laws of the State of California, has determined that
+exclusive food and beverage catering and concession services provided by an
+experienced, full-service catering and concession operator are essential to
+delivering an exceptional fan experience and maximizing revenue generation at
+Oracle Park;
+
+WHEREAS, Savory Events Catering Inc. is a full-service food and beverage
+catering and concession company incorporated under the laws of the State of
+California, with extensive experience operating large-scale food and beverage
+programs at sports and entertainment venues throughout the San Francisco Bay
+Area, and has demonstrated the operational capacity, culinary expertise, and
+regulatory compliance infrastructure necessary to manage the comprehensive food
+and beverage program at Oracle Park;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration,
+the receipt and sufficiency of which are hereby acknowledged, the parties agree
+as follows:
+
+1. PARTIES
+
+1.1 Service Provider. Savory Events Catering Inc., a corporation duly organized
+and existing under the laws of the State of California, with its principal
+offices located at 5800 Mission Street, San Francisco, CA 94112 (hereinafter
+referred to as "Service Provider," "Savory," or "Caterer").
+
+1.2 Client. Bay Area Sports and Entertainment Authority, a joint powers
+authority organized under the laws of the State of California, with its
+principal offices located at 24 Willie Mays Plaza, San Francisco, CA 94107
+(hereinafter referred to as "Client," "Authority," or "Venue").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that
+they have the full legal authority to bind their respective organization to the
+terms and conditions of this Agreement, and that the execution of this
+Agreement has been duly authorized by all necessary corporate and governmental
+approvals.
+
+2. DEFINITIONS
+
+2.1 "ABC License" means any license, permit, or authorization issued by the
+California Department of Alcoholic Beverage Control that is required for the
+sale, service, or distribution of alcoholic beverages at the Venue.
+
+2.2 "Back of House" or "BOH" means all kitchen, preparation, storage, and
+commissary areas within the Venue that are not accessible to the general public,
+including but not limited to main kitchens, satellite kitchens, walk-in coolers
+and freezers, dry storage rooms, dishwashing stations, and food preparation
+areas.
+
+2.3 "Commissary" means the central food production and distribution facility
+operated by the Service Provider within or adjacent to the Venue, serving as the
+primary location for bulk food preparation, inventory staging, and supply
+distribution to all concession outlets and catering stations.
+
+2.4 "Concession Stand" or "Concession Outlet" means any fixed or semi-permanent
+food and beverage service location within the Venue, including but not limited
+to permanent concession stands, portable concession carts, kiosks, and
+counter-service locations operated by the Service Provider during Events.
+
+2.5 "Front of House" or "FOH" means all service areas within the Venue that are
+accessible to patrons, including but not limited to concourses, concession
+stands, suite levels, club dining rooms, and in-seat service areas.
+
+2.6 "Gross Sales" means the total amount of all sales of food, beverages, and
+merchandise food items by the Service Provider at the Venue during an Event or
+Event Period, before any deductions for taxes, discounts, refunds, or service
+charges, and excluding only sales of alcoholic beverages (which are reported
+separately as "Alcoholic Beverage Sales") and premium catering services (which
+are reported separately as "Premium Catering Sales").
+
+2.7 "Health Permit" means any permit, license, or authorization issued by the
+San Francisco Department of Public Health or other applicable health authority
+that is required for the preparation, storage, service, or sale of food or
+beverages at the Venue.
+
+2.8 "Luxury Suite" or "Premium Suite" means any of the luxury seating
+enclosures located at the suite level of the Venue, including enclosed and
+semi-enclosed suites, which receive dedicated catering and beverage services
+from the Service Provider.
+
+2.9 "Per Capita" means the average amount of food and beverage spending per
+attendee at an Event, calculated by dividing total Gross Sales (including
+Alcoholic Beverage Sales and Premium Catering Sales) by the total paid
+attendance for such Event.
+
+2.10 "Point of Sale" or "POS" means the electronic point of sale system
+deployed by the Service Provider at all Concession Stands and service locations
+within the Venue for the purpose of processing sales transactions, accepting
+payments, tracking inventory, and generating sales and revenue reports.
+
+2.11 "Premium Catering" or "Premium Catering Sales" means all food, beverage,
+and service revenues generated by the Service Provider in connection with luxury
+suite catering, club level dining, private dining rooms, field-level
+hospitality areas, and other premium hospitality services provided at the Venue,
+excluding general concession stand sales and portable cart sales.
+
+2.12 "Retention Rate" means the percentage of total Gross Sales retained by the
+Service Provider after payment of the Client's revenue share, calculated on a
+category-by-category basis in accordance with the revenue sharing percentages
+set forth in Section 7.
+
+2.13 "Service Charge" means any gratuity, service fee, or administrative charge
+added to the price of food, beverage, or catering services provided by the
+Service Provider at the Venue, which shall be retained in full by the Service
+Provider and shall not be included in the calculation of Gross Sales or revenue
+sharing.
+
+2.14 "Spend Per Head" means the total food and beverage spending per attendee
+at an Event, calculated by dividing total Gross Sales by total attendance, and
+used as a key performance indicator for evaluating the effectiveness and
+profitability of the food and beverage program.
+
+2.15 "Venue Agreement" means the existing venue use and management agreement
+between the Client and the San Francisco Giants, and any amendments, extensions,
+or renewals thereof, governing the use, operation, and management of Oracle Park.
+
+2.16 "Event" means any San Francisco Giants home game, private venue event, or
+other public or private assembly held at Oracle Park for which food and beverage
+services are provided under this Agreement.
+
+2.17 "Event Period" means the period beginning four (4) hours before the
+scheduled start time of an Event and ending two (2) hours after the conclusion
+of such Event, or such other period as may be mutually agreed upon by the
+parties for specific Events.
+
+2.18 "Alcoholic Beverage Sales" means the total amount of all sales of beer,
+wine, spirits, cocktails, and other alcoholic beverages by the Service Provider
+at the Venue during an Event or Event Period, before any deductions for taxes,
+discounts, or refunds.
+
+2.19 "Minimum Annual Guarantee" or "MAG" means the minimum annual payment
+guaranteed by the Service Provider to the Client as set forth in Section 7.3,
+regardless of actual revenue performance during the applicable annual period.
+
+2.20 "Operating Season" means the period from the first San Francisco Giants
+home game of each calendar year through the last San Francisco Giants home game
+of such year, including any postseason games played at Oracle Park.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide exclusive food and
+beverage catering and concession services for Oracle Park, a premier Major
+League Baseball venue with a seating capacity of 41,915, located at 24 Willie
+Mays Plaza, San Francisco, CA 94107. The Service Provider shall be the sole
+provider of all food and beverage services at the Venue during all Events,
+including all San Francisco Giants home games and private venue events
+(approximately 85 events per year). The scope of services includes, without
+limitation, premium suite catering, club level dining, general concession
+stands, portable concession carts, beverage service (alcoholic and
+non-alcoholic), in-seat delivery service, private event catering, and novelty
+and merchandise food items.
+
+3.2 Premium Suite Catering. The Service Provider shall provide comprehensive
+catering services for all luxury suites and premium seating areas at the Venue,
+including but not limited to: seasonal suite catering menus with a minimum of
+three (3) tiered package options per game; pre-game and in-game food service;
+dedicated beverage service including a full bar program; custom menu
+development for suite holders with dietary restrictions; and post-game catering
+upon request.
+
+3.3 Club Level Dining. The Service Provider shall operate all club level dining
+facilities at the Venue, including but not limited to: all-inclusive buffet and
+food station service for club level ticket holders; themed dining experiences
+aligned with promotional game nights; craft beer and wine programming; and
+dedicated wait staff service for all club level seating sections.
+
+3.4 General Concession Stands. The Service Provider shall operate all permanent
+concession stands located throughout the Venue concourses, including but not
+limited to: traditional ballpark fare concession stands; specialty food stands
+featuring San Francisco and Bay Area culinary themes; vegetarian, vegan, and
+gluten-free concession options at a minimum of four (4) locations; international
+food stands representing the diverse culinary traditions of the Bay Area; and
+dessert and novelty food stands.
+
+3.5 Portable Concession Carts. The Service Provider shall deploy and operate a
+fleet of portable concession carts throughout the Venue, including but not
+limited to: mobile beer and wine carts on all concourse levels; specialty
+item carts featuring items such as garlic fries, churros, and branded food
+offerings; quick-service beverage carts for high-traffic areas; and portable
+food carts positioned near entry gates for pre-game service.
+
+3.6 Beverage Service. The Service Provider shall provide comprehensive beverage
+service throughout the Venue, encompassing both alcoholic and non-alcoholic
+beverages, including but not limited to: domestic and craft beer service at all
+concession stands and portable carts; wine service by the glass and bottle;
+full cocktail and spirits service at designated bar locations; fountain
+beverages, bottled water, and specialty non-alcoholic drinks; and coffee, tea,
+and specialty beverage service.
+
+3.7 In-Seat Delivery Service. The Service Provider shall offer in-seat food
+and beverage delivery service to all premium seating areas and, where
+operationally feasible, to select general seating sections, utilizing mobile
+ordering technology, dedicated delivery staff, and expedited preparation
+protocols to ensure timely delivery.
+
+3.8 Private Event Catering. The Service Provider shall provide full-service
+catering for all private events held at the Venue, including but not limited
+to: corporate hospitality events, meetings, and conferences; wedding receptions
+and private celebrations; charity galas and fundraising events; holiday parties
+and seasonal celebrations; and community and civic events.
+
+3.9 Novelty and Merchandise Food Items. The Service Provider shall develop and
+offer novelty and branded food items exclusive to the Venue, including but not
+limited to: signature dishes associated with the San Francisco Giants brand;
+limited-time seasonal offerings; promotional food items tied to special events
+and giveaways; and collectible or branded food packaging and merchandise.
+
+4. MENU DEVELOPMENT
+
+4.1 Seasonal Menu Rotation. The Service Provider shall develop and implement a
+seasonal menu rotation program, introducing new menu items and retiring
+underperforming items at the beginning of each baseball season, at the All-Star
+break, and at the start of any postseason play. Each seasonal menu cycle shall
+include a minimum of ten (10) new or revised menu items across all service
+categories.
+
+4.2 Dietary Accommodations. The Service Provider shall maintain comprehensive
+dietary accommodation options at all times, including but not limited to:
+vegetarian, vegan, gluten-free, nut-free, dairy-free, kosher, and halal
+options. All concession stands shall clearly label dietary options, and the
+Service Provider shall maintain a current allergen matrix for all menu items.
+
+4.3 Local Sourcing. The Service Provider shall prioritize the sourcing of
+ingredients from local and regional producers, with a target of sourcing a
+minimum of thirty percent (30%) of all food ingredients from producers located
+within one hundred fifty (150) miles of the Venue.
+
+4.4 Price Points. The Service Provider shall offer menu items across a range of
+price points designed to serve all attendee demographics, with value-priced
+options, mid-range selections, and premium offerings available at every
+concession location.
+
+5. OPERATIONAL REQUIREMENTS
+
+5.1 Staffing Ratios. The Service Provider shall maintain staffing levels
+sufficient to ensure that average customer wait times at concession stands do
+not exceed five (5) minutes during peak service periods, and that all concession
+stands are fully operational no later than ninety (90) minutes prior to the
+scheduled start of each Event.
+
+5.2 Uniform Standards. All Service Provider personnel shall wear clean,
+professional uniforms that comply with health department requirements and
+reflect positively on the Venue brand. Uniform standards shall be submitted to
+the Client for approval prior to the start of each Operating Season.
+
+5.3 Service Speed Targets. The Service Provider shall implement operational
+procedures and training programs designed to achieve the following service speed
+targets: maximum transaction time of sixty (60) seconds per concession customer;
+maximum delivery time of fifteen (15) minutes for in-seat orders; and full
+suite catering setup completion no later than sixty (60) minutes prior to first
+pitch.
+
+5.4 Queue Management. The Service Provider shall implement queue management
+systems at all high-volume concession locations, including digital queue
+monitoring, express lanes for beverage-only orders, and mobile ordering
+pick-up stations to minimize wait times and maximize throughput.
+
+6. FOOD SAFETY AND SANITATION
+
+6.1 HACCP Plan. The Service Provider shall develop, implement, and maintain a
+comprehensive Hazard Analysis Critical Control Points (HACCP) plan covering all
+food preparation, storage, cooking, holding, and service operations at the
+Venue, in accordance with applicable federal, state, and local regulations.
+
+6.2 Health Department Permits. The Service Provider shall obtain and maintain
+all required health permits, food facility permits, and food handler
+certifications for all food service operations at the Venue, and shall ensure
+that such permits and certifications remain current throughout the Term.
+
+6.3 Temperature Monitoring. The Service Provider shall implement continuous
+temperature monitoring systems for all refrigeration, freezing, and hot-holding
+equipment, with automated alerts for any temperature deviations outside of
+acceptable ranges, and shall maintain temperature logs for a minimum of two (2)
+years.
+
+6.4 Allergen Protocols. The Service Provider shall implement comprehensive
+allergen management protocols, including staff training on the Big Nine
+allergens, separate preparation areas and equipment for allergen-free items,
+clear labeling of all menu items with allergen information, and documented
+procedures for responding to allergen-related customer inquiries and incidents.
+
+6.5 Recall Procedures. The Service Provider shall maintain documented food
+recall procedures, including supplier notification protocols, product
+identification and segregation procedures, and customer notification processes,
+and shall conduct at least one (1) food recall simulation exercise per year.
+
+7. COMPENSATION
+
+7.1 Revenue Sharing — General Concession Sales. The Client shall receive
+forty-five percent (45%) of the Gross Sales from all general concession stands,
+portable concession carts, and novelty food items. The Service Provider shall
+retain fifty-five percent (55%) of such Gross Sales.
+
+7.2 Revenue Sharing — Premium Catering Sales. The Client shall receive
+fifty-two percent (52%) of all Premium Catering Sales from luxury suite
+catering, club level dining, private dining rooms, and other premium hospitality
+services. The Service Provider shall retain forty-eight percent (48%) of such
+Premium Catering Sales.
+
+7.3 Revenue Sharing — Alcoholic Beverage Sales. The Client shall receive
+thirty-five percent (35%) of all Alcoholic Beverage Sales at the Venue. The
+Service Provider shall retain sixty-five percent (65%) of such Alcoholic
+Beverage Sales.
+
+7.4 Minimum Annual Guarantee. Regardless of actual revenue performance, the
+Service Provider shall guarantee to the Client a minimum annual payment of
+two million eight hundred thousand dollars ($2,800,000.00) per Operating Season
+(the "Minimum Annual Guarantee" or "MAG"). If the Client's aggregate revenue
+share under Sections 7.1, 7.2, and 7.3 for any Operating Season is less than
+the MAG, the Service Provider shall pay the difference to the Client within
+thirty (30) days following the conclusion of such Operating Season. If the
+Client's aggregate revenue share for any Operating Season exceeds the MAG, the
+Service Provider shall retain all revenues above the MAG after payment of the
+Client's share.
+
+7.5 Monthly Settlement. Revenue sharing payments shall be settled on a monthly
+basis. Within fifteen (15) days following the end of each calendar month, the
+Service Provider shall submit to the Client a detailed monthly revenue report
+itemizing Gross Sales, Premium Catering Sales, Alcoholic Beverage Sales, and
+the Client's share of each category. The Client's revenue share payment shall be
+due and payable within thirty (30) days of receipt of the monthly revenue
+report.
+
+7.6 Service Charges. Any service charges, gratuities, or administrative fees
+added by the Service Provider to the price of catering services, suite
+catering packages, or private event catering shall be retained in full by the
+Service Provider and shall not be included in the calculation of Gross Sales or
+the Client's revenue share.
+
+8. ALCOHOL SERVICE
+
+8.1 ABC Licensing. The Service Provider shall obtain and maintain all required
+ABC licenses, permits, and authorizations for the sale and service of alcoholic
+beverages at the Venue, and shall comply with all applicable California Alcoholic
+Beverage Control laws and regulations at all times.
+
+8.2 Responsible Service Training. All Service Provider personnel who serve or
+sell alcoholic beverages shall complete a certified responsible beverage service
+training program prior to their first day of service and shall complete annual
+refresher training thereafter.
+
+8.3 Intoxication Prevention. The Service Provider shall implement comprehensive
+intoxication prevention protocols, including but not limited to: mandatory ID
+verification for all patrons appearing to be under the age of thirty (30);
+refusal of service to visibly intoxicated patrons; cutoff policies for alcohol
+service during the later innings of baseball games; and coordination with Venue
+security for the removal of disorderly patrons.
+
+8.4 Minor ID Verification. The Service Provider shall implement strict minor
+identification verification procedures at all points of alcoholic beverage sale,
+using electronic ID scanners or other reliable verification methods, and shall
+ensure that no alcoholic beverages are sold to any person under the age of
+twenty-one (21).
+
+9. TECHNOLOGY AND POS SYSTEMS
+
+9.1 Point of Sale Systems. The Service Provider shall deploy and maintain
+modern, integrated point of sale systems at all concession stands, portable
+carts, premium service locations, and in-seat delivery stations throughout the
+Venue. The POS system shall support real-time sales reporting, inventory
+tracking, payment processing, and integration with the Venue's ticketing and
+access control systems.
+
+9.2 Inventory Management. The Service Provider shall implement a comprehensive
+inventory management system integrated with the POS system, providing real-time
+inventory visibility, automated reorder alerts, waste tracking, and variance
+reporting for all food, beverage, and supply items.
+
+9.3 Mobile Ordering. The Service Provider shall offer a mobile ordering
+platform accessible via smartphone application and web browser, allowing patrons
+to place food and beverage orders for pickup at designated locations or for
+in-seat delivery, with integrated payment processing and order status tracking.
+
+9.4 Payment Processing. The POS system shall accept all major credit and debit
+cards, mobile payment methods (including Apple Pay, Google Pay, and Samsung Pay),
+and contactless payment technologies. Cash payment acceptance shall be maintained
+at a minimum of twenty percent (20%) of all concession locations.
+
+10. FINANCIAL CONTROLS
+
+10.1 Cash Handling. The Service Provider shall implement and maintain rigorous
+cash handling procedures, including but not limited to: dual-control cash drawers;
+regular cash pick-ups throughout each Event; daily cash reconciliation; and
+secure cash transport and deposit procedures.
+
+10.2 Revenue Reconciliation. The Service Provider shall reconcile all revenue
+streams following each Event, comparing POS system sales records with actual cash
+and credit card receipts, and shall investigate and resolve any discrepancies
+within seventy-two (72) hours.
+
+10.3 Audit Rights. The Client shall have the right to audit the Service
+Provider's financial records related to food and beverage operations at the Venue
+no more than twice (2) per year, upon at least ten (10) business days' prior
+written notice. The Service Provider shall cooperate fully with any such audit
+and shall provide the Client or its designated auditors with access to all
+relevant financial records, POS data, and supporting documentation.
+
+10.4 Per Capita Reporting. The Service Provider shall calculate and report per
+capita spending for each Event, broken down by category (general concessions,
+premium catering, alcoholic beverages), and shall provide comparative per capita
+analysis on a monthly and annual basis.
+
+11. SUSTAINABILITY
+
+11.1 Waste Reduction. The Service Provider shall implement comprehensive waste
+reduction programs, with a target of diverting a minimum of sixty percent (60%)
+of all food and beverage waste from landfill disposal through composting,
+recycling, and food donation programs.
+
+11.2 Composting. The Service Provider shall establish a composting program for
+all food waste generated at the Venue, including back-of-house prep waste, unsold
+perishable food, and post-consumer food waste from compostable service ware.
+
+11.3 Recyclable Materials. The Service Provider shall use recyclable or
+compostable service ware (plates, cups, utensils, and packaging) to the maximum
+extent practicable, with a target of achieving one hundred percent (100%)
+recyclable or compostable service ware within the first Operating Season.
+
+11.4 Local Sourcing Targets. In addition to the local sourcing requirements set
+forth in Section 4.3, the Service Provider shall establish and report on annual
+local sourcing targets, with the goal of increasing the percentage of locally
+sourced ingredients by at least five percent (5%) per year during the Term.
+
+12. STAFFING
+
+12.1 Background Checks. The Service Provider shall conduct comprehensive
+background checks on all personnel who will work at the Venue, including
+criminal history checks, employment verification, and reference checks, in
+accordance with applicable law.
+
+12.2 Food Handler Certifications. All Service Provider personnel who handle,
+prepare, or serve food or beverages at the Venue shall possess a valid California
+Food Handler Card, and such certifications shall be maintained current throughout
+the Term.
+
+12.3 Training Programs. The Service Provider shall implement comprehensive
+training programs for all Venue personnel, covering but not limited to: food
+safety and sanitation; responsible alcohol service; customer service excellence;
+POS system operation; allergen awareness and response; emergency procedures; and
+Venue-specific policies and procedures.
+
+12.4 Game-Day Staffing. The Service Provider shall employ or engage a sufficient
+number of trained personnel for each Event to meet the staffing ratios and
+service speed targets set forth in Section 5, and shall provide the Client with
+a proposed game-day staffing plan no later than forty-eight (48) hours prior to
+each Event.
+
+13. COMMUNITY ENGAGEMENT
+
+13.1 Local Vendor Participation. The Service Provider shall make commercially
+reasonable efforts to include local and minority-owned businesses, women-owned
+businesses, and small businesses as vendors, suppliers, and subcontractors in
+connection with food and beverage operations at the Venue.
+
+13.2 Charitable Donations. The Service Provider shall donate unsold, wholesome
+prepared food from Venue events to local charitable organizations through
+established food rescue programs, to the extent permitted by applicable health
+and safety regulations.
+
+13.3 Youth Programs. The Service Provider shall participate in and support at
+least two (2) community youth programs per year related to culinary education,
+hospitality training, or food security, in coordination with the Client's
+community relations initiatives.
+
+14. DELIVERABLES AND REPORTING
+
+14.1 Season Menu and Pricing Plan. Within forty-five (45) days of the Effective
+Date, and no later than January 15 of each subsequent year, the Service Provider
+shall deliver to the Client a comprehensive season menu and pricing plan for the
+upcoming Operating Season, including all proposed menu items, pricing, dietary
+accommodations, and promotional offerings.
+
+14.2 POS System Deployment. Within sixty (60) days of the Effective Date, the
+Service Provider shall complete the deployment and testing of all POS systems,
+inventory management systems, mobile ordering platforms, and payment processing
+systems at the Venue, and shall provide the Client with documentation confirming
+full operational readiness.
+
+14.3 Staff Training and Health Certifications. Within seventy-five (75) days of
+the Effective Date, and prior to the first Event, the Service Provider shall
+complete all required staff training programs and shall provide the Client with
+certification records confirming that all personnel have obtained the required
+food handler certifications, responsible beverage service training, and
+background clearances.
+
+14.4 First Event Execution. The Service Provider shall provide full food and
+beverage services for Opening Day of the San Francisco Giants regular season
+(the "First Event"), and shall ensure that all concession outlets, premium
+services, and support operations are fully operational and staffed in accordance
+with the standards set forth in this Agreement.
+
+14.5 Monthly Revenue and Attendance Reports. Within fifteen (15) days following
+the end of each calendar month, the Service Provider shall deliver to the Client
+a detailed monthly revenue and attendance report, including total Gross Sales,
+Premium Catering Sales, Alcoholic Beverage Sales, per capita spending by
+category, attendance figures for each Event, and variance analysis comparing
+actual performance to budgeted projections.
+
+15. INTELLECTUAL PROPERTY
+
+15.1 Client Ownership. The Client shall own all right, title, and interest in
+the Oracle Park brand, logos, trademarks, service marks, trade dress, and all
+other intellectual property associated with the Venue and the San Francisco
+Giants (the "Venue IP").
+
+15.2 Service Provider Property. The Service Provider shall retain all right,
+title, and interest in its menu concepts, recipes, culinary techniques,
+operational systems, training materials, POS system configurations, proprietary
+vendor relationships, and proprietary management methodologies, tools, and
+processes (the "Caterer IP").
+
+15.3 License Grant. The Service Provider hereby grants the Client a
+non-exclusive, non-transferable license to use the Service Provider's branding,
+trade name, and logos on Venue materials, marketing collateral, and digital
+platforms in connection with the promotion and operation of food and beverage
+services at the Venue during the Term.
+
+16. CONFIDENTIALITY
+
+16.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Confidential Information includes, without limitation, financial data
+and attendance figures, revenue reports, per capita spending data, menu
+development plans, vendor pricing, proprietary recipes and operational systems,
+and any other non-public information concerning the Venue or either party's
+business operations.
+
+16.2 Duration. The obligations of confidentiality set forth in this Section 16
+shall survive the expiration or termination of this Agreement for a period of
+five (5) years, provided that financial data and attendance figures shall remain
+confidential for a period of five (5) years following the expiration or
+termination of this Agreement.
+
+17. TERMINATION
+
+17.1 Termination Without Cause. Either party may terminate this Agreement
+without cause upon one hundred eighty (180) calendar days' prior written notice
+to the other party.
+
+17.2 Termination for Cause. Either party may terminate this Agreement for cause
+if the other party commits a material breach of any provision of this Agreement
+and fails to cure such breach within thirty (30) calendar days after receiving
+written notice specifying the nature of the breach in reasonable detail.
+
+17.3 Termination for Health Code Violations. Notwithstanding the cure period set
+forth in Section 17.2, the Client may terminate this Agreement immediately upon
+fifteen (15) calendar days' prior written notice if the Service Provider
+receives a notice of violation from any health department authority relating to
+food safety conditions at the Venue that, in the Client's reasonable judgment,
+poses a risk to public health or safety, provided that the Service Provider has
+not remediated such violation within the fifteen (15) day notice period.
+
+17.4 Non-Renewal. Either party may decline to renew this Agreement at the end
+of the Initial Term or any Renewal Term by providing the other party with at
+least one hundred eighty (180) calendar days' prior written notice of its intent
+not to renew.
+
+17.5 Transition Obligations. Upon receipt of notice of termination or
+non-renewal, the Service Provider shall cooperate fully in transitioning food
+and beverage operations to the Client's designated successor caterer, including
+the transfer of all recipes, vendor contacts, inventory, equipment, health
+permits, and ABC licenses as permitted by applicable law.
+
+18. LIABILITY
+
+18.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING OUT
+OF OR RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER,
+REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY,
+ANY OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES.
+
+18.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed five million
+dollars ($5,000,000.00) per individual incident or occurrence and ten million
+dollars ($10,000,000.00) in the aggregate for all claims arising during any
+twelve (12) month period.
+
+19. INSURANCE
+
+19.1 General Liability Insurance. Throughout the term of this Agreement, the
+Service Provider shall maintain commercial general liability insurance in an
+amount not less than five million dollars ($5,000,000.00) per occurrence, covering
+bodily injury, property damage, and personal and advertising injury arising from
+the Service Provider's food and beverage operations at the Venue.
+
+19.2 Liquor Liability Insurance. Throughout the term of this Agreement, the
+Service Provider shall maintain liquor liability insurance in an amount not less
+than three million dollars ($3,000,000.00) per occurrence, covering claims arising
+from the sale, service, or furnishing of alcoholic beverages at the Venue.
+
+19.3 Workers' Compensation Insurance. Throughout the term of this Agreement,
+the Service Provider shall maintain workers' compensation insurance in accordance
+with California statutory requirements, with employer's liability coverage in an
+amount not less than two million dollars ($2,000,000.00).
+
+19.4 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies. All insurance policies shall
+name the Client as an additional insured with respect to the general liability
+coverage, and shall provide the Client with at least thirty (30) calendar days'
+prior written notice of cancellation or material modification.
+
+20. TERM
+
+20.1 Initial Term. This Agreement shall commence on the Effective Date and shall
+continue for a period of thirty-six (36) months, concluding on March 14, 2028
+(the "Initial Term"), unless earlier terminated in accordance with Section 17.
+
+20.2 Auto-Renewal. Upon expiration of the Initial Term and any subsequent
+renewal term, this Agreement shall automatically renew for successive twenty-four
+(24) month periods (each a "Renewal Term"), unless either party provides the
+other party with at least one hundred eighty (180) calendar days' prior written
+notice of its intent not to renew, in accordance with Section 17.4.
+
+20.3 Survival. Expiration or termination of this Agreement shall not affect
+any provisions that by their nature are intended to survive termination,
+including without limitation Sections 15 (Intellectual Property), 16
+(Confidentiality), 17 (Termination), 18 (Liability), and 22 (Governing Law).
+
+21. DISPUTE RESOLUTION
+
+21.1 Mediation. In the event of any dispute arising out of or relating to this
+Agreement, the parties shall first attempt to resolve such dispute through
+mediation administered by a mutually agreed-upon mediator in San Francisco,
+California. The parties shall share equally the costs of mediation.
+
+21.2 Arbitration. If the parties are unable to resolve a dispute through
+mediation within sixty (60) days of initiating the mediation process, such
+dispute shall be submitted to binding arbitration in San Francisco, California,
+in accordance with the commercial arbitration rules of the American Arbitration
+Association (AAA) then in effect. The decision of the arbitrator(s) shall be
+final and binding, and judgment upon the award may be entered in any court of
+competent jurisdiction.
+
+22. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the State of California, without giving effect to any choice-of-law or
+conflict-of-law provisions that would require the application of the laws of
+any jurisdiction other than the State of California.
+
+23. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A: Venue Floor Plan — Detailed floor plan of Oracle Park showing
+                the location and configuration of all concession stands,
+                portable cart positions, premium dining areas, commissary
+                facilities, and service support areas
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: POS Specifications — Technical specifications and requirements
+                for the point of sale system, including hardware configurations,
+                software features, integration requirements, and data reporting
+                capabilities
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: Menu Template — Standard menu template and pricing format to be
+                used by the Service Provider for all menu submissions under this
+                Agreement
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+24. GENERAL PROVISIONS
+
+24.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the subject
+matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written, between
+the parties relating to such subject matter.
+
+24.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+24.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the other
+party.
+
+24.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such provision
+shall be modified to the minimum extent necessary to make it valid and
+enforceable, and the remaining provisions of this Agreement shall continue in
+full force and effect.
+
+24.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+24.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b) sent
+by certified mail, return receipt requested, (c) sent by nationally recognized
+overnight courier, or (d) sent by email with confirmation of receipt, to the
+addresses set forth in Section 1 or such other address as either party may
+designate in writing.
+
+24.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+25. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Food and Beverage Catering
+and Concession Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+Savory Events Catering Inc., a California corporation
+
+
+By: ______________________________________
+Name: Maria Torres
+Title: Founder and CEO
+Date: March 10, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: David L. Ramirez
+Title: Director of Operations
+Date: March 10, 2025
+
+
+CLIENT:
+
+Bay Area Sports and Entertainment Authority,
+a California joint powers authority
+
+
+By: ______________________________________
+Name: Michael Chang
+Title: Director of Venue Operations
+Date: March 12, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Jennifer S. Park
+Title: Deputy Director of Venue Operations
+Date: March 12, 2025

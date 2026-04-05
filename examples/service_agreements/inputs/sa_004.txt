@@ -1,0 +1,661 @@
+MARKETING SERVICES AGREEMENT
+
+This Marketing Services Agreement (the "Agreement") is entered into as of September 15, 2024
+(reference number MSA-2024-7710), by and between the parties identified in Section 1 below.
+
+WHEREAS, the outdoor retail industry has experienced significant transformation over the past
+decade, driven by the convergence of e-commerce proliferation, shifting consumer preferences
+toward experiential outdoor lifestyles, and the accelerating digitalization of retail marketing
+channels. The global outdoor gear market, valued at over sixty billion dollars annually, continues
+to see sustained growth as consumers increasingly prioritize health, wellness, and outdoor
+recreation activities ranging from casual day hiking to technical mountaineering expeditions;
+
+WHEREAS, digital transformation within the outdoor retail sector has fundamentally altered how
+consumers discover, evaluate, and purchase outdoor equipment and apparel. Social media platforms,
+influencer partnerships, content-driven storytelling, and data-driven advertising have replaced
+traditional print catalogs and trade show marketing as the primary channels through which outdoor
+brands engage with their target demographics. Brands that fail to establish a compelling and
+coherent digital presence risk losing market share to more digitally nimble competitors;
+
+WHEREAS, effective brand positioning in the outdoor industry requires a nuanced understanding of
+the values, aspirations, and purchasing behaviors of outdoor enthusiasts. These consumers tend
+to be discerning, brand-loyal, and influenced by authenticity narratives, user-generated content,
+and community engagement rather than conventional advertising approaches. The intersection of
+performance-driven product messaging and aspirational lifestyle storytelling represents a critical
+success factor for outdoor brands seeking to differentiate themselves in an increasingly crowded
+marketplace;
+
+WHEREAS, the parties desire to engage in a strategic marketing partnership that leverages modern
+digital marketing methodologies, data analytics, and creative content production to enhance the
+Client's market position, drive measurable business outcomes, and build long-term brand equity
+within the outdoor recreation community;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements set forth
+herein, and for other good and valuable consideration, the receipt and sufficiency of which are
+hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. Velocity Creative Agency, LLC, a limited liability company duly organized
+and existing under the laws of the State of Colorado, with its principal offices located at
+1600 Blake Street, Suite 400, Denver, CO 80202 (hereinafter referred to as "Agency" or
+"Service Provider").
+
+1.2 Client. Peak Outdoor Gear Co., a corporation duly organized and existing under the laws
+of the State of Colorado, with its principal place of business at 890 Mountain View Road,
+Boulder, CO 80301 (hereinafter referred to as "Brand," "Client," or "Company").
+
+1.3 Individual Capacity. Each signatory hereto represents that they have the authority to bind
+their respective organization to the terms and conditions of this Agreement.
+
+2. DEFINITIONS
+
+For the purposes of this Agreement, the following terms shall have the meanings set forth below:
+
+2.1 "Approved Messaging" means all copy, taglines, value propositions, and textual content
+that have been reviewed and explicitly approved in writing by Brand for use in marketing
+materials, social media posts, advertisements, email campaigns, and any other public-facing
+communications produced under this Agreement.
+
+2.2 "Brand Guidelines" means the comprehensive set of rules, standards, and specifications
+governing the visual and verbal identity of Brand, including but not limited to logo usage,
+color palettes, typography, imagery style, tone of voice, and messaging frameworks, as set
+forth in Exhibit A attached hereto and incorporated by reference.
+
+2.3 "Campaign Calendar" means the strategic schedule of planned marketing campaigns,
+initiatives, and activations developed by Agency in coordination with Brand, detailing timing,
+channels, objectives, budgets, and responsible parties for each campaign element.
+
+2.4 "Content Calendar" means the operational editorial schedule specifying individual content
+pieces, publication dates, distribution channels, content types, assigned creators, and
+approval status for all marketing content produced under this Agreement.
+
+2.5 "Conversion Rate" means the percentage of users who complete a desired action (such as
+a purchase, form submission, or account creation) out of the total number of visitors or
+impressions for a given marketing asset, campaign, or channel during a specified period.
+
+2.6 "CTR" (Click-Through Rate) means the ratio of users who click on a specific link,
+advertisement, or call-to-action to the total number of users who view that link, ad, or
+call-to-action, expressed as a percentage.
+
+2.7 "Engagement Rate" means a composite metric measuring the level of interaction that
+content receives from its audience, calculated as the sum of likes, comments, shares, saves,
+and other meaningful interactions divided by total impressions or reach, expressed as a
+percentage.
+
+2.8 "Impression" means a single instance of a marketing asset or advertisement being displayed
+on a user's screen, regardless of whether the user interacted with or even noticed the asset.
+
+2.9 "KPI" (Key Performance Indicator) means a quantifiable metric used to evaluate the success
+of marketing activities against predetermined targets, as specified in Section 8 of this
+Agreement.
+
+2.10 "Media Buy" means the purchase of advertising space or placement across digital channels,
+including but not limited to search engines, social media platforms, display networks, and
+programmatic advertising exchanges.
+
+2.11 "ROI" (Return on Investment) means a performance metric calculated as the net profit
+generated by marketing activities divided by the total cost of those activities, expressed
+as a percentage or ratio.
+
+2.12 "SEO" (Search Engine Optimization) means the practice of optimizing website content,
+technical structure, and off-site signals to improve organic visibility and ranking in search
+engine results pages for targeted keywords and search queries.
+
+2.13 "Social Media Platform" means any internet-based service that enables users to create,
+share, and interact with content, including but not limited to Instagram, TikTok, YouTube,
+Facebook, Pinterest, LinkedIn, X (formerly Twitter), and any successor or similar platforms.
+
+2.14 "Target Audience" means the specific demographic, psychographic, and behavioral segments
+identified by Brand and Agency as the primary recipients of marketing communications and
+campaigns, as further described in Exhibit B attached hereto.
+
+2.15 "Work Product" means all materials, content, strategies, reports, data analyses,
+campaigns, and deliverables created by Agency in the course of performing services under
+this Agreement, whether individually or jointly authored.
+
+3. SCOPE OF SERVICES
+
+3.1 Overview. Agency shall provide comprehensive digital marketing services including social
+media management, content creation, email marketing campaigns, SEO optimization, and paid
+digital advertising for Brand's outdoor equipment product lines. Services shall be performed
+in accordance with the standards, timelines, and specifications set forth in this Agreement
+and any applicable exhibits, statements of work, or written directives from Brand.
+
+3.2 Social Media Management. Agency shall manage Brand's presence across designated Social
+Media Platforms, including but not limited to content posting, community engagement, comment
+moderation, direct message management, story creation, and hashtag strategy. Agency shall
+develop platform-specific content strategies tailored to the unique audience demographics,
+content formats, and algorithmic preferences of each platform, as further described in
+Section 6.
+
+3.3 Content Creation. Agency shall produce original marketing content including but not
+limited to blog articles, social media posts and captions, video scripts, email copy,
+landing page copy, ad copy, infographic content, product descriptions, and long-form
+editorial content. All content shall comply with Brand Guidelines and be subject to the
+approval process described in Section 5.
+
+3.4 Email Marketing Campaigns. Agency shall design, write, build, test, deploy, and analyze
+email marketing campaigns on behalf of Brand, including promotional campaigns, newsletters,
+product launches, abandoned cart sequences, welcome series, re-engagement campaigns, and
+transactional email optimization. Email marketing activities shall comply with all applicable
+laws and regulations, including the CAN-SPAM Act and the General Data Protection Regulation
+(GDPR), as applicable.
+
+3.5 SEO Optimization. Agency shall perform ongoing search engine optimization activities
+including keyword research and strategy, on-page optimization (meta titles, meta descriptions,
+header tags, internal linking, image alt text), technical SEO audits and recommendations,
+content optimization, local SEO management, backlink strategy development, and competitive
+analysis. Agency shall provide monthly SEO performance reports and quarterly strategy
+adjustments based on ranking data and algorithm updates.
+
+3.6 Paid Digital Advertising. Agency shall plan, create, manage, and optimize paid advertising
+campaigns across digital channels including search engine marketing (SEM), social media
+advertising, display advertising, retargeting campaigns, and programmatic media buys.
+Advertising activities shall be governed by the budget parameters set forth in Section 9
+and the media buying standards described in Section 7.
+
+4. BRAND GUIDELINES AND COMPLIANCE
+
+4.1 Tone of Voice. All content produced by Agency under this Agreement shall adhere to Brand's
+established tone of voice, which conveys authenticity, expertise, adventure, and
+environmental stewardship. Content should inspire confidence in Brand's products while
+maintaining an approachable, community-oriented voice that resonates with outdoor enthusiasts
+of varying experience levels. Slang, overly promotional language, and corporate jargon should
+be avoided unless specifically approved in writing by Brand.
+
+4.2 Visual Identity. All visual assets produced by Agency shall conform to Brand's visual
+identity standards, including the approved color palette, typography specifications, logo
+usage rules, photography style guidelines, and video production standards as detailed in the
+Brand Style Guide (Exhibit A). No visual asset shall be published or distributed without
+first receiving written approval from Brand's designated brand manager or marketing director.
+
+4.3 Approved Messaging. Agency shall not publish, distribute, or authorize the publication of
+any content that makes claims about Brand's products, sustainability practices, corporate
+initiatives, or competitive positioning that have not been pre-approved in writing by Brand.
+Agency shall maintain a current library of Approved Messaging for reference across all team
+members working on Brand's account.
+
+4.4 Regulatory Compliance. Agency shall ensure that all marketing materials comply with
+applicable advertising laws, regulations, and industry self-regulatory standards, including
+but not limited to the Federal Trade Commission (FTC) guidelines on endorsements and
+testimonials, the CAN-SPAM Act, platform-specific advertising policies, and any
+industry-specific regulations applicable to outdoor equipment marketing.
+
+5. CAMPAIGN PLANNING AND APPROVAL
+
+5.1 Quarterly Planning Cycles. Agency and Brand shall engage in quarterly strategic planning
+sessions to review performance data, assess market conditions, identify opportunities and
+challenges, and develop campaign strategies for the upcoming quarter. These sessions shall
+occur no later than fifteen (15) business days before the start of each calendar quarter and
+shall involve senior representatives from both organizations.
+
+5.2 Campaign Briefs. For each major campaign, Agency shall prepare a written campaign brief
+that outlines the campaign objectives, target audience segments, key messages, creative
+concepts, channel strategy, timeline, budget allocation, and proposed KPIs. Campaign briefs
+shall be submitted to Brand for review and approval no later than twenty (20) business days
+before the intended campaign launch date.
+
+5.3 Approval Workflow. All creative assets, copy, and campaign materials shall be submitted
+through Brand's designated approval workflow. Brand shall provide initial feedback within five
+(5) business days of receiving materials. Agency shall incorporate feedback and resubmit
+revised materials within three (3) business days. Brand shall render final approval or
+rejection within three (3) business days of receiving revised materials.
+
+5.4 Revision Limits. Each deliverable shall be entitled to up to two (2) rounds of revisions
+at no additional cost. Any revisions beyond the second round shall be subject to additional
+fees at Agency's standard hourly rate, which shall be communicated to Brand in writing prior
+to commencement of such additional work.
+
+6. CONTENT CREATION STANDARDS
+
+6.1 Quality Requirements. All content produced by Agency shall be original, grammatically
+correct, factually accurate, and free of spelling errors. Long-form content (blog articles,
+white papers, case studies) shall be a minimum of one thousand (1,000) words unless otherwise
+agreed. Video content shall meet minimum production quality standards as defined in the Brand
+Style Guide.
+
+6.2 Plagiarism and Originality. Agency warrants that all content delivered under this Agreement
+shall be original work product and shall not infringe upon the intellectual property rights of
+any third party. Agency shall not plagiarize, scrape, or substantially replicate content from
+competitor websites, other brands, or third-party publications. Agency may use AI-assisted
+tools in the content creation process provided that all final deliverables are reviewed, edited,
+and approved by a human editor prior to submission to Brand.
+
+6.3 Image and Media Licensing. Agency shall ensure that all stock images, graphics, music,
+video clips, fonts, and other third-party media elements used in marketing materials are
+properly licensed for commercial use. Agency shall maintain records of all licenses and shall
+indemnify Brand against any claims arising from unlicensed use of third-party intellectual
+property.
+
+6.4 Content Archival. Agency shall maintain an organized archive of all content produced
+under this Agreement, including source files, published versions, approval records, and
+licensing documentation, for the duration of the Agreement and for two (2) years following
+termination.
+
+7. SOCIAL MEDIA MANAGEMENT
+
+7.1 Platform-Specific Strategy. Agency shall develop and execute tailored strategies for each
+Social Media Platform on which Brand maintains an active presence, recognizing that each
+platform has distinct audience demographics, content format preferences, algorithmic
+priorities, and engagement patterns.
+
+7.2 Instagram. Agency shall manage Brand's Instagram presence including feed posts, Stories,
+Reels, and Guides. Content strategy shall emphasize high-quality outdoor photography, short-
+form video showcasing product use in real-world environments, user-generated content
+features, behind-the-scenes brand stories, and interactive elements such as polls, quizzes,
+and question stickers. Agency shall develop and implement a hashtag strategy optimized for
+discoverability within the outdoor recreation community.
+
+7.3 TikTok. Agency shall manage Brand's TikTok account with a focus on authentic, trend-aware
+short-form video content that aligns with platform culture while reinforcing Brand identity.
+Content shall include product demonstrations, educational content (e.g., gear selection tips,
+outdoor safety), trending audio participation, duet and stitch collaborations with relevant
+creators, and behind-the-scenes brand content. Agency shall monitor TikTok trends daily and
+propose timely content opportunities to Brand.
+
+7.4 YouTube. Agency shall manage Brand's YouTube channel, including long-form product review
+videos, tutorial content, brand documentary-style content, and YouTube Shorts. Agency shall
+optimize video titles, descriptions, tags, thumbnails, and end screens for discoverability
+and engagement. Agency shall develop a YouTube content calendar aligned with seasonal outdoor
+activity trends and product launch schedules.
+
+7.5 Facebook. Agency shall manage Brand's Facebook presence including page posts, Facebook
+Groups strategy, Facebook Live sessions, and Facebook Shops integration. Given the platform's
+older demographic skew relative to other social channels, Agency shall tailor content
+strategy to emphasize product reliability, value propositions, customer testimonials, and
+community-building initiatives.
+
+7.6 Pinterest. Agency shall manage Brand's Pinterest account with a focus on inspirational
+and educational content that drives referral traffic to Brand's website. Content shall include
+product pins, outdoor adventure inspiration boards, seasonal gift guides, how-to and
+tutorial pins, and curated boards aligned with trending outdoor lifestyle topics. Agency
+shall optimize pins for Pinterest's visual search functionality.
+
+8. KEY PERFORMANCE INDICATORS
+
+8.1 Performance Targets. Agency shall use commercially reasonable efforts to achieve the
+following key performance indicators within the first six (6) months of the initial term:
+
+(a) Increase website organic traffic by thirty-five percent (35%) as measured against the
+baseline organic traffic average for the six-month period preceding the Effective Date;
+
+(b) Achieve social media follower growth of twenty percent (20%) across all managed
+platforms, measured on a combined basis;
+
+(c) Maintain email campaign open rate at or above twenty-two percent (22%);
+
+(d) Reduce customer acquisition cost (CAC) by fifteen percent (15%) as measured against
+the baseline CAC for the six-month period preceding the Effective Date.
+
+8.2 Measurement Methodology. KPIs shall be measured using industry-standard analytics tools
+including Google Analytics, platform-native analytics dashboards, and Agency's proprietary
+reporting tools. Baseline measurements shall be established within the first thirty (30) days
+of the initial term using data from the immediately preceding six-month period. Disputes
+regarding KPI measurement methodology shall be resolved through good-faith negotiation
+between the parties.
+
+8.3 Quarterly Performance Reviews. Agency and Brand shall conduct formal quarterly performance
+reviews to assess progress against KPI targets, identify areas requiring strategic adjustment,
+and agree on corrective actions where necessary. Performance review meetings shall be
+scheduled no later than fifteen (15) business days following the end of each calendar quarter.
+
+9. COMPENSATION AND PAYMENT TERMS
+
+9.1 Monthly Retainer. Brand shall pay Agency a monthly retainer fee of eight thousand five
+hundred dollars ($8,500.00) for the services described in Section 3. The retainer fee shall
+be invoiced monthly in advance on the first business day of each calendar month during the
+term of this Agreement.
+
+9.2 Advertising Spend Budget. In addition to the monthly retainer, Brand shall provide Agency
+with a monthly advertising spend budget of fifteen thousand dollars ($15,000.00) to be used
+exclusively for paid digital advertising as described in Section 3.6. The advertising spend
+budget shall be subject to quarterly review and adjustment by mutual written agreement of
+the parties. Any unused advertising spend from a given month may be carried forward to the
+subsequent month within the same calendar quarter but shall not carry forward beyond the
+end of the calendar quarter.
+
+9.3 Total Annual Value. The total annual value of this Agreement, excluding advertising
+spend, is estimated at two hundred seventy-six thousand dollars ($276,000.00), based on the
+monthly retainer fee multiplied by twelve (12) months. This estimate does not include costs
+for additional services outside the scope of Section 3, expenses for third-party tools or
+subscriptions, or any overages described in Section 11.
+
+9.4 Payment Terms. All invoices shall be paid by Brand within twenty-one (21) days of the
+invoice date. Payments shall be made by wire transfer to Agency's designated bank account or
+by such other method as the parties may agree in writing. Late payments shall accrue interest
+at a rate of one and one-half percent (1.5%) per month, or the maximum rate permitted by
+applicable law, whichever is less.
+
+10. TERM AND RENEWAL
+
+10.1 Initial Term. The initial term of this Agreement shall be twelve (12) months, commencing
+on October 1, 2024 (the "Effective Date" for purposes of service delivery, notwithstanding
+the date of execution set forth above).
+
+10.2 Automatic Renewal. Upon expiration of the initial term, this Agreement shall automatically
+renew for successive periods of six (6) months each, unless either party provides written
+notice of non-renewal to the other party at least sixty (60) days prior to the expiration of
+the then-current term.
+
+10.3 Effect of Non-Renewal. Non-renewal of this Agreement shall not affect any obligations
+of either party that accrued prior to the effective date of non-renewal, including without
+limitation payment obligations, confidentiality obligations, intellectual property
+obligations, and indemnification obligations.
+
+11. BUDGET MANAGEMENT
+
+11.1 Spend Tracking. Agency shall maintain detailed records of all advertising expenditures
+made on behalf of Brand, including platform, campaign, date, amount, and performance data
+associated with each expenditure. Agency shall provide Brand with monthly spend reports
+detailing all advertising expenditures and reconciling actual spend against the approved
+budget.
+
+11.2 Overage Approval. In the event that advertising expenditures for any calendar month are
+projected to exceed the approved monthly advertising spend budget by more than ten percent
+(10%), Agency shall obtain Brand's prior written approval before incurring such excess
+expenditures. Brand shall respond to overage approval requests within two (2) business days;
+absent a response, the request shall be deemed denied.
+
+11.3 Cost Efficiency. Agency shall use commercially reasonable efforts to optimize advertising
+spend for maximum efficiency and performance. Agency shall not mark up media costs, platform
+fees, or third-party vendor costs unless such markup is disclosed in writing and approved
+by Brand in advance.
+
+12. ADVERTISING AND MEDIA BUYING
+
+12.1 Ad Platforms. Agency shall manage paid advertising campaigns across platforms including
+but not limited to Google Ads (Search, Display, YouTube, Shopping), Meta Ads (Facebook,
+Instagram), TikTok Ads, Pinterest Ads, and programmatic display networks. The selection of
+advertising platforms for specific campaigns shall be based on strategic alignment with
+campaign objectives, target audience demographics, and budget efficiency considerations.
+
+12.2 Audience Targeting. Agency shall develop detailed audience targeting strategies for each
+advertising campaign, utilizing demographic, geographic, psychographic, behavioral, and
+contextual targeting parameters. Agency shall regularly refine targeting based on performance
+data and audience insights. All audience targeting strategies shall be documented and made
+available to Brand upon request.
+
+12.3 A/B Testing. Agency shall implement systematic A/B testing protocols for advertising
+campaigns, testing variables including but not limited to ad copy, creative assets, landing
+pages, call-to-action elements, audience segments, bid strategies, and campaign settings.
+Test results shall be documented and shared with Brand, and winning variations shall be
+implemented to improve overall campaign performance.
+
+13. EMAIL MARKETING
+
+13.1 List Segmentation. Agency shall develop and maintain email list segmentation strategies
+based on subscriber demographics, purchase history, engagement behavior, geographic location,
+and other relevant data points. Segmentation strategies shall be reviewed and updated
+quarterly to ensure relevance and effectiveness.
+
+13.2 Compliance. All email marketing activities shall comply with the CAN-SPAM Act, GDPR
+(where applicable to EU-based subscribers), the California Consumer Privacy Act (CCPA),
+and applicable platform-specific email delivery policies. Agency shall ensure that all
+commercial emails include a clear and conspicuous unsubscribe mechanism, accurate header
+information, and a valid physical mailing address for Brand.
+
+13.3 Sending Frequency. Agency shall propose an email sending frequency schedule for Brand's
+approval, taking into account audience engagement data, industry best practices, list health
+metrics, and campaign objectives. Brand may adjust the approved sending frequency at any
+time upon written notice to Agency.
+
+14. INFLUENCER AND PARTNERSHIP MANAGEMENT
+
+14.1 Influencer Vetting. Where Brand authorizes Agency to engage influencers or content
+creators on Brand's behalf, Agency shall conduct reasonable due diligence on all prospective
+influencer partners, including review of audience demographics, engagement authenticity,
+content quality, brand alignment, and any history of controversial or problematic content.
+Agency shall present vetted influencer recommendations to Brand for final approval prior
+to engagement.
+
+14.2 FTC Compliance. Agency shall ensure that all influencer partnerships and sponsored
+content arrangements comply with the Federal Trade Commission's Endorsement Guides,
+including proper disclosure of material connections between Brand and influencers. Agency
+shall provide influencers with clear disclosure guidelines and shall monitor compliance.
+
+14.3 Partnership Terms. The terms of any influencer or partnership engagement, including
+compensation, content requirements, usage rights, exclusivity provisions, and termination
+provisions, shall be documented in a separate agreement between Brand (or Agency on Brand's
+behalf) and the influencer or partner. Agency shall not commit Brand to any partnership
+without Brand's prior written approval.
+
+15. REPORTING AND ANALYTICS
+
+15.1 Monthly Performance Reports. Agency shall provide Brand with comprehensive monthly
+performance reports within ten (10) business days following the end of each calendar month.
+Monthly reports shall include, at a minimum: a summary of activities performed; performance
+metrics for each active channel and campaign compared against KPI targets; spending
+breakdown and reconciliation; top-performing content analysis; audience growth and
+engagement trends; and recommended adjustments for the following month.
+
+15.2 Quarterly Strategy Reports. In conjunction with the quarterly performance review
+described in Section 8.3, Agency shall prepare a detailed quarterly strategy report that
+includes comprehensive analysis of quarterly performance, competitive landscape assessment,
+market trend analysis, and a strategic plan for the upcoming quarter.
+
+15.3 Dashboard Access. Agency shall grant Brand access to Agency's proprietary reporting
+dashboard for the duration of this Agreement. The dashboard shall provide real-time or
+near-real-time visibility into key marketing metrics across all active channels. This
+license to access the dashboard is non-exclusive, non-transferable, and limited to
+authorized representatives of Brand.
+
+15.4 Meeting Cadence. Agency and Brand shall hold regularly scheduled status meetings, the
+frequency and format of which shall be agreed upon at the commencement of the initial term.
+In no event shall the frequency of status meetings be less than one (1) meeting per month.
+Additional ad hoc meetings may be scheduled as needed by mutual agreement.
+
+16. INTELLECTUAL PROPERTY
+
+16.1 Ownership of Work Product. Subject to Section 16.2, all content, creative assets,
+campaigns, strategies, and marketing materials created specifically for Brand under this
+Agreement shall become the exclusive property of Brand upon full payment for the services
+giving rise to such Work Product. Agency hereby assigns to Brand all right, title, and
+interest in and to such Work Product.
+
+16.2 Agency Proprietary Materials. Agency's proprietary tools, software, analytics platforms,
+methodologies, frameworks, templates, and process documentation shall remain the sole and
+exclusive property of Agency. Nothing in this Agreement shall be construed as transferring
+ownership of Agency's proprietary materials to Brand.
+
+16.3 License Grant. Agency grants Brand a limited, non-exclusive, non-transferable, royalty-
+free license to use Agency's proprietary reporting dashboard during the term of this
+Agreement for the sole purpose of monitoring marketing performance under this Agreement.
+This license shall terminate automatically upon expiration or termination of this Agreement.
+
+16.4 Third-Party Rights. Agency shall not incorporate third-party intellectual property into
+Work Product without first securing appropriate licenses or permissions for Brand's use of
+such intellectual property in connection with Brand's marketing activities.
+
+17. NON-SOLICITATION
+
+17.1 Employee Non-Solicitation. During the term of this Agreement and for a period of twelve
+(12) months following the termination or expiration of this Agreement for any reason, Brand
+shall not, directly or indirectly, solicit, recruit, hire, or encourage any employee or
+independent contractor of Agency to leave Agency's employ or engagement, or hire any such
+person who has left Agency's employ or engagement within six (6) months prior to such
+hiring.
+
+17.2 Client Non-Solicitation. During the term of this Agreement and for a period of twelve
+(12) months following termination, Agency shall not, directly or indirectly, solicit,
+recruit, or provide marketing services to any direct competitor of Brand in the outdoor
+equipment retail sector without Brand's prior written consent.
+
+18. CONFIDENTIALITY
+
+18.1 Confidential Information. Each party acknowledges that in the course of performing its
+obligations under this Agreement, it may receive or have access to confidential and
+proprietary information of the other party, including but not limited to business plans,
+financial data, customer lists, marketing strategies, product roadmaps, trade secrets, and
+other sensitive business information (collectively, "Confidential Information").
+
+18.2 Non-Disclosure. Each party agrees to hold all Confidential Information of the other
+party in strict confidence and shall not disclose, publish, or otherwise reveal such
+Confidential Information to any third party without the prior written consent of the
+disclosing party, except as required by law or as necessary to perform its obligations
+under this Agreement.
+
+18.3 Survival. The confidentiality obligations set forth in this Section 18 shall survive the
+expiration or termination of this Agreement for a period of three (3) years.
+
+19. TERMINATION
+
+19.1 Termination for Convenience. Either party may terminate this Agreement for any reason or
+no reason upon forty-five (45) days' prior written notice to the other party.
+
+19.2 Termination for Cause. Brand may terminate this Agreement immediately upon written notice
+to Agency if Agency fails to meet the minimum KPI targets established in Section 8.1 for
+two (2) consecutive calendar quarters, provided that Brand has given Agency thirty (30)
+days' prior written notice of such failure and Agency has failed to cure the deficiency
+within such thirty-day cure period.
+
+19.3 Effect of Termination. Upon termination or expiration of this Agreement: (a) Agency
+shall promptly deliver to Brand all completed and partially completed Work Product for
+which Brand has made payment; (b) Agency shall cease all use of Brand's trademarks, logos,
+and other intellectual property; (c) Brand shall pay all outstanding invoices for services
+duly rendered through the effective date of termination; and (d) the provisions of Sections
+16, 17, 18, 20, and 22 through 30 shall survive termination.
+
+20. INDEMNIFICATION
+
+20.1 Mutual Indemnification. Each party (the "Indemnifying Party") shall indemnify, defend,
+and hold harmless the other party and its officers, directors, employees, agents, and
+affiliates (the "Indemnified Parties") from and against any and all claims, damages, losses,
+liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or
+related to the Indemnifying Party's negligence, willful misconduct, or breach of this
+Agreement.
+
+20.2 Indemnification Procedure. The Indemnified Party shall promptly notify the Indemnifying
+Party of any claim for which indemnification is sought and shall cooperate reasonably in
+the defense of such claim. The Indemnifying Party shall have the right to control the
+defense of any such claim, provided that any settlement requiring the Indemnified Party
+to admit liability or pay money shall require the Indemnified Party's prior written consent.
+
+21. GOVERNING LAW AND DISPUTE RESOLUTION
+
+21.1 Governing Law. This Agreement shall be governed by and construed in accordance with the
+laws of the State of Colorado, without regard to its conflicts of law principles. Any legal
+action or proceeding arising under this Agreement shall be brought exclusively in the state
+or federal courts located in Denver County, Colorado, and the parties hereby irrevocably
+consent to the personal jurisdiction and venue of such courts.
+
+21.2 Equitable Relief. The parties acknowledge that any breach of this Agreement may cause
+irreparable harm for which monetary damages would be an inadequate remedy, and accordingly
+each party shall be entitled to seek injunctive relief or other equitable relief in addition
+to any other remedies available at law or in equity.
+
+22. ENTIRE AGREEMENT
+
+This Agreement, together with all exhibits attached hereto, constitutes the entire agreement
+between the parties with respect to the subject matter hereof and supersedes all prior and
+contemporaneous agreements, understandings, negotiations, and discussions, whether oral or
+written, between the parties relating to such subject matter.
+
+23. AMENDMENTS
+
+No amendment, modification, supplement to, or waiver of this Agreement or any of its
+provisions shall be binding upon the parties unless made in writing and duly signed by
+authorized representatives of both parties.
+
+24. ASSIGNMENT
+
+Neither party may assign or transfer this Agreement or any rights or obligations hereunder
+without the prior written consent of the other party, except that either party may assign
+this Agreement to a successor in connection with a merger, acquisition, or sale of all or
+substantially all of its assets, provided that the assignee agrees in writing to be bound
+by the terms of this Agreement.
+
+25. SEVERABILITY
+
+If any provision of this Agreement is held to be invalid, illegal, or unenforceable by a
+court of competent jurisdiction, such invalidity, illegality, or unenforceability shall not
+affect any other provision of this Agreement, which shall remain in full force and effect,
+and this Agreement shall be construed as if such invalid, illegal, or unenforceable
+provision had never been contained herein.
+
+26. NOTICES
+
+All notices, requests, demands, and other communications required or permitted under this
+Agreement shall be in writing and shall be deemed delivered: (a) when delivered personally;
+(b) one (1) business day after deposit with a nationally recognized overnight courier; (c)
+three (3) business days after mailing by certified mail, return receipt requested; or (d)
+when sent by email with confirmation of receipt, to the addresses set forth in Section 1
+or to such other address as either party may designate in writing.
+
+27. RELATIONSHIP OF THE PARTIES
+
+The relationship between the parties is that of independent contractors. Nothing in this
+Agreement shall be construed to create a partnership, joint venture, agency, employment, or
+franchise relationship between the parties. Neither party shall have the authority to bind
+the other party or to incur any obligation on behalf of the other party without express
+written authorization.
+
+28. WAIVER
+
+The failure of either party to enforce any provision of this Agreement shall not constitute
+a waiver of such provision or the right to enforce it at a later time. Any waiver must be
+in writing and signed by the waiving party to be effective.
+
+29. COUNTERPARTS
+
+This Agreement may be executed in any number of counterparts, each of which shall be deemed
+an original and all of which together shall constitute one and the same instrument.
+Electronic signatures and PDF copies of signed signatures shall be deemed original signatures
+for all purposes.
+
+30. FORCE MAJEURE
+
+Neither party shall be liable for any failure or delay in performing its obligations under
+this Agreement if such failure or delay results from circumstances beyond the reasonable
+control of the affected party, including but not limited to natural disasters, pandemics,
+government actions, war, terrorism, labor disputes, power outages, internet or
+telecommunications failures, or platform outages affecting Social Media Platforms.
+
+EXHIBITS
+
+The following exhibits are attached hereto and incorporated by reference:
+
+Exhibit A: Brand Style Guide (Brand Guidelines, Visual Identity Standards, Tone of Voice Guide)
+Exhibit B: Initial Campaign Brief and Target Audience Profiles
+Exhibit C: Approved Vendor List (Photographers, Videographers, Freelance Writers, and Other Third-Party Service Providers)
+
+[The exhibits referenced above are attached to and form a part of this Agreement but are not
+reproduced in this document body.]
+
+IN WITNESS WHEREOF, the parties have executed this Marketing Services Agreement as of the
+dates set forth below.
+
+SERVICE PROVIDER:
+
+Velocity Creative Agency, LLC
+
+By: _________________________________
+    Maria Gonzalez
+    Title: Chief Executive Officer
+    Date: September 12, 2024
+
+
+WITNESS:
+
+By: _________________________________
+    Name: Jordan Mitchell
+    Title: Director of Operations
+    Date: September 12, 2024
+
+
+CLIENT:
+
+Peak Outdoor Gear Co.
+
+By: _________________________________
+    Tom Randall
+    Title: Marketing Director
+    Date: September 14, 2024
+
+
+WITNESS:
+
+By: _________________________________
+    Name: Sarah Chen
+    Title: VP of Brand Strategy
+    Date: September 14, 2024

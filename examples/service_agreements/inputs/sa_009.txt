@@ -1,0 +1,733 @@
+LEGAL RESEARCH AND LITIGATION SUPPORT SERVICES AGREEMENT
+
+This Legal Research and Litigation Support Services Agreement (the "Agreement"),
+bearing reference number LRS-2024-7883, is entered into as of November 1, 2024
+(the "Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, modern commercial litigation has evolved into an increasingly complex and
+resource-intensive endeavor, characterized by the exponential growth of electronic
+discovery, the proliferation of multi-jurisdictional disputes, the expanding scope
+of regulatory enforcement actions, and the heightened expectations of courts and
+regulatory bodies regarding the thoroughness and precision of legal research and
+preparation. The average cost of discovery in complex commercial litigation has
+risen dramatically over the past two decades, with document review alone often
+representing the single largest expenditure in large-scale matters, driven by the
+vast volumes of electronically stored information (ESI) that must be collected,
+processed, reviewed, and produced in accordance with applicable rules and court
+orders;
+
+WHEREAS, the legal research landscape has been transformed by advances in
+technology, including the development of sophisticated legal research platforms
+such as Westlaw, LexisNexis, and emerging artificial intelligence-powered research
+tools that enable more efficient identification and analysis of relevant case law,
+statutes, regulations, and secondary authorities. Despite these technological
+advances, the interpretation and application of legal authorities to specific fact
+patterns remains a fundamentally human endeavor requiring the exercise of
+professional judgment, analytical rigor, and deep subject matter expertise that
+cannot be fully replicated by automated systems. The integration of technology-
+assisted review (TAR), predictive coding, and machine learning tools into the
+document review process has improved efficiency while simultaneously raising new
+questions about quality control, validation methodologies, and defensibility
+standards that courts continue to refine;
+
+WHEREAS, the preparation of litigation materials demands meticulous attention to
+citation format, factual accuracy, procedural compliance, and strategic
+positioning that reflects both the substantive legal merits of a party's position
+and the practical considerations of advocacy before judges, magistrates, and
+arbitrators who bring diverse judicial philosophies, procedural preferences, and
+case management expectations to the adjudicative process. The quality of legal
+research directly influences case outcomes, settlement dynamics, and the overall
+cost-effectiveness of litigation, making it essential that research services meet
+the highest professional standards of thoroughness, accuracy, and timeliness;
+
+WHEREAS, privilege logging in contemporary litigation has become a complex and
+often contentious process, requiring careful analysis of the attorney-client
+privilege, the work product doctrine, and applicable jurisdictional variations in
+privilege law. The proper identification and description of privileged materials
+on privilege logs is critical to protecting sensitive communications and
+confidential work product from compelled disclosure, while simultaneously
+satisfying the informational requirements of courts and opposing parties under the
+Federal Rules of Civil Procedure and applicable state discovery rules. Inadvertent
+waiver of privilege through overbroad or imprecise logging remains a significant
+risk in matters involving large document populations, necessitating rigorous review
+protocols and quality assurance procedures;
+
+WHEREAS, the coordination of expert witnesses in complex commercial litigation
+requires specialized expertise in identifying, vetting, retaining, and preparing
+testifying and consulting experts across diverse disciplines including economics,
+accounting, engineering, environmental science, healthcare, and intellectual
+property. The management of expert witness relationships involves navigating
+complex ethical obligations, ensuring compliance with the requirements of Federal
+Rule of Evidence 702 and the standards established by the Supreme Court in Daubert
+v. Merrell Dow Pharmaceuticals, Inc. (1993) and its progeny, including General
+Electric Co. v. Joiner (1997) and Kumho Tire Co. v. Carmichael (1999), as well as
+the corresponding state law equivalents adopted in jurisdictions that have not
+formally embraced the Daubert framework;
+
+WHEREAS, trial preparation represents the culmination of months or years of
+litigation strategy and requires the synthesis of documentary evidence, witness
+testimony, expert analysis, and legal argumentation into a coherent and persuasive
+presentation tailored to the specific forum, judge, and jury involved. The
+preparation of trial binders, demonstrative exhibits, witness outlines, jury
+instructions, and proposed motions in limine demands meticulous organizational
+skills, strategic judgment, and the ability to anticipate and counter opposing
+arguments in real time during trial proceedings;
+
+WHEREAS, the parties desire to engage in a collaborative relationship wherein the
+Service Provider shall furnish comprehensive legal research and litigation support
+services, enabling the Client to leverage specialized research capabilities and
+litigation support resources while maintaining cost predictability and quality
+consistency across its portfolio of commercial litigation matters;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements
+set forth herein, and for other good and valuable consideration, the receipt and
+sufficiency of which are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. Lexicon Legal Research Partners LLP, a limited liability
+partnership duly organized and existing under the laws of the Commonwealth of
+Massachusetts, with its principal offices located at 10 Beacon Street, Suite 900,
+Boston, MA 02108 (hereinafter referred to as "Service Provider," "Lexicon," or
+"Provider").
+
+1.2 Client. Harrington & Phelps LLP, a limited liability partnership duly
+organized and existing under the laws of the Commonwealth of Massachusetts, with
+its principal offices located at 200 State Street, Floor 28, Boston, MA 02109
+(hereinafter referred to as "Client," "Harrington & Phelps," or "Firm").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they
+have the full legal authority to bind their respective organization to the terms
+and conditions of this Agreement, and that the execution of this Agreement has
+been duly authorized by all necessary partnership or organizational approvals.
+
+2. DEFINITIONS
+
+2.1 "Affirmative Defense" means a defense that, if established, will result in
+a finding for the defendant even if the plaintiff proves all elements of the
+ prima facie case, including but not limited to statute of limitations, laches,
+waiver, estoppel, unclean hands, res judicata, collateral estoppel, failure to
+mitigate damages, and comparative or contributory negligence.
+
+2.2 "Brief" means any written legal argument submitted to a court, tribunal,
+arbitrator, or regulatory body in connection with any matter covered by this
+Agreement, including but not limited to opening briefs, answering briefs,
+reply briefs, amicus curiae briefs, motion briefs, and post-trial submissions.
+
+2.3 "Daubert Motion" means a motion to exclude or limit the testimony of an
+expert witness pursuant to Federal Rule of Evidence 702 or the applicable state
+law equivalent, challenging the qualifications, methodology, reliability, or
+relevance of the expert's proposed testimony.
+
+2.4 "Deposition" means the oral examination of a witness, whether party or
+non-party, conducted under oath in accordance with the applicable rules of civil
+procedure, including the preparation of deposition summaries, deposition
+transcripts, and errata sheets.
+
+2.5 "Discovery" means the pre-trial phase of litigation in which each party
+may obtain evidence from the opposing party and third parties by means of
+discovery devices including interrogatories, requests for production of
+documents, requests for admissions, and depositions, as governed by the
+Federal Rules of Civil Procedure or applicable state procedural rules.
+
+2.6 "Exhibit" means any document, tangible object, demonstrative aid, chart,
+diagram, photograph, video recording, audio recording, electronic file, or
+other item identified, marked, and offered or admitted into evidence in any
+proceeding, hearing, trial, arbitration, or regulatory investigation.
+
+2.7 "Motion in Limine" means a pretrial motion seeking a ruling on the
+admissibility of evidence, the scope of testimony, or other procedural or
+evidentiary matters before such issues are presented to the trier of fact.
+
+2.8 "Privilege Log" means a written record, prepared in accordance with the
+Federal Rules of Civil Procedure and applicable state rules, identifying
+documents, communications, or tangible things withheld from production on the
+basis of the attorney-client privilege, the work product doctrine, or any other
+applicable privilege or protection, including the date of the communication, the
+author and all recipients, the general subject matter, and the basis for the
+claim of privilege or protection.
+
+2.9 "Pro Hac Vice" means the temporary admission of an attorney to practice
+before a court or tribunal in a jurisdiction in which the attorney is not
+regularly admitted, subject to the applicable rules and requirements of the
+admitting jurisdiction.
+
+2.10 "Request for Production" means a discovery request served pursuant to
+applicable procedural rules demanding that the responding party produce for
+inspection, copying, testing, or sampling designated documents, electronically
+stored information, and tangible things in the responding party's possession,
+custody, or control.
+
+2.11 "Subpoena" means a legal order compelling the attendance of a witness for
+testimony or the production of documents, electronically stored information,
+or tangible things, issued pursuant to the applicable rules of civil procedure,
+criminal procedure, or grand jury rules.
+
+2.12 "Work Product Doctrine" means the qualified protection afforded to
+materials prepared in anticipation of litigation by or for a party or its
+representative, as established by Hickman v. Taylor, 329 U.S. 495 (1947), and
+codified in Federal Rule of Civil Procedure 26(b)(3), protecting mental
+impressions, conclusions, opinions, or legal theories of an attorney or other
+representative of a party concerning the litigation.
+
+2.13 "Matter" means any individual case, lawsuit, arbitration, regulatory
+investigation, internal investigation, or other proceeding for which the Client
+engages the Service Provider to perform services under this Agreement. Multiple
+Matters may be active simultaneously under this Agreement.
+
+2.14 "Research Work Product" means all memoranda, briefs, case analyses,
+statutory analyses, regulatory summaries, deposition summaries, privilege logs,
+trial preparation materials, and other written or electronic work product
+created by the Service Provider specifically for the Client in connection with
+any Matter covered by this Agreement.
+
+2.15 "Confidential Information" means all non-public information disclosed by
+either party to the other in connection with this Agreement, including but not
+limited to case strategy, settlement positions, privileged communications,
+client confidences, business operations, financial data, and proprietary
+methodologies, whether disclosed orally, in writing, by electronic
+transmission, or by inspection.
+
+3. SCOPE OF SERVICES
+
+3.1 Legal Research Services. The Service Provider shall provide comprehensive
+legal research services for the Client's commercial litigation matters, including
+but not limited to the following:
+
+    (a) Case Law Research. Comprehensive research of relevant case law across
+    federal and state jurisdictions, including identification of controlling
+    authority, persuasive authority, and emerging trends in the applicable areas
+    of law, utilizing Westlaw, LexisNexis, and other approved research platforms.
+
+    (b) Statutory and Regulatory Research. Analysis of applicable federal and
+    state statutes, regulations, administrative guidance, and regulatory
+enforcement trends relevant to the Client's litigation matters, including
+tracking of proposed and enacted legislative changes that may affect pending or
+anticipated matters.
+
+    (c) Brief Writing Support. Research, drafting, and revision support for
+    dispositive motions, discovery motions, motions in limine, Daubert motions,
+    summary judgment briefs, appellate briefs, and other substantive submissions,
+    including the preparation of tables of authorities, statement of facts
+sections, and legal argument frameworks.
+
+    (d) Deposition Summary Preparation. Preparation of comprehensive deposition
+    summaries for witness and expert depositions, including page-and-line
+    references, key testimony highlights, impeachment material identification,
+    and issue-tagged organization to facilitate efficient review by the Client's
+    litigation team.
+
+    (e) Document Review and Privilege Logging. First-pass and second-pass
+    document review for relevance, responsiveness, and privilege, including the
+    preparation of privilege logs in compliance with the requirements of the
+applicable jurisdiction, coordination with the Client's privilege review team,
+    and adherence to jurisdiction-specific privilege logging formats and
+    standards.
+
+    (f) Expert Witness Coordination. Assistance with the identification, vetting,
+    retention, and preparation of testifying and consulting experts, including
+    the preparation of expert disclosure materials, draft expert reports,
+    rebuttal analyses, and Daubert challenge preparation and defense.
+
+    (g) Trial Preparation Assistance. Comprehensive trial preparation support
+    including the organization and preparation of trial binders, demonstrative
+    exhibits, witness examination outlines, jury instruction proposals, proposed
+    voir dire questions, exhibit lists, and witness lists.
+
+4. RESEARCH STANDARDS AND METHODOLOGY
+
+4.1 Research Platforms. All legal research shall be conducted using approved
+research platforms, including Westlaw, LexisNexis, Bloomberg Law, and such other
+platforms as may be designated by the Client from time to time. The Service
+Provider shall ensure that all researchers have current subscriptions and
+training on the approved platforms.
+
+4.2 Citation Format. All research memoranda, briefs, and other written work
+product shall comply with The Bluebook: A Uniform System of Citation (current
+edition) or such other citation format as may be specified by the Client for a
+particular matter or court.
+
+4.3 Quality Review. All written work product shall undergo a two-tier quality
+review process prior to submission to the Client. The first tier shall be
+performed by a senior researcher or supervising attorney, and the second tier
+shall be performed by a quality assurance reviewer designated by the Service
+Provider. Quality review shall include verification of legal authority accuracy,
+citation format compliance, logical coherence of analysis, and factual accuracy.
+
+5. DOCUMENT REVIEW PROTOCOLS
+
+5.1 Review Platforms. Document review shall be conducted on the Client's
+designated document review platform or a platform mutually agreed upon by the
+parties. The Service Provider shall ensure that all document reviewers are
+trained and proficient in the designated platform prior to commencing review.
+
+5.2 Coding Decisions. Document review coding decisions shall be made in
+accordance with the review protocol established for each Matter, including
+responsiveness determinations, privilege calls, confidentiality designations,
+issue coding, and key document designations. The Service Provider shall maintain
+detailed coding guidelines for each Matter and shall update such guidelines as
+directed by the Client.
+
+5.3 Privilege Calls. Privilege determinations shall be made in accordance with
+the privilege review guidelines established for each Matter and shall comply
+with the applicable jurisdiction's privilege logging requirements, including
+the format, content, and level of detail required by the applicable rules of
+civil procedure and any standing orders or case management orders specific to
+the Matter.
+
+6. DEPOSITION SUPPORT
+
+6.1 Summary Format. Deposition summaries shall be prepared in the format
+specified by the Client for each Matter, which may include chronological
+summary format, topical summary format, or issue-based summary format. Each
+summary shall include the deponent's name, the date of the deposition, the
+page-and-line references for each summarized passage, and the key topics or
+issues addressed.
+
+6.2 Exhibit Preparation. The Service Provider shall assist in the preparation
+and organization of deposition exhibits, including the designation of exhibits
+for introduction, the preparation of exhibit witness binders, and the
+maintenance of exhibit indexes.
+
+6.3 Witness Files. The Service Provider shall prepare and maintain organized
+witness files for each deponent and trial witness, including deposition
+transcripts, prior testimony, relevant documents, impeachment materials, and
+chronological summaries of the witness's involvement in the events at issue.
+
+7. TRIAL PREPARATION
+
+7.1 Demonstrative Exhibits. The Service Provider shall assist in the development
+and preparation of demonstrative exhibits for use at trial, hearing, or
+arbitration, including timelines, charts, diagrams, maps, and visual summaries
+of complex data or testimony, in coordination with the Client's trial team and
+any retained graphics or trial consulting firms.
+
+7.2 Jury Instructions. The Service Provider shall assist in the research,
+drafting, and organization of proposed jury instructions, including the
+identification of applicable pattern jury instructions, the customization of
+instructions for the specific facts and legal issues of the Matter, and the
+preparation of joint and disputed instruction proposals.
+
+7.3 Witness Outlines. The Service Provider shall assist in the preparation of
+direct examination, cross-examination, and redirect examination outlines for
+lay and expert witnesses, incorporating relevant deposition testimony,
+documentary evidence, and legal authority.
+
+8. CONFLICTS OF INTEREST
+
+8.1 Conflicts Check. Prior to commencing work on any Matter, the Service
+Provider shall conduct a comprehensive conflicts check to determine whether any
+actual or potential conflict of interest exists or may arise in connection with
+the proposed engagement. The Service Provider shall maintain a centralized
+conflicts database and shall update such database on a continuous basis as new
+matters, clients, and adverse parties are identified.
+
+8.2 Screening Procedures. In the event that a potential conflict of interest is
+identified, the Service Provider shall implement ethical screening procedures in
+accordance with the Massachusetts Rules of Professional Conduct and applicable
+law, including the establishment of informational barriers, the prohibition of
+communication between screened and unscreened personnel, and the maintenance of
+screening records.
+
+8.3 Reporting Requirements. The Service Provider shall promptly notify the
+Client in writing of any actual or potential conflict of interest identified in
+connection with any Matter covered by this Agreement, and shall not commence or
+continue work on the affected Matter until the conflict has been resolved to
+the satisfaction of the Client and in accordance with applicable ethical rules.
+
+9. PRIVILEGE AND WORK PRODUCT
+
+9.1 Attorney-Client Privilege. All Research Work Product prepared by the
+Service Provider in connection with any Matter shall be prepared at the
+direction and under the supervision of the Client's attorneys for the purpose
+of providing legal advice or legal representation. The parties intend that all
+such Research Work Product shall be protected by the attorney-client privilege
+and the work product doctrine to the fullest extent permitted by applicable
+law.
+
+9.2 Joint Defense and Common Interest. In Matters involving joint defense
+agreements or common interest arrangements, the Service Provider shall comply
+with the applicable terms of such agreements and shall not disclose or use
+Research Work Product in a manner that would waive or compromise the applicable
+privilege or protection.
+
+9.3 Waiver Issues. The Service Provider shall take all reasonable measures to
+prevent the inadvertent disclosure or waiver of the attorney-client privilege
+or work product protection, including the implementation of confidentiality
+marking protocols, secure file handling procedures, and training programs for
+all personnel with access to Research Work Product.
+
+10. BILLING PRACTICES
+
+10.1 Time Entry Standards. All time entries shall be recorded in increments of
+one-tenth (0.1) of an hour and shall describe the specific work performed with
+sufficient detail to enable the Client to understand the nature, purpose, and
+value of the work. Vague or block-billed time entries that aggregate multiple
+tasks or matters into a single time entry without adequate description are
+prohibited.
+
+10.2 Block Billing Prohibition. The Service Provider shall not aggregate time
+for multiple tasks, matters, or activities into a single time entry. Each
+distinct task or activity shall be separately identified and described in the
+time entry.
+
+10.3 Budget Guidelines. The Service Provider shall provide the Client with a
+budget estimate for each Matter at the commencement of work and shall update
+such estimate on a monthly basis or as otherwise agreed. In the event that
+actual costs are projected to exceed the budget estimate by more than fifteen
+percent (15%), the Service Provider shall notify the Client in writing prior to
+incurring the excess costs and shall not proceed with the excess work without
+the Client's prior written approval.
+
+11. MATTER MANAGEMENT
+
+11.1 Matter Intake. Upon engagement for a new Matter, the Service Provider shall
+complete a matter intake form identifying the Matter name, court or forum, case
+number, judge or arbitrator, key parties, key issues, anticipated services
+required, budget parameters, and applicable deadlines.
+
+11.2 Status Updates. The Service Provider shall provide the Client with written
+status updates on each active Matter on a schedule to be determined by the
+Client, but no less frequently than monthly. Status updates shall include a
+summary of work performed, time expended, costs incurred, upcoming deadlines,
+and any issues or concerns requiring the Client's attention.
+
+11.3 Matter Closing. Upon conclusion of any Matter, the Service Provider shall
+prepare and deliver a matter closing report summarizing the total services
+rendered, time and costs incurred, outcomes achieved, and any outstanding
+issues. All Research Work Product for the closed Matter shall be transmitted
+to the Client in accordance with the intellectual property provisions of this
+Agreement.
+
+12. TERM
+
+12.1 Initial Term. This Agreement shall commence on the Effective Date and shall
+continue for a period of twenty-four (24) months, concluding on October 31,
+2026 (the "Initial Term"), unless earlier terminated in accordance with the
+provisions of Section 18.
+
+12.2 No Automatic Renewal. This Agreement shall not automatically renew upon
+expiration of the Initial Term. Either party may propose an extension of the
+term by providing written notice to the other party at least sixty (60) calendar
+days prior to the expiration of the Initial Term. Any extension shall be subject
+to mutual agreement of the parties in writing.
+
+12.3 Effect of Termination. Expiration or termination of this Agreement shall
+not affect any provisions that by their nature are intended to survive
+termination, including without limitation Sections 15 (Intellectual Property),
+16 (Confidentiality), 19 (Liability), 20 (Dispute Resolution), 21 (Governing
+Law), and 22 (General Provisions).
+
+13. COMPENSATION
+
+13.1 Hourly Rates. In consideration of the legal research and litigation support
+services described in Section 3, the Client shall pay the Service Provider at
+the following hourly rates for services rendered by personnel at the indicated
+levels:
+
+    (a) Senior Researchers: One hundred seventy-five dollars ($175.00) per hour.
+    Senior Researchers are attorneys or research professionals with seven (7) or
+    more years of relevant legal research or litigation support experience.
+
+    (b) Junior Researchers: One hundred twenty dollars ($120.00) per hour.
+    Junior Researchers are attorneys or research professionals with fewer than
+    seven (7) years of relevant legal research or litigation support experience.
+
+    (c) Document Review Personnel: Ninety-five dollars ($95.00) per hour.
+    Document Review Personnel are trained reviewers responsible for first-pass
+    and second-pass document review, coding, and privilege logging.
+
+13.2 Blended Rate Cap. In any calendar month during which the total hours of
+service rendered by the Service Provider across all Matters exceed two hundred
+(200) hours, the effective blended hourly rate for all hours rendered during
+that month (including hours exceeding the two hundred (200) hour threshold) shall
+not exceed one hundred forty dollars ($140.00) per hour. The Service Provider
+shall apply a credit or adjustment on the invoice for the applicable month to
+ensure compliance with this blended rate cap.
+
+13.3 Payment Terms. Monthly invoices shall be submitted by the Service Provider
+on the last business day of each calendar month and shall be payable by the
+Client within forty-five (45) calendar days of receipt.
+
+13.4 Taxes. All fees payable under this Agreement are exclusive of applicable
+taxes. The Client shall be responsible for any sales tax, use tax, or similar
+taxes imposed on the services provided under this Agreement, except for taxes
+based on the Service Provider's net income.
+
+14. DELIVERABLES AND MILESTONES
+
+14.1 Research Database Setup. The Service Provider shall establish a secure,
+organized research database for the Client's active Matters within thirty (30)
+calendar days of the Effective Date, including matter folders, authority
+libraries, template repositories, and access controls configured to the Client's
+specifications.
+
+14.2 First Case Memorandum. The Service Provider shall deliver the first case
+research memorandum for the first active Matter within forty-five (45) calendar
+days of the Effective Date, or within thirty (30) calendar days of the
+commencement of work on the first active Matter, whichever is later.
+
+14.3 Monthly Status Reports. The Service Provider shall deliver written monthly
+status reports for each active Matter, summarizing services rendered, time
+expended, costs incurred, pending deadlines, and upcoming work, on an ongoing
+basis throughout the term of this Agreement.
+
+14.4 Trial Binder Preparation. The Service Provider shall prepare trial binders
+and trial support materials for any Matter proceeding to trial or hearing, in
+accordance with the trial preparation services described in Section 7. Trial
+binder preparation shall be performed on an as-needed basis as directed by the
+Client.
+
+15. INTELLECTUAL PROPERTY
+
+15.1 Client Ownership of Research Work Product. All Research Work Product
+created by the Service Provider specifically for the Client in connection with
+any Matter covered by this Agreement shall become the sole and exclusive
+property of the Client upon full payment for the services giving rise to such
+Research Work Product. The Service Provider hereby assigns and transfers to the
+Client all right, title, and interest in and to all such Research Work Product.
+
+15.2 Service Provider Retained IP. The Service Provider shall retain all right,
+title, and interest in its proprietary research databases, search
+methodologies, quality review procedures, training materials, document review
+protocols, citation verification tools, and other tools, methodologies, and
+processes developed independently of this Agreement and not constituting
+Research Work Product (collectively, "Service Provider IP"). The Client
+acknowledges that the Service Provider IP represents valuable trade secrets and
+proprietary business assets of the Service Provider.
+
+15.3 License. The Service Provider grants the Client a limited, non-exclusive,
+non-transferable license to use the Service Provider's proprietary research
+database platform for the duration of this Agreement solely for the purpose of
+accessing and reviewing Research Work Product created under this Agreement.
+
+16. CONFIDENTIALITY
+
+16.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Neither party shall disclose, publish, or otherwise reveal
+Confidential Information to any third party without the prior written consent
+of the disclosing party, except as required by law, regulation, legal process,
+court order, or applicable rules of professional conduct.
+
+16.2 Attorney-Client Privilege Protections. The parties acknowledge that
+Research Work Product is prepared at the direction of the Client's attorneys
+for the purpose of providing legal advice and legal representation. The Service
+Provider shall take all reasonable measures to maintain the confidentiality of
+such work product in accordance with applicable privilege law and the rules of
+professional conduct.
+
+16.3 Duration. The obligations of confidentiality set forth in this Section 16
+shall survive the expiration or termination of this Agreement for a period of
+ten (10) years.
+
+17. INSURANCE
+
+17.1 Required Coverage. Throughout the term of this Agreement, the Service
+Provider shall maintain, at its sole cost and expense, professional liability
+(errors and omissions) insurance in an amount not less than two million dollars
+($2,000,000) per occurrence, covering claims arising from negligent acts,
+errors, or omissions in the provision of legal research and litigation support
+services under this Agreement.
+
+17.2 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies. Such certificates shall
+provide that the Client shall receive thirty (30) days' prior written notice of
+any cancellation, material modification, or non-renewal.
+
+18. TERMINATION
+
+18.1 Termination for Convenience — Entire Engagement. Either party may terminate
+this Agreement in its entirety for convenience upon sixty (60) calendar days'
+prior written notice to the other party.
+
+18.2 Termination for Convenience — Individual Matters. The Client may terminate
+the Service Provider's engagement with respect to any individual Matter upon
+thirty (30) calendar days' prior written notice to the Service Provider.
+Termination of an individual Matter shall not constitute termination of this
+Agreement with respect to other active Matters.
+
+18.3 Termination for Cause. Either party may terminate this Agreement for cause
+if the other party commits a material breach of any provision of this Agreement
+and fails to cure such breach within fifteen (15) calendar days after receiving
+written notice specifying the nature of the breach in reasonable detail.
+
+18.4 Effect of Termination. Upon termination or expiration of this Agreement,
+the Service Provider shall (a) deliver all completed and in-progress Research
+Work Product to the Client, (b) return or securely destroy all Client
+Confidential Information in its possession, and (c) provide reasonable
+transition assistance to facilitate the Client's engagement of a successor
+provider.
+
+19. LIABILITY
+
+19.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING
+BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS
+OPPORTUNITY, BUSINESS INTERRUPTION, LOSS OF GOODWILL, OR LOSS OF DATA, ARISING
+OUT OF OR RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER,
+REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT
+LIABILITY, ANY OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES.
+
+19.2 Per-Matter Liability Cap. The Service Provider's total liability for all
+claims arising out of or relating to any single Matter shall not exceed five
+hundred thousand dollars ($500,000), regardless of the form of action or legal
+theory.
+
+19.3 Aggregate Liability Cap. The Service Provider's total aggregate liability
+for all claims arising out of or relating to this Agreement across all Matters
+shall not exceed one million dollars ($1,000,000), regardless of the form of
+action or legal theory. The aggregate cap shall apply as a cumulative limit
+across all Matters during the term of this Agreement and any surviving period.
+
+20. DISPUTE RESOLUTION
+
+20.1 Good Faith Negotiation. In the event of any dispute arising out of or
+relating to this Agreement, the parties shall first attempt to resolve such
+dispute through good faith negotiation between senior representatives of each
+party. The parties shall meet and confer within fifteen (15) calendar days of
+one party providing written notice of a dispute to the other party.
+
+20.2 Mediation. If the dispute is not resolved through negotiation within
+thirty (30) calendar days of the initial meeting, either party may submit the
+dispute to non-binding mediation administered by a mutually agreed mediator in
+Boston, Massachusetts. The costs of mediation shall be shared equally between
+the parties.
+
+20.3 Litigation. If mediation does not result in a resolution of the dispute
+within sixty (60) calendar days of the commencement of mediation, either party
+may pursue litigation, and any such litigation shall be brought exclusively in
+the state or federal courts located in Suffolk County, Commonwealth of
+Massachusetts.
+
+21. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the Commonwealth of Massachusetts, without giving effect to any choice-of-
+law or conflict-of-law provisions that would require the application of the
+laws of any jurisdiction other than the Commonwealth of Massachusetts.
+
+22. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A:  Rate Card — Researcher Classifications and Hourly Rates
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B:  Research Quality Standards — Methodology and Citation
+                Requirements
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C:  Document Review Protocol — Coding Guidelines and Privilege
+                Logging Standards
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+23. GENERAL PROVISIONS
+
+23.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the
+subject matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written,
+between the parties relating to such subject matter.
+
+23.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+23.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the
+other party, except that either party may assign this Agreement to a successor
+entity in connection with a merger, acquisition, or sale of all or
+substantially all of its assets, provided that the assignee assumes all
+obligations of the assigning party under this Agreement.
+
+23.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such
+provision shall be modified to the minimum extent necessary to make it valid
+and enforceable, and the remaining provisions of this Agreement shall continue
+in full force and effect.
+
+23.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+23.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally,
+(b) sent by certified mail, return receipt requested, (c) sent by nationally
+recognized overnight courier, or (d) sent by email with confirmation of
+receipt, to the addresses set forth in Section 1 or such other address as
+either party may designate in writing.
+
+23.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+23.8 Force Majeure. Neither party shall be liable for any failure or delay in
+the performance of its obligations under this Agreement to the extent that
+such failure or delay is caused by circumstances beyond the reasonable control
+of the affected party, including but not limited to acts of God, natural
+disasters, pandemics, government actions, labor disputes, civil unrest, war,
+terrorism, and power or telecommunications failures.
+
+23.9 Records Retention. The Service Provider shall maintain all records,
+working papers, correspondence, and research materials generated or received
+in connection with the performance of services under this Agreement for a
+period of not less than ten (10) years following the completion or termination
+of this Agreement, or such longer period as may be required by applicable law
+or the applicable rules of professional conduct.
+
+23.10 Subcontractor Management. The Service Provider shall not engage any
+subcontractor to perform services under this Agreement without the prior
+written consent of the Client. Any approved subcontractor shall be subject to
+the same confidentiality, conflicts, and professional standards as the Service
+Provider, and the Service Provider shall remain fully responsible for the
+performance of any subcontracted services.
+
+24. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Legal Research and
+Litigation Support Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+Lexicon Legal Research Partners LLP, a Massachusetts limited liability partnership
+
+
+By: ______________________________________
+Name: Attorney Patricia Holloway
+Title: Managing Partner
+Date: October 28, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Jonathan Reese
+Title: Of Counsel
+Date: October 28, 2024
+
+
+CLIENT:
+
+Harrington & Phelps LLP, a Massachusetts limited liability partnership
+
+
+By: ______________________________________
+Name: William Harrington
+Title: Founding Partner
+Date: October 30, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Catherine Phelps
+Title: Partner
+Date: October 30, 2024

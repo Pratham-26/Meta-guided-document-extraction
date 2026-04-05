@@ -1,0 +1,730 @@
+CONSTRUCTION PROJECT MANAGEMENT SERVICES AGREEMENT
+
+This Construction Project Management Services Agreement (the "Agreement"), bearing
+reference number CPM-2024-5507, is entered into as of April 15, 2024 (the "Effective
+Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, urban development in the Pacific Northwest has experienced unprecedented growth
+over the past two decades, driven by population influx, economic diversification, and
+the expansion of technology and healthcare sectors in the Portland metropolitan area.
+The construction industry has responded to this demand with increasingly complex and
+ambitious building projects that integrate residential, commercial, and public spaces
+into cohesive mixed-use developments. These projects require sophisticated project
+management expertise to navigate the intricate web of design coordination, regulatory
+compliance, contractor management, and stakeholder communication that characterizes
+modern urban construction;
+
+WHEREAS, sustainable building practices have become a central consideration in
+contemporary construction, with the Leadership in Energy and Environmental Design (LEED)
+certification framework serving as the predominant standard for measuring environmental
+performance in the built environment. LEED-certified buildings demonstrate reduced energy
+consumption, lower water usage, improved indoor air quality, and minimized construction
+waste, contributing to both environmental sustainability and long-term operational cost
+savings. The pursuit of LEED Gold certification, as contemplated for the project described
+herein, requires meticulous planning, material selection, and construction process
+management to satisfy the rigorous prerequisites and credit requirements established by
+the United States Green Building Council (USGBC);
+
+WHEREAS, the construction industry has witnessed significant transformation in recent
+years through the adoption of Building Information Modeling (BIM), advanced project
+scheduling tools, lean construction methodologies, and integrated project delivery
+approaches. These innovations have enhanced the ability of project management professionals
+to coordinate complex design processes, manage multi-trade construction sequences, control
+project costs, and maintain schedule adherence across large-scale developments. The
+application of Critical Path Method (CPM) scheduling, Gantt Chart visualization, and
+Earned Value Management (EVM) analysis enables project managers to identify schedule
+bottlenecks, allocate resources efficiently, and provide stakeholders with transparent
+and data-driven progress reporting;
+
+WHEREAS, the management of construction projects involving multiple subcontractors,
+specialized trade contractors, and regulatory agencies requires a comprehensive
+understanding of construction law, safety regulations, environmental compliance
+requirements, and community engagement practices. The construction project management
+services contemplated by this Agreement are designed to provide the Client with
+experienced professional oversight throughout all phases of the project, from pre-
+construction planning through substantial completion and closeout;
+
+WHEREAS, the parties desire to engage in a collaborative relationship wherein the
+Service Provider shall furnish professional construction project management services
+for the development of a twelve-story mixed-use building in Portland, Oregon, and the
+Client shall retain the Service Provider to coordinate and oversee all aspects of the
+construction process as more fully described herein;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements set
+forth herein, and for other good and valuable consideration, the receipt and sufficiency
+of which are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. BuildRight Project Management Inc., a corporation duly organized
+and existing under the laws of the State of Oregon, with its principal offices located
+at 780 Bridgeport Way, Portland, OR 97201 (hereinafter referred to as "Service Provider,"
+"Project Manager," or "BuildRight").
+
+1.2 Client. Cascade Heights Development Group LLC, a limited liability company duly
+organized and existing under the laws of the State of Oregon, with its principal place
+of business at 4500 Summit Ave, Suite 200, Portland, OR 97205 (hereinafter referred to
+as "Client," "Developer," or "Cascade Heights").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they have the
+full legal authority to bind their respective organization to the terms and conditions of
+this Agreement, and that the execution of this Agreement has been duly authorized by all
+necessary corporate or organizational approvals.
+
+2. DEFINITIONS
+
+2.1 "Building Information Modeling" or "BIM" means a digital representation of physical
+and functional characteristics of the Project, used for design coordination, clash
+detection, quantity takeoff, and construction sequencing throughout the project lifecycle.
+
+2.2 "Change Order" means a written document, approved by both the Client and the Service
+Provider, that authorizes a modification to the original scope of work, schedule, or
+budget for the Project, including additions, deletions, or revisions to the construction
+documents, specifications, or contract requirements.
+
+2.3 "Critical Path" means the sequence of activities in the project schedule that
+determines the minimum project duration, where any delay to a critical path activity
+will directly delay the overall project completion date unless recovered through schedule
+acceleration measures.
+
+2.4 "Earned Value Management" or "EVM" means a project management methodology that
+integrates scope, schedule, and cost baselines to objectively measure project performance
+and progress through the calculation of key performance indicators including Schedule
+Performance Index (SPI) and Cost Performance Index (CPI).
+
+2.5 "General Contractor" or "GC" means the entity selected by the Client, with input
+from the Service Provider, to serve as the primary contractor responsible for the overall
+construction of the Project, including the management and coordination of all
+Subcontractors and trade contractors.
+
+2.6 "Gantt Chart" means a type of bar chart that illustrates a project schedule, showing
+the start and finish dates of the various elements and activities of the Project,
+along with dependencies between activities and the current status of each work item.
+
+2.7 "LEED" means the Leadership in Energy and Environmental Design green building rating
+system developed by the United States Green Building Council (USGBC), providing a
+framework for identifying and implementing practical and measurable green building design,
+construction, operations, and maintenance solutions.
+
+2.8 "Milestone" means a significant point or event in the Project schedule that marks
+the completion of a major phase of work, a key deliverable, or a critical decision point,
+as identified in the Project Management Plan.
+
+2.9 "Permit" means any license, certificate, approval, authorization, or consent issued
+by a governmental authority having jurisdiction over the Project that is required for the
+design, construction, operation, or occupancy of the Project, including without limitation
+building permits, grading permits, environmental permits, utility connection permits, and
+certificates of occupancy.
+
+2.10 "Punch List" means a list of incomplete or non-conforming work items identified
+during the final inspection of the Project that must be corrected or completed by the
+General Contractor or applicable Subcontractors prior to the issuance of the Certificate
+of Substantial Completion.
+
+2.11 "RFI" or "Request for Information" means a formal written request submitted by the
+General Contractor, a Subcontractor, or the Service Provider to the design team seeking
+clarification, interpretation, or additional information regarding the construction
+documents, specifications, or contract requirements.
+
+2.12 "Subcontractor" means any entity, other than the General Contractor, engaged to
+perform a portion of the construction work on the Project, whether directly by the Client,
+by the General Contractor, or by another Subcontractor.
+
+2.13 "Value Engineering" or "VE" means a systematic and organized approach to providing
+the necessary functions of the Project at the lowest total cost over the life of the
+Project, without compromising quality, reliability, or performance requirements, through
+the analysis of proposed materials, systems, and construction methods.
+
+2.14 "Substantial Completion" means the stage in the progress of the Project when the
+work is sufficiently complete, in accordance with the construction documents, so that the
+Client can occupy or utilize the Project for its intended purpose, notwithstanding the
+existence of minor items of work to be completed or corrected as set forth on the
+Punch List.
+
+2.15 "Project" means the design, development, and construction of a twelve-story
+mixed-use building located in Portland, Oregon, as more fully described in Section 4
+of this Agreement.
+
+2.16 "Project Management Plan" means the comprehensive planning document prepared by
+the Service Provider that establishes the project objectives, scope, schedule, budget,
+organizational structure, communication protocols, risk management strategies, quality
+standards, and coordination procedures for the Project.
+
+2.17 "Critical Path Method" or "CPM" means a project scheduling algorithm for planning
+and controlling a project that determines the longest sequence of dependent activities
+and identifies the minimum time needed to complete the Project.
+
+2.18 "Schedule Performance Index" or "SPI" means the ratio of earned value to planned
+value, used as a measure of schedule efficiency on the Project, where an SPI of less
+than 1.0 indicates that the Project is behind schedule.
+
+2.19 "Cost Performance Index" or "CPI" means the ratio of earned value to actual cost,
+used as a measure of cost efficiency on the Project, where a CPI of less than 1.0
+indicates that the Project is over budget.
+
+2.20 "Certificate of Substantial Completion" means the formal written document, prepared
+by the Service Provider and approved by the Client and the General Contractor, certifying
+that the Project has reached the stage of Substantial Completion as defined herein.
+
+2.21 "Confidential Information" means all non-public information disclosed by either
+party to the other, whether orally, in writing, by electronic transmission, or by
+inspection, including but not limited to project plans, financial data, contractor
+bids, proprietary methodologies, and business operations information.
+
+3. SCOPE OF SERVICES
+
+3.1 Construction Project Management Services. The Service Provider shall provide
+comprehensive construction project management services for the Project, encompassing
+the following core service areas:
+
+    (a) Design Coordination. The Service Provider shall coordinate all design
+    disciplines, including architectural, structural, mechanical, electrical, plumbing,
+    fire protection, and civil engineering, to ensure design integrity, constructability,
+    and compliance with applicable building codes and LEED Gold certification requirements.
+    The Service Provider shall facilitate regular design coordination meetings, manage
+    the RFI process, review shop drawings and submittals, and resolve design conflicts
+    through Building Information Modeling (BIM) coordination and clash detection.
+
+    (b) Contractor Management. The Service Provider shall assist the Client in the
+    selection, evaluation, and management of the General Contractor and key Subcontractors.
+    Contractor management services shall include the development of contractor
+    qualification criteria, bid evaluation support, contract negotiation assistance,
+    performance monitoring, and dispute resolution facilitation.
+
+    (c) Budget Tracking and Cost Control. The Service Provider shall establish and
+    maintain a comprehensive project budget, track all project costs against the approved
+    budget baseline, perform monthly cost forecasting using Earned Value Management (EVM)
+    methodologies, review and approve contractor payment applications, and identify
+    cost-saving opportunities through Value Engineering analysis.
+
+    (d) Schedule Oversight. The Service Provider shall develop and maintain a detailed
+    project schedule using Critical Path Method (CPM) scheduling techniques, monitor
+    schedule performance through regular updates and Schedule Performance Index (SPI)
+    calculations, identify schedule risks and recovery strategies, and report schedule
+    status to the Client and project stakeholders.
+
+    (e) Quality Assurance Inspections. The Service Provider shall implement a
+    comprehensive quality assurance program for the Project, including the development
+    of inspection checklists, coordination of third-party testing and inspections,
+    review of testing and inspection reports, management of the Punch List process,
+    and verification of compliance with construction documents and specifications.
+
+    (f) Permit Management. The Service Provider shall manage all aspects of the
+    permitting process for the Project, including the preparation and submission of
+    permit applications, coordination with regulatory agencies, tracking of permit
+    status, and resolution of plan review comments. The Service Provider shall maintain
+    a comprehensive permit tracking log and ensure that all required permits are obtained
+    prior to the commencement of related construction activities.
+
+    (g) Stakeholder Reporting. The Service Provider shall provide regular project
+    status reports to the Client and other designated stakeholders, including monthly
+    progress reports, budget status reports, schedule updates, and ad-hoc reports as
+    requested by the Client. Reporting shall include narrative descriptions of project
+    progress, Gantt Chart visualizations, cost performance summaries, risk assessments,
+    and photographs documenting construction progress.
+
+4. PROJECT DESCRIPTION
+
+4.1 Building Specifications. The Project consists of the design, development, and
+construction of an approximately 185,000 gross square foot, twelve-story mixed-use
+building located at a site to be identified by the Client in the Portland, Oregon
+metropolitan area. The building program shall include:
+
+    (a) Floors 1 through 3: Approximately 45,000 square feet of ground-floor retail
+    and commercial space, including restaurant space with associated kitchen ventilation
+    systems, and two additional floors of Class A commercial office space.
+
+    (b) Floors 4 through 12: Approximately 120,000 square feet of residential space
+    comprising one hundred twenty (120) residential units, including a mix of studio,
+    one-bedroom, and two-bedroom apartments, with common amenity spaces including a
+    fitness center, resident lounge, rooftop terrace, and indoor/outdoor common areas.
+
+    (c) Below-Grade: Approximately 20,000 square feet of below-grade parking and
+    building services, providing approximately sixty (60) parking spaces, mechanical
+    rooms, electrical rooms, storage areas, and building maintenance facilities.
+
+4.2 Sustainability Targets. The Project shall be designed and constructed to achieve
+LEED Gold certification under the LEED BD+C: New Construction rating system. Key
+sustainability features shall include high-performance building envelope with enhanced
+insulation values, energy-efficient HVAC systems, water-conserving fixtures and
+landscaping, on-site stormwater management, construction waste diversion targeting
+seventy-five percent (75%) or greater, and the use of low-emitting materials for
+adhesives, sealants, paints, coatings, and flooring systems.
+
+4.3 Floor Plans. Detailed floor plans, elevations, sections, and construction details
+shall be developed as part of the design process and incorporated into the construction
+documents. The Service Provider shall coordinate the review and approval of floor plans
+with the Client and all design consultants.
+
+5. DESIGN COORDINATION PROCEDURES
+
+5.1 BIM Coordination. The Service Provider shall require the General Contractor and
+all major Subcontractors to participate in a Building Information Modeling (BIM)
+coordination process. BIM models shall be used for spatial coordination, clash detection,
+quantity takeoff, and construction sequencing. The Service Provider shall chair weekly
+BIM coordination meetings and maintain a clash detection log documenting identified
+conflicts and their resolution status.
+
+5.2 Design Review. The Service Provider shall conduct regular design review sessions
+with the design team to review construction documents for completeness, constructability,
+code compliance, and coordination between design disciplines. The Service Provider shall
+maintain a design review log documenting all comments, responses, and resolutions.
+
+5.3 RFI Management. The Service Provider shall manage the Request for Information (RFI)
+process, including receipt, logging, distribution, tracking, and closure of all RFIs.
+The Service Provider shall establish target response times for RFIs and monitor
+compliance with established response timeframes.
+
+6. CONTRACTOR SELECTION AND MANAGEMENT
+
+6.1 Contractor Qualification. The Service Provider shall develop contractor qualification
+criteria for the General Contractor and key Subcontractors, including evaluation of
+financial stability, relevant experience, safety record, bonding capacity, references,
+and proposed project team composition. A Contractor Short List of pre-qualified
+contractors shall be maintained by the Service Provider and provided to the Client as
+set forth in Exhibit B (Contractor Short List, attached hereto but not included).
+
+6.2 Bid Evaluation. The Service Provider shall assist the Client in the evaluation of
+contractor bids and proposals, including the development of bid evaluation criteria,
+the conduct of bid interviews, and the preparation of bid evaluation reports with
+recommendations for contractor selection.
+
+6.3 Performance Monitoring. The Service Provider shall monitor the performance of the
+General Contractor and Subcontractors throughout the construction process, including
+the evaluation of schedule adherence, quality of work, safety compliance, and
+responsiveness to project requirements.
+
+7. BUDGET AND COST CONTROL
+
+7.1 Budget Baseline. The Service Provider shall establish a project budget baseline in
+consultation with the Client, incorporating all project costs including construction
+costs, soft costs, contingency allowances, and owner-furnished items. The budget
+baseline shall serve as the basis for all cost tracking and reporting activities.
+
+7.2 Cost Tracking. The Service Provider shall maintain a detailed cost tracking system
+that records all project expenditures, compares actual costs to the budget baseline,
+and forecasts costs to complete. Cost tracking reports shall be updated monthly and
+included in the monthly progress reports provided to the Client.
+
+7.3 Value Engineering. The Service Provider shall conduct Value Engineering reviews at
+key project milestones to identify opportunities for cost reduction without compromising
+quality, performance, or sustainability objectives. Value Engineering recommendations
+shall be documented and submitted to the Client for review and approval.
+
+8. SCHEDULE MANAGEMENT
+
+8.1 Schedule Development. The Service Provider shall develop a detailed project schedule
+using Critical Path Method (CPM) scheduling techniques. The schedule shall identify all
+major project activities, milestones, and dependencies, and shall establish target start
+and finish dates for each activity. The schedule shall be maintained in a Gantt Chart
+format for ease of visualization and communication.
+
+8.2 Schedule Updates. The Service Provider shall update the project schedule on a monthly
+basis, incorporating actual progress data, revised activity durations, and any approved
+Change Orders that affect the schedule. Schedule Performance Index (SPI) and Cost
+Performance Index (CPI) metrics shall be calculated and reported to the Client as part
+of the monthly progress reports.
+
+8.3 Schedule Recovery. In the event that the project schedule falls behind the approved
+baseline, the Service Provider shall develop and present to the Client a schedule recovery
+plan identifying the measures necessary to return the project to the baseline schedule.
+
+9. QUALITY ASSURANCE AND INSPECTIONS
+
+9.1 Quality Assurance Program. The Service Provider shall develop and implement a
+comprehensive quality assurance program for the Project, including the preparation of
+quality assurance plans, inspection checklists, testing protocols, and documentation
+requirements for all major construction activities and building systems.
+
+9.2 Third-Party Inspections. The Service Provider shall coordinate all third-party
+testing and inspections required by the construction documents, applicable building
+codes, and the LEED certification process, including structural steel inspections,
+concrete testing, fire protection system testing, and environmental monitoring.
+
+9.3 Punch List Management. The Service Provider shall manage the Punch List process,
+including the identification and documentation of incomplete or non-conforming work
+items, coordination of corrective work with the General Contractor, verification of
+completed corrections, and maintenance of the Punch List log through to final completion.
+
+10. SAFETY MANAGEMENT
+
+10.1 Safety Program Oversight. The Service Provider shall review and approve the General
+Contractor's project-specific safety plan, monitor safety compliance through regular site
+inspections, and coordinate safety meetings with the General Contractor and Subcontractors.
+The Service Provider shall maintain a safety incident log and report safety performance
+to the Client on a monthly basis.
+
+10.2 Regulatory Compliance. The Service Provider shall ensure that all construction
+activities comply with applicable Occupational Safety and Health Administration (OSHA)
+regulations, Oregon OSHA requirements, and local safety ordinances.
+
+11. PERMITTING AND REGULATORY COMPLIANCE
+
+11.1 Permit Management. The Service Provider shall manage all aspects of the permitting
+process for the Project, including the identification of all required permits, preparation
+and submission of permit applications, coordination with the City of Portland Bureau of
+Development Services and other regulatory agencies, tracking of permit status, and
+resolution of plan review comments. A LEED Checklist documenting the targeted LEED Gold
+certification credits is attached hereto as Exhibit A (LEED Checklist, attached hereto
+but not included).
+
+11.2 Regulatory Compliance. The Service Provider shall ensure that the Project complies
+with all applicable federal, state, and local laws, regulations, codes, and ordinances,
+including without limitation the Oregon Structural Specialty Code, Portland Zoning Code,
+Americans with Disabilities Act (ADA), and environmental regulations.
+
+12. ENVIRONMENTAL COMPLIANCE
+
+12.1 Construction Waste Management. The Service Provider shall develop and implement a
+construction waste management plan targeting a minimum of seventy-five percent (75%)
+diversion of construction waste from landfills through recycling, reuse, and salvage.
+
+12.2 Environmental Monitoring. The Service Provider shall coordinate environmental
+monitoring activities as required by the Project permits, including stormwater management,
+erosion control, dust mitigation, noise monitoring, and protection of adjacent properties
+and natural resources.
+
+13. COMMUNITY RELATIONS
+
+13.1 Community Engagement. The Service Provider shall assist the Client in managing
+community relations throughout the construction process, including coordination with
+neighbors regarding construction activities, management of noise and vibration impacts,
+and response to community inquiries and complaints.
+
+13.2 Construction Impact Mitigation. The Service Provider shall develop and implement
+a construction impact mitigation plan addressing traffic management, pedestrian safety,
+parking impacts, dust and noise control, and protection of adjacent properties during
+construction operations.
+
+14. MONTHLY REPORTING REQUIREMENTS
+
+14.1 Monthly Progress Reports. The Service Provider shall deliver comprehensive monthly
+progress reports to the Client no later than the tenth (10th) business day of each
+month. Each monthly progress report shall include:
+
+    (a) A narrative description of construction activities completed during the
+    reporting period and planned for the upcoming period;
+
+    (b) An updated project schedule (Gantt Chart format) with actual and forecast
+    completion dates for all major activities and milestones;
+
+    (c) A budget status report comparing actual costs to the budget baseline, including
+    Schedule Performance Index (SPI) and Cost Performance Index (CPI) calculations;
+
+    (d) A summary of RFIs submitted, responded to, and pending;
+
+    (e) A Change Order status report summarizing proposed, approved, and executed
+    Change Orders;
+
+    (f) A safety performance summary, including any incidents, near-misses, and
+    corrective actions taken;
+
+    (g) Photographs documenting construction progress at key locations on the Project.
+
+14.2 Executive Summaries. In addition to the detailed monthly progress reports, the
+Service Provider shall prepare quarterly executive summaries suitable for presentation
+to the Client's investors, board members, and other senior stakeholders.
+
+15. CHANGE ORDER PROCEDURES
+
+15.1 Change Order Initiation. Any proposed change to the Project scope, schedule, or
+budget shall be documented on a Change Order Request form prepared by the Service
+Provider or the General Contractor, identifying the nature of the change, the reason
+for the change, the estimated cost impact, and the estimated schedule impact.
+
+15.2 Change Order Review and Approval. The Service Provider shall review all Change
+Order Requests for completeness, accuracy, and consistency with the construction
+documents, and shall provide a written recommendation to the Client regarding each
+proposed change. No Change Order shall be executed without the prior written approval
+of the Client.
+
+15.3 Change Order Log. The Service Provider shall maintain a Change Order log tracking
+all proposed, approved, and executed Change Orders, including their cost and schedule
+impacts, for inclusion in the monthly progress reports.
+
+16. TERM
+
+16.1 Initial Term. This Agreement shall commence on the Effective Date and shall continue
+for a period of thirty (30) months, concluding on October 15, 2026 (the "Initial Term"),
+unless earlier terminated in accordance with the provisions of Section 22.
+
+16.2 No Automatic Renewal. This Agreement shall not automatically renew upon expiration
+of the Initial Term. Any extension of this Agreement beyond the Initial Term shall require
+the execution of a separate written agreement by both parties.
+
+16.3 Effect of Termination. Expiration or termination of this Agreement shall not affect
+any provisions that by their nature are intended to survive termination, including without
+limitation Sections 19 (Confidentiality), 21 (Liability), 24 (Dispute Resolution), 25
+(Governing Law), and 27 (General Provisions).
+
+17. COMPENSATION
+
+17.1 Fixed Project Fee. In consideration of the construction project management services
+described in Section 3, the Client shall pay the Service Provider a fixed project fee in
+the amount of four hundred twenty thousand dollars ($420,000.00) for the full project
+duration.
+
+17.2 Monthly Installments. The fixed project fee of four hundred twenty thousand dollars
+($420,000.00) shall be payable in equal monthly installments of fourteen thousand dollars
+($14,000.00) over the thirty (30) month term of this Agreement. Monthly invoices shall be
+submitted by the Service Provider on the first business day of each calendar month and
+shall be payable by the Client within thirty (30) calendar days of receipt.
+
+17.3 Success Bonus. In addition to the fixed project fee, the Client shall pay the Service
+Provider a success bonus in the amount of twenty-five thousand dollars ($25,000.00) if the
+Project achieves Substantial Completion on or before the target completion date and the
+final project cost is at or below the approved budget baseline. The success bonus shall
+be payable within thirty (30) calendar days of the issuance of the Certificate of
+Substantial Completion.
+
+17.4 Taxes. All fees payable under this Agreement are exclusive of applicable taxes. The
+Client shall be responsible for any sales tax, use tax, or similar taxes imposed on the
+services provided under this Agreement, except for taxes based on the Service Provider's
+net income.
+
+18. DELIVERABLES AND MILESTONES
+
+18.1 Project Management Plan. The Service Provider shall deliver a comprehensive Project
+Management Plan to the Client within thirty (30) calendar days of the Effective Date. The
+Project Management Plan shall include project objectives, scope definition, organizational
+structure, communication protocols, schedule framework, budget framework, risk management
+strategies, quality standards, and coordination procedures.
+
+18.2 Contractor Procurement. The Service Provider shall complete the contractor
+procurement process, including the development of contractor qualification criteria,
+bid solicitation, bid evaluation, and General Contractor selection, within sixty (60)
+calendar days of the Effective Date.
+
+18.3 Permit Completion. The Service Provider shall obtain all required permits for the
+Project, including the building permit, grading permit, and environmental permits, within
+ninety (90) calendar days of the Effective Date.
+
+18.4 Monthly Progress Reports. The Service Provider shall deliver monthly progress
+reports to the Client on an ongoing basis throughout the term of this Agreement, as
+described in Section 14.
+
+18.5 Certificate of Substantial Completion. The Service Provider shall prepare and
+coordinate the issuance of the Certificate of Substantial Completion no later than the
+twenty-seventh (27th) month of the term of this Agreement.
+
+19. INTELLECTUAL PROPERTY
+
+19.1 Client Ownership of Project Documentation. All project-specific documentation
+generated in connection with the performance of services under this Agreement, including
+without limitation the Project Management Plan, inspection reports, correspondence, and
+project records, shall be the sole and exclusive property of the Client upon full payment
+of the applicable fees. The Client shall have unrestricted rights to use, reproduce,
+modify, and distribute such project-specific documentation.
+
+19.2 Service Provider Retention of Methodologies. The Service Provider shall retain all
+right, title, and interest in its proprietary project management templates, scheduling
+methodologies, cost tracking tools, quality assurance checklists, reporting formats, and
+other tools, techniques, and processes developed independently of this Agreement
+(collectively, "Service Provider IP"). The Client acknowledges that the Service Provider
+IP represents valuable trade secrets and proprietary business assets of the Service
+Provider.
+
+20. CONFIDENTIALITY
+
+20.1 Obligations. Each party agrees to hold in strict confidence all Confidential
+Information of the other party disclosed in connection with this Agreement. Neither party
+shall disclose, publish, or otherwise reveal Confidential Information to any third party
+without the prior written consent of the disclosing party, except as required by law,
+regulation, legal process, or binding order of a court or regulatory agency of competent
+jurisdiction.
+
+20.2 Duration. The obligations of confidentiality set forth in this Section 20 shall
+survive the expiration or termination of this Agreement for a period of five (5) years.
+
+20.3 Permitted Disclosures. Notwithstanding the foregoing, a receiving party may disclose
+Confidential Information to its employees, contractors, and professional advisors who
+have a need to know such information for purposes consistent with this Agreement and who
+are bound by confidentiality obligations at least as restrictive as those set forth herein.
+
+21. INSURANCE
+
+21.1 Required Coverage. Throughout the term of this Agreement, the Service Provider shall
+maintain, at its sole cost and expense, the following insurance coverages with insurers
+rated A- VII or better by A.M. Best Company (or equivalent rating agency):
+
+    (a) Professional Liability Insurance. Professional liability (errors and omissions)
+    insurance in an amount not less than two million dollars ($2,000,000) per occurrence,
+    covering claims arising from negligent acts, errors, or omissions in the provision of
+    professional construction project management services under this Agreement.
+
+    (b) General Liability Insurance. Commercial general liability insurance in an amount
+    not less than five million dollars ($5,000,000) per occurrence and in the aggregate,
+    covering claims arising from bodily injury, property damage, and personal and
+    advertising injury in connection with the performance of services under this Agreement.
+
+21.2 Evidence of Coverage. The Service Provider shall provide certificates of insurance
+evidencing the required coverages to the Client upon execution of this Agreement and upon
+each renewal of such policies. Such certificates shall provide that the Client shall receive
+thirty (30) days' prior written notice of any cancellation, material modification, or
+non-renewal of the required insurance policies.
+
+22. LIABILITY
+
+22.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEITHER
+PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,
+SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF REVENUE,
+LOSS OF PROFITS, LOSS OF BUSINESS OPPORTUNITY, BUSINESS INTERRUPTION, LOSS OF GOODWILL,
+OR LOSS OF DATA, ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF
+SERVICES HEREUNDER, REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT,
+STRICT LIABILITY, ANY OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+22.2 Liability Cap. The Service Provider's total aggregate liability for all claims arising
+out of or relating to this Agreement, regardless of the form of action or legal theory,
+shall not exceed one million dollars ($1,000,000). This cap shall apply to the aggregate
+of all claims arising during the term of this Agreement.
+
+23. TERMINATION
+
+23.1 Termination for Convenience. Either party may terminate this Agreement for convenience
+upon ninety (90) calendar days' prior written notice to the other party.
+
+23.2 Termination for Cause. Either party may terminate this Agreement for cause if the other
+party commits a material breach of any provision of this Agreement and fails to cure such
+breach within thirty (30) calendar days after receiving written notice specifying the nature
+of the breach in reasonable detail.
+
+23.3 Termination upon Insolvency. Either party may terminate this Agreement immediately upon
+written notice if the other party becomes insolvent, files a petition in bankruptcy, is
+adjudicated as bankrupt, makes an assignment for the benefit of creditors, or has a receiver
+appointed for a substantial portion of its assets.
+
+23.4 Effect of Termination. Upon termination or expiration of this Agreement, the Service
+Provider shall (a) deliver all completed and in-progress project documentation to the
+Client, (b) return or securely destroy all Client Confidential Information in its
+possession, and (c) provide reasonable transition assistance to facilitate the Client's
+engagement of a successor project management firm, all at the Client's expense.
+
+24. DISPUTE RESOLUTION
+
+24.1 Mediation. In the event of any dispute arising out of or relating to this Agreement,
+the parties shall first attempt to resolve such dispute through good faith mediation
+administered by the American Arbitration Association (AAA) in accordance with its Commercial
+Mediation Procedures. The mediation shall be held in Portland, Oregon, and the parties shall
+share equally the costs of the mediation.
+
+24.2 Arbitration. If the dispute is not resolved through mediation within sixty (60) calendar
+days of the initiation of mediation, either party may submit the dispute to binding
+arbitration administered by the American Arbitration Association (AAA) in accordance with
+its Commercial Arbitration Rules. The arbitration shall be conducted in Portland, Oregon,
+before a single arbitrator with experience in construction law and project management.
+
+25. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the State
+of Oregon, without giving effect to any choice-of-law or conflict-of-law provisions that
+would require the application of the laws of any jurisdiction other than the State of Oregon.
+
+26. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this Agreement:
+
+    Exhibit A:  LEED Gold Certification Checklist and Credit Documentation
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+    Exhibit B:  Contractor Short List — Pre-Qualified General Contractors
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+    Exhibit C:  Building Specifications and Floor Plans
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+27. GENERAL PROVISIONS
+
+27.1 Entire Agreement. This Agreement, including all exhibits attached hereto, constitutes
+the entire agreement between the parties with respect to the subject matter hereof and
+supersedes all prior and contemporaneous agreements, understandings, negotiations, and
+discussions, whether oral or written, between the parties relating to such subject matter.
+
+27.2 Amendments. This Agreement may not be amended, modified, or supplemented except by a
+written instrument signed by both parties.
+
+27.3 Assignment. Neither party may assign or transfer any of its rights or obligations under
+this Agreement without the prior written consent of the other party, except that either party
+may assign this Agreement to an Affiliate or successor entity in connection with a merger,
+acquisition, or sale of all or substantially all of its assets, provided that the assignee
+assumes all obligations of the assigning party under this Agreement.
+
+27.4 Severability. If any provision of this Agreement is held to be invalid, illegal, or
+unenforceable by a court of competent jurisdiction, such provision shall be modified to the
+minimum extent necessary to make it valid and enforceable, and the remaining provisions of
+this Agreement shall continue in full force and effect.
+
+27.5 Waiver. The failure of either party to enforce any provision of this Agreement shall
+not constitute a waiver of such party's right to enforce such provision or any other
+provision in the future.
+
+27.6 Notices. All notices required or permitted under this Agreement shall be in writing and
+shall be deemed delivered when (a) delivered personally, (b) sent by certified mail, return
+receipt requested, (c) sent by nationally recognized overnight courier, or (d) sent by email
+with confirmation of receipt, to the addresses set forth in Section 1 or such other address
+as either party may designate in writing.
+
+27.7 Independent Contractor. The Service Provider is an independent contractor and not an
+employee, agent, partner, or joint venturer of the Client. Nothing in this Agreement shall
+be construed to create an employment relationship, partnership, joint venture, or agency
+relationship between the parties.
+
+27.8 Force Majeure. Neither party shall be liable for any failure or delay in the performance
+of its obligations under this Agreement to the extent that such failure or delay is caused by
+circumstances beyond the reasonable control of the affected party, including but not limited
+to acts of God, natural disasters, pandemics, government actions, labor disputes, civil
+unrest, war, terrorism, and power or telecommunications failures.
+
+27.9 Subcontractor Management. The Service Provider shall not engage any subcontractor to
+perform services under this Agreement without the prior written consent of the Client. Any
+approved subcontractor shall be subject to the same confidentiality, quality, and professional
+standards as the Service Provider, and the Service Provider shall remain fully responsible
+for the performance of any subcontracted services.
+
+27.10 Records Retention. The Service Provider shall maintain all records, working papers,
+correspondence, and project data generated in connection with the performance of services
+under this Agreement for a period of not less than five (5) years following the completion
+or termination of this Agreement, or such longer period as may be required by applicable law
+or regulation.
+
+28. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Construction Project Management Services
+Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+BuildRight Project Management Inc., an Oregon corporation
+
+
+By: ______________________________________
+Name: Daniel Ortiz
+Title: President
+Date: April 10, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Thomas Grant
+Title: Vice President, Operations
+Date: April 10, 2024
+
+
+CLIENT:
+
+Cascade Heights Development Group LLC, an Oregon limited liability company
+
+
+By: ______________________________________
+Name: Rachel Kim
+Title: Managing Director
+Date: April 12, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Michael Torres
+Title: Chief Financial Officer
+Date: April 12, 2024

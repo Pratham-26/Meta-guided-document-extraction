@@ -1,0 +1,736 @@
+TRANSLATION AND LOCALIZATION SERVICES AGREEMENT
+
+This Translation and Localization Services Agreement (the "Agreement"), bearing
+reference number TLS-2025-0089, is entered into as of March 1, 2025 (the
+"Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, the global media landscape has undergone a profound transformation in
+recent decades, driven by the proliferation of digital distribution platforms,
+the exponential growth of streaming services, and the increasing demand for
+locally relevant content across diverse linguistic and cultural markets. The
+international entertainment and media industry now generates in excess of two
+trillion dollars annually, with non-English-language markets representing the
+fastest-growing segment of global content consumption, fueled by expanding
+internet penetration, mobile device adoption, and evolving viewer preferences
+that increasingly favor content in their native languages;
+
+WHEREAS, the challenges of effective translation and localization extend far
+beyond mere linguistic conversion, encompassing cultural adaptation, tonal
+fidelity, regulatory compliance across jurisdictions, synchronization with
+audiovisual media, and the preservation of creative intent across fundamentally
+different linguistic structures, idiomatic expressions, and cultural reference
+frameworks. Studies have consistently demonstrated that viewers are
+significantly more likely to engage with and complete viewing of content
+presented in their native language, with localized content achieving engagement
+rates up to three times higher than subtitled-only alternatives in certain
+markets;
+
+WHEREAS, the localization industry has evolved from a relatively narrow
+discipline focused on software interface translation into a sophisticated,
+technology-enabled ecosystem that integrates computer-assisted translation (CAT)
+tools, machine translation (MT) engines, terminology management systems,
+translation memory (TM) databases, quality assurance (QA) frameworks, and
+project management platforms to deliver high-volume, high-quality translations
+across dozens of target languages simultaneously. The integration of neural
+machine translation (NMT) and large language models has further accelerated
+throughput while simultaneously raising new questions about quality
+consistency, stylistic control, and the appropriate role of human post-editing
+in the translation workflow;
+
+WHEREAS, GlobalReach Media Corp. has established itself as a leading
+international content distributor with operations spanning broadcast television,
+streaming platforms, theatrical distribution, and digital media across more
+than forty countries, and has identified a strategic need to engage a
+specialized language services provider capable of delivering comprehensive
+translation and localization services at the scale, quality, and speed required
+to support its ambitious international content strategy;
+
+WHEREAS, LinguaGlobal Translations Inc. brings over fifteen years of
+specialized experience in media and entertainment localization, with proven
+expertise in subtitling, dubbing script adaptation, voice-over script
+preparation, marketing material transcreation, and multilingual content
+management, supported by a network of over two thousand qualified linguists
+across the target languages specified in this Agreement;
+
+WHEREAS, the parties desire to establish a comprehensive framework for the
+provision of translation and localization services that balances quality
+excellence with operational efficiency, leverages technology to optimize costs
+and turnaround times, and provides the flexibility to accommodate fluctuations
+in content volume and priority across GlobalReach Media Corp.'s diverse content
+portfolio;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration, the
+receipt and sufficiency of which are hereby acknowledged, the parties agree as
+follows:
+
+1. PARTIES
+
+1.1 Service Provider. LinguaGlobal Translations Inc., a corporation duly
+organized and existing under the laws of the State of New York, with its
+principal offices located at 88 Broad Street, Floor 22, New York, NY 10004
+(hereinafter referred to as "Service Provider," "LinguaGlobal," or "Provider").
+
+1.2 Client. GlobalReach Media Corp., a corporation duly organized and existing
+under the laws of the State of New York, with its principal offices located at
+30 Rockefeller Plaza, New York, NY 10112 (hereinafter referred to as "Client,"
+"GlobalReach," or "GRMC").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they
+have the full legal authority to bind their respective organization to the terms
+and conditions of this Agreement, and that the execution of this Agreement has
+been duly authorized by all necessary corporate approvals.
+
+2. DEFINITIONS
+
+2.1 "CAT Tool" means Computer-Assisted Translation tool, any software
+application that supports the translation process by providing access to
+translation memories, terminology databases, and linguistic resources,
+including but not limited to SDL Trados, memoQ, Phrase (formerly Memsource),
+and XTM Cloud.
+
+2.2 "Dubbing" means the process of replacing the original audio track of a
+video or film production with a translated audio track performed by voice
+actors in the target language, including lip-sync adaptation, timing
+adjustments, and audio mixing to ensure synchronization with on-screen action.
+
+2.3 "LQA" means Linguistic Quality Assurance, the systematic process of
+evaluating the quality of translated content against established quality
+standards, including error identification, categorization, and severity
+classification using standardized scoring methodologies.
+
+2.4 "Localization" means the comprehensive process of adapting content,
+products, or services to meet the linguistic, cultural, technical, and
+regulatory requirements of a specific target market or locale, encompassing
+not only translation but also cultural adaptation, format conversion, and
+regulatory compliance.
+
+2.5 "Machine Translation" or "MT" means automated translation performed by
+software systems, including rule-based machine translation (RBMT), statistical
+machine translation (SMT), and neural machine translation (NMT), without
+direct human intervention in the initial translation process.
+
+2.6 "Post-Editing" means the review and correction of machine-translated
+content by a qualified human linguist to achieve the quality standards
+specified for the applicable content type and target language, classified as
+light post-editing (focused on intelligibility) or full post-editing (focused
+on achieving quality comparable to human translation).
+
+2.7 "Source File" means any document, audio file, video file, subtitle file,
+script, marketing material, website content, social media post, or other
+content provided by the Client to the Service Provider for translation or
+localization under this Agreement.
+
+2.8 "Style Guide" means the comprehensive set of guidelines governing tone,
+register, terminology, formatting, and stylistic conventions for translations
+produced under this Agreement, developed jointly by the parties for each
+target language and updated periodically as needed.
+
+2.9 "Subtitle" means on-screen text that provides a written translation of
+dialogue, narration, or other audio content in a video or film production,
+formatted in accordance with industry-standard subtitling specifications
+including character limits per line, reading speed thresholds, and timing
+synchronization requirements.
+
+2.10 "Target Language" means any language into which Source Files are to be
+translated or localized under this Agreement, as specified in Section 3 and
+the applicable Statement of Work or project instructions.
+
+2.11 "Translation Memory" or "TM" means a linguistic database that stores
+previously translated text segments (source-target pairs) for reuse in
+subsequent translation projects, enabling consistency across translations and
+reducing costs for repetitive or similar content.
+
+2.12 "Transcreation" means the creative adaptation of marketing, advertising,
+or promotional content for a target language market, going beyond literal
+translation to preserve the emotional impact, cultural relevance, and
+persuasive intent of the original content.
+
+2.13 "Voice-Over" means an audio production technique in which a translated
+narration or dialogue is recorded and laid over the original audio track of
+a video or film production, without lip-sync adaptation, commonly used for
+documentary, corporate, and educational content.
+
+2.14 "TEP" means the Translation, Editing, and Proofreading process, the
+standard three-step quality workflow in which content is (i) translated by a
+qualified translator, (ii) edited by a second qualified linguist who compares
+the translation against the source for accuracy and completeness, and (iii)
+proofread by a third linguist who reviews the final target-language text for
+fluency, formatting, and adherence to the Style Guide.
+
+2.15 "Glossary" means a structured repository of approved terms, phrases,
+and expressions for each target language, including definitions, context
+guidelines, and usage restrictions, maintained by the Service Provider and
+approved by the Client.
+
+2.16 "TMS" means Translation Management System, a software platform used to
+manage the end-to-end localization workflow, including project creation,
+resource assignment, deadline tracking, quality management, and delivery
+coordination.
+
+2.17 "Rush Project" means any project or delivery request for which the
+Client has requested turnaround in fewer than forty-eight (48) hours from
+receipt of Source Files by the Service Provider.
+
+2.18 "Confidential Information" means all non-public information disclosed
+by either party to the other in connection with this Agreement, including but
+not limited to unreleased media content, scripts, marketing strategies,
+distribution plans, financial data, audience metrics, and proprietary
+processes, whether disclosed orally, in writing, by electronic transmission,
+or by inspection.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide comprehensive translation
+and localization services for the Client's media content portfolio, including
+but not limited to the following content types and service categories:
+
+    (a) Subtitling. Creation of time-coded subtitles for video content
+    including theatrical releases, television series, streaming originals,
+    documentaries, and short-form content, formatted in accordance with
+    Client-specified technical specifications and platform requirements.
+
+    (b) Dubbing Scripts. Adaptation of original scripts for dubbed audio
+    production, including lip-sync adaptation, dialogue timing, and cultural
+    adjustment for theatrical and broadcast distribution.
+
+    (c) Voice-Over Scripts. Preparation of voice-over scripts for documentary,
+    corporate, educational, and promotional content, including narration
+    adaptation and timing alignment.
+
+    (d) Marketing Materials. Translation and transcreation of marketing
+    collateral including posters, key art, trailers, promotional videos,
+    social media campaigns, press kits, and advertising copy.
+
+    (e) Press Releases. Translation and cultural adaptation of press releases,
+    media advisories, and communications materials for international media
+    distribution.
+
+    (f) Website Localization. Full localization of Client's websites and web
+    applications, including user interface text, navigation elements, metadata,
+    SEO content, and multimedia assets.
+
+    (g) Social Media Content. Translation and adaptation of social media
+    posts, captions, hashtags, and engagement materials for platforms
+    including but not limited to Instagram, Twitter/X, Facebook, TikTok,
+    YouTube, and LinkedIn.
+
+3.2 Target Languages. The Service Provider shall provide translation and
+localization services into the following fourteen (14) target languages:
+
+    (a) Tier 1 Languages: Spanish, French, German, Portuguese, Italian,
+    Dutch, and Swedish.
+
+    (b) Tier 2 Languages: Japanese, Korean, and Mandarin Chinese.
+
+    (c) Tier 3 Languages: Arabic, Hindi, Thai, and Turkish.
+
+3.3 Additional Languages. Either party may propose the addition of target
+languages beyond the fourteen (14) languages specified in Section 3.2. Any
+such addition shall require mutual written agreement and shall be documented
+in an amendment to this Agreement or a supplemental Statement of Work,
+including the applicable pricing tier classification for the added language.
+
+4. TRANSLATION PROCESS
+
+4.1 Source File Preparation. Upon receipt of Source Files from the Client,
+the Service Provider shall perform initial file analysis including word count
+verification, file format validation, reference material review, and
+complexity assessment. The Service Provider shall notify the Client within
+twenty-four (24) hours of receipt of any Source Files that are incomplete,
+corrupted, or otherwise unsuitable for processing.
+
+4.2 TEP Workflow. All translations performed under this Agreement shall
+follow the standard TEP (Translation, Editing, Proofreading) workflow unless
+otherwise specified in a project-specific instruction. The Service Provider
+shall assign a minimum of three (3) qualified linguists to each translation
+project, with no linguist performing more than one step of the TEP process
+for the same project.
+
+4.3 Machine Translation. The Service Provider may utilize machine translation
+as part of the translation workflow, subject to the following conditions:
+(a) MT shall not be used for creative content, marketing materials, or any
+content classified as requiring transcreation without the Client's prior
+written approval; (b) all MT output shall undergo human post-editing in
+accordance with the quality standards specified for the applicable content
+type; (c) the Service Provider shall disclose the use of MT in any project
+summary or quality report upon the Client's request.
+
+5. QUALITY ASSURANCE
+
+5.1 LQA Scoring. The Service Provider shall implement a Linguistic Quality
+Assurance (LQA) scoring framework based on the Multidimensional Quality
+Metrics (MQM) model or an equivalent industry-standard methodology. LQA
+scores shall be calculated for each delivered project on a scale of zero to
+one hundred (0-100), with the following minimum thresholds:
+
+    (a) Subtitles and Dubbing Scripts: Minimum LQA score of 95.
+    (b) Marketing Materials and Transcreation: Minimum LQA score of 93.
+    (c) Website Localization: Minimum LQA score of 92.
+    (d) Social Media Content: Minimum LQA score of 90.
+    (e) General Translation (press releases, corporate communications): 94.
+
+5.2 Error Categorization. Errors identified during LQA review shall be
+categorized by type (accuracy, fluency, terminology, style, formatting) and
+severity (critical, major, minor, neutral). Critical errors — including
+mistranslations that alter meaning, offensive content, regulatory
+non-compliance, and factual errors — shall trigger mandatory rework at no
+additional cost to the Client.
+
+5.3 Sampling Rates. For projects exceeding fifty thousand (50,000) words,
+the Service Provider shall perform LQA review on a random sample of not less
+than ten percent (10%) of the delivered content, with the sampling methodology
+designed to ensure representative coverage of all content types, linguists,
+and language pairs within the project.
+
+6. LINGUIST QUALIFICATIONS
+
+6.1 Native Speaker Requirement. All translators, editors, and proofreaders
+assigned to projects under this Agreement shall be native speakers of the
+applicable target language, with professional-level proficiency in the source
+language (English).
+
+6.2 Domain Expertise. Linguists assigned to media content projects shall
+demonstrate a minimum of three (3) years of professional experience in media
+and entertainment localization, with verifiable credits or references for at
+least two (2) projects of comparable scope and complexity.
+
+6.3 Certifications. Linguists shall hold, at minimum, one of the following
+qualifications: (a) a degree in translation, linguistics, or a related field
+from an accredited institution; (b) certification from a recognized
+professional body (e.g., ATA, ITI, CIOL); or (c) equivalent professional
+credentials as approved by the Client.
+
+7. TECHNOLOGY STACK
+
+7.1 CAT Tools. The Service Provider shall utilize industry-standard CAT tools
+for all translation projects, ensuring compatibility with the Client's
+preferred file formats and workflow requirements. The Service Provider shall
+maintain current licenses and subscriptions for all required CAT tools.
+
+7.2 MT Engines. The Service Provider may deploy proprietary or third-party
+machine translation engines as part of the translation workflow, subject to
+the restrictions set forth in Section 4.3. The Service Provider shall not
+use Client content to train or fine-tune any MT engine without the Client's
+prior written consent.
+
+7.3 TMS Integration. The Service Provider shall provide the Client with
+access to a web-based Translation Management System (TMS) portal for project
+submission, status tracking, delivery download, and quality report review.
+The TMS shall generate automated notifications at key project milestones.
+
+8. CONTENT TYPES AND HANDLING
+
+8.1 Video Content. Source Files for video content shall be provided in
+industry-standard formats including MP4, MOV, MXF, or ProRes, accompanied by
+dialogue lists, time-coded scripts, or bilingual transcripts as available.
+The Service Provider shall confirm receipt and technical suitability of video
+Source Files within forty-eight (48) hours.
+
+8.2 Audio Content. Voice-over and dubbing-related translations shall be
+performed from audio Source Files provided in WAV, AIFF, or MP3 format, or
+from transcripts prepared by the Client. The Service Provider shall flag any
+audio quality issues that may impede accurate transcription or translation.
+
+8.3 Print and Digital Marketing. Marketing materials shall be provided in
+editable source formats (InDesign, Illustrator, Photoshop, Figma, or
+equivalent) to enable accurate text replacement and layout preservation. The
+Service Provider shall not be responsible for design modifications beyond
+text replacement unless specifically instructed.
+
+8.4 Social Media. Social media content translations shall account for
+platform-specific character limits, hashtag conventions, emoji usage, and
+cultural sensitivities. The Service Provider shall propose culturally
+appropriate alternatives when direct translation of social media content would
+be ineffective or inappropriate in the target market.
+
+9. CULTURAL ADAPTATION
+
+9.1 Transcreation. For marketing materials, advertising copy, and creative
+content, the Service Provider shall provide transcreation services that go
+beyond literal translation to preserve the emotional impact, brand voice, and
+cultural relevance of the original content. Transcreation deliverables may
+include alternative messaging concepts, adapted taglines, and culturally
+localized imagery recommendations.
+
+9.2 Sensitivity Review. The Service Provider shall conduct cultural
+sensitivity reviews for all content destined for markets with known cultural,
+religious, political, or regulatory sensitivities. The sensitivity review
+shall identify potentially offensive, inappropriate, or non-compliant content
+and recommend appropriate modifications prior to delivery.
+
+10. PROJECT MANAGEMENT
+
+10.1 Turnaround Times. Standard turnaround times shall be determined based on
+content type, word count, and language tier, as specified in the applicable
+project instructions or as mutually agreed. Unless otherwise agreed, the
+Service Provider shall acknowledge receipt of all project requests within four
+(4) business hours and provide an estimated delivery date within eight (8)
+business hours.
+
+10.2 Communication Protocols. The Service Provider shall designate a dedicated
+Project Manager as the primary point of contact for the Client. The Project
+Manager shall be available during the Client's business hours (9:00 AM to
+6:00 PM Eastern Time, Monday through Friday) and shall respond to all
+communications within two (2) business hours.
+
+10.3 Status Reporting. The Service Provider shall provide weekly status
+reports summarizing active projects, upcoming deadlines, resource allocation,
+and any issues or risks requiring the Client's attention.
+
+11. REVISION POLICY
+
+11.1 Rework Limits. The Service Provider shall perform one (1) round of
+rework at no additional cost for any delivered project that does not meet the
+applicable LQA score threshold specified in Section 5.1, provided that the
+Client's feedback is submitted within fifteen (15) business days of delivery
+and is specific, actionable, and consistent with the agreed Style Guide.
+
+11.2 Change Requests. Revisions arising from changes to the Source Files,
+modifications to the Style Guide, or alterations to project scope or
+requirements initiated by the Client after work has commenced shall be
+treated as change requests and shall be subject to additional fees at the
+applicable rates.
+
+12. TERM
+
+12.1 Initial Term. This Agreement shall commence on the Effective Date and
+shall continue for a period of twenty-four (24) months, concluding on February
+28, 2027 (the "Initial Term"), unless earlier terminated in accordance with
+the provisions of Section 17.
+
+12.2 Automatic Renewal. Upon expiration of the Initial Term and each
+subsequent renewal term, this Agreement shall automatically renew for
+successive periods of twelve (12) months (each a "Renewal Term"), unless
+either party provides written notice of non-renewal to the other party at
+least sixty (60) calendar days prior to the expiration of the then-current
+term.
+
+12.3 Effect of Termination. Expiration or termination of this Agreement shall
+not affect any provisions that by their nature are intended to survive
+termination, including without limitation Sections 14 (Intellectual Property),
+15 (Confidentiality), 18 (Liability), 19 (Dispute Resolution), 20 (Governing
+Law), and 21 (General Provisions).
+
+13. COMPENSATION
+
+13.1 Per-Word Pricing — Tier 1 Languages. For translations into Tier 1
+Languages (Spanish, French, German, Portuguese, Italian, Dutch, and Swedish),
+the Client shall pay the Service Provider a rate of twelve cents ($0.12) per
+source word for standard TEP services. Tier 1 rates apply to content in
+languages using Latin-based scripts with established localization industry
+infrastructure and mature translation memory coverage.
+
+13.2 Per-Word Pricing — Tier 2 Languages. For translations into Tier 2
+Languages (Japanese, Korean, and Mandarin Chinese), the Client shall pay the
+Service Provider a rate of eighteen cents ($0.18) per source word for standard
+TEP services. Tier 2 rates reflect the additional complexity of CJK character
+sets, the smaller pool of qualified media localization linguists, and the
+heightened quality requirements for East Asian market content distribution.
+
+13.3 Per-Word Pricing — Tier 3 Languages. For translations into Tier 3
+Languages (Arabic, Hindi, Thai, and Turkish), the Client shall pay the
+Service Provider a rate of fifteen cents ($0.15) per source word for standard
+TEP services. Tier 3 rates account for script complexity (including
+right-to-left rendering for Arabic), limited TM leverage due to morphological
+richness, and the specialized expertise required for accurate localization.
+
+13.4 Rush Surcharge. For any Rush Project (as defined in Section 2.17), the
+Service Provider shall apply a surcharge of fifty percent (50%) to the
+applicable per-word rate for the relevant language tier. The Service Provider
+shall confirm its capacity to accept a Rush Project within two (2) business
+hours of receiving the request.
+
+13.5 Minimum Monthly Engagement. The Client agrees to a minimum monthly
+engagement of eight thousand dollars ($8,000.00). In any calendar month during
+which the total fees for services rendered are less than the minimum monthly
+engagement, the Client shall pay the difference between the actual fees and
+the minimum monthly engagement amount. The minimum monthly engagement shall
+apply from the first full calendar month following the Effective Date.
+
+13.6 Payment Terms. Invoices shall be submitted monthly and shall be payable
+by the Client within forty-five (45) calendar days of receipt. Invoices shall
+include a detailed breakdown of services rendered by content type, language,
+and word count.
+
+13.7 Transcreation and Creative Services. Rates for transcreation and creative
+adaptation services shall be quoted on a per-project basis and documented in
+the applicable project instructions or Statement of Work.
+
+14. DELIVERABLES AND MILESTONES
+
+14.1 Translation Glossary and Style Guide. Within sixty (60) calendar days of
+the Effective Date, the Service Provider shall deliver a comprehensive
+translation glossary and style guide for each of the fourteen (14) target
+languages, developed in consultation with the Client and incorporating the
+Client's brand guidelines, terminology preferences, and stylistic requirements.
+
+14.2 Quality Assurance Framework. Within forty-five (45) calendar days of the
+Effective Date, the Service Provider shall deliver a detailed Quality Assurance
+Framework document specifying the LQA scoring methodology, error categorization
+taxonomy, sampling procedures, escalation protocols, and remediation workflows
+to be applied to all projects under this Agreement.
+
+14.3 First Content Delivery Batch. Within ninety (90) calendar days of the
+Effective Date, the Service Provider shall deliver the first batch of
+translated content, comprising a mutually agreed set of Source Files
+representative of the content types and target languages to be covered under
+this Agreement, subject to the Client's timely provision of such Source Files.
+
+14.4 Monthly Volume Reports. On an ongoing basis throughout the term of this
+Agreement, the Service Provider shall deliver monthly volume reports summarizing
+the total words translated by content type, target language, and project
+classification, along with LQA scores, turnaround time performance, and TM
+leverage statistics.
+
+15. INTELLECTUAL PROPERTY
+
+15.1 Client Ownership of Translated Content. All translated, localized,
+transcreated, and adapted content produced by the Service Provider specifically
+for the Client under this Agreement (collectively, "Deliverables") shall become
+the sole and exclusive property of the Client upon full payment for the services
+giving rise to such Deliverables. The Service Provider hereby assigns and
+transfers to the Client all right, title, and interest in and to all Deliverables.
+
+15.2 Service Provider Retained IP. The Service Provider shall retain all right,
+title, and interest in its translation memory databases, glossaries, machine
+translation engines, CAT tool configurations, quality assurance frameworks,
+linguistic processing algorithms, TMS platforms, and other tools, databases,
+and processes developed independently of this Agreement or utilized across
+multiple client engagements (collectively, "Service Provider IP").
+
+15.3 Translation Memory License. Notwithstanding Section 15.2, the Client shall
+receive a perpetual, non-exclusive, non-transferable license to use the
+translation memory segments generated from the Client's Source Files under this
+Agreement (the "Client TM License"). The Client TM License permits the Client
+to use such translation memory segments for its own translation and localization
+activities, including engagement of alternative service providers, but does not
+permit the sale, sublicensing, or distribution of such segments to third parties
+unrelated to the Client's content localization needs.
+
+15.4 Restrictions. The Service Provider shall not use the Client's Source Files
+or Deliverables to train, fine-tune, or improve any machine translation engine,
+AI model, or automated translation system without the Client's prior written
+consent. The Service Provider shall not incorporate Client-specific translation
+memory segments into general-purpose translation databases accessible to or
+shared with other clients.
+
+16. CONFIDENTIALITY
+
+16.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Neither party shall disclose, publish, or otherwise reveal
+Confidential Information to any third party without the prior written consent
+of the disclosing party, except as required by law, regulation, legal process,
+or court order.
+
+16.2 Duration. The obligations of confidentiality set forth in this Section 16
+shall survive the expiration or termination of this Agreement for a period of
+five (5) years.
+
+16.3 Content Security. The Service Provider shall implement industry-standard
+security measures for the storage, transmission, and processing of the Client's
+Confidential Information, including encryption in transit and at rest, access
+controls, audit logging, and secure deletion protocols for content no longer
+required for the performance of services under this Agreement.
+
+17. TERMINATION
+
+17.1 Termination for Convenience. Either party may terminate this Agreement
+for convenience upon sixty (60) calendar days' prior written notice to the
+other party.
+
+17.2 Termination for Cause. Either party may terminate this Agreement for cause
+if the other party commits a material breach of any provision of this Agreement
+and fails to cure such breach within twenty (20) calendar days after receiving
+written notice specifying the nature of the breach in reasonable detail.
+
+17.3 Effect of Termination. Upon termination or expiration of this Agreement,
+the Service Provider shall (a) deliver all completed and in-progress
+Deliverables to the Client, (b) return or securely destroy all Client
+Confidential Information in its possession, and (c) provide reasonable
+transition assistance to facilitate the Client's engagement of a successor
+provider.
+
+18. LIABILITY
+
+18.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING
+BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS
+OPPORTUNITY, BUSINESS INTERRUPTION, OR LOSS OF GOODWILL, ARISING OUT OF OR
+RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER, REGARDLESS
+OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY, ANY
+OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES.
+
+18.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed an amount
+equal to three (3) times the total fees paid by the Client to the Service
+Provider during the six (6) calendar month period immediately preceding the
+event giving rise to the claim, regardless of the form of action or legal
+theory.
+
+19. INSURANCE
+
+19.1 Required Coverage. Throughout the term of this Agreement, the Service
+Provider shall maintain, at its sole cost and expense, professional liability
+(errors and omissions) insurance in an amount not less than one million dollars
+($1,000,000) per occurrence, covering claims arising from negligent acts,
+errors, or omissions in the provision of translation and localization services
+under this Agreement.
+
+19.2 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies. Such certificates shall
+provide that the Client shall receive thirty (30) days' prior written notice of
+any cancellation, material modification, or non-renewal.
+
+20. DISPUTE RESOLUTION
+
+20.1 Arbitration. Any dispute arising out of or relating to this Agreement
+that cannot be resolved through good faith negotiation between the parties
+shall be submitted to binding arbitration administered by JAMS (Judicial
+Arbitration and Mediation Services) in New York, New York, in accordance
+with the JAMS Comprehensive Arbitration Rules then in effect.
+
+20.2 Arbitrator Selection. The arbitration shall be conducted by a single
+arbitrator with experience in commercial services disputes, selected in
+accordance with the JAMS rules. The arbitrator's decision shall be final and
+binding, and judgment upon the award may be entered in any court of competent
+jurisdiction.
+
+20.3 Costs. Each party shall bear its own costs and attorney's fees in any
+arbitration proceeding, unless the arbitrator determines that a party's claims
+or defenses were frivolous or brought in bad faith.
+
+21. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the State of New York, without giving effect to any choice-of-law or
+conflict-of-law provisions that would require the application of the laws of
+any jurisdiction other than the State of New York.
+
+22. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A:  Language Tier List — Classification of Target Languages by
+                Complexity Tier and Applicable Per-Word Rates
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B:  Rate Card — Detailed Pricing by Language Tier, Content Type,
+                and Service Category
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C:  LQA Scorecard — Linguistic Quality Assurance Scoring
+                Methodology, Error Taxonomy, and Minimum Thresholds
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+23. GENERAL PROVISIONS
+
+23.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the
+subject matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written,
+between the parties relating to such subject matter.
+
+23.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+23.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the
+other party, except that either party may assign this Agreement to a successor
+entity in connection with a merger, acquisition, or sale of all or
+substantially all of its assets, provided that the assignee assumes all
+obligations of the assigning party under this Agreement.
+
+23.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such
+provision shall be modified to the minimum extent necessary to make it valid
+and enforceable, and the remaining provisions of this Agreement shall continue
+in full force and effect.
+
+23.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+23.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally,
+(b) sent by certified mail, return receipt requested, (c) sent by nationally
+recognized overnight courier, or (d) sent by email with confirmation of
+receipt, to the addresses set forth in Section 1 or such other address as
+either party may designate in writing.
+
+23.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+23.8 Force Majeure. Neither party shall be liable for any failure or delay in
+the performance of its obligations under this Agreement to the extent that
+such failure or delay is caused by circumstances beyond the reasonable control
+of the affected party, including but not limited to acts of God, natural
+disasters, pandemics, government actions, labor disputes, civil unrest, war,
+terrorism, and power or telecommunications failures.
+
+23.9 Records Retention. The Service Provider shall maintain all records,
+working papers, correspondence, and project files generated or received in
+connection with the performance of services under this Agreement for a period
+of not less than five (5) years following the completion or termination of
+this Agreement, or such longer period as may be required by applicable law.
+
+23.10 Subcontractor Management. The Service Provider may engage qualified
+subcontractor linguists to perform translation, editing, or proofreading
+services under this Agreement, provided that (a) all subcontractors are bound
+by confidentiality obligations no less restrictive than those set forth in
+Section 16, (b) all subcontractor work undergoes the same quality assurance
+processes as work performed by the Service Provider's direct employees, and
+(c) the Service Provider remains fully responsible for the quality and
+timeliness of all subcontracted services.
+
+24. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Translation and
+Localization Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+LinguaGlobal Translations Inc., a New York corporation
+
+
+By: ______________________________________
+Name: Hiroshi Tanaka
+Title: Chief Executive Officer
+Date: February 25, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Margaret Chen
+Title: General Counsel
+Date: February 25, 2025
+
+
+CLIENT:
+
+GlobalReach Media Corp., a New York corporation
+
+
+By: ______________________________________
+Name: Catherine Alvarez
+Title: SVP International Content
+Date: February 27, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: David Okonkwo
+Title: VP Legal Affairs
+Date: February 27, 2025

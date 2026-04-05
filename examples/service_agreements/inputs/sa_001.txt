@@ -1,0 +1,331 @@
+MASTER SERVICE AGREEMENT AND OPERATIONAL FRAMEWORK
+
+Agreement Number: SA-2025-001
+Effective Date: January 15, 2025
+
+PREAMBLE AND RECITALS
+
+WHEREAS, the parties desire to establish a comprehensive framework for the delivery of managed technology services, including but not limited to cloud infrastructure management, monitoring, incident response, and related technical support functions;
+
+WHEREAS, the global cloud computing market has experienced sustained double-digit growth over the past decade, with enterprise adoption of public cloud infrastructure accelerating across all industry verticals, driven by the need for operational agility, cost optimization, and the ability to rapidly scale computing resources in response to fluctuating demand patterns;
+
+WHEREAS, multi-cloud strategies have become increasingly prevalent among enterprises seeking to avoid vendor lock-in, optimize workload placement across heterogeneous environments, leverage best-of-breed services from multiple cloud service providers, and ensure business continuity through geographic and architectural diversification of critical workloads;
+
+WHEREAS, the Service Provider possesses specialized expertise in enterprise-grade cloud operations, multi-region architecture design, and scalable infrastructure deployment across major public cloud platforms including Amazon Web Services, Microsoft Azure, and Google Cloud Platform;
+
+WHEREAS, the e-commerce industry has undergone transformative growth, with global online retail sales exceeding five trillion United States dollars annually, creating unprecedented demand for highly available, low-latency, and secure infrastructure capable of supporting millions of concurrent transactions, dynamic content delivery, and real-time inventory management across distributed geographic markets;
+
+WHEREAS, infrastructure security has emerged as a board-level concern for organizations of all sizes, with the increasing sophistication of cyber threats, the expanding regulatory landscape governing data protection and privacy, and the growing reliance on third-party service providers necessitating comprehensive security frameworks, continuous monitoring, and robust access controls throughout the technology supply chain;
+
+WHEREAS, the Client operates a high-traffic e-commerce platform serving customers across North America, Europe, and the Asia-Pacific region, and requires reliable, secure, and performant infrastructure to support its business operations;
+
+WHEREAS, both parties wish to define their respective rights, obligations, and responsibilities in connection with the services described herein, as well as to establish clear communication protocols, escalation procedures, and performance metrics;
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements set forth herein, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the parties agree as follows:
+
+DEFINITIONS AND INTERPRETATIONS
+
+1.1 "Affiliate" means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where "control" means ownership of more than fifty percent (50%) of the voting securities or equivalent voting interest of such entity.
+
+1.2 "Auto-Scaling" means the automated process of dynamically adjusting the number of compute resources, such as virtual machines or container instances, allocated to a given workload in response to real-time demand signals, predefined metric thresholds, or scheduled scaling policies, thereby ensuring optimal resource utilization and cost efficiency.
+
+1.3 "Availability Zone" or "AZ" means a logically isolated data center or set of data centers within a specific geographic region, designed to be insulated from failures in other Availability Zones, providing a foundation for deploying highly available and fault-tolerant application architectures that can withstand localized infrastructure disruptions.
+
+1.4 "BGP" or "Border Gateway Protocol" means the standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems on the Internet, commonly utilized in enterprise network architectures for managing traffic routing between on-premises environments and cloud provider networks via direct connect or virtual private network connections.
+
+1.5 "Business Day" means any day other than a Saturday, Sunday, or a day on which banking institutions in Austin, Texas are authorized or required by law or executive order to remain closed.
+
+1.6 "CDN" or "Content Delivery Network" means a geographically distributed network of proxy servers and their associated data centers, designed to serve content to end users with high availability and high performance by caching content at edge locations in proximity to the requesting users, thereby reducing latency, bandwidth consumption, and server load.
+
+1.7 "Confidential Information" means any and all non-public information, whether in oral, written, electronic, graphic, or other form, disclosed by one party (the "Disclosing Party") to the other party (the "Receiving Party"), including but not limited to: trade secrets, proprietary algorithms, customer data, financial information, business plans, marketing strategies, technical specifications, source code, configuration details, security protocols, network topology diagrams, performance metrics, and any information designated as confidential by the Disclosing Party.
+
+1.8 "Containerization" means the lightweight virtualization technology that encapsulates an application and its dependencies into a self-contained, portable unit, enabling consistent execution across heterogeneous computing environments, from developer workstations to production clusters, while sharing the host operating system kernel to minimize overhead and maximize density.
+
+1.9 "Deliverables" means any and all work product, reports, documentation, configurations, scripts, tools, and other materials produced or developed by the Service Provider in the course of performing the Services.
+
+1.10 "DNS" or "Domain Name System" means the hierarchical and decentralized naming system used to translate human-readable domain names into machine-readable IP addresses, serving as a foundational component of internet infrastructure and enterprise network architecture, including the management of public DNS zones, private DNS resolution within virtual private clouds, and health-check-based routing configurations.
+
+1.11 "Egress" means outbound network traffic originating from within a cloud environment, virtual private cloud, or data center and destined for external endpoints, including the Internet, on-premises networks, or other cloud environments, with egress traffic typically subject to data transfer charges imposed by cloud service providers.
+
+1.12 "Force Majeure" means any event or circumstance beyond the reasonable control of the affected party, including but not limited to: acts of God, natural disasters, pandemics, epidemics, war, terrorism, riots, civil unrest, government actions, strikes, labor disputes, power outages, internet outages, telecommunications failures, cyber attacks (other than those caused by the affected party's negligence), and failures of third-party service providers.
+
+1.13 "IaC" or "Infrastructure as Code" means the practice of managing and provisioning computing infrastructure through machine-readable definition files rather than through manual processes or interactive configuration tools, enabling version-controlled, repeatable, and auditable infrastructure deployment pipelines that align with modern DevOps and site reliability engineering practices.
+
+1.14 "Incident" means any event that causes or may cause a disruption, degradation, or interruption of the Client's infrastructure or services, including but not limited to: server outages, network failures, security breaches, performance degradation exceeding defined thresholds, data corruption, and configuration errors.
+
+1.15 "Kubernetes" means an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications, providing declarative configuration, self-healing capabilities, service discovery, load balancing, rolling updates, and rollback functionality across clusters of machines.
+
+1.16 "Load Balancer" means a network device or software-based service that distributes incoming network traffic across multiple backend servers or compute instances to optimize resource utilization, maximize throughput, minimize response time, and ensure high availability by detecting and routing around failed or unhealthy backend targets.
+
+1.17 "Microservices" means an architectural style in which a software application is structured as a collection of loosely coupled, independently deployable services, each owning a specific business capability and communicating through well-defined APIs, enabling teams to develop, deploy, and scale individual services independently.
+
+1.18 "Multi-Tenant" means a software architecture in which a single instance of a software application serves multiple customers or tenant organizations, with logical isolation mechanisms ensuring that each tenant's data, configuration, and performance are segregated from those of other tenants sharing the same underlying infrastructure.
+
+1.19 "RPO" or "Recovery Point Objective" means the maximum tolerable period in which data might be lost from an IT service due to a major incident, representing the point in time to which data must be recovered after an outage or failure event, as measured in units of time.
+
+1.20 "RTO" or "Recovery Time Objective" means the targeted maximum duration of time within which a business process or IT service must be restored after a disruption to avoid unacceptable consequences, representing the maximum acceptable downtime threshold for critical systems and services.
+
+1.21 "Services" means the cloud infrastructure management services described in Section 3 of this Agreement, together with any modifications or additions thereto as mutually agreed upon by the parties in writing.
+
+1.22 "SLA" means the Service Level Agreement attached hereto as Exhibit A, which sets forth the specific performance standards, response times, resolution times, and availability targets applicable to the Services.
+
+1.23 "Specifications" means the technical requirements, performance criteria, and functional descriptions set forth in Exhibit B attached hereto, as may be amended from time to time by mutual written agreement of the parties.
+
+1.24 "SRE" or "Site Reliability Engineering" means a discipline that applies software engineering principles to infrastructure and operations problems, aiming to create scalable and reliable software systems through the implementation of service level objectives, error budgets, incident management practices, and progressive automation of operational tasks.
+
+1.25 "Terraform" means an open-source infrastructure-as-code tool created by HashiCorp that enables users to define cloud and on-premises resources in human-readable configuration files that can be versioned, reused, and shared, managing the full lifecycle of infrastructure through a declarative plan-and-apply workflow.
+
+1.26 "VPC" or "Virtual Private Cloud" means a logically isolated section of a public cloud provider's network where cloud resources can be launched in a virtual network that the user defines, complete with private IP address ranges, subnets, route tables, network gateways, and security settings that provide granular control over network access and traffic flow.
+
+PARTIES
+
+This Agreement is entered into by and between:
+
+NovaTech Solutions Inc., a corporation duly organized, validly existing, and in good standing under the laws of the State of Delaware, with its principal office and place of business located at 450 Innovation Drive, Suite 300, Austin, TX 78701, and its registered agent for service of process being CT Corporation System, 1209 Orange Street, Wilmington, DE 19801 (hereinafter referred to as "Service Provider" or "NovaTech");
+
+AND
+
+GreenLeaf Retail Corp., a corporation duly organized, validly existing, and in good standing under the laws of the State of California, with its principal office and place of business located at 2200 Commerce Boulevard, Los Angeles, CA 90012, and its registered agent being Corporation Service Company, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833 (hereinafter referred to as "Client" or "GreenLeaf").
+
+The Service Provider and the Client are individually referred to as a "Party" and collectively as the "Parties."
+
+2. REPRESENTATIONS AND WARRANTIES OF THE PARTIES
+
+2.1 Each Party represents and warrants that it has full power and authority to enter into this Agreement and to perform its obligations hereunder. The execution, delivery, and performance of this Agreement by each Party has been duly authorized by all necessary corporate action and does not contravene any law, regulation, or contractual obligation binding upon such Party.
+
+2.2 Each Party represents and warrants that this Agreement constitutes a legal, valid, and binding obligation enforceable against it in accordance with its terms, subject to applicable bankruptcy, insolvency, and other laws affecting creditors' rights generally.
+
+2.3 The Service Provider represents and warrants that it has and will maintain throughout the term of this Agreement all necessary licenses, certifications, and qualifications required to perform the Services, including but not limited to AWS Advanced Tier Partner status, Microsoft Azure Solutions Partner certification, and Google Cloud Partner designation.
+
+2.4 The Service Provider represents and warrants that all personnel assigned to perform the Services possess the requisite training, experience, and certifications to perform their respective duties in a professional and competent manner.
+
+2.5 The Client represents and warrants that it has provided or will provide to the Service Provider accurate and complete information regarding its existing infrastructure, applications, security requirements, and any other information reasonably requested by the Service Provider to perform the Services.
+
+3. SCOPE OF SERVICES
+
+3.1 General Description. The Service Provider shall provide cloud infrastructure management services including server provisioning, monitoring, incident response, and 24/7 technical support for the Client's e-commerce platform. The Services shall be performed in accordance with the Specifications and the SLA.
+
+3.2 Detailed Services. Without limiting the generality of the foregoing, the Services shall include the following:
+    (a) Provisioning, configuration, and management of cloud servers across the Client's designated cloud environments;
+    (b) Implementation and maintenance of monitoring systems, including infrastructure monitoring, application performance monitoring, log aggregation, and alerting;
+    (c) Incident detection, triage, response, and resolution in accordance with the severity levels and response times set forth in the SLA;
+    (d) Twenty-four (24) hours per day, seven (7) days per week, three hundred sixty-five (365) days per year technical support, staffed by qualified engineers;
+    (e) Regular security patching, vulnerability scanning, and compliance monitoring;
+    (f) Capacity planning, performance optimization, and scalability recommendations;
+    (g) Monthly reporting on infrastructure health, incident statistics, performance metrics, and recommended improvements.
+
+3.3 Excluded Services. The following are expressly excluded from the Services and shall be subject to separate engagement and fees if requested by the Client: (a) application development and maintenance; (b) database administration beyond infrastructure-level support; (c) end-user helpdesk support; (d) network design and engineering beyond the cloud environment; (e) disaster recovery planning and implementation; (f) migration of legacy on-premises systems to the cloud.
+
+4. TERM
+
+This Agreement shall commence on the Effective Date and continue for a period of twenty-four (24) months, unless earlier terminated in accordance with Section 11. Upon expiration of the initial term, this Agreement shall not automatically renew and shall expire unless the Parties execute a written extension or new agreement at least sixty (60) days prior to expiration.
+
+5. COMPENSATION AND PAYMENT TERMS
+
+5.1 Monthly Service Fee. The Client shall pay the Service Provider a monthly fee of $12,500.00, due within thirty (30) days of receipt of invoice. Invoices shall be submitted monthly on the first business day of each calendar month.
+
+5.2 Setup Fee. A one-time setup fee of $5,000.00 shall be due upon execution of this Agreement. The setup fee covers initial environment assessment, access provisioning, documentation review, and onboarding activities.
+
+5.3 Taxes. All fees stated herein are exclusive of applicable taxes. The Client shall be responsible for any sales tax, use tax, value-added tax, goods and services tax, or similar taxes levied by any governmental authority in connection with the Services, except for taxes based on the Service Provider's net income.
+
+5.4 Late Payment. Any amounts not paid within thirty (30) days of the due date shall accrue interest at the rate of 1.5% per month (or the maximum rate permitted by applicable law, if less), compounded monthly, from the due date until paid in full.
+
+5.5 Expense Reimbursement. The Service Provider shall not be entitled to reimbursement for travel, lodging, meals, or other out-of-pocket expenses unless expressly pre-approved in writing by the Client.
+
+6. MILESTONES AND DELIVERABLES
+
+6.1 The following milestones shall be achieved by the Service Provider:
+
+    Milestone 1: Initial deployment and configuration of monitoring and alerting systems shall be completed within thirty (30) days of the Effective Date. Completion shall be measured by the successful deployment of all monitoring agents, the configuration of alert thresholds in accordance with the Specifications, and the delivery of a baseline infrastructure assessment report.
+
+    Milestone 2: Full monitoring setup including application performance monitoring, log aggregation pipeline, and custom dashboard creation shall be completed within forty-five (45) days of the Effective Date. Completion shall be confirmed by the Client's written acceptance of the monitoring setup documentation.
+
+    Milestone 3: Performance baseline establishment, including the collection of at least thirty (30) consecutive days of performance data, the identification of normal operating ranges for all critical metrics, and the delivery of a comprehensive baseline report shall be completed within sixty (60) days of the Effective Date.
+
+7. INTELLECTUAL PROPERTY
+
+7.1 Ownership. All intellectual property developed by the Service Provider in the course of performing services under this Agreement shall remain the exclusive property of the Service Provider. This includes, without limitation, any methodologies, frameworks, automation scripts, monitoring configurations, runbooks, troubleshooting procedures, and tools created or enhanced by the Service Provider.
+
+7.2 License Grant. The Client receives a non-exclusive, non-transferable, revocable license to use any tools, scripts, or configurations delivered during the engagement solely for the purpose of operating and maintaining the Client's infrastructure for the duration of this Agreement and any subsequent extension or renewal.
+
+7.3 Pre-Existing IP. Each Party shall retain all right, title, and interest in and to its respective pre-existing intellectual property. Nothing in this Agreement shall be construed as an assignment or transfer of any pre-existing intellectual property from one Party to the other.
+
+7.4 Third-Party IP. The Service Provider may use third-party software, tools, and services in the performance of the Services, subject to the terms and conditions of the applicable third-party licenses. The Service Provider shall ensure that the use of such third-party intellectual property does not create any additional obligations or liabilities for the Client.
+
+8. CONFIDENTIALITY
+
+8.1 Confidentiality Obligations. Both parties agree to maintain the confidentiality of all proprietary information disclosed during the term of this Agreement. Each Party shall use at least the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care.
+
+8.2 Duration. The confidentiality obligations set forth in this Section shall survive the expiration or termination of this Agreement for a period of five (5) years following the date of such expiration or termination.
+
+8.3 Exceptions. Confidentiality obligations shall not apply to information that: (a) is or becomes publicly available through no fault of the Receiving Party; (b) was in the Receiving Party's possession prior to disclosure by the Disclosing Party; (c) is independently developed by the Receiving Party without reference to the Confidential Information; (d) is rightfully obtained from a third party without restriction on disclosure; or (e) is required to be disclosed by law, regulation, or court order, provided that the Receiving Party gives prompt written notice to the Disclosing Party to allow the Disclosing Party to seek a protective order.
+
+9. COMPLIANCE WITH LAWS
+
+9.1 Each Party shall comply with all applicable federal, state, local, and foreign laws, regulations, and ordinances in the performance of its obligations under this Agreement, including but not limited to data protection laws such as the California Consumer Privacy Act (CCPA), the General Data Protection Regulation (GDPR) to the extent applicable, and the Payment Card Industry Data Security Standard (PCI DSS).
+
+9.2 The Service Provider shall maintain an information security program that meets industry-recognized standards, including but not limited to SOC 2 Type II compliance, and shall provide evidence of such compliance upon the Client's reasonable request.
+
+10. INSURANCE
+
+10.1 The Service Provider shall maintain, at its own expense, the following insurance coverage throughout the term of this Agreement: (a) Commercial General Liability insurance with limits of not less than $2,000,000.00 per occurrence and $5,000,000.00 in the aggregate; (b) Professional Liability (Errors and Omissions) insurance with limits of not less than $3,000,000.00 per claim and $5,000,000.00 in the aggregate; (c) Cyber Liability insurance with limits of not less than $5,000,000.00 per occurrence; (d) Workers' Compensation insurance as required by applicable law; and (e) Employers' Liability insurance with limits of not less than $1,000,000.00.
+
+10.2 The Service Provider shall provide certificates of insurance evidencing the required coverage to the Client upon execution of this Agreement and upon each renewal. Such certificates shall provide that the Client shall receive thirty (30) days' prior written notice of cancellation, non-renewal, or material change.
+
+11. TERMINATION
+
+11.1 General. Either party may terminate this Agreement upon sixty (60) days written notice to the other party. In the event of termination, the Client shall pay all fees accrued through the date of termination.
+
+11.2 For Cause. Either party may terminate this Agreement immediately upon written notice if the other party materially breaches any provision of this Agreement and fails to cure such breach within fifteen (15) days after receiving written notice thereof.
+
+11.3 Effect of Termination. Upon termination or expiration of this Agreement: (a) the Service Provider shall promptly return or destroy all Confidential Information belonging to the Client; (b) the Service Provider shall cooperate with the Client in transitioning the Services to a successor provider or to the Client's internal team, at the Client's expense; (c) the Client shall pay all outstanding fees and expenses through the effective date of termination.
+
+12. LIMITATION OF LIABILITY
+
+12.1 Cap on Liability. The Service Provider's total aggregate liability under this Agreement, whether in contract, tort, strict liability, or otherwise, shall not exceed the total fees paid by the Client in the twelve (12) months immediately preceding the event giving rise to the claim.
+
+12.2 Exclusion of Consequential Damages. The Service Provider shall not be liable for any indirect, incidental, special, consequential, punitive, or exemplary damages, including but not limited to loss of profits, loss of revenue, loss of data, loss of business opportunities, business interruption, or reputational harm, regardless of whether such damages were foreseeable or whether either Party was advised of the possibility thereof.
+
+12.3 Sole Remedy. The limitations set forth in this Section shall apply to the maximum extent permitted by applicable law. In no event shall the Service Provider's total aggregate liability exceed the cap described in Section 12.1.
+
+13. INDEMNIFICATION
+
+13.1 Service Provider Indemnification. The Service Provider shall indemnify, defend, and hold harmless the Client and its officers, directors, employees, agents, successors, and assigns from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) the Service Provider's breach of this Agreement; (b) the Service Provider's negligence or willful misconduct in the performance of the Services; (c) any claim that the Services or Deliverables infringe upon the intellectual property rights of any third party.
+
+13.2 Client Indemnification. The Client shall indemnify, defend, and hold harmless the Service Provider and its officers, directors, employees, agents, successors, and assigns from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) the Client's breach of this Agreement; (b) the Client's negligence or willful misconduct; (c) any claim that the Client's materials or data provided to the Service Provider infringe upon the intellectual property rights of any third party.
+
+14. DISPUTE RESOLUTION
+
+14.1 Negotiation. In the event of any dispute arising out of or relating to this Agreement, the Parties shall first attempt to resolve such dispute through good faith negotiation between senior executives of each Party. Such negotiation shall be initiated by written notice from one Party to the other and shall continue for a period of not less than thirty (30) days.
+
+14.2 Mediation. If the dispute is not resolved through negotiation within the thirty-day period, either Party may submit the dispute to non-binding mediation administered by a mutually agreed mediator in Austin, Texas. The costs of mediation shall be shared equally between the Parties.
+
+14.3 Litigation. If the dispute is not resolved through mediation within sixty (60) days of commencement of mediation, either Party may pursue any available legal or equitable remedies in the state or federal courts located in Travis County, Texas, and each Party hereby consents to the personal jurisdiction of such courts.
+
+15. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of laws principles. The United Nations Convention on Contracts for the International Sale of Goods shall not apply to this Agreement.
+
+16. TECHNOLOGY ENVIRONMENT
+
+16.1 Cloud Platform Overview. The Client's production environment operates across a multi-cloud footprint spanning Amazon Web Services and Microsoft Azure. The primary production workloads are hosted in AWS regions us-east-1 (N. Virginia) and us-west-2 (Oregon), with Azure serving as a secondary environment for disaster recovery and non-production workloads. The AWS environment comprises a VPC with CIDR block 10.0.0.0/16 subdivided into public, private, and isolated subnets across three Availability Zones. Network traffic between Availability Zones is routed through AWS Transit Gateway, with cross-region traffic utilizing AWS Global Accelerator endpoints for optimal latency and failover capability.
+
+16.2 Compute Architecture. The Client's application tier consists of Kubernetes clusters deployed using Amazon Elastic Kubernetes Service (EKS) with managed node groups spanning multiple instance families including m6i.xlarge for general-purpose workloads, c6i.2xlarge for compute-intensive microservices, and r6i.xlarge for memory-cached session management nodes. The Kubernetes clusters are configured with cluster autoscaler and horizontal pod autoscaler policies targeting CPU utilization thresholds of sixty-five percent (65%) for scale-out triggers and thirty percent (30%) for scale-in operations, with a minimum of three (3) replicas per critical service and a maximum ceiling of twenty (20) pods per deployment.
+
+16.3 Storage and Data Layer. Persistent data is stored across multiple AWS storage services: Amazon Aurora PostgreSQL clusters with read replicas in each Availability Zone for transactional workloads, Amazon DynamoDB tables with on-demand capacity mode for session state and caching, and Amazon S3 buckets with server-side encryption using AWS KMS customer-managed keys for static asset storage, log archival, and backup data. Database backups are retained for thirty-five (35) days with point-in-time recovery enabled, and cross-region snapshots are replicated to the us-west-2 region on a daily basis.
+
+16.4 Monitoring and Observability Stack. The observability infrastructure is built on a combination of open-source and commercial tools. Infrastructure and application metrics are collected via Prometheus using the Thanos long-term storage extension, with Grafana dashboards providing visualization and alerting interfaces. Log aggregation is handled by a Fluentd-based pipeline that collects, transforms, and routes logs from Kubernetes pods, AWS CloudTrail, and VPC Flow Logs to an Amazon OpenSearch Service cluster. Distributed tracing is implemented using Jaeger with OpenTelemetry instrumentation across all microservices. Alerting is managed through PagerDuty with integration to Slack channels and email notification groups.
+
+16.5 Networking and Edge Infrastructure. External traffic enters the Client's infrastructure through Amazon CloudFront distributions configured with custom TLS certificates provisioned via AWS Certificate Manager. Origin requests are routed to an Application Load Balancer in the public subnet, which distributes traffic to Kubernetes Ingress controllers. DNS management is handled via Amazon Route 53 with latency-based routing policies and health checks configured at ten-second (10s) intervals. Internal service-to-service communication within the Kubernetes cluster utilizes CoreDNS for service discovery, with Istio service mesh providing mutual TLS encryption and traffic management policies for inter-service communication.
+
+16.6 CI/CD and Deployment Pipeline. The Client maintains a continuous integration and continuous deployment pipeline utilizing GitHub Actions for build automation, with Docker containers built from multi-stage Dockerfiles and pushed to Amazon Elastic Container Registry. Deployment to Kubernetes clusters is managed through ArgoCD implementing GitOps principles, with Helm charts defining the desired state of each application release. The pipeline includes automated unit testing, integration testing, container image scanning with Trivy, and infrastructure validation using Terraform plan and checkov security scanning.
+
+17. INFORMATION SECURITY
+
+17.1 Security Framework. The Service Provider shall implement and maintain a comprehensive information security management system aligned with the NIST Cybersecurity Framework (CSF) version 2.0 and ISO/IEC 27001:2022 standards. This framework encompasses five core functions: Identify, Protect, Detect, Respond, and Recover, with specific controls and procedures mapped to each function applicable to the cloud infrastructure environment described in Section 16.
+
+17.2 Encryption Standards. All data at rest within the cloud environment shall be encrypted using AES-256 encryption algorithms. Amazon RDS instances and Aurora clusters shall utilize AWS KMS with customer-managed keys rotated annually. S3 buckets shall enforce default encryption with SSE-KMS and bucket policies that deny uploads of unencrypted objects. Data in transit shall be protected using TLS 1.2 or higher for all external communications and TLS 1.3 where supported for internal service-to-service communication within the VPC. VPN tunnels connecting the Client's on-premises network to the cloud environment shall use IPSec with AES-256-GCM encryption and SHA-256 integrity verification.
+
+17.3 Access Management. The Service Provider shall enforce the principle of least privilege across all cloud resources and administrative access points. AWS Identity and Access Management policies shall be scoped to the minimum permissions required for each role and shall be reviewed quarterly. Multi-factor authentication shall be mandatory for all human access to the AWS Management Console, Azure Portal, Kubernetes clusters, and any administrative interfaces. Service accounts used for automation shall be issued short-lived credentials via IAM Roles for Service Accounts (IRSA) and shall be subject to automatic credential rotation at intervals not exceeding twenty-four (24) hours. Privileged access to production environments shall require approval through a just-in-time access management workflow with time-bounded sessions and full session recording.
+
+17.4 Vulnerability Management. The Service Provider shall conduct automated vulnerability scans of all cloud infrastructure resources on a weekly basis, with critical and high-severity findings remediated within seventy-two (72) hours and medium-severity findings remediated within fourteen (14) calendar days. Container images shall be scanned prior to deployment to the production Kubernetes cluster, with images containing critical vulnerabilities blocked from deployment. Operating system and runtime patching shall be performed within the maintenance windows defined in the Specifications, with emergency security patches applied outside maintenance windows in accordance with the change management procedures set forth in Section 18.
+
+17.5 Incident Classification Levels. Security incidents shall be classified according to the following severity matrix: SEV-1 (Critical) indicates a confirmed breach involving unauthorized access to production data, active exploitation of a vulnerability in production systems, or complete loss of availability of a critical business service; SEV-2 (High) indicates a suspected breach or attempted intrusion, discovery of a critical vulnerability with a known exploit in the wild, or significant degradation of security controls; SEV-3 (Medium) indicates the discovery of a medium-severity vulnerability, detection of anomalous access patterns that may indicate reconnaissance activity, or non-critical security control failures; SEV-4 (Low) indicates informational security findings, minor policy violations, or routine security event notifications that do not pose an immediate threat to the confidentiality, integrity, or availability of systems or data.
+
+18. CHANGE MANAGEMENT
+
+18.1 Change Request Procedures. All changes to the Client's production cloud infrastructure shall be submitted through a formal change request process. Each change request shall include: a description of the proposed change, the business justification and expected benefits, a detailed implementation plan with rollback procedures, a risk assessment identifying potential impacts to availability, performance, and security, the names and roles of personnel responsible for executing and approving the change, and a defined maintenance window during which the change will be implemented. Standard changes that have been pre-approved through the change advisory board process may proceed with abbreviated review, provided that the change adheres to the documented standard operating procedure and the implementing engineer confirms that pre-conditions have been met.
+
+18.2 Change Advisory Board. A Change Advisory Board ("CAB") consisting of representatives from the Service Provider's engineering team and the Client's operations leadership shall convene on a bi-weekly basis to review, prioritize, and approve or reject pending change requests. The CAB shall maintain a rolling four-week change calendar to identify potential scheduling conflicts, cumulative risk from concurrent changes, and dependencies between change requests. Emergency CAB sessions may be convened outside the regular schedule when urgent changes are required to address security vulnerabilities, critical incidents, or significant business requirements.
+
+18.3 Emergency Changes. In circumstances where an immediate change is required to address a SEV-1 or SEV-2 incident, a critical security vulnerability with active exploitation, or an imminent threat to the availability or integrity of production systems, the emergency change process may be invoked. Emergency changes shall be authorized verbally by a designated emergency change approver from each Party, documented in the change management system within two (2) hours of implementation, and reviewed by the CAB at its next scheduled meeting to assess the effectiveness of the change and determine whether additional follow-up actions are warranted. All emergency changes shall include a mandatory post-implementation review completed within seventy-two (72) hours.
+
+19. COMMUNICATION AND ESCALATION
+
+19.1 Escalation Matrix. The following escalation matrix shall govern the communication of incidents and issues between the Parties:
+
+    Level 1 (Front-Line Response): On-call Service Provider engineer responds within the SLA-defined response time for the incident severity level. The on-call engineer has full authority to execute documented runbooks, restart services, and implement pre-approved remediation procedures without additional authorization.
+
+    Level 2 (Technical Escalation): If a Level 1 response does not resolve the incident within the SLA-defined resolution time or if the incident involves an undocumented failure mode, the incident shall be escalated to the Service Provider's Tier 2 engineering team, which includes senior systems engineers and cloud architects with deep expertise in the Client's environment.
+
+    Level 3 (Management Escalation): If a Level 2 escalation does not result in resolution within two (2) hours, or if the incident is classified as SEV-1, the Service Provider's Engagement Manager shall notify the Client's designated Incident Manager and the Service Provider's Director of Operations via telephone and concurrent email notification.
+
+    Level 4 (Executive Escalation): If a SEV-1 incident is not resolved within four (4) hours, or at any time at the discretion of the Client's Incident Manager, the incident shall be escalated to executive leadership of both Parties, including the Service Provider's Vice President of Professional Services and the Client's Vice President of Operations.
+
+19.2 On-Call Rotation. The Service Provider shall maintain a continuous on-call rotation staffed by qualified engineers twenty-four (24) hours per day, seven (7) days per week, three hundred sixty-five (365) days per year. The on-call rotation schedule shall be published at least two (2) weeks in advance and shall include a primary on-call engineer and a secondary backup engineer. Handoff between on-call shifts shall include a written summary of any open incidents, pending changes, and known issues. The on-call engineer shall acknowledge pages within five (5) minutes and shall be available to respond to incidents within the SLA-defined response times at all times during their on-call shift.
+
+19.3 Status Updates and Reporting. For SEV-1 incidents, the Service Provider shall provide status updates to the Client's Incident Manager at intervals not exceeding thirty (30) minutes until the incident is resolved. Status updates shall include: the current incident status and timeline of events, actions taken and actions planned, estimated time to resolution, and any customer impact assessment. For SEV-2 incidents, status updates shall be provided at intervals not exceeding sixty (60) minutes. A formal post-incident review meeting shall be conducted within five (5) business days following the resolution of any SEV-1 or SEV-2 incident, with a written incident report delivered to the Client within ten (10) business days of incident closure.
+
+20. GENERAL PROVISIONS
+
+20.1 Entire Agreement. This Agreement, together with all exhibits and schedules attached hereto, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior negotiations, representations, warranties, commitments, offers, and agreements, whether written or oral, relating to such subject matter, including any prior statements of work, proposals, or correspondence exchanged between the Parties before the Effective Date.
+
+20.2 Amendments. This Agreement may not be amended, modified, or supplemented except by a written instrument signed by authorized representatives of both Parties. No course of dealing, course of performance, or trade usage shall be used to modify, interpret, or supplement the terms of this Agreement.
+
+20.3 Assignment. Neither Party may assign or transfer this Agreement or any rights or obligations hereunder without the prior written consent of the other Party, except that either Party may assign this Agreement to an Affiliate or in connection with a merger, acquisition, or sale of all or substantially all of its assets, provided that the assignee assumes all obligations hereunder and provides written notice of such assignment to the non-assigning Party.
+
+20.4 Waiver. The failure of either Party to enforce any provision of this Agreement shall not constitute a waiver of such provision or the right to enforce it at a later time. Any waiver must be in writing and signed by the waiving Party and shall be limited to the specific instance for which it is given.
+
+20.5 Severability. If any provision of this Agreement is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, and the remaining provisions shall continue in full force and effect without impairment of their intended operation.
+
+20.6 Survival. The provisions of this Agreement that by their nature should survive termination or expiration, including but not limited to Sections 7 (Intellectual Property), 8 (Confidentiality), 12 (Limitation of Liability), 13 (Indemnification), 15 (Governing Law), and 20 (General Provisions), shall survive the termination or expiration of this Agreement for the periods specified therein or, if no period is specified, indefinitely.
+
+20.7 Notices. All notices required or permitted under this Agreement shall be in writing and shall be deemed delivered when: (a) delivered personally and receipt acknowledged in writing; (b) sent by registered or certified mail, return receipt requested, postage prepaid, three (3) business days after mailing; (c) sent by a nationally recognized overnight courier with confirmed delivery, one (1) business day after dispatch; (d) sent by email with confirmation of receipt from the recipient, provided that such email notice is followed by a hard copy sent by registered mail or overnight courier within two (2) business days. Notices shall be sent to the addresses set forth in the Parties section above or to such other address as a Party may designate in writing by notice to the other Party.
+
+20.8 Force Majeure. Neither Party shall be liable for any failure or delay in performing its obligations under this Agreement if such failure or delay results from circumstances beyond the reasonable control of the affected Party, including but not limited to the events described in the definition of Force Majeure. The affected Party shall promptly notify the other Party in writing of the occurrence of a Force Majeure event and shall use commercially reasonable efforts to mitigate the impact of such event on its performance under this Agreement. If a Force Majeure event continues for a period exceeding ninety (90) consecutive days, either Party may terminate this Agreement upon thirty (30) days' written notice to the other Party without liability, other than the payment of fees accrued prior to the termination date.
+
+20.9 Counterparts. This Agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument. Execution and delivery by facsimile or electronic signature shall have the same legal effect as original ink signatures.
+
+20.10 Relationship of the Parties. The relationship between the Parties is that of independent contractors. Nothing in this Agreement shall be construed as creating an employer-employee relationship, partnership, joint venture, or agency between the Parties. Neither Party shall have the authority to bind the other Party or to incur any obligation on behalf of the other Party without express written authorization.
+
+20.11 No Third-Party Beneficiaries. Except as expressly provided herein with respect to the indemnification obligations, this Agreement is solely for the benefit of the Parties and their respective permitted successors and assigns, and nothing in this Agreement shall confer upon any other person or entity any legal or equitable right, benefit, or remedy.
+
+SIGNATURES
+
+IN WITNESS WHEREOF, the Parties have executed this Master Service Agreement and Operational Framework as of the dates set forth below.
+
+For and on behalf of NovaTech Solutions Inc. ("Service Provider"):
+
+_______________________
+John Mercer
+Title: Chief Executive Officer
+Date: January 10, 2025
+
+Witnessed by:
+_______________________
+Patricia Holmes, Corporate Secretary
+
+For and on behalf of GreenLeaf Retail Corp. ("Client"):
+
+_______________________
+Sarah Chen
+Title: Vice President of Operations
+Date: January 12, 2025
+
+Witnessed by:
+_______________________
+David Park, General Counsel
+
+EXHIBIT A — SERVICE LEVEL AGREEMENT
+
+[Referenced but not attached. Service levels include 99.9% uptime target, P1 incident response within 15 minutes, P2 within 30 minutes, P3 within 4 hours, and P4 within 24 hours.]
+
+EXHIBIT B — TECHNICAL SPECIFICATIONS
+
+[Referenced but not attached. Specifications include multi-region deployment across us-east-1 and us-west-2, Kubernetes orchestration, Terraform infrastructure-as-code, Prometheus/Grafana monitoring stack, and PagerDuty alerting integration.]
+
+EXHIBIT C — ARCHITECTURE DIAGRAM
+
+[Attached but not included. Detailed network and application architecture diagrams depicting the Client's cloud infrastructure topology, including VPC design, subnet layout, security group boundaries, load balancer configuration, Kubernetes cluster architecture, data flow patterns, and inter-region connectivity. Diagrams are maintained in the Client's documentation repository and updated with each material infrastructure change.]
+
+EXHIBIT D — DISASTER RECOVERY PLAN
+
+[Attached but not included. Comprehensive disaster recovery plan defining recovery objectives, failover procedures, communication protocols, and testing schedules for the Client's production environment. The plan includes detailed runbooks for regional failover, database recovery, DNS failover, and application stack restoration, and is subject to semi-annual tabletop exercises and annual full-scale disaster recovery drills.]
+
+EXHIBIT E — SECURITY CONTROLS MATRIX
+
+[Attached but not included. Detailed mapping of security controls implemented across the Client's cloud environment, organized by the NIST Cybersecurity Framework core functions. Each control entry includes the control identifier, description, implementation evidence, responsible owner, review frequency, and last audit date. The matrix is maintained as a living document and reviewed quarterly by the Change Advisory Board.]
+
+EXHIBIT F — RUNBOOK TEMPLATES
+
+[Attached but not included. Standardized runbook templates for common operational procedures, including incident response playbooks for each SEV level, routine maintenance procedures, scaling operations, database management tasks, and security incident handling procedures. Each runbook includes step-by-step instructions, verification checkpoints, rollback procedures, and escalation triggers.]

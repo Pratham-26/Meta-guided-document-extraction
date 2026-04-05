@@ -1,0 +1,703 @@
+REAL ESTATE PROPERTY MANAGEMENT SERVICES AGREEMENT
+
+This Real Estate Property Management Services Agreement (the "Agreement"),
+bearing reference number PMG-2024-1208, is entered into as of October 1, 2024
+(the "Effective Date"), by and between the parties identified in Section 1
+below.
+
+WHEREAS, the Phoenix metropolitan area has emerged as one of the fastest-growing
+commercial real estate markets in the United States over the past two decades,
+driven by sustained population growth, favorable tax structures, business-friendly
+regulatory environments, and the relocation of major corporate headquarters from
+higher-cost markets along the West Coast and Northeast corridor;
+
+WHEREAS, the commercial office sector in the Phoenix market has undergone
+significant transformation in the post-pandemic era, with evolving tenant
+demands for flexible workspaces, enhanced building amenities, upgraded HVAC and
+air quality systems, and technology-enabled building management platforms that
+support hybrid work environments and tenant experience optimization;
+
+WHEREAS, effective property management has become increasingly critical to
+maintaining and enhancing the value of commercial office portfolios, requiring
+specialized expertise in tenant relations, lease administration, financial
+management, capital planning, regulatory compliance, and vendor coordination to
+navigate the complexities of multi-tenant commercial properties in a competitive
+market environment;
+
+WHEREAS, Desert Crown Realty Trust, a Maryland-chartered real estate investment
+trust with a significant portfolio of commercial office properties in the
+Phoenix metropolitan area, has determined that professional property management
+services are essential to optimizing the operational performance and financial
+returns of its portfolio;
+
+WHEREAS, Cornerstone Property Management LLC is a full-service property
+management firm headquartered in Scottsdale, Arizona, with extensive experience
+managing commercial office properties throughout the Phoenix metropolitan area
+and a demonstrated track record of maximizing occupancy rates, minimizing
+operating costs, and enhancing tenant satisfaction for institutional real estate
+owners;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration,
+the receipt and sufficiency of which are hereby acknowledged, the parties agree
+as follows:
+
+1. PARTIES
+
+1.1 Service Provider. Cornerstone Property Management LLC, a limited liability
+company duly organized and existing under the laws of the State of Arizona, with
+its principal offices located at 6200 North Scottsdale Road, Suite 200,
+Scottsdale, AZ 85253 (hereinafter referred to as "Service Provider,"
+"Cornerstone," or "Manager").
+
+1.2 Client. Desert Crown Realty Trust, a real estate investment trust organized
+under the laws of the State of Maryland, with its principal offices located at
+3000 Camelback Road, Suite 350, Phoenix, AZ 85016 (hereinafter referred to as
+"Client," "Owner," or "Trust").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that
+they have the full legal authority to bind their respective organization to the
+terms and conditions of this Agreement, and that the execution of this
+Agreement has been duly authorized by all necessary corporate and trust approvals.
+
+2. DEFINITIONS
+
+2.1 "Base Rent" means the fixed periodic rent payable by a Tenant under a
+Lease, prior to the addition of any operating expenses, taxes, insurance
+premiums, or other charges.
+
+2.2 "CAM Charges" or "Common Area Maintenance Charges" means the Tenant's
+proportionate share of the costs incurred by the Owner for the maintenance,
+repair, and operation of the Common Areas, as more fully described in each
+Lease.
+
+2.3 "Capital Improvement" means any repair, replacement, alteration, or
+addition to the Managed Properties which (a) has a useful life of more than
+one (1) year, (b) constitutes an addition to or improvement of the Managed
+Properties as distinguished from ordinary maintenance and repair, or (c) is
+required by applicable law or regulation, and which is capitalized in accordance
+with generally accepted accounting principles.
+
+2.4 "Capital Reserve" means the reserve fund established and maintained by the
+Manager in accordance with the approved Annual Operating Budget for the purpose
+of funding anticipated Capital Improvements and extraordinary maintenance
+expenditures.
+
+2.5 "Common Area" means all areas of the Managed Properties that are not
+leased or otherwise occupied by Tenants and that are available for the common
+use and enjoyment of all Tenants and their invitees, including but not limited
+to lobbies, corridors, elevators, stairwells, restrooms, parking facilities,
+landscaped areas, and building mechanical systems.
+
+2.6 "Gross Collected Rents" means the aggregate amount of all Base Rent,
+CAM Charges, operating expense reimbursements, parking revenues, and other
+income actually collected by the Manager from Tenants during a given period,
+net of any allowances, concessions, or abatements granted to Tenants, but
+excluding any security deposits held on behalf of Tenants.
+
+2.7 "Gross Lease" means a Lease under which the Tenant pays a fixed Base Rent
+and the Owner is responsible for paying all or substantially all operating
+expenses, taxes, and insurance costs associated with the leased premises.
+
+2.8 "Lease" means a commercial office lease, sublease, license, or other
+occupancy agreement between the Owner (or its predecessor in interest) and a
+Tenant with respect to space within the Managed Properties.
+
+2.9 "Lease Abstract" means a comprehensive summary document prepared by the
+Manager for each Lease, containing all material business terms and conditions
+including rent amounts, escalation schedules, expense reimbursement obligations,
+option provisions, tenant improvement allowances, and critical date milestones.
+
+2.10 "Managed Properties" or "Portfolio" means the six (6) commercial office
+buildings identified on Exhibit A (Property List) attached hereto, comprising
+a total of approximately four hundred twenty thousand (420,000) rentable square
+feet in the Phoenix metropolitan area, and such additional properties as may be
+added to this Agreement by mutual written agreement of the parties.
+
+2.11 "NNN Lease" or "Triple Net Lease" means a Lease under which the Tenant
+pays Base Rent plus the Tenant's proportionate share of real property taxes,
+building insurance premiums, and common area maintenance charges.
+
+2.12 "Operating Expenses" means all costs and expenses incurred in connection
+with the ownership, management, operation, and maintenance of the Managed
+Properties, as more fully defined in each Lease, but excluding capital
+expenditures, debt service, depreciation, leasing commissions, and income taxes
+of the Owner.
+
+2.13 "Pro Forma" means a projected statement of income and expenses for a
+Managed Property, prepared by the Manager in connection with the Annual
+Operating Budget process or for the evaluation of proposed transactions.
+
+2.14 "Rent Roll" means a detailed schedule of all Leases for the Managed
+Properties, including Tenant names, leased premises, lease commencement and
+expiration dates, current Base Rent, rent escalation schedules, security deposit
+amounts, and occupancy status.
+
+2.15 "RUBS" or "Ratio Utility Billing System" means a method of allocating
+utility costs among Tenants based on a reasonable and equitable formula, such
+as square footage, occupancy, or number of occupants.
+
+2.16 "Tenant" means any person, firm, corporation, or other entity that is
+a party to a Lease with respect to space within any of the Managed Properties.
+
+2.17 "Tenant Improvement" or "TI" means any construction, renovation, or
+alteration work performed within the leased premises of a Tenant, whether at
+the expense of the Owner or the Tenant, as more fully described in the
+applicable Lease.
+
+2.18 "Turnover" means the process of transitioning a leased premises from one
+Tenant to another, including unit inspection, make-ready work, vendor
+coordination, lease execution, and Tenant move-in.
+
+2.19 "Vacancy Rate" means the percentage of total rentable square feet in the
+Managed Properties that is not currently leased or occupied by Tenants.
+
+2.20 "Work Order" means a formal request for maintenance, repair, or other
+services submitted by a Tenant or generated by the Manager in connection with
+the management of the Managed Properties.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide full-service property
+management services for the Managed Properties, which consist of a portfolio of
+six (6) commercial office buildings totaling approximately four hundred twenty
+thousand (420,000) rentable square feet located in the Phoenix metropolitan area.
+The Service Provider shall serve as the on-site and administrative property
+manager for all Managed Properties and shall be responsible for the day-to-day
+operation, maintenance, and administration of the Portfolio in accordance with
+the terms of this Agreement, all applicable Leases, and all applicable laws,
+codes, and regulations.
+
+3.2 Tenant Relations and Lease Administration. The Service Provider shall be
+responsible for all aspects of tenant relations and lease administration for
+the Managed Properties, including but not limited to the following:
+
+    (a) Serving as the primary point of contact for all Tenant communications,
+        inquiries, complaints, and service requests, and responding to all
+        routine Tenant inquiries within one (1) business day and all emergency
+        requests within four (4) hours;
+
+    (b) Preparing and maintaining comprehensive Lease Abstracts for all active
+        Leases, ensuring that all critical dates, rent escalations, expense
+        reimbursement obligations, option provisions, and other material terms
+        are accurately tracked and monitored;
+
+    (c) Administering all Lease terms and conditions, including rent
+        escalations, operating expense pass-throughs and reconciliations,
+        tenant improvement allowance disbursements, renewal option notices, and
+        expansion and contraction rights;
+
+    (d) Tracking all Lease expiration dates and initiating renewal negotiations
+        with Tenants at least twelve (12) months prior to Lease expiration, and
+        coordinating with the Owner on renewal terms, rental rate adjustments,
+        and tenant improvement commitments;
+
+    (e) Coordinating Tenant move-in and move-out processes, including lease
+        commencement orientations, space inspections, utility transfers, access
+        credential issuance, and make-ready scheduling;
+
+    (f) Managing all Tenant complaints, disputes, and requests in a professional
+        and timely manner, escalating material issues to the Owner as appropriate.
+
+3.3 Rent Collection and Financial Reporting. The Service Provider shall be
+responsible for all aspects of rent collection, financial management, and
+reporting for the Managed Properties, including but not limited to the following:
+
+    (a) Collecting all rents, additional rents, CAM charges, operating expense
+        reimbursements, parking revenues, and other income due under the Leases,
+        and depositing all collected funds into the Owner's designated operating
+        accounts within one (1) business day of receipt;
+
+    (b) Administering a comprehensive rent collection program, including
+        preparation and distribution of monthly rent statements, follow-up on
+        delinquent accounts, issuance of late payment notices in accordance with
+        Lease terms, and coordination of legal proceedings for non-payment or
+        other Tenant defaults when authorized by the Owner;
+
+    (c) Maintaining accurate and complete financial records for each Managed
+        Property, including accounts receivable, accounts payable, general
+        ledger, security deposit tracking, and bank account reconciliations;
+
+    (d) Preparing and delivering Monthly Financial Statements for each Managed
+        Property, including a statement of income and expenses, rent roll
+        summary, accounts receivable aging report, variance analysis comparing
+        actual performance to budget, and a narrative management report
+        highlighting significant events, pending matters, and recommended
+        actions;
+
+    (e) Preparing Annual Operating Budgets for each Managed Property and the
+        Portfolio as a whole, for review and approval by the Owner, and
+        managing all expenditures in accordance with the approved budgets;
+
+    (f) Processing and paying all operating expenses, vendor invoices, utility
+        bills, insurance premiums, property taxes, and other obligations of the
+        Owner in connection with the Managed Properties, subject to the
+        expenditure approval thresholds set forth herein.
+
+3.4 Maintenance and Repair Coordination. The Service Provider shall be
+responsible for all aspects of maintenance and repair coordination for the
+Managed Properties, including but not limited to the following:
+
+    (a) Administering a comprehensive work order system for receiving,
+        prioritizing, assigning, tracking, and documenting completion of all
+        maintenance and repair requests, whether generated by Tenants, building
+        staff, or the Manager's own inspections;
+
+    (b) Establishing and maintaining emergency response procedures for each
+        Managed Property, including twenty-four (24) hour emergency contact
+        protocols, on-call maintenance personnel, and pre-arranged emergency
+        vendor relationships for plumbing, electrical, HVAC, fire protection,
+        and other critical building systems;
+
+    (c) Developing and implementing a preventive maintenance program for all
+        building systems, including HVAC, plumbing, electrical, elevators, fire
+        protection, life safety, parking structures, and building envelope
+        components, based on manufacturer recommendations, industry standards,
+        and the specific conditions of each Managed Property;
+
+    (d) Conducting regular property inspections, including weekly building
+        walkthroughs, monthly exterior inspections, and quarterly comprehensive
+        property condition assessments, and preparing written inspection reports
+        for the Owner's review.
+
+3.5 Capital Improvement Project Oversight. The Service Provider shall be
+responsible for the oversight and coordination of capital improvement projects
+for the Managed Properties, including but not limited to the following:
+
+    (a) Identifying, evaluating, and recommending capital improvement projects
+        based on property condition assessments, Tenant needs, market
+        conditions, and the Owner's investment objectives;
+
+    (b) Preparing project scopes, specifications, and budget estimates for
+        proposed capital improvements for the Owner's review and approval;
+
+    (c) Managing the competitive bidding process for capital improvement
+        projects, including solicitation of bids from qualified contractors,
+        evaluation of bids, and recommendation of awardees to the Owner;
+
+    (d) Overseeing the execution of approved capital improvement projects,
+        including contractor management, schedule coordination, quality
+        assurance inspections, change order processing, and progress reporting;
+
+    (e) Tracking and administering all warranties associated with capital
+        improvement work, including punch list completion, warranty claim
+        processing, and warranty expiration monitoring.
+
+3.6 Vendor Management. The Service Provider shall be responsible for the
+selection, engagement, and management of all vendors, contractors, and service
+providers engaged in connection with the management and operation of the Managed
+Properties, including but not limited to the following:
+
+    (a) Establishing vendor selection criteria and maintaining an approved
+        vendor list for all categories of services required for the Managed
+        Properties;
+
+    (b) Verifying that all vendors maintain adequate insurance coverage as
+        specified in this Agreement and the Vendor Insurance Requirements set
+        forth in Exhibit C;
+
+    (c) Negotiating favorable pricing and service terms with vendors, obtaining
+        competitive bids for significant services, and monitoring vendor
+        performance on an ongoing basis;
+
+    (d) Ensuring that all vendor agreements and service contracts are properly
+        executed, maintained, and renewed in a timely manner.
+
+3.7 Common Area Maintenance. The Service Provider shall be responsible for
+the maintenance, repair, and upkeep of all Common Areas within the Managed
+Properties, including but not limited to common area cleaning, landscaping and
+irrigation, parking lot maintenance, exterior lighting, interior corridor and
+lobby maintenance, elevator maintenance, and restroom servicing.
+
+3.8 Security Coordination. The Service Provider shall coordinate all security
+services for the Managed Properties, including but not limited to the
+administration of building access control systems, security guard services,
+after-hours patrol services, CCTV monitoring, and coordination with local law
+enforcement and emergency services as appropriate.
+
+3.9 Regulatory Compliance. The Service Provider shall be responsible for
+ensuring that the Managed Properties comply with all applicable federal, state,
+and local laws, codes, regulations, and ordinances, including but not limited
+to the Americans with Disabilities Act (ADA), fire and life safety codes,
+elevator inspection requirements, environmental regulations, and all permitting
+and licensing requirements applicable to the operation of commercial office
+properties in the Phoenix metropolitan area.
+
+4. PROPERTY MANAGEMENT PLAN
+
+4.1 Within thirty (30) days of the Effective Date, the Service Provider shall
+prepare and deliver to the Owner a comprehensive Property Management Plan for
+each Managed Property. Each Property Management Plan shall address, at a minimum,
+the current condition of the property, tenant profile and lease analysis,
+operating budget projections, capital improvement recommendations, staffing and
+service requirements, vendor management approach, and strategic positioning
+recommendations.
+
+4.2 The Property Management Plans shall be updated annually or upon the
+occurrence of any material change in the condition, occupancy, or operations of
+any Managed Property.
+
+5. ANNUAL OPERATING BUDGETS
+
+5.1 Within sixty (60) days of the Effective Date and no later than November 1
+of each subsequent year, the Service Provider shall prepare and submit to the
+Owner proposed Annual Operating Budgets for each Managed Property and for the
+Portfolio as a whole for the upcoming calendar year.
+
+5.2 Each Annual Operating Budget shall include detailed line-item projections
+of all anticipated income and expenses, a narrative explanation of significant
+variances from the prior year, and recommended capital improvement projects with
+estimated costs and timing.
+
+5.3 The Service Provider shall manage all expenditures in accordance with the
+approved Annual Operating Budgets. Expenditures that exceed the approved budget
+by more than five percent (5%) for any line item, or that involve a single
+expenditure in excess of ten thousand dollars ($10,000.00), shall require the
+prior written approval of the Owner.
+
+6. TERM
+
+6.1 Initial Term. This Agreement shall commence on the Effective Date and
+shall continue for a period of thirty-six (36) months, concluding on September
+30, 2027 (the "Initial Term"), unless earlier terminated in accordance with
+Section 15.
+
+6.2 Auto-Renewal. Upon expiration of the Initial Term and any subsequent
+renewal term, this Agreement shall automatically renew for successive twenty-four
+(24) month periods (each a "Renewal Term"), unless either party provides the
+other party with at least one hundred twenty (120) calendar days' prior written
+notice of its intent not to renew.
+
+6.3 Individual Property Removal. The Owner may remove any individual Managed
+Property from this Agreement upon ninety (90) calendar days' prior written
+notice to the Service Provider, in which event the management fee shall be
+prorated to reflect the reduced portfolio. The Service Provider shall cooperate
+fully in transitioning management responsibilities for any removed property to
+the Owner's designated successor property manager.
+
+6.4 Survival. Expiration or termination of this Agreement shall not affect
+any provisions that by their nature are intended to survive termination,
+including without limitation Sections 11 (Intellectual Property), 12
+(Confidentiality), 15 (Termination), 16 (Liability), and 18 (Governing Law).
+
+7. COMPENSATION
+
+7.1 Base Management Fee. As compensation for the services provided under this
+Agreement, the Owner shall pay the Service Provider a base management fee equal
+to three and one-half percent (3.5%) of the Gross Collected Rents for each
+calendar month. Based on current lease terms and occupancy levels, the annual
+base management fee is estimated to be approximately two hundred ninety-four
+thousand dollars ($294,000.00) per year; provided, however, that the actual
+fee may be higher or lower depending on the amount of Gross Collected Rents in
+any given period.
+
+7.2 Leasing Commission — New Leases. The Owner shall pay the Service Provider
+a leasing commission equal to four percent (4%) of the total Base Rent to be
+paid during the first year of any new Lease executed for space at any of the
+Managed Properties. Leasing commissions for new Leases shall be payable in equal
+monthly installments over the first twelve (12) months of the Lease term.
+
+7.3 Leasing Commission — Renewals. The Owner shall pay the Service Provider
+a leasing commission equal to two percent (2%) of the total Base Rent to be
+paid during the first year of any Lease renewal, extension, or expansion
+executed with an existing Tenant. Leasing commissions for renewals shall be
+payable in equal monthly installments over the first twelve (12) months of the
+renewal term.
+
+7.4 Construction Management Fee. The Owner shall pay the Service Provider a
+construction management fee equal to five percent (5%) of the total cost of all
+Capital Improvement projects managed by the Service Provider. This fee covers
+project management, contractor oversight, quality assurance, change order
+processing, and project closeout services. The construction management fee shall
+be payable monthly in arrears based on actual project costs incurred during the
+preceding month.
+
+7.5 Payment Terms. All fees payable under this Agreement shall be paid by the
+Owner to the Service Provider monthly in arrears, within thirty (30) days of
+receipt of the Service Provider's monthly invoice. Invoices shall be submitted
+no later than the tenth (10th) day of each month for services rendered and fees
+earned during the preceding calendar month.
+
+7.6 Late Payments. Invoices not paid within thirty (30) days of receipt shall
+be subject to interest at a rate of one percent (1%) per month, calculated from
+the due date until the date of actual payment.
+
+8. DELIVERABLES AND REPORTING
+
+8.1 Property Management Plans. The Service Provider shall deliver Property
+Management Plans for each Managed Property within thirty (30) days of the
+Effective Date, as described in Section 4.
+
+8.2 Annual Operating Budgets. The Service Provider shall deliver proposed
+Annual Operating Budgets within sixty (60) days of the Effective Date and no
+later than November 1 of each subsequent year, as described in Section 5.
+
+8.3 Monthly Financial Statements. The Service Provider shall deliver Monthly
+Financial Statements for each Managed Property no later than the twentieth (20th)
+day of the month following the reporting period. Each Monthly Financial Statement
+shall include a statement of income and expenses, rent roll summary, accounts
+receivable aging report, variance analysis, and narrative management report.
+
+8.4 Quarterly Property Condition Assessments. The Service Provider shall
+conduct and deliver written Quarterly Property Condition Assessments for each
+Managed Property no later than thirty (30) days following the end of each fiscal
+quarter. Each assessment shall include a comprehensive evaluation of building
+systems, common areas, structural components, and grounds, together with
+recommended maintenance and capital improvement priorities.
+
+8.5 Annual Lease Abstraction Updates. The Service Provider shall review and
+update the Lease Abstracts for all active Leases at least annually, and shall
+deliver the updated Lease Abstracts to the Owner no later than January 31 of
+each year. The updated Lease Abstracts shall reflect all amendments,
+modifications, and changes to the Leases during the preceding year.
+
+9. INTELLECTUAL PROPERTY
+
+9.1 Client Ownership. The Owner shall own all financial data, tenant records,
+rent rolls, lease files, property-specific documentation, and all other data,
+reports, and materials prepared by the Service Provider in the course of
+performing services under this Agreement that are specific to the Managed
+Properties or the Owner's business (the "Client Materials").
+
+9.2 Service Provider Property. The Service Provider shall retain all right,
+title, and interest in its proprietary property management systems, software
+platforms, operating templates, form documents, vendor network and
+relationships, and proprietary management methodologies, tools, and processes
+(the "Manager Property"). The Service Provider grants the Owner a non-exclusive,
+non-transferable license to use the Manager Property solely in connection with
+the services provided under this Agreement during the Term and any applicable
+survival period.
+
+10. CONFIDENTIALITY
+
+10.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Confidential Information includes, without limitation, the Owner's
+financial data, tenant financial records, lease terms, rental rates, operating
+costs, capital improvement plans, investment strategies, and any other
+non-public information concerning the Managed Properties or the Owner's business,
+as well as the Service Provider's management methodologies, vendor pricing,
+proprietary systems, and internal business operations.
+
+10.2 Tenant Financial Records. Notwithstanding the general confidentiality
+provisions set forth above, the parties specifically acknowledge that Tenant
+financial records, including but not limited to Tenant financial statements,
+credit reports, rent payment histories, and security deposit records, constitute
+highly sensitive Confidential Information that shall be maintained in strict
+confidence for a period of seven (7) years following the expiration or
+termination of this Agreement.
+
+10.3 General Duration. Except as otherwise provided in Section 10.2 with
+respect to Tenant financial records, the obligations of confidentiality set
+forth in this Section 10 shall survive the expiration or termination of this
+Agreement for a period of five (5) years.
+
+11. TERMINATION
+
+11.1 Termination Without Cause. Either party may terminate this Agreement
+without cause upon one hundred twenty (120) calendar days' prior written notice
+to the other party.
+
+11.2 Termination for Cause. Either party may terminate this Agreement for
+cause if the other party commits a material breach of any provision of this
+Agreement and fails to cure such breach within thirty (30) calendar days after
+receiving written notice specifying the nature of the breach in reasonable
+detail.
+
+11.3 Individual Property Removal. The Owner may remove any individual Managed
+Property from this Agreement upon ninety (90) calendar days' prior written
+notice to the Service Provider, subject to the provisions of Section 6.3.
+
+11.4 Payment Upon Termination. Upon termination of this Agreement for any
+reason, the Owner shall pay all undisputed invoices for services rendered and
+fees earned through the effective date of termination within thirty (30) days
+of such effective date.
+
+11.5 Transition Obligations. Upon receipt of notice of termination, the
+Service Provider shall cooperate fully in transitioning management
+responsibilities to the Owner's designated successor property manager,
+including the transfer of all records, files, keys, access credentials, vendor
+contracts, and other materials relating to the Managed Properties.
+
+12. LIABILITY
+
+12.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING
+BUT NOT LIMITED TO LOSS OF RENTAL INCOME, LOSS OF PROPERTY VALUE, BUSINESS
+INTERRUPTION, OR LOSS OF TENANT RELATIONSHIPS, ARISING OUT OF OR RELATING TO
+THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER, REGARDLESS OF WHETHER
+SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY, ANY OTHER LEGAL
+THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
+
+12.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement, whether in contract, tort,
+or otherwise, shall not exceed one million dollars ($1,000,000.00) per
+occurrence and three million dollars ($3,000,000.00) in the aggregate for all
+claims arising during any twelve (12) month period.
+
+13. INSURANCE
+
+13.1 General Liability Insurance. Throughout the term of this Agreement, the
+Service Provider shall maintain commercial general liability insurance in an
+amount not less than two million dollars ($2,000,000.00) per occurrence, covering
+bodily injury, property damage, and personal and advertising injury arising from
+the Service Provider's operations in connection with the Managed Properties.
+
+13.2 Professional Liability Insurance. Throughout the term of this Agreement,
+the Service Provider shall maintain professional liability (errors and omissions)
+insurance in an amount not less than one million dollars ($1,000,000.00) per
+claim, covering claims arising from negligent acts, errors, or omissions in the
+provision of property management services under this Agreement.
+
+13.3 Fidelity Bond. Throughout the term of this Agreement, the Service Provider
+shall maintain a fidelity bond in an amount not less than one million dollars
+($1,000,000.00), covering loss of funds or property resulting from fraudulent
+or dishonest acts by the Service Provider's employees, agents, or
+representatives.
+
+13.4 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Owner upon execution of this
+Agreement and upon each renewal of such policies. All insurance policies shall
+name the Owner as an additional insured with respect to the general liability
+coverage, and shall provide the Owner with at least thirty (30) calendar days'
+prior written notice of cancellation or material modification.
+
+14. DISPUTE RESOLUTION
+
+14.1 Mediation. In the event of any dispute arising out of or relating to
+this Agreement, the parties shall first attempt to resolve such dispute through
+mediation administered by a mutually agreed-upon mediator in Phoenix, Arizona.
+The parties shall share equally the costs of mediation.
+
+14.2 Arbitration. If the parties are unable to resolve a dispute through
+mediation within sixty (60) days of initiating the mediation process, such
+dispute shall be submitted to binding arbitration in Phoenix, Arizona, in
+accordance with the commercial arbitration rules of the American Arbitration
+Association (AAA) then in effect. The decision of the arbitrator(s) shall be
+final and binding, and judgment upon the award may be entered in any court of
+competent jurisdiction.
+
+15. FORCE MAJEURE
+
+Neither party shall be liable for any failure or delay in the performance of
+its obligations under this Agreement to the extent that such failure or delay
+is caused by circumstances beyond the reasonable control of the affected party,
+including but not limited to acts of God, natural disasters, pandemics, government
+actions, labor disputes, civil unrest, war, terrorism, power or
+telecommunications failures, and public health emergencies. The affected party
+shall notify the other party promptly in writing of the force majeure event
+and its expected duration, and shall use commercially reasonable efforts to
+mitigate its impact on the performance of its obligations under this Agreement.
+
+16. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the State of Arizona, without giving effect to any choice-of-law or
+conflict-of-law provisions that would require the application of the laws of
+any jurisdiction other than the State of Arizona.
+
+17. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A: Property List — Detailed listing of all six (6) commercial
+                office buildings comprising the Managed Properties, including
+                property addresses, building specifications, and current
+                occupancy data
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: Current Rent Roll — Comprehensive rent roll for all Managed
+                Properties as of the Effective Date
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: Vendor Insurance Requirements — Minimum insurance coverage
+                requirements for all vendors and contractors performing work
+                at the Managed Properties
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+18. GENERAL PROVISIONS
+
+18.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the
+subject matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written, between
+the parties relating to such subject matter.
+
+18.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+18.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the other
+party, except that the Owner may assign this Agreement to a successor entity
+in connection with a merger, acquisition, sale of the Managed Properties, or
+transfer of substantially all of the Owner's assets.
+
+18.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such provision
+shall be modified to the minimum extent necessary to make it valid and
+enforceable, and the remaining provisions of this Agreement shall continue in
+full force and effect.
+
+18.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+18.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b)
+sent by certified mail, return receipt requested, (c) sent by nationally
+recognized overnight courier, or (d) sent by email with confirmation of
+receipt, to the addresses set forth in Section 1 or such other address as
+either party may designate in writing.
+
+18.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Owner. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+19. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Real Estate Property
+Management Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+Cornerstone Property Management LLC, an Arizona limited liability company
+
+
+By: ______________________________________
+Name: Patricia Delgado, CPM
+Title: Managing Member
+Date: September 24, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Daniel R. Montoya
+Title: Director of Operations
+Date: September 24, 2024
+
+
+CLIENT:
+
+Desert Crown Realty Trust, a Maryland real estate investment trust
+
+
+By: ______________________________________
+Name: Jonathan Weiss
+Title: Trustee
+Date: September 27, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Sarah K. Nakamura
+Title: Vice President, Asset Management
+Date: September 27, 2024

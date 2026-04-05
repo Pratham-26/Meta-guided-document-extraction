@@ -1,0 +1,368 @@
+{
+  "category_name": "service_agreements",
+  "expected_schema": {
+    "type": "object",
+    "required": [
+      "agreement_number",
+      "effective_date",
+      "service_provider",
+      "client",
+      "scope_of_services",
+      "term",
+      "compensation",
+      "deliverables_or_milestones",
+      "intellectual_property",
+      "confidentiality",
+      "termination",
+      "liability",
+      "insurance",
+      "warranty",
+      "dispute_resolution",
+      "non_solicitation",
+      "governing_law"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "agreement_number": {
+        "type": ["string", "null"],
+        "description": "identifier from the document"
+      },
+      "effective_date": {
+        "type": ["string", "null"],
+        "description": "ISO 8601 date (YYYY-MM-DD)"
+      },
+      "service_provider": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "type": {
+            "type": ["string", "null"],
+            "description": "corporation, LLC, LLP, PLLC, partnership, sole proprietorship, nonprofit, REIT, JPA"
+          },
+          "jurisdiction": {
+            "type": ["string", "null"],
+            "description": "state/country of incorporation/organization"
+          },
+          "address": { "type": ["string", "null"] },
+          "signatory": { "type": ["string", "null"] },
+          "signatory_title": { "type": ["string", "null"] },
+          "signatory_date": {
+            "type": ["string", "null"],
+            "description": "ISO 8601 date"
+          }
+        }
+      },
+      "client": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": ["string", "null"] },
+          "jurisdiction": { "type": ["string", "null"] },
+          "address": { "type": ["string", "null"] },
+          "signatory": { "type": ["string", "null"] },
+          "signatory_title": { "type": ["string", "null"] },
+          "signatory_date": {
+            "type": ["string", "null"],
+            "description": "ISO 8601 date"
+          }
+        }
+      },
+      "secondary_client": {
+        "type": ["object", "null"],
+        "description": "Additional party in multi-party agreements",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": ["string", "null"] },
+          "jurisdiction": { "type": ["string", "null"] },
+          "address": { "type": ["string", "null"] },
+          "signatory": { "type": ["string", "null"] },
+          "signatory_title": { "type": ["string", "null"] },
+          "signatory_date": {
+            "type": ["string", "null"],
+            "description": "ISO 8601 date"
+          }
+        }
+      },
+      "scope_of_services": {
+        "type": "string",
+        "description": "faithful description of services from the document"
+      },
+      "term": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "duration_months": { "type": ["number", "null"] },
+          "start_date": {
+            "type": ["string", "null"],
+            "description": "ISO 8601"
+          },
+          "end_date": {
+            "type": ["string", "null"],
+            "description": "ISO 8601"
+          },
+          "auto_renew": {
+            "type": "boolean",
+            "description": "false if not mentioned"
+          },
+          "renewal_term_months": { "type": ["number", "null"] },
+          "non_renewal_notice_days": { "type": ["number", "null"] }
+        }
+      },
+      "compensation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "fee_type": {
+            "type": ["string", "null"],
+            "description": "hourly, monthly retainer, fixed project, milestone-based, retainer, percentage, per-unit, revenue sharing, in-kind"
+          },
+          "monthly_fee": { "type": ["number", "null"] },
+          "hourly_rate": { "type": ["number", "null"] },
+          "total_value": { "type": ["number", "null"] },
+          "setup_fee": { "type": ["number", "null"] },
+          "currency": {
+            "type": "string",
+            "description": "default USD"
+          },
+          "payment_terms_days": { "type": ["number", "null"] },
+          "payment_terms_note": {
+            "type": ["string", "null"],
+            "description": "e.g. 'business days', 'in arrears', 'monthly in advance'"
+          },
+          "late_payment_interest_rate_percent": { "type": ["number", "null"] },
+          "max_monthly_hours": { "type": ["number", "null"] },
+          "monthly_expense_cap": { "type": ["number", "null"] },
+          "per_unit_rate": { "type": ["number", "null"] },
+          "monthly_volume_cap": { "type": ["number", "null"] },
+          "payment_schedule": {
+            "type": ["array", "null"],
+            "description": "[{trigger: string, percentage: number | null, amount: number}]"
+          },
+          "payment_method": {
+            "type": ["string", "null"],
+            "description": "e.g. 'wire transfer', 'ACH'"
+          },
+          "success_bonus": {
+            "type": ["number", "null"],
+            "description": "Performance bonus amount"
+          },
+          "ad_spend_budget_monthly": {
+            "type": ["number", "null"],
+            "description": "Managed advertising spend per month"
+          },
+          "per_employee_rate": {
+            "type": ["number", "null"],
+            "description": "Per-employee pricing rate"
+          },
+          "tiered_pricing": {
+            "type": ["array", "null"],
+            "description": "Array of pricing tiers, each with {tier: string, rate: number, unit: string}",
+            "items": {
+              "type": "object",
+              "properties": {
+                "tier": { "type": "string" },
+                "rate": { "type": "number" },
+                "unit": { "type": "string" }
+              }
+            }
+          },
+          "rush_surcharge_percent": {
+            "type": ["number", "null"],
+            "description": "Rush order surcharge percentage"
+          },
+          "minimum_monthly_engagement": {
+            "type": ["number", "null"],
+            "description": "Minimum monthly billing amount"
+          },
+          "retainage_percent": {
+            "type": ["number", "null"],
+            "description": "Retainage percentage held until completion"
+          },
+          "minimum_annual_guarantee": {
+            "type": ["number", "null"],
+            "description": "Minimum annual payment to client"
+          }
+        }
+      },
+      "deliverables_or_milestones": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["description"],
+          "additionalProperties": false,
+          "properties": {
+            "description": { "type": "string" },
+            "due_within_days": { "type": ["number", "null"] },
+            "due_date": {
+              "type": ["string", "null"],
+              "description": "ISO 8601"
+            }
+          }
+        }
+      },
+      "intellectual_property": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ownership": {
+            "type": ["string", "null"],
+            "description": "e.g. 'Service Provider', 'Client', 'Client (upon payment)', 'Joint'"
+          },
+          "license_granted": { "type": ["boolean", "null"] },
+          "license_type": {
+            "type": ["string", "null"],
+            "description": "e.g. 'non-exclusive, non-transferable', 'perpetual, irrevocable'"
+          },
+          "license_scope": { "type": ["string", "null"] },
+          "exceptions": { "type": ["string", "null"] }
+        }
+      },
+      "confidentiality": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "duration_years_after_termination": { "type": ["number", "null"] }
+        }
+      },
+      "termination": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "notice_period_days": {
+            "type": ["number", "null"],
+            "description": "general termination notice"
+          },
+          "for_cause_cure_period_days": { "type": ["number", "null"] },
+          "for_convenience_notice_days": { "type": ["number", "null"] },
+          "for_convenience_notice_days_client": { "type": ["number", "null"] },
+          "for_convenience_notice_days_provider": { "type": ["number", "null"] },
+          "kpi_based_termination": {
+            "type": ["boolean", "null"],
+            "description": "Whether KPI failure can trigger termination"
+          },
+          "kpi_termination_cure_days": {
+            "type": ["number", "null"],
+            "description": "Cure period before KPI-based termination"
+          },
+          "per_phase_termination_allowed": {
+            "type": ["boolean", "null"],
+            "description": "Whether per-phase or per-matter termination is allowed"
+          },
+          "bankruptcy_termination": {
+            "type": ["boolean", "null"],
+            "description": "Immediate termination on bankruptcy/insolvency"
+          }
+        }
+      },
+      "liability": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "cap_type": {
+            "type": ["string", "null"],
+            "description": "description of how cap is calculated"
+          },
+          "cap_amount": { "type": ["number", "null"] },
+          "consequential_damages_excluded": { "type": ["boolean", "null"] },
+          "per_matter_liability_cap": {
+            "type": ["number", "null"],
+            "description": "Per-matter cap (litigation support)"
+          },
+          "aggregate_liability_cap": {
+            "type": ["number", "null"],
+            "description": "Aggregate cap across all matters"
+          }
+        }
+      },
+      "insurance": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "general_liability": { "type": ["number", "null"] },
+          "professional_liability_per_occurrence": { "type": ["number", "null"] },
+          "professional_liability_aggregate": { "type": ["number", "null"] },
+          "cyber_liability": {
+            "type": ["number", "null"],
+            "description": "Cyber liability coverage"
+          },
+          "liquor_liability": {
+            "type": ["number", "null"],
+            "description": "Liquor liability coverage"
+          },
+          "pollution_liability": {
+            "type": ["number", "null"],
+            "description": "Pollution/environmental liability coverage"
+          },
+          "fidelity_bond": {
+            "type": ["number", "null"],
+            "description": "Fidelity bond amount"
+          },
+          "employment_practices_liability": {
+            "type": ["number", "null"],
+            "description": "Employment practices liability coverage"
+          }
+        }
+      },
+      "warranty": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "defect_free_period_months": { "type": ["number", "null"] },
+          "ip_non_infringement": { "type": ["boolean", "null"] }
+        }
+      },
+      "dispute_resolution": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "method": {
+            "type": ["string", "null"],
+            "description": "litigation, arbitration, mediation"
+          },
+          "location": { "type": ["string", "null"] },
+          "arbitration_body": {
+            "type": ["string", "null"],
+            "description": "e.g. 'AAA', 'JAMS'"
+          }
+        }
+      },
+      "non_solicitation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "duration_months_after_termination": { "type": ["number", "null"] }
+        }
+      },
+      "governing_law": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "jurisdiction": { "type": ["string", "null"] },
+          "country": {
+            "type": ["string", "null"],
+            "description": "default USA"
+          }
+        }
+      }
+    }
+  },
+  "extraction_instructions": "Extract structured data from service agreement documents. Follow these rules:\n1. Use null for any field not mentioned or not derivable from the document. Do not guess or infer.\n2. For scope_of_services, use a concise but faithful description of what the document says.\n3. Normalize all dates to YYYY-MM-DD ISO format. If only a relative timeframe is given, use due_within_days instead.\n4. Normalize amounts as numbers (no currency symbols, no commas). For ranges, extract the upper bound.\n5. auto_renew defaults to false if not mentioned. consequential_damages_excluded is true only if explicitly excluded.\n6. Always map the party providing services to service_provider and the party receiving services to client, regardless of labels used.\n7. For multi-party agreements, map primary service provider to service_provider, primary client to client, use secondary_client for additional parties.\n8. When compensation includes non-cash contributions, note them in payment_terms_note.\n9. For contingent fees, extract the stated amount and note the contingency in payment_terms_note.\n10. Use the key 'deliverables_or_milestones' consistently — never 'milestones' or 'deliverables'.",
+  "sample_documents": [
+    "examples/service_agreements/inputs/sa_001.txt",
+    "examples/service_agreements/inputs/sa_002.txt",
+    "examples/service_agreements/inputs/sa_003.txt",
+    "examples/service_agreements/inputs/sa_004.txt",
+    "examples/service_agreements/inputs/sa_005.txt",
+    "examples/service_agreements/inputs/sa_006.txt",
+    "examples/service_agreements/inputs/sa_007.txt",
+    "examples/service_agreements/inputs/sa_008.txt",
+    "examples/service_agreements/inputs/sa_009.txt",
+    "examples/service_agreements/inputs/sa_010.txt"
+  ]
+}

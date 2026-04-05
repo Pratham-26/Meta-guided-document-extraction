@@ -1,0 +1,683 @@
+CYBERSECURITY ASSESSMENT AND COMPLIANCE SERVICES AGREEMENT
+
+This Cybersecurity Assessment and Compliance Services Agreement (the "Agreement"), bearing
+reference number CSA-2025-0112, is entered into as of February 1, 2025 (the "Effective Date"),
+by and between the parties identified in Section 1 below.
+
+WHEREAS, the financial services sector has become the most heavily targeted industry for
+cyberattacks, with the volume and sophistication of threats directed at banking institutions
+increasing at an alarming rate over the past decade. Financial institutions, by virtue of the
+sensitive nature of the data they process and the critical role they play in the global economic
+infrastructure, present an exceptionally attractive target for a broad spectrum of threat actors,
+ranging from financially motivated criminal enterprises and state-sponsored advanced persistent
+threat (APT) groups to opportunistic cybercriminals exploiting known vulnerabilities at scale.
+The proliferation of digital banking channels, mobile payment platforms, real-time payment
+networks, and open banking application programming interfaces (APIs) has dramatically expanded
+the attack surface available to adversaries, creating new vectors for unauthorized access, data
+exfiltration, and fraudulent transaction processing;
+
+WHEREAS, the regulatory landscape governing cybersecurity in the financial services industry has
+undergone substantial expansion and maturation in response to the escalating threat environment.
+The Gramm-Leach-Bliley Act (GLBA) and its implementing Safeguards Rule, as amended by the
+Federal Trade Commission in 2021, impose comprehensive information security program requirements
+on financial institutions, including designated qualified individual oversight, risk assessments,
+access controls, encryption, multi-factor authentication, and incident response planning. The
+Sarbanes-Oxley Act (SOX) establishes internal control requirements for publicly traded companies
+that encompass information technology general controls (ITGCs) and application controls directly
+relevant to financial reporting systems. The Payment Card Industry Data Security Standard (PCI
+DSS), version 4.0, introduces enhanced requirements for targeted risk analysis, continuous
+authentication mechanisms, and expanded detection and monitoring capabilities. Concurrently,
+federal banking regulators, including the Office of the Comptroller of the Currency (OCC), the
+Federal Deposit Insurance Corporation (FDIC), and the Federal Reserve Board, have issued
+heightened examination expectations through the Cybersecurity and Resilience Advanced Notice of
+Proposed Rulemaking (ANPR) and updated IT Examination Handbook booklets on information security,
+business continuity planning, and outsourced technology services;
+
+WHEREAS, the evolution of attack methodologies has outpaced many institutions' defensive
+capabilities, with threat actors increasingly leveraging artificial intelligence and machine
+learning to automate reconnaissance, craft more convincing phishing campaigns, develop polymorphic
+malware capable of evading traditional signature-based detection, and identify zero-day
+vulnerabilities in widely deployed enterprise software platforms. Ransomware attacks against the
+financial services sector have grown in both frequency and severity, with attackers employing
+double and triple extortion tactics combining data encryption with threats of public data
+leakage and regulatory reporting. Supply chain attacks, exemplified by incidents targeting
+managed security service providers, network management tools, and open-source software
+dependencies, have demonstrated the potential for a single compromise to cascade across hundreds
+or thousands of downstream organizations. Business email compromise (BEC) schemes continue to
+result in billions of dollars in annual losses, exploiting the inherent trust relationships
+within financial organizations and their correspondent banking networks;
+
+WHEREAS, the convergence of information technology (IT) and operational technology (OT) within
+banking environments, driven by branch modernization initiatives, smart building systems, and
+the deployment of Internet of Things (IoT) devices for environmental monitoring and physical
+access control, has introduced additional complexity to the cybersecurity risk landscape. These
+converged environments require assessment approaches that account for both traditional IT
+vulnerabilities and OT-specific risks, including the potential for cyber-physical attacks
+targeting critical banking infrastructure. The increasing adoption of cloud computing
+infrastructure, containerization, and serverless architectures for core banking applications has
+further complicated the security assessment process, requiring specialized expertise in cloud
+security configurations, identity and access management (IAM) policies, and multi-tenant
+isolation controls;
+
+WHEREAS, social engineering remains one of the most effective and prevalent attack vectors
+against financial institutions, with phishing, spear-phishing, pretexting, and voice phishing
+(vishing) attacks consistently ranking among the top initial access vectors identified in
+industry threat intelligence reports. The effectiveness of social engineering attacks is
+amplified within the banking sector due to the hierarchical nature of financial organizations,
+the availability of publicly accessible information about institutional structure and personnel,
+and the inherent urgency associated with financial transactions that enables attackers to
+circumvent normal verification procedures through manufactured time-pressure scenarios;
+
+WHEREAS, the parties desire to enter into a comprehensive cybersecurity assessment and
+compliance advisory arrangement that addresses the foregoing considerations and establishes a
+framework for the systematic identification, evaluation, and remediation of cybersecurity risks
+facing the Client's information systems, data assets, and regulatory compliance posture;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements set forth
+herein, and for other good and valuable consideration, the receipt and sufficiency of which
+are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. CyberShield Assessments Ltd., a corporation duly organized and existing
+under the laws of the Commonwealth of Virginia, with its principal offices located at 900
+Security Drive, Suite 500, Reston, VA 20190 (hereinafter referred to as "Service Provider,"
+"Assessor," or "CyberShield").
+
+1.2 Client. Pacific Northwest Bancorp, a banking corporation duly organized and existing under
+the laws of the State of Washington, with its principal place of business at 2100 Financial
+Center, Seattle, WA 98101 (hereinafter referred to as "Client," "Institution," or "PNB").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they have the
+full legal authority to bind their respective organization to the terms and conditions of
+this Agreement, and that the execution of this Agreement has been duly authorized by all
+necessary corporate or organizational approvals.
+
+2. DEFINITIONS
+
+2.1 "Attack Vector" means any method, pathway, or technique used by a Threat Actor to gain
+unauthorized access to, compromise, or disrupt the Client's information systems, networks,
+applications, or data assets, including but not limited to network-based attacks, application-
+layer exploits, social engineering techniques, physical access breaches, and supply chain
+compromises.
+
+2.2 "CISA" means the Cybersecurity and Infrastructure Security Agency, a component of the
+United States Department of Homeland Security responsible for cybersecurity coordination,
+threat intelligence dissemination, and critical infrastructure protection.
+
+2.3 "Common Vulnerability Scoring System" or "CVSS" means the industry-standard framework
+published by FIRST (Forum of Incident Response and Security Teams) for rating the severity
+of security vulnerabilities, providing a numerical score ranging from 0.0 to 10.0 based on
+exploitability metrics and impact metrics.
+
+2.4 "Control Framework" means a structured set of cybersecurity policies, procedures, and
+technical controls organized according to an industry-recognized taxonomy, including without
+limitation the NIST Cybersecurity Framework, the CIS Controls (formerly SANS Top 20), the
+ISO/IEC 27001 standard, and the COBIT framework.
+
+2.5 "CVE" means Common Vulnerabilities and Exposures, a dictionary-style catalog of publicly
+known cybersecurity vulnerabilities and exposures maintained by MITRE Corporation under the
+sponsorship of the National Cybersecurity Center of Excellence (NCCoE) at NIST.
+
+2.6 "Exploit" means a piece of software, a technique, or a sequence of commands that takes
+advantage of a vulnerability in a system, application, or protocol to cause unintended or
+unanticipated behavior, including unauthorized data access, privilege escalation, denial of
+service, or remote code execution.
+
+2.7 "GLBA" means the Gramm-Leach-Bliley Act (15 U.S.C. Sections 6801-6809), including the
+GLBA Privacy Rule implementing Regulation P and the GLBA Safeguards Rule implementing
+Regulation S-P, as each may be amended from time to time.
+
+2.8 "Incident Response" means the organized approach to addressing and managing the aftermath
+of a security breach or cyberattack, including identification, containment, eradication,
+recovery, and post-incident analysis activities conducted in accordance with a documented
+incident response plan.
+
+2.9 "NIST" means the National Institute of Standards and Technology, a non-regulatory agency
+of the United States Department of Commerce, and includes all publications, special
+publications, and frameworks issued by NIST relevant to cybersecurity, including NIST
+Special Publication 800-53 (Security and Privacy Controls), NIST Special Publication 800-115
+(Technical Guide to Information Security Testing and Assessment), and the NIST Cybersecurity
+Framework (CSF) version 2.0.
+
+2.10 "PCI DSS" means the Payment Card Industry Data Security Standard, a set of security
+standards established by the Payment Card Industry Security Standards Council (PCI SSC) to
+protect cardholder data, as further described in the current version of the standard and
+related supporting documentation.
+
+2.11 "Penetration Test" or "Pentest" means an authorized simulated cyberattack performed on
+the Client's information systems, networks, or applications to evaluate the security posture
+of the target environment by attempting to exploit vulnerabilities using the same tools,
+techniques, and processes as an adversary, conducted in accordance with the Rules of
+Engagement set forth in Exhibit A.
+
+2.12 "Remediation" means the process of identifying, developing, implementing, and verifying
+corrective actions to address vulnerabilities, security gaps, and compliance deficiencies
+identified during the performance of assessment services under this Agreement.
+
+2.13 "Risk Score" means a numerical or categorical rating assigned to identified
+vulnerabilities, threats, or control deficiencies based on the likelihood of exploitation and
+the potential impact on the Client's business operations, data assets, regulatory compliance,
+and reputation, calculated using the proprietary risk scoring methodology described in
+Exhibit B.
+
+2.14 "SOC" means System and Organization Controls, a suite of audit reports issued by an
+independent certified public accounting firm on controls relevant to security, availability,
+processing integrity, confidentiality, and privacy at service organizations, including SOC 1
+(SSAE 18) and SOC 2 reports.
+
+2.15 "SOX" means the Sarbanes-Oxley Act of 2002 (Pub. L. 107-204, 116 Stat. 745), including
+the requirements established by Section 302 and Section 404 regarding management
+certification of internal controls over financial reporting and auditor attestation of
+internal control effectiveness.
+
+2.16 "Threat Actor" means any individual, group, organization, or entity that poses a
+potential risk to the Client's information security, including but not limited to external
+threat actors such as criminal organizations, state-sponsored groups, hacktivists, and
+terrorist organizations, as well as internal threat actors such as disgruntled employees,
+negligent insiders, and compromised accounts.
+
+2.17 "Vulnerability" means a weakness, flaw, or deficiency in an information system, network,
+application, or process that could be exploited by a Threat Actor to compromise the
+confidentiality, integrity, or availability of the Client's data or systems, as classified
+according to severity (Critical, High, Medium, Low, or Informational) in accordance with the
+Common Vulnerability Scoring System (CVSS).
+
+2.18 "Zero-Day" means a vulnerability in software, hardware, or firmware that is unknown to
+the vendor and for which no patch or remediation is available at the time of discovery or
+exploitation, representing a particularly dangerous category of security risk due to the
+absence of available defensive countermeasures.
+
+2.19 "Working Day" means any day other than Saturday, Sunday, or a federal holiday observed
+in the Commonwealth of Virginia.
+
+2.20 "Assessment Report" means any written deliverable produced by the Service Provider in
+connection with the performance of assessment services under this Agreement, including
+without limitation penetration test reports, vulnerability assessment reports, compliance gap
+analyses, and advisory communications.
+
+2.21 "Confidential Information" means all non-public information disclosed by either party
+to the other, whether orally, in writing, by electronic transmission, or by inspection,
+including but not limited to financial data, customer information, system configurations,
+network architecture details, vulnerability data, security assessment findings, and
+business operations information.
+
+2.22 "Control Assessment" means the systematic evaluation of the design adequacy and operating
+effectiveness of security controls implemented within the Client's information systems and
+processes, mapped to applicable regulatory requirements and industry standard control
+frameworks as described in Exhibit C.
+
+3. SCOPE OF SERVICES
+
+3.1 Comprehensive Cybersecurity Assessment. The Service Provider shall provide comprehensive
+cybersecurity assessment services encompassing the following core service areas:
+
+    (a) Penetration Testing. The Service Provider shall conduct network penetration testing,
+    application penetration testing, and wireless network penetration testing across the
+    Client's internal and external-facing systems in accordance with the Rules of Engagement
+    set forth in Exhibit A. Penetration testing shall be conducted using a combination of
+    automated vulnerability exploitation tools and manual testing techniques to identify
+    exploitable vulnerabilities, misconfigurations, and security control gaps. All testing
+    shall be performed in a controlled manner with defined escalation procedures to prevent
+    disruption to production systems.
+
+    (b) Vulnerability Scanning. The Service Provider shall perform recurring vulnerability
+    scanning of the Client's network infrastructure, server environments, web applications,
+    database systems, and endpoint devices using industry-standard scanning tools. Scanning
+    shall include authenticated and unauthenticated scanning methodologies, with results
+    correlated and de-duplicated to provide an accurate view of the Client's vulnerability
+    posture. Vulnerability scans shall be conducted on a monthly basis during the term of
+    this Agreement.
+
+    (c) Social Engineering Assessments. The Service Provider shall conduct periodic social
+    engineering assessments designed to evaluate the effectiveness of the Client's security
+    awareness program and the susceptibility of Client personnel to common social engineering
+    attack vectors. Assessments shall include simulated phishing campaigns (email-based,
+    SMS-based, and voice-based), pretexting scenarios targeting physical access controls,
+    and USB drop tests. All social engineering assessments shall be conducted with appropriate
+    safeguards to prevent unauthorized disclosure of test activities to Client personnel who
+    are not designated as test targets.
+
+    (d) Security Architecture Review. The Service Provider shall perform a comprehensive
+    review of the Client's security architecture, including network segmentation design,
+    firewall rule sets, intrusion detection and prevention system configurations, endpoint
+    protection deployment, identity and access management implementation, data loss prevention
+    controls, and cloud security configurations. The architecture review shall evaluate the
+    alignment of the Client's security infrastructure with industry best practices and
+    applicable regulatory requirements.
+
+    (e) Regulatory Compliance Gap Analysis. The Service Provider shall conduct a thorough
+    gap analysis of the Client's compliance posture with respect to the Gramm-Leach-Bliley
+    Act (GLBA) Safeguards Rule, the Sarbanes-Oxley Act (SOX) information technology general
+    controls requirements, and the Payment Card Industry Data Security Standard (PCI DSS)
+    version 4.0. The gap analysis shall identify areas of non-compliance, partial compliance,
+    and full compliance, with specific remediation recommendations prioritized by risk
+    severity and regulatory impact. The regulatory mapping framework used for this analysis
+    is described in Exhibit C.
+
+    (f) Incident Response Readiness Evaluation. The Service Provider shall evaluate the
+    Client's incident response capabilities, including the adequacy of the Client's incident
+    response plan, the completeness and currency of contact lists and escalation procedures,
+    the availability and testing of forensic tools and capabilities, the frequency and
+    realism of incident response tabletop exercises and simulations, and the effectiveness
+    of communication protocols with internal stakeholders, external legal counsel,
+    regulatory agencies, and law enforcement.
+
+    (g) Security Awareness Program Development. The Service Provider shall assist the Client
+    in the development and enhancement of its security awareness program, including the
+    design of role-based training curricula, the creation of assessment mechanisms to measure
+    training effectiveness, and the establishment of metrics and benchmarks for continuous
+    improvement of the Client's human-centric security posture.
+
+3.2 Ongoing Monitoring and Advisory. In addition to the assessment services described in
+Section 3.1, the Service Provider shall provide ongoing monitoring and advisory services
+throughout the term of this Agreement, including monthly vulnerability scanning and
+remediation tracking, quarterly security posture reviews, ad-hoc advisory support for
+emerging threat intelligence, and guidance on security control implementations and
+configurations.
+
+4. ASSESSMENT METHODOLOGY
+
+4.1 NIST Cybersecurity Framework. All assessment services performed under this Agreement shall
+be conducted in alignment with the NIST Cybersecurity Framework (CSF) version 2.0, organized
+across the six core functions: Govern, Identify, Protect, Detect, Respond, and Recover.
+Assessment findings shall be mapped to relevant CSF subcategories and implementation tiers
+to provide the Client with a comprehensive view of its cybersecurity maturity relative to
+the framework's target profile.
+
+4.2 OWASP Testing Methodology. Application-layer penetration testing and web application
+vulnerability assessments shall be conducted in accordance with the Open Worldwide Application
+Security Project (OWASP) Testing Guide methodology, covering information gathering,
+configuration management testing, identity management testing, authentication testing,
+authorization testing, session management testing, input validation testing, error handling
+testing, cryptography testing, business logic testing, and client-side testing.
+
+4.3 MITRE ATT&CK Framework. Penetration testing scenarios and threat emulation exercises
+shall be mapped to the MITRE ATT&CK framework to provide the Client with threat-based
+context for identified vulnerabilities and attack paths. Testing activities shall be aligned
+with relevant ATT&CK tactics, techniques, and procedures (TTPs) based on the threat
+landscape most relevant to the financial services sector.
+
+4.4 Rules of Engagement. All penetration testing and security assessment activities shall be
+conducted in strict accordance with the Rules of Engagement set forth in Exhibit A. The
+Rules of Engagement define the scope of testing, authorized targets, prohibited activities,
+testing windows, communication procedures, escalation paths, and emergency contact
+information. Any deviation from the Rules of Engagement shall require prior written approval
+from both parties.
+
+5. TERM
+
+5.1 Initial Term. This Agreement shall commence on the Effective Date and shall continue for
+a period of twenty-four (24) months, concluding on January 31, 2027 (the "Initial Term"),
+unless earlier terminated in accordance with the provisions of Section 14.
+
+5.2 Automatic Renewal. Upon expiration of the Initial Term, this Agreement shall automatically
+renew for successive twelve (12) month renewal periods (each a "Renewal Term"), unless either
+party provides written notice of non-renewal to the other party at least ninety (90) calendar
+days prior to the expiration of the then-current term.
+
+5.3 Effect of Termination. Expiration or termination of this Agreement shall not affect any
+provisions that by their nature are intended to survive termination, including without
+limitation Sections 10 (Confidentiality), 12 (Liability), 15 (Dispute Resolution), 16
+(Governing Law), and 18 (General Provisions).
+
+6. COMPENSATION
+
+6.1 Initial Assessment Fee. In consideration of the comprehensive initial assessment services
+described in Section 3.1, the Client shall pay the Service Provider an initial assessment fee
+in the amount of forty-five thousand dollars ($45,000.00). The initial assessment fee shall be
+payable within forty-five (45) calendar days of receipt of the Service Provider's invoice,
+which shall be submitted within ten (10) Working Days of the Effective Date.
+
+6.2 Monthly Monitoring and Advisory Fee. During the term of this Agreement, the Client shall
+pay the Service Provider a monthly fee in the amount of eight thousand dollars ($8,000.00) for
+ongoing monitoring and advisory services as described in Section 3.2. Monthly fees shall be
+payable within forty-five (45) calendar days of receipt of the Service Provider's monthly
+invoice. For the first year of this Agreement, the total annual cost of monthly monitoring and
+advisory services shall be ninety-six thousand dollars ($96,000.00), resulting in a total
+first-year cost under this Agreement of one hundred forty-one thousand dollars ($141,000.00).
+
+6.3 Taxes. All fees payable under this Agreement are exclusive of applicable taxes. The
+Client shall be responsible for any sales tax, use tax, or similar taxes imposed on the
+services provided under this Agreement, except for taxes based on the Service Provider's net
+income.
+
+7. DELIVERABLES AND MILESTONES
+
+7.1 Penetration Test Report. The Service Provider shall deliver a comprehensive penetration
+test report to the Client within sixty (60) calendar days of the commencement of penetration
+testing activities. The report shall include an executive summary, detailed technical findings
+organized by severity, step-by-step exploitation narratives for each confirmed vulnerability,
+evidence of exploitation including screenshots and system output, and prioritized remediation
+recommendations with estimated effort and complexity assessments.
+
+7.2 Vulnerability Assessment Report. The Service Provider shall deliver the initial
+vulnerability assessment report to the Client within forty-five (45) calendar days of the
+completion of the initial vulnerability scan cycle. The report shall present all identified
+vulnerabilities with associated CVSS scores, affected assets, patch availability information,
+and risk-ranked remediation priorities.
+
+7.3 Compliance Gap Analysis Report. The Service Provider shall deliver the regulatory
+compliance gap analysis report to the Client within ninety (90) calendar days of the Effective
+Date. The report shall map the Client's current control environment against the requirements
+of GLBA, SOX, and PCI DSS, identifying specific gaps and providing detailed remediation
+roadmaps with resource and timeline estimates. The regulatory mapping framework used for this
+analysis is attached hereto as Exhibit C.
+
+7.4 Incident Response Plan. The Service Provider shall deliver a comprehensive incident
+response readiness evaluation report, including recommended enhancements to the Client's
+incident response plan, within one hundred twenty (120) calendar days of the Effective Date.
+The deliverable shall include a revised incident response plan template, communication
+templates for various incident categories, forensic investigation procedures, and a tabletop
+exercise scenario library.
+
+7.5 Quarterly Advisory Reports. The Service Provider shall deliver quarterly security posture
+advisory reports to the Client on an ongoing basis throughout the term of this Agreement.
+Each quarterly report shall summarize vulnerability scan results and remediation progress,
+emerging threat intelligence relevant to the financial services sector, security control
+recommendations, and a comparison of the Client's security posture against industry benchmarks
+and peer institutions.
+
+8. INTELLECTUAL PROPERTY
+
+8.1 Client Ownership of Assessment Reports. All Assessment Reports, including without
+limitation penetration test reports, vulnerability assessment reports, compliance gap
+analyses, incident response readiness evaluations, and advisory reports, shall be the sole
+and exclusive property of the Client upon full payment of the applicable fees. The Client
+shall have unrestricted rights to use, reproduce, modify, and distribute Assessment Reports
+for internal purposes and for submission to regulatory agencies as required by applicable
+law or regulation.
+
+8.2 Service Provider Retention of Methodologies. The Service Provider shall retain all right,
+title, and interest in its proprietary assessment methodologies, testing frameworks, automated
+scanning tools, risk scoring algorithms, reporting templates, and other tools, techniques, and
+processes developed independently of this Agreement (collectively, "Service Provider IP"). The
+Client acknowledges that the Service Provider IP represents valuable trade secrets and
+proprietary business assets of the Service Provider and shall not reverse engineer, decompile,
+or otherwise attempt to derive the source code, algorithms, or methodologies underlying the
+Service Provider IP.
+
+8.3 License Grant. The Service Provider hereby grants to the Client a limited, non-exclusive,
+non-transferable, non-sublicensable license to access and use the Service Provider's proprietary
+risk scoring dashboard (the "Dashboard") for the duration of this Agreement and any Renewal
+Terms, solely for the purpose of tracking and managing cybersecurity risks identified during
+the performance of services under this Agreement.
+
+9. REPORTING REQUIREMENTS
+
+9.1 Report Classification. All Assessment Reports shall be classified in accordance with the
+following sensitivity categories: CONFIDENTIAL — RESTRICTED (findings that could directly
+enable unauthorized access to Client systems), CONFIDENTIAL (general security assessment
+findings and recommendations), and INTERNAL (summary information suitable for broader
+distribution within the Client's organization). Each report shall bear the appropriate
+classification marking on every page.
+
+9.2 Report Format. Assessment Reports shall be delivered in PDF format, with technical
+appendices provided in both PDF and Microsoft Excel formats where applicable. Reports shall
+include a cover page identifying the Service Provider, the Client, the assessment type,
+the assessment period, and the report classification.
+
+9.3 Report Distribution. Assessment Reports classified as CONFIDENTIAL — RESTRICTED shall
+be distributed only to the Client's Chief Information Security Officer, Chief Information
+Officer, and such other personnel as the Client's CISO may designate in writing. Assessment
+Reports classified as CONFIDENTIAL may be distributed to the Client's senior management team,
+legal counsel, and board-level risk committee members. INTERNAL reports may be distributed
+more broadly within the Client's organization at the Client's discretion.
+
+10. CONFIDENTIALITY
+
+10.1 Obligations. Each party agrees to hold in strict confidence all Confidential Information
+of the other party disclosed in connection with this Agreement. Neither party shall disclose,
+publish, or otherwise reveal Confidential Information to any third party without the prior
+written consent of the disclosing party, except as required by law, regulation, legal process,
+or binding order of a court or regulatory agency of competent jurisdiction.
+
+10.2 Duration. The obligations of confidentiality set forth in this Section 10 shall survive
+the expiration or termination of this Agreement for a period of ten (10) years, reflecting
+the heightened sensitivity of financial institution data and the extended regulatory retention
+requirements applicable to cybersecurity assessment records in the banking sector.
+
+10.3 Permitted Disclosures. Notwithstanding the foregoing, a receiving party may disclose
+Confidential Information to its employees, contractors, and professional advisors who have
+a need to know such information for purposes consistent with this Agreement and who are bound
+by confidentiality obligations at least as restrictive as those set forth herein.
+
+11. INSURANCE
+
+11.1 Required Coverage. Throughout the term of this Agreement, the Service Provider shall
+maintain, at its sole cost and expense, the following insurance coverages with insurers rated
+A- VII or better by A.M. Best Company (or equivalent rating agency):
+
+    (a) Cyber Liability Insurance. Cyber liability insurance in an amount not less than
+    five million dollars ($5,000,000) per occurrence and in the aggregate, covering claims
+    arising from data breaches, security failures, and unauthorized disclosure of
+    confidential information in connection with the performance of services under this
+    Agreement.
+
+    (b) Professional Liability Insurance. Professional liability (errors and omissions)
+    insurance in an amount not less than three million dollars ($3,000,000) per occurrence
+    and five million dollars ($5,000,000) in the aggregate, covering claims arising from
+    negligent acts, errors, or omissions in the provision of professional services under
+    this Agreement.
+
+11.2 Evidence of Coverage. The Service Provider shall provide certificates of insurance
+evidencing the required coverages to the Client upon execution of this Agreement and upon
+each renewal of such policies. Such certificates shall provide that the Client shall receive
+thirty (30) days' prior written notice of any cancellation, material modification, or
+non-renewal of the required insurance policies.
+
+12. LIABILITY
+
+12.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEITHER
+PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,
+SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF REVENUE,
+LOSS OF PROFITS, LOSS OF BUSINESS OPPORTUNITY, BUSINESS INTERRUPTION, LOSS OF GOODWILL,
+OR LOSS OF DATA, ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF
+SERVICES HEREUNDER, REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT,
+STRICT LIABILITY, OR ANY OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES.
+
+12.2 Liability Cap. The Service Provider's total aggregate liability for all claims arising
+out of or relating to this Agreement, regardless of the form of action or legal theory, shall
+not exceed two million dollars ($2,000,000). This cap shall apply to the aggregate of all
+claims arising during the term of this Agreement and any Renewal Terms.
+
+13. PERSONNEL SECURITY
+
+13.1 Background Checks. The Service Provider shall ensure that all personnel assigned to
+perform services under this Agreement have undergone comprehensive background investigations
+prior to being granted access to Client systems, facilities, or Confidential Information.
+Background investigations shall include, at a minimum, verification of identity, education
+and employment history, criminal record check (federal and state), credit history review,
+and reference verification. Personnel with unsatisfactory background investigation results
+shall not be permitted to perform services under this Agreement.
+
+13.2 Security Awareness. All Service Provider personnel assigned to this engagement shall
+complete the Client's information security awareness training program prior to commencing work
+and shall complete annual refresher training thereafter.
+
+13.3 SOC 2 Type II Certification. The Service Provider shall maintain current SOC 2 Type II
+certification with a report covering the security trust service criteria throughout the term
+of this Agreement. The Service Provider shall provide a copy of its most recent SOC 2 Type II
+report to the Client upon request and shall promptly notify the Client of any material
+exceptions or qualified opinions identified in its annual SOC 2 examination.
+
+14. TERMINATION
+
+14.1 Termination for Convenience. Either party may terminate this Agreement for convenience
+upon ninety (90) calendar days' prior written notice to the other party.
+
+14.2 Termination for Cause. Either party may terminate this Agreement for cause if the other
+party commits a material breach of any provision of this Agreement and fails to cure such
+breach within thirty (30) calendar days after receiving written notice specifying the nature
+of the breach in reasonable detail.
+
+14.3 Termination upon Insolvency. Either party may terminate this Agreement immediately upon
+written notice if the other party becomes insolvent, files a petition in bankruptcy, is
+adjudicated as bankrupt, makes an assignment for the benefit of creditors, or has a receiver
+appointed for a substantial portion of its assets.
+
+14.4 Effect of Termination. Upon termination or expiration of this Agreement, the Service
+Provider shall (a) deliver all completed and in-progress Assessment Reports to the Client,
+(b) return or securely destroy all Client Confidential Information in its possession, and
+(c) provide reasonable transition assistance to facilitate the Client's engagement of a
+successor service provider, all at the Client's expense.
+
+15. DISPUTE RESOLUTION
+
+15.1 Governing Forum. Any legal action, suit, or proceeding arising out of or relating to
+this Agreement shall be brought exclusively in the federal courts of the United States of
+America located in the Eastern District of Virginia, and each party hereby irrevocably submits
+to the exclusive jurisdiction of such courts (and the appellate courts therefrom) in any such
+action, suit, or proceeding.
+
+15.2 Waiver of Jury Trial. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EACH PARTY
+HEREBY IRREVOCABLY WAIVES ANY AND ALL RIGHT TO TRIAL BY JURY IN ANY LEGAL ACTION, SUIT, OR
+PROCEEDING ARISING OUT OF OR RELATING TO THIS AGREEMENT.
+
+16. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the
+Commonwealth of Virginia, without giving effect to any choice-of-law or conflict-of-law
+provisions that would require the application of the laws of any jurisdiction other than
+the Commonwealth of Virginia. To the extent that federal law is applicable to any dispute
+arising under this Agreement, such federal law shall control.
+
+17. INCIDENT COMMUNICATION
+
+17.1 Security Incident Notification. If the Service Provider discovers or becomes aware of
+any security incident that may affect the Client's systems, data, or information security
+posture, the Service Provider shall notify the Client's designated security contact within
+twenty-four (24) hours of such discovery. The initial notification shall include a
+description of the nature and scope of the incident, systems potentially affected, and
+preliminary assessment of impact.
+
+17.2 Forensic Preservation. Upon discovery of a security incident, the Service Provider
+shall take all reasonable steps to preserve evidence relevant to the incident, including
+system logs, network traffic captures, memory images, and any other artifacts that may be
+relevant to a subsequent forensic investigation.
+
+18. GENERAL PROVISIONS
+
+18.1 Entire Agreement. This Agreement, including all exhibits attached hereto, constitutes
+the entire agreement between the parties with respect to the subject matter hereof and
+supersedes all prior and contemporaneous agreements, understandings, negotiations, and
+discussions, whether oral or written, between the parties relating to such subject matter.
+
+18.2 Amendments. This Agreement may not be amended, modified, or supplemented except by a
+written instrument signed by both parties.
+
+18.3 Assignment. Neither party may assign or transfer any of its rights or obligations under
+this Agreement without the prior written consent of the other party, except that either party
+may assign this Agreement to an Affiliate or successor entity in connection with a merger,
+acquisition, or sale of all or substantially all of its assets, provided that the assignee
+assumes all obligations of the assigning party under this Agreement.
+
+18.4 Severability. If any provision of this Agreement is held to be invalid, illegal, or
+unenforceable by a court of competent jurisdiction, such provision shall be modified to the
+minimum extent necessary to make it valid and enforceable, and the remaining provisions of
+this Agreement shall continue in full force and effect.
+
+18.5 Waiver. The failure of either party to enforce any provision of this Agreement shall
+not constitute a waiver of such party's right to enforce such provision or any other
+provision in the future.
+
+18.6 Notices. All notices required or permitted under this Agreement shall be in writing and
+shall be deemed delivered when (a) delivered personally, (b) sent by certified mail, return
+receipt requested, (c) sent by nationally recognized overnight courier, or (d) sent by email
+with confirmation of receipt, to the addresses set forth in Section 1 or such other address
+as either party may designate in writing.
+
+18.7 Independent Contractor. The Service Provider is an independent contractor and not an
+employee, agent, partner, or joint venturer of the Client. Nothing in this Agreement shall
+be construed to create an employment relationship, partnership, joint venture, or agency
+relationship between the parties.
+
+18.8 Force Majeure. Neither party shall be liable for any failure or delay in the performance
+of its obligations under this Agreement to the extent that such failure or delay is caused by
+circumstances beyond the reasonable control of the affected party, including but not limited
+to acts of God, natural disasters, pandemics, government actions, labor disputes, civil
+unrest, war, terrorism, cyberattacks by third parties not attributable to the affected party's
+negligence, and power or telecommunications failures.
+
+18.9 Subcontractor Management. The Service Provider shall not engage any subcontractor to
+perform services under this Agreement without the prior written consent of the Client. Any
+approved subcontractor shall be subject to the same confidentiality, security, and quality
+standards as the Service Provider, and the Service Provider shall remain fully responsible
+for the performance of any subcontracted services.
+
+18.10 Records Retention. The Service Provider shall maintain all records, working papers,
+scan results, and test data generated in connection with the performance of services under
+this Agreement for a period of not less than seven (7) years following the completion of the
+applicable assessment engagement, or such longer period as may be required by applicable law
+or regulation.
+
+18.11 Regulatory Examination Support. The Service Provider shall, upon the Client's reasonable
+request and at the Client's expense, make personnel available to participate in regulatory
+examinations, audits, or inquiries conducted by federal or state banking regulators, the
+Payment Card Industry Security Standards Council, or other regulatory bodies with jurisdiction
+over the Client's operations, to the extent such participation relates to assessment services
+performed under this Agreement.
+
+18.12 Data Handling Procedures. All Client data accessed, processed, or stored by the Service
+Provider in connection with the performance of services under this Agreement shall be handled
+in accordance with the Client's data classification policy and the data handling requirements
+specified in the Rules of Engagement (Exhibit A). The Service Provider shall implement
+appropriate technical and organizational measures to protect Client data, including encryption
+of data at rest and in transit, access controls based on the principle of least privilege,
+and secure deletion procedures for data no longer required for the performance of services.
+
+19. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this Agreement:
+
+    Exhibit A:  Rules of Engagement for Penetration Testing and Security Assessments
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+    Exhibit B:  NIST CSF Mapping Document and Risk Scoring Methodology
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+    Exhibit C:  Regulatory Compliance Matrix — GLBA, SOX, and PCI DSS Requirements
+                (Attached hereto but the contents thereof are not set forth in this Agreement)
+
+20. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Cybersecurity Assessment and Compliance
+Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+CyberShield Assessments Ltd., a Virginia corporation
+
+
+By: ______________________________________
+Name: Col. Robert Hensley (Ret.)
+Title: President
+Date: January 28, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Margaret Thornton
+Title: Chief Legal Officer
+Date: January 28, 2025
+
+
+CLIENT:
+
+Pacific Northwest Bancorp, a Washington corporation
+
+
+By: ______________________________________
+Name: Jennifer Kato
+Title: Chief Information Security Officer
+Date: January 30, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: David Chen
+Title: Executive Vice President, Operations
+Date: January 30, 2025

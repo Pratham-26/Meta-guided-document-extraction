@@ -1,0 +1,663 @@
+LOGISTICS AND WAREHOUSE MANAGEMENT SERVICES AGREEMENT
+
+This Logistics and Warehouse Management Services Agreement (the "Agreement"), bearing
+reference number LOG-2024-3301, is entered into as of June 1, 2024 (the "Effective Date"),
+by and between the parties identified in Section 1 below.
+
+WHEREAS, the home furniture manufacturing industry has undergone a profound transformation
+in recent years, driven by the rapid expansion of e-commerce furniture sales, shifting consumer
+preferences toward direct-to-consumer purchasing models, and the increasing complexity of
+last-mile delivery logistics for oversized and fragile merchandise. The United States home
+furniture market, estimated at over one hundred twenty billion dollars in annual revenue,
+continues to evolve as manufacturers and retailers alike seek to optimize their supply chain
+operations, reduce warehousing costs, and improve order fulfillment speed and accuracy to meet
+rising consumer expectations for rapid delivery and hassle-free returns;
+
+WHEREAS, the proliferation of online furniture sales has introduced significant logistical
+challenges that traditional brick-and-mortar distribution networks were not designed to address.
+Furniture items present unique warehousing and shipping requirements due to their variable
+dimensions, weight ranges, susceptibility to damage during handling and transit, and the
+consumer expectation of white-glove delivery options. The transition from regional distribution
+to national fulfillment operations has compelled furniture manufacturers to reevaluate their
+approach to inventory management, warehouse operations, and carrier relationships;
+
+WHEREAS, supply chain disruptions experienced in recent years, including port congestion,
+container shortages, raw material scarcity, and labor market volatility, have underscored the
+critical importance of resilient and adaptable warehouse management systems. Manufacturers
+who have invested in modern warehouse management technology, including real-time inventory
+tracking, automated picking systems, and integrated shipping coordination platforms, have
+demonstrated significantly greater operational flexibility and customer satisfaction compared
+to those relying on legacy warehouse management approaches;
+
+WHEREAS, the seasonal nature of furniture demand, characterized by pronounced peaks during
+spring and fall home improvement seasons, holiday promotional periods, and year-end clearance
+events, requires warehouse operations capable of scaling capacity rapidly in response to
+fluctuating order volumes. The ability to accommodate seasonal surges without compromising
+order accuracy or delivery timelines represents a critical competitive advantage in the
+furniture retail landscape;
+
+WHEREAS, the growing importance of reverse logistics in furniture e-commerce, including
+product returns, exchanges, damage claims, and refurbishment processing, has created demand
+for warehouse management partners capable of efficiently managing the full product lifecycle
+from inbound receiving through final-mile delivery and, when necessary, return-to-vendor or
+refurbishment workflows;
+
+WHEREAS, regulatory requirements governing warehouse operations, including Occupational Safety
+and Health Administration (OSHA) standards for material handling, fire protection codes
+established by the National Fire Protection Association (NFPA), and environmental regulations
+pertaining to packaging waste and hazardous material storage, impose substantial compliance
+obligations on warehouse operators that require specialized expertise and dedicated compliance
+management resources;
+
+WHEREAS, the parties desire to enter into a comprehensive warehouse management arrangement
+that addresses the foregoing considerations and establishes a framework for the efficient,
+compliant, and scalable management of the Client's furniture inventory and fulfillment
+operations;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements set forth
+herein, and for other good and valuable consideration, the receipt and sufficiency of which
+are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. FreightFlow Logistics Inc., a corporation duly organized and existing
+under the laws of the State of Georgia, with its principal offices located at 3400
+Distribution Parkway, Atlanta, GA 30349 (hereinafter referred to as "Service Provider,"
+"Operator," or "FreightFlow").
+
+1.2 Client. HomeStyle Furniture Manufacturing LLC, a limited liability company duly organized
+and existing under the laws of the State of North Carolina, with its principal place of
+business at 1250 Industrial Way, High Point, NC 27260 (hereinafter referred to as "Client,"
+"Manufacturer," or "HomeStyle").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they have the
+full legal authority to bind their respective organization to the terms and conditions of
+this Agreement, and that the execution of this Agreement has been duly authorized by all
+necessary corporate or organizational approvals.
+
+2. DEFINITIONS
+
+2.1 "Affiliate" means any entity that directly or indirectly controls, is controlled by,
+or is under common control with a party, where "control" means ownership of more than
+fifty percent (50%) of the voting securities or equivalent ownership interest.
+
+2.2 "Carrier" means any third-party transportation provider engaged by either party for the
+shipment of Client Products, including but not limited to less-than-truckload (LTL) carriers,
+full-truckload (FTL) carriers, parcel carriers, and specialized white-glove delivery services.
+
+2.3 "Client Products" means all furniture, furniture components, accessories, packaging
+materials, and related merchandise owned by the Client and stored, handled, or processed
+at the Facility.
+
+2.4 "Confidential Information" means all non-public information disclosed by either party
+to the other, whether orally, in writing, or by inspection, including but not limited to
+business plans, financial data, customer lists, pricing information, inventory levels,
+supplier relationships, and operational procedures.
+
+2.5 "Damage Rate" means the percentage of Client Products that sustain damage during
+receiving, storage, picking, packing, or shipping operations, calculated as the number of
+damaged units divided by the total number of units processed during the applicable period.
+
+2.6 "Facility" means the warehouse or distribution center utilized by the Service Provider
+for the performance of services under this Agreement, as further described in Section 6.
+
+2.7 "Force Majeure Event" means any event or circumstance beyond the reasonable control of
+the affected party, including but not limited to acts of God, natural disasters, pandemics,
+government actions, labor disputes, civil unrest, war, terrorism, fires, floods, earthquakes,
+power failures, telecommunications failures, and transportation disruptions.
+
+2.8 "Fulfillment Accuracy" means the percentage of orders shipped that contain the correct
+products in the correct quantities, as calculated by dividing the number of accurately
+fulfilled orders by the total number of orders shipped during the applicable period.
+
+2.9 "Intellectual Property" means all patents, copyrights, trademarks, trade secrets, and
+other intellectual property rights, whether registered or unregistered, owned or controlled
+by a party.
+
+2.10 "Inventory Snapshot" means a point-in-time record of all Client Products stored at the
+Facility, including SKU-level quantities, locations, condition assessments, and associated
+metadata.
+
+2.11 "Milestone" means each of the project deliverables and implementation targets set forth
+in Section 5 of this Agreement.
+
+2.12 "Monthly Service Fee" means the fixed monthly retainer payment described in Section 4.1.
+
+2.13 "Per-Unit Fee" means the variable per-unit shipping charge described in Section 4.2.
+
+2.14 "Quarterly Performance Review" means the formal performance evaluation conducted in
+accordance with Section 9.3.
+
+2.15 "Returns Merchandise Authorization" or "RMA" means the authorization issued by the
+Client or Service Provider for the return of Client Products from the end customer.
+
+2.16 "Service Level Agreement" or "SLA" means the performance standards and metrics set
+forth in Section 9 of this Agreement.
+
+2.17 "Shipping Volume" means the total number of Client Product units shipped from the
+Facility during a calendar month.
+
+2.18 "Surcharge" means the additional per-unit fee applicable when Shipping Volume exceeds
+the Monthly Volume Cap, as described in Section 4.3.
+
+2.19 "WMS" means the Warehouse Management System software platform utilized by the Service
+Provider for inventory tracking, order management, and warehouse operations, as further
+described in Section 8.
+
+2.20 "Working Day" means any day other than Saturday, Sunday, or a federal holiday observed
+in the State of Georgia.
+
+3. SCOPE OF SERVICES
+
+3.1 General Services. The Service Provider shall provide end-to-end warehouse management
+services for the Client's home furniture products, including without limitation the following
+core operational functions:
+
+    (a) Receiving. The Service Provider shall receive inbound shipments of Client Products
+    at the Facility, including unloading of delivery vehicles, inspection of inbound
+    merchandise for quantity verification and damage assessment, documentation of
+    discrepancies, and proper staging of received goods for putaway.
+
+    (b) Inventory Management. The Service Provider shall manage all aspects of Client
+    Product inventory at the Facility, including putaway to designated storage locations,
+    cycle counting, physical inventory audits, inventory reconciliation, lot and serial
+    number tracking, FIFO (first-in-first-out) rotation management, and real-time
+    inventory visibility through the WMS platform.
+
+    (c) Pick-and-Pack Operations. The Service Provider shall fulfill Client orders through
+    a systematic pick-and-pack process, including order receipt and processing, wave
+    planning and batch optimization, picking from designated storage locations, quality
+    inspection of picked items, appropriate packaging selection based on product type and
+    shipping method, label generation, and staging of packed orders for carrier pickup.
+
+    (d) Shipping Coordination. The Service Provider shall coordinate all outbound shipments
+    of Client Products from the Facility, including carrier scheduling, bill of lading
+    preparation, freight classification, shipment manifesting, tracking number generation
+    and communication, and proof of delivery confirmation.
+
+    (e) Returns Processing. The Service Provider shall manage the receipt, inspection,
+    grading, and disposition of returned Client Products, including RMA verification,
+    damage assessment, restocking of sellable returns, segregation of damaged or
+    unsellable merchandise, and disposition reporting to the Client.
+
+    (f) Real-Time Inventory Tracking. The Service Provider shall maintain continuous
+    real-time visibility of all Client Products stored at the Facility through the WMS
+    platform, providing the Client with access to inventory data including on-hand
+    quantities, allocated quantities, available-to-promise quantities, in-transit
+    quantities, and location-level inventory detail.
+
+3.2 Additional Services. The Service Provider may, upon written request from the Client
+and subject to mutually agreed terms and additional compensation, provide supplementary
+services including but not limited to kitting and assembly services, value-added services
+such as furniture assembly prior to shipment, gift wrapping, promotional insert placement,
+and custom labeling.
+
+4. COMPENSATION
+
+4.1 Monthly Retainer. In consideration of the services provided under this Agreement, the
+Client shall pay the Service Provider a fixed monthly retainer fee in the amount of
+eighteen thousand seven hundred fifty dollars ($18,750.00) per month (the "Monthly Service
+Fee"). The Monthly Service Fee shall be payable in arrears on or before the thirtieth (30th)
+calendar day following each month of service. For the avoidance of doubt, payments are due
+within thirty (30) calendar days of invoice receipt.
+
+4.2 Per-Unit Shipping Fee. In addition to the Monthly Service Fee, the Client shall pay
+the Service Provider a per-unit shipping fee of two dollars and fifty cents ($2.50) for
+each Client Product unit shipped from the Facility (the "Per-Unit Fee"). The Per-Unit Fee
+covers all picking, packing, and shipping coordination costs associated with each unit.
+
+4.3 Monthly Volume Cap and Surcharge. The Per-Unit Fee structure set forth in Section 4.2
+shall apply to the first ten thousand (10,000) Client Product units shipped during each
+calendar month (the "Monthly Volume Cap"). For any Shipping Volume exceeding the Monthly
+Volume Cap in a given calendar month, the Client shall pay a surcharge of one dollar and
+twenty-five cents ($1.25) per additional unit in excess of the Monthly Volume Cap. The
+Service Provider shall notify the Client in writing when Shipping Volume is projected to
+exceed eighty percent (80%) of the Monthly Volume Cap to allow the Client an opportunity
+to adjust order release schedules.
+
+4.4 Invoicing. The Service Provider shall submit monthly invoices to the Client no later
+than the fifth (5th) Working Day following the end of each calendar month. Each invoice
+shall itemize the Monthly Service Fee, the number of units shipped, the Per-Unit Fee
+amount, any applicable Surcharges, and any additional charges for supplementary services
+rendered during the invoiced period.
+
+4.5 Taxes. All fees payable under this Agreement are exclusive of applicable taxes. The
+Client shall be responsible for any sales tax, use tax, or similar taxes imposed on the
+services provided under this Agreement, except for taxes based on the Service Provider's
+net income.
+
+5. DELIVERABLES AND MILESTONES
+
+5.1 Warehouse Setup. The Service Provider shall complete the physical setup and configuration
+of the Facility for Client Product storage and fulfillment operations within thirty (30)
+calendar days of the Effective Date. Warehouse setup shall include installation of storage
+racking systems, designation of receiving, staging, and shipping areas, configuration of
+safety equipment, and completion of initial staff training on Client-specific handling
+requirements.
+
+5.2 WMS Integration. The Service Provider shall complete the integration of the WMS platform
+with the Client's order management and inventory systems within sixty (60) calendar days of
+the Effective Date. WMS integration shall include electronic data interchange (EDI)
+connectivity, real-time inventory synchronization, automated order import functionality,
+and shipping label and tracking data transmission.
+
+5.3 First Audit Report. The Service Provider shall deliver the first comprehensive operational
+audit report to the Client within ninety (90) calendar days of the Effective Date. The audit
+report shall cover inventory accuracy, damage rates, fulfillment accuracy, order processing
+times, and compliance with operational procedures established under this Agreement.
+
+5.4 Quarterly Performance Reviews. Commencing at the end of the first full quarter of
+operations, the Service Provider shall conduct quarterly performance reviews in accordance
+with Section 9.3. These reviews shall be ongoing throughout the term of this Agreement and
+shall include a written performance summary delivered to the Client within fifteen (15)
+Working Days following the end of each calendar quarter.
+
+6. FACILITY REQUIREMENTS
+
+6.1 General Standards. The Facility utilized by the Service Provider for the performance of
+services under this Agreement shall meet or exceed the following minimum requirements:
+
+    (a) Minimum clear height of twenty-four (24) feet to accommodate high-bay storage
+    racking systems suitable for furniture storage.
+
+    (b) Sprinkler system installed and maintained in accordance with NFPA 13 standards
+    for storage occupancies, including ESFR (Early Suppression Fast Response) sprinkler
+    heads where required by local fire code.
+
+    (c) Climate control systems capable of maintaining interior temperature between
+    fifty-five (55) and eighty-five (85) degrees Fahrenheit and relative humidity
+    between thirty percent (30%) and sixty percent (60%) to protect furniture finishes
+    and materials from environmental damage.
+
+    (d) Sealed concrete flooring with load-bearing capacity sufficient for fully loaded
+    storage racks and material handling equipment operation.
+
+    (e) Adequate dock doors equipped with dock levelers, dock seals, and restraint systems
+    to accommodate simultaneous loading and unloading of multiple delivery vehicles.
+
+    (f) Secure perimeter fencing, controlled access points, and a comprehensive video
+    surveillance system covering all interior and exterior areas of the Facility.
+
+6.2 Rack Specifications. All storage racking systems installed at the Facility shall be
+designed and installed in compliance with the Rack Manufacturers Institute (RMI) standards
+and shall be rated for the specific weight loads of Client Products to be stored. Rack
+configurations shall be documented in the Facility Layout Plan attached hereto as Exhibit A.
+
+6.3 Maintenance. The Service Provider shall maintain the Facility, including all building
+systems, material handling equipment, racking, and safety equipment, in good working order
+and in compliance with all applicable building codes, fire codes, and safety regulations.
+
+7. HEALTH AND SAFETY
+
+7.1 OSHA Compliance. The Service Provider shall comply with all applicable provisions of the
+Occupational Safety and Health Act of 1970 and the regulations promulgated thereunder,
+including 29 C.F.R. Part 1910 (General Industry Standards). The Service Provider shall
+maintain an effective workplace safety program that addresses hazard identification,
+incident reporting, near-miss documentation, safety training, and continuous improvement
+of safety performance.
+
+7.2 Personal Protective Equipment. The Service Provider shall provide and require the use
+of appropriate personal protective equipment (PPE) by all personnel performing work at the
+Facility, including but not limited to steel-toed footwear, high-visibility vests, gloves,
+and eye protection where required by the nature of the work being performed.
+
+7.3 Forklift and Material Handling Equipment. All forklift operators and material handling
+equipment operators at the Facility shall be trained and certified in accordance with OSHA
+requirements. The Service Provider shall maintain training records and certification
+documentation for all equipment operators and shall make such records available for
+inspection by the Client upon reasonable request.
+
+7.4 Incident Reporting. The Service Provider shall report to the Client within twenty-four
+(24) hours any workplace incident involving Client Products that results in personal injury,
+significant property damage, or regulatory agency notification.
+
+8. TECHNOLOGY INTEGRATION
+
+8.1 Warehouse Management System (WMS). The Service Provider shall provide and maintain a
+WMS platform for the management of Client Product inventory and fulfillment operations at
+the Facility. The WMS shall provide real-time inventory visibility, automated task
+direction for receiving, putaway, picking, and packing operations, and comprehensive
+reporting and analytics capabilities. The technical specifications of the WMS platform
+are set forth in Exhibit B attached hereto.
+
+8.2 Barcode and Scanning Technology. The Service Provider shall utilize barcode scanning
+technology throughout all warehouse operations to ensure accurate identification and
+tracking of Client Products. All inbound shipments, inventory movements, and outbound
+shipments shall be scanned and recorded in the WMS in real time.
+
+8.3 RFID Capability. Where Client Products are equipped with RFID tags, the Service Provider
+shall utilize RFID scanning technology to supplement barcode scanning for inventory
+tracking purposes. The Service Provider shall maintain RFID readers at key operational
+points including receiving docks, storage zone entry points, packing stations, and
+shipping docks.
+
+8.4 Data Security. The Service Provider shall implement and maintain reasonable technical
+and organizational measures to protect the security and integrity of all data processed
+through the WMS and related systems, including encryption of data in transit and at rest,
+access controls, audit logging, and regular security assessments.
+
+9. QUALITY CONTROL
+
+9.1 Inspection Procedures. The Service Provider shall implement standardized inspection
+procedures for all Client Products at each stage of warehouse operations, including
+inbound receiving inspection, storage condition monitoring, pre-shipping inspection, and
+return merchandise inspection.
+
+9.2 Damage Reporting. The Service Provider shall maintain a comprehensive damage reporting
+system that documents all instances of damage to Client Products, including photographic
+evidence, damage classification, root cause analysis, and corrective action documentation.
+Damage reports shall be submitted to the Client within forty-eight (48) hours of discovery.
+
+9.3 Performance Metrics. The Service Provider shall be measured against the following key
+performance indicators:
+
+    (a) Inventory Accuracy: minimum ninety-eight percent (98%) at SKU level.
+    (b) Fulfillment Accuracy: minimum ninety-nine percent (99%).
+    (c) Order Processing Time: maximum twenty-four (24) hours from order receipt to
+    carrier pickup.
+    (d) Damage Rate: maximum zero point five percent (0.5%).
+    (e) On-Time Shipment: minimum ninety-seven percent (97%).
+
+10. TRANSPORTATION AND SHIPPING
+
+10.1 Carrier Selection. The Service Provider shall maintain relationships with multiple
+licensed and insured carriers for the transportation of Client Products. Carrier selection
+shall be based on service quality, transit time reliability, claims performance, geographic
+coverage, and cost competitiveness. The Carrier Rate Card applicable to Client Product
+shipments is attached hereto as Exhibit C.
+
+10.2 LTL and FTL Coordination. The Service Provider shall coordinate both less-than-truckload
+and full-truckload shipments as appropriate based on order volume, delivery requirements,
+and cost optimization considerations. For FTL shipments, the Service Provider shall manage
+carrier scheduling, load planning, and appointment coordination.
+
+10.3 International Shipping. For Client Products destined for international destinations, the
+Service Provider shall coordinate with the Client's designated customs broker and freight
+forwarder to ensure compliance with applicable export regulations, proper documentation
+including commercial invoices and packing lists, and adherence to all applicable trade
+compliance requirements.
+
+10.4 Shipping Documentation. The Service Provider shall prepare and maintain all shipping
+documentation required for the transportation of Client Products, including bills of lading,
+packing lists, shipping labels, hazardous material declarations (if applicable), and
+certificates of origin.
+
+11. RETURNS AND REVERSE LOGISTICS
+
+11.1 Returns Authorization. All returns of Client Products from end customers shall be
+processed only upon receipt of a valid Returns Merchandise Authorization (RMA) issued by
+the Client or, where authorized, by the Service Provider on behalf of the Client.
+
+11.2 Returns Inspection. The Service Provider shall inspect all returned Client Products
+within seventy-two (72) hours of receipt at the Facility. Inspection shall include
+verification of product identity, assessment of product condition, identification of
+missing components or accessories, and photographic documentation.
+
+11.3 Returns Disposition. Following inspection, the Service Provider shall categorize each
+returned item according to the Client's disposition guidelines, which may include restocking
+to available inventory, refurbishment, liquidation, recycling, or destruction. Disposition
+decisions shall be communicated to the Client for approval where required by the Client's
+returns policy.
+
+11.4 Returns Reporting. The Service Provider shall provide the Client with weekly returns
+summary reports, including the number of returns received, return reason codes, disposition
+outcomes, and inventory impact analysis.
+
+12. SEASONAL VOLUME PLANNING
+
+12.1 Volume Forecasts. The Client shall provide the Service Provider with rolling twelve-month
+volume forecasts, updated quarterly, to facilitate capacity planning, staffing, and resource
+allocation at the Facility.
+
+12.2 Seasonal Surges. During periods of anticipated peak volume, including but not limited to
+the spring home improvement season (March through May), back-to-school and fall furnishing
+season (August through October), and the holiday season (November through December), the
+Service Provider shall plan for and accommodate Shipping Volumes of up to one hundred fifty
+percent (150%) of the Monthly Volume Cap, subject to advance notice from the Client in
+accordance with Section 12.1.
+
+12.3 Temporary Staffing. The Service Provider shall maintain relationships with qualified
+temporary staffing providers and shall procure additional warehouse labor as needed to support
+seasonal volume increases, ensuring that temporary staff receive adequate training on
+Client-specific handling requirements before being assigned to Client Product operations.
+
+13. TERM
+
+13.1 Initial Term. This Agreement shall commence on the Effective Date and shall continue for
+a period of eighteen (18) months, concluding on November 30, 2025 (the "Initial Term").
+
+13.2 Renewal. This Agreement shall not automatically renew upon expiration of the Initial
+Term. Any extension or renewal of this Agreement beyond the Initial Term shall require the
+execution of a written amendment or renewal agreement signed by authorized representatives
+of both parties.
+
+13.3 Early Termination. Either party may terminate this Agreement prior to the expiration of
+the Initial Term by providing sixty (60) calendar days' prior written notice to the other
+party.
+
+14. TERMINATION
+
+14.1 Termination for Convenience. Either party may terminate this Agreement for convenience
+without cause upon sixty (60) calendar days' prior written notice to the other party. The
+terminating party shall be responsible for any fees and expenses incurred through the
+effective date of termination.
+
+14.2 Termination for Cause. Either party may terminate this Agreement for cause upon written
+notice if the other party commits a material breach of any provision of this Agreement and
+fails to cure such breach within twenty (20) calendar days following receipt of written
+notice specifying the nature of the breach.
+
+14.3 Termination for SLA Failure. Notwithstanding the foregoing, the Client may terminate
+this Agreement upon thirty (30) calendar days' written notice if the Service Provider fails
+to meet the performance standards set forth in Section 9.3 for three (3) consecutive
+calendar months, provided that the Service Provider has been given written notice of each
+month's performance deficiency and a reasonable opportunity to implement corrective measures.
+
+14.4 Effect of Termination. Upon termination or expiration of this Agreement, the Service
+Provider shall cooperate with the Client in the orderly transition of warehouse operations,
+including the transfer of Client Products to a designated alternative facility, the return
+of all Client materials and documentation, and the provision of final inventory reconciliation
+reports within thirty (30) calendar days of the termination effective date.
+
+15. INTELLECTUAL PROPERTY
+
+15.1 Ownership of Service Provider Intellectual Property. All Intellectual Property in the
+WMS software, automation tools, operational procedures, training materials, and proprietary
+methodologies developed or utilized by the Service Provider in connection with the services
+provided under this Agreement shall remain the sole and exclusive property of the Service
+Provider.
+
+15.2 License Grant. During the term of this Agreement, the Service Provider hereby grants to
+the Client a limited, non-exclusive, non-transferable, non-sublicensable license to access
+and use the WMS software for the sole purpose of monitoring and managing Client Product
+inventory at the Facility. This license shall terminate automatically upon the expiration or
+earlier termination of this Agreement.
+
+15.3 Client Intellectual Property. The Client retains all right, title, and interest in all
+Intellectual Property owned by the Client, including without limitation trademarks, trade
+names, product designs, and proprietary product specifications.
+
+16. CONFIDENTIALITY
+
+16.1 Confidentiality Obligations. Each party agrees to maintain in strict confidence all
+Confidential Information received from the other party and not to disclose such information
+to any third party without the prior written consent of the disclosing party, except as may
+be required by law or legal process.
+
+16.2 Duration. The obligations of confidentiality set forth in this Section 16 shall survive
+the expiration or termination of this Agreement for a period of four (4) years following
+the effective date of termination or expiration.
+
+16.3 Return of Materials. Upon termination or expiration of this Agreement, each party shall
+promptly return to the other party all documents, electronic media, and other materials
+containing the other party's Confidential Information, or shall, at the other party's
+election, certify the destruction of such materials.
+
+17. LIABILITY
+
+17.1 Limitation of Liability. Except in cases of gross negligence, willful misconduct, or
+breach of confidentiality obligations, neither party's aggregate liability under this
+Agreement shall exceed the greater of (a) seven hundred fifty thousand dollars ($750,000.00)
+or (b) an amount equal to twelve (12) months of Monthly Service Fees actually paid by the
+Client under this Agreement.
+
+17.2 Exclusion of Consequential Damages. In no event shall either party be liable to the
+other for any indirect, incidental, special, consequential, or punitive damages, including
+but not limited to lost profits, lost revenue, loss of business opportunities, or business
+interruption damages, regardless of whether such damages are based on contract, tort,
+strict liability, or any other legal theory, even if such party has been advised of the
+possibility of such damages.
+
+18. INSURANCE
+
+18.1 Required Coverage. The Service Provider shall maintain, at its sole cost and expense,
+the following insurance coverage throughout the term of this Agreement:
+
+    (a) Commercial General Liability insurance with a limit of not less than three million
+    dollars ($3,000,000.00) per occurrence and in the aggregate.
+
+    (b) Warehouse Legal Liability insurance with a limit of not less than five million
+    dollars ($5,000,000.00) per occurrence.
+
+    (c) Workers' Compensation insurance as required by the laws of the State of Georgia
+    and the state in which the Facility is located.
+
+    (d) Employer's Liability insurance with a limit of not less than one million dollars
+    ($1,000,000.00) per accident.
+
+18.2 Insurance Certificates. The Service Provider shall provide the Client with certificates
+of insurance evidencing the coverage required by Section 18.1 within fifteen (15) calendar
+days of the Effective Date and upon each renewal. Such certificates shall provide that the
+Client shall receive at least thirty (30) calendar days' prior written notice of any
+cancellation, material change, or non-renewal of the required coverage.
+
+19. FORCE MAJEURE
+
+19.1 Force Majeure. Neither party shall be liable for any failure or delay in the performance
+of its obligations under this Agreement to the extent that such failure or delay is caused
+by a Force Majeure Event, provided that the affected party (a) provides prompt written
+notice to the other party describing the Force Majeure Event and its anticipated impact,
+(b) uses commercially reasonable efforts to mitigate the effects of the Force Majeure
+Event, and (c) resumes performance as soon as reasonably practicable after the cessation
+of the Force Majeure Event.
+
+19.2 Extended Force Majeure. If a Force Majeure Event continues for a period exceeding sixty
+(60) calendar days, either party may terminate this Agreement upon fifteen (15) calendar
+days' written notice to the other party, without liability for such termination.
+
+20. ASSIGNMENT AND SUBCONTRACTING
+
+20.1 Assignment. Neither party may assign this Agreement or any rights or obligations hereunder
+to any third party without the prior written consent of the other party, which consent shall
+not be unreasonably withheld, conditioned, or delayed. Any attempted assignment in violation
+of this Section shall be null and void.
+
+20.2 Subcontracting. The Service Provider shall not subcontract any material portion of the
+services to be performed under this Agreement without the prior written consent of the Client.
+The Service Provider shall remain fully liable for the performance of any subcontracted
+services as if performed directly by the Service Provider.
+
+21. DISPUTE RESOLUTION
+
+21.1 Negotiation. In the event of any dispute arising out of or relating to this Agreement,
+the parties shall first attempt to resolve such dispute through good faith negotiations
+between senior executives of each party. Such negotiations shall be initiated by written
+notice from one party to the other and shall continue for a period of not less than thirty
+(30) calendar days before either party may pursue other dispute resolution remedies.
+
+21.2 Arbitration. If the parties are unable to resolve a dispute through negotiation within
+the period specified in Section 21.1, such dispute shall be submitted to binding arbitration
+administered by JAMS (Judicial Arbitration and Mediation Services) in accordance with its
+Comprehensive Arbitration Rules then in effect. The arbitration shall be conducted in
+Atlanta, Georgia. The arbitral panel shall consist of a single arbitrator with experience
+in logistics and supply chain matters. The decision of the arbitrator shall be final and
+binding and may be entered as a judgment in any court of competent jurisdiction.
+
+22. GENERAL PROVISIONS
+
+22.1 Governing Law. This Agreement shall be governed by and construed in accordance with
+the laws of the State of Georgia, without regard to its conflicts of law principles.
+
+22.2 Entire Agreement. This Agreement, together with all exhibits attached hereto, constitutes
+the entire agreement between the parties with respect to the subject matter hereof and
+supersedes all prior negotiations, representations, warranties, commitments, and agreements
+between the parties, whether written or oral.
+
+22.3 Amendments. This Agreement may not be amended or modified except by a written instrument
+signed by authorized representatives of both parties.
+
+22.4 Waiver. No waiver of any provision of this Agreement shall be effective unless in writing
+and signed by the party against whom such waiver is asserted. The failure of either party to
+enforce any provision of this Agreement shall not constitute a waiver of such provision or
+the right to enforce it at a later time.
+
+22.5 Severability. If any provision of this Agreement is held to be invalid, illegal, or
+unenforceable, the remaining provisions shall continue in full force and effect, and the
+invalid provision shall be modified to the minimum extent necessary to make it valid and
+enforceable while preserving the intent of the parties.
+
+22.6 Notices. All notices required or permitted under this Agreement shall be in writing and
+shall be deemed delivered when personally delivered, or three (3) business days after being
+sent by nationally recognized overnight courier, or five (5) business days after being sent
+by certified mail, return receipt requested, to the addresses set forth in Section 1 or to
+such other address as either party may designate by written notice.
+
+22.7 Counterparts. This Agreement may be executed in counterparts, each of which shall be
+deemed an original and all of which together shall constitute one and the same instrument.
+
+22.8 Relationship of the Parties. The relationship between the parties is that of independent
+contractors. Nothing in this Agreement shall be construed to create a partnership, joint
+venture, agency, or employment relationship between the parties.
+
+23. EXHIBITS
+
+The following exhibits are attached hereto and incorporated by reference:
+
+    Exhibit A: Facility Layout Plan
+    Exhibit B: WMS Technical Specifications
+    Exhibit C: Carrier Rate Card
+
+[NOTE: Exhibits A, B, and C are attached to this Agreement but are not included in this
+document due to their proprietary nature. The parties acknowledge receipt of complete copies
+of all exhibits.]
+
+24. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have caused this Agreement to be executed by their duly
+authorized representatives as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+FreightFlow Logistics Inc.
+
+
+By: _______________________________
+    Marcus Williams
+    Title: Chief Operating Officer
+    Date: May 28, 2024
+
+
+WITNESS:
+
+___________________________________
+Name: Kenneth D. Patterson
+Title: Director of Operations
+Date: May 28, 2024
+
+CLIENT:
+
+HomeStyle Furniture Manufacturing LLC
+
+
+By: _______________________________
+    Angela Ruiz
+    Title: Vice President, Supply Chain
+    Date: May 30, 2024
+
+
+WITNESS:
+
+___________________________________
+Name: Deborah S. Choi
+Title: General Counsel
+Date: May 30, 2024

@@ -1,0 +1,415 @@
+MASTER SERVICE AGREEMENT
+
+Agreement Number: MSA-2024-0892
+Effective Date: March 1, 2024
+
+PREAMBLE AND RECITALS
+
+WHEREAS, the healthcare industry in the United States operates within one of the most complex and heavily regulated environments of any economic sector, with overlapping federal, state, and local requirements governing the delivery, billing, privacy, and quality of patient care services;
+
+WHEREAS, the Health Insurance Portability and Accountability Act of 1996 ("HIPAA"), as amended by the Health Information Technology for Economic and Clinical Health Act ("HITECH Act"), imposes extensive obligations on covered entities and their business associates with respect to the use, disclosure, and safeguarding of protected health information, including requirements for administrative, physical, and technical safeguards as set forth in 45 CFR Parts 160 and 164;
+
+WHEREAS, the Occupational Safety and Health Act of 1970 ("OSHA") and regulations promulgated thereunder by the Occupational Safety and Health Administration establish mandatory workplace safety standards applicable to healthcare facilities, including standards related to bloodborne pathogens, hazard communication, respiratory protection, and ergonomic hazards;
+
+WHEREAS, state health departments and professional licensing boards impose additional regulatory requirements on healthcare providers, including but not limited to state-level patient privacy laws, mandatory reporting obligations, and facility licensing requirements that may exceed federal minimums;
+
+WHEREAS, the Centers for Medicare and Medicaid Services ("CMS") maintains extensive Conditions of Participation, Conditions for Coverage, and Interpretive Guidelines that govern the operations of healthcare facilities participating in federal healthcare programs;
+
+WHEREAS, the Client operates healthcare facilities and related clinical operations across multiple jurisdictions and recognizes the need for specialized regulatory compliance expertise to navigate the foregoing regulatory landscape and to maintain compliance with all applicable federal, state, and local requirements;
+
+WHEREAS, the Service Provider possesses specialized expertise in healthcare regulatory compliance, including but not limited to HIPAA privacy and security compliance, OSHA workplace safety compliance, healthcare staff training and competency assessment, and regulatory audit preparation and response;
+
+WHEREAS, the Service Provider maintains a team of qualified professionals with backgrounds in healthcare administration, nursing, health information management, occupational health, and regulatory affairs, all of whom hold relevant certifications and have substantial experience in the healthcare compliance field;
+
+WHEREAS, the parties desire to engage the Service Provider to provide healthcare regulatory compliance consulting services to the Client, and to define the terms and conditions under which such services shall be provided;
+
+WHEREAS, both parties acknowledge that the services to be provided hereunder involve potential access to protected health information and other sensitive patient and business data, and that appropriate safeguards must be established to protect such information in accordance with applicable law and industry best practices;
+
+WHEREAS, both parties wish to define their respective rights, obligations, and responsibilities in connection with the services described herein, and to establish clear communication protocols, reporting requirements, and performance standards;
+
+WHEREAS, the healthcare industry has experienced significant regulatory enforcement activity in recent years, including increased scrutiny from the Office for Civil Rights with respect to HIPAA compliance, heightened penalties for willful neglect of privacy and security obligations, and a growing trend toward mandatory compliance program requirements imposed by both federal and state regulators;
+
+WHEREAS, the emergence of new care delivery models, including telehealth, remote patient monitoring, and accountable care organizations, has introduced additional regulatory complexities that require specialized expertise to navigate effectively, particularly with respect to cross-jurisdictional licensing, reimbursement, and privacy requirements;
+
+WHEREAS, recent trends in HIPAA enforcement have demonstrated that the Office for Civil Rights has significantly increased its audit and investigation activities, resulting in numerous multi-million-dollar settlements and resolution agreements with healthcare organizations of all sizes, underscoring the critical importance of proactive compliance program design and ongoing risk management;
+
+WHEREAS, OSHA compliance challenges in the healthcare sector have become increasingly complex in the aftermath of the COVID-19 pandemic, with new and evolving standards related to infectious disease prevention, respiratory protection, workplace violence mitigation, and ergonomics requiring healthcare facilities to continuously update and strengthen their safety programs;
+
+WHEREAS, the proliferation of electronic health records, digital health technologies, and health information exchanges has created new vectors for potential privacy and security breaches, making robust data governance and cybersecurity programs essential components of any comprehensive healthcare compliance strategy;
+
+WHEREAS, the Client acknowledges that regulatory compliance is not a one-time activity but rather an ongoing process that requires continuous monitoring, assessment, training, and improvement to address evolving regulatory requirements, emerging risks, and changes in the Client's operations and business environment;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements set forth herein, and for other good and valuable consideration, the receipt and sufficiency of which are hereby mutually acknowledged, the parties agree as follows:
+
+ARTICLE 1: DEFINITIONS AND INTERPRETATIONS
+
+1.1 "Affiliate" means, with respect to any person or entity, any other person or entity that directly or indirectly controls, is controlled by, or is under common control with such person or entity. For purposes of this definition, "control" (including, with correlative meanings, "controlled by" and "under common control with") means the possession, directly or indirectly, of the power to direct or cause the direction of the management and policies of a person or entity, whether through ownership of voting securities, by contract, or otherwise.
+
+1.2 "Applicable Laws" means all applicable federal, state, local, and foreign statutes, laws, regulations, ordinances, rules, codes, orders, judgments, decrees, directives, and requirements of any governmental authority, including but not limited to HIPAA, the HITECH Act, OSHA, the False Claims Act, the Anti-Kickback Statute, the Stark Law, state privacy and security laws, and any amendments, successor statutes, or implementing regulations thereto.
+
+1.3 "Audit Finding" means any observation, deficiency, non-conformity, area of concern, or opportunity for improvement identified during the course of a compliance audit, regulatory survey, internal assessment, or other review process conducted by or on behalf of the Service Provider, the Client, or any Regulatory Body, regardless of the severity or classification of such observation.
+
+1.4 "Business Day" means any day other than a Saturday, a Sunday, or a day on which banking institutions in the City of Chicago, Illinois are authorized or required by law or executive order to remain closed.
+
+1.5 "Compliance Committee" means the internal governing body established by the Client to oversee, direct, and monitor the organization's compliance program, including but not limited to the review of compliance policies, investigation of reported concerns, evaluation of audit findings, and implementation of corrective actions, which shall include representatives from senior management, legal, clinical operations, human resources, and information technology.
+
+1.6 "Confidential Information" means all non-public, confidential, or proprietary information disclosed by or on behalf of one party (the "Disclosing Party") to the other party (the "Receiving Party"), whether in oral, written, electronic, graphic, or other form, regardless of whether such information is marked or designated as confidential. Confidential Information includes, without limitation: trade secrets, proprietary methodologies, business plans, financial data, pricing information, customer lists, patient data, protected health information, employee information, and any other information that a reasonable person would understand to be confidential or proprietary in nature.
+
+1.7 "Corrective Action Plan" or "CAP" means a documented, structured plan developed in response to an Audit Finding, compliance deficiency, regulatory citation, or other identified area of non-compliance, which sets forth the specific actions to be taken, the responsible parties, the timeline for completion, the resources required, and the metrics to be used to measure the effectiveness of the corrective actions.
+
+1.8 "Deliverable" or "Deliverables" means any and all work product, reports, analyses, manuals, training materials, policies, procedures, templates, assessments, and other tangible or intangible materials produced or developed by the Service Provider in the course of performing the Services under this Agreement, including any drafts, revisions, or updates thereto.
+
+1.9 "EHR" or "Electronic Health Record" means a digital version of a patient's paper chart that is real-time, patient-centered, and makes information available instantly and securely to authorized users, containing medical and treatment histories of patients, and maintained in compliance with applicable federal and state regulations.
+
+1.10 "EMR" or "Electronic Medical Record" means a digital version of a paper chart in a clinician's office, containing the medical and treatment history of the patients in one practice, and used by clinicians within that practice for diagnosis and treatment.
+
+1.11 "Force Majeure" means any event or circumstance beyond the reasonable control of the affected party that prevents or materially impairs such party's ability to perform its obligations under this Agreement, including but not limited to: acts of God, natural disasters, pandemics, epidemics, public health emergencies, war, terrorism, civil unrest, government actions, orders or restrictions, labor disputes or strikes (other than those involving the affected party's own employees), power outages, telecommunications failures, and failures of third-party service providers or systems.
+
+1.12 "Governing Board" means the board of directors, trustees, or other governing body of the Client that has ultimate authority and responsibility for the overall operation and management of the Client's healthcare facilities and programs, including the authority to establish policies, approve budgets, and ensure compliance with all Applicable Laws.
+
+1.13 "HIPAA" means the Health Insurance Portability and Accountability Act of 1996, as amended, and the regulations promulgated thereunder, including the Privacy Rule at 45 CFR Part 160 and Subparts A and E of Part 164, the Security Rule at 45 CFR Part 160 and Subparts A and C of Part 164, the Breach Notification Rule at 45 CFR Part 164, Subparts A and D, and the Enforcement Rule at 45 CFR Part 160, Subparts C, D, and E.
+
+1.14 "HIPAA Breach" means the acquisition, access, use, or disclosure of Protected Health Information in a manner not permitted under HIPAA that compromises the security or privacy of such information, as further defined in 45 CFR Section 164.402, except where an applicable exception applies as set forth in 45 CFR Section 164.402(a).
+
+1.15 "Meaningful Use" means the set of standards defined by the Centers for Medicare and Medicaid Services that governs the use of electronic health records and the eligible providers and hospitals that must adopt such systems and demonstrate their use in order to qualify for Medicare and Medicaid incentive payments and to avoid future payment adjustments.
+
+1.16 "Notice" means any notice, request, demand, consent, approval, or other communication required or permitted under this Agreement, which shall be in writing and delivered in accordance with Section 14.6.
+
+1.17 "OCR" or "Office for Civil Rights" means the office within the U.S. Department of Health and Human Services responsible for enforcing the HIPAA Privacy Rule, the HIPAA Security Rule, and the HIPAA Breach Notification Rule, as well as investigating complaints of discrimination in health and human services.
+
+1.18 "Patient Safety" means the prevention of errors and adverse effects to patients associated with health care, encompassing the processes, structures, and outcomes of care delivery designed to protect patients from preventable harm, including medication errors, healthcare-associated infections, surgical complications, diagnostic errors, and other preventable adverse events.
+
+1.19 "PHI" or "Protected Health Information" has the meaning given to such term in HIPAA and the regulations promulgated thereunder, and means individually identifiable health information that is transmitted by or maintained in electronic media or any other form or medium.
+
+1.20 "Quality Measure" means a standardized, evidence-based metric used to assess, compare, and track the quality of healthcare services provided by healthcare organizations, including but not limited to clinical process measures, patient experience measures, outcome measures, and efficiency measures, as defined and reported to CMS, The Joint Commission, state health departments, and other relevant entities.
+
+1.21 "Regulatory Body" means any federal, state, local, or foreign governmental agency, department, commission, board, bureau, authority, or other regulatory body having jurisdiction over the Client or the Services, including but not limited to: the U.S. Department of Health and Human Services, the Office for Civil Rights, the Centers for Medicare and Medicaid Services, the Occupational Safety and Health Administration, state health departments, state attorneys general, and state professional licensing boards.
+
+1.22 "Risk Assessment" means a comprehensive, systematic process for identifying, evaluating, and prioritizing risks to the confidentiality, integrity, and availability of protected health information, patient safety, regulatory compliance, and organizational operations, including the analysis of threats, vulnerabilities, potential impacts, and the development of risk mitigation strategies.
+
+1.23 "Sentinel Event" means an unexpected occurrence involving death or serious physical or psychological injury, or the risk thereof, as defined by The Joint Commission, which signals the need for immediate investigation and response, including but not limited to events involving unanticipated death or major permanent loss of function not related to the natural course of the patient's illness or underlying condition.
+
+1.24 "Services" means the healthcare regulatory compliance consulting services described in Article 4 of this Agreement, together with any modifications, additions, or amendments thereto as may be mutually agreed upon by the parties in writing from time to time.
+
+1.25 "Survey" means an on-site or remote evaluation conducted by a Regulatory Body, accrediting organization, or other authorized entity to assess the Client's compliance with applicable regulatory standards, Conditions of Participation, accreditation requirements, or other applicable requirements, including but not limited to surveys conducted by state health departments, The Joint Commission, CMS, and OSHA.
+
+1.26 "Variance" means a written authorization granted by a Regulatory Body, accrediting organization, or the Client's Governing Board that permits a temporary or permanent departure from a specific regulatory requirement, policy, procedure, or standard, subject to such conditions, limitations, and reporting requirements as may be imposed by the authorizing entity.
+
+1.27 "Work Product" means all materials, documents, analyses, reports, tools, templates, methodologies, processes, procedures, recommendations, and other tangible and intangible results produced, developed, or created by the Service Provider, whether alone or jointly with the Client, in the course of performing the Services.
+
+1.28 "Termination Date" means the date on which this Agreement is terminated or expires in accordance with the provisions of Article 12.
+
+1.29 "Cure Period" means the period of thirty (30) days following written notice of a breach, during which the breaching party may cure such breach.
+
+1.30 "Expenses" means reasonable, documented, out-of-pocket expenses incurred by the Service Provider in connection with the performance of the Services, including but not limited to travel expenses, lodging, meals, photocopying, and specialized software or database access fees, subject to the limitations set forth in Article 7.
+
+ARTICLE 2: PARTIES
+
+This MASTER SERVICE AGREEMENT (the "Agreement") is entered into as of the Effective Date set forth above by and between the following parties:
+
+BrightPath Consulting Group LLC, a limited liability company duly organized, validly existing, and in good standing under the laws of the State of New York, with its principal office and place of business located at 78 Park Avenue, Floor 12, New York, NY 10016 (hereinafter referred to as "Service Provider" or "BrightPath");
+
+AND
+
+MediCore Health Systems Inc., a corporation duly organized, validly existing, and in good standing under the laws of the State of Delaware, with its principal office and place of business located at 500 Medical Center Drive, Chicago, IL 60614 (hereinafter referred to as "Client" or "MediCore").
+
+The Service Provider and the Client are individually referred to as a "Party" and collectively as the "Parties."
+
+ARTICLE 3: REPRESENTATIONS AND WARRANTIES
+
+3.1 Representations and Warranties of Both Parties. Each Party represents and warrants as follows:
+
+    (a) It is duly organized, validly existing, and in good standing under the laws of its jurisdiction of organization, and has all requisite power and authority to own its assets and carry on its business as currently conducted;
+    (b) It has full corporate or organizational power and authority to enter into this Agreement and to perform its obligations hereunder;
+    (c) The execution, delivery, and performance of this Agreement has been duly authorized by all necessary corporate or organizational action and does not contravene, violate, or conflict with any provision of its certificate or articles of incorporation, bylaws, operating agreement, or other organizational documents;
+    (d) The execution, delivery, and performance of this Agreement does not contravene, violate, or conflict with any applicable law, regulation, court order, or contractual obligation binding upon it;
+    (e) This Agreement constitutes a legal, valid, and binding obligation enforceable against it in accordance with its terms, subject to applicable bankruptcy, insolvency, reorganization, moratorium, and other laws affecting creditors' rights generally and the availability of equitable remedies;
+    (f) It is not a party to or bound by any agreement, order, or judgment that would restrict its ability to perform its obligations under this Agreement;
+    (g) It has not engaged in any practice or conduct that would reasonably be expected to result in its debarment, exclusion, or disqualification from participation in federal healthcare programs.
+
+3.2 Additional Representations of the Service Provider. The Service Provider further represents and warrants that:
+
+    (a) It has and will maintain throughout the term of this Agreement all necessary licenses, registrations, certifications, and qualifications required to perform the Services, including any state-level consulting licenses or registrations required in jurisdictions where the Services are performed;
+    (b) It has not been subject to any sanction, exclusion, debarment, or disqualification by any Regulatory Body, and has no knowledge of any pending investigation or proceeding that could reasonably be expected to result in such sanction, exclusion, debarment, or disqualification;
+    (c) All personnel assigned to perform the Services possess the requisite training, education, experience, and professional certifications to perform their respective duties in a professional, competent, and compliant manner;
+    (d) It maintains appropriate professional liability insurance coverage as required by Article 10 of this Agreement.
+
+3.3 Additional Representations of the Client. The Client further represents and warrants that:
+
+    (a) It is in material compliance with all Applicable Laws, and has no knowledge of any pending investigation, enforcement action, or proceeding by any Regulatory Body that could reasonably be expected to materially affect the Services or the Service Provider's ability to perform the Services;
+    (b) It will provide the Service Provider with accurate, complete, and timely information, data, documents, and access to personnel and facilities as reasonably necessary for the Service Provider to perform the Services;
+    (c) It has implemented or will implement reasonable administrative, physical, and technical safeguards to protect the confidentiality, integrity, and availability of its systems and data;
+    (d) It will promptly notify the Service Provider of any material change in its operations, regulatory status, or any event that could reasonably be expected to affect the Services.
+
+ARTICLE 4: SCOPE OF SERVICES
+
+4.1 General Description of Services. The Service Provider shall provide healthcare regulatory compliance consulting services to the Client, including HIPAA audit preparation, OSHA compliance review, staff training programs, and quarterly compliance reporting. The Services shall be performed in accordance with the standards, methodologies, and procedures described in this Agreement and the applicable Exhibits.
+
+4.2 Detailed Scope. Without limiting the generality of the foregoing, the Services shall include the following:
+
+    (a) HIPAA Audit Preparation: Conducting a comprehensive assessment of the Client's current HIPAA privacy and security compliance posture, including review of policies and procedures, administrative safeguards, physical safeguards, technical safeguards, workforce training, business associate agreements, breach notification processes, and documentation practices. This assessment shall include a HIPAA Gap Analysis identifying areas of non-compliance and recommended remediation measures, to be delivered within ninety (90) days of the Effective Date.
+
+    (b) OSHA Compliance Review: Performing a thorough review of the Client's workplace safety practices, programs, and documentation to assess compliance with applicable OSHA standards, including but not limited to bloodborne pathogens, hazard communication, respiratory protection, personal protective equipment, emergency action plans, fire safety, and workplace violence prevention. The Service Provider shall prepare a comprehensive OSHA Compliance Manual documenting current compliance status and required improvements, to be delivered within one hundred twenty (120) days of the Effective Date.
+
+    (c) Staff Training Programs: Developing and delivering customized training programs for the Client's workforce on topics including HIPAA privacy and security awareness, OSHA workplace safety, infection control, emergency preparedness, and other compliance-related subjects as mutually agreed. The Service Provider shall prepare comprehensive Training Materials, including presentations, handouts, quizzes, and attendance documentation templates, to be delivered within one hundred fifty (150) days of the Effective Date.
+
+    (d) Quarterly Compliance Reporting: Preparing and delivering written Quarterly Reports summarizing compliance activities, findings, recommendations, and status updates on remediation efforts. The first Quarterly Report shall be delivered within one hundred eighty (180) days of the Effective Date, with subsequent reports delivered at the end of each calendar quarter thereafter.
+
+4.3 Excluded Services. The following are expressly excluded from the Services and shall be subject to separate engagement and fees if requested by the Client: (a) legal advice or legal representation; (b) direct engagement with Regulatory Bodies on behalf of the Client; (c) implementation or installation of technology systems or software; (d) clinical or medical advice; (e) billing or coding audits; (f) credentialing services; (g) accreditation survey preparation beyond the scope described herein.
+
+4.4 Service Standards. The Service Provider shall perform the Services in a professional and workmanlike manner, consistent with generally accepted industry practices and standards applicable to healthcare regulatory compliance consulting. The Service Provider shall assign qualified personnel with appropriate expertise and experience to each engagement.
+
+ARTICLE 5: COMPLIANCE PROGRAM DESIGN
+
+5.1 Program Structure. The Service Provider shall assist the Client in the design, development, and implementation of a comprehensive healthcare compliance program that meets the requirements set forth in the Federal Sentencing Guidelines for Organizations, the OIG Compliance Program Guidance for Healthcare Organizations, and all other applicable regulatory standards. The compliance program shall include, at a minimum, the following seven core elements: (a) written policies and procedures; (b) designation of a compliance officer and compliance committee; (c) training and education; (d) internal monitoring and auditing; (e) reporting mechanisms; (f) enforcement through disciplinary guidelines; and (g) prompt response to detected offenses and development of corrective action plans.
+
+5.2 Policies and Procedures. The Service Provider shall assist the Client in drafting, reviewing, and updating compliance policies and procedures that address all applicable regulatory requirements, including but not limited to HIPAA privacy and security, OSHA workplace safety, anti-kickback and Stark law compliance, billing and coding integrity, conflicts of interest, patient rights, and clinical documentation requirements. All policies and procedures shall be reviewed at least annually and updated as necessary to reflect changes in Applicable Laws, regulatory guidance, and the Client's operations.
+
+5.3 Compliance Officer and Committee. The Service Provider shall provide guidance to the Client regarding the establishment and effective operation of a Compliance Committee, including recommendations regarding the committee's composition, charter, meeting frequency, reporting structure, and responsibilities. The Service Provider shall assist the Compliance Committee in developing its annual work plan, setting priorities, and establishing metrics for evaluating the effectiveness of the compliance program.
+
+5.4 Training Requirements. The Service Provider shall develop a training curriculum that addresses the specific compliance risks and regulatory requirements applicable to the Client's operations. Training shall be provided to all members of the workforce, including employees, volunteers, trainees, contractors, and any other persons whose conduct is under the direct control of the Client, regardless of whether they have access to PHI. Training shall be provided upon initial hire and at least annually thereafter, with additional training provided as necessary in response to changes in Applicable Laws, regulatory requirements, or the identification of compliance deficiencies.
+
+5.5 Internal Monitoring and Auditing. The Service Provider shall assist the Client in establishing an internal monitoring and auditing program that includes regular assessments of compliance with key regulatory requirements, analysis of billing patterns and coding accuracy, review of access controls and audit logs for electronic systems, evaluation of physical safeguards, and assessment of workforce compliance with policies and procedures. The results of all monitoring and auditing activities shall be documented and reported to the Compliance Committee on a regular basis.
+
+ARTICLE 6: REGULATORY REPORTING
+
+6.1 CMS Reporting Requirements. The Service Provider shall assist the Client in understanding and meeting all applicable CMS reporting requirements, including but not limited to the submission of quality data through the Hospital Inpatient Quality Reporting Program, the Outpatient Prospective Payment System Quality Reporting Program, the Physician Quality Reporting System, the Value-Based Purchasing Program, the Hospital-Acquired Condition Reduction Program, and any other mandatory or voluntary reporting programs administered by CMS.
+
+6.2 State Health Department Reporting. The Service Provider shall assist the Client in identifying and complying with all applicable state health department reporting requirements in each jurisdiction in which the Client operates, including but not limited to mandatory reporting of healthcare-associated infections, reportable diseases, adverse events, sentinel events, and patient safety incidents. The Service Provider shall prepare a jurisdiction-specific reporting matrix identifying each applicable reporting obligation, the responsible party, the reporting timeline, and the required content of each report.
+
+6.3 Joint Commission Reporting. The Service Provider shall assist the Client in meeting all applicable reporting requirements of The Joint Commission, including the reporting of sentinel events in accordance with The Joint Commission's Sentinel Event Policy, the submission of performance measure data, and the preparation of evidence of standards compliance for survey readiness assessments. The Service Provider shall provide guidance on root cause analysis methodology, corrective action plan development, and the documentation requirements associated with regulatory surveys.
+
+6.4 Adverse Event Reporting. The Service Provider shall assist the Client in establishing processes and procedures for the timely identification, investigation, internal reporting, and external reporting of adverse events, near misses, and other patient safety incidents in accordance with all Applicable Laws and the policies of the Client's Governing Board. The Service Provider shall provide training to the Client's staff on the recognition and reporting of adverse events and the documentation requirements associated with such events.
+
+ARTICLE 7: TRAINING PROGRAM
+
+7.1 Curriculum Development. The Service Provider shall develop a comprehensive training curriculum that covers all regulatory compliance topics relevant to the Client's operations, including but not limited to HIPAA privacy and security awareness, OSHA workplace safety, infection prevention and control, emergency preparedness, cultural competency, patient rights and responsibilities, corporate compliance and ethics, fraud, waste, and abuse prevention, and documentation requirements. The curriculum shall be tiered to address the specific roles, responsibilities, and risk profiles of different workforce categories.
+
+7.2 Delivery Methods. Training shall be delivered through a combination of modalities designed to maximize engagement, knowledge retention, and practical application, including but not limited to: live instructor-led sessions, interactive workshops and case study discussions, web-based learning modules accessible through the Client's learning management system, printed reference materials and quick-reference guides, simulation exercises and tabletop drills for emergency preparedness training, and on-the-job training and competency verification for clinical and technical staff.
+
+7.3 Competency Assessments. Each training module shall include a competency assessment component designed to verify that participants have achieved the learning objectives established for the module. Assessments may include written examinations, practical demonstrations, return demonstrations, case study analyses, and observed performance evaluations. Participants who do not achieve a passing score on any competency assessment shall be provided with additional training and an opportunity to retest within thirty (30) days. All training activities and competency assessment results shall be documented and maintained in accordance with the Client's records retention policies.
+
+7.4 Annual Training Updates. The Service Provider shall review and update the training curriculum at least annually to reflect changes in Applicable Laws, regulatory guidance, industry best practices, and the Client's operational environment. Updated training materials shall be provided to the Client at least sixty (60) days prior to the beginning of each annual training cycle to allow adequate time for review, approval, and scheduling.
+
+ARTICLE 8: QUALITY IMPROVEMENT
+
+8.1 QI Methodology. The Service Provider shall assist the Client in establishing a quality improvement program based on recognized quality improvement methodologies, including but not limited to Plan-Do-Study-Act ("PDSA") cycles, Lean methodology, Six Sigma principles, failure mode and effects analysis ("FMEA"), root cause analysis, and other evidence-based approaches to performance improvement in healthcare settings.
+
+8.2 PDSA Cycles. The Service Provider shall provide guidance and facilitation support for the Client's quality improvement initiatives using the PDSA cycle framework. This shall include assistance with: (a) identifying and prioritizing improvement opportunities based on data analysis, regulatory requirements, and organizational priorities; (b) formulating testable hypotheses and designing small-scale tests of change; (c) implementing tests of change and collecting data to evaluate the effectiveness of the changes; (d) analyzing results and determining whether to adopt, adapt, or abandon the tested changes; and (e) standardizing successful changes and disseminating lessons learned across the organization.
+
+8.3 Outcome Measurement. The Service Provider shall assist the Client in establishing a comprehensive set of quality measures and key performance indicators to track the effectiveness of its compliance program and quality improvement initiatives. Such measures may include, without limitation: compliance training completion rates, incident reporting rates and trends, time to resolution of identified deficiencies, regulatory survey outcomes, audit finding closure rates, patient safety event rates, and workforce satisfaction scores related to compliance culture.
+
+8.4 Continuous Improvement. The Service Provider shall provide recommendations for continuous improvement of the Client's compliance program based on the results of monitoring and auditing activities, regulatory developments, industry best practices, and feedback from the Client's workforce and leadership. The Service Provider shall assist the Client in conducting an annual comprehensive review of the compliance program to assess its overall effectiveness and identify opportunities for enhancement.
+
+ARTICLE 9: EMERGENCY PREPAREDNESS
+
+9.1 Pandemic Response Planning. The Service Provider shall assist the Client in developing and maintaining a comprehensive pandemic and infectious disease emergency response plan that addresses, at a minimum: (a) the establishment of an emergency management command structure with clearly defined roles and responsibilities; (b) protocols for surveillance, detection, and early warning of potential pandemic threats; (c) strategies for maintaining continuity of essential healthcare services during a pandemic, including staffing plans, supply chain management, and facility operations; (d) infection prevention and control measures specific to pandemic response, including personal protective equipment requirements, patient cohorting strategies, and environmental cleaning protocols; and (e) communication protocols for internal and external stakeholders, including patients, families, staff, Regulatory Bodies, and the public.
+
+9.2 Disaster Recovery. The Service Provider shall assist the Client in developing a disaster recovery plan that addresses the restoration of critical business functions, information systems, and physical infrastructure following a natural disaster, cyberattack, prolonged power outage, or other catastrophic event. The disaster recovery plan shall include: (a) a business impact analysis identifying critical functions, systems, and processes and their recovery time objectives; (b) data backup and recovery procedures, including offsite storage and cloud-based backup solutions; (c) hardware and software inventory and replacement procedures; (d) alternate site operations plans; and (e) testing and maintenance schedules for the disaster recovery plan.
+
+9.3 Business Continuity. The Service Provider shall assist the Client in developing a business continuity plan that ensures the continued delivery of essential healthcare services during and after an emergency or disaster. The business continuity plan shall address: (a) succession planning for key leadership positions; (b) emergency staffing plans, including mutual aid agreements with other healthcare organizations; (c) supply chain resilience strategies, including identification of critical supplies, alternative vendors, and strategic reserve inventories; (d) communication systems and protocols for emergency operations; and (e) financial contingency planning for emergency response activities.
+
+9.4 Testing and Exercises. The Service Provider shall assist the Client in developing and conducting regular emergency preparedness exercises, including tabletop exercises, functional exercises, and full-scale drills, to test the effectiveness of the Client's emergency response, disaster recovery, and business continuity plans. Exercises shall be conducted at least annually, and the results of each exercise shall be documented, evaluated, and used to identify areas for improvement and update the applicable plans.
+
+ARTICLE 10: TERM AND RENEWAL
+
+10.1 Initial Term. This Agreement shall commence on the Effective Date and continue for a period of thirty-six (36) months, expiring on February 28, 2027, unless earlier terminated in accordance with Article 13.
+
+10.2 Automatic Renewal. Upon expiration of the initial term or any subsequent renewal term, this Agreement shall automatically renew for successive one (1) year periods (each a "Renewal Term"), unless either Party provides written notice of non-renewal to the other Party at least ninety (90) days prior to the expiration of the then-current term.
+
+10.3 Effect of Termination or Expiration. Upon termination or expiration of this Agreement, the Service Provider shall, unless otherwise directed by the Client: (a) promptly cease all Services; (b) deliver to the Client all completed and in-progress Deliverables; (c) return or securely destroy all Confidential Information and PHI in the Service Provider's possession or control; and (d) cooperate with the Client in transitioning the Services to another provider, if applicable.
+
+ARTICLE 11: FEES AND PAYMENT TERMS
+
+11.1 Professional Fees. The Client shall pay the Service Provider for Services rendered at the rate of two hundred twenty-five dollars ($225.00) per hour. Such rate applies to all professional time expended by the Service Provider in connection with the Services, including time spent on research, analysis, report preparation, telephone conferences, email correspondence, and travel.
+
+11.2 Monthly Cap. The total professional fees invoiced by the Service Provider in any calendar month shall not exceed the product of the hourly rate set forth in Section 11.1 and one hundred twenty (120) hours, unless the Client has provided prior written approval for additional hours. Any hours worked in excess of one hundred twenty (120) hours in a calendar month without such prior approval shall not be billable.
+
+11.3 Expenses. In addition to professional fees, the Client shall reimburse the Service Provider for reasonable, documented, pre-approved Expenses incurred in connection with the performance of the Services. Total reimbursable Expenses in any calendar month shall not exceed three thousand dollars ($3,000.00), unless the Client has provided prior written approval for additional Expenses.
+
+11.4 Invoicing. The Service Provider shall submit itemized invoices to the Client on a monthly basis, within the first five (5) Business Days of each calendar month, for Services rendered and Expenses incurred during the preceding calendar month. Each invoice shall include a detailed description of the Services performed, the personnel performing such Services, the hours expended, the applicable rate, and a breakdown of all Expenses claimed.
+
+11.5 Payment. The Client shall pay all undisputed invoices within fifteen (15) Business Days of receipt. Payment shall be made by wire transfer to an account designated in writing by the Service Provider, or by such other method as the parties may mutually agree. Late payments shall bear interest at a rate of one and one-half percent (1.5%) per month, or the maximum rate permitted by applicable law, whichever is less.
+
+11.6 Disputed Amounts. If the Client disputes any portion of an invoice, the Client shall notify the Service Provider in writing within ten (10) Business Days of receipt of the invoice, specifying the disputed items and the reasons for the dispute. The undisputed portion of the invoice shall be paid in accordance with Section 11.5. The parties shall negotiate in good faith to resolve any disputed amounts within thirty (30) days.
+
+ARTICLE 12: DELIVERABLES AND ACCEPTANCE
+
+12.1 Description of Deliverables. The Service Provider shall provide the following Deliverables under this Agreement:
+
+    (a) HIPAA Gap Analysis Report: A comprehensive report documenting the current state of the Client's HIPAA privacy and security compliance, identifying gaps and areas of non-compliance, and providing prioritized recommendations for remediation. This Deliverable shall be delivered within ninety (90) days of the Effective Date.
+
+    (b) OSHA Compliance Manual: A detailed manual documenting the Client's current OSHA compliance status, required policies and procedures, and a remediation roadmap. This Deliverable shall be delivered within one hundred twenty (120) days of the Effective Date.
+
+    (c) Training Materials: A complete suite of training materials, including facilitator guides, participant workbooks, presentation slides, assessment tools, and attendance tracking templates, for each training module developed under this Agreement. This Deliverable shall be delivered within one hundred fifty (150) days of the Effective Date.
+
+    (d) Quarterly Compliance Report: A written report summarizing compliance activities performed during the quarter, key findings, recommendations, remediation status, and any regulatory developments relevant to the Client's compliance obligations. The first Quarterly Report shall be delivered within one hundred eighty (180) days of the Effective Date.
+
+12.2 Review and Feedback. Upon delivery of each Deliverable, the Client shall have fifteen (15) Business Days to review the Deliverable and provide written feedback or requests for revision. The Service Provider shall make reasonable revisions to address the Client's feedback within ten (10) Business Days of receiving such feedback.
+
+12.3 Acceptance. Deliverables shall be deemed accepted upon the earlier of: (a) expiration of the review period without written notice of rejection from the Client; or (b) written notice of acceptance from the Client. If the Client rejects a Deliverable, the Client shall specify in writing the deficiencies requiring correction, and the Service Provider shall have a reasonable opportunity to cure such deficiencies.
+
+ARTICLE 13: INTELLECTUAL PROPERTY
+
+13.1 Ownership of Work Product. All Work Product produced by the Service Provider specifically for the Client in connection with the Services shall be the exclusive property of the Client, provided that the Client has paid in full all fees and expenses owed to the Service Provider for such Work Product. Until full payment is received, the Service Provider retains a lien on such Work Product.
+
+13.2 Pre-Existing Intellectual Property. Nothing in this Agreement shall transfer to the Client any pre-existing intellectual property of the Service Provider, including but not limited to proprietary methodologies, frameworks, templates, tools, software, know-how, and trade secrets developed or acquired by the Service Provider prior to or independently of the Services ("Pre-Existing IP"). The Service Provider grants the Client a non-exclusive, non-transferable, royalty-free license to use any Pre-Existing IP incorporated into the Deliverables solely for the Client's internal business purposes for the duration of this Agreement and any applicable confidentiality period.
+
+13.3 Third-Party Materials. The Service Provider shall not incorporate any third-party materials into the Deliverables without obtaining the necessary licenses or permissions for the Client's use of such materials, and shall disclose the existence and terms of any such third-party materials to the Client in writing prior to incorporation.
+
+13.4 License to Client Materials. The Client hereby grants the Service Provider a non-exclusive, non-transferable, limited license to access and use the Client's materials, data, and information solely to the extent necessary for the Service Provider to perform the Services.
+
+ARTICLE 14: CONFIDENTIALITY
+
+14.1 Confidentiality Obligations. Each Party agrees to: (a) hold the Confidential Information of the other Party in strict confidence; (b) not disclose such Confidential Information to any third party without the prior written consent of the Disclosing Party, except as may be required by law or as necessary to perform its obligations under this Agreement; (c) use such Confidential Information solely for the purposes contemplated by this Agreement; and (d) protect such Confidential Information using the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care.
+
+14.2 Exceptions. The obligations set forth in Section 14.1 shall not apply to information that: (a) was publicly available at the time of disclosure or subsequently becomes publicly available through no fault of the Receiving Party; (b) was known to the Receiving Party prior to disclosure, as evidenced by contemporaneous written records; (c) is independently developed by the Receiving Party without reference to or reliance upon the Disclosing Party's Confidential Information; or (d) is rightfully received from a third party without restriction on disclosure.
+
+14.3 Required Disclosures. If a Party is required by law, regulation, court order, or governmental demand to disclose Confidential Information, such Party shall, to the extent legally permissible, provide the other Party with prompt written notice of such requirement prior to disclosure, so that the other Party may seek a protective order or other appropriate remedy.
+
+14.4 Duration of Confidentiality Obligations. The obligations of confidentiality and non-disclosure under this Article 14 shall survive the termination or expiration of this Agreement for a period of seven (7) years, provided that obligations with respect to PHI shall continue for so long as required by HIPAA and Applicable Laws.
+
+14.5 Return or Destruction. Upon termination or expiration of this Agreement, or upon the written request of the Disclosing Party at any time, the Receiving Party shall promptly return or securely destroy all Confidential Information in its possession or control, including all copies and derivatives thereof. The Receiving Party shall provide written certification of such return or destruction within ten (10) Business Days.
+
+ARTICLE 15: INSURANCE
+
+15.1 Required Coverage. Throughout the term of this Agreement, the Service Provider shall maintain, at its own expense, the following insurance coverage:
+
+    (a) Professional Liability Insurance (also known as Errors and Omissions Insurance) with limits of not less than two million dollars ($2,000,000) per occurrence and five million dollars ($5,000,000) in the aggregate;
+    (b) Commercial General Liability Insurance with limits of not less than one million dollars ($1,000,000) per occurrence and two million dollars ($2,000,000) in the aggregate;
+    (c) Workers' Compensation Insurance as required by applicable law, with statutory employer's liability coverage of not less than five hundred thousand dollars ($500,000);
+    (d) Cyber Liability Insurance with limits of not less than one million dollars ($1,000,000) per occurrence and two million dollars ($2,000,000) in the aggregate.
+
+15.2 Certificates of Insurance. Upon execution of this Agreement and upon each renewal of any insurance policy, the Service Provider shall provide the Client with certificates of insurance evidencing the required coverage. Such certificates shall provide that the Client shall receive at least thirty (30) days' prior written notice of cancellation, material change, or non-renewal of any policy.
+
+15.3 Additional Insured. The Service Provider shall name the Client as an additional insured on its Commercial General Liability policy with respect to the Services performed under this Agreement.
+
+ARTICLE 16: DATA SECURITY AND PRIVACY
+
+16.1 Compliance with HIPAA. The Service Provider agrees to comply with all applicable requirements of HIPAA and the HITECH Act with respect to any PHI accessed, received, maintained, or transmitted in connection with the Services. The Service Provider shall not use or disclose PHI other than as permitted or required by HIPAA and this Agreement.
+
+16.2 Security Safeguards. The Service Provider shall implement and maintain reasonable administrative, physical, and technical safeguards to protect the confidentiality, integrity, and availability of PHI and other Confidential Information. Such safeguards shall include, without limitation: encryption of electronic PHI in transit and at rest using industry-standard encryption algorithms; access controls limiting access to PHI to authorized personnel on a need-to-know basis; audit controls to record and monitor access to and use of PHI; integrity controls to ensure that PHI is not improperly altered or destroyed; and transmission security measures to prevent unauthorized access to PHI during electronic transmission.
+
+16.3 Security Incident Response. In the event of a security incident or breach involving PHI or Confidential Information, the Service Provider shall: (a) immediately take reasonable steps to contain and mitigate the incident; (b) notify the Client within twenty-four (24) hours of discovery of the incident; (c) cooperate with the Client in investigating the incident; (d) provide the Client with a written report detailing the nature, scope, and impact of the incident within five (5) Business Days; and (e) implement reasonable remedial measures to prevent recurrence.
+
+16.4 Subcontractors. The Service Provider shall not disclose PHI to any subcontractor or third party without the prior written consent of the Client. Any approved subcontractor shall be bound by written agreements that provide at least the same level of protection for PHI as required by this Agreement and HIPAA.
+
+ARTICLE 17: TERMINATION
+
+17.1 Termination for Cause. Either Party may terminate this Agreement for cause if the other Party materially breaches any term or condition of this Agreement and fails to cure such breach within thirty (30) days after receipt of written notice specifying the nature of the breach in reasonable detail (the "Cure Period").
+
+17.2 Termination for Convenience by Client. The Client may terminate this Agreement for convenience, without cause, upon ninety (90) days' prior written notice to the Service Provider.
+
+17.3 Termination for Convenience by Service Provider. The Service Provider may terminate this Agreement for convenience, without cause, upon sixty (60) days' prior written notice to the Client.
+
+17.4 Termination for Insolvency. Either Party may terminate this Agreement immediately upon written notice if the other Party: (a) becomes insolvent; (b) files a voluntary petition in bankruptcy; (c) has an involuntary petition in bankruptcy filed against it that is not dismissed within sixty (60) days; (d) makes an assignment for the benefit of creditors; (e) admits in writing its inability to pay its debts as they become due; or (f) becomes the subject of a proceeding seeking reorganization, arrangement, composition, readjustment, liquidation, dissolution, or similar relief under any applicable statute, law, or regulation.
+
+17.5 Effect of Termination. Upon termination of this Agreement, the provisions of Sections 10.3, 13, 14, 18, 19.8, 19.9, and 19.11 shall survive termination. All other provisions of this Agreement shall survive termination to the extent necessary to give effect to the parties' intentions and to preserve any rights or remedies that have accrued as of the Termination Date.
+
+ARTICLE 18: LIMITATION OF LIABILITY
+
+18.1 Cap on Liability. Subject to Section 18.2, the total aggregate liability of either Party under or in connection with this Agreement, whether in contract, tort, strict liability, or otherwise, shall not exceed the greater of: (a) five hundred thousand dollars ($500,000); or (b) an amount equal to the total fees paid by the Client to the Service Provider during the twelve (12) month period immediately preceding the event giving rise to the liability.
+
+18.2 Exclusion of Consequential Damages. IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS OPPORTUNITY, LOSS OF DATA, BUSINESS INTERRUPTION, OR DAMAGES ARISING FROM REGULATORY ENFORCEMENT ACTIONS, REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY, OR ANY OTHER THEORY, AND EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+18.3 Exclusions from Cap. The liability cap set forth in Section 18.1 shall not apply to: (a) breaches of confidentiality obligations; (b) obligations under HIPAA with respect to PHI; (c) a Party's gross negligence or willful misconduct; (d) bodily injury or death caused by a Party's negligence; or (e) any liability that cannot be limited by applicable law.
+
+18.4 Sole Remedy. THE REMEDIES SET FORTH IN THIS AGREEMENT SHALL BE THE SOLE AND EXCLUSIVE REMEDIES OF THE PARTIES WITH RESPECT TO ANY CLAIM ARISING UNDER OR IN CONNECTION WITH THIS AGREEMENT, EXCEPT AS OTHERWISE PROVIDED HEREIN.
+
+ARTICLE 19: GENERAL PROVISIONS
+
+19.1 Entire Agreement. This Agreement, including all Exhibits attached hereto, constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written, relating to such subject matter. No Party has relied upon any statement, representation, or warranty not set forth herein.
+
+19.2 Amendments. This Agreement may not be amended, modified, supplemented, or waived except by a written instrument signed by both Parties. No course of conduct or series of transactions between the parties shall be deemed to modify, amend, or supplement this Agreement.
+
+19.3 Assignment. Neither Party may assign, transfer, or delegate this Agreement or any of its rights or obligations hereunder without the prior written consent of the other Party, except that either Party may assign this Agreement to an Affiliate or in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets, provided that the assignee assumes in writing all obligations of the assigning Party under this Agreement. Any purported assignment in violation of this Section shall be null and void.
+
+19.4 Severability. If any provision of this Agreement is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions of this Agreement shall continue in full force and effect. The parties shall negotiate in good faith to replace any invalid, illegal, or unenforceable provision with a valid, legal, and enforceable provision that achieves, to the greatest extent possible, the original intent of the parties.
+
+19.5 Waiver. No failure or delay by either Party in exercising any right, power, or remedy under this Agreement shall operate as a waiver thereof, nor shall any single or partial exercise of any such right, power, or remedy preclude any other or further exercise thereof or the exercise of any other right, power, or remedy. Any waiver must be in writing and signed by the waiving Party to be effective.
+
+19.6 Force Majeure. Neither Party shall be liable for any failure or delay in performing its obligations under this Agreement if such failure or delay results from a Force Majeure event. The affected Party shall notify the other Party promptly in writing of the occurrence of a Force Majeure event, shall use commercially reasonable efforts to mitigate the effects of the event, and shall resume performance as soon as reasonably practicable. If a Force Majeure event continues for a period of more than ninety (90) days, either Party may terminate this Agreement upon thirty (30) days' written notice to the other Party.
+
+19.7 Survival. The provisions of this Agreement that by their nature should survive termination or expiration, including but not limited to the provisions of Articles 13, 14, 18, and Sections 19.8 through 19.14, shall survive any termination or expiration of this Agreement and continue in full force and effect for the period specified therein or, if no period is specified, indefinitely.
+
+19.8 Notices. All notices required or permitted under this Agreement shall be in writing and shall be deemed effectively given when: (a) delivered personally; (b) sent by registered or certified mail, return receipt requested, postage prepaid; (c) sent by a nationally recognized overnight courier service; or (d) sent by email with confirmation of receipt. Notices shall be addressed to the parties at the addresses set forth in Article 2, or to such other address as a Party may designate by written notice to the other Party.
+
+19.9 Governing Law. This Agreement shall be governed by and construed in accordance with the laws of the State of Illinois, without regard to its conflict of laws principles or any other principles that would require or permit the application of the laws of any other jurisdiction.
+
+19.10 Dispute Resolution.
+
+    (a) Negotiation. In the event of any dispute, controversy, or claim arising out of or relating to this Agreement, the parties shall first attempt to resolve such dispute through good faith negotiation between senior executives of each Party. Such negotiation shall be initiated by written notice from one Party to the other and shall continue for a period of not less than thirty (30) days.
+
+    (b) Mediation. If the dispute is not resolved through negotiation within thirty (30) days, either Party may submit the dispute to non-binding mediation administered by a mutually agreed mediator in Chicago, Illinois. The costs of mediation shall be shared equally between the parties. Each Party shall bear its own attorneys' fees and costs in connection with the mediation.
+
+    (c) Binding Arbitration. If the dispute is not resolved through mediation within sixty (60) days of the commencement of mediation, the dispute shall be finally resolved by binding arbitration administered by the American Arbitration Association ("AAA") in accordance with its Commercial Arbitration Rules then in effect. The arbitration shall be conducted in Chicago, Illinois. The arbitrator shall have the authority to grant any remedy or relief that would be available from a court of competent jurisdiction. The decision of the arbitrator shall be final and binding, and judgment upon the award may be entered in any court having jurisdiction. Each Party shall bear its own attorneys' fees and costs in connection with the arbitration, unless the arbitrator determines that a Party's claims or defenses were frivolous or brought in bad faith.
+
+19.11 Compliance with Laws. Both Parties shall comply with all Applicable Laws in the performance of their respective obligations under this Agreement. Without limiting the generality of the foregoing, the Service Provider shall comply with HIPAA, OSHA, the False Claims Act, the Anti-Kickback Statute, the Stark Law, and all applicable state health privacy and security laws.
+
+19.12 Anti-Corruption. The Service Provider represents and warrants that neither it nor any of its officers, directors, employees, agents, or subcontractors has, directly or indirectly, offered, promised, given, or authorized the giving of any money, gift, or other thing of value to any government official, political party, or candidate for the purpose of influencing any act or decision of such official, party, or candidate, or obtaining any improper advantage. The Service Provider shall comply with all applicable anti-corruption and anti-bribery laws, including the U.S. Foreign Corrupt Practices Act.
+
+19.13 Publicity. Neither Party shall issue any press release or public announcement regarding this Agreement or the existence of the relationship between the parties without the prior written consent of the other Party, except as may be required by applicable law or regulation. The Client may disclose the existence and general terms of this Agreement in connection with regulatory filings, audit requirements, or legal proceedings, provided that the Client uses reasonable efforts to obtain confidential treatment for any proprietary or sensitive terms.
+
+19.14 Personnel and Background Checks. The Service Provider shall ensure that all personnel assigned to perform the Services are appropriately qualified, trained, and supervised. The Service Provider shall conduct background checks on all personnel who will have access to PHI or the Client's facilities, including verification of professional credentials, employment history, and criminal background screening, and shall provide the Client with written confirmation of such background checks upon request.
+
+19.15 Records Retention. The Service Provider shall maintain complete and accurate records relating to the Services performed under this Agreement, including time records, work papers, correspondence, and Deliverables, for a period of not less than seven (7) years following the Termination Date, or such longer period as may be required by Applicable Laws. Upon request, the Service Provider shall make such records available to the Client for inspection and audit during normal business hours.
+
+19.16 Independent Contractor. The Service Provider is an independent contractor and not an employee, agent, partner, or joint venturer of the Client. Nothing in this Agreement shall be construed to create an employer-employee relationship, partnership, joint venture, or agency relationship between the parties. The Service Provider shall be solely responsible for all employment taxes, social security contributions, workers' compensation premiums, and other obligations with respect to its personnel.
+
+19.17 No Third-Party Beneficiaries. This Agreement is intended solely for the benefit of the parties hereto and their respective permitted successors and assigns. Nothing in this Agreement, express or implied, is intended to confer upon any person or entity other than the parties any legal or equitable right, benefit, or remedy of any nature whatsoever.
+
+19.18 Counterparts. This Agreement may be executed in any number of counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument. Execution and delivery by facsimile or electronic signature shall have the same legal effect as original ink signatures.
+
+19.19 Headings. The headings and captions in this Agreement are for convenience of reference only and shall not affect the interpretation or construction of this Agreement.
+
+ARTICLE 20: EXHIBITS
+
+The following Exhibits are attached to and incorporated by reference into this Agreement:
+
+    Exhibit A: HIPAA Compliance Checklist (attached hereto)
+    Exhibit B: OSHA Standards Reference Guide (attached hereto)
+    Exhibit C: Rate Card and Fee Schedule (attached hereto)
+    Exhibit D: Deliverable Specifications and Templates (attached hereto)
+    Exhibit E: Background Check Authorization Form (attached hereto)
+    Exhibit F: Compliance Program Framework (attached but not included)
+    Exhibit G: Training Curriculum (attached but not included)
+    Exhibit H: Audit Checklist (attached but not included)
+
+IN WITNESS WHEREOF, the parties have executed this Master Service Agreement as of the Effective Date first written above.
+
+SERVICE PROVIDER:
+
+BRIGHTPATH CONSULTING GROUP LLC
+
+
+By: ___________________________________
+Name: Dr. Rebecca Torres
+Title: Managing Partner
+Date: _________________________________
+
+
+WITNESS:
+
+
+By: ___________________________________
+Name: _________________________________
+Date: _________________________________
+
+
+CLIENT:
+
+MEDICORE HEALTH SYSTEMS INC.
+
+
+By: ___________________________________
+Name: Michael O'Brien
+Title: Chief Compliance Officer
+Date: _________________________________
+
+
+WITNESS:
+
+
+By: ___________________________________
+Name: _________________________________
+Date: _________________________________

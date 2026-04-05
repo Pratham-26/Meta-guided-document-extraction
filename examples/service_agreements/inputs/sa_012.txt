@@ -1,0 +1,762 @@
+FINANCIAL AUDIT AND ACCOUNTING SERVICES AGREEMENT
+
+This Financial Audit and Accounting Services Agreement (the "Agreement"),
+bearing reference number FAS-2025-0178, is entered into as of February 15, 2025
+(the "Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, the agricultural sector of the United States economy represents a
+critical component of the nation's food supply chain, contributing approximately
+five percent of the gross domestic product and employing millions of workers
+across farming, processing, distribution, and retail operations. The financial
+complexity inherent in modern agribusiness operations has grown substantially in
+recent decades, driven by commodity price volatility, escalating input costs,
+increasingly sophisticated risk management instruments including futures, options,
+and crop insurance products, expanding international trade relationships, and the
+growing influence of environmental, social, and governance considerations on
+lending and investment decisions within the agricultural finance community;
+
+WHEREAS, the regulatory environment governing financial statement audits has
+undergone significant transformation in the aftermath of corporate accounting
+scandals and the subsequent enactment of the Sarbanes-Oxley Act of 2002, the
+Dodd-Frank Wall Street Reform and Consumer Protection Act of 2010, and the
+establishment of the Public Company Accounting Oversight Board (PCAOB) as the
+primary regulatory body overseeing the audits of public companies and the firms
+that perform those audits. PCAOB inspection findings have consistently emphasized
+the need for improved audit quality in areas including revenue recognition,
+internal controls testing, fair value measurements, and the evaluation of going
+concern assumptions, resulting in increasingly rigorous standards for audit
+engagement planning, risk assessment, and substantive procedures;
+
+WHEREAS, the application of generally accepted auditing standards (GAAS),
+including the Statements on Auditing Standards (SAS) issued by the Auditing
+Standards Board of the American Institute of Certified Public Accountants
+(AICPA) and, where applicable, the standards issued by the PCAOB, requires
+auditors to exercise professional judgment in the planning and performance of
+audit engagements, including the assessment of materiality, the identification
+and assessment of risks of material misstatement, and the design and execution
+of audit procedures responsive to those assessed risks;
+
+WHEREAS, Sterling & Associates CPAs PLLC is a certified public accounting firm
+with over thirty years of experience providing independent audit, tax, and
+advisory services to middle-market companies across the agricultural,
+manufacturing, and distribution sectors, and maintains professional liability
+insurance coverage and adheres to the quality control standards set forth in
+Statement on Quality Control Standards No. 8 (SQCS 8);
+
+WHEREAS, Midwest Agribusiness Holdings Inc. is a leading agribusiness
+conglomerate with annual revenues approximating one hundred eighty million
+dollars ($180,000,000), operating grain elevator facilities, processing plants,
+and distribution networks across the Midwestern United States, and has
+determined that comprehensive independent audit, tax, and advisory services are
+required to meet its financial reporting obligations, regulatory compliance
+requirements, and stakeholder expectations;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration, the
+receipt and sufficiency of which are hereby acknowledged, the parties agree as
+follows:
+
+1. PARTIES
+
+1.1 Service Provider. Sterling & Associates CPAs PLLC, a professional limited
+liability company duly organized and existing under the laws of the State of
+Illinois, with its principal offices located at 1 North LaSalle Street, Suite
+2200, Chicago, IL 60602 (hereinafter referred to as "Service Provider,"
+"Sterling," or "Provider").
+
+1.2 Client. Midwest Agribusiness Holdings Inc., a corporation duly organized
+and existing under the laws of the State of Iowa, with its principal offices
+located at 3500 Agricultural Drive, Des Moines, IA 50321 (hereinafter referred
+to as "Client," "Midwest," or "MAH").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that
+they have the full legal authority to bind their respective organization to the
+terms and conditions of this Agreement, and that the execution of this Agreement
+has been duly authorized by all necessary corporate or partnership approvals.
+
+2. DEFINITIONS
+
+2.1 "Auditor Independence" means the condition in which the auditor is free
+from personal, financial, or other relationships that may impair, or reasonably
+appear to impair, the auditor's objectivity and integrity in the performance
+of the audit engagement, as required by the AICPA Code of Professional Conduct,
+SEC rules, and PCAOB standards.
+
+2.2 "GAAP" means Generally Accepted Accounting Principles, as established by
+the Financial Accounting Standards Board (FASB) and applicable to the Client's
+financial statements, including Accounting Standards Codification (ASC)
+pronouncements, SEC Staff Accounting Bulletins, and related guidance.
+
+2.3 "GAAS" means Generally Accepted Auditing Standards, as established by the
+Auditing Standards Board of the AICPA and, where applicable, the PCAOB,
+including the Statements on Auditing Standards and related interpretive guidance.
+
+2.4 "Internal Control Deficiency" means a deficiency in internal control over
+financial reporting that exists when the design or operation of a control does
+not allow management or employees, in the normal course of performing their
+assigned functions, to prevent, or detect and correct, misstatements on a
+timely basis.
+
+2.5 "Material Weakness" means a deficiency, or combination of deficiencies, in
+internal control over financial reporting such that there is a reasonable
+possibility that a material misstatement of the annual or interim financial
+statements will not be prevented, or detected and corrected, on a timely basis.
+
+2.6 "PCAOB" means the Public Company Accounting Oversight Board, established
+by the Sarbanes-Oxley Act of 2002 to oversee the audits of public companies
+and related matters, including the registration, inspection, and discipline of
+public accounting firms.
+
+2.7 "Review Engagement" means a professional engagement in which the auditor
+performs analytical procedures and makes inquiries to provide limited assurance
+that no material modifications should be made to the financial statements in
+accordance with applicable attestation standards.
+
+2.8 "Significant Deficiency" means a deficiency, or combination of
+deficiencies, in internal control over financial reporting that is less severe
+than a material weakness, yet important enough to merit attention by those
+charged with governance.
+
+2.9 "SOX 404" means Section 404 of the Sarbanes-Oxley Act of 2002, which
+requires management's assessment of internal controls over financial reporting
+and, for accelerated filers, an auditor's attestation on the effectiveness of
+internal controls over financial reporting.
+
+2.10 "Unqualified Opinion" means an audit opinion in which the auditor
+concludes that the financial statements present fairly, in all material
+respects, the financial position, results of operations, and cash flows of the
+entity in conformity with GAAP, without any material modifications or
+qualifications.
+
+2.11 "Going Concern" means the fundamental assumption in financial reporting
+that an entity will continue to operate for a reasonable period of time,
+generally at least twelve months from the date of the financial statements,
+and will not be compelled to liquidate its assets or curtail the scope of its
+operations at an unfavorable price.
+
+2.12 "Related Party Transaction" means a transfer of resources, services, or
+obligations between the entity and its affiliates, principal owners, management,
+or members of their immediate families, regardless of whether a price is
+charged.
+
+2.13 "Management Letter" means a communication from the auditor to those
+charged with governance and management that describes the auditor's
+responsibilities under GAAS, the planned scope and timing of the audit, and
+significant findings arising from the audit, including material weaknesses,
+significant deficiencies, and other matters required or recommended to be
+communicated.
+
+2.14 "Engagement Letter" means a written agreement between the auditor and the
+client that sets forth the terms of the audit engagement, the respective
+responsibilities of management and the auditor, the scope of the engagement,
+and the applicable reporting framework, prepared in accordance with AICPA
+professional standards.
+
+2.15 "Audit Work Papers" means the documented record of the auditor's
+procedures performed, evidence obtained, and conclusions reached during the
+course of the audit engagement, maintained in accordance with AICPA and PCAOB
+record retention requirements.
+
+2.16 "COSO Framework" means the Internal Control—Integrated Framework
+published by the Committee of Sponsoring Organizations of the Treadway
+Commission, which provides a comprehensive framework for the evaluation of
+internal control over financial reporting.
+
+2.17 "Substantive Procedures" means audit procedures performed to detect
+material misstatements at the assertion level, including tests of details of
+classes of transactions, account balances, and disclosures, and substantive
+analytical procedures.
+
+2.18 "Materiality" means the magnitude of an omission or misstatement of
+accounting information that, in light of surrounding circumstances, makes it
+probable that the judgment of a reasonable person relying on the information
+would have been changed or influenced by the omission or misstatement.
+
+2.19 "Sampling Risk" means the risk that the auditor's conclusion based on a
+sample may be different from the conclusion that would be reached if the
+entire population were subjected to the same audit procedure.
+
+2.20 "Analytical Procedures" means evaluations of financial information through
+analysis of plausible relationships among both financial and, where
+appropriate, non-financial data, including the investigation of identified
+fluctuations and relationships that are inconsistent with other relevant
+information or that deviate from expected values by a significant amount.
+
+2.21 "Confidential Information" means all non-public financial data, business
+information, trade secrets, tax returns, audit findings, management
+representations, and other sensitive information disclosed by either party in
+connection with this Agreement.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide comprehensive financial
+audit, tax, and advisory services to the Client, including but not limited to
+the following service categories:
+
+    (a) Independent Financial Statement Audits. Conduct independent audits of
+    the Client's consolidated financial statements for fiscal years ending in
+    2025 and 2026, in accordance with generally accepted auditing standards
+    (GAAS) and, where applicable, PCAOB standards, to express an opinion on
+    whether the consolidated financial statements present fairly, in all
+    material respects, the financial position of the Client as of the
+    respective fiscal year end dates and the results of operations and cash
+    flows for each respective fiscal year, in conformity with GAAP.
+
+    (b) Internal Controls Over Financial Reporting. Perform an assessment of
+    the Client's internal controls over financial reporting, including the
+    evaluation of the design and operating effectiveness of key controls
+    across significant accounts and assertions, in accordance with the COSO
+    Internal Control—Integrated Framework (2013) and applicable auditing
+    standards.
+
+    (c) SOX 404 Compliance Assessment. If and to the extent the Client is
+    subject to Section 404 of the Sarbanes-Oxley Act of 2002, the Service
+    Provider shall perform an integrated audit encompassing both the audit of
+    internal controls over financial reporting and the audit of the financial
+    statements, and shall issue an attestation report on management's
+    assessment of the effectiveness of internal controls over financial
+    reporting. The scope and nature of SOX 404 compliance services shall be
+    determined based on the Client's public filing status and applicable SEC
+    requirements.
+
+    (d) Tax Preparation and Advisory Services. Prepare all federal, state, and
+    multi-state income tax returns for the Client and its subsidiaries,
+    including corporate income tax returns (Form 1120), state income and
+    franchise tax returns, and applicable multi-state tax apportionment
+    schedules. Tax advisory services shall include tax planning consultation,
+    analysis of tax positions and uncertain tax positions under ASC 740, and
+    review of estimated tax payment schedules and tax provision calculations.
+
+    (e) Quarterly Financial Reviews. Perform quarterly reviews of the Client's
+    condensed consolidated financial statements for each quarter of fiscal
+    years 2025 and 2026, in accordance with applicable review engagement
+    standards, including the performance of analytical procedures and
+    inquiries of management to provide limited assurance that no material
+    modifications should be made to the interim financial statements.
+
+4. AUDIT METHODOLOGY
+
+4.1 Risk Assessment. The Service Provider shall conduct a comprehensive risk
+assessment at the beginning of each audit engagement in accordance with AU-C
+315 (or PCAOB AS 1101, as applicable), including the identification and
+assessment of risks of material misstatement at the financial statement level
+and the assertion level, consideration of fraud risks in accordance with
+AU-C 240 (or PCAOB AS 2401), and evaluation of the Client's business
+environment, internal control, and risk management processes.
+
+4.2 Materiality Determination. The Service Provider shall determine overall
+materiality and performance materiality for each audit engagement using
+quantitative benchmarks appropriate for the Client's industry and
+circumstances, including consideration of revenues, assets, pre-tax income,
+and other relevant financial metrics. Materiality shall be documented in the
+audit planning memorandum and shall be reviewed and, if necessary, revised
+during the course of the audit as additional information becomes available.
+
+4.3 Sampling. Where sampling is used as an audit procedure, the Service
+Provider shall design and execute samples in accordance with AU-C 530 (or
+PCAOB AS 2301, as applicable), including consideration of sampling risk, the
+selection method (statistical or non-statistical), sample size, and the
+evaluation of sample results. The Service Provider shall document the sampling
+methodology, sample selection, testing performed, and conclusions reached.
+
+4.4 Substantive Procedures. The Service Provider shall design and perform
+substantive procedures responsive to the assessed risks of material
+misstatement, including tests of details of transactions, account balances,
+and disclosures, and substantive analytical procedures. The nature, timing,
+and extent of substantive procedures shall be determined based on the
+Service Provider's professional judgment, considering the assessed level of
+risk, the nature of the Client's business and industry, and the results of
+risk assessment procedures and tests of controls.
+
+5. INTERNAL CONTROLS ASSESSMENT
+
+5.1 COSO Framework Application. The Service Provider shall evaluate the
+Client's internal controls over financial reporting using the COSO Internal
+Control—Integrated Framework (2013), which encompasses five interrelated
+components: control environment, risk assessment, control activities,
+information and communication, and monitoring activities.
+
+5.2 Control Testing. The Service Provider shall test the operating
+effectiveness of key controls identified through the walkthrough process and
+risk assessment, including the evaluation of the manner in which management
+implemented the control, the consistency with which the control was applied,
+and the manner in which the control was documented by the person performing
+the control.
+
+5.3 Deficiency Evaluation. The Service Provider shall evaluate identified
+control deficiencies to determine whether they constitute significant
+deficiencies or material weaknesses, in accordance with AU-C 265 (or PCAOB
+AS 1301, as applicable), and shall communicate all identified deficiencies,
+significant deficiencies, and material weaknesses to management and those
+charged with governance in accordance with AU-C 265 and AU-C 260.
+
+6. SOX 404 COMPLIANCE
+
+6.1 Scoping. If the Client is subject to Section 404(b) of the Sarbanes-Oxley
+Act, the Service Provider shall perform an integrated audit in accordance
+with PCAOB AS 2201, encompassing both the audit of internal controls over
+financial reporting and the audit of the financial statements. The scope of
+the internal control audit shall include all significant accounts, classes of
+transactions, disclosures, and relevant assertions, as determined through the
+Service Provider's risk assessment procedures.
+
+6.2 Testing. The Service Provider shall test the operating effectiveness of
+controls that the Service Provider has determined are sufficiently important
+to the audit of internal controls over financial reporting, considering the
+nature of the Client's business, the assessed risk of material misstatement,
+and the results of prior-year testing.
+
+6.3 Reporting. If the Client is subject to Section 404(b), the Service
+Provider shall issue an attestation report on management's assessment of the
+effectiveness of internal controls over financial reporting in accordance with
+PCAOB AS 2201 and PCAOB AT-C 205.
+
+7. TAX SERVICES
+
+7.1 Federal Tax Compliance. The Service Provider shall prepare the Client's
+consolidated federal corporate income tax return (Form 1120) for each taxable
+year ending during the term of this Agreement, including all required
+schedules, elections, and supporting work papers.
+
+7.2 State and Multi-State Compliance. The Service Provider shall prepare
+state income and franchise tax returns for all jurisdictions in which the
+Client is required to file, including multi-state tax apportionment
+calculations, state modifications, and credits. The Service Provider shall
+also prepare any required state composite returns, partnership returns, and
+other entity-level returns for the Client's subsidiaries and affiliated
+entities.
+
+7.3 Tax Planning and Advisory. The Service Provider shall provide tax planning
+consultation services, including analysis of the tax implications of proposed
+business transactions, evaluation of tax positions and uncertain tax
+positions under ASC 740 (FIN 48), review of estimated tax payment schedules,
+tax provision calculations, and analysis of tax-efficient structures for the
+Client's operations.
+
+8. QUARTERLY REVIEWS
+
+8.1 Analytical Procedures. The Service Provider shall perform analytical
+procedures at the commencement of each quarterly review engagement to identify
+any significant fluctuations or relationships in the Client's financial data
+that may indicate the existence of material misstatements requiring further
+investigation.
+
+8.2 Inquiry. The Service Provider shall make inquiries of management and, as
+appropriate, others within the Client's organization regarding matters
+relevant to the Client's financial statements, including accounting policies
+and practices, significant transactions and events, changes in business
+conditions, and any matters that may affect the Client's ability to continue
+as a going concern.
+
+8.3 Limited Assurance. The quarterly review engagement is intended to provide
+limited assurance that no material modifications should be made to the
+condensed consolidated financial statements, in accordance with AR-C 100
+(or PCAOB standards, as applicable). A review engagement is substantially
+less in scope than an audit engagement and does not enable the Service
+Provider to obtain assurance that the financial statements are free of
+material misstatement.
+
+9. INDEPENDENCE REQUIREMENTS
+
+9.1 SEC Independence Rules. If the Client is subject to SEC reporting
+requirements, the Service Provider shall comply with all applicable SEC
+independence rules, including Rule 2-01 of Regulation S-X and related
+interpretive guidance, which restrict the types of non-audit services that
+may be provided to an audit client and prohibit certain financial
+relationships between the auditor and the audit client.
+
+9.2 AICPA Code of Conduct. The Service Provider shall comply with the AICPA
+Code of Professional Conduct, including the conceptual framework approach to
+evaluating threats to independence and the application of safeguards to
+eliminate or reduce identified threats to an acceptable level.
+
+9.3 Rotation Requirements. If applicable under PCAOB rules or SEC
+regulations, the Service Provider shall comply with auditor and engagement
+partner rotation requirements, including the rotation of the lead and
+concurring audit partners after specified periods of service on the engagement.
+
+10. COMMUNICATION WITH AUDIT COMMITTEE
+
+10.1 Required Communications. The Service Provider shall communicate with the
+Client's audit committee (or those charged with governance in the absence of
+an audit committee) in accordance with AU-C 260 (or PCAOB AS 1301, as
+applicable), including communications regarding the planned scope and timing
+of the audit, significant findings from the audit, material weaknesses and
+significant deficiencies in internal control, management integrity issues,
+uncorrected misstatements, disagreements with management, and other matters
+required to be communicated.
+
+10.2 Management Letter. The Service Provider shall prepare and deliver a
+management letter to the Client's audit committee and management at the
+conclusion of each annual audit engagement, summarizing the audit scope and
+findings, identified deficiencies in internal controls, recommended
+improvements to financial reporting processes, and any other matters that the
+Service Provider considers appropriate to communicate.
+
+10.3 Other Matters. The Service Provider shall communicate to the audit
+committee all other matters required by AU-C 260, including information about
+the firm's quality control procedures, significant audit adjustments,
+uncorrected misstatements, and the Service Provider's views about significant
+accounting policies and practices.
+
+11. RECORD RETENTION
+
+11.1 AICPA Requirements. The Service Provider shall maintain all audit work
+papers, correspondence, and other documentation generated or received in
+connection with the performance of services under this Agreement in accordance
+with the AICPA Statements on Standards for Accounting and Review Services and
+the applicable record retention requirements of the AICPA and PCAOB.
+
+11.2 Minimum Retention Period. The Service Provider shall retain all audit
+work papers, engagement documentation, and client records for a minimum period
+of seven (7) years following the date of the audit report or, in the case of
+tax return preparation, seven (7) years following the date of filing or the
+due date of the return, whichever is later. This retention period reflects
+the regulatory requirements applicable to audit records under PCAOB Rule
+3502 and applicable state accountancy board regulations.
+
+12. SUCCESSOR AUDITOR TRANSITION
+
+12.1 Professional Clearance. In the event that the Client engages a successor
+auditor during the term of this Agreement or following its termination or
+expiration, the Service Provider shall comply with the professional clearance
+requirements of AU-C 210 (or PCAOB AS 2810, as applicable), including
+responding promptly and fully to the successor auditor's inquiries regarding
+professional or business reasons for the change in auditors.
+
+12.2 Client Consent. The Client shall provide written consent authorizing the
+Service Provider to respond to the successor auditor's inquiries and to
+furnish access to the Client's audit work papers, management representations,
+and other relevant engagement documentation, subject to the terms of the
+confidentiality provisions of this Agreement.
+
+13. ELECTRONIC DATA ACCESS
+
+13.1 Security Protocols. The Service Provider shall implement and maintain
+commercially reasonable security protocols for the transmission, storage, and
+access of the Client's financial data and records in electronic format,
+including encryption of data in transit and at rest, access controls, and
+audit trails for data access.
+
+13.2 Data Room Procedures. The Service Provider and Client shall establish a
+secure virtual data room or portal for the exchange of financial records,
+management representations, supporting schedules, and other engagement
+documentation. Access to the data room shall be restricted to authorized
+personnel of both parties, and all access shall be logged and monitored.
+
+14. TERM
+
+14.1 Initial Term. This Agreement shall commence on the Effective Date and
+shall continue for a period of twenty-four (24) months, concluding on
+February 14, 2027 (the "Initial Term"), unless earlier terminated in
+accordance with the provisions of Section 20.
+
+14.2 No Automatic Renewal. This Agreement shall not automatically renew upon
+expiration of the Initial Term. Any extension of the term shall require mutual
+written agreement of the parties executed at least sixty (60) calendar days
+prior to the expiration of the Initial Term.
+
+14.3 Effect of Termination. Expiration or termination of this Agreement shall
+not affect any provisions that by their nature are intended to survive
+termination, including without limitation Sections 17 (Intellectual Property),
+18 (Confidentiality), 21 (Liability), 22 (Dispute Resolution), 23 (Governing
+Law), and 24 (General Provisions).
+
+15. COMPENSATION
+
+15.1 Annual Audit Fee. The Client shall pay the Service Provider a fixed fee
+of one hundred eighty-five thousand dollars ($185,000.00) per fiscal year for
+the independent audit of the Client's consolidated financial statements and
+assessment of internal controls over financial reporting, inclusive of all
+fieldwork, reporting, management letter preparation, audit committee
+presentations, and other costs associated with the completion of the annual
+audit engagement.
+
+15.2 Quarterly Review Fee. The Client shall pay the Service Provider a fee of
+twenty-two thousand dollars ($22,000.00) per quarter for each quarterly review
+engagement, totaling eighty-eight thousand dollars ($88,000.00) per fiscal
+year, inclusive of all analytical procedures, inquiries, reporting, and other
+costs associated with the completion of each quarterly review.
+
+15.3 Tax Services Fee. The Client shall pay the Service Provider a fee of
+thirty-five thousand dollars ($35,000.00) per fiscal year for federal, state,
+and multi-state tax return preparation and tax advisory services described in
+Section 7.
+
+15.4 Total Annual Value. The aggregate annual value of services under this
+Agreement shall approximate three hundred eight thousand dollars ($308,000.00),
+comprising the annual audit fee of $185,000, the quarterly review fees of
+$88,000, and the tax services fee of $35,000. These fees are subject to
+adjustment in the event of significant changes in the scope of services
+agreed upon by the parties in writing.
+
+15.5 Payment Terms. Invoices shall be submitted upon the delivery of each
+deliverable or upon the completion of each service milestone, and shall be
+payable by the Client within thirty (30) calendar days of receipt. All fees
+are quoted in United States dollars.
+
+16. DELIVERABLES AND MILESTONES
+
+16.1 Engagement Letters. Within fifteen (15) calendar days of the Effective
+Date, the Service Provider shall deliver engagement letters for each service
+line (audit, review, and tax) in accordance with AICPA professional standards,
+setting forth the respective terms, scope, responsibilities, and limitations
+of each engagement.
+
+16.2 FY2025 Audit Plan. Within thirty (30) calendar days of the Effective
+Date, the Service Provider shall deliver a comprehensive audit plan for the
+FY2025 audit engagement, including the planned scope, risk assessment summary,
+materiality determination, significant accounts and assertions, planned audit
+procedures, and engagement timeline.
+
+16.3 Interim Procedures. Within ninety (90) calendar days of the Effective
+Date, the Service Provider shall complete interim audit procedures, including
+risk assessment procedures, walkthroughs of significant processes, internal
+control testing, and identification of significant accounts and transaction
+classes for year-end substantive testing.
+
+16.4 Quarterly Review Reports. Within thirty (30) calendar days of the end of
+each fiscal quarter, the Service Provider shall deliver a quarterly review
+report for each quarter of fiscal years 2025 and 2026, providing limited
+assurance that no material modifications should be made to the condensed
+consolidated financial statements for the respective quarter.
+
+16.5 FY2025 Audit Report. Within ninety (90) calendar days of the Client's
+fiscal year end date for fiscal year 2025, the Service Provider shall deliver
+the independent auditor's report on the consolidated financial statements for
+fiscal year 2025, including the opinion on the financial statements and, if
+applicable, the attestation report on internal controls over financial
+reporting.
+
+16.6 SOX 404 Report. Within ninety (90) calendar days of the Client's fiscal
+year end date for fiscal year 2025, and if the Client is subject to Section
+404(b) of the Sarbanes-Oxley Act, the Service Provider shall deliver the
+attestation report on management's assessment of the effectiveness of internal
+controls over financial reporting.
+
+16.7 Tax Returns. Federal and state income tax returns for each taxable year
+shall be delivered by the applicable filing deadline, including extensions if
+requested by the Client.
+
+16.8 Management Letter. Within thirty (30) calendar days of the issuance of
+the annual audit report, the Service Provider shall deliver the management
+letter for the respective fiscal year, summarizing audit findings, internal
+control deficiencies, and recommendations.
+
+17. INTELLECTUAL PROPERTY
+
+17.1 Client Ownership. All audit work papers, reports, management letters,
+financial statements, tax returns, and other deliverables produced by the
+Service Provider specifically for the Client under this Agreement
+(collectively, "Deliverables") shall become the sole and exclusive property
+of the Client upon full payment for the services giving rise to such
+Deliverables. The Service Provider hereby assigns and transfers to the Client
+all right, title, and interest in and to all Deliverables.
+
+17.2 Service Provider Retained IP. The Service Provider shall retain all
+right, title, and interest in its audit methodologies, engagement templates,
+audit programs, risk assessment frameworks, internal control testing
+procedures, analytical models, quality control policies and procedures,
+training materials, and other tools, processes, and methodologies developed
+independently of this Agreement or utilized across multiple client engagements
+(collectively, "Service Provider IP"). The Client is granted a non-exclusive,
+non-transferable license to use the Deliverables for the Client's internal
+business purposes only.
+
+18. CONFIDENTIALITY
+
+18.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Neither party shall disclose, publish, or otherwise reveal
+Confidential Information to any third party without the prior written consent
+of the disclosing party, except as required by law, regulation, legal
+process, court order, or professional standards applicable to the practice of
+public accounting.
+
+18.2 Duration. The obligations of confidentiality set forth in this Section
+18 shall survive the expiration or termination of this Agreement for a period
+of seven (7) years, reflecting the regulatory requirements applicable to the
+retention and confidentiality of audit records under PCAOB rules, AICPA
+standards, and applicable state accountancy board regulations.
+
+19. INSURANCE
+
+19.1 Professional Liability Insurance. Throughout the term of this Agreement,
+the Service Provider shall maintain, at its sole cost and expense,
+professional liability (errors and omissions) insurance in an amount not less
+than five million dollars ($5,000,000) per occurrence, covering claims arising
+from negligent acts, errors, or omissions in the provision of audit, tax, and
+advisory services under this Agreement.
+
+19.2 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies. Such certificates shall
+provide that the Client shall receive thirty (30) days' prior written notice of
+any cancellation, material modification, or non-renewal.
+
+20. TERMINATION
+
+20.1 General Termination. Either party may terminate this Agreement upon
+ninety (90) calendar days' prior written notice to the other party.
+
+20.2 Termination for Cause. Either party may terminate this Agreement for
+cause if the other party commits a material breach of any provision of this
+Agreement and fails to cure such breach within thirty (30) calendar days after
+receiving written notice specifying the nature of the breach in reasonable
+detail.
+
+20.3 Successor Auditor Consent. In the event of termination by the Client, the
+Client shall obtain the consent of any successor auditor engaged to replace the
+Service Provider, and the Service Provider shall comply with its obligations
+under Section 12 regarding professional clearance and the provision of access
+to engagement documentation.
+
+21. LIABILITY
+
+21.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING
+BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS
+OPPORTUNITY, BUSINESS INTERRUPTION, OR LOSS OF GOODWILL, ARISING OUT OF OR
+RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER, REGARDLESS
+OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY, ANY
+OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES.
+
+21.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed five
+million dollars ($5,000,000), regardless of the form of action or legal theory.
+This cap shall apply to all claims, damages, losses, and liabilities arising
+from or related to this Agreement, whether based on contract, tort, strict
+liability, or any other legal theory.
+
+22. DISPUTE RESOLUTION
+
+22.1 Litigation. Any dispute arising out of or relating to this Agreement
+that cannot be resolved through good faith negotiation between the parties
+shall be resolved through litigation in the state or federal courts located in
+Cook County, Illinois. Each party hereby consents to the exclusive
+jurisdiction and venue of such courts and waives any objection to the
+inconvenience of such forum.
+
+23. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the State of Illinois, without giving effect to any choice-of-law or
+conflict-of-law provisions that would require the application of the laws of
+any jurisdiction other than the State of Illinois.
+
+24. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A:  Audit Plan Template — Detailed audit program, risk assessment
+                framework, materiality calculation worksheets, and engagement
+                planning templates for the annual audit engagement
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B:  Internal Controls Matrix — Comprehensive matrix of key
+                controls by significant account and assertion, including
+                control descriptions, testing procedures, and evaluation
+                criteria aligned with the COSO Internal Control—Integrated
+                Framework (2013)
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C:  Tax Engagement Letter — Detailed terms and scope for the
+                tax preparation and advisory services engagement, including
+                entity listing, jurisdiction schedule, and service
+                deliverables
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+25. GENERAL PROVISIONS
+
+25.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the
+subject matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written,
+between the parties relating to such subject matter.
+
+25.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+25.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the
+other party, except that either party may assign this Agreement to a successor
+entity in connection with a merger, acquisition, or sale of all or
+substantially all of its assets, provided that the assignee assumes all
+obligations of the assigning party under this Agreement.
+
+25.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such
+provision shall be modified to the minimum extent necessary to make it valid
+and enforceable, and the remaining provisions of this Agreement shall continue
+in full force and effect.
+
+25.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+25.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b)
+sent by certified mail, return receipt requested, (c) sent by nationally
+recognized overnight courier, or (d) sent by email with confirmation of
+receipt, to the addresses set forth in Section 1 or such other address as
+either party may designate in writing.
+
+25.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+25.8 Force Majeure. Neither party shall be liable for any failure or delay in
+the performance of its obligations under this Agreement to the extent that
+such failure or delay is caused by circumstances beyond the reasonable control
+of the affected party, including but not limited to acts of God, natural
+disasters, pandemics, government actions, labor disputes, civil unrest, war,
+terrorism, and power or telecommunications failures.
+
+26. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Financial Audit and
+Accounting Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+Sterling & Associates CPAs PLLC, an Illinois professional limited liability company
+
+
+By: ______________________________________
+Name: Richard Sterling, CPA
+Title: Managing Partner
+Date: February 10, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Catherine Morrell
+Title: Director of Audit Quality
+Date: February 10, 2025
+
+
+CLIENT:
+
+Midwest Agribusiness Holdings Inc., an Iowa corporation
+
+
+By: ______________________________________
+Name: Susan Garrett
+Title: Chief Financial Officer
+Date: February 12, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: David Wharton
+Title: General Counsel
+Date: February 12, 2025

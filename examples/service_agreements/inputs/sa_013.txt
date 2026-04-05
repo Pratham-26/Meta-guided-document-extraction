@@ -1,0 +1,649 @@
+DATA ANALYTICS AND BUSINESS INTELLIGENCE SERVICES AGREEMENT
+
+This Data Analytics and Business Intelligence Services Agreement (the "Agreement"),
+bearing reference number DAB-2025-0334, is entered into as of May 1, 2025 (the
+"Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, the grocery industry in the United States has experienced a period of
+unprecedented data-driven transformation over the past decade, fueled by the rapid
+proliferation of digital commerce platforms, the expansion of loyalty program
+membership databases, the deployment of Internet of Things (IoT) sensors across
+supply chain and in-store operations, and the growing consumer expectation for
+personalized shopping experiences tailored to individual purchasing patterns and
+dietary preferences. The modern grocery enterprise generates, processes, and stores
+vast quantities of transactional, behavioral, and operational data on a daily basis,
+creating both significant competitive opportunities and substantial analytical
+challenges for organizations seeking to translate raw data into actionable business
+intelligence;
+
+WHEREAS, the competitive landscape of the Pacific Northwest grocery market has
+intensified considerably in recent years, with national chains, regional players,
+discount operators, and emerging e-commerce grocery platforms all vying for market
+share in a region characterized by a growing population, elevated consumer
+expectations for product quality and sustainability, and a regulatory environment
+that increasingly emphasizes food safety traceability, environmental stewardship,
+and transparent supply chain practices. In this environment, the ability to leverage
+data analytics for strategic decision-making has become a critical differentiator
+between high-performing and underperforming grocery retailers;
+
+WHEREAS, the evolution of customer analytics within the grocery sector has progressed
+from rudimentary point-of-sale transaction analysis to sophisticated multi-channel
+customer intelligence platforms that integrate purchase history, digital engagement
+metrics, demographic data, geospatial information, and real-time behavioral signals
+to enable predictive modeling of customer preferences, churn risk assessment, basket
+optimization, and targeted promotional effectiveness measurement. Organizations that
+have invested in comprehensive business intelligence capabilities have demonstrated
+measurable improvements in customer retention rates, average transaction values, and
+promotional return on investment relative to peers relying on traditional
+intuition-based decision-making approaches;
+
+WHEREAS, the operational complexity of managing a regional grocery chain with
+multiple store locations across diverse market areas creates substantial demand for
+data-driven approaches to inventory optimization, labor scheduling, assortment
+planning, pricing strategy, and supply chain efficiency. The interplay between
+perishable product dynamics, seasonal demand fluctuations, competitive pricing
+pressures, and consumer preference evolution requires analytical frameworks capable
+of processing large volumes of multi-dimensional data in near-real-time to support
+timely operational and strategic decisions;
+
+WHEREAS, InsightMatrix Analytics Corp. is a leading provider of data analytics,
+business intelligence, and machine learning consulting services with extensive
+experience serving clients in the retail, consumer packaged goods, and grocery
+sectors, and maintains a team of data scientists, data engineers, visualization
+specialists, and analytics strategists with deep domain expertise in the analytical
+challenges unique to multi-location grocery operations;
+
+WHEREAS, FreshMart Grocers Inc. operates a chain of eighty-five (85) grocery stores
+across the Pacific Northwest region and has determined that the development of a
+comprehensive data analytics and business intelligence capability is essential to
+supporting its growth strategy, improving operational efficiency, enhancing customer
+experience, and maintaining competitive positioning in an increasingly data-driven
+market environment;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements
+set forth herein, and for other good and valuable consideration, the receipt and
+sufficiency of which are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. InsightMatrix Analytics Corp., a corporation duly organized
+and existing under the laws of the State of Washington, with its principal offices
+located at 400 Pine Street, Suite 700, Seattle, WA 98101 (hereinafter referred to
+as "Service Provider," "InsightMatrix," or "Provider").
+
+1.2 Client. FreshMart Grocers Inc., a corporation duly organized and existing under
+the laws of the State of Oregon, with its principal offices located at 9000 SE
+McLoughlin Blvd, Portland, OR 97222 (hereinafter referred to as "Client,"
+"FreshMart," or "Company").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they
+have the full legal authority to bind their respective organization to the terms
+and conditions of this Agreement, and that the execution of this Agreement has been
+duly authorized by all necessary corporate approvals.
+
+2. DEFINITIONS
+
+2.1 "A/B Test" means a controlled experiment in which two or more variants of a
+business variable (such as pricing, promotional placement, store layout, or product
+assortment) are tested simultaneously with statistically equivalent customer
+populations to determine which variant produces superior performance against a
+predefined success metric, using appropriate randomization, sample size
+determination, and statistical significance testing methodologies.
+
+2.2 "Big Data" means datasets characterized by high volume, velocity, variety, and
+veracity that require specialized data processing technologies, distributed
+computing architectures, and advanced analytical techniques beyond those applicable
+to traditional relational database environments.
+
+2.3 "Business Intelligence" or "BI" means the technologies, applications, and
+practices for the collection, integration, analysis, and presentation of business
+information to support fact-based decision-making, encompassing reporting,
+dashboards, ad-hoc analysis, data visualization, and self-service analytics
+capabilities.
+
+2.4 "Dashboard" means a visual display interface that consolidates and presents
+key performance indicators, metrics, and data points in an organized, interactive
+format designed to enable rapid comprehension of business performance and facilitate
+data-driven decision-making at various organizational levels.
+
+2.5 "Data Governance" means the framework of policies, processes, standards, and
+roles that ensures the availability, usability, integrity, and security of the
+data employed in the enterprise, including data quality management, metadata
+management, data lineage tracking, access control administration, and regulatory
+compliance monitoring.
+
+2.6 "Data Lake" means a centralized data repository that stores structured,
+semi-structured, and unstructured data at scale in its native format, enabling
+flexible data processing, exploratory analysis, and machine learning model training
+without the constraints of a predefined schema.
+
+2.7 "Data Mart" means a subset of a data warehouse that is oriented toward a
+specific business line, department, or analytical domain, containing consolidated
+and aggregated data optimized for the analytical requirements of its intended user
+community.
+
+2.8 "Data Pipeline" means an automated series of data processing steps—including
+ingestion, cleansing, transformation, validation, enrichment, and loading—that
+moves data from source systems to target analytical environments in a reliable,
+repeatable, and auditable manner.
+
+2.9 "Data Warehouse" means a centralized, subject-oriented, time-variant, and
+non-volatile data repository designed to support enterprise-wide reporting,
+analysis, and decision-making, typically structured using dimensional modeling
+techniques such as star schemas and snowflake schemas.
+
+2.10 "ETL" means Extract, Transform, Load—the process of extracting data from
+source systems, transforming the data into an appropriate format and structure for
+analysis, and loading the transformed data into target data storage systems such
+as data warehouses or data lakes.
+
+2.11 "KPI" or "Key Performance Indicator" means a quantifiable metric used to
+evaluate the success of an organization, department, project, or activity against
+strategic and operational objectives, providing a measurable basis for performance
+assessment and progress tracking.
+
+2.12 "Machine Learning" means a subset of artificial intelligence in which
+computational algorithms learn patterns and relationships from data without being
+explicitly programmed for each specific task, enabling predictive modeling,
+classification, clustering, anomaly detection, and recommendation generation.
+
+2.13 "Predictive Model" means a mathematical or computational model, developed
+using statistical or machine learning techniques, that estimates the probability
+or expected value of a future outcome based on historical data and identified
+patterns, subject to appropriate validation and performance monitoring.
+
+2.14 "Statistical Significance" means the probability that an observed effect or
+difference in an A/B test or analytical result is not attributable to random
+variation, typically assessed using a predefined significance level (alpha) and
+reported as a p-value, with results below the alpha threshold considered
+statistically significant.
+
+2.15 "Confidential Information" means all non-public information disclosed by
+either party to the other in connection with this Agreement, including but not
+limited to business strategies, financial data, customer information, sales
+figures, vendor relationships, operational procedures, and proprietary analytical
+methodologies.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide comprehensive data analytics
+and business intelligence services to the Client, including but not limited to the
+following service categories:
+
+    (a) Data Warehouse Architecture Design. The Service Provider shall design and
+    document a scalable data warehouse architecture to serve as the centralized
+    analytical data repository for the Client's eighty-five (85) store operation,
+    encompassing cloud platform selection and configuration, dimensional data
+    modeling, schema design optimized for analytical query performance, and a
+    comprehensive data architecture document describing the target-state
+    infrastructure.
+
+    (b) ETL Pipeline Development. The Service Provider shall develop, test, and
+    deploy automated ETL pipelines for the ingestion, transformation, and loading
+    of data from the Client's point-of-sale systems, inventory management
+    platforms, customer loyalty databases, supply chain management systems, and
+    other relevant source systems into the data warehouse. ETL development shall
+    include error handling, data quality validation, scheduling, logging, and
+    alerting mechanisms.
+
+    (c) Dashboard and Visualization Creation. The Service Provider shall design
+    and develop an executive dashboard suite providing interactive visualizations
+    of key performance indicators across sales performance, inventory health,
+    customer behavior, promotional effectiveness, and operational efficiency for
+    the Client's store network. Dashboard design shall adhere to established
+    visualization standards including accessibility compliance, responsive layout
+    design, and drill-down interactivity.
+
+    (d) Predictive Analytics Modeling. The Service Provider shall develop
+    predictive analytics models for inventory optimization (including demand
+    forecasting for perishable and non-perishable product categories, stockout
+    risk prediction, and optimal replenishment timing) and customer behavior
+    analysis (including customer lifetime value prediction, churn risk scoring,
+and purchase propensity modeling). Model development shall encompass feature
+    engineering, model selection, training, validation, deployment, and ongoing
+    performance monitoring.
+
+    (e) A/B Testing Framework Design. The Service Provider shall design and
+    implement a structured A/B testing framework enabling the Client to conduct
+    controlled experiments across its store network, including test design
+    methodology, sample size calculation tools, statistical significance testing
+    protocols, and a decision framework for interpreting results and implementing
+    winning variations.
+
+    (f) Executive Reporting. The Service Provider shall develop automated
+    executive reporting capabilities providing periodic performance summaries,
+    trend analyses, and actionable insights to support strategic decision-making
+    by the Client's senior leadership team.
+
+3.2 Data Requirements. The Client acknowledges that the predictive analytics
+models described in Section 3.1(d) require a minimum of twelve (12) months of
+historical data of sufficient quality and granularity to produce reliable model
+outputs. If the Client is unable to provide the required historical data within
+the timeframes specified in Section 7, the delivery timeline for the predictive
+model deliverable shall be extended proportionally until adequate training data
+becomes available. The Service Provider shall notify the Client in writing of
+any data quality or completeness issues that may impact model development.
+
+3.3 Anonymized Data Usage. The Service Provider may use patterns, trends, and
+insights derived from anonymized and aggregated Client data to improve its
+general analytical frameworks, methodologies, and industry benchmarks, provided
+that no individually identifiable Client data, store-level data, or competitively
+sensitive information is disclosed or retained by the Service Provider outside the
+scope of this engagement.
+
+4. DATA ARCHITECTURE
+
+4.1 Cloud Platform. The Service Provider shall evaluate and recommend a cloud
+data platform suitable for the Client's analytical workload requirements, data
+volume projections, security and compliance requirements, and budget constraints.
+The Service Provider shall assist the Client with platform provisioning,
+configuration, and initial deployment.
+
+4.2 Schema Design. The Service Provider shall design the target data warehouse
+schema using dimensional modeling best practices, including the creation of fact
+tables for sales transactions, inventory movements, and customer interactions,
+and dimension tables for products, stores, customers, time periods, and
+promotional campaigns.
+
+4.3 Data Modeling. The Service Provider shall develop conceptual, logical, and
+physical data models documenting the structure, relationships, and attributes of
+the data warehouse, including data lineage mapping from source systems to
+analytical outputs.
+
+5. ETL DEVELOPMENT
+
+5.1 Data Ingestion. The Service Provider shall implement data ingestion processes
+for all identified source systems, supporting both batch and near-real-time
+ingestion patterns as appropriate for each data source and analytical use case.
+
+5.2 Data Transformation. The Service Provider shall develop transformation logic
+for data cleansing, standardization, deduplication, enrichment, and conformance
+to target schema requirements, including handling of data type conversions,
+null value management, and business rule application.
+
+5.3 Data Loading. The Service Provider shall implement efficient data loading
+processes, including incremental loading strategies for high-volume transactional
+data and full refresh processes for reference and dimension data.
+
+5.4 Scheduling and Orchestration. The Service Provider shall implement scheduling
+and orchestration of all ETL pipelines, including dependency management, retry
+logic, and failure notification mechanisms.
+
+5.5 Error Handling. The Service Provider shall implement comprehensive error
+handling for all ETL processes, including data quality exception logging, dead
+letter queues for unprocessable records, and escalation procedures for critical
+pipeline failures.
+
+6. DASHBOARD DESIGN
+
+6.1 Visualization Standards. All dashboards and visualizations developed under this
+Agreement shall adhere to industry-standard visualization best practices,
+including appropriate chart type selection, color palette design optimized for
+accessibility (including color-blind accessibility), consistent formatting, and
+clear labeling of axes, legends, and data points.
+
+6.2 Interactivity. Dashboards shall support interactive filtering, drill-down
+capabilities, and parameter-driven analysis to enable users at various
+organizational levels to explore data at the appropriate level of granularity.
+
+6.3 Accessibility. Dashboard design shall comply with applicable accessibility
+standards to ensure usability by individuals with visual impairments or other
+disabilities.
+
+7. PREDICTIVE ANALYTICS
+
+7.1 Model Selection. The Service Provider shall evaluate and select appropriate
+modeling techniques for each predictive use case, considering the nature of the
+prediction target, available feature data, performance requirements, and
+interpretability needs of the Client's business users.
+
+7.2 Model Training. The Service Provider shall train predictive models using
+historical Client data, employing appropriate train/validation/test split
+methodologies and cross-validation techniques to ensure robust model performance
+and generalizability.
+
+7.3 Model Validation. The Service Provider shall validate all predictive models
+against held-out test data and relevant business performance benchmarks prior to
+deployment, documenting model performance metrics including accuracy, precision,
+recall, and area under the receiver operating characteristic curve (AUC-ROC) as
+applicable to each model type.
+
+7.4 Model Deployment. The Service Provider shall deploy validated models to the
+Client's production environment, including the development of scoring pipelines,
+batch prediction jobs, and integration with relevant downstream systems.
+
+7.5 Model Monitoring. The Service Provider shall implement model performance
+monitoring to detect concept drift, data quality degradation, and performance
+decline over time, and shall recommend model retraining schedules based on
+observed monitoring results.
+
+8. A/B TESTING
+
+8.1 Test Design. The Service Provider shall develop standardized A/B test design
+templates and protocols, including hypothesis formulation, primary and secondary
+metric selection, randomization methodology, and test duration estimation.
+
+8.2 Sample Size Calculation. The Service Provider shall provide sample size
+calculation tools and guidance to ensure that A/B tests are adequately powered
+to detect practically meaningful effect sizes at the desired statistical
+significance level.
+
+8.3 Statistical Methods. The Service Provider shall implement appropriate
+statistical testing methods for A/B test analysis, including frequentist
+hypothesis testing, confidence interval estimation, and sequential testing
+procedures where appropriate.
+
+8.4 Decision Framework. The Service Provider shall develop a decision framework
+for interpreting A/B test results and translating statistical findings into
+actionable business recommendations, including criteria for test continuation,
+variant selection, and rollout strategy.
+
+9. DATA GOVERNANCE
+
+9.1 Data Quality. The Service Provider shall implement data quality monitoring
+and validation processes to ensure the accuracy, completeness, consistency, and
+timeliness of data flowing through the analytical infrastructure.
+
+9.2 Data Lineage. The Service Provider shall document data lineage from source
+systems through transformation processes to analytical outputs, enabling traceability
+and auditability of reported metrics and model inputs.
+
+9.3 Data Cataloging. The Service Provider shall assist the Client in establishing
+a data catalog documenting the available data assets, their definitions, quality
+profiles, ownership, and authorized usage.
+
+9.4 Privacy. The Service Provider shall implement data privacy controls in
+accordance with applicable data protection regulations and the Client's data
+governance policies, including data anonymization and pseudonymization techniques
+for analytical datasets.
+
+10. SECURITY AND PRIVACY
+
+10.1 Data Encryption. The Service Provider shall ensure that all Client data is
+encrypted in transit using TLS 1.2 or higher and encrypted at rest using AES-256
+or equivalent encryption standards within the analytical infrastructure.
+
+10.2 Access Controls. The Service Provider shall implement role-based access
+controls for all analytical systems, ensuring that users have access only to the
+data and functionality required for their designated roles and responsibilities.
+
+10.3 PCI Compliance. To the extent that the analytical infrastructure processes
+payment card data, the Service Provider shall implement controls consistent with
+the Payment Card Industry Data Security Standard (PCI DSS) requirements applicable
+to the Client's PCI validation level.
+
+10.4 PII Handling. The Service Provider shall implement policies and technical
+controls for the handling of personally identifiable information (PII) in
+analytical datasets, including data minimization, purpose limitation, and
+appropriate access restrictions.
+
+11. CHANGE MANAGEMENT
+
+11.1 Requirements Changes. Either party may propose changes to the scope of
+services or project requirements during the term of this Agreement. All proposed
+changes shall be documented in writing and shall require mutual written agreement
+before implementation.
+
+11.2 Scope Adjustments. Material changes to the scope of services that affect
+the delivery timeline, resource requirements, or compensation structure shall be
+addressed through a written change order signed by authorized representatives of
+both parties, specifying the nature of the change, the impact on deliverables and
+timeline, and any adjustments to compensation.
+
+12. TERM
+
+12.1 Initial Term. This Agreement shall commence on the Effective Date and shall
+continue for a period of thirty-six (36) months, concluding on April 30, 2028
+(the "Initial Term"), unless earlier terminated in accordance with Section 16.
+
+12.2 Auto-Renewal. Upon expiration of the Initial Term or any subsequent renewal
+term, this Agreement shall automatically renew for successive twelve (12) month
+periods (each a "Renewal Term") unless either party provides written notice of
+non-renewal to the other party at least ninety (90) calendar days prior to the
+expiration of the then-current term.
+
+12.3 Effect of Termination. Expiration or termination of this Agreement shall not
+affect any provisions that by their nature are intended to survive termination,
+including without limitation Sections 14 (Intellectual Property), 15
+(Confidentiality), 17 (Liability), 18 (Dispute Resolution), and 19 (Governing
+Law).
+
+13. COMPENSATION
+
+13.1 Monthly Retainer. The Client shall pay the Service Provider a monthly
+retainer fee of twenty-two thousand dollars ($22,000.00) per month (the "Monthly
+Retainer"). The Monthly Retainer shall cover up to two hundred (200) hours of
+professional services per calendar month.
+
+13.2 Overtime. For any services rendered in excess of two hundred (200) hours
+in a given calendar month, the Client shall pay the Service Provider an overtime
+rate of one hundred seventy-five dollars ($175.00) per hour. The Service Provider
+shall notify the Client in writing when projected monthly hours are expected to
+exceed one hundred sixty (160) hours to allow the Client an opportunity to adjust
+service priorities.
+
+13.3 Data Infrastructure Setup Fee. In addition to the Monthly Retainer, the
+Client shall pay the Service Provider a one-time data infrastructure setup fee
+of forty-five thousand dollars ($45,000.00), payable in full within thirty (30)
+calendar days of the Effective Date. This fee covers the initial cloud platform
+provisioning, environment configuration, security baseline implementation, and
+foundational infrastructure components required to support the analytics
+environment.
+
+13.4 Payment Terms. Invoices for the Monthly Retainer and any applicable overtime
+charges shall be submitted monthly and shall be payable by the Client within
+thirty (30) calendar days of receipt. All fees are quoted in United States dollars.
+
+14. INTELLECTUAL PROPERTY
+
+14.1 Client-Owned Deliverables. All dashboards, reports, predictive models, and
+analytical outputs created specifically for the Client under this Agreement
+(collectively, "Client Deliverables") shall become the sole and exclusive
+property of the Client upon full payment for the services giving rise to such
+deliverables. The Service Provider hereby assigns and transfers to the Client all
+right, title, and interest in and to all Client Deliverables.
+
+14.2 Service Provider Retained IP. The Service Provider shall retain all right,
+title, and interest in its analytics frameworks, code libraries, reusable
+software components, data pipeline templates, ETL utilities, visualization
+libraries, model training pipelines, and other tools, methodologies, and
+intellectual property developed independently of this Agreement or utilized across
+multiple client engagements (collectively, "Provider IP").
+
+14.3 License Grant. The Service Provider hereby grants to the Client a perpetual,
+non-exclusive, non-transferable license to use, modify, and maintain any Provider
+IP components that are deployed within the Client's analytical infrastructure as
+of the expiration or termination of this Agreement, solely for the Client's
+internal business purposes.
+
+15. CONFIDENTIALITY
+
+15.1 Obligations. Each party agrees to hold in strict confidence all Confidential
+Information of the other party disclosed in connection with this Agreement.
+Neither party shall disclose, publish, or otherwise reveal Confidential Information
+to any third party without the prior written consent of the disclosing party,
+except as required by law, regulation, or legal process.
+
+15.2 Duration. The obligations of confidentiality set forth in this Section 15
+shall survive the expiration or termination of this Agreement for a period of
+five (5) years.
+
+16. TERMINATION
+
+16.1 General Termination. Either party may terminate this Agreement upon ninety
+(90) calendar days' prior written notice to the other party.
+
+16.2 Termination for Cause. Either party may terminate this Agreement for cause
+if the other party commits a material breach of any provision of this Agreement
+and fails to cure such breach within thirty (30) calendar days after receiving
+written notice specifying the nature of the breach in reasonable detail.
+
+16.3 Transition Obligations. Upon termination or expiration of this Agreement,
+the Service Provider shall cooperate with the Client in an orderly transition of
+analytical systems and data assets, including the provision of documentation,
+knowledge transfer sessions, and reasonable post-termination support for a period
+of up to sixty (60) calendar days.
+
+17. LIABILITY
+
+17.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW,
+NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED
+TO LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS OPPORTUNITY, BUSINESS
+INTERRUPTION, OR LOSS OF GOODWILL, ARISING OUT OF OR RELATING TO THIS AGREEMENT
+OR THE PERFORMANCE OF SERVICES HEREUNDER, REGARDLESS OF WHETHER SUCH DAMAGES ARE
+BASED ON CONTRACT, TORT, STRICT LIABILITY, ANY OTHER LEGAL THEORY, AND EVEN IF
+THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+17.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed one million
+dollars ($1,000,000), regardless of the form of action or legal theory.
+
+18. INSURANCE
+
+18.1 Professional Liability. Throughout the term of this Agreement, the Service
+Provider shall maintain professional liability (errors and omissions) insurance
+in an amount not less than three million dollars ($3,000,000) per occurrence,
+covering claims arising from negligent acts, errors, or omissions in the
+provision of data analytics and business intelligence services under this
+Agreement.
+
+18.2 Cyber Liability. The Service Provider shall maintain cyber liability
+insurance in an amount not less than two million dollars ($2,000,000), covering
+claims arising from data breaches, security incidents, or unauthorized access to
+Client data in connection with the services provided under this Agreement.
+
+18.3 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies.
+
+19. DISPUTE RESOLUTION
+
+19.1 Negotiation. In the event of any dispute arising out of or relating to this
+Agreement, the parties shall first attempt to resolve such dispute through good
+faith negotiations between senior executives of each party for a period of not
+less than thirty (30) calendar days.
+
+19.2 Arbitration. If the parties are unable to resolve a dispute through
+negotiation, such dispute shall be submitted to binding arbitration administered
+by the American Arbitration Association (AAA) in accordance with its Commercial
+Arbitration Rules then in effect. The arbitration shall be conducted in Seattle,
+Washington. The decision of the arbitrator shall be final and binding.
+
+20. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of
+the State of Washington, without giving effect to any choice-of-law or conflict-
+of-law provisions that would require the application of the laws of any
+jurisdiction other than the State of Washington.
+
+21. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A: Data Architecture Diagram — Detailed data warehouse architecture
+                design including cloud platform specifications, network topology,
+                data flow diagrams, and infrastructure component inventory
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: Dashboard Wireframes — Preliminary wireframe designs for the
+                executive dashboard suite, including layout specifications,
+                visualization mockups, and interaction flow diagrams
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: A/B Testing Protocol — Detailed A/B testing methodology,
+                statistical testing procedures, sample size calculation
+                worksheets, and decision framework documentation
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+22. GENERAL PROVISIONS
+
+22.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the subject
+matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written, between
+the parties relating to such subject matter.
+
+22.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+22.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the other
+party, except that either party may assign this Agreement to a successor entity
+in connection with a merger, acquisition, or sale of all or substantially all of
+its assets.
+
+22.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such provision
+shall be modified to the minimum extent necessary to make it valid and
+enforceable, and the remaining provisions of this Agreement shall continue in
+full force and effect.
+
+22.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+22.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b) sent
+by certified mail, return receipt requested, (c) sent by nationally recognized
+overnight courier, or (d) sent by email with confirmation of receipt, to the
+addresses set forth in Section 1 or such other address as either party may
+designate in writing.
+
+22.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing in
+this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+22.8 Force Majeure. Neither party shall be liable for any failure or delay in the
+performance of its obligations under this Agreement to the extent that such
+failure or delay is caused by circumstances beyond the reasonable control of the
+affected party, including but not limited to acts of God, natural disasters,
+pandemics, government actions, labor disputes, civil unrest, war, terrorism, and
+power or telecommunications failures.
+
+23. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Data Analytics and Business
+Intelligence Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+InsightMatrix Analytics Corp., a Washington corporation
+
+
+By: ______________________________________
+Name: Dr. Ananya Patel
+Title: Chief Data Scientist
+Date: April 25, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: James T. O'Connor
+Title: VP of Engineering
+Date: April 25, 2025
+
+
+CLIENT:
+
+FreshMart Grocers Inc., an Oregon corporation
+
+
+By: ______________________________________
+Name: Robert Kim
+Title: Chief Analytics Officer
+Date: April 28, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Linda M. Vasquez
+Title: General Counsel
+Date: April 28, 2025

@@ -12,8 +12,8 @@ def get_retrieved_chunks(
     results = retrieve(category, queries, top_k, index_dir=index_dir)
     return [
         {
-            "content": r.get("content", r.get("document", "")),
-            "score": r.get("score", 0),
+            "content": r["content"],
+            "score": r["score"],
             "rank": i + 1,
         }
         for i, r in enumerate(results)

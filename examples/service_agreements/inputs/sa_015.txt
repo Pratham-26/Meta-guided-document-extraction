@@ -1,0 +1,674 @@
+ARCHITECTURAL AND ENGINEERING DESIGN SERVICES AGREEMENT
+
+This Architectural and Engineering Design Services Agreement (the "Agreement"),
+bearing reference number AED-2024-9021, is entered into as of September 1, 2024
+(the "Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, the advancement of science, technology, engineering, and mathematics (STEM)
+education has been recognized as a critical national priority, with educators,
+policymakers, and industry leaders alike emphasizing the need for modern,
+well-equipped learning environments that foster hands-on experimentation,
+interdisciplinary collaboration, and innovation-driven pedagogy;
+
+WHEREAS, the design of educational facilities has undergone a significant
+transformation over the past two decades, moving away from traditional
+lecture-hall-centric models toward integrated learning environments that
+incorporate flexible classroom configurations, technology-rich maker spaces,
+specialized laboratory facilities, and communal gathering areas designed to
+encourage spontaneous interaction and cross-disciplinary exchange among students,
+faculty, researchers, and industry partners;
+
+WHEREAS, the Gulf Coast region of Texas has experienced substantial population
+growth and increasing demand for higher education and workforce development
+programs, particularly in the fields of energy technology, biomedical engineering,
+advanced manufacturing, and computational sciences, creating an urgent need for
+institutional infrastructure capable of supporting cutting-edge STEM education and
+research programs;
+
+WHEREAS, Gulf Coast Educational Foundation, a nonprofit organization dedicated to
+expanding access to quality STEM education in the greater Houston metropolitan
+area, has undertaken a capital project to construct a new state-of-the-art STEM
+education center and has determined that professional architectural and engineering
+design services are required for the planning, design, and construction
+administration of such facility;
+
+WHEREAS, Horizons Design Collaborative PLLC is a professional design firm with
+demonstrated expertise in the architectural and engineering design of educational
+and institutional facilities, including higher education science buildings, K-12
+STEM academies, research laboratories, and community technical training centers,
+and has been selected by the Client to provide comprehensive design services for
+the Project;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements
+set forth herein, and for other good and valuable consideration, the receipt and
+sufficiency of which are hereby acknowledged, the parties agree as follows:
+
+1. PARTIES
+
+1.1 Service Provider. Horizons Design Collaborative PLLC, a professional limited
+liability company duly organized and existing under the laws of the State of Texas,
+with its principal offices located at 1200 Main Street, Suite 1500, Houston, TX
+77002 (hereinafter referred to as "Service Provider," "Horizons," "Architect," or
+"Design Team").
+
+1.2 Client. Gulf Coast Educational Foundation, a nonprofit corporation duly
+organized and existing under the laws of the State of Texas, with its principal
+offices located at 3400 Memorial Drive, Houston, TX 77024 (hereinafter referred
+to as "Client," "Owner," or "Foundation").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they
+have the full legal authority to bind their respective organization to the terms
+and conditions of this Agreement, and that the execution of this Agreement has been
+duly authorized by all necessary corporate or organizational approvals.
+
+2. DEFINITIONS
+
+2.1 "Addendum" means a written or graphic instrument issued by the Architect prior
+to the opening of bids that modifies or interprets the bidding documents by adding
+to, deleting from, or clarifying the requirements contained therein.
+
+2.2 "Alternate" means an amount proposed for an alternate to the base bid that
+involves a change in the scope of work, materials, equipment, or systems
+specified in the construction documents.
+
+2.3 "Bid Set" means the set of construction documents, specifications, and addenda
+issued to bidders for the purpose of obtaining competitive bids for the
+construction of the Project.
+
+2.4 "BIM" or "Building Information Modeling" means a digital representation of
+physical and functional characteristics of the Project, used for design,
+coordination, documentation, and construction management purposes.
+
+2.5 "Change Order" means a written instrument prepared by the Architect and signed
+by the Owner, Contractor, and Architect authorizing a change in the work or an
+adjustment in the contract sum or contract time.
+
+2.6 "Construction Administration" means the architectural and engineering services
+performed during the construction phase of the Project, including but not limited
+to submittal review, site observations, response to requests for information, and
+evaluation of payment applications.
+
+2.7 "Construction Documents" means the drawings and specifications that set forth
+in detail the requirements for the construction of the Project, including
+architectural, structural, mechanical, electrical, plumbing, civil, and landscape
+drawings and specifications.
+
+2.8 "Design Development" means the phase of design services following schematic
+design during which the design is refined and elaborated, including development of
+floor plans, elevations, building sections, outline specifications, and
+preliminary structural, mechanical, and electrical system designs.
+
+2.9 "Estimated Construction Cost" means the Architect's best estimate of the total
+cost of constructing the Project based on current market conditions, materials
+pricing, and labor rates at the time of estimation, exclusive of the design fees,
+land costs, financing costs, and owner-furnished equipment and furnishings.
+
+2.10 "LEED" means Leadership in Energy and Environmental Design, a green building
+certification system developed by the U.S. Green Building Council (USGBC).
+
+2.11 "MEP" means mechanical, electrical, and plumbing engineering systems,
+including heating, ventilation, and air conditioning (HVAC), electrical power
+distribution and lighting, plumbing and sanitary systems, and fire protection
+systems.
+
+2.12 "Milestone" means a significant point or event in the progress of the design
+or construction of the Project, as identified in the schedule of deliverables.
+
+2.13 "Program" or "Space Program" means a document prepared by or on behalf of the
+Client describing the functional requirements of the Project, including the types
+and sizes of spaces, adjacency requirements, equipment needs, and performance
+criteria for each space or functional area.
+
+2.14 "RFI" means a Request for Information, a written inquiry submitted by the
+Contractor to the Architect seeking clarification or interpretation of the
+construction documents.
+
+2.15 "Schematic Design" means the initial phase of design services during which
+the Architect develops conceptual design alternatives illustrating the scale and
+relationship of the Project components, including preliminary floor plans,
+building massing, site layout, and conceptual exterior character studies.
+
+2.16 "Shop Drawing" means a drawing, diagram, schedule, or other document
+specifically prepared or assembled by or for the Contractor to illustrate a
+specific portion of the work, including the fabrication or installation of
+materials, equipment, or systems.
+
+2.17 "Specification" means a written document prepared by the Architect or
+consulting engineers that prescribes the quality standards, performance criteria,
+and installation methods for materials, equipment, and systems incorporated into
+the Project.
+
+2.18 "Statute of Repose" means the statutory time period after substantial
+completion of the Project within which a claim for architectural or engineering
+professional negligence may be brought, regardless of when the claim is
+discovered.
+
+2.19 "Substantial Completion" means the stage in the progress of the work when the
+Project or designated portion thereof is sufficiently complete, in accordance with
+the construction documents, so that the Owner can occupy or utilize the facility
+for its intended purpose.
+
+2.20 "Value Engineering" means an organized approach to providing the necessary
+functions of the Project at the lowest total cost over the life of the facility,
+without compromising quality, performance, or reliability.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide comprehensive architectural
+and engineering design services for the Client's new STEM education center (the
+"Project"), a new approximately 85,000 square foot facility to be constructed on
+property owned or controlled by the Client. The Project encompasses laboratories,
+classrooms, a 400-seat auditorium, maker spaces, faculty offices, and a central
+atrium.
+
+3.2 Architectural Design Services. The Service Provider shall provide full
+architectural design services including schematic design, design development,
+construction documents, and bidding assistance for the Project, encompassing all
+building enclosure, interior architecture, and site design elements.
+
+3.3 Engineering Design Services. The Service Provider shall provide engineering
+design services in the following disciplines: structural engineering, mechanical
+engineering (HVAC systems, plumbing systems, fire protection), electrical
+engineering (power distribution, lighting, technology infrastructure), and civil
+engineering (site grading, stormwater management, utility connections, paving).
+
+3.4 Construction Administration Services. The Service Provider shall provide
+construction administration services throughout the construction phase of the
+Project, including periodic site observations, submittal review, response to
+requests for information, evaluation of contractor payment applications, and
+review of shop drawings.
+
+4. DESIGN PROCESS
+
+4.1 Schematic Design Phase. During the Schematic Design Phase, the Service
+Provider shall prepare schematic design studies consistent with the approved Space
+Program, including preliminary floor plans, building sections, exterior elevation
+studies, site plan, and conceptual structural, mechanical, and electrical system
+layouts. The Service Provider shall present the schematic design to the Client
+for review and approval before proceeding to the Design Development Phase.
+
+4.2 Design Development Phase. During the Design Development Phase, the Service
+Provider shall develop the approved schematic design into a more detailed design
+including refined floor plans, building sections, exterior elevations, interior
+elevations of key spaces, outline specifications, preliminary structural design,
+preliminary MEP system layouts, and updated cost estimates. The Service Provider
+shall conduct a minimum of two (2) formal review cycles with the Client during
+this phase.
+
+4.3 Construction Documents Phase. During the Construction Documents Phase, the
+Service Provider shall prepare complete construction documents and specifications
+suitable for bidding and construction, including detailed architectural drawings,
+structural engineering drawings and calculations, MEP engineering drawings and
+specifications, civil engineering drawings, and all required technical
+specifications. The Service Provider shall conduct a minimum of two (2) formal
+review cycles with the Client and shall coordinate with the Client's independent
+code consultant.
+
+4.4 Bidding and Negotiation Phase. During the Bidding and Negotiation Phase, the
+Service Provider shall assist the Client in obtaining competitive bids or
+negotiated proposals from qualified contractors, including the issuance of addenda
+as necessary, responses to bidder inquiries, evaluation of bids, and preparation
+of a contractor recommendation report.
+
+5. SUSTAINABILITY REQUIREMENTS
+
+5.1 LEED Certification. The Project shall be designed to achieve a minimum of
+LEED Silver certification under the LEED v4.1 Building Design and Construction
+rating system. The Service Provider shall incorporate sustainable design strategies
+including energy-efficient building envelope design, high-performance HVAC systems,
+daylight harvesting, water conservation fixtures, and the use of materials with
+recycled content and low volatile organic compound (VOC) emissions.
+
+5.2 Energy Modeling. The Service Provider shall perform whole-building energy
+modeling in accordance with ASHRAE Standard 90.1 to demonstrate that the proposed
+design achieves a minimum of twenty percent (20%) improvement in energy performance
+over the baseline building performance rating.
+
+5.3 Materials Selection. The Service Provider shall specify materials and
+finishes that contribute to LEED credit achievement, including materials with
+recycled content, regionally sourced materials, certified wood products, and low-
+emitting materials for adhesives, sealants, paints, coatings, and flooring systems.
+
+6. CODE COMPLIANCE
+
+6.1 Building Code. The Project shall be designed in compliance with the
+International Building Code (IBC) as adopted and amended by the State of Texas,
+and all applicable local building codes, zoning ordinances, and development
+regulations of the jurisdiction in which the Project is located.
+
+6.2 Accessibility. The Project shall comply with the Texas Accessibility Standards
+(TAS) and the Americans with Disabilities Act (ADA) Accessibility Guidelines,
+ensuring that all spaces, circulation paths, and building elements are accessible
+to persons with disabilities.
+
+6.3 Fire and Life Safety. The Service Provider shall design the Project to comply
+with all applicable fire and life safety requirements, including but not limited
+to occupancy classification, fire-resistance ratings, means of egress, fire alarm
+and detection systems, automatic sprinkler systems, and emergency lighting.
+
+7. STRUCTURAL ENGINEERING
+
+7.1 Foundation Design. The Service Provider shall design the structural foundation
+system for the Project based on a geotechnical investigation to be performed by a
+licensed geotechnical engineer retained by the Client. The foundation design shall
+account for the subsurface soil conditions, groundwater levels, and any site-
+specific geotechnical recommendations.
+
+7.2 Wind Load Requirements. Given the Project's location within the Gulf Coast
+hurricane zone, the structural design shall conform to the wind load requirements
+of ASCE 7-22 for Risk Category III facilities and shall incorporate design wind
+speeds appropriate for the Houston metropolitan area as determined by the
+applicable building code.
+
+8. MEP ENGINEERING
+
+8.1 HVAC Systems. The Service Provider shall design heating, ventilation, and air
+conditioning systems appropriate for the Project's diverse space types, including
+laboratory spaces requiring specialized ventilation and exhaust systems, general
+classroom spaces, the auditorium, faculty offices, and common areas. Laboratory
+ventilation systems shall comply with ASHRAE Standard 110 for laboratory fume hood
+performance.
+
+8.2 Plumbing Systems. The Service Provider shall design domestic water supply,
+sanitary waste and vent, stormwater drainage, and natural gas distribution systems
+for the Project. Laboratory plumbing shall include acid waste drainage, compressed
+air, vacuum, and specialty gas distribution as required by the laboratory program.
+
+8.3 Electrical Systems. The Service Provider shall design electrical power
+distribution, emergency and standby power systems, interior and exterior lighting
+systems, and technology infrastructure including structured cabling, wireless
+access point infrastructure, and audiovisual systems for classrooms, laboratories,
+and the auditorium.
+
+8.4 Fire Protection. The Service Provider shall design automatic fire sprinkler
+systems, fire alarm and detection systems, and fire department connection and
+access provisions in accordance with NFPA 13, NFPA 72, and applicable building
+code requirements.
+
+9. CIVIL ENGINEERING
+
+9.1 Site Work. The Service Provider shall provide civil engineering design for the
+Project site, including grading and drainage plans, utility connection plans,
+stormwater management design, parking lot design, and site accessibility
+improvements.
+
+9.2 Stormwater Management. The stormwater management system shall be designed in
+compliance with the Harris County Flood Control District requirements and the
+City of Houston stormwater management regulations, including on-site detention and
+water quality treatment as required.
+
+9.3 Utilities. The Service Provider shall design utility connections for municipal
+water supply, sanitary sewer, electric service, natural gas, and
+telecommunications, and shall coordinate with the respective utility providers for
+service availability and connection requirements.
+
+10. BIM REQUIREMENTS
+
+10.1 Level of Development. The Service Provider shall develop Building Information
+Models for the Project to a minimum Level of Development (LOD) of 300 for all
+architectural, structural, and MEP disciplines at the completion of the
+Construction Documents Phase.
+
+10.2 Clash Detection. The Service Provider shall perform inter-disciplinary clash
+detection using the BIM models at a minimum of three (3) stages during the
+Construction Documents Phase: at the completion of the 50% construction documents
+milestone, at the completion of the 90% construction documents milestone, and
+prior to issuance of the final Bid Set.
+
+10.3 Coordination Meetings. The Service Provider shall conduct regular BIM
+coordination meetings with all engineering disciplines and the Client's
+representatives at intervals not exceeding two (2) weeks during the Design
+Development and Construction Documents Phases.
+
+11. CONSTRUCTION ADMINISTRATION
+
+11.1 Submittal Review. The Service Provider shall review and approve or reject
+shop drawings, product data, samples, and other submittals from the Contractor in
+accordance with the schedule established at the pre-construction meeting. The
+Service Provider shall respond to submittals within ten (10) business days of
+receipt.
+
+11.2 Site Visits. The Service Provider shall conduct periodic site visits at
+intervals appropriate to the stage of construction, generally not less than once
+every two (2) weeks during active construction, to observe the progress and
+quality of the work and to evaluate general conformance with the construction
+documents.
+
+11.3 RFI Response. The Service Provider shall respond to Requests for Information
+from the Contractor within five (5) business days of receipt. RFIs requiring
+coordination with consulting engineers may require up to ten (10) business days.
+
+11.4 Payment Application Review. The Service Provider shall review Contractor
+payment applications for conformance with the progress of the work and shall issue
+a certification of payment to the Client recommending payment, partial withholding,
+or rejection of the application within ten (10) business days of receipt.
+
+12. BIDDING ASSISTANCE
+
+12.1 Pre-Qualification. The Service Provider shall assist the Client in
+establishing contractor pre-qualification criteria and shall evaluate contractor
+pre-qualification applications for compliance with the established criteria.
+
+12.2 Bid Evaluation. The Service Provider shall analyze bids received, identify
+any significant deviations or qualifications in the bids, prepare a bid
+comparison matrix, and provide a written recommendation to the Client regarding
+the selection of the Contractor.
+
+12.3 Contract Recommendation. Following bid evaluation, the Service Provider shall
+assist the Client in preparing the construction contract and shall review the
+contractor's proposed construction schedule for reasonableness and conformance
+with the Project requirements.
+
+13. OWNER-ARCHITECT-CONTRACTOR RELATIONS
+
+13.1 Communication Protocols. All communications among the Owner, Architect, and
+Contractor regarding the Project shall be documented in writing. The Architect
+shall serve as the primary point of communication between the Owner and Contractor
+on all matters relating to the design and construction documents.
+
+13.2 Decision Authority. The Owner shall be the sole authority for decisions
+regarding changes to the scope of the Project, the construction budget, and the
+construction schedule. The Architect shall provide professional recommendations
+and evaluations to assist the Owner in making informed decisions.
+
+13.3 Schedule Impacts. The Architect shall promptly notify the Owner of any
+schedule impacts resulting from design changes, code compliance requirements, or
+unforeseen conditions discovered during construction, and shall recommend
+appropriate corrective actions.
+
+14. TERM
+
+14.1 Initial Term. This Agreement shall commence on the Effective Date and shall
+continue for a period of thirty (30) months, concluding on February 28, 2027 (the
+"Term"), unless earlier terminated in accordance with Section 20. The Term
+encompasses the full design, bidding assistance, and construction administration
+phases for the Project.
+
+14.2 No Auto-Renewal. This Agreement shall not automatically renew upon
+expiration. Any extension or new engagement following the expiration of the Term
+shall require the execution of a new agreement or written amendment signed by both
+parties.
+
+14.3 Effect of Termination. Expiration or termination of this Agreement shall not
+affect any provisions that by their nature are intended to survive termination,
+including without limitation Sections 16 (Intellectual Property), 17
+(Confidentiality), 19 (Liability), 20 (Termination), 21 (Insurance), 22 (Dispute
+Resolution), and 23 (Governing Law).
+
+15. COMPENSATION
+
+15.1 Basis of Compensation. The professional fees for architectural and engineering
+design services shall be based on a percentage of the Estimated Construction Cost
+of the Project. The Estimated Construction Cost for purposes of this Agreement is
+thirty-two million dollars ($32,000,000.00). In the event that the actual
+construction cost differs from the Estimated Construction Cost by more than five
+percent (5%), the fees shall be adjusted proportionally based on the actual
+construction cost.
+
+15.2 Architectural Design Fees. The Client shall pay the Service Provider
+architectural design fees equal to eight percent (8%) of the Estimated Construction
+Cost, totaling two million five hundred sixty thousand dollars ($2,560,000.00),
+for all architectural design services described in this Agreement.
+
+15.3 Engineering Design Fees. The Client shall pay the Service Provider engineering
+design fees equal to four percent (4%) of the Estimated Construction Cost,
+totaling one million two hundred eighty thousand dollars ($1,280,000.00), for all
+structural, mechanical, electrical, plumbing, fire protection, and civil
+engineering design services described in this Agreement.
+
+15.4 Total Design Fees. The total professional fees for all design phases
+(schematic design, design development, and construction documents) shall be three
+million eight hundred forty thousand dollars ($3,840,000.00).
+
+15.5 Construction Administration Fees. In addition to the design fees described
+above, the Client shall pay the Service Provider construction administration fees
+equal to two percent (2%) of the Estimated Construction Cost, totaling six hundred
+forty thousand dollars ($640,000.00), for all construction administration services
+described in this Agreement.
+
+15.6 Total Professional Fees. The total professional fees under this Agreement
+shall not exceed four million four hundred eighty thousand dollars ($4,480,000.00),
+comprising design fees of $3,840,000.00 and construction administration fees of
+$640,000.00, subject to adjustment as provided in Section 15.1.
+
+15.7 Payment Terms. Payments shall be made based on monthly progress billing in
+accordance with completion percentages for each design phase. The Service Provider
+shall submit monthly invoices documenting the percentage of completion of each
+design phase and the corresponding fee amount. The Client shall pay all undisputed
+invoices within thirty (30) days of receipt.
+
+15.8 Retainage. The Client shall withhold ten percent (10%) of each progress
+payment as retainage. All retainage shall be released upon substantial completion
+of the Project and the Service Provider's delivery of all final design documents,
+record drawings, and closeout materials.
+
+16. INTELLECTUAL PROPERTY
+
+16.1 Client Ownership. The Client shall own all drawings, specifications, and
+design documents produced under this Agreement for the specific Project (the
+"Project Documents"). The Client shall have the right to use, reproduce, modify,
+and permit others to use the Project Documents for the construction, maintenance,
+operation, alteration, and addition to the Project.
+
+16.2 Copyright Retention. Notwithstanding the foregoing, the Service Provider
+shall retain copyright in all Project Documents and design instruments produced
+under this Agreement. The Service Provider shall have a perpetual, non-exclusive
+license to use the designs, drawings, and images of the Project in the Service
+Provider's portfolio, marketing materials, professional publications, and
+competition submissions.
+
+16.3 Restrictions. The Client shall not use the Project Documents for any project
+other than the Project without the prior written consent of the Service Provider,
+and shall not permit the Project Documents to be used by others for any project
+other than the Project without such consent.
+
+17. CONFIDENTIALITY
+
+17.1 Obligations. Each party agrees to hold in strict confidence all Confidential
+Information of the other party disclosed in connection with this Agreement,
+including without limitation financial information, donor information (in the case
+of the Client), and proprietary design methodologies (in the case of the Service
+Provider).
+
+17.2 Duration. The obligations of confidentiality set forth in this Section 17
+shall survive the expiration or termination of this Agreement for a period of five
+(5) years.
+
+18. TERMINATION
+
+18.1 General Termination. Either party may terminate this Agreement upon ninety
+(90) calendar days' prior written notice to the other party, with the Client
+obligated to pay the Service Provider for all work completed through the effective
+date of termination.
+
+18.2 Termination for Cause. Either party may terminate this Agreement for cause if
+the other party commits a material breach of any provision of this Agreement and
+fails to cure such breach within thirty (30) calendar days after receiving written
+notice specifying the nature of the breach in reasonable detail.
+
+18.3 Payment Upon Termination. Upon termination for any reason, the Client shall
+pay the Service Provider for all services satisfactorily performed through the
+effective date of termination, plus reimbursement for any non-cancelable expenses
+incurred on behalf of the Project, within thirty (30) days of the effective date
+of termination.
+
+19. LIABILITY
+
+19.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW,
+NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED
+TO LOSS OF REVENUE, LOSS OF USE, BUSINESS INTERRUPTION, OR LOSS OF PROGRAM
+FUNDING, ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF
+SERVICES HEREUNDER, REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT,
+TORT, STRICT LIABILITY, ANY OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+19.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed the total
+professional fees payable under this Agreement, which shall not exceed four
+million four hundred eighty thousand dollars ($4,480,000.00), regardless of the
+form of action or legal theory.
+
+19.3 Statute of Repose. No claim or cause of action arising out of or relating to
+the professional services provided under this Agreement may be brought more than
+ten (10) years after the date of Substantial Completion of the Project, regardless
+of when such claim is discovered or when the act or omission giving rise to such
+claim occurred.
+
+20. INSURANCE
+
+20.1 Professional Liability. Throughout the term of this Agreement and for a
+period of five (5) years following substantial completion of the Project, the
+Service Provider shall maintain professional liability (errors and omissions)
+insurance in an amount not less than two million dollars ($2,000,000.00) per
+claim, with an aggregate limit of not less than five million dollars
+($5,000,000.00), covering claims arising from negligent acts, errors, or
+omissions in the provision of architectural and engineering design services under
+this Agreement.
+
+20.2 General Liability. Throughout the term of this Agreement, the Service
+Provider shall maintain commercial general liability insurance in an amount not
+less than two million dollars ($2,000,000.00) per occurrence, covering bodily
+injury, property damage, and personal and advertising injury arising from the
+Service Provider's operations in connection with the Project.
+
+20.3 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies.
+
+21. DISPUTE RESOLUTION
+
+21.1 Negotiation. In the event of any dispute arising out of or relating to this
+Agreement, the parties shall first attempt to resolve such dispute through good
+faith negotiations between senior executives of each party for a period of not
+less than thirty (30) calendar days.
+
+21.2 Mediation. If the parties are unable to resolve a dispute through
+negotiation, such dispute shall be submitted to non-binding mediation administered
+by a mutually agreed-upon mediator in Houston, Texas. Each party shall bear its
+own costs of mediation.
+
+21.3 Arbitration. If mediation is unsuccessful, the dispute shall be submitted to
+binding arbitration administered by the American Arbitration Association (AAA) in
+accordance with its Construction Industry Arbitration Rules then in effect. The
+arbitration shall be conducted in Houston, Texas. The decision of the arbitrator
+shall be final and binding.
+
+22. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of
+the State of Texas, without giving effect to any choice-of-law or conflict-of-law
+provisions that would require the application of the laws of any jurisdiction
+other than the State of Texas.
+
+23. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A: Space Program — Detailed space requirements for the STEM education
+                center including room-by-room area requirements, adjacency
+                matrices, equipment lists, and performance criteria
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: LEED Checklist — LEED v4.1 BD+C credit checklist identifying target
+                credits and the design strategies to be employed to achieve LEED
+                Silver certification
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: Owner's Project Requirements — Document setting forth the Client's
+                goals, requirements, and expectations for the Project including
+                sustainability objectives, operational requirements, maintenance
+                considerations, and budget parameters
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+24. GENERAL PROVISIONS
+
+24.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the subject
+matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written, between
+the parties relating to such subject matter.
+
+24.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+24.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the other
+party, except that either party may assign this Agreement to a successor entity
+in connection with a merger, acquisition, or sale of all or substantially all of
+its assets.
+
+24.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such provision
+shall be modified to the minimum extent necessary to make it valid and
+enforceable, and the remaining provisions of this Agreement shall continue in
+full force and effect.
+
+24.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+24.6 Notices. All notices required or permitted under this Agreement shall be in
+writing and shall be deemed delivered when (a) delivered personally, (b) sent by
+certified mail, return receipt requested, (c) sent by nationally recognized
+overnight courier, or (d) sent by email with confirmation of receipt, to the
+addresses set forth in Section 1 or such other address as either party may
+designate in writing.
+
+24.7 Independent Contractor. The Service Provider is an independent contractor and
+not an employee, agent, partner, or joint venturer of the Client. Nothing in this
+Agreement shall be construed to create an employment relationship, partnership,
+joint venture, or agency relationship between the parties.
+
+24.8 Force Majeure. Neither party shall be liable for any failure or delay in the
+performance of its obligations under this Agreement to the extent that such
+failure or delay is caused by circumstances beyond the reasonable control of the
+affected party, including but not limited to acts of God, natural disasters,
+government actions, labor disputes, civil unrest, war, terrorism, power or
+telecommunications failures, and public health emergencies.
+
+25. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Architectural and Engineering
+Design Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+Horizons Design Collaborative PLLC, a Texas professional limited liability company
+
+
+By: ______________________________________
+Name: Margaret Liu
+Title: Principal Architect, AIA, LEED AP
+Date: August 25, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Thomas R. Whitfield
+Title: Director of Operations
+Date: August 25, 2024
+
+
+CLIENT:
+
+Gulf Coast Educational Foundation, a Texas nonprofit corporation
+
+
+By: ______________________________________
+Name: Dr. James Franklin
+Title: Executive Director
+Date: August 28, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Angela M. Davison
+Title: Director of Programs
+Date: August 28, 2024

@@ -1,0 +1,719 @@
+RESEARCH AND DEVELOPMENT CONSORTIUM SERVICES AGREEMENT
+
+This Research and Development Consortium Services Agreement (the
+"Collaboration Agreement") is entered into by and between the parties
+identified below (each a "Party" and collectively the "Parties") in
+connection with a multi-institutional collaborative preclinical research
+program for the development of a novel antibody-nanoparticle drug delivery
+platform for oncology applications.
+
+Reference: Exhibit 1 — Agreement Reference Number: RDC-2024-[REDACTED]
+
+WHEREAS, the discovery and development of effective oncology therapeutics
+remains one of the most resource-intensive and technically challenging
+endeavors in modern pharmaceutical science, with the average cost of
+bringing a single new cancer therapy from bench to bedside exceeding
+$2.6 billion and timelines routinely spanning twelve to fifteen years from
+initial target identification through regulatory approval;
+
+WHEREAS, collaborative research models involving partnerships between
+academic and nonprofit research institutions, biotechnology companies, and
+pharmaceutical corporations have emerged as a highly effective approach to
+accelerating drug development timelines, sharing the financial risk
+inherent in early-stage research, and leveraging complementary expertise
+and capabilities across organizational boundaries;
+
+WHEREAS, the National Institutes of Health (NIH) has issued guidelines
+encouraging industry-academia partnerships through programs such as the
+Small Business Innovation Research (SBIR) and Small Business Technology
+Transfer (STTR) programs, the NIH Cooperative Research and Development
+Agreement (CRADA) framework, and the Clinical and Translational Science
+Awards (CTSA) program, all of which promote the translation of basic
+scientific discoveries into clinical applications;
+
+WHEREAS, the Bayh-Dole Act (35 U.S.C. §§ 200-212) provides a statutory
+framework for the allocation of intellectual property rights in inventions
+made under federally funded research, and establishes guidelines for the
+licensing of such inventions to promote commercialization and ensure that
+the benefits of federally funded research are made available to the public;
+
+WHEREAS, BioGenesis Research Institute, a nonprofit research corporation
+organized under the laws of the State of Maryland, has developed proprietary
+monoclonal antibody technology targeting tumor-associated antigens in solid
+tumors, and maintains state-of-the-art laboratory facilities and scientific
+staff with deep expertise in antibody engineering, protein expression, and
+preclinical oncology models;
+
+WHEREAS, NanoMed Devices LLC, a limited liability company organized under
+the laws of the State of Colorado, has developed proprietary nanoparticle
+drug delivery platforms capable of encapsulating therapeutic antibodies and
+targeting them to specific tumor microenvironments, and maintains
+specialized equipment for nanoparticle formulation, characterization, and
+scale-up;
+
+WHEREAS, PharmaDyne Therapeutics Corp., a corporation organized under the
+laws of the State of Delaware, maintains an established oncology drug
+development pipeline with expertise in preclinical validation, regulatory
+strategy, and clinical translation, and desires to leverage the combined
+capabilities of BioGenesis and NanoMed to develop a novel antibody-
+nanoparticle drug delivery platform for its oncology therapeutic programs;
+
+WHEREAS, the Parties desire to establish a collaborative research consortium
+(the "Consortium") to conduct preclinical research combining BioGenesis's
+antibody technology with NanoMed's nanoparticle delivery system, jointly
+developed for application to PharmaDyne's oncology pipeline, under the
+terms and conditions set forth in this Collaboration Agreement;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration,
+the receipt and sufficiency of which are hereby acknowledged, the Parties
+agree as follows:
+
+1. PARTIES
+
+1.1 Lead Research Organization. BioGenesis Research Institute, a nonprofit
+research corporation duly organized and existing under the laws of the State
+of Maryland, with its principal offices located at 9600 Medical Center
+Drive, Rockville, MD 20850 (hereinafter referred to as "BioGenesis," the
+"Lead Research Organization," or the "LRO"). BioGenesis shall serve as the
+Lead Research Organization for the Consortium and shall be responsible for
+overall coordination of the Research Plan, management of shared laboratory
+facilities, and administrative leadership of the collaborative research
+program.
+
+1.2 Industry Sponsor — Primary. PharmaDyne Therapeutics Corp., a corporation
+duly organized and existing under the laws of the State of Delaware, with
+its principal offices located at 340 Innovation Way, Cambridge, MA 02139
+(hereinafter referred to as "PharmaDyne," the "Primary Sponsor," or the
+"Primary Industry Sponsor"). PharmaDyne shall serve as the primary industry
+sponsor and shall provide the majority of the cash funding for the Research
+Program.
+
+1.3 Industry Sponsor — Secondary. NanoMed Devices LLC, a limited liability
+company duly organized and existing under the laws of the State of Colorado,
+with its principal offices located at 5600 Arapahoe Ave, Boulder, CO 80303
+(hereinafter referred to as "NanoMed," the "Secondary Sponsor," or the
+"Contributing Industry Sponsor"). NanoMed shall serve as a contributing
+industry sponsor and shall provide in-kind contributions of equipment access
+and scientific personnel time.
+
+1.4 Individual Capacity. Each signatory hereto represents and warrants that
+they have the full legal authority to bind their respective organization to
+the terms and conditions of this Collaboration Agreement, and that the
+execution of this Collaboration Agreement has been duly authorized by all
+necessary corporate and institutional approvals.
+
+2. DEFINITIONS
+
+2.1 "Background IP" means any intellectual property, including but not
+limited to patents, patent applications, trade secrets, know-how, and
+proprietary technology, that is owned or controlled by a Party as of the
+Effective Date of this Collaboration Agreement or that is independently
+developed by a Party outside the scope of the Research Program.
+
+2.2 "Bayh-Dole Act" means the Patent and Trademark Law Amendments Act of
+1980, as amended (35 U.S.C. §§ 200-212), which governs the allocation of
+intellectual property rights in inventions made under federally funded
+research programs.
+
+2.3 "CRADA" means a Cooperative Research and Development Agreement as defined
+under 15 U.S.C. § 3710a, a formal agreement between a federal laboratory
+and a non-federal entity for the conduct of collaborative research.
+
+2.4 "Field of Use" means the development, manufacture, use, import, offer
+for sale, and sale of products and services incorporating or utilizing Joint
+Inventions, limited in the case of PharmaDyne's exclusive license (as
+described in Section 12.4) to applications in human oncology therapeutics,
+including but not limited to the treatment, prevention, and diagnosis of
+solid tumors and hematologic malignancies in humans.
+
+2.5 "Foreground IP" means any intellectual property, including but not
+limited to patents, patent applications, trade secrets, know-how, and
+proprietary technology, that is conceived, reduced to practice, or first
+authored during the performance of the Research Program under this
+Collaboration Agreement.
+
+2.6 "Go/No-Go Criteria" means the scientific and technical criteria
+established in the Research Plan against which the results of each Phase
+of the Research Program shall be evaluated to determine whether the Program
+should advance to the next Phase.
+
+2.7 "Indemnitee" means a Party against whom a claim or liability is asserted
+by a third party arising out of or relating to this Collaboration Agreement.
+
+2.8 "Indemnifying Party" means a Party that is obligated to defend and
+indemnify an Indemnitee pursuant to Section 15 of this Collaboration
+Agreement.
+
+2.9 "Joint Invention" means any invention, discovery, or improvement that is
+conceived or reduced to practice jointly by personnel of two or more Parties
+during the performance of the Research Program, or that is conceived by
+personnel of one Party but is reduced to practice with substantial
+contribution from personnel of another Party.
+
+2.10 "Know-How" means all non-patented technical information, data,
+techniques, processes, methods, protocols, and expertise, whether or not
+reduced to writing, that is necessary or useful for the practice or
+exploitation of an invention or technology.
+
+2.11 "Preclinical" means research and development activities conducted in
+vitro and in animal models that are intended to establish the safety,
+efficacy, pharmacokinetics, and pharmacodynamics of a therapeutic candidate
+prior to the initiation of clinical trials in human subjects.
+
+2.12 "Publication Rights" means the rights of the Parties to publish,
+present, or otherwise disclose the results of the Research Program in
+scientific journals, at academic conferences, or through other public
+forums, subject to the terms and conditions set forth in Section 10.
+
+2.13 "Research Plan" means the detailed research plan for the collaborative
+preclinical research program, including milestones, deliverables, decision
+gates, go/no-go criteria, and resource allocation, as set forth in Exhibit A
+(Research Plan Summary) attached hereto.
+
+2.14 "Research Program" means the collaborative preclinical research program
+described in Section 4, comprising the Feasibility Phase, the Optimization
+Phase, and the Preclinical Validation Phase.
+
+2.15 "Steering Committee" means the joint governance body established pursuant
+to Section 5, composed of representatives of each Party, responsible for
+overseeing the progress of the Research Program, making decisions at Phase
+gates, and resolving disputes that arise in the course of the collaboration.
+
+2.16 "Sublicense" means a license granted by a Party (the "Licensor") to a
+third party (the "Sublicensee") under a license previously granted to the
+Licensor by another Party, subject to the terms and conditions of the
+underlying license and this Collaboration Agreement.
+
+2.17 "Technology Transfer" means the process by which scientific discoveries,
+technical knowledge, and intellectual property developed under the Research
+Program are transferred from the research setting to the commercial
+development setting for the purpose of developing therapeutic products.
+
+3. EFFECTIVE DATE
+
+This Collaboration Agreement shall become effective upon the later of:
+(a) execution of this Collaboration Agreement by all three Parties; or
+(b) receipt by BioGenesis of the first funding installment from PharmaDyne
+as described in Section 7.2 (the "Effective Date").
+
+4. RESEARCH PROGRAM AND SCOPE
+
+4.1 Research Objective. The Research Program shall be directed toward the
+collaborative development of a novel drug delivery platform that combines
+BioGenesis's proprietary monoclonal antibody technology targeting tumor-
+associated antigens with NanoMed's proprietary nanoparticle delivery system,
+for the purpose of delivering therapeutic antibodies with enhanced tumor
+targeting, improved pharmacokinetics, and reduced systemic toxicity. The
+platform shall be developed for application to PharmaDyne's oncology
+pipeline, with initial focus on solid tumor indications.
+
+4.2 Research Phases. The Research Program shall be conducted in three
+sequential phases:
+
+    (a) Feasibility Phase (Months 1-6): Screening and characterization of
+    antibody-nanoparticle conjugates, assessment of in vitro binding affinity
+    and specificity, preliminary formulation optimization, and initial
+    cytotoxicity screening in relevant cancer cell lines. Success criteria:
+    identification of at least one lead conjugate candidate demonstrating
+    binding affinity (Kd) of less than 10 nM and in vitro cytotoxicity IC50
+    of less than 500 nM in at least two cancer cell lines.
+
+    (b) Optimization Phase (Months 7-18): Systematic optimization of lead
+    conjugate formulation including nanoparticle size, surface charge, drug
+    loading efficiency, and stability characterization; in vivo
+    pharmacokinetic and biodistribution studies in murine xenograft models;
+dose-range finding studies; and preliminary efficacy evaluation. Success
+    criteria: achievement of tumor-to-plasma concentration ratio of greater
+    than 5:1 at 24 hours post-dose, and demonstration of at least 50% tumor
+    growth inhibition in at least one xenograft model.
+
+    (c) Preclinical Validation Phase (Months 19-30): Comprehensive
+    preclinical efficacy studies in multiple xenograft and syngeneic tumor
+    models; GLP-compliant toxicology studies (single-dose and repeat-dose);
+    IND-enabling pharmacology and toxicology studies; preparation of
+    preclinical validation dossier suitable for regulatory submission. Success
+    criteria: demonstration of statistically significant tumor growth
+    inhibition (p < 0.05) in at least two tumor models, and completion of
+    GLP toxicology package meeting FDA guidance for IND-enabling studies.
+
+4.3 Research Governance. The Steering Committee shall have overall
+governance authority over the Research Program, including approval of the
+Research Plan, oversight of Phase transitions, resolution of scientific
+disputes, and approval of any material changes to the scope, timeline, or
+budget of the Research Program.
+
+5. STEERING COMMITTEE
+
+5.1 Composition. The Steering Committee shall be composed of three (3)
+representatives from BioGenesis (including the Program Director), two (2)
+representatives from PharmaDyne (including the R&D Project Lead), and two
+(2) representatives from NanoMed (including the VP of Technology Development),
+for a total of seven (7) members. BioGenesis shall designate the Chair of
+the Steering Committee.
+
+5.2 Voting. Decisions of the Steering Committee shall be made by majority
+vote, provided that no decision to advance from one Phase to the next shall
+be made without the affirmative vote of at least one (1) representative from
+each Party. In the event of a deadlock on any matter other than a Phase
+transition, the Chair of the Steering Committee shall have the deciding vote.
+
+5.3 Meetings. The Steering Committee shall meet in person at least quarterly
+and shall convene by teleconference at least monthly during the active
+phases of the Research Program. Additional meetings may be called by the
+Chair or upon the request of any two (2) members.
+
+5.4 Phase Gate Reviews. At the conclusion of each Phase of the Research
+Program, the Steering Committee shall conduct a comprehensive Phase Gate
+Review to evaluate the results of the completed Phase against the go/no-go
+criteria set forth in the Research Plan. The Steering Committee shall issue
+a written determination as to whether the Research Program shall advance to
+the next Phase, be modified and repeated, or be terminated.
+
+6. PUBLICATION RIGHTS
+
+6.1 General Right to Publish. The Parties acknowledge the importance of
+academic freedom and the free exchange of scientific information. Subject
+to the provisions of this Section 6, each Party shall have the right to
+publish, present, or otherwise disclose the results of the Research Program
+in scientific journals, at academic conferences, or through other public
+forums.
+
+6.2 Patent Filing Delay. Prior to submitting any manuscript, abstract, or
+presentation for publication or public disclosure that discloses any
+invention or discovery that may be patentable, the publishing Party shall
+provide written notice to the other Parties at least sixty (60) days in
+advance of the intended submission date. Upon receipt of such notice, any
+Party may request, with written justification, a delay of up to ninety (90)
+additional days to permit the filing of one or more patent applications
+covering the disclosed invention.
+
+6.3 Manuscript Review. At least thirty (30) days prior to submission for
+publication, the publishing Party shall provide draft manuscripts to the
+other Parties for review and comment. The other Parties shall have fifteen
+(15) days to provide comments, which the publishing Party shall consider in
+good faith. Publication shall not be unreasonably withheld; provided,
+however, that no Party shall be required to consent to publication that
+discloses its trade secrets or confidential business information.
+
+7. FUNDING AND CONTRIBUTIONS
+
+7.1 Total Program Value. The estimated total value of contributions to the
+Research Program from all Parties is eight million one hundred thousand
+dollars ($8,100,000.00), comprising cash contributions from PharmaDyne and
+in-kind contributions from NanoMed and BioGenesis as described below.
+
+7.2 PharmaDyne Cash Contributions. PharmaDyne shall contribute a total of
+four million two hundred thousand dollars ($4,200,000.00) in cash funding
+to the Research Program, disbursed in three (3) equal tranches of one
+million four hundred thousand dollars ($1,400,000.00) each, as follows:
+(a) First Tranche: $1,400,000.00 payable upon execution of this
+Collaboration Agreement by all Parties;
+(b) Second Tranche: $1,400,000.00 payable upon successful completion of
+the Feasibility Phase and Steering Committee approval to advance to the
+Optimization Phase;
+(c) Third Tranche: $1,400,000.00 payable upon successful completion of
+the Optimization Phase and Steering Committee approval to advance to the
+Preclinical Validation Phase.
+
+7.3 NanoMed In-Kind Contributions. NanoMed shall contribute in-kind access
+to its nanoparticle formulation and characterization equipment (including
+dynamic light scattering instruments, electron microscopy facilities, and
+high-performance liquid chromatography systems), and dedicated scientific
+personnel time at a level equivalent to two (2) full-time research
+scientists throughout the Research Program. The estimated value of NanoMed's
+in-kind contributions is one million eight hundred thousand dollars
+($1,800,000.00).
+
+7.4 BioGenesis In-Kind Contributions. BioGenesis shall contribute dedicated
+laboratory facilities and research space (approximately 2,000 square feet of
+BSL-2 laboratory space), core facility access (flow cytometry, cell culture,
+and animal facility), and scientific staff time at a level equivalent to
+three (3) full-time research scientists and one (1) postdoctoral fellow
+throughout the Research Program. The estimated value of BioGenesis's in-kind
+contributions is two million one hundred thousand dollars ($2,100,000.00).
+
+7.5 Payment Terms. PharmaDyne shall remit each cash contribution tranche
+by wire transfer to an account designated by BioGenesis within fifteen (15)
+business days of the triggering event specified in Section 7.2. No other
+payment terms or invoicing procedures are specified in this Collaboration
+Agreement.
+
+8. DELIVERABLES AND MILESTONES
+
+8.1 Feasibility Report. Within six (6) months of the Effective Date,
+BioGenesis shall deliver to PharmaDyne and NanoMed a comprehensive
+Feasibility Report summarizing the screening and characterization results,
+including in vitro binding affinity data, cytotoxicity profiles, and a
+recommendation regarding lead conjugate candidate selection.
+
+8.2 Optimization Data Package. Within eighteen (18) months of the Effective
+Date, BioGenesis shall deliver to PharmaDyne and NanoMed a complete
+Optimization Data Package containing all formulation optimization data,
+in vivo pharmacokinetic and biodistribution results, dose-range finding
+study data, and preliminary efficacy data from murine xenograft models.
+
+8.3 Preclinical Validation Dossier. Within thirty (30) months of the
+Effective Date, BioGenesis shall deliver to PharmaDyne a comprehensive
+Preclinical Validation Dossier suitable for inclusion in an Investigational
+New Drug (IND) application to the U.S. Food and Drug Administration (FDA),
+including all GLP-compliant toxicology study reports, pharmacology data,
+and manufacturing process descriptions.
+
+8.4 Joint Invention Disclosures. As Joint Inventions arise during the
+Research Program, the Party whose personnel first conceived the invention
+shall prepare and submit a written invention disclosure to the other Parties
+within thirty (30) days of conception. Each Party shall cooperate in the
+preparation and prosecution of patent applications covering Joint
+Inventions.
+
+8.5 Annual Progress Reports. Within thirty (30) days of the anniversary of
+the Effective Date, BioGenesis shall deliver to PharmaDyne and NanoMed an
+Annual Progress Report summarizing the research activities, results,
+milestone achievements, and expenditures for the preceding twelve-month
+period.
+
+9. DATA SHARING
+
+9.1 Raw Data. All raw experimental data generated under the Research Program
+shall be shared among the Parties on a quarterly basis through a secure,
+shared data repository maintained by BioGenesis. Each Party shall have
+unrestricted access to all raw data generated by all Parties.
+
+9.2 Analyzed Results. Analyzed and interpreted results, including statistical
+analyses, shall be shared with the Steering Committee at each quarterly
+meeting and shall be included in the deliverables described in Section 8.
+
+9.3 Database Access. BioGenesis shall provide PharmaDyne and NanoMed with
+access credentials to the shared data repository within fifteen (15) days
+of the Effective Date. Access shall be maintained for the duration of the
+Research Program and for five (5) years following its completion or
+termination.
+
+10. INTELLECTUAL PROPERTY
+
+10.1 Background IP. Each Party shall retain sole ownership of all Background
+IP that it brings to the Research Program. No license to Background IP is
+granted under this Collaboration Agreement except as may be separately agreed
+in writing by the Party owning such Background IP.
+
+10.2 Ownership of Joint Inventions. All Joint Inventions conceived or
+reduced to practice under the Research Program shall be jointly owned by the
+Parties, with ownership interests allocated as follows: BioGenesis shall own
+a fifty percent (50%) undivided interest; PharmaDyne shall own a thirty-
+three percent (33%) undivided interest; and NanoMed shall own a seventeen
+percent (17%) undivided interest (the "Ownership Split"). The Ownership
+Split reflects the relative contributions of expertise, facilities, and
+personnel of each Party to the Research Program.
+
+10.3 Patent Prosecution. BioGenesis, as Lead Research Organization, shall be
+responsible for the preparation, filing, and prosecution of patent
+applications covering Joint Inventions, after consultation with and approval
+by the Steering Committee. Patent prosecution costs shall be shared among
+the Parties in proportion to their ownership interests (50% BioGenesis,
+33% PharmaDyne, 17% NanoMed).
+
+10.4 License Grants — Internal.
+    (a) Non-Exclusive Research License. Each Party shall receive a non-
+    exclusive, royalty-free license to use Joint IP for internal, non-
+    commercial research purposes, including the conduct of further research
+    and development activities.
+    (b) PharmaDyne Exclusive Commercial License. PharmaDyne shall receive an
+    exclusive license to develop, manufacture, use, sell, offer for sale, and
+    import products incorporating or utilizing Joint Inventions within the
+    Field of Use (oncology therapeutics). This exclusive license shall be
+    subject to PharmaDyne's compliance with the terms of this Collaboration
+    Agreement, including timely payment of its funding obligations.
+    (c) NanoMed License. NanoMed shall receive a non-exclusive license to
+    develop, manufacture, and sell nanoparticle delivery systems incorporating
+    Joint Inventions for use outside the Field of Use (i.e., non-oncology
+    therapeutic applications).
+    (d) BioGenesis License. BioGenesis shall receive a non-exclusive license
+    to use Joint Inventions for academic research, educational purposes, and
+    further collaborative research with third parties outside the Field of
+    Use.
+
+10.5 Sublicensing. PharmaDyne shall have the right to grant sublicenses of
+its exclusive commercial license within the Field of Use to its affiliates
+and third-party collaborators, subject to the condition that each sublicensee
+shall be bound by confidentiality obligations no less restrictive than those
+set forth in Section 11. PharmaDyne shall notify BioGenesis and NanoMed of
+any sublicense granted under this Section 10.5 within thirty (30) days of
+execution.
+
+10.6 Technology Transfer. Upon successful completion of the Preclinical
+Validation Phase, BioGenesis and NanoMed shall cooperate with PharmaDyne in
+transferring all necessary technology, data, know-how, and materials to
+PharmaDyne to enable PharmaDyne to advance the drug delivery platform into
+clinical development.
+
+11. CONFIDENTIAL INFORMATION
+
+11.1 Confidential Information. Each Party agrees to hold in strict confidence
+all Confidential Information of the other Parties disclosed in connection
+with the Research Program. Confidential Information includes, without
+limitation, proprietary research data, experimental results, formulations,
+manufacturing processes, business plans, financial information, regulatory
+strategies, and any other non-public information concerning the Research
+Program or any Party's business operations.
+
+11.2 Duration. The obligations of confidentiality set forth in this Section
+11 shall survive the expiration or termination of this Collaboration
+Agreement for a period of ten (10) years. The Parties acknowledge that this
+extended confidentiality period is appropriate given the sensitive nature of
+biotechnology research data, the long development timelines characteristic
+of oncology therapeutics, and the potential competitive value of preclinical
+research results.
+
+11.3 Biotechnology Data. Notwithstanding anything to the contrary, all
+preclinical research data, including raw experimental data, analyzed results,
+formulation data, and biological characterization data, shall be treated as
+Confidential Information of the Party or Parties that generated such data,
+subject to the sharing obligations set forth in Section 9.
+
+11.4 Patient Information. In the event that the Research Program generates
+any data derived from human subjects (which is not anticipated under the
+current Research Plan), such data shall be handled in accordance with all
+applicable federal and state privacy laws, including the Health Insurance
+Portability and Accountability Act (HIPAA) and any applicable institutional
+review board (IRB) protocols.
+
+12. REGULATORY INTERACTIONS
+
+12.1 FDA Communications. PharmaDyne shall be responsible for all
+communications with the U.S. Food and Drug Administration (FDA) regarding
+the regulatory development pathway for the drug delivery platform, including
+pre-IND meetings, IND submissions, and any other regulatory interactions.
+PharmaDyne shall keep the Steering Committee informed of all material FDA
+communications.
+
+12.2 IND-Enabling Studies. The Preclinical Validation Phase of the Research
+Program shall include all IND-enabling studies necessary to support an IND
+application to the FDA, including GLP-compliant toxicology studies,
+pharmacology studies, and manufacturing process development, as described in
+the Research Plan.
+
+13. REPRESENTATIONS AND WARRANTIES
+
+13.1 Institutional Authority. Each Party represents and warrants that it has
+the full legal authority to enter into this Collaboration Agreement and to
+perform its obligations hereunder, and that the execution of this
+Collaboration Agreement has been duly authorized by all necessary corporate
+and institutional approvals, including board of directors or trustees
+authorization where applicable.
+
+13.2 Regulatory Compliance. Each Party represents and warrants that it shall
+conduct its activities under this Collaboration Agreement in compliance with
+all applicable federal, state, and local laws, regulations, and guidelines,
+including without limitation FDA regulations, NIH guidelines for research
+involving recombinant DNA and biohazardous materials, and applicable
+institutional biosafety committee (IBC) requirements.
+
+13.3 Conflict of Interest. Each Party represents and warrants that it has
+disclosed to the other Parties any actual or potential conflicts of interest
+that may arise in connection with the Research Program, and that it shall
+promptly disclose any such conflicts that arise during the term of this
+Collaboration Agreement.
+
+14. TERMINATION
+
+14.1 Termination Without Cause. Any Party may terminate this Collaboration
+Agreement without cause upon one hundred twenty (120) calendar days' prior
+written notice to the other Parties.
+
+14.2 Termination for Bankruptcy. This Collaboration Agreement shall terminate
+immediately upon written notice by any Party if any other Party files a
+petition in bankruptcy, is adjudicated as bankrupt, makes an assignment for
+the benefit of creditors, or becomes the subject of any proceeding under
+any bankruptcy or insolvency law, whether domestic or foreign.
+
+14.3 Termination for Scientific Infeasibility. Any Party may terminate this
+Collaboration Agreement if the Research Program proves to be scientifically
+infeasible, as determined by the Steering Committee following a Phase Gate
+Review at which the go/no-go criteria for the then-current Phase have not
+been met. Such termination shall require sixty (60) calendar days' prior
+written notice and a written justification setting forth the scientific basis
+for the determination of infeasibility.
+
+14.4 Termination for Cause. Any Party may terminate this Collaboration
+Agreement for cause if another Party commits a material breach of any
+provision of this Collaboration Agreement and fails to cure such breach
+within sixty (60) calendar days after receiving written notice specifying
+the nature of the breach.
+
+14.5 Effect of Termination. Upon termination or expiration of this
+Collaboration Agreement, the provisions of Sections 10 (Intellectual
+Property), 11 (Confidential Information), and 17 (Governing Law) shall
+survive. Each Party shall promptly return or destroy all Confidential
+Information of the other Parties, except that each Party may retain one (1)
+copy for archival and legal compliance purposes.
+
+15. LIABILITY
+
+15.1 Limitation of Liability. Each Party shall be liable only for its own
+negligent acts or omissions, and shall not be liable for the negligent acts
+or omissions of any other Party or the personnel, agents, or contractors
+of any other Party. Nothing in this Collaboration Agreement shall be
+construed to create any liability of one Party for the acts or omissions of
+another Party.
+
+15.2 No Aggregate Cap. The Parties have not agreed to an aggregate cap on
+liability under this Collaboration Agreement. Each Party's liability shall
+be determined in accordance with applicable law based on the specific facts
+and circumstances of any claim.
+
+16. FORCE MAJEURE
+
+16.1 Definition. "Force Majeure" means any event or circumstance beyond the
+reasonable control of the affected Party, including but not limited to acts
+of God, natural disasters, pandemics, epidemics, government actions, war,
+terrorism, civil unrest, laboratory accidents, equipment failures, supply
+chain disruptions, and inability to obtain necessary materials or reagents.
+
+16.2 Effect. If a Party is unable to perform its obligations under this
+Collaboration Agreement due to a Force Majeure event, such Party shall
+promptly notify the other Parties in writing and shall be excused from
+performance for the duration of the Force Majeure event, provided that the
+affected Party uses commercially reasonable efforts to mitigate the effects
+of the Force Majeure event and to resume performance as soon as reasonably
+practicable.
+
+17. GOVERNING LAW
+
+This Collaboration Agreement shall be governed by and construed in accordance
+with the laws of the State of Maryland, without giving effect to any choice-
+of-law or conflict-of-law provisions that would require the application of
+the laws of any jurisdiction other than the State of Maryland.
+
+18. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into
+this Collaboration Agreement:
+
+    Exhibit A: Research Plan Summary — Detailed research plan including
+                milestones, decision gates, go/no-go criteria, and resource
+                allocation for each Phase of the Research Program
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: IP Ownership Matrix — Comprehensive matrix documenting the
+                ownership interests, license grants, and sublicensing rights
+                applicable to each category of intellectual property under
+                this Collaboration Agreement
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: Steering Committee Charter — Charter establishing the
+                composition, authority, meeting procedures, and decision-
+                making processes of the Steering Committee
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+19. GENERAL PROVISIONS
+
+19.1 Entire Agreement. This Collaboration Agreement, including all exhibits
+attached hereto, constitutes the entire agreement among the Parties with
+respect to the subject matter hereof and supersedes all prior and
+contemporaneous agreements, understandings, negotiations, and discussions,
+whether oral or written, among the Parties relating to such subject matter.
+
+19.2 Amendments. This Collaboration Agreement may not be amended, modified,
+or supplemented except by a written instrument signed by all three Parties.
+
+19.3 Assignment. Neither Party may assign or transfer any of its rights or
+obligations under this Collaboration Agreement without the prior written
+consent of the other Parties.
+
+19.4 Severability. If any provision of this Collaboration Agreement is held
+to be invalid, illegal, or unenforceable by a court of competent
+jurisdiction, such provision shall be modified to the minimum extent
+necessary to make it valid and enforceable, and the remaining provisions
+of this Collaboration Agreement shall continue in full force and effect.
+
+19.5 Waiver. The failure of any Party to enforce any provision of this
+Collaboration Agreement shall not constitute a waiver of such Party's right
+to enforce such provision or any other provision in the future.
+
+19.6 Notices. All notices required or permitted under this Collaboration
+Agreement shall be in writing and shall be deemed delivered when (a)
+delivered personally, (b) sent by certified mail, return receipt requested,
+(c) sent by nationally recognized overnight courier, or (d) sent by email
+with confirmation of receipt, to the addresses set forth in Section 1 or
+such other address as any Party may designate in writing.
+
+19.7 Independent Contractor. Each Party is an independent contractor and not
+an employee, agent, partner, or joint venturer of any other Party. Nothing
+in this Collaboration Agreement shall be construed to create an employment
+relationship, partnership, joint venture, or agency relationship between any
+of the Parties.
+
+20. SIGNATURES
+
+IN WITNESS WHEREOF, the Parties have executed this Research and Development
+Consortium Services Agreement as of the dates set forth below.
+
+LEAD RESEARCH ORGANIZATION:
+
+BioGenesis Research Institute, a Maryland nonprofit research corporation
+
+
+By: ______________________________________
+Name: Dr. Robert Chang
+Title: Vice President, Research Partnerships
+Date: July 15, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Dr. Patricia Okonkwo
+Title: General Counsel
+Date: July 15, 2024
+
+
+INDUSTRY SPONSOR — PRIMARY:
+
+PharmaDyne Therapeutics Corp., a Delaware corporation
+
+
+By: ______________________________________
+Name: Dr. Angela Foster
+Title: Senior Vice President, R&D
+Date: July 12, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Thomas W. Garrett
+Title: Chief Legal Officer
+Date: July 12, 2024
+
+
+INDUSTRY SPONSOR — SECONDARY:
+
+NanoMed Devices LLC, a Colorado limited liability company
+
+
+By: ______________________________________
+Name: James Liu
+Title: Chief Executive Officer
+Date: July 12, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Sandra Nakamura
+Title: VP, Legal Affairs
+Date: July 12, 2024
+
+
+——————————————————————————————————————————————————
+Footnote: This Collaboration Agreement was fully executed on July 15, 2024,
+being the date on which the last Party (BioGenesis Research Institute) signed,
+satisfying the condition set forth in Section 3(a) that all Parties have
+executed the Agreement. The first funding installment was received by
+BioGenesis on July 22, 2024, which is after the date of full execution.
+Therefore, the Effective Date is July 15, 2024, pursuant to Section 3(a).
+——————————————————————————————————————————————————

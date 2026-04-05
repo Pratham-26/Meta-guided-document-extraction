@@ -1,0 +1,787 @@
+ENVIRONMENTAL CONSULTING SERVICES AGREEMENT
+
+This Environmental Consulting Services Agreement (the "Agreement"), bearing
+reference number ECS-2024-4456, is entered into as of August 1, 2024 (the
+"Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, the renewable energy sector has experienced unprecedented growth in the
+United States over the past decade, with utility-scale solar installations
+expanding at a compound annual growth rate exceeding twenty-five percent and
+contributing to a transformative shift in the nation's electricity generation
+portfolio. This rapid expansion has been driven by declining photovoltaic module
+costs, favorable federal and state policy frameworks including the Investment
+Tax Credit and Production Tax Credit, corporate procurement commitments, and
+increasing utility demand for clean energy resources to meet renewable portfolio
+standards and decarbonization targets adopted by state legislatures across the
+country;
+
+WHEREAS, the development of utility-scale solar energy facilities on greenfield
+sites in ecologically sensitive regions such as West Texas presents a complex
+array of environmental regulatory requirements that must be carefully navigated
+to ensure compliance with federal, state, and local environmental laws and
+regulations. These requirements encompass, but are not limited to, the National
+Environmental Policy Act (NEPA), the Endangered Species Act (ESA), the Clean
+Water Act (CWA), the Clean Air Act (CAA), the National Historic Preservation Act
+(NHPA), and their respective implementing regulations, as well as state-level
+environmental permitting requirements administered by the Texas Commission on
+Environmental Quality (TCEQ) and other applicable state and local agencies;
+
+WHEREAS, the identification and assessment of potential environmental impacts
+associated with large-scale solar development requires the application of
+specialized scientific expertise across multiple environmental disciplines,
+including ecology, biology, hydrology, geology, air quality science, noise
+engineering, and cultural resource management. The complexity of these
+assessments is further amplified by the need to coordinate with numerous federal
+and state regulatory agencies, each with distinct jurisdictional authorities,
+review procedures, and consultation requirements that must be satisfied before
+development activities may lawfully commence;
+
+WHEREAS, TerraVerde Environmental Consultants LLC brings over twenty years of
+specialized experience in providing comprehensive environmental consulting
+services to the renewable energy industry, with a demonstrated track record of
+successfully guiding utility-scale solar, wind, and energy storage projects
+through the full spectrum of environmental permitting and compliance processes
+across the southwestern and south-central United States;
+
+WHEREAS, Meridian Energy Partners LP has identified a 500-acre site in West
+Texas for the development of a utility-scale solar farm installation and has
+determined that comprehensive environmental consulting services are required to
+characterize the environmental conditions of the site, assess potential impacts
+associated with the proposed development, and obtain all necessary environmental
+permits and approvals required for construction and operation;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration, the
+receipt and sufficiency of which are hereby acknowledged, the parties agree as
+follows:
+
+1. PARTIES
+
+1.1 Service Provider. TerraVerde Environmental Consultants LLC, a limited
+liability company duly organized and existing under the laws of the State of
+Colorado, with its principal offices located at 2400 Mountain View Road,
+Boulder, CO 80301 (hereinafter referred to as "Service Provider,"
+"TerraVerde," or "Provider").
+
+1.2 Client. Meridian Energy Partners LP, a limited partnership duly organized
+and existing under the laws of the State of Texas, with its principal offices
+located at 500 Energy Plaza, Suite 1800, Houston, TX 77002 (hereinafter
+referred to as "Client," "Meridian," or "MEP").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that they
+have the full legal authority to bind their respective organization to the terms
+and conditions of this Agreement, and that the execution of this Agreement has
+been duly authorized by all necessary corporate or partnership approvals.
+
+2. DEFINITIONS
+
+2.1 "ASTM E1527-21" means the Standard Practice for Environmental Site
+Assessments: Phase I Environmental Site Assessment Process, published by ASTM
+International, as revised or superseded.
+
+2.2 "ASTM E1903-19" means the Standard Practice for Environmental Site
+Assessments: Phase II Environmental Site Assessment Process, published by ASTM
+International, as revised or superseded.
+
+2.3 "Brownfield" means a property, the expansion, redevelopment, or reuse of
+which may be complicated by the presence or potential presence of a hazardous
+substance, pollutant, or contaminant.
+
+2.4 "Cultural Resource" means any prehistoric or historic district, site,
+building, structure, or object included in, or eligible for inclusion in, the
+National Register of Historic Places, as defined by 36 CFR Part 60, including
+properties of traditional religious and cultural importance to federally
+recognized Indian tribes.
+
+2.5 "Endangered Species Act" or "ESA" means the Endangered Species Act of 1973,
+16 U.S.C. Sections 1531-1544, as amended, and the regulations promulgated
+thereunder.
+
+2.6 "EPA" means the United States Environmental Protection Agency.
+
+2.7 "NEPA" means the National Environmental Policy Act of 1969, 42 U.S.C.
+Sections 4321-4370m-12, as amended, and the regulations implementing NEPA
+promulgated by the Council on Environmental Quality (CEQ) at 40 CFR Parts
+1500-1508.
+
+2.8 "Phase I ESA" means a Phase I Environmental Site Assessment conducted in
+substantial accordance with the procedures and requirements set forth in ASTM
+E1527-21, including a records review, site reconnaissance, interviews, and
+preparation of a written report.
+
+2.9 "Phase II ESA" means a Phase II Environmental Site Assessment conducted in
+substantial accordance with the procedures and requirements set forth in ASTM
+E1903-19, including subsurface investigation, sampling, and laboratory analysis
+to confirm or deny the presence of recognized environmental conditions identified
+during the Phase I ESA.
+
+2.10 "Stormwater Pollution Prevention Plan" or "SWPPP" means a comprehensive
+plan identifying potential sources of stormwater pollution at the Project Site
+and describing the Best Management Practices (BMPs) to be implemented to
+minimize or eliminate the discharge of pollutants in stormwater runoff.
+
+2.11 "Threatened Species" means any species which is likely to become an
+endangered species within the foreseeable future throughout all or a significant
+portion of its range, as designated by the U.S. Fish and Wildlife Service or
+the National Marine Fisheries Service under the Endangered Species Act.
+
+2.12 "TCEQ" means the Texas Commission on Environmental Quality, the state
+agency responsible for environmental regulation in the State of Texas.
+
+2.13 "USFWS" means the United States Fish and Wildlife Service, the federal
+agency within the Department of the Interior responsible for the conservation,
+protection, and enhancement of fish, wildlife, plants, and their habitats.
+
+2.14 "USACE" means the United States Army Corps of Engineers, the federal agency
+responsible for administering the Section 404 permit program under the Clean
+Water Act and for establishing and applying the methodology for delineation of
+jurisdictional wetlands.
+
+2.15 "Wetlands" means those areas that are inundated or saturated by surface
+water or groundwater at a frequency and duration sufficient to support, and that
+under normal circumstances do support, a prevalence of vegetation typically
+adapted for life in saturated soil conditions, as defined by the USACE at 33 CFR
+Part 328 and further clarified by the Federal Manual for Identifying and
+Delineating Jurisdictional Wetlands.
+
+2.16 "Wind Rose" means a meteorological tool used to display the distribution
+of wind speed and direction at a particular location over a specified period of
+time, used in the assessment of air quality dispersion modeling and noise impact
+analysis for the Project Site.
+
+2.17 "BMP" means Best Management Practice, a technique, measure, or structural
+control that is used for a given set of conditions to manage the quantity and
+improve the quality of stormwater runoff in the most cost-effective manner.
+
+2.18 "Project Site" means the approximately 500-acre parcel of real property
+located in West Texas, the legal description of which is set forth in Exhibit A,
+upon which the Client proposes to develop a utility-scale solar farm installation.
+
+2.19 "Confidential Information" means all non-public environmental data, site
+assessment results, biological survey findings, cultural resource information,
+permit applications, regulatory correspondence, and other sensitive information
+disclosed by either party in connection with this Agreement.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide comprehensive
+environmental consulting services for the Client's proposed solar farm
+installation on the Project Site, including but not limited to the following
+service categories:
+
+    (a) Phase I Environmental Site Assessment. Conduct a Phase I Environmental
+    Site Assessment of the Project Site in accordance with ASTM E1527-21,
+    including historical use research, regulatory database review, site
+    reconnaissance, interviews with knowledgeable parties, and preparation of a
+    comprehensive Phase I ESA report identifying any recognized environmental
+    conditions, controlled recognized environmental conditions, or historical
+    recognized environmental conditions associated with the Project Site.
+
+    (b) Phase II Environmental Site Assessment. If the Phase I ESA identifies
+    recognized environmental conditions that warrant further investigation, the
+    Service Provider shall conduct a Phase II Environmental Site Assessment in
+    accordance with ASTM E1903-19, including the design and implementation of
+    a subsurface investigation and sampling program, laboratory analysis of
+    soil, groundwater, and/or soil vapor samples, and preparation of a Phase II
+    ESA report with findings and recommendations. The Phase II ESA is
+    expressly conditioned upon and contingent on the findings of the Phase I
+    ESA and shall not be initiated without the Client's written authorization
+    following review and acceptance of the Phase I ESA report.
+
+    (c) Wetlands Delineation. Conduct a comprehensive wetlands delineation of
+    the Project Site in accordance with the USACE Wetlands Delineation Manual
+    (1987 Manual) and the applicable Regional Supplement, including field
+    identification and delineation of jurisdictional wetlands and other waters
+    of the United States, preparation of a wetlands delineation report with
+    data sheets and maps, and coordination with the USACE for a preliminary
+    jurisdictional determination (JD).
+
+    (d) Threatened and Endangered Species Surveys. Conduct biological surveys
+    of the Project Site to identify the presence or absence of federal- and
+    state-listed threatened and endangered species and their designated critical
+    habitat, including protocol-level surveys for any target species identified
+    during the desktop review, habitat suitability assessments, and preparation
+    of a biological assessment report for coordination with the USFWS under
+    Section 7 of the Endangered Species Act.
+
+    (e) Cultural Resource Surveys. Conduct an intensive cultural resource survey
+    of the Project Site in accordance with the Secretary of the Interior's
+    Standards and Guidelines for Archaeology and Historic Preservation,
+    including pedestrian survey, shovel testing, and preparation of a cultural
+    resource survey report for review by the Texas Historical Commission (THC)
+    and for compliance with Section 106 of the National Historic Preservation
+    Act, including initiation of government-to-government consultation with
+    federally recognized Indian tribes as appropriate.
+
+    (f) NEPA Compliance Documentation. Prepare NEPA compliance documentation for
+    the proposed solar farm installation, which may include a Categorical
+    Exclusion determination, an Environmental Assessment (EA), or, if
+    warranted based on the results of the environmental studies, an
+    Environmental Impact Statement (EIS), including all supporting technical
+    appendices, public notice and comment coordination, and agency review
+    facilitation.
+
+    (g) Air Quality Impact Assessment. Conduct an air quality impact assessment
+    for the Project Site, including atmospheric dispersion modeling, ambient air
+    quality monitoring, evaluation of potential criteria pollutant and
+    hazardous air pollutant emissions associated with construction and operation
+    of the proposed solar facility, and assessment of conformity with
+    applicable National Ambient Air Quality Standards (NAAQS) and state
+    implementation plan requirements.
+
+    (h) Noise Impact Study. Conduct a noise impact study for the Project Site,
+    including baseline ambient noise level measurements, prediction of
+    construction and operational noise levels at receptor locations, assessment
+    of compliance with applicable federal, state, and local noise standards
+    and ordinances, and identification and evaluation of feasible noise
+    mitigation measures.
+
+    (i) Stormwater Management Plan. Prepare a comprehensive Stormwater
+    Pollution Prevention Plan (SWPPP) for the Project Site, including
+    identification of potential pollutant sources, design of Best Management
+    Practices (BMPs) for erosion and sediment control during construction and
+    stormwater management during operation, preparation of stormwater
+    management facility design criteria, and coordination with TCEQ regarding
+    Construction General Permit (TXR150000) and Industrial Stormwater Permit
+    requirements.
+
+4. ENVIRONMENTAL SITE ASSESSMENT METHODOLOGY
+
+4.1 Phase I ESA Procedures. The Phase I ESA shall be conducted in accordance
+with ASTM E1527-21. The Service Provider shall perform a thorough review of
+historical records and environmental database reports for the Project Site and
+all adjoining properties within the applicable search distances specified by
+ASTM E1527-21, including but not limited to EDR, TRW, and state environmental
+database reviews. The site reconnaissance shall include a systematic visual
+inspection of the Project Site and all adjoining properties, with photographic
+documentation of observed conditions.
+
+4.2 Phase II ESA Procedures. If authorized by the Client, the Phase II ESA
+shall be conducted in accordance with ASTM E1903-19. The scope of the Phase II
+ESA shall be determined based on the findings of the Phase I ESA and shall be
+documented in a Phase II ESA Work Plan submitted to the Client for review and
+approval prior to commencement of field activities. The Work Plan shall identify
+the specific media to be investigated (soil, groundwater, soil vapor, surface
+water), the number and location of sample points, the analytical methods and
+detection limits, and the data quality objectives for the investigation.
+
+5. WETLANDS DELINEATION PROCEDURES
+
+5.1 Delineation Methodology. Wetlands delineation shall be conducted in
+accordance with the USACE Wetlands Delineation Manual (1987) and the applicable
+Regional Supplement for the Arid West region, as well as the USACE guidance
+documents regarding the delineation of waters of the United States following
+the Sackett v. Environmental Protection Agency decision. The delineation shall
+include the collection of vegetation, soils, and hydrology data at
+representative sample points across the Project Site to determine the presence
+or absence of jurisdictional wetlands and other waters of the United States.
+
+5.2 Delineation Report. The Service Provider shall prepare a comprehensive
+wetlands delineation report that includes a project description, methodology
+description, data sheets for each sample point, a wetlands delineation map
+showing the boundaries of all identified jurisdictional areas, and a
+determination of the total acreage of jurisdictional wetlands and other waters
+on the Project Site. The report shall be prepared in a format suitable for
+submission to the USACE for a preliminary jurisdictional determination.
+
+6. BIOLOGICAL SURVEYS
+
+6.1 Protocol for T&E Species. The Service Provider shall conduct biological
+surveys in accordance with published USFWS survey protocols for any target
+species identified during the desktop review, including focused surveys for
+federally listed species known to occur in the Project Site vicinity. Survey
+methods, timing, and effort shall comply with the applicable USFWS survey
+guidelines and state wildlife agency protocols.
+
+6.2 Habitat Assessment. The Service Provider shall conduct a habitat
+suitability assessment for the Project Site, evaluating the presence and
+quality of habitat features required by potentially occurring threatened and
+endangered species, including foraging habitat, nesting habitat, migration
+corridors, and potential roost sites.
+
+6.3 Seasonal Survey Windows. Where applicable, biological surveys shall be
+conducted during the appropriate seasonal survey windows established by the
+USFWS and applicable state wildlife agencies to ensure maximum detectability of
+target species. If seasonal windows are missed due to factors beyond the
+Service Provider's control, the Client shall be responsible for authorizing
+additional survey efforts in subsequent survey seasons.
+
+7. CULTURAL RESOURCE ASSESSMENT
+
+7.1 Section 106 Compliance. The Service Provider shall conduct an intensive
+(census-level) cultural resource survey of the Project Site in accordance with
+the Secretary of the Interior's Standards and Guidelines for Identification
+and Evaluation, 36 CFR Part 61, and the Council on Environmental Quality's
+regulations implementing Section 106 of the National Historic Preservation Act,
+36 CFR Part 800.
+
+7.2 Tribal Coordination. The Service Provider shall assist the Client in
+initiating government-to-government consultation with federally recognized
+Indian tribes that may have cultural or religious ties to the Project Site or
+the surrounding area, in accordance with the requirements of Section 106, the
+Native American Graves Protection and Repatriation Act (NAGPRA), and applicable
+tribal consultation policies and executive orders.
+
+8. NEPA DOCUMENTATION
+
+8.1 Categorical Exclusions. The Service Provider shall initially assess whether
+the proposed solar farm installation qualifies for a Categorical Exclusion
+under the applicable federal agency's NEPA procedures. If a Categorical
+Exclusion is appropriate, the Service Provider shall prepare the necessary
+documentation and coordinate with the lead federal agency to obtain the
+applicable determination.
+
+8.2 Environmental Assessment. If the proposed action does not qualify for a
+Categorical Exclusion, the Service Provider shall prepare an Environmental
+Assessment (EA) in accordance with 40 CFR Part 1508.6, including a description
+of the proposed action, identification and evaluation of the affected
+environment, analysis of the environmental consequences of the proposed action
+and alternatives, and preparation of a Finding of No Significant Impact (FONSI)
+if warranted by the analysis.
+
+8.3 EIS Thresholds. If the EA analysis indicates that the proposed action may
+result in significant environmental impacts, the Service Provider shall notify
+the Client and the lead federal agency of the need to prepare an Environmental
+Impact Statement (EIS). Preparation of an EIS would constitute a change in
+scope under this Agreement and would be subject to separate negotiation and
+pricing.
+
+9. AIR QUALITY ASSESSMENT
+
+9.1 Dispersion Modeling. The Service Provider shall conduct air quality
+dispersion modeling using EPA-approved models (e.g., AERMOD, CALPUFF) to
+estimate ground-level pollutant concentrations resulting from construction
+activities and facility operations, including fugitive dust emissions from
+site preparation and grading activities.
+
+9.2 Ambient Monitoring. The Service Provider shall deploy ambient air quality
+monitoring equipment at the Project Site and at downwind receptor locations to
+establish baseline ambient air quality conditions and to support the
+dispersion modeling analysis.
+
+9.3 Permit Requirements. The Service Provider shall assess the need for
+applicable federal, state, and local air quality permits, including but not
+limited to TCEQ New Source Review permits, federal Title V operating permits,
+and any applicable permit-by-rule authorizations.
+
+10. NOISE IMPACT STUDY
+
+10.1 Measurement Methodology. The Service Provider shall conduct baseline
+ambient noise level measurements at representative receptor locations in the
+vicinity of the Project Site in accordance with ANSI/ASA S12.9 and applicable
+TCEQ guidance. Measurements shall be conducted over a minimum continuous
+24-hour period at each receptor location to characterize diurnal noise patterns.
+
+10.2 Receptor Analysis. The Service Provider shall identify and categorize
+noise-sensitive receptors within the study area, including residential
+dwellings, schools, churches, hospitals, and other occupied structures, and
+shall predict the construction-period and operational-period noise levels at
+each identified receptor location.
+
+10.3 Mitigation Measures. Where predicted noise levels are projected to exceed
+applicable standards or to result in a substantial increase over existing
+ambient conditions, the Service Provider shall identify and evaluate feasible
+noise mitigation measures, including but not limited to equipment noise
+specifications, setbacks, barriers, and operational restrictions.
+
+11. STORMWATER MANAGEMENT
+
+11.1 SWPPP Requirements. The Service Provider shall prepare a comprehensive
+Stormwater Pollution Prevention Plan (SWPPP) for the Project Site in accordance
+with the requirements of the TCEQ Construction General Permit (TXR150000) and
+the EPA Multi-Sector General Permit (MSGP), as applicable.
+
+11.2 BMP Design. The Service Provider shall design Best Management Practices
+(BMPs) for the Project Site, including structural controls (silt fences,
+sediment basins, check dams, rock outlet protection) and non-structural
+controls (phased construction sequencing, preservation of existing vegetation,
+minimization of disturbed area) to control erosion and sedimentation during
+construction and to manage stormwater quality and quantity during operation.
+
+12. QUALITY ASSURANCE
+
+12.1 Data Validation. The Service Provider shall implement a comprehensive
+data validation program for all analytical data generated under this Agreement,
+including field duplicate samples, equipment blanks, trip blanks, matrix spike
+and matrix spike duplicate samples, and laboratory control samples, in
+accordance with applicable EPA guidance documents and project-specific data
+quality objectives.
+
+12.2 Chain of Custody. The Service Provider shall maintain a rigorous chain
+of custody for all environmental samples collected under this Agreement,
+including field documentation, sample shipping records, laboratory receipt
+documentation, and electronic data deliverable tracking.
+
+12.3 Laboratory Accreditation. All laboratory analyses performed in support
+of the environmental investigations under this Agreement shall be conducted by
+laboratories accredited under the National Environmental Laboratory
+Accreditation Program (NELAP) or an equivalent accreditation program, and
+shall employ analytical methods approved by EPA or applicable state regulatory
+agencies.
+
+13. REGULATORY AGENCY COORDINATION
+
+13.1 Agency Correspondence. The Service Provider shall prepare and submit all
+correspondence, applications, and documentation required for coordination with
+federal and state regulatory agencies, including but not limited to the USACE,
+USFWS, TCEQ, Texas Historical Commission, and the lead federal agency
+responsible for NEPA compliance.
+
+13.2 Permit Applications. The Service Provider shall prepare and submit all
+permit applications required for the development of the Project Site, including
+but not limited to USACE Section 404 individual permit applications, TCEQ
+water quality certifications, and applicable stormwater permit registrations.
+
+13.3 Meeting Coordination. The Service Provider shall coordinate and
+facilitate meetings with regulatory agency staff as necessary to advance the
+environmental review and permitting process, and shall prepare meeting agendas,
+attend meetings, and provide meeting minutes and follow-up documentation.
+
+14. TERM
+
+14.1 Initial Term. This Agreement shall commence on the Effective Date and
+shall continue for a period of eighteen (18) months, concluding on January 31,
+2026 (the "Initial Term"), unless earlier terminated in accordance with the
+provisions of Section 21.
+
+14.2 No Automatic Renewal. This Agreement shall not automatically renew upon
+expiration of the Initial Term. Any extension of the term shall require mutual
+written agreement of the parties executed at least thirty (30) calendar days
+prior to the expiration of the Initial Term.
+
+14.3 Effect of Termination. Expiration or termination of this Agreement shall
+not affect any provisions that by their nature are intended to survive
+termination, including without limitation Sections 18 (Intellectual Property),
+19 (Confidentiality), 22 (Liability), 23 (Dispute Resolution), 24 (Governing
+Law), and 25 (General Provisions).
+
+15. COMPENSATION
+
+15.1 Phase I ESA Fee. The Client shall pay the Service Provider a fixed fee of
+twenty-eight thousand dollars ($28,000.00) for the Phase I Environmental Site
+Assessment described in Section 3.1(a), inclusive of all labor, travel,
+database review, report preparation, and other costs associated with the
+completion of the Phase I ESA report.
+
+15.2 Phase II ESA Fee. If the Client authorizes the Phase II ESA described in
+Section 3.1(b), the Client shall pay the Service Provider a fixed fee of
+sixty-five thousand dollars ($65,000.00) for the Phase II Environmental Site
+Assessment, inclusive of all labor, field investigation, sampling, laboratory
+analysis, report preparation, and other costs associated with the completion of
+the Phase II ESA report. The Phase II ESA fee is expressly contingent upon the
+findings of the Phase I ESA and the Client's written authorization to proceed
+with Phase II investigation activities.
+
+15.3 Monthly Retainer. In addition to the fixed fees described in Sections
+15.1 and 15.2, the Client shall pay the Service Provider a monthly retainer of
+twelve thousand dollars ($12,000.00) for ongoing environmental monitoring,
+reporting, regulatory agency coordination, and other services performed during
+the term of this Agreement that are not covered by the fixed-fee service
+categories described above. The monthly retainer shall be payable commencing
+on the Effective Date and continuing on the first day of each calendar month
+throughout the term of this Agreement.
+
+15.4 Field Work Day Rates. For field work days requiring the on-site presence
+of Service Provider scientists at the Project Site, the Client shall pay a
+rate of two thousand eight hundred dollars ($2,800.00) per scientist per day.
+Field work day rates apply exclusively to on-site field work activities,
+including but not limited to site reconnaissance, soil and groundwater
+sampling, biological survey fieldwork, wetlands delineation fieldwork, and
+noise monitoring field measurements. Field work day rates do not apply to
+office-based activities, report preparation, data analysis, or regulatory
+coordination, which are covered by the fixed fees and monthly retainer described
+above.
+
+15.5 Payment Terms. Invoices shall be submitted monthly and shall be payable
+by the Client within thirty (30) calendar days of receipt. Invoices shall
+include a detailed breakdown of all services rendered, field work days
+incurred, and applicable expenses during the billing period.
+
+16. DELIVERABLES AND MILESTONES
+
+16.1 Phase I ESA Report. Within sixty (60) calendar days of the Effective Date,
+the Service Provider shall deliver a comprehensive Phase I ESA report prepared
+in accordance with ASTM E1527-21, including an executive summary, historical
+use summary, database review results, site reconnaissance findings, interviews,
+conclusions regarding recognized environmental conditions, and applicable
+recommendations.
+
+16.2 Wetlands Delineation Report. Within ninety (90) calendar days of the
+Effective Date, the Service Provider shall deliver a wetlands delineation
+report prepared in accordance with USACE methodology, including data sheets,
+a wetlands delineation map, acreage calculations, and a preliminary
+jurisdictional determination request for submission to the USACE.
+
+16.3 Species Survey Report. Within one hundred twenty (120) calendar days of
+the Effective Date, the Service Provider shall deliver a threatened and
+endangered species survey report, including a desktop review summary, habitat
+suitability assessment, field survey results for all target species, and a
+biological assessment for coordination with the USFWS under Section 7 of the
+Endangered Species Act.
+
+16.4 NEPA Environmental Assessment. Within one hundred eighty (180) calendar
+days of the Effective Date, the Service Provider shall deliver a NEPA
+Environmental Assessment document, including an environmental impact analysis
+for the proposed solar farm installation, analysis of alternatives, and a
+Finding of No Significant Impact (FONSI) determination if warranted, or a
+recommendation to prepare an Environmental Impact Statement if the analysis
+indicates the potential for significant impacts.
+
+16.5 Stormwater Management Plan. Within one hundred fifty (150) calendar days
+of the Effective Date, the Service Provider shall deliver a comprehensive
+Stormwater Pollution Prevention Plan (SWPPP) for the Project Site, including
+site maps, pollutant source identification, BMP design specifications,
+maintenance schedules, inspection procedures, and all forms and documentation
+required for TCEQ Construction General Permit compliance.
+
+16.6 Monthly Monitoring Reports. On an ongoing basis throughout the term of
+this Agreement, the Service Provider shall deliver monthly monitoring reports
+summarizing environmental monitoring activities, field observations, regulatory
+agency communications, project status updates, and any issues or concerns
+requiring the Client's attention.
+
+17. INTELLECTUAL PROPERTY
+
+17.1 Client Ownership. All reports, assessments, environmental data, survey
+results, permit applications, and other deliverables produced by the Service
+Provider specifically for the Client under this Agreement (collectively,
+"Deliverables") shall become the sole and exclusive property of the Client
+upon full payment for the services giving rise to such Deliverables. The
+Service Provider hereby assigns and transfers to the Client all right, title,
+and interest in and to all Deliverables.
+
+17.2 Service Provider Retained IP. The Service Provider shall retain all
+right, title, and interest in its survey methodologies, scientific models,
+analytical protocols, data interpretation frameworks, quality assurance
+procedures, dispersion models, noise prediction models, ecological assessment
+tools, and other tools, processes, and methodologies developed independently
+of this Agreement or utilized across multiple client engagements (collectively,
+"Service Provider IP").
+
+18. CONFIDENTIALITY
+
+18.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Neither party shall disclose, publish, or otherwise reveal
+Confidential Information to any third party without the prior written consent
+of the disclosing party, except as required by law, regulation, legal process,
+or court order, or as necessary for the submission of permit applications and
+regulatory filings in connection with the Project Site.
+
+18.2 Duration. The obligations of confidentiality set forth in this Section 18
+shall survive the expiration or termination of this Agreement for a period of
+ten (10) years, reflecting the sensitive nature of environmental data, species
+location information, and cultural resource information that may be disclosed
+in connection with this Agreement.
+
+19. INSURANCE
+
+19.1 Professional Liability Insurance. Throughout the term of this Agreement,
+the Service Provider shall maintain, at its sole cost and expense, professional
+liability (errors and omissions) insurance in an amount not less than two
+million dollars ($2,000,000) per occurrence, covering claims arising from
+negligent acts, errors, or omissions in the provision of environmental
+consulting services under this Agreement.
+
+19.2 Pollution Liability Insurance. Throughout the term of this Agreement,
+the Service Provider shall maintain, at its sole cost and expense, contractors'
+pollution liability insurance in an amount not less than five million dollars
+($5,000,000) per occurrence, covering claims arising from pollution conditions
+resulting from the Service Provider's field activities on the Project Site.
+
+19.3 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies. Such certificates shall
+provide that the Client shall receive thirty (30) days' prior written notice of
+any cancellation, material modification, or non-renewal.
+
+20. TERMINATION
+
+20.1 General Termination. Either party may terminate this Agreement upon ninety
+(90) calendar days' prior written notice to the other party.
+
+20.2 Termination for Cause. Either party may terminate this Agreement for cause
+if the other party commits a material breach of any provision of this Agreement
+and fails to cure such breach within thirty (30) calendar days after receiving
+written notice specifying the nature of the breach in reasonable detail.
+
+20.3 Phase-Level Termination. Notwithstanding the foregoing, the Client may
+terminate individual project phases or service categories under this Agreement
+upon thirty (30) calendar days' prior written notice to the Service Provider.
+Termination of an individual project phase shall not constitute termination of
+this Agreement as a whole, and the Service Provider shall continue to perform
+all services not subject to the phase-level termination. Upon termination of
+an individual project phase, the Client shall pay the Service Provider for all
+services satisfactorily completed and all non-cancellable costs incurred in
+connection with the terminated phase prior to the effective date of termination.
+
+21. LIABILITY
+
+21.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING
+BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS
+OPPORTUNITY, BUSINESS INTERRUPTION, OR LOSS OF GOODWILL, ARISING OUT OF OR
+RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER, REGARDLESS
+OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY, ANY
+OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES.
+
+21.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed two million
+dollars ($2,000,000), regardless of the form of action or legal theory. This
+cap shall apply to all claims, damages, losses, and liabilities arising from
+or related to this Agreement, whether based on contract, tort, strict liability,
+or any other legal theory.
+
+22. DISPUTE RESOLUTION
+
+22.1 Negotiation. The parties shall first attempt to resolve any dispute
+arising out of or relating to this Agreement through good faith negotiation
+between the parties' respective authorized representatives. The parties shall
+meet and confer in person or by video conference within thirty (30) calendar
+days of one party providing written notice of a dispute to the other party.
+
+22.2 Mediation. If the dispute is not resolved through negotiation within sixty
+(60) calendar days of the initial dispute notice, the parties shall submit the
+dispute to non-binding mediation administered by a mutually agreed mediator in
+Denver, Colorado. Each party shall bear its own costs of mediation, and the
+costs of the mediator shall be shared equally between the parties.
+
+22.3 Arbitration. If the dispute is not resolved through mediation within
+ninety (90) calendar days of the initial dispute notice, the dispute shall be
+submitted to binding arbitration in Denver, Colorado, in accordance with the
+rules of the American Arbitration Association (AAA). The arbitration shall be
+conducted by a single arbitrator with experience in environmental consulting
+and commercial services disputes. The arbitrator's decision shall be final and
+binding, and judgment upon the award may be entered in any court of competent
+jurisdiction.
+
+23. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the State of Colorado, without giving effect to any choice-of-law or
+conflict-of-law provisions that would require the application of the laws of
+any jurisdiction other than the State of Colorado.
+
+24. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A:  Site Map — Legal description, topographic map, aerial
+                photograph, and site boundary delineation for the
+                approximately 500-acre Project Site in West Texas
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B:  Survey Protocols — Detailed survey protocols for threatened
+                and endangered species, wetlands delineation, cultural
+                resources, air quality, and noise monitoring, including
+                equipment specifications, quality assurance requirements,
+                and seasonal survey windows
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C:  Regulatory Agency Contact List — Contact information for all
+                federal and state regulatory agencies with jurisdiction over
+                the Project Site, including USACE, USFWS, TCEQ, THC, EPA
+                Region 6, and the applicable lead federal agency
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+25. GENERAL PROVISIONS
+
+25.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the
+subject matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written,
+between the parties relating to such subject matter.
+
+25.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+25.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the
+other party, except that either party may assign this Agreement to a successor
+entity in connection with a merger, acquisition, or sale of all or
+substantially all of its assets, provided that the assignee assumes all
+obligations of the assigning party under this Agreement.
+
+25.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such
+provision shall be modified to the minimum extent necessary to make it valid
+and enforceable, and the remaining provisions of this Agreement shall continue
+in full force and effect.
+
+25.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+25.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b)
+sent by certified mail, return receipt requested, (c) sent by nationally
+recognized overnight courier, or (d) sent by email with confirmation of
+receipt, to the addresses set forth in Section 1 or such other address as
+either party may designate in writing.
+
+25.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+25.8 Force Majeure. Neither party shall be liable for any failure or delay in
+the performance of its obligations under this Agreement to the extent that
+such failure or delay is caused by circumstances beyond the reasonable control
+of the affected party, including but not limited to acts of God, natural
+disasters, pandemics, government actions, labor disputes, civil unrest, war,
+terrorism, and power or telecommunications failures.
+
+25.9 Records Retention. The Service Provider shall maintain all records,
+working papers, correspondence, field data, laboratory reports, and project
+files generated or received in connection with the performance of services
+under this Agreement for a period of not less than ten (10) years following
+the completion or termination of this Agreement, or such longer period as may
+be required by applicable law.
+
+26. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Environmental Consulting
+Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+TerraVerde Environmental Consultants LLC, a Colorado limited liability company
+
+
+By: ______________________________________
+Name: Dr. Elena Vasquez
+Title: Principal Scientist
+Date: July 25, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: James Whitfield
+Title: Director of Operations
+Date: July 25, 2024
+
+
+CLIENT:
+
+Meridian Energy Partners LP, a Texas limited partnership
+
+
+By: ______________________________________
+Name: Thomas Blackburn
+Title: VP Environmental Affairs
+Date: July 28, 2024
+
+
+WITNESS:
+
+__________________________________________
+Name: Rebecca Huang
+Title: Associate General Counsel
+Date: July 28, 2024

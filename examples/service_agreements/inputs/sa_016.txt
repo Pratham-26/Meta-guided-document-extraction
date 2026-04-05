@@ -1,0 +1,701 @@
+IT STAFF AUGMENTATION SERVICES AGREEMENT
+
+This IT Staff Augmentation Services Agreement (the "Agreement"), bearing
+reference number ITA-2025-0455, is entered into as of April 1, 2025
+(the "Effective Date"), by and between the parties identified in Section 1
+below.
+
+WHEREAS, the global information technology industry has experienced
+unprecedented demand for skilled technology professionals over the past
+decade, driven by accelerating digital transformation initiatives, the
+proliferation of cloud computing and artificial intelligence platforms,
+increasing cybersecurity threats, and the growing complexity of enterprise
+software ecosystems;
+
+WHEREAS, the financial technology sector in particular has faced acute
+challenges in recruiting and retaining qualified technology talent, with
+industry surveys indicating that fintech companies experience average
+time-to-fill periods exceeding ninety (90) days for senior software
+engineering positions and annual voluntary turnover rates among technology
+professionals approaching twenty-five percent (25%);
+
+WHEREAS, the staff augmentation model has emerged as a proven and flexible
+approach to addressing short-term and medium-term technology staffing needs,
+enabling organizations to rapidly scale their development teams, access
+specialized technical expertise not available internally, and manage workforce
+capacity fluctuations without the long-term commitments and overhead costs
+associated with direct hiring;
+
+WHEREAS, Quantum Financial Technologies Inc., a leading provider of digital
+banking and payment processing solutions headquartered in Stamford, Connecticut,
+has identified a strategic need to supplement its existing technology
+workforce with contracted IT professionals to support the development and
+deployment of its next-generation financial services platform;
+
+WHEREAS, TalentBridge IT Staffing Corp. is a nationally recognized provider of
+IT staff augmentation services with demonstrated expertise in sourcing,
+screening, and placing technology professionals across a broad range of
+technical disciplines, including software engineering, cloud infrastructure,
+DevOps, quality assurance, and project management, and has been selected by
+the Client to provide contracted technology professionals;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration,
+the receipt and sufficiency of which are hereby acknowledged, the parties agree
+as follows:
+
+1. PARTIES
+
+1.1 Service Provider. TalentBridge IT Staffing Corp., a corporation duly
+organized and existing under the laws of the State of New Jersey, with its
+principal offices located at 100 Headquarters Plaza, Suite 600, Morristown, NJ
+07960 (hereinafter referred to as "Service Provider," "TalentBridge," or
+"Provider").
+
+1.2 Client. Quantum Financial Technologies Inc., a corporation duly organized
+and existing under the laws of the State of Connecticut, with its principal
+offices located at 900 Stamford Place, Stamford, CT 06902 (hereinafter
+referred to as "Client," "Company," or "Quantum").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that
+they have the full legal authority to bind their respective organization to the
+terms and conditions of this Agreement, and that the execution of this
+Agreement has been duly authorized by all necessary corporate approvals.
+
+2. DEFINITIONS
+
+2.1 "Bill Rate" means the hourly rate charged by the Service Provider to the
+Client for each Contractor's services, as set forth in the applicable Rate
+Card attached hereto as Exhibit A.
+
+2.2 "Bench Time" means any period during which a Contractor is engaged under
+this Agreement but is not assigned to perform billable work for the Client
+due to reasons other than the Contractor's own unavailability.
+
+2.3 "Co-employment" means a situation in which both the Service Provider and
+the Client may be perceived as joint employers of a Contractor, which the
+parties expressly intend to avoid through the structural provisions of this
+Agreement.
+
+2.4 "Contractor" means any individual technology professional engaged by the
+Service Provider to perform services for the Client under this Agreement.
+Contractors are employees of the Service Provider and are not employees of
+the Client.
+
+2.5 "Mark-up" means the percentage or fixed amount added to a Contractor's
+cost to the Service Provider to arrive at the Bill Rate charged to the Client.
+
+2.6 "Off-boarding" means the process of transitioning a Contractor out of the
+Client's work environment, including the return of equipment, revocation of
+system access, completion of knowledge transfer, and final performance
+documentation.
+
+2.7 "On-boarding" means the process of integrating a newly engaged Contractor
+into the Client's work environment, including orientation, equipment
+provisioning, system access setup, and introduction to the assigned team.
+
+2.8 "Requisition" means a formal request submitted by the Client to the
+Service Provider describing a specific staffing need, including required
+skills, experience level, start date, and estimated duration of engagement.
+
+2.9 "Skill Matrix" means a documented inventory of the technical competencies,
+certifications, and experience levels required for each role or position
+specified in a Requisition.
+
+2.10 "Statement of Work" or "SOW" means a document describing specific
+services, deliverables, timelines, and resource requirements for a particular
+engagement under this Agreement.
+
+2.11 "Time and Materials" or "T&M" means a billing arrangement under which the
+Client is billed based on the actual hours worked by each Contractor at the
+applicable Bill Rate, plus any approved out-of-pocket expenses.
+
+2.12 "Timesheet" means a document, whether electronic or paper, recording the
+hours worked by each Contractor during a given billing period, to be approved
+by an authorized representative of the Client.
+
+2.13 "Utilization Rate" means the percentage of a Contractor's available
+working hours that are spent performing billable work for the Client during
+a given period.
+
+2.14 "Work Week" means a period of seven (7) consecutive calendar days
+beginning on Monday at 12:00 a.m. and ending on Sunday at 11:59 p.m.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide IT staff augmentation
+services to the Client by supplying contracted technology professionals
+(Contractors) to supplement and support the Client's existing software
+development and technology operations teams. All Contractors shall perform
+services on-site at the Client's principal offices located at 900 Stamford
+Place, Stamford, CT 06902, under the day-to-day direction and supervision of
+the Client's engineering management.
+
+3.2 Initial Staffing. The initial engagement under this Agreement shall
+include the following contracted positions:
+
+    (a) Eight (8) Senior Software Engineers responsible for the design,
+        development, and maintenance of the Client's core financial services
+        platform, including backend microservices, API development, database
+        design, and integration with third-party payment processors;
+
+    (b) Four (4) DevOps Engineers responsible for the design, implementation,
+        and maintenance of CI/CD pipelines, cloud infrastructure management,
+        container orchestration, monitoring and alerting systems, and
+        infrastructure-as-code deployments across the Client's multi-cloud
+        environment;
+
+    (c) Two (2) Quality Assurance Leads responsible for the development and
+        execution of comprehensive test strategies, including automated
+        testing frameworks, performance testing, security testing, and
+        regression testing for the Client's financial services applications;
+
+    (d) One (1) Project Manager responsible for coordinating the activities
+        of the augmented team, managing project timelines and deliverables,
+        facilitating communication between Contractors and Client personnel,
+        and reporting project status to the Client's engineering leadership.
+
+3.3 Role Adjustments. The specific roles, headcount, and skill requirements
+of Contractors may be adjusted from time to time by mutual written agreement
+of the parties. Either party may request a change to the staffing composition
+by submitting a written Requisition to the other party. Any increase or
+decrease in headcount shall require thirty (30) calendar days' prior written
+notice and shall be subject to the availability of qualified candidates. Role
+adjustments shall be reviewed on a quarterly basis.
+
+3.4 Direction and Supervision. The Client shall provide day-to-day direction,
+supervision, and task assignment to all Contractors engaged under this
+Agreement. The Service Provider shall remain the employer of record for all
+Contractors and shall be responsible for all employment-related obligations,
+including payroll, benefits, workers' compensation, unemployment insurance,
+and tax withholdings. Nothing in this Agreement shall be construed to create
+an employment relationship between the Client and any Contractor.
+
+4. CONTRACTOR QUALIFICATIONS
+
+4.1 Minimum Experience. All Contractors engaged under this Agreement shall
+meet the minimum experience and qualification requirements specified in the
+applicable Role Descriptions attached hereto as Exhibit B. In general,
+Contractors shall possess a minimum of five (5) years of relevant professional
+experience in their assigned discipline and a bachelor's degree in computer
+science, information technology, or a related field from an accredited
+institution.
+
+4.2 Certifications. Where applicable, Contractors shall hold current and
+valid professional certifications relevant to their assigned roles, including
+but not limited to AWS Certified Solutions Architect, Microsoft Certified:
+Azure Solutions Architect, Certified Kubernetes Administrator (CKA), ISTQB
+Certified Tester, and Project Management Professional (PMP).
+
+4.3 Background Checks. Prior to the commencement of any engagement, the
+Service Provider shall conduct comprehensive background checks on all proposed
+Contractors, including verification of employment history, educational
+credentials, professional references, criminal history, and credit history
+(where permissible by applicable law). The results of all background checks
+shall be shared with the Client prior to the start of any engagement, and the
+Client reserves the right to reject any Contractor based on the results of
+such background checks.
+
+4.4 Drug Screening. The Service Provider shall ensure that all Contractors
+pass a pre-employment drug screening test in accordance with the Client's
+substance abuse policy, a copy of which is attached hereto as Exhibit C. The
+Service Provider shall also conduct random drug screening of Contractors at
+the Client's request, at no additional cost to the Client.
+
+5. RECRUITMENT PROCESS
+
+5.1 Sourcing. Upon receipt of a Requisition from the Client, the Service
+Provider shall utilize its internal recruitment databases, professional
+networks, job boards, and other sourcing channels to identify qualified
+candidates meeting the requirements specified in the Requisition and the
+applicable Skill Matrix.
+
+5.2 Screening. The Service Provider shall conduct initial screening of all
+candidates, including review of resumes and cover letters, preliminary phone
+interviews, skills assessments, and technical evaluations appropriate to the
+candidate's discipline and experience level.
+
+5.3 Technical Interviews. Candidates who successfully pass the initial
+screening process shall be presented to the Client for technical interviews.
+The Service Provider shall coordinate scheduling of technical interviews
+between candidates and the Client's engineering team and shall provide the
+Client with candidate profiles, assessment results, and availability
+information prior to each interview.
+
+5.4 Reference Checks. The Service Provider shall conduct a minimum of three
+(3) professional reference checks for each candidate presented to the Client,
+including verification of the candidate's technical skills, work quality,
+communication abilities, and reliability.
+
+5.5 Candidate Presentation Timeline. The Service Provider shall present
+qualified candidates to the Client within fifteen (15) business days of
+receipt of a Requisition. If the Service Provider is unable to present
+qualified candidates within this timeframe, the Service Provider shall notify
+the Client in writing and provide an estimated timeline for candidate
+presentation.
+
+6. ON-BOARDING AND OFF-BOARDING
+
+6.1 On-boarding. Upon selection of a Contractor by the Client, the Service
+Provider shall complete the on-boarding process within five (5) business days.
+The on-boarding process shall include completion of all required employment
+documentation, execution of confidentiality and intellectual property
+assignment agreements, coordination of equipment provisioning with the Client,
+setup of system and network access, and orientation to the Client's workplace
+policies and project requirements.
+
+6.2 Equipment. The Client shall provide all necessary hardware, software,
+development tools, and workspace accommodations required by Contractors to
+perform their assigned duties. The Service Provider shall be responsible for
+providing any specialized tools, software licenses, or equipment that are
+unique to the Service Provider's standard operating environment and not
+otherwise available from the Client.
+
+6.3 Off-boarding. Upon termination of a Contractor's engagement for any
+reason, the Service Provider shall coordinate with the Client to complete the
+off-boarding process within three (3) business days. The off-boarding process
+shall include the return of all Client-provided equipment and access
+credentials, completion of knowledge transfer documentation, submission of
+final timesheets, and a debrief meeting between the Service Provider and the
+Client to discuss the engagement and any lessons learned.
+
+6.4 Knowledge Transfer. The Service Provider shall ensure that each Contractor
+completes adequate knowledge transfer documentation prior to the conclusion of
+their engagement, including documentation of work in progress, pending issues,
+system configurations, and any other information necessary to ensure a smooth
+transition of responsibilities.
+
+7. PERFORMANCE MANAGEMENT
+
+7.1 Supervision. While performing services under this Agreement, each
+Contractor shall operate under the day-to-day direction and supervision of
+the Client's designated project leads and engineering managers. The Service
+Provider shall assign a dedicated account manager to serve as the primary
+point of contact between the Service Provider and the Client for all matters
+relating to Contractor performance, engagement status, and administrative
+issues.
+
+7.2 Feedback. The Client shall provide regular feedback to the Service
+Provider regarding the performance of each Contractor, including participation
+in quarterly performance reviews. The Service Provider shall use such feedback
+to ensure that Contractors continue to meet the Client's expectations and to
+identify any performance issues requiring corrective action.
+
+7.3 Performance Improvement. If the Client identifies performance deficiencies
+in any Contractor, the Client shall notify the Service Provider in writing,
+specifying the nature of the deficiencies and the expected improvements. The
+Service Provider shall work with the Contractor to develop a performance
+improvement plan and shall implement corrective measures within fifteen (15)
+business days of receiving the Client's notice.
+
+7.4 Replacement. If a Contractor fails to meet the performance standards
+specified in the performance improvement plan, or if the Client determines
+that a Contractor is unsuitable for any reason, the Service Provider shall
+replace the affected Contractor with a qualified substitute within fifteen
+(15) business days of receiving the Client's written request for replacement.
+The Service Provider shall bear all costs associated with the replacement
+process, including recruitment, screening, and on-boarding of the substitute
+Contractor, and the Client shall not be charged for any bench time incurred
+during the replacement period.
+
+8. TIME TRACKING AND BILLING
+
+8.1 Timesheet Submission. Each Contractor shall submit a weekly Timesheet
+documenting the hours worked during the preceding Work Week. Timesheets shall
+be submitted electronically through the Client's designated time tracking
+system no later than the close of business on the Friday of each Work Week.
+
+8.2 Timesheet Approval. An authorized representative of the Client shall
+review and approve or reject each submitted Timesheet within five (5) business
+days of submission. Approved Timesheets shall serve as the basis for invoicing.
+Any disputed hours shall be documented in writing and resolved between the
+parties within ten (10) business days.
+
+8.3 Invoicing. The Service Provider shall submit monthly invoices to the
+Client, aggregating all approved Timesheets for the preceding calendar month.
+Invoices shall be submitted no later than the fifth (5th) day of each month
+and shall include a detailed breakdown of hours worked by each Contractor,
+the applicable Bill Rate, and the total amount due.
+
+8.4 Minimum Billable Hours. Each Contractor shall be available to work a
+minimum of forty (40) hours per Work Week. The Client shall be billed for a
+minimum of forty (40) hours per Contractor per Work Week, regardless of
+whether the full forty (40) hours are worked, except during periods of
+Client-approved absence (vacation, holiday, illness) or bench time caused
+solely by the Client's failure to provide work assignments.
+
+8.5 Overtime. Any hours worked by a Contractor in excess of forty (40) hours
+in a Work Week shall be billed at the applicable overtime rate of one and
+one-half (1.5) times the Contractor's standard Bill Rate. Overtime work shall
+require the prior written approval of the Client's authorized representative,
+except in cases of emergency or critical production incidents requiring
+immediate attention.
+
+8.6 Rate Adjustments. The Bill Rates set forth in Exhibit A (Rate Card) shall
+remain in effect for the initial twelve (12) months of the Term. Thereafter,
+the Service Provider may propose annual rate adjustments, not to exceed five
+percent (5%) per annum, by providing the Client with sixty (60) calendar days'
+prior written notice. Any rate adjustment shall require the Client's written
+consent before taking effect.
+
+8.7 Audit Rights. The Client shall have the right to audit the Service
+Provider's timekeeping records, payroll records, and other documentation
+reasonably related to the billing of services under this Agreement, upon
+thirty (30) calendar days' prior written notice. Such audits shall be
+conducted during normal business hours and at the Client's expense, unless an
+audit reveals a billing discrepancy of more than five percent (5%), in which
+case the Service Provider shall bear the cost of the audit.
+
+9. WORKPLACE POLICIES
+
+9.1 Code of Conduct. All Contractors shall comply with the Client's code of
+conduct and professional standards of behavior while performing services on
+the Client's premises. The Service Provider shall ensure that all Contractors
+are informed of and agree to comply with the Client's code of conduct prior
+to the commencement of any engagement.
+
+9.2 Working Hours. Contractors shall generally work during the Client's
+standard business hours, which are 8:00 a.m. to 6:00 p.m. Eastern Time,
+Monday through Friday, unless otherwise agreed upon by the parties. The
+Client may authorize alternative work schedules on a case-by-case basis.
+
+9.3 Holiday Schedule. Contractors shall observe the Client's designated
+holiday schedule. The Client shall provide the Service Provider with the
+annual holiday schedule no later than December 1 of each year for the
+following calendar year. Contractors shall not be billed for time not worked
+due to Client-designated holidays.
+
+10. TERM
+
+10.1 Initial Term. This Agreement shall commence on the Effective Date and
+shall continue for a period of twenty-four (24) months, concluding on March
+31, 2027 (the "Initial Term"), unless earlier terminated in accordance with
+Section 16.
+
+10.2 Auto-Renewal. Upon expiration of the Initial Term and any subsequent
+renewal term, this Agreement shall automatically renew for successive twelve
+(12) month periods (each a "Renewal Term"), unless either party provides the
+other party with at least ninety (90) calendar days' prior written notice of
+its intent not to renew.
+
+10.3 Survival. Expiration or termination of this Agreement shall not affect
+any provisions that by their nature are intended to survive termination,
+including without limitation Sections 12 (Intellectual Property and Invention
+Assignment), 13 (Confidentiality), 14 (Anti-Poaching), 15 (Data Security),
+17 (Liability), 16 (Termination), 18 (Insurance), 19 (Dispute Resolution),
+and 21 (Governing Law).
+
+11. COMPENSATION
+
+11.1 Bill Rates. The Client shall pay the Service Provider for services
+rendered by Contractors at the following rates:
+
+    (a) Blended Rate: Ninety-five dollars ($95.00) per hour for standard
+        contractor positions;
+
+    (b) Senior Specialist Rate: One hundred twenty-five dollars ($125.00) per
+        hour for Contractors classified as senior specialists with ten (10) or
+        more years of relevant experience;
+
+    (c) Project Manager Rate: One hundred thirty-five dollars ($135.00) per
+        hour for Contractors engaged in project management roles.
+
+11.2 Overtime Rate. Hours worked in excess of forty (40) hours per Work Week
+shall be billed at one and one-half (1.5) times the applicable standard Bill
+Rate.
+
+11.3 Payment Terms. The Client shall pay all undisputed invoices within
+forty-five (45) days of receipt of the invoice from the Service Provider.
+Invoices shall be submitted by the Service Provider no later than the fifth
+(5th) calendar day of each month for services rendered during the preceding
+calendar month.
+
+11.4 Late Payments. Invoices not paid within forty-five (45) days of receipt
+shall be subject to interest at a rate of one and one-half percent (1.5%)
+per month, or the maximum rate permitted by applicable law, whichever is less,
+calculated from the due date until the date of actual payment.
+
+12. INTELLECTUAL PROPERTY AND INVENTION ASSIGNMENT
+
+12.1 Client Ownership. All work product, inventions, discoveries, designs,
+software code, documentation, technical specifications, and other intellectual
+property created, conceived, or reduced to practice by any Contractor in the
+course of performing services under this Agreement shall be the exclusive
+property of the Client (the "Client Work Product"). Each Contractor shall be
+required to execute an Invention Assignment Agreement in a form acceptable to
+the Client, assigning to the Client all rights, title, and interest in and to
+any Client Work Product.
+
+12.2 Service Provider Property. The Service Provider shall retain all right,
+title, and interest in its pre-existing intellectual property, including but
+not limited to its recruitment databases, candidate assessment methodologies,
+screening tools, training materials, and proprietary placement processes. The
+Service Provider grants the Client a non-exclusive, non-transferable license
+to use such pre-existing intellectual property solely in connection with the
+services provided under this Agreement.
+
+12.3 Moral Rights. To the fullest extent permitted by applicable law, each
+Contractor hereby waives all moral rights, rights of attribution, and rights
+of integrity that may exist in any Client Work Product.
+
+13. CONFIDENTIALITY
+
+13.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Confidential Information includes, without limitation, the Client's
+business plans, financial data, customer information, software source code,
+system architectures, security protocols, and proprietary algorithms, as well
+as the Service Provider's recruitment methodologies, candidate databases,
+pricing structures, and proprietary screening processes.
+
+13.2 Duration. The obligations of confidentiality set forth in this Section 13
+shall survive the expiration or termination of this Agreement for a period of
+five (5) years.
+
+14. ANTI-POACHING
+
+14.1 Restriction. During the Term of this Agreement and for a period of twelve
+(12) months following the expiration or termination of this Agreement (the
+"Restricted Period"), the Client shall not, directly or indirectly, solicit,
+recruit, hire, or engage as an employee, independent contractor, or consultant
+any individual who was engaged as a Contractor under this Agreement, or who
+was presented to the Client as a candidate by the Service Provider during the
+preceding six (6) months, without the prior written consent of the Service
+Provider.
+
+14.2 Buy-Out Provision. Notwithstanding the foregoing restriction, the Client
+may hire a Contractor directly during the Restricted Period upon payment to
+the Service Provider of a buy-out fee equal to twenty percent (20%) of the
+Contractor's projected annual compensation (based on the applicable Bill Rate
+times two thousand eighty (2,080) hours), payable within thirty (30) days of
+the Contractor's start date as a Client employee.
+
+15. DATA SECURITY
+
+15.1 Security Requirements. The Service Provider shall ensure that all
+Contractors comply with the Client's information security policies and
+procedures, including requirements for password management, data encryption,
+access control, and the handling of sensitive financial data. Each Contractor
+shall execute the Client's standard Non-Disclosure Agreement prior to being
+granted access to any Client systems or data.
+
+15.2 Device Management. All devices used by Contractors to access Client
+systems or data shall be managed in accordance with the Client's device
+management policies, including installation of required security software,
+remote wipe capabilities, and regular security updates.
+
+16. TERMINATION
+
+16.1 Individual Contractor Termination. Either party may terminate the
+engagement of an individual Contractor upon thirty (30) calendar days' prior
+written notice to the other party. The Service Provider shall be entitled to
+bill for all hours worked and expenses incurred by the terminated Contractor
+through the effective date of termination.
+
+16.2 Full Agreement Termination. Either party may terminate this Agreement
+in its entirety upon sixty (60) calendar days' prior written notice to the
+other party. Upon termination of the full Agreement, the Service Provider
+shall be entitled to payment for all services satisfactorily performed and
+expenses incurred through the effective date of termination.
+
+16.3 Termination for Cause. Either party may terminate this Agreement or the
+engagement of any individual Contractor for cause if the other party commits
+a material breach of any provision of this Agreement and fails to cure such
+breach within ten (10) calendar days after receiving written notice specifying
+the nature of the breach in reasonable detail.
+
+16.4 Payment Upon Termination. Upon termination of the full Agreement for any
+reason, the Client shall pay all undisputed invoices for services rendered
+through the effective date of termination within forty-five (45) days of such
+effective date.
+
+17. LIABILITY
+
+17.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING
+BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF DATA, BUSINESS INTERRUPTION, OR
+LOSS OF OPPORTUNITY, ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE
+PERFORMANCE OF SERVICES HEREUNDER, REGARDLESS OF WHETHER SUCH DAMAGES ARE
+BASED ON CONTRACT, TORT, STRICT LIABILITY, ANY OTHER LEGAL THEORY, AND EVEN
+IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+17.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement, whether in contract,
+tort, or otherwise, shall not exceed an amount equal to three (3) months of
+fees for the affected Contractor(s) that gave rise to the claim. For purposes
+of calculating this cap, fees shall be calculated based on the applicable Bill
+Rate multiplied by the minimum billable hours per week (40) multiplied by
+thirteen (13) weeks, or such shorter period applicable to the affected
+Contractor(s).
+
+18. INSURANCE
+
+18.1 Professional Liability. Throughout the term of this Agreement, the
+Service Provider shall maintain professional liability (errors and omissions)
+insurance in an amount not less than one million dollars ($1,000,000.00) per
+claim, covering claims arising from negligent acts, errors, or omissions in
+the provision of staffing services under this Agreement.
+
+18.2 General Liability. Throughout the term of this Agreement, the Service
+Provider shall maintain commercial general liability insurance in an amount not
+less than one million dollars ($1,000,000.00) per occurrence, covering bodily
+injury, property damage, and personal and advertising injury arising from the
+Service Provider's operations in connection with this Agreement.
+
+18.3 Workers' Compensation. Throughout the term of this Agreement, the
+Service Provider shall maintain workers' compensation insurance in accordance
+with the requirements of the State of New Jersey and the State of Connecticut,
+with employer's liability coverage of not less than five hundred thousand
+dollars ($500,000.00).
+
+18.4 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies.
+
+19. DISPUTE RESOLUTION
+
+19.1 Negotiation. In the event of any dispute arising out of or relating to
+this Agreement, the parties shall first attempt to resolve such dispute
+through good faith negotiations between senior executives of each party for a
+period of not less than thirty (30) calendar days.
+
+19.2 Arbitration. If the parties are unable to resolve a dispute through
+negotiation, such dispute shall be submitted to binding arbitration in
+Stamford, Connecticut, in accordance with the commercial arbitration rules of
+the American Arbitration Association (AAA) then in effect. The decision of
+the arbitrator shall be final and binding, and judgment upon the award may be
+entered in any court of competent jurisdiction.
+
+20. FORCE MAJEURE
+
+Neither party shall be liable for any failure or delay in the performance of
+its obligations under this Agreement to the extent that such failure or delay
+is caused by circumstances beyond the reasonable control of the affected
+party, including but not limited to acts of God, natural disasters, pandemics,
+government actions, labor disputes, civil unrest, war, terrorism, power or
+telecommunications failures, and public health emergencies. The affected party
+shall notify the other party promptly in writing of the force majeure event
+and its expected duration, and shall use commercially reasonable efforts to
+mitigate its impact on the performance of its obligations under this Agreement.
+
+21. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the State of Connecticut, without giving effect to any choice-of-law or
+conflict-of-law provisions that would require the application of the laws of
+any jurisdiction other than the State of Connecticut.
+
+22. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A: Rate Card — Detailed schedule of Bill Rates for all Contractor
+                classifications, including standard rates, senior specialist
+                rates, project management rates, and overtime multipliers
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: Role Descriptions — Detailed descriptions of each Contractor
+                role, including required qualifications, responsibilities, and
+                performance expectations
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: Background Check Policy — Service Provider's standard
+                background check procedures, screening criteria, and
+                compliance requirements
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+23. GENERAL PROVISIONS
+
+23.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the
+subject matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written, between
+the parties relating to such subject matter.
+
+23.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+23.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the other
+party, except that either party may assign this Agreement to a successor entity
+in connection with a merger, acquisition, or sale of all or substantially all
+of its assets.
+
+23.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such provision
+shall be modified to the minimum extent necessary to make it valid and
+enforceable, and the remaining provisions of this Agreement shall continue in
+full force and effect.
+
+23.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+23.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b)
+sent by certified mail, return receipt requested, (c) sent by nationally
+recognized overnight courier, or (d) sent by email with confirmation of
+receipt, to the addresses set forth in Section 1 or such other address as
+either party may designate in writing.
+
+23.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties. The
+parties expressly acknowledge that the Service Provider is the sole employer
+of all Contractors and that the Client's direction and supervision of
+Contractors does not create an employment or co-employment relationship
+between the Client and any Contractor.
+
+23.8 Non-Exclusivity. This Agreement does not grant the Service Provider an
+exclusive right to provide staffing services to the Client. The Client may
+engage other staffing providers or hire employees directly to perform services
+similar to those provided under this Agreement, subject to the anti-poaching
+restrictions set forth in Section 14.
+
+24. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this IT Staff Augmentation
+Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+TalentBridge IT Staffing Corp., a New Jersey corporation
+
+
+By: ______________________________________
+Name: Gregory Norton
+Title: President
+Date: March 27, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Catherine R. Bellows
+Title: General Counsel
+Date: March 27, 2025
+
+
+CLIENT:
+
+Quantum Financial Technologies Inc., a Connecticut corporation
+
+
+By: ______________________________________
+Name: Linda Moretti
+Title: VP Engineering
+Date: March 30, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Robert J. Angstrom
+Title: Director of Human Resources
+Date: March 30, 2025

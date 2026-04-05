@@ -1,0 +1,397 @@
+SOFTWARE DEVELOPMENT SERVICES AGREEMENT
+
+This Software Development Services Agreement (the "Agreement") is entered into as of April 1, 2025 (the "Effective Date"), by and between the parties identified in Section 1 below. This Agreement governs the engagement of professional software development services for the design, engineering, testing, and deployment of a consumer-facing mobile banking application platform.
+
+WHEREAS, the global financial technology sector has undergone transformative change in recent years, with mobile banking adoption rates increasing by over forty percent annually across developed and emerging markets alike, driven by ubiquitous smartphone penetration, the proliferation of high-speed mobile networks, and a generational shift in consumer preferences toward digital-first financial interactions, such that traditional branch-based banking models are rapidly becoming supplementary rather than primary channels for retail customer engagement;
+
+WHEREAS, the emergence of neobank and challenger bank platforms across the United Kingdom, the European Economic Area, and other major financial markets has fundamentally altered competitive dynamics within the retail banking sector, compelling established financial institutions such as the Client to invest substantially in digital transformation initiatives in order to retain existing customers, attract digitally native demographic segments, and maintain market share against agile, technology-native competitors unencumbered by legacy infrastructure and legacy operational costs;
+
+WHEREAS, the regulatory landscape governing digital financial services has evolved significantly in recent years, most notably through the implementation of the Revised Payment Services Directive (PSD2) within the European Economic Area, which mandates open banking interfaces and third-party access to payment account data through regulated application programming interfaces, thereby creating both opportunities and obligations for financial institutions seeking to leverage ecosystem partnerships while maintaining robust security and compliance postures;
+
+WHEREAS, the Open Banking Implementation Entity and equivalent regulatory frameworks have established technical standards for application programming interface design, data sharing, and customer consent management that require financial institutions to implement secure, scalable, and interoperable technology platforms capable of supporting account information services, payment initiation services, and confirmation of funds services in compliance with applicable regulatory mandates and industry best practices;
+
+WHEREAS, the Client, as a regulated financial institution operating within the jurisdiction of England and Wales, is subject to oversight by the Financial Conduct Authority and must ensure that any technology solutions deployed in connection with its retail banking operations comply with all applicable laws, regulations, and industry standards, including but not limited to the Payment Services Regulations 2017, the General Data Protection Regulation (EU) 2016/679, the UK GDPR as retained in domestic law, the Data Protection Act 2018, and the Payment Card Industry Data Security Standard;
+
+WHEREAS, the increasing sophistication and frequency of cyber security threats targeting financial services institutions, including distributed denial of service attacks, credential stuffing, social engineering, supply chain compromise, and advanced persistent threats, necessitates the implementation of comprehensive security architectures incorporating defense-in-depth strategies, real-time threat monitoring, automated fraud detection algorithms, and rigorous penetration testing protocols to safeguard customer assets, sensitive financial data, and institutional reputation;
+
+WHEREAS, the Service Provider possesses specialized expertise in the architecture, development, and delivery of mobile application solutions tailored to the financial services industry, with demonstrated experience in building platforms that meet the rigorous security, reliability, and performance standards required of institutions operating under regulatory supervision, and with a proven track record of successful engagements involving the design and delivery of consumer-facing financial technology products for regulated entities in multiple jurisdictions;
+
+WHEREAS, the parties have engaged in extensive preliminary discussions, due diligence processes, and commercial negotiations and have determined that their respective capabilities, strategic objectives, and operational requirements are sufficiently aligned to warrant the formal engagement contemplated by this Agreement, subject to the terms, conditions, representations, warranties, and limitations set forth herein; and
+
+WHEREAS, the parties desire to formalize their respective rights and obligations with respect to the engagement described herein, and to establish a comprehensive framework governing the technical, commercial, and legal aspects of the project throughout its anticipated duration, including but not limited to the allocation of intellectual property rights, the management of project risk, the governance of change control, and the resolution of disputes that may arise in the course of performance;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and agreements contained herein, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the parties agree as follows:
+
+SECTION 1 — PARTIES AND IDENTIFICATION
+
+1.1 Service Provider. The development services contemplated by this Agreement shall be provided by Apex Digital Agency, a limited liability company duly organized and existing under the laws of the State of Delaware, United States of America, with its principal place of business located at 1024 Tech Lane, San Francisco, CA 94105. For purposes of notices and official correspondence under this Agreement, the Service Provider's authorized representative shall be Lisa Nakamura, serving in the capacity of Chief Technology Officer. The Service Provider warrants that it possesses all requisite licenses, permits, and authorizations necessary to perform the obligations set forth in this Agreement and that it is not subject to any restriction, order, or judgment that would impair its ability to do so.
+
+1.2 Client. The recipient of development services under this Agreement is Summit Financial Services Ltd., a company incorporated under the laws of England and Wales, with its registered office located at 15 Canary Wharf, London E14 5AB, United Kingdom. The Client represents that it is a duly authorized financial institution operating under the regulatory supervision of the Financial Conduct Authority. The Client's authorized representative for purposes of this Agreement shall be James Whitfield, holding the title of Director of Digital Transformation. The Client warrants that the execution and delivery of this Agreement and the performance of its obligations hereunder have been duly authorized by all necessary corporate action.
+
+1.3 Contract Identification. For administrative, tracking, and reference purposes, the parties have assigned the unique identifier DEV-2025-4421 to this Agreement. This identifier shall appear on all invoices, project documentation, change requests, and formal correspondence exchanged between the parties in connection with the project described herein.
+
+SECTION 2 — DEFINITIONS AND INTERPRETATION
+
+2.1 Definitions. For the purposes of this Agreement, the following terms shall have the meanings ascribed to them below, unless the context clearly requires otherwise:
+
+"API Gateway" means the centralized entry point through which all external client requests to the Application's back-end services are routed, authenticated, rate-limited, and transformed, serving as a single point of enforcement for security policies, traffic management, request validation, and protocol translation between external-facing interfaces and internal microservice endpoints.
+
+"Application" means the complete software application platform to be designed, developed, tested, and deployed pursuant to this Agreement, including all front-end user interfaces, back-end server components, database architectures, application programming interfaces, and integrated third-party services, as further described in the Statement of Work attached hereto as Exhibit A.
+
+"Back-End Services" means the server-side infrastructure, middleware, database management systems, message queues, caching layers, and API gateway components that collectively support the operation, data processing, and integration requirements of the Application.
+
+"Biometric Authentication" means the verification of a user's identity through the measurement and analysis of unique biological characteristics, including but not limited to fingerprint patterns, facial geometry, iris recognition, and voice authentication, utilizing device-native biometric hardware sensors and secure enclave processing capabilities where supported by the end user's device.
+
+"Beta Testing" means the pre-release testing phase during which a limited cohort of end users, selected by the Client, interacts with a near-final version of the Application under controlled conditions for the purpose of identifying defects, usability issues, and performance bottlenecks prior to general availability.
+
+"CI/CD Pipeline" means the automated workflow infrastructure that orchestrates the continuous integration of code changes from multiple contributors, the execution of automated test suites, the generation of build artifacts, and the continuous deployment of validated builds to designated environments, encompassing code commit triggers, build orchestration, automated quality gates, and environment-specific deployment configurations.
+
+"Code Review" means the formal examination of source code submissions by qualified engineering personnel not involved in the original authorship of such code, conducted in accordance with the quality assurance procedures set forth in Exhibit B, for the purpose of identifying defects, ensuring adherence to coding standards, and verifying compliance with security requirements.
+
+"Confidential Information" means any and all non-public information, whether written, oral, electronic, or visual, disclosed by one party to the other in connection with this Agreement, including but not limited to business plans, financial data, customer information, technical specifications, source code, algorithms, trade secrets, and any information designated as confidential by the disclosing party.
+
+"Continuous Deployment" means the software release practice in which all code changes that pass the automated testing pipeline are automatically deployed to the target environment without requiring manual intervention, subject to pre-configured approval gates, canary release strategies, and automated rollback triggers designed to minimize the risk of deploying defective code to production.
+
+"Data Encryption" means the process of converting plaintext data into an encoded format using cryptographic algorithms and keys, rendering such data unintelligible to unauthorized parties, encompassing both symmetric encryption for data at rest using algorithms such as AES-256 and asymmetric encryption for data in transit using protocols such as TLS 1.3, in accordance with the encryption standards specified in the Security Architecture document attached hereto as Exhibit I.
+
+"Deployment Environment" means the production infrastructure, including cloud computing resources, content delivery networks, load balancers, domain name configurations, and SSL/TLS certificates, upon which the Application shall be made available to end users following successful completion of acceptance testing.
+
+"Development Environment" means the integrated suite of tools, platforms, and infrastructure used by the Service Provider during the course of development, including integrated development environments, version control repositories, continuous integration and continuous deployment pipelines, automated testing frameworks, staging servers, and sandbox environments configured to mirror the production Deployment Environment to the greatest extent practicable.
+
+"FCA" means the Financial Conduct Authority, the financial services regulatory authority in the United Kingdom established under the Financial Services and Markets Act 2000, as amended, responsible for the authorization, supervision, and enforcement of conduct standards applicable to the Client's retail banking operations.
+
+"Financial Regulator" means the Financial Conduct Authority, the Prudential Regulation Authority, or any successor body, as well as any other regulatory authority having jurisdiction over the Client's banking operations in any relevant jurisdiction.
+
+"Force Majeure" means any event or circumstance beyond the reasonable control of the affected party, including but not limited to acts of God, natural disasters, war, terrorism, civil unrest, pandemic, government action, failure of third-party infrastructure providers, or widespread internet outage, that prevents or materially impairs the affected party's ability to perform its obligations under this Agreement.
+
+"GDPR" means the General Data Protection Regulation (EU) 2016/679, as well as the UK General Data Protection Regulation as retained in domestic law following the withdrawal of the United Kingdom from the European Union, together with any applicable implementing legislation including the Data Protection Act 2018.
+
+"Load Testing" means the performance testing methodology in which the Application and its supporting infrastructure are subjected to simulated user traffic at predetermined volume levels, typically expressed as concurrent users, requests per second, or transactions per minute, for the purpose of identifying performance bottlenecks, determining system capacity thresholds, and validating that the Application meets its specified performance and scalability requirements under anticipated and peak load conditions.
+
+"Microservice" means a self-contained software component that encapsulates a single, narrowly defined business capability, communicates with other components through well-defined application programming interfaces over lightweight protocols, and can be independently developed, deployed, scaled, and maintained, forming the fundamental architectural unit of the Application's back-end service topology.
+
+"Milestone" means a discrete deliverable or set of deliverables identified in the project schedule set forth in Section 4 of this Agreement, the completion of which triggers a payment obligation on the part of the Client pursuant to Section 5.
+
+"PCI DSS" or "Payment Card Industry Data Security Standard" means the set of security standards established by the Payment Card Industry Security Standards Council, applicable to any entity that stores, processes, or transmits cardholder data, as may be updated from time to time, currently at version 4.0.
+
+"Penetration Test" means an authorized, simulated cyber attack conducted against the Application and its supporting infrastructure by qualified security professionals using both automated scanning tools and manual exploitation techniques, for the purpose of identifying vulnerabilities, validating the effectiveness of security controls, and assessing the overall security posture of the system prior to deployment to the production environment.
+
+"Project" means the overall software development engagement described in this Agreement, encompassing all phases of work from initial discovery through final deployment and launch.
+
+"Regression Testing" means the selective re-execution of a subset of the Application's existing automated test suite following the introduction of new code changes, bug fixes, or configuration modifications, for the purpose of verifying that previously functioning features and behaviors have not been adversely affected by the changes under review.
+
+"Release Candidate" means a version of the Application that has completed all development, quality assurance, and testing activities and has been designated by the Service Provider as ready for deployment to the target environment, subject to final approval by the Client in accordance with the acceptance procedures set forth in Section 8.
+
+"Sandbox" means an isolated, controlled computing environment that replicates the configuration and behavior of the production Deployment Environment but operates on separate infrastructure with no connectivity to production systems, live data, or real end users, used for the purpose of safely testing new features, configuration changes, and integration scenarios without risk to the production environment.
+
+"SDK" or "Software Development Kit" means a collection of software development tools, libraries, documentation, sample code, and configuration files provided by the Service Provider to facilitate the integration of the Application's services with the Client's internal systems and authorized third-party platforms, as further described in the API Integration Requirements attached hereto as Exhibit E.
+
+"SIT" or "System Integration Testing" means the testing phase in which individual components, modules, and services of the Application are combined and tested as an integrated system for the purpose of verifying that component interfaces function correctly, data flows accurately between integrated systems, end-to-end business processes execute as specified, and cross-system dependencies are properly managed.
+
+"Source Code" means the human-readable programming instructions, in any programming language, that constitute the Application, excluding compiled binary files, object code, and machine-readable representations thereof.
+
+"Technical Debt" means the cumulative cost of suboptimal architectural decisions, shortcuts taken during development, deferred refactoring, incomplete documentation, and other compromises made during the course of the Project that may increase the complexity, reduce the maintainability, or elevate the risk profile of the Application over its lifecycle, which the Service Provider agrees to manage and minimize through disciplined engineering practices as described in Section 3A.
+
+"UAT" or "User Acceptance Testing" means the formal testing process conducted by the Client, or by the Client's designated representatives, to determine whether the Application meets the acceptance criteria set forth in the Statement of Work and conforms to the functional and non-functional requirements specified therein.
+
+"User Story" means a concise, natural-language description of a software feature written from the perspective of an end user or stakeholder, typically following the format "As a [role], I want [capability], so that [benefit]," used as the primary unit of requirements definition and sprint planning within the agile development methodology described in Section 3A.
+
+"Wire Transfer" means the electronic transfer of funds between bank accounts through a secure financial messaging network, such as SWIFT, Fedwire, or SEPA, as mutually agreed by the parties.
+
+2.2 Interpretation. In this Agreement, unless the context otherwise requires: (a) words importing the singular include the plural and vice versa; (b) references to clauses, schedules, and exhibits are references to clauses, schedules, and exhibits of or to this Agreement; (c) references to statutes or statutory provisions include any subordinate legislation made under them and any modification, amendment, or re-enactment of them; (d) the words "include," "including," and "in particular" shall be construed without limitation; and (e) references to days shall mean calendar days unless expressly specified as business days, with business days defined as days other than Saturday, Sunday, and public holidays in the relevant jurisdiction.
+
+SECTION 3 — SCOPE OF SERVICES
+
+3.1 Description of Services. The Service Provider shall, in accordance with the terms and conditions of this Agreement, perform all services necessary to design, develop, test, and deploy a fully functional customer-facing mobile banking application for both the iOS and Android operating systems (collectively, the "Application"). The Application shall include, at a minimum, the following functional modules and capabilities: (a) user authentication and identity verification, including multi-factor authentication and biometric login; (b) account management, enabling end users to view account balances, manage account settings, and update personal information; (c) fund transfer functionality, supporting both domestic and international transfers between accounts held at the Client and accounts held at third-party financial institutions; (d) bill payment services, enabling end users to schedule and execute payments to registered payees and utility providers; and (e) transaction history and reporting, providing end users with searchable, filterable, and exportable records of all transactions associated with their accounts.
+
+3.2 Out of Scope. The following items are expressly excluded from the scope of services under this Agreement: (a) integration with legacy mainframe systems operated by the Client; (b) development of a desktop or web-browser version of the Application; (c) hardware procurement, provisioning, or configuration of on-premises servers; (d) procurement of third-party software licenses required for the Deployment Environment; and (e) any services not expressly identified in Section 3.1 or the Statement of Work attached hereto as Exhibit A.
+
+SECTION 3A — DEVELOPMENT METHODOLOGY
+
+3A.1 Agile Framework. The Service Provider shall execute the development phases of the Project in accordance with agile software development principles, specifically adopting the Scrum framework as the primary project management methodology. The development effort shall be organized into a series of iterative sprint cycles, each of two (2) calendar weeks' duration, during which a defined increment of potentially shippable product functionality shall be designed, developed, tested, and demonstrated to the Client. The agile approach is intended to promote adaptive planning, early delivery, continuous improvement, and rapid response to change throughout the Project lifecycle.
+
+3A.2 Sprint Planning. At the commencement of each sprint cycle, the Service Provider shall conduct a sprint planning ceremony attended by the development team, the Scrum Master, the product owner, and such Client representatives as the Client may designate. During sprint planning, the team shall review the prioritized product backlog, estimate the effort required for each User Story using the Service Provider's standard estimation methodology, select a subset of User Stories that the team commits to completing during the upcoming sprint, and decompose each selected User Story into discrete technical tasks with clear acceptance criteria and ownership assignments.
+
+3A.3 Daily Coordination. The Service Provider shall conduct daily stand-up coordination sessions during each sprint, lasting no more than fifteen (15) minutes, during which each member of the development team shall briefly report on: (a) the tasks completed since the previous session; (b) the tasks planned for the current day; and (c) any impediments or blockers that are preventing progress. The Client shall be entitled to observe these daily sessions upon reasonable notice, and a summary of impediments shall be communicated to the Client's designated representative within one (1) business day of identification.
+
+3A.4 Sprint Review and Retrospective. At the conclusion of each sprint cycle, the Service Provider shall conduct a sprint review demonstration during which the completed increment shall be presented to the Client for feedback and preliminary assessment. Following the sprint review, the Service Provider shall conduct a sprint retrospective, which is an internal team reflection exercise designed to identify process improvements, address team dynamics, and implement corrective actions for subsequent sprints. A summary of retrospective outcomes and resulting process adjustments shall be shared with the Client upon request.
+
+3A.5 Velocity Tracking and Reporting. The Service Provider shall track team velocity, which is the aggregate measure of work completed per sprint, and shall use velocity data to refine release forecasts, inform capacity planning, and manage stakeholder expectations. Bi-weekly progress reports shall include velocity trend charts, burndown or burnup visualizations, cumulative flow diagrams, and a summary of completed, in-progress, and deferred User Stories, delivered to the Client's designated representative within three (3) business days following the conclusion of each sprint.
+
+SECTION 3B — TECHNICAL ARCHITECTURE
+
+3B.1 Microservices Architecture. The Application's back-end services shall be designed and implemented using a microservices architecture pattern, in which the overall system is decomposed into a set of loosely coupled, independently deployable Microservice components, each responsible for a bounded domain of business functionality. Inter-service communication shall be conducted over lightweight protocols, with synchronous request-response interactions mediated through the API Gateway using representational state transfer (REST) conventions and asynchronous event-driven interactions facilitated through a message broker infrastructure. This architectural approach is intended to promote service autonomy, fault isolation, independent scalability, and technology flexibility across the Application's back-end topology.
+
+3B.2 API Design Standards. All application programming interfaces exposed by the Application's back-end services, whether internal service-to-service interfaces or external client-facing endpoints, shall be designed in accordance with RESTful design principles and the OpenAPI Specification (formerly Swagger) version 3.0 or higher. Each API endpoint shall be documented with comprehensive request and response schemas, authentication and authorization requirements, rate limiting policies, error response formats, and versioning strategies. The Service Provider shall maintain a centralized API catalog and developer documentation portal, which shall be made available to the Client and its authorized integration partners as described in the API Specification attached hereto as Exhibit J.
+
+3B.3 Database Architecture. The Application shall employ a polyglot persistence strategy, utilizing multiple database technologies selected for their suitability to specific data storage and access patterns. Relational database management systems shall be employed for structured transactional data requiring strong consistency guarantees, document-oriented databases shall be utilized for semi-structured configuration and preference data requiring flexible schema evolution, and in-memory data stores shall be deployed for high-performance caching of frequently accessed reference data and session state. Database schema designs, migration strategies, backup procedures, and disaster recovery configurations shall be documented in the Architecture Document attached hereto as Exhibit K.
+
+3B.4 Caching and Content Delivery. The Service Provider shall implement a multi-tier caching strategy comprising application-level caching for computed results and derived data, distributed caching for shared session state and frequently accessed reference data, and edge caching through a content delivery network for static assets including images, fonts, stylesheets, and JavaScript bundles. Cache invalidation policies, time-to-live configurations, and cache warming procedures shall be documented in the Architecture Document attached hereto as Exhibit K.
+
+SECTION 3C — SECURITY ARCHITECTURE
+
+3C.1 Encryption Standards. All data transmitted between the Application and the Back-End Services shall be encrypted in transit using Transport Layer Security (TLS) version 1.2 or higher, with strong cipher suites approved by the Service Provider's information security team. All sensitive data at rest, including but not limited to user credentials, personal identification information, and financial transaction data, shall be encrypted using AES-256 encryption or an equivalent encryption standard approved by the Client's information security team. The Service Provider shall implement key management practices in accordance with industry standards, including automated key rotation, secure key storage using hardware security modules where available, and documented key escrow and recovery procedures.
+
+3C.2 Tokenization and Data Protection. The Application shall implement tokenization for sensitive payment card data, replacing primary account numbers with non-reversible tokens that maintain the format and length of the original data for processing purposes while rendering the sensitive cardholder data unusable in the event of unauthorized access. The tokenization service shall be implemented in compliance with PCI DSS requirements and shall ensure that clear-text cardholder data does not traverse or reside on the Application's servers at any point during the transaction lifecycle.
+
+3C.3 Fraud Detection. The Application shall integrate a real-time fraud detection and prevention system capable of analyzing transaction patterns, device fingerprints, geolocation data, behavioral biometrics, and historical activity profiles to identify and flag potentially fraudulent transactions for additional verification or automated blockage. Fraud detection rules, risk scoring algorithms, and alerting thresholds shall be configurable by the Client's risk management team through an administrative interface, and all fraud detection events shall be logged for audit and compliance purposes.
+
+3C.4 Session Management. The Application shall implement secure token-based session management using short-lived JSON Web Tokens with configurable expiration periods, secure cookie attributes including HttpOnly, Secure, and SameSite directives, and automatic session invalidation upon detection of anomalous activity including concurrent session usage from geographically distant locations, device fingerprint changes, and excessive failed authentication attempts. Session tokens shall be transmitted exclusively over encrypted channels and shall not be persisted in local storage on the client device.
+
+SECTION 3D — TESTING STRATEGY
+
+3D.1 Unit Testing. The Service Provider shall implement comprehensive unit testing across all components of the Application, targeting a minimum code coverage threshold of eighty percent (80%) for all back-end service components and seventy percent (70%) for all front-end application components. Unit tests shall be automated, repeatable, and integrated into the CI/CD Pipeline such that all unit tests execute automatically upon each code commit, with build failures triggered by any test regression. The Service Provider shall provide the Client with periodic code coverage reports and test execution summaries as part of the standard project reporting cadence.
+
+3D.2 Integration Testing and System Integration Testing. The Service Provider shall conduct integration testing at the component level to verify that individual modules and services interact correctly through their defined interfaces, and shall conduct System Integration Testing (SIT) to validate that the complete Application functions correctly as an integrated system, including verification of data flows between the Application and all integrated third-party services, correct handling of error conditions and edge cases across service boundaries, and proper orchestration of multi-step business processes that span multiple microservices.
+
+3D.3 End-to-End Testing. The Service Provider shall implement automated end-to-end testing scenarios that exercise critical user journeys through the Application from initial launch through task completion, including but not limited to the new user registration and onboarding flow, the login and multi-factor authentication flow, the domestic fund transfer flow, the bill payment flow, and the transaction history retrieval flow. End-to-end tests shall execute against a fully integrated staging environment that replicates the production Deployment Environment configuration.
+
+3D.4 Performance Testing and Load Testing. The Service Provider shall conduct comprehensive performance testing to validate that the Application meets all specified performance requirements, including but not limited to response time thresholds for critical API endpoints under normal and peak load conditions, throughput capacity measured in transactions per second, concurrent user support, and resource utilization efficiency. Load Testing shall be conducted at progressively increasing volumes to establish the Application's performance envelope, identify scaling thresholds, and validate auto-scaling behaviors of the back-end infrastructure.
+
+3D.5 Accessibility Testing. The Service Provider shall conduct accessibility testing of the Application in accordance with the Web Content Accessibility Guidelines (WCAG) version 2.1 at the AA conformance level, as further described in Section 3E of this Agreement. Accessibility testing shall include automated scanning using industry-standard accessibility testing tools, manual testing by personnel familiar with assistive technology usage patterns, and testing with actual screen reader software on both iOS and Android platforms.
+
+SECTION 3E — ACCESSIBILITY COMPLIANCE
+
+3E.1 WCAG 2.1 Conformance. The Application shall be designed, developed, and tested to conform to the Web Content Accessibility Guidelines (WCAG) version 2.1 at the AA conformance level, encompassing compliance with all Level A and Level AA success criteria across the four principles of accessibility: perceivable, operable, understandable, and robust. The Service Provider shall document the Application's accessibility compliance posture in the Accessibility Conformance Report, which shall be delivered as part of the Phase Three deliverables.
+
+3E.2 Screen Reader Compatibility. The Application shall be fully compatible with the built-in screen reader technologies provided by the iOS and Android operating systems, namely VoiceOver on iOS and TalkBack on Android. All interactive elements, form fields, navigation components, status messages, and dynamic content updates shall be accessible via screen reader navigation, with appropriate accessibility labels, hints, and roles configured in accordance with the platform-specific accessibility programming interfaces. The Service Provider shall verify screen reader compatibility through manual testing conducted by personnel proficient in assistive technology usage.
+
+3E.3 Visual Accessibility. The Application shall maintain minimum color contrast ratios of 4.5:1 for normal text and 3:1 for large text in accordance with WCAG 2.1 AA success criterion 1.4.3. The Application shall not rely solely on color to convey information, indicate status, or differentiate interactive elements. All images, icons, and graphical elements that convey meaningful information shall be accompanied by descriptive text alternatives. The Application shall support dynamic text sizing and respect the user's system-level text size preferences up to a minimum scaling factor of 200 percent without loss of content or functionality.
+
+SECTION 3F — DEPLOYMENT PIPELINE
+
+3F.1 CI/CD Infrastructure. The Service Provider shall establish and maintain a fully automated continuous integration and continuous deployment pipeline encompassing source code management, automated build orchestration, multi-stage testing execution, artifact management, and environment provisioning. The CI/CD Pipeline shall be configured to trigger automatically upon each code commit to the designated integration branch, executing the full suite of automated tests and applying quality gates that must be satisfied before a build is promoted to the next stage of the pipeline.
+
+3F.2 Staging Environments. The Service Provider shall maintain dedicated staging environments that replicate the production Deployment Environment in terms of hardware specifications, software configurations, network topology, and data volume, for the purpose of conducting final validation testing, performance testing, and client acceptance testing prior to production deployment. Data used in the staging environment shall be synthetically generated or anonymized production data, and no live customer data shall be present in any non-production environment.
+
+3F.3 Blue-Green Deployment. The Service Provider shall implement a blue-green deployment strategy for production releases, maintaining two identical production environments and routing user traffic between them in a controlled manner during deployment operations. New releases shall be deployed to the inactive environment, subjected to automated smoke testing and health check validation, and then promoted to active status through traffic rerouting, with the previous environment retained in standby for immediate rollback if post-deployment monitoring indicates anomalies or defects.
+
+3F.4 Rollback Procedures. The Service Provider shall maintain documented rollback procedures for each production deployment, including automated rollback triggers based on predefined error rate thresholds, manual rollback procedures accessible to the on-call engineering team, and verification steps to confirm successful restoration of the previous stable version. Rollback procedures shall be tested and validated during the Phase Three testing activities and shall be documented in the Deployment Runbook attached hereto as Exhibit L.
+
+SECTION 4 — PROJECT SCHEDULE AND MILESTONES
+
+4.1 Phase One — Discovery and Design. The initial phase of the Project shall commence on April 1, 2025, and shall continue through May 31, 2025. During this phase, the Service Provider shall conduct comprehensive stakeholder interviews, perform competitive analysis of comparable mobile banking applications in the market, develop detailed user personas and journey maps, produce wireframes and high-fidelity design mockups for all primary and secondary screens of the Application, and finalize the technical architecture document specifying the technology stack, infrastructure requirements, and integration points. Deliverables for this phase shall include the Technical Architecture Document (Exhibit C), the UI/UX Specifications (Exhibit D), and the API Integration Requirements (Exhibit E), each of which shall be subject to review and approval by the Client in accordance with the acceptance procedures set forth in Section 8.
+
+4.2 Phase Two — Core Development. The second phase of the Project shall commence on June 1, 2025, and shall continue through October 31, 2025. During this phase, the Service Provider shall implement the front-end and back-end components of the Application in accordance with the approved designs and architecture documents, conduct regular code reviews, perform unit testing and integration testing, and provide the Client with bi-weekly progress reports and demonstrations of completed features. The development methodology employed during this phase shall follow agile software development principles as described in Section 3A, organized into two-week sprint cycles, with sprint planning meetings, daily stand-up coordination sessions, sprint review demonstrations, and sprint retrospective assessments conducted in accordance with the Service Provider's standard agile framework.
+
+4.3 Phase Three — Testing and Quality Assurance. The third phase of the Project shall commence on November 1, 2025, and shall continue through December 15, 2025. During this phase, the Service Provider shall conduct comprehensive testing of the Application in accordance with the Testing Strategy described in Section 3D, including functional testing, regression testing, performance testing, load testing, security testing, penetration testing, and accessibility testing. The Service Provider shall remediate all defects identified during testing that meet or exceed the severity thresholds defined in the quality assurance plan. The Service Provider shall also coordinate with the Client's internal security team to facilitate an independent security audit, the results of which shall be documented in the Security Audit Checklist (Exhibit F).
+
+4.4 Phase Four — Deployment and Launch. The fourth and final phase of the Project shall commence on December 16, 2025, and shall conclude no later than January 31, 2026. During this phase, the Service Provider shall deploy the Application to the Deployment Environment in accordance with the deployment procedures described in Section 3F, submit the Application to the Apple App Store and Google Play Store for review and publication, coordinate with the Client's operations team to ensure readiness of production infrastructure and support channels, and provide launch-day monitoring and stabilization support for a period of no fewer than fourteen calendar days following general availability.
+
+SECTION 5 — FEES AND PAYMENT TERMS
+
+5.1 Total Project Value. In consideration of the services to be performed by the Service Provider, the Client agrees to pay the Service Provider a total project fee of three hundred eighty thousand United States dollars ($380,000.00 USD). This fee represents the full and complete compensation for all services described in this Agreement, including all labor, materials, tools, and incidental expenses, unless additional services are authorized through the change control process described in Section 9.
+
+5.2 Payment Schedule. The total project fee shall be payable in accordance with the following milestone-based payment schedule:
+
+(a) Upon execution of this Agreement, the Client shall pay to the Service Provider an initial payment representing twenty percent (20%) of the total project fee, equal to seventy-six thousand United States dollars ($76,000.00 USD). This payment shall be due and payable within the period specified in Section 5.3 following the Effective Date and shall serve as confirmation of the Client's commitment to proceed with the Project.
+
+(b) Upon Client acceptance of all Phase One deliverables in accordance with Section 8, the Client shall pay to the Service Provider an amount representing twenty-five percent (25%) of the total project fee, equal to ninety-five thousand United States dollars ($95,000.00 USD).
+
+(c) Upon Client acceptance of all Phase Two deliverables in accordance with Section 8, the Client shall pay to the Service Provider an amount representing twenty-five percent (25%) of the total project fee, equal to ninety-five thousand United States dollars ($95,000.00 USD).
+
+(d) Upon Client acceptance of all Phase Three deliverables in accordance with Section 8, the Client shall pay to the Service Provider an amount representing twenty percent (20%) of the total project fee, equal to seventy-six thousand United States dollars ($76,000.00 USD).
+
+(e) Upon successful deployment of the Application to the Deployment Environment and completion of the launch stabilization period described in Section 4.4, the Client shall pay to the Service Provider a final payment representing ten percent (10%) of the total project fee, equal to thirty-eight thousand United States dollars ($38,000.00 USD).
+
+5.3 Payment Terms and Method. All payments due under this Agreement shall be remitted by the Client to the Service Provider via wire transfer in United States dollars (USD) to a bank account designated in writing by the Service Provider. Unless otherwise specified, invoices shall be payable within fourteen (14) business days following the date of invoice. Late payments shall accrue interest at a rate of one and one-half percent (1.5%) per month, or the maximum rate permitted by applicable law, whichever is less, calculated from the due date until the date of actual payment.
+
+SECTION 6 — INTELLECTUAL PROPERTY
+
+6.1 Ownership of Custom Work Product. Upon receipt of the final payment described in Section 5.2(e), the Client shall own all right, title, and interest in and to the custom source code developed specifically for the Application under this Agreement, including all modifications, enhancements, and derivative works thereof. The Service Provider hereby assigns and agrees to assign to the Client all intellectual property rights in such custom source code, and the Service Provider shall execute and deliver any documents and take any actions reasonably necessary to effectuate and perfect the Client's ownership.
+
+6.2 Pre-Existing Intellectual Property. Nothing in this Agreement shall transfer to the Client any right, title, or interest in any pre-existing intellectual property of the Service Provider, including but not limited to proprietary software libraries, frameworks, development tools, code modules, and algorithms that were developed by the Service Provider prior to the commencement of this Agreement or that are developed independently of the Project. The Service Provider grants to the Client a perpetual, irrevocable, non-exclusive, worldwide, royalty-free license to use, reproduce, modify, and distribute any such pre-existing intellectual property components that are incorporated into or bundled with the Application, solely for the purpose of operating, maintaining, and supporting the Application.
+
+6.3 Third-Party Components. The Application may incorporate certain open-source software components and third-party libraries subject to licenses that impose conditions on use, modification, or distribution. The Service Provider shall maintain a register of all such third-party components and their respective license terms, and shall make such register available to the Client upon request.
+
+SECTION 7 — WARRANTY
+
+7.1 Defect-Free Warranty. The Service Provider warrants that, for a period of twelve (12) months following the date of final acceptance of the Application (the "Warranty Period"), the Application shall operate substantially in accordance with the specifications set forth in the Statement of Work and the approved design documents, free from material defects that materially impair the functionality or usability of the Application. During the Warranty Period, the Service Provider shall, at no additional cost to the Client, use commercially reasonable efforts to investigate and remedy any such defects reported by the Client.
+
+7.2 Intellectual Property Non-Infringement Warranty. The Service Provider warrants that the custom source code developed under this Agreement, when used in accordance with the Statement of Work, does not infringe upon or misappropriate any patent, copyright, trademark, trade secret, or other intellectual property right of any third party. The Service Provider shall indemnify, defend, and hold harmless the Client from and against any and all claims, damages, liabilities, costs, and expenses arising from any alleged or actual infringement of third-party intellectual property rights by such custom source code.
+
+7.3 Warranty Exclusions. The warranties set forth in this Section 7 shall not apply to: (a) defects arising from the Client's modification of the Application without the Service Provider's prior written consent; (b) defects resulting from the Client's use of the Application in a manner inconsistent with the documentation or specifications; (c) defects caused by failure of the Deployment Environment or third-party infrastructure; (d) defects arising from the Client's failure to implement recommended updates or patches provided by the Service Provider; or (e) issues that constitute non-material cosmetic or aesthetic deviations from the approved designs.
+
+SECTION 8 — ACCEPTANCE PROCEDURES
+
+8.1 Delivery and Review. Upon completion of each Milestone, the Service Provider shall deliver the applicable deliverables to the Client and notify the Client in writing that such deliverables are ready for review. The Client shall have a period of five (5) business days following receipt of such notification to review the deliverables and either (a) provide written acceptance confirming that the deliverables satisfy the applicable acceptance criteria, or (b) provide written notice specifying in reasonable detail any deficiencies, defects, or non-conformities identified during the review period.
+
+8.2 Remedy Period. If the Client provides notice of deficiencies under Section 8.1(b), the Service Provider shall have a period of ten (10) business days to investigate and remedy the identified issues at no additional cost to the Client. Upon completion of such remediation, the Client shall conduct a further review in accordance with Section 8.1. If the Client does not respond within the applicable review period, the deliverables shall be deemed accepted.
+
+8.3 Deemed Acceptance. If the Client fails to provide written notice of acceptance or rejection within the review period specified in Section 8.1, the deliverables shall be deemed accepted, and the corresponding payment milestone shall become due and payable in accordance with Section 5.2.
+
+SECTION 9 — CHANGE CONTROL
+
+9.1 Change Requests. Either party may propose a change to the scope, schedule, or budget of the Project by submitting a written change request describing the proposed change in reasonable detail. Each change request shall include a description of the requested modification, the rationale therefor, and an assessment of the anticipated impact on the project timeline and budget.
+
+9.2 Impact Assessment. Within five (5) business days of receiving a change request, the Service Provider shall provide the Client with a written impact assessment evaluating the technical feasibility, estimated effort, schedule implications, and any additional costs associated with the proposed change.
+
+9.3 Approval. No change to the scope, schedule, or budget of the Project shall be implemented unless and until both parties have executed a written change order specifying the agreed-upon modifications. Change orders shall be incorporated into this Agreement by reference and shall be subject to all terms and conditions hereof.
+
+SECTION 10 — DATA PROTECTION AND COMPLIANCE
+
+10.1 Regulatory Compliance. The Service Provider acknowledges that the Client operates within a heavily regulated industry and that the Application must comply with all applicable laws, regulations, and regulatory guidelines, including but not limited to those issued by the Financial Conduct Authority, the Prudential Regulation Authority, the Information Commissioner's Office, and any applicable data protection authority. The Service Provider shall design, develop, and test the Application with due regard to such regulatory requirements and shall cooperate fully with the Client in addressing any regulatory inquiries, examinations, or audits related to the Application.
+
+10.2 PCI DSS Compliance. To the extent that the Application processes, stores, or transmits cardholder data, the Service Provider shall ensure that the Application is developed in accordance with the requirements of the Payment Card Industry Data Security Standard (PCI DSS), currently at version 4.0. The Service Provider shall not store sensitive cardholder data within the Application and shall ensure that all cardholder data is transmitted over secure, encrypted channels.
+
+10.3 Data Processing. To the extent that the Service Provider processes personal data on behalf of the Client in connection with the Project, the parties shall be bound by the data processing terms set forth in Schedule 1 attached hereto, which shall comply with the requirements of the UK GDPR and the Data Protection Act 2018.
+
+SECTION 11 — SECURITY REQUIREMENTS
+
+11.1 Encryption. All data transmitted between the Application and the Back-End Services shall be encrypted in transit using Transport Layer Security (TLS) version 1.2 or higher, with strong cipher suites approved by the Service Provider's information security team. All sensitive data at rest, including but not limited to user credentials, personal identification information, and financial transaction data, shall be encrypted using AES-256 encryption or an equivalent encryption standard approved by the Client's information security team.
+
+11.2 Authentication. The Application shall implement user authentication mechanisms that include, at a minimum, password-based authentication with enforced complexity requirements, multi-factor authentication using one-time passwords generated by a time-based one-time password (TOTP) algorithm, and biometric authentication using device-native fingerprint or facial recognition capabilities where supported by the end user's device. Session management shall implement secure token-based authentication with configurable session timeout periods and automatic session termination upon detection of anomalous activity.
+
+11.3 Audit Logging. The Application shall maintain comprehensive audit logs recording all security-relevant events, including but not limited to user authentication attempts (successful and unsuccessful), access to sensitive data, modification of account settings, initiation and execution of financial transactions, and administrative actions. Audit logs shall be tamper-resistant, retained for a minimum period of seven (7) years, and made available to the Client's compliance and audit teams upon request.
+
+11.4 Vulnerability Management. The Service Provider shall conduct regular vulnerability scans and penetration tests of the Application and the Back-End Services throughout the development lifecycle and shall remediate all critical and high-severity vulnerabilities identified therein prior to deployment to the production environment.
+
+SECTION 12 — CONFIDENTIALITY
+
+12.1 Confidentiality Obligations. Each party agrees to hold in strict confidence all Confidential Information received from the other party and not to disclose such Confidential Information to any third party without the prior written consent of the disclosing party, except as may be required by law, regulation, or court order. Each party shall use Confidential Information solely for the purpose of performing its obligations or exercising its rights under this Agreement and shall not use such Confidential Information for any other purpose.
+
+12.2 Duration. The obligations of confidentiality and non-disclosure contained in this Section 12 shall survive the expiration or termination of this Agreement and shall remain in effect for a period of three (3) years following the date of termination or expiration.
+
+12.3 Permitted Disclosures. The obligations of confidentiality shall not apply to information that: (a) is or becomes publicly available through no fault of the receiving party; (b) was known to the receiving party prior to disclosure by the disclosing party; (c) is independently developed by the receiving party without reference to the Confidential Information; or (d) is received from a third party without restriction on disclosure.
+
+SECTION 13 — PERSONNEL AND STAFFING
+
+13.1 Key Personnel. The Service Provider shall assign to the Project a dedicated team of qualified professionals possessing the skills, experience, and certifications necessary to perform the services described herein. The Service Provider shall ensure that all personnel assigned to the Project execute individual non-disclosure agreements binding them to obligations of confidentiality no less stringent than those set forth in Section 12.
+
+13.2 Background Checks. The Client may, at its own expense and upon reasonable notice, require the Service Provider to obtain background checks on any personnel who will have access to the Client's Confidential Information, systems, or environments. The Service Provider shall cooperate fully with such requests and shall replace any personnel who fail to meet the Client's reasonable security criteria.
+
+13.3 Substitution. The Service Provider shall not replace any key personnel assigned to the Project without providing the Client with at least ten (10) business days' prior written notice and obtaining the Client's reasonable consent. Any substitute personnel shall possess qualifications and experience comparable to those of the individual being replaced.
+
+SECTION 14 — TERMINATION
+
+14.1 Termination for Convenience. Either party may terminate this Agreement for any reason or no reason, without cause, upon thirty (30) days' prior written notice to the other party. In the event of termination for convenience by the Client, the Client shall compensate the Service Provider for all services satisfactorily performed through the effective date of termination, plus any non-cancellable costs incurred by the Service Provider in connection with the Project. In the event of termination for convenience by the Service Provider, the Service Provider shall cooperate with the Client to ensure an orderly transition of all work product and materials.
+
+14.2 Termination for Cause. Either party may terminate this Agreement immediately upon written notice if the other party materially breaches any provision of this Agreement and fails to cure such breach within fifteen (15) days following receipt of written notice specifying the nature of the breach in reasonable detail.
+
+14.3 Effects of Termination. Upon termination or expiration of this Agreement: (a) the Service Provider shall deliver to the Client all work product, materials, and documentation in its possession or control related to the Project; (b) the Service Provider shall cease all work on the Application and return or destroy any Confidential Information belonging to the Client; and (c) the provisions of Sections 6, 7, 10, 11, 12, 15, 16, 17, and 18 shall survive termination.
+
+SECTION 15 — LIMITATION OF LIABILITY
+
+15.1 Liability Cap. In no event shall either party's aggregate liability arising out of or in connection with this Agreement, whether in contract, tort, negligence, breach of statutory duty, or otherwise, exceed the total value of the Project as specified in Section 5.1, namely three hundred eighty thousand United States dollars ($380,000.00 USD).
+
+15.2 Exclusion of Consequential Damages. To the maximum extent permitted by applicable law, neither party shall be liable to the other for any indirect, incidental, special, consequential, punitive, or exemplary damages, including but not limited to loss of profits, loss of revenue, loss of business opportunities, loss of goodwill, or loss of data, regardless of whether such damages were foreseeable or whether either party was advised of the possibility thereof.
+
+15.3 Exceptions. Nothing in this Section 15 shall limit or exclude liability for: (a) death or personal injury caused by negligence; (b) fraud or fraudulent misrepresentation; or (c) any liability that cannot be limited or excluded by applicable law.
+
+SECTION 16 — SUPPORT AND MAINTENANCE
+
+16.1 Post-Launch Support. During the Warranty Period, the Service Provider shall provide the Client with technical support and maintenance services for the Application, including investigation and remediation of defects reported by the Client, minor updates and patches to address compatibility issues arising from operating system updates, and reasonable telephone and email support during standard business hours. Response times and severity classifications for support requests shall be as set forth in Schedule 2 attached hereto.
+
+16.2 Extended Support. Upon expiration of the Warranty Period, the parties may negotiate in good faith the terms of an extended support and maintenance agreement. Nothing in this Agreement shall obligate either party to enter into such an extended agreement.
+
+SECTION 17 — GENERAL PROVISIONS
+
+17.1 Entire Agreement. This Agreement, together with the Schedules and Exhibits attached hereto, constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior negotiations, representations, warranties, commitments, offers, and agreements, whether written or oral, relating to such subject matter.
+
+17.2 Amendments. No amendment, modification, or supplement to this Agreement shall be valid or binding unless made in writing and signed by authorized representatives of both parties.
+
+17.3 Assignment. Neither party may assign, transfer, or delegate any of its rights or obligations under this Agreement without the prior written consent of the other party, except that either party may assign this Agreement to an affiliate or in connection with a merger, acquisition, or sale of all or substantially all of its assets, provided that the assignee agrees in writing to be bound by the terms of this Agreement.
+
+17.4 Severability. If any provision of this Agreement is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid, legal, and enforceable, and the remaining provisions shall continue in full force and effect.
+
+17.5 Notices. All notices, requests, demands, and other communications required or permitted under this Agreement shall be in writing and shall be deemed delivered: (a) upon personal delivery; (b) one (1) business day after deposit with a nationally recognized overnight courier service; (c) upon confirmed transmission by facsimile or email; or (d) three (3) business days after mailing by registered or certified mail, return receipt requested, postage prepaid. Notices shall be addressed to the parties at the addresses set forth in Section 1.
+
+17.6 Waiver. The failure of either party to enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision. Any waiver of any provision of this Agreement shall be effective only if in writing and signed by the waiving party.
+
+17.7 Governing Law and Jurisdiction. This Agreement shall be governed by and construed in accordance with the laws of England and Wales, United Kingdom, without regard to its conflict of law principles. The parties irrevocably submit to the exclusive jurisdiction of the courts of England and Wales in respect of any dispute arising out of or in connection with this Agreement.
+
+17.8 Force Majeure. Neither party shall be liable for any failure or delay in performing its obligations under this Agreement if such failure or delay results from circumstances beyond its reasonable control, provided that the affected party notifies the other party in writing within a reasonable period of time and uses commercially reasonable efforts to mitigate the effects of such event.
+
+17.9 Independent Contractor. The Service Provider is an independent contractor and nothing in this Agreement shall be construed as creating an employment, agency, partnership, or joint venture relationship between the parties. Neither party shall have the authority to bind the other party or to incur any obligation on behalf of the other party without prior written consent.
+
+17.10 No Third-Party Beneficiaries. Except as expressly provided herein with respect to permitted assignees and successors, nothing in this Agreement shall confer or purport to confer upon any person other than the parties hereto any right, remedy, claim, or benefit under or by reason of this Agreement, and the terms of this Agreement shall not be enforceable by any third party.
+
+17.11 Counterparts. This Agreement may be executed in any number of counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument. Delivery of an executed counterpart of a signature page to this Agreement by facsimile, electronic mail in portable document format, or other electronic transmission shall be equally as effective as delivery of an original executed counterpart.
+
+17.12 Privilege Waiver. Nothing in this Agreement shall be construed as a waiver of any applicable legal privilege, including without limitation attorney-client privilege, litigation privilege, or without prejudice privilege, and the parties expressly reserve all such privileges to the fullest extent permitted by applicable law.
+
+SECTION 18 — EXHIBITS AND SCHEDULES
+
+The following Exhibits and Schedules are attached hereto and incorporated by reference into this Agreement:
+
+Exhibit A:    Statement of Work — Detailed description of deliverables, acceptance criteria, and technical requirements for each phase of the Project.
+
+Exhibit B:    Quality Assurance Plan — Code review procedures, testing methodologies, defect classification framework, and quality metrics.
+
+Exhibit C:    Technical Architecture Document — System architecture, technology stack, database schema, infrastructure requirements, and integration specifications. (To be delivered during Phase One.)
+
+Exhibit D:    UI/UX Specifications — Wireframes, design mockups, interaction patterns, accessibility requirements, and brand guidelines. (To be delivered during Phase One.)
+
+Exhibit E:    API Integration Requirements — Detailed specifications for all application programming interfaces, including request/response formats, authentication protocols, rate limits, and error handling. (To be delivered during Phase One.)
+
+Exhibit F:    Security Audit Checklist — Comprehensive security requirements, penetration testing methodology, vulnerability assessment criteria, and remediation procedures.
+
+Exhibit G:    Test Strategy Document — Comprehensive description of the testing approach, including test levels, test types, test environments, test data management, defect management workflows, and test automation framework specifications. (Attached but not included in the body of this document.)
+
+Exhibit H:    Security Audit Plan — Detailed plan for the independent security audit to be conducted during Phase Three, including scope of assessment, testing methodology, vulnerability classification criteria, remediation timelines, and reporting format. (Attached but not included in the body of this document.)
+
+Exhibit I:    Security Architecture Document — Comprehensive description of the Application's security architecture, including encryption standards, key management procedures, authentication and authorization flows, session management policies, and security monitoring configurations. (Attached but not included in the body of this document.)
+
+Exhibit J:    API Specification — Complete OpenAPI Specification documentation for all application programming interfaces exposed by the Application's back-end services, including endpoint definitions, request and response schemas, authentication requirements, error codes, and versioning policies. (Attached but not included in the body of this document.)
+
+Exhibit K:    Architecture Document — Comprehensive technical architecture documentation describing the Application's microservices topology, database architecture, caching strategy, message broker configuration, infrastructure topology, and deployment architecture. (Attached but not included in the body of this document.)
+
+Exhibit L:    Deployment Runbook — Step-by-step operational procedures for deploying the Application to each environment, including pre-deployment checklists, deployment commands, post-deployment verification steps, rollback procedures, and escalation contacts. (Attached but not included in the body of this document.)
+
+Schedule 1:   Data Processing Agreement — Terms governing the processing of personal data by the Service Provider on behalf of the Client, in compliance with the UK GDPR.
+
+Schedule 2:   Support and Maintenance SLA — Service level objectives, response time commitments, escalation procedures, and severity classification for post-launch support requests.
+
+The parties acknowledge and agree that the Exhibits and Schedules listed above are attached to this Agreement but are not included in the body of this document. Copies of each Exhibit and Schedule shall be provided to the Client by the Service Provider at the appropriate time as referenced herein.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+SERVICE PROVIDER:
+
+APEX DIGITAL AGENCY
+
+By: _________________________________
+
+     Lisa Nakamura
+
+     Title: Chief Technology Officer
+
+     Date: _____________________________
+
+WITNESS:
+
+By: _________________________________
+
+     Name: ___________________________
+
+     Title: ____________________________
+
+     Date: _____________________________
+
+
+CLIENT:
+
+SUMMIT FINANCIAL SERVICES LTD.
+
+By: _________________________________
+
+     James Whitfield
+
+     Title: Director of Digital Transformation
+
+     Date: _____________________________
+
+WITNESS:
+
+By: _________________________________
+
+     Name: ___________________________
+
+     Title: ____________________________
+
+     Date: _____________________________
+
+
+[END OF AGREEMENT]
+
+Contract Reference: DEV-2025-4421

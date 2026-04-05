@@ -1,0 +1,748 @@
+TELECOMMUNICATIONS INFRASTRUCTURE SERVICES AGREEMENT
+
+This Telecommunications Infrastructure Services Agreement (the "Agreement"),
+bearing reference number TIS-2025-0201, is entered into as of January 20, 2025
+(the "Effective Date"), by and between the parties identified in Section 1 below.
+
+WHEREAS, the digital divide remains one of the most pressing infrastructure
+challenges facing rural communities across the United States, with millions of
+Americans in underserved and unserved areas lacking access to reliable, high-speed
+broadband internet service that is essential for education, healthcare, economic
+development, civic participation, and modern quality of life;
+
+WHEREAS, the Federal Communications Commission (FCC) has identified broadband
+connectivity as a critical national priority, establishing the Rural Digital
+Opportunity Fund (RDOF) and related programs to incentivize the deployment of
+high-speed broadband infrastructure in areas where market conditions alone have
+failed to attract private investment in telecommunications facilities;
+
+WHEREAS, the Universal Service Fund (USF) and its various support mechanisms,
+including the Connect America Fund and the Rural Digital Opportunity Fund, are
+designed to promote the availability and adoption of broadband services in
+high-cost areas through direct financial support to eligible telecommunications
+carriers and infrastructure providers;
+
+WHEREAS, the state of Georgia has a significant rural broadband gap, with
+numerous counties in the southern portion of the state lacking access to broadband
+speeds that meet or exceed the FCC's current benchmark of 25/3 Mbps download and
+upload speeds, and many areas lacking access to any wired broadband service
+whatsoever;
+
+WHEREAS, Rural Broadband Initiative Inc., a nonprofit corporation organized
+under the laws of the State of Georgia, has been established to address the
+rural broadband access gap in southern Georgia through public-private partnerships,
+grant-funded infrastructure programs, and community-based deployment initiatives;
+
+WHEREAS, NetConnect Infrastructure Services LLC is a telecommunications
+infrastructure company organized under the laws of the State of Georgia, with
+extensive experience in the design, deployment, and operation of fiber-optic
+broadband networks, including Fiber-to-the-Home (FTTH) deployments utilizing
+Gigabit Passive Optical Network (GPON) technology in rural and suburban
+environments;
+
+WHEREAS, the parties desire to enter into a comprehensive services agreement
+under which the Service Provider will design, deploy, and maintain fiber-optic
+broadband infrastructure serving underserved rural communities across twelve (12)
+counties in southern Georgia, with an initial deployment target of approximately
+fifteen thousand (15,000) premises passed;
+
+NOW, THEREFORE, in consideration of the mutual covenants, promises, and
+agreements set forth herein, and for other good and valuable consideration,
+the receipt and sufficiency of which are hereby acknowledged, the parties agree
+as follows:
+
+1. PARTIES
+
+1.1 Service Provider. NetConnect Infrastructure Services LLC, a limited liability
+company duly organized and existing under the laws of the State of Georgia, with
+its principal offices located at 1100 Peachtree Street, Suite 1800, Atlanta, GA
+30309 (hereinafter referred to as "Service Provider," "NetConnect," or "Provider").
+
+1.2 Client. Rural Broadband Initiative Inc., a nonprofit corporation duly
+organized and existing under the laws of the State of Georgia, with its principal
+offices located at 4500 Capitol Avenue, Atlanta, GA 30339 (hereinafter referred
+to as "Client," "RBI," or "Initiative").
+
+1.3 Individual Capacity. Each signatory hereto represents and warrants that
+they have the full legal authority to bind their respective organization to the
+terms and conditions of this Agreement, and that the execution of this Agreement
+has been duly authorized by all necessary corporate and governmental approvals,
+including board of directors authorization and, where applicable, attorney general
+review of nonprofit corporate transactions.
+
+2. DEFINITIONS
+
+2.1 "Dark Fiber" means unlit optical fiber cable that has been installed but
+is not yet connected to active transmission equipment, and which may be activated
+at a later date by the installation of optical line terminal (OLT) equipment.
+
+2.2 "Fiber-to-the-Home" or "FTTH" means a broadband network architecture in
+which optical fiber cable is extended directly from the central office or hub
+location to individual residential or business premises, providing end-to-end
+fiber connectivity without the use of copper or coaxial cable in the last-mile
+connection.
+
+2.3 "GPON" means Gigabit Passive Optical Network, a passive optical network
+architecture that delivers broadband connectivity over fiber using passive optical
+splitters to serve multiple end users from a single optical line terminal, and
+which supports downstream speeds of up to 2.5 Gbps and upstream speeds of up to
+1.25 Gbps.
+
+2.4 "Last Mile" means the final segment of the telecommunications network that
+connects the distribution point or optical splitter to the individual end-user
+premises, including the drop cable, optical network terminal (ONT), and any
+associated customer premises equipment.
+
+2.5 "Middle Mile" means the intermediate segment of the telecommunications
+network that connects the central office or point of presence to the local
+distribution network, typically consisting of fiber optic cable routes between
+hub locations, switching centers, and aggregation points.
+
+2.6 "NOC" means Network Operations Center, the centralized facility operated
+by the Service Provider for the purpose of monitoring, managing, and maintaining
+the telecommunications network deployed under this Agreement on a twenty-four
+(24) hour, seven (7) day per week basis.
+
+2.7 "OLT" means Optical Line Terminal, the active network equipment located
+at the central office or hub that serves as the originating point for the GPON
+network, converting electrical signals to optical signals for transmission over
+the fiber distribution network.
+
+2.8 "ONT" means Optical Network Terminal, the customer premises equipment
+located at each served premise that converts optical signals from the fiber
+network to electrical signals for delivery to customer devices via Ethernet or
+Wi-Fi.
+
+2.9 "Premises Passed" means a residential or business location that is within
+two hundred fifty (250) feet of an active fiber drop point and is therefore
+eligible for service activation without requiring additional fiber construction,
+as verified by an independent third-party engineering firm selected by mutual
+agreement of the parties.
+
+2.10 "Right-of-Way" or "ROW" means the legal right to use a specific strip of
+land for the purpose of installing, maintaining, and operating telecommunications
+infrastructure, including utility poles, underground conduit, and associated
+equipment, as granted by the applicable property owner or governmental authority.
+
+2.11 "RDOF" means the Rural Digital Opportunity Fund, a Federal Communications
+Commission program established to provide financial support for the deployment of
+broadband infrastructure in unserved rural areas of the United States, as
+administered by the Universal Service Administrative Company (USAC).
+
+2.12 "Split Ratio" means the number of end-user connections served by a single
+GPON port through passive optical splitters, expressed as a ratio (e.g., 1:32 or
+1:64), which affects the available bandwidth per subscriber and the maximum
+distance from the OLT.
+
+2.13 "Take Rate" means the percentage of Premises Passed that have subscribed
+to and activated broadband service on the deployed network, used as a key metric
+for evaluating network utilization and financial performance.
+
+2.14 "USF" means the Universal Service Fund, the federal program administered
+by the Universal Service Administrative Company under the direction of the FCC
+that provides financial support for telecommunications services in high-cost,
+rural, and underserved areas.
+
+2.15 "WISP" means Wireless Internet Service Provider, a provider of broadband
+internet access using fixed wireless or other wireless technologies, which may
+serve as an interim or complementary technology in areas where fiber deployment
+is not yet feasible.
+
+2.16 "Service Level" or "SLA" means the performance standards and metrics
+defined in this Agreement against which the quality, reliability, and
+responsiveness of the Service Provider's network and maintenance services shall
+be measured.
+
+2.17 "Third-Party Verifier" means an independent engineering or consulting
+firm mutually agreed upon by the parties, which shall perform independent
+verification of Premises Passed counts and other deployment metrics as required
+under this Agreement.
+
+3. SCOPE OF SERVICES
+
+3.1 General Scope. The Service Provider shall provide comprehensive
+telecommunications infrastructure services for the design, deployment, and
+maintenance of fiber-optic broadband infrastructure serving underserved rural
+communities in southern Georgia. The initial deployment area encompasses twelve
+(12) counties: Baker, Calhoun, Clay, Dougherty, Early, Grady, Miller, Mitchell,
+Quitman, Randolph, Seminole, and Terrell. The deployment is designed to reach
+approximately fifteen thousand (15,000) potential subscriber premises across the
+twelve-county coverage area.
+
+3.2 Network Design Services. The Service Provider shall perform comprehensive
+network architecture design services, including but not limited to: selection
+of GPON versus active Ethernet technology for each service area based on density,
+cost, and scalability analysis; design of the core, distribution, and access
+network layers; redundancy and failover planning; headend and hub site selection;
+power redundancy design; and preparation of detailed network architecture
+documentation.
+
+3.3 Fiber Route Planning. The Service Provider shall perform detailed fiber
+route planning, including: GIS-based route mapping and optimization; pole
+attachment analysis and coordination with incumbent utility pole owners;
+underground construction route design; directional boring plans for road and
+waterway crossings; and preparation of detailed construction prints for each
+deployment phase.
+
+3.4 Permitting and Right-of-Way Coordination. The Service Provider shall be
+responsible for obtaining all necessary permits and right-of-way agreements,
+including: municipal construction permits in each jurisdiction; Georgia
+Department of Transportation encroachment permits for state highway crossings;
+railroad crossing permits; environmental clearances for sensitive areas; and
+utility pole attachment agreements with incumbent pole owners.
+
+3.5 Fiber Installation Services. The Service Provider shall perform all fiber
+installation work, including both middle-mile and last-mile construction, aerial
+and underground fiber placement, fiber splicing and testing, drop installation
+to individual premises, ONT installation and provisioning, and end-to-end
+circuit testing and acceptance.
+
+3.6 Network Equipment Provisioning. The Service Provider shall procure,
+install, and configure all network equipment, including OLTs, optical splitters,
+ONTs, routers, switches, UPS systems, grounding equipment, and all other
+hardware and software necessary for the operation of the broadband network.
+
+3.7 NOC Monitoring Services. The Service Provider shall provide twenty-four
+(24) hour, seven (7) day per week network monitoring and management services
+through its Network Operations Center (NOC), including proactive fault detection
+and alerting, incident response and escalation, performance monitoring and
+reporting, and subscriber management support.
+
+3.8 Maintenance Services. The Service Provider shall provide ongoing
+maintenance services for the deployed fiber-optic infrastructure, including
+preventive maintenance on a scheduled basis, emergency repair services,
+fiber restoration following outages, equipment replacement and upgrades, and
+vegetation management along aerial fiber routes.
+
+4. NETWORK DESIGN STANDARDS
+
+4.1 Technology Selection. The Service Provider shall deploy GPON technology as
+the primary access network architecture, with a split ratio not exceeding 1:32
+for residential deployments and 1:16 for business-class deployments. Active
+Ethernet may be deployed in areas with high subscriber density or where
+symmetrical gigabit service is required for institutional or commercial
+subscribers.
+
+4.2 Redundancy. The middle-mile network shall be designed with ring topology
+providing at least N+1 redundancy between hub sites. Each hub site shall be
+connected to at least two (2) diverse fiber routes. The Service Provider shall
+deploy automated protection switching to ensure seamless failover in the event
+of a fiber cut or equipment failure.
+
+4.3 Scalability. All fiber routes shall be designed with sufficient spare fiber
+capacity to support future expansion and demand growth. The Service Provider
+shall deploy at least twelve (12) fiber strands in all middle-mile routes and
+at least four (4) fiber strands in all distribution routes.
+
+5. FIBER ROUTE PLANNING
+
+5.1 GIS Mapping. The Service Provider shall utilize geographic information
+system (GIS) tools to map all proposed fiber routes, identifying existing
+utility infrastructure, property boundaries, environmental features, and other
+relevant factors that may affect route selection and construction methods.
+
+5.2 Pole Attachment. Where aerial construction is proposed, the Service
+Provider shall negotiate pole attachment agreements with incumbent utility pole
+owners in accordance with applicable FCC pole attachment rules and Georgia state
+law. The Service Provider shall perform make-ready work as required by the
+pole owner prior to fiber attachment.
+
+5.3 Underground Construction. Where underground construction is required or
+preferred, the Service Provider shall utilize directional boring methods to
+minimize surface disruption, and shall coordinate with all utility locating
+services prior to excavation in accordance with Georgia Utility Facility
+Protection Act (OUCC Act) requirements.
+
+6. PERMITTING
+
+6.1 Municipal Permits. The Service Provider shall obtain all required
+municipal construction permits, right-of-way permits, and encroachment permits
+in each jurisdiction within the deployment area, and shall comply with all
+applicable local ordinances governing telecommunications facility construction.
+
+6.2 State DOT Permits. The Service Provider shall obtain all required permits
+from the Georgia Department of Transportation for fiber crossings of state
+highways and roads, including encroachment permits, utility adjustment permits,
+and temporary traffic control plans.
+
+6.3 Environmental Clearances. Where fiber routes traverse environmentally
+sensitive areas, including wetlands, protected habitats, or cultural resource
+sites, the Service Provider shall obtain all required environmental clearances
+and permits from the Georgia Department of Natural Resources, the U.S. Army
+Corps of Engineers, and other applicable agencies.
+
+7. INSTALLATION STANDARDS
+
+7.1 Splicing Specifications. All fiber splicing shall be performed by
+certified fiber optic technicians in accordance with Telcordia GR-1095-CORE
+and applicable industry standards. Fusion splice loss shall not exceed 0.10 dB
+per splice, and all splices shall be documented in the network management
+system with GPS coordinates and loss measurements.
+
+7.2 Drop Installation. Fiber drops from the distribution network to individual
+premises shall be installed in accordance with the Service Provider's standard
+drop installation specifications, including proper sag, clearance, and
+attachment requirements for aerial drops, and proper depth, conduit, and
+handhole specifications for underground drops.
+
+7.3 ONT Placement. ONTs shall be installed at each served premise in a
+location approved by the subscriber that provides adequate power, ventilation,
+and proximity to the fiber entry point. The Service Provider shall provide the
+subscriber with a Wi-Fi router configured for optimal coverage.
+
+7.4 Testing Protocols. All fiber circuits shall undergo end-to-end optical
+testing prior to service activation, including optical loss testing, OTDR
+testing, and bit error rate testing. Test results shall be documented and
+retained in the network management system.
+
+8. NETWORK EQUIPMENT
+
+8.1 OLT Equipment. The Service Provider shall deploy carrier-grade OLT
+equipment at each hub site, with sufficient port capacity to serve the planned
+deployment area with at least twenty percent (20%) spare capacity for future
+growth.
+
+8.2 Optical Splitters. Passive optical splitters shall be deployed in
+accordance with the network design specifications set forth in Section 4.1.
+All splitter cabinets and closures shall be rated for outdoor use and shall
+provide environmental protection consistent with the deployment environment.
+
+8.3 Power and Grounding. All active network equipment shall be powered through
+uninterruptible power supply (UPS) systems with a minimum of four (4) hours of
+battery backup. All equipment shall be properly grounded in accordance with
+NEC Article 770 and applicable telecommunications grounding standards.
+
+9. NOC OPERATIONS
+
+9.1 Monitoring. The Service Provider shall operate a Network Operations Center
+(NOC) providing twenty-four (24) hour, seven (7) day per week monitoring of
+all network elements deployed under this Agreement, including OLTs, ONTs,
+routers, switches, power systems, and environmental monitoring systems at hub
+sites.
+
+9.2 Fault Detection and Response. The NOC shall implement automated fault
+detection and alerting systems capable of identifying network outages,
+degraded service conditions, and equipment failures within five (5) minutes of
+occurrence. The NOC shall respond to critical alarms within fifteen (15)
+minutes and shall initiate repair procedures in accordance with the escalation
+procedures set forth in Section 9.3.
+
+9.3 Escalation Procedures. The Service Provider shall maintain documented
+escalation procedures for all alarm categories, including: P1 (critical) —
+network-wide outage affecting more than 500 subscribers, response within
+fifteen (15) minutes; P2 (major) — outage affecting a single community or
+route segment, response within thirty (30) minutes; P3 (moderate) — degraded
+service or partial outage, response within two (2) hours; P4 (minor) —
+individual subscriber issues, response within four (4) hours.
+
+10. MAINTENANCE
+
+10.1 Preventive Maintenance. The Service Provider shall conduct preventive
+maintenance on all network infrastructure on a scheduled basis, including:
+quarterly inspection of all aerial fiber routes; semi-annual testing of all
+fiber splices and connections; annual inspection of all hub sites and power
+systems; and annual vegetation management along all aerial fiber routes.
+
+10.2 Emergency Repairs. The Service Provider shall provide emergency repair
+services on a twenty-four (24) hour, seven (7) day per week basis. The
+Service Provider shall respond to fiber cut reports within two (2) hours and
+shall restore service within twelve (12) hours for single-fiber cuts and
+twenty-four (24) hours for multiple-fiber cuts or catastrophic damage.
+
+10.3 Network Uptime SLA. The Service Provider shall maintain network uptime
+of not less than ninety-nine point nine five percent (99.95%) on a monthly
+basis, excluding planned maintenance windows and outages caused by events
+beyond the Service Provider's reasonable control, including but not limited to
+acts of God, severe weather, fiber cuts caused by third parties, and delays
+caused by permitting authorities.
+
+11. FCC COMPLIANCE
+
+11.1 RDOF Administration. The Service Provider shall administer all aspects
+of the FCC Rural Digital Opportunity Fund (RDOF) subsidy program on behalf of
+the Client, including: preparation and submission of RDOF applications; ongoing
+compliance reporting to the Universal Service Administrative Company (USAC);
+maintenance of required financial records; and coordination with FCC audit and
+compliance reviews.
+
+11.2 Universal Service Obligations. The Service Provider shall ensure that the
+deployed network meets or exceeds all FCC broadband speed requirements
+applicable to the RDOF program, including minimum download speeds of 100 Mbps
+and minimum upload speeds of 20 Mbps to each served premise.
+
+11.3 Consumer Protection. The Service Provider shall comply with all FCC
+consumer protection requirements applicable to broadband service providers,
+including the FCC's broadband transparency rule (47 CFR Part 8), truth-in-
+billing requirements, and complaint handling procedures.
+
+11.4 Reporting. The Service Provider shall prepare and submit all required
+FCC and USAC reports in a timely manner, including: FCC Form 477 broadband
+deployment reports; RDOF annual performance reports; universal service
+contribution reports; and any other reports required by the FCC or USAC in
+connection with the RDOF program.
+
+12. SUBSCRIBER MANAGEMENT
+
+12.1 Sign-Up Process. The Service Provider shall establish and operate a
+subscriber sign-up process, including a toll-free number, website, and in-person
+sign-up events in each community within the deployment area.
+
+12.2 Installation Scheduling. The Service Provider shall schedule and complete
+subscriber installations within ten (10) business days of subscription request,
+subject to weather and permitting conditions.
+
+12.3 Customer Support Handoff. Upon request by the Client, the Service Provider
+shall transition subscriber management and customer support functions to the
+Client or the Client's designated third-party service provider, subject to a
+mutually agreed transition plan and timeline.
+
+13. COMPENSATION
+
+13.1 Design and Planning Fee. The Client shall pay the Service Provider a
+fixed design and planning fee of four hundred fifty thousand dollars ($450,000.00)
+for all network design, architecture, route planning, and permitting services
+performed under Sections 3.2 through 3.4. This fee shall be payable in full
+upon execution of this Agreement.
+
+13.2 Per-Premises Passed Installation Fee. The Client shall pay the Service
+Provider a fee of one thousand two hundred dollars ($1,200.00) per Premises
+Passed for all fiber installation services performed under Sections 3.5 and
+3.6. Premises Passed counts shall be verified on a monthly basis by an
+independent Third-Party Verifier selected by mutual agreement of the parties,
+whose fees shall be shared equally by the Client and the Service Provider.
+
+13.3 Monthly NOC and Maintenance Fee. The Client shall pay the Service Provider
+a monthly fee of twenty-eight thousand dollars ($28,000.00) for NOC monitoring
+and maintenance services performed under Sections 3.7 and 3.8, payable monthly
+in advance on the first day of each calendar month during the Term.
+
+13.4 Estimated Total Value. Based on the estimated deployment of fifteen
+thousand (15,000) premises at $1,200.00 per premises, the estimated total
+installation value is eighteen million dollars ($18,000,000.00). The actual
+total value will depend on the final verified Premises Passed count.
+
+13.5 Federal Subsidy Pass-Through. The Service Provider shall administer FCC
+RDOF subsidies directly, with all RDOF support payments received by the Service
+Provider applied as a credit against the Client's obligations under this
+Agreement, thereby reducing the Client's net cost of the deployment. The
+Service Provider shall provide the Client with monthly accounting of all RDOF
+subsidies received and applied.
+
+13.6 Payment Terms. The design and planning fee shall be due upon execution of
+this Agreement. Installation fees shall be due monthly based on the verified
+Premises Passed count for the preceding month, with invoices submitted by the
+fifteenth (15th) day of each month and payment due within thirty (30) days of
+invoice receipt. The monthly NOC and maintenance fee shall be due on the first
+day of each month.
+
+14. DELIVERABLES AND MILESTONES
+
+14.1 Network Architecture and Design Document. Within ninety (90) days of the
+Effective Date, the Service Provider shall deliver a comprehensive network
+architecture and design document covering all twelve (12) counties, including
+detailed fiber route maps, equipment specifications, power and redundancy
+plans, and construction schedules.
+
+14.2 FCC RDOF Application and Compliance Documentation. Within one hundred
+twenty (120) days of the Effective Date, the Service Provider shall deliver
+all completed RDOF application materials, FCC compliance documentation, and
+USAC registration materials required for the Client to participate in the RDOF
+program.
+
+14.3 First 1,000 Premises Connected. Within twelve (12) months of the
+Effective Date, the Service Provider shall achieve Premises Passed verification
+for at least one thousand (1,000) premises, with service activated for a
+minimum of five hundred (500) subscriber locations.
+
+14.4 First 5,000 Premises Connected. Within twenty-four (24) months of the
+Effective Date, the Service Provider shall achieve Premises Passed verification
+for at least five thousand (5,000) premises, with service activated for a
+minimum of two thousand (2,000) subscriber locations.
+
+14.5 Full 15,000 Premises Connected. Within forty-two (42) months of the
+Effective Date, the Service Provider shall achieve Premises Passed verification
+for all fifteen thousand (15,000) premises in the deployment area, with service
+activated for at least six thousand (6,000) subscriber locations.
+
+14.6 Quarterly Network Performance Reports. Within fifteen (15) days following
+the end of each calendar quarter, the Service Provider shall deliver a
+comprehensive network performance report to the Client, including Premises
+Passed counts, subscriber activation counts, network uptime statistics, outage
+reports, NOC performance metrics, and RDOF compliance status.
+
+15. INTELLECTUAL PROPERTY
+
+15.1 Client Ownership. The Client shall own all right, title, and interest in
+the network design documents, fiber route maps, county coverage plans, subscriber
+data, subscriber lists, and all other data and documentation generated in
+connection with the Client's deployment under this Agreement.
+
+15.2 Service Provider Ownership. The Service Provider shall retain all right,
+title, and interest in its installation methodologies, network management tools,
+NOC systems and software, splicing techniques and procedures, preventive
+maintenance protocols, and all other proprietary methods, tools, and processes
+used or developed by the Service Provider in the performance of services under
+this Agreement.
+
+15.3 License Grant. The Service Provider hereby grants the Client a perpetual,
+non-exclusive, non-transferable license to use any network management software
+deployed on the Client's network under this Agreement, subject to the terms and
+conditions of the applicable software license agreement.
+
+16. CONFIDENTIALITY
+
+16.1 Obligations. Each party agrees to hold in strict confidence all
+Confidential Information of the other party disclosed in connection with this
+Agreement. Confidential Information includes, without limitation, subscriber
+data, network performance data, financial information, FCC and USAC filings,
+RDOF subsidy amounts, and any other non-public information concerning the
+network deployment or either party's business operations.
+
+16.2 Duration. The obligations of confidentiality set forth in this Section 16
+shall survive the expiration or termination of this Agreement for a period of
+ten (10) years with respect to subscriber data and all government filings and
+compliance documentation, and for a period of five (5) years with respect to
+all other Confidential Information.
+
+17. TERMINATION
+
+17.1 Termination Without Cause. Either party may terminate this Agreement
+without cause upon one hundred eighty (180) calendar days' prior written notice
+to the other party.
+
+17.2 Termination for Cause. Either party may terminate this Agreement for cause
+if the other party commits a material breach of any provision of this Agreement
+and fails to cure such breach within sixty (60) calendar days after receiving
+written notice specifying the nature of the breach in reasonable detail.
+
+17.3 Termination for FCC Compliance Breach. Notwithstanding the cure period
+set forth in Section 17.2, the Client may terminate this Agreement immediately
+upon written notice if the Service Provider commits a material breach of any
+FCC compliance obligation under Section 11, including but not limited to failure
+to meet RDOF performance milestones, submission of false or misleading FCC or
+USAC reports, or loss of RDOF eligibility, provided that such breach poses a
+risk of FCC enforcement action or loss of federal subsidies.
+
+17.4 Non-Renewal. Either party may decline to renew this Agreement at the end
+of the Initial Term or any Renewal Term by providing the other party with at
+least one hundred eighty (180) calendar days' prior written notice of its intent
+not to renew.
+
+17.5 Transition Obligations. Upon termination or expiration of this Agreement,
+the Service Provider shall cooperate in transitioning network operations to the
+Client's designated successor provider, including the transfer of all network
+documentation, subscriber data, FCC filings, and equipment as mutually agreed.
+
+18. LIABILITY
+
+18.1 Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING OUT
+OF OR RELATING TO THIS AGREEMENT OR THE PERFORMANCE OF SERVICES HEREUNDER,
+REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY,
+ANY OTHER LEGAL THEORY, AND EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES.
+
+18.2 Liability Cap. The Service Provider's total aggregate liability for all
+claims arising out of or relating to this Agreement shall not exceed five
+million dollars ($5,000,000.00).
+
+18.3 Exclusion for Government Permitting Delays. Notwithstanding anything to
+the contrary in this Agreement, the Service Provider shall not be liable for
+any delays, costs, or damages arising from or related to delays in obtaining
+permits, approvals, or authorizations from any governmental authority, including
+but not limited to municipal permitting agencies, the Georgia Department of
+Transportation, the Georgia Department of Natural Resources, the U.S. Army
+Corps of Engineers, the FCC, or USAC.
+
+19. INSURANCE
+
+19.1 General Liability Insurance. Throughout the term of this Agreement, the
+Service Provider shall maintain commercial general liability insurance in an
+amount not less than five million dollars ($5,000,000.00) per occurrence.
+
+19.2 Professional Liability Insurance. Throughout the term of this Agreement,
+the Service Provider shall maintain professional liability (errors and omissions)
+insurance in an amount not less than three million dollars ($3,000,000.00) per
+claim.
+
+19.3 Cyber Liability Insurance. Throughout the term of this Agreement, the
+Service Provider shall maintain cyber liability insurance in an amount not less
+than two million dollars ($2,000,000.00) per occurrence, covering data breaches,
+network security failures, and other cyber-related losses.
+
+19.4 Evidence of Coverage. The Service Provider shall provide certificates of
+insurance evidencing the required coverage to the Client upon execution of this
+Agreement and upon each renewal of such policies. All insurance policies shall
+name the Client as an additional insured.
+
+20. TERM
+
+20.1 Initial Term. This Agreement shall commence on the Effective Date and shall
+continue for a period of sixty (60) months, concluding on January 19, 2030
+(the "Initial Term"), unless earlier terminated in accordance with Section 17.
+
+20.2 Auto-Renewal. Upon expiration of the Initial Term and any subsequent
+renewal term, this Agreement shall automatically renew for successive thirty-six
+(36) month periods (each a "Renewal Term"), unless either party provides the
+other party with at least one hundred eighty (180) calendar days' prior written
+notice of its intent not to renew, in accordance with Section 17.4.
+
+20.3 Survival. Expiration or termination of this Agreement shall not affect
+any provisions that by their nature are intended to survive termination,
+including without limitation Sections 15 (Intellectual Property), 16
+(Confidentiality), 17 (Termination), 18 (Liability), and 22 (Governing Law).
+
+21. SAFETY
+
+21.1 OSHA Compliance. The Service Provider shall comply with all applicable
+Occupational Safety and Health Administration (OSHA) standards and regulations
+in the performance of all construction, installation, and maintenance work
+under this Agreement.
+
+21.2 Underground Utilities. Prior to any excavation or boring work, the Service
+Provider shall contact the Georgia Utilities Protection Center (Georgia 811)
+and all affected utility owners to locate and mark underground utilities in
+accordance with the Georgia Utility Facility Protection Act.
+
+21.3 Traffic Control. The Service Provider shall implement traffic control
+plans for all construction activities that affect public roadways, in accordance
+with the Manual on Uniform Traffic Control Devices (MUTCD) and Georgia DOT
+requirements.
+
+21.4 Personal Protective Equipment. All Service Provider personnel shall wear
+appropriate personal protective equipment (PPE) at all times while performing
+construction, installation, or maintenance work, including hard hats, safety
+glasses, high-visibility vests, gloves, and steel-toed boots.
+
+22. DISPUTE RESOLUTION
+
+22.1 Mediation. In the event of any dispute arising out of or relating to this
+Agreement, the parties shall first attempt to resolve such dispute through
+mediation administered by a mutually agreed-upon mediator in Atlanta, Georgia.
+The parties shall share equally the costs of mediation.
+
+22.2 Arbitration. If the parties are unable to resolve a dispute through
+mediation within sixty (60) days of initiating the mediation process, such
+dispute shall be submitted to binding arbitration in Atlanta, Georgia, in
+accordance with the commercial arbitration rules of the American Arbitration
+Association (AAA) then in effect. The decision of the arbitrator(s) shall be
+final and binding, and judgment upon the award may be entered in any court of
+competent jurisdiction.
+
+23. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the State of Georgia, without giving effect to any choice-of-law or
+conflict-of-law provisions that would require the application of the laws of
+any jurisdiction other than the State of Georgia.
+
+24. EXHIBITS
+
+The following exhibits are attached to and incorporated by reference into this
+Agreement:
+
+    Exhibit A: Network Architecture Diagram — Detailed network architecture
+                diagrams showing core, distribution, and access network
+                topology for all twelve (12) counties
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit B: County Coverage Map — GIS-based maps showing planned fiber
+                routes, hub locations, and deployment phases for each of
+                the twelve (12) counties
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+    Exhibit C: FCC Compliance Checklist — Comprehensive checklist of all
+                FCC and USAC compliance requirements, reporting deadlines,
+                and documentation requirements applicable to the RDOF program
+                (Attached hereto but the contents thereof are not set forth
+                 in this Agreement)
+
+25. GENERAL PROVISIONS
+
+25.1 Entire Agreement. This Agreement, including all exhibits attached hereto,
+constitutes the entire agreement between the parties with respect to the subject
+matter hereof and supersedes all prior and contemporaneous agreements,
+understandings, negotiations, and discussions, whether oral or written, between
+the parties relating to such subject matter.
+
+25.2 Amendments. This Agreement may not be amended, modified, or supplemented
+except by a written instrument signed by both parties.
+
+25.3 Assignment. Neither party may assign or transfer any of its rights or
+obligations under this Agreement without the prior written consent of the other
+party.
+
+25.4 Severability. If any provision of this Agreement is held to be invalid,
+illegal, or unenforceable by a court of competent jurisdiction, such provision
+shall be modified to the minimum extent necessary to make it valid and
+enforceable, and the remaining provisions of this Agreement shall continue in
+full force and effect.
+
+25.5 Waiver. The failure of either party to enforce any provision of this
+Agreement shall not constitute a waiver of such party's right to enforce such
+provision or any other provision in the future.
+
+25.6 Notices. All notices required or permitted under this Agreement shall be
+in writing and shall be deemed delivered when (a) delivered personally, (b) sent
+by certified mail, return receipt requested, (c) sent by nationally recognized
+overnight courier, or (d) sent by email with confirmation of receipt, to the
+addresses set forth in Section 1 or such other address as either party may
+designate in writing.
+
+25.7 Independent Contractor. The Service Provider is an independent contractor
+and not an employee, agent, partner, or joint venturer of the Client. Nothing
+in this Agreement shall be construed to create an employment relationship,
+partnership, joint venture, or agency relationship between the parties.
+
+25.8 Nonprofit Considerations. The parties acknowledge that the Client is a
+nonprofit corporation organized under Georgia law, and that the services
+contemplated by this Agreement are intended to further the Client's charitable
+and educational mission of expanding broadband access in underserved rural
+communities. All pricing and terms under this Agreement are intended to be
+consistent with the Client's nonprofit status and applicable tax-exempt
+requirements.
+
+26. SIGNATURES
+
+IN WITNESS WHEREOF, the parties have executed this Telecommunications
+Infrastructure Services Agreement as of the dates set forth below.
+
+SERVICE PROVIDER:
+
+NetConnect Infrastructure Services LLC, a Georgia limited liability company
+
+
+By: ______________________________________
+Name: Derek Morrison
+Title: Chief Operating Officer
+Date: January 15, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Angela R. Washington
+Title: General Counsel
+Date: January 15, 2025
+
+
+CLIENT:
+
+Rural Broadband Initiative Inc., a Georgia nonprofit corporation
+
+
+By: ______________________________________
+Name: Rev. Dorothy Simmons
+Title: Executive Director
+Date: January 18, 2025
+
+
+WITNESS:
+
+__________________________________________
+Name: Marcus J. Freeman
+Title: Board Chair
+Date: January 18, 2025
