@@ -19,7 +19,7 @@ def _write_category_config(tmp_path, sample_category_config, category="test_cate
 
 def _write_gold_standards(category, modality="pdf", count=2):
     from src.storage.fs_store import save_gold_standard
-    from src.schemas.gold_standard import GoldStandard
+    from src.schemas.gold_standard import ApprovalStatus, GoldStandard
 
     gses = []
     for i in range(count):
@@ -29,8 +29,9 @@ def _write_gold_standards(category, modality="pdf", count=2):
             input_modality=modality,
             source_document_uri=Path(f"sources/doc_{i + 1}.pdf"),
             extraction={"name": f"Entity {i + 1}", "amount": 1000.0 * (i + 1)},
-            approved_by="scout",
+            approved_by="human",
             created_at=datetime.now(timezone.utc),
+            approval_status=ApprovalStatus.APPROVED,
         )
         save_gold_standard(category, modality, gs)
         gses.append(gs)
@@ -51,7 +52,7 @@ class TestRunGepaCycle:
             result = run_gepa_cycle("test_category", "pdf")
 
         assert "error" in result
-        assert "No Gold Standards" in result["error"]
+        assert "No approved Gold Standards" in result["error"]
 
     def test_creates_initial_candidate_if_none_exists(
         self, tmp_category_dir, sample_category_config

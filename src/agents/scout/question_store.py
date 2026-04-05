@@ -13,38 +13,45 @@ def get_questions(category: str, modality: str) -> list[str]:
     return [q.text for q in qs.questions]
 
 
+def _add_questions_unlocked(
+    category: str, modality: str, new_questions: list[dict]
+) -> QuestionSet:
+    """Core add logic — caller is responsible for holding the lock."""
+    existing = load_question_set(category, modality)
+    existing_ids = {q.id for q in existing.questions} if existing else set()
+    next_idx = len(existing.questions) if existing else 0
+
+    entries = list(existing.questions) if existing else []
+    for i, q in enumerate(new_questions):
+        qid = f"q_{next_idx + i + 1:03d}"
+        if qid not in existing_ids:
+            entries.append(
+                QuestionEntry(
+                    id=qid,
+                    text=q["text"],
+                    target_field=q.get("target_field", "unknown"),
+                    retrieval_priority=q.get("retrieval_priority", 1),
+                )
+            )
+
+    qs = QuestionSet(
+        category=category,
+        input_modality=modality,
+        version=(existing.version + 1) if existing else 1,
+        updated_at=datetime.now(timezone.utc).isoformat(),
+        questions=entries,
+    )
+    save_question_set(category, modality, qs)
+    return qs
+
+
 def add_questions(
     category: str, modality: str, new_questions: list[dict]
 ) -> QuestionSet:
     q_path = paths.questions_path(category, modality)
 
     with locked_file(q_path):
-        existing = load_question_set(category, modality)
-        existing_ids = {q.id for q in existing.questions} if existing else set()
-        next_idx = len(existing.questions) if existing else 0
-
-        entries = list(existing.questions) if existing else []
-        for i, q in enumerate(new_questions):
-            qid = f"q_{next_idx + i + 1:03d}"
-            if qid not in existing_ids:
-                entries.append(
-                    QuestionEntry(
-                        id=qid,
-                        text=q["text"],
-                        target_field=q.get("target_field", "unknown"),
-                        retrieval_priority=q.get("retrieval_priority", 1),
-                    )
-                )
-
-        qs = QuestionSet(
-            category=category,
-            input_modality=modality,
-            version=(existing.version + 1) if existing else 1,
-            updated_at=datetime.now(timezone.utc).isoformat(),
-            questions=entries,
-        )
-        save_question_set(category, modality, qs)
-    return qs
+        return _add_questions_unlocked(category, modality, new_questions)
 
 
 def merge_questions(
@@ -56,7 +63,8 @@ def merge_questions(
         existing = load_question_set(category, modality)
 
         if not existing:
-            return add_questions(category, modality, new_questions)
+            # Delegate to unlocked version since we already hold the lock
+            return _add_questions_unlocked(category, modality, new_questions)
 
         existing_fields = {q.target_field for q in existing.questions}
         entries = list(existing.questions)
@@ -83,4 +91,4 @@ def merge_questions(
             questions=entries,
         )
         save_question_set(category, modality, qs)
-    return qs
+        return qs

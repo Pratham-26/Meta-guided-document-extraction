@@ -10,7 +10,7 @@ from src.config import settings
 from src.orchestration.graph import compile_graph
 from src.schemas.document import DocumentInput, InputType
 from src.schemas.evaluation import FieldDiff, JudgeEvaluation, QualityTier
-from src.schemas.gold_standard import GoldStandard
+from src.schemas.gold_standard import ApprovalStatus, GoldStandard
 from src.schemas.question import QuestionEntry, QuestionSet
 from src.schemas.trace import TraceEntry
 from src.storage.fs_store import (
@@ -59,8 +59,9 @@ def integration_env(tmp_path, monkeypatch):
                 "landlord_name": f"Landlord {i + 1}",
                 "monthly_rent": 1000.0 * (i + 1),
             },
-            approved_by="scout",
+            approved_by="human",
             created_at=datetime.now(timezone.utc),
+            approval_status=ApprovalStatus.APPROVED,
         )
         save_gold_standard(CATEGORY, MODALITY, gs)
 
@@ -546,8 +547,9 @@ class TestPDFRoutingIntegration:
             input_modality="pdf",
             source_document_uri=Path("sources/doc.pdf"),
             extraction={"landlord_name": "LLC", "monthly_rent": 3000.0},
-            approved_by="scout",
+            approved_by="human",
             created_at=datetime.now(timezone.utc),
+            approval_status=ApprovalStatus.APPROVED,
         )
         save_gold_standard(CATEGORY, "pdf", gs)
 

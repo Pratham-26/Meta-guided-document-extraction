@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
 from src.schemas.document import DocumentInput, InputType
-from src.schemas.gold_standard import GoldStandard
+from src.schemas.gold_standard import ApprovalStatus, GoldStandard
 from src.schemas.trace import TraceEntry
 from src.schemas.evaluation import JudgeEvaluation, QualityTier, FieldDiff
 from src.schemas.question import QuestionSet, QuestionEntry
@@ -66,8 +66,9 @@ def sample_gold_standard():
         input_modality="pdf",
         source_document_uri=Path("sources/test.pdf"),
         extraction={"name": "Acme Corp", "amount": 5000.00},
-        approved_by="scout",
+        approved_by="human",
         created_at=datetime.now(timezone.utc),
+        approval_status=ApprovalStatus.APPROVED,
     )
 
 
@@ -243,8 +244,9 @@ def bootstrapped_category(tmp_category_dir):
             input_modality="pdf",
             source_document_uri=Path(f"sources/doc_{i + 1}.pdf"),
             extraction={"name": f"Entity {i + 1}", "amount": 1000.0 * (i + 1)},
-            approved_by="scout",
+            approved_by="human",
             created_at=datetime.now(timezone.utc),
+            approval_status=ApprovalStatus.APPROVED,
         )
         save_gold_standard("test_category", "pdf", gs)
 
