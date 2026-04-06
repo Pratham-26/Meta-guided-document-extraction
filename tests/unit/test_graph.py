@@ -3,20 +3,13 @@ from unittest.mock import patch, MagicMock
 
 import pytest
 
-from src.orchestration.graph import (
-    build_graph,
-    compile_graph,
-    _has_error,
-    _is_gold,
-    _should_judge,
-)
+from src.orchestration.graph import run_pipeline
 from src.orchestration.state import PipelineState
 from src.schemas.document import DocumentInput, InputType
 from src.schemas.trace import TraceEntry
 from src.retrieval.router import RetrievalRoute
 
-
-EXPECTED_NODES = [
+EXPECTED_STEPS = [
     "check_context",
     "resolve_config",
     "detect_gold",
@@ -30,69 +23,7 @@ EXPECTED_NODES = [
 ]
 
 
-class TestBuildGraph:
-    def test_graph_has_all_nodes(self):
-        graph = build_graph()
-        for name in EXPECTED_NODES:
-            assert name in graph.nodes, f"Missing node: {name}"
-
-    def test_graph_starts_with_check_context(self):
-        graph = build_graph()
-        start_edges = [e for e in graph.edges if e[0] == "__start__"]
-        assert len(start_edges) == 1
-        assert start_edges[0][1] == "check_context"
-
-
-class TestHasError:
-    def test_returns_halt_on_error(self):
-        state: PipelineState = {"error": "something failed"}
-        assert _has_error(state) == "halt"
-
-    def test_returns_continue_without_error(self):
-        state: PipelineState = {"category_name": "leases"}
-        assert _has_error(state) == "continue"
-
-    def test_returns_continue_on_empty_state(self):
-        state: PipelineState = {}
-        assert _has_error(state) == "continue"
-
-
-class TestIsGold:
-    def test_returns_gold_when_flagged(self):
-        state: PipelineState = {"is_gold_doc": True, "gold_source": "user_flag"}
-        assert _is_gold(state) == "gold"
-
-    def test_returns_regular_when_not_flagged(self):
-        state: PipelineState = {"is_gold_doc": False}
-        assert _is_gold(state) == "regular"
-
-    def test_defaults_to_regular(self):
-        state: PipelineState = {}
-        assert _is_gold(state) == "regular"
-
-
-class TestShouldJudge:
-    def test_returns_judge_for_gold_docs(self):
-        state: PipelineState = {"is_gold_doc": True}
-        assert _should_judge(state) == "judge"
-
-    def test_returns_skip_for_regular_docs(self):
-        state: PipelineState = {"is_gold_doc": False}
-        assert _should_judge(state) == "skip"
-
-    def test_defaults_to_skip(self):
-        state: PipelineState = {}
-        assert _should_judge(state) == "skip"
-
-
-class TestCompileGraph:
-    def test_compile_returns_compiled_graph(self):
-        compiled = compile_graph()
-        assert compiled is not None
-        assert hasattr(compiled, "invoke")
-
-
-class TestIntegration:
+class TestRunPipeline:
     def test_regular_path_pipeline(self, sample_document_input):
         trace_extract = TraceEntry(
             timestamp=datetime.now(timezone.utc),
@@ -159,8 +90,7 @@ class TestIntegration:
         p10 = patch("src.orchestration.nodes.log_traces", side_effect=log_traces_fn)
 
         with p1, p2, p3, p4, p5, p6, p7, p8, p9, p10:
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": "test",
                     "input_modality": "pdf",
@@ -255,8 +185,7 @@ class TestIntegration:
         p10 = patch("src.orchestration.nodes.log_traces", side_effect=log_traces_fn)
 
         with p1, p2, p3, p4, p5, p6, p7, p8, p9, p10:
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": "test",
                     "input_modality": "pdf",
@@ -284,22 +213,10 @@ class TestIntegration:
         p1 = patch(
             "src.orchestration.nodes.check_context", side_effect=check_context_error
         )
-        p2 = patch("src.orchestration.nodes.resolve_config", side_effect=lambda s: s)
-        p3 = patch("src.orchestration.nodes.detect_gold", side_effect=lambda s: s)
-        p4 = patch(
-            "src.orchestration.nodes.run_scout_for_gold",
-            side_effect=lambda s: s,
-        )
-        p5 = patch("src.orchestration.nodes.load_questions", side_effect=lambda s: s)
-        p6 = patch("src.orchestration.nodes.route_input", side_effect=lambda s: s)
-        p7 = patch("src.orchestration.nodes.retrieve", side_effect=lambda s: s)
         p8 = patch("src.orchestration.nodes.extract", side_effect=extract_fn)
-        p9 = patch("src.orchestration.nodes.judge", side_effect=lambda s: s)
-        p10 = patch("src.orchestration.nodes.log_traces", side_effect=lambda s: s)
 
-        with p1, p2, p3, p4, p5, p6, p7, p8, p9, p10:
-            compiled = compile_graph()
-            result = compiled.invoke(
+        with p1, p8:
+            result = run_pipeline(
                 {
                     "category_name": "test",
                     "input_modality": "pdf",

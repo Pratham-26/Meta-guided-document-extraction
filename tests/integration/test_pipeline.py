@@ -7,7 +7,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from src.config import settings
-from src.orchestration.graph import compile_graph
+from src.orchestration.graph import run_pipeline
 from src.schemas.document import DocumentInput, InputType
 from src.schemas.evaluation import FieldDiff, JudgeEvaluation, QualityTier
 from src.schemas.gold_standard import ApprovalStatus, GoldStandard
@@ -126,8 +126,7 @@ class TestRegularPathIntegration:
                 "monthly_rent": 5000.0,
             }
 
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": CATEGORY,
                     "input_modality": MODALITY,
@@ -179,8 +178,7 @@ class TestRegularPathIntegration:
             "src.agents.extractor.agent.ExtractorAgent.run",
             return_value={"landlord_name": "X", "monthly_rent": 1.0},
         ):
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": CATEGORY,
                     "input_modality": MODALITY,
@@ -263,8 +261,7 @@ class TestGoldPathIntegration:
                 confidence=0.98,
             )
 
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": CATEGORY,
                     "input_modality": MODALITY,
@@ -366,8 +363,7 @@ class TestGoldPathIntegration:
                 side_effect=capture_judge,
             ),
         ):
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": CATEGORY,
                     "input_modality": MODALITY,
@@ -403,8 +399,7 @@ class TestContextGateIntegration:
         }
         (configs_dir / "missing_cat.json").write_text(json.dumps(cat_config))
 
-        compiled = compile_graph()
-        result = compiled.invoke(
+        result = run_pipeline(
             {
                 "category_name": "missing_cat",
                 "input_modality": "text",
@@ -467,8 +462,7 @@ class TestAutoGoldIntegration:
                 ),
             ),
         ):
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": CATEGORY,
                     "input_modality": MODALITY,
@@ -509,8 +503,7 @@ class TestRealConfigLoading:
             "src.agents.extractor.agent.ExtractorAgent.run",
             return_value={"landlord_name": "X", "monthly_rent": 1.0},
         ):
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": CATEGORY,
                     "input_modality": MODALITY,
@@ -579,8 +572,7 @@ class TestPDFRoutingIntegration:
             "src.agents.extractor.agent.ExtractorAgent.run",
             return_value={"landlord_name": "LLC", "monthly_rent": 3000.0},
         ):
-            compiled = compile_graph()
-            result = compiled.invoke(
+            result = run_pipeline(
                 {
                     "category_name": CATEGORY,
                     "input_modality": "pdf",

@@ -2,7 +2,7 @@ import argparse
 import json
 from pathlib import Path
 
-from src.orchestration.graph import compile_graph
+from src.orchestration.graph import run_pipeline
 from src.orchestration.state import PipelineState
 from src.schemas.document import DocumentInput, InputType
 
@@ -39,8 +39,7 @@ def main():
         "gold_source": "user_flag" if args.gold else None,
     }
 
-    app = compile_graph()
-    result = app.invoke(state)
+    result = run_pipeline(state)
 
     if result.get("error"):
         print(f"Error: {result['error']}")
